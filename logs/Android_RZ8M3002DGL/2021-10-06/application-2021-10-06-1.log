@@ -1,0 +1,98 @@
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:07:40.206 ParentClass:241 - log path: logs/Android_RZ8M3002DGL
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:07:56.928 ParentClass:211 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:07:56.955 W31OB_SignUp_Test:30 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:07:56.956 ParentClass:265 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:07:56.958 W31OB_SignUp_Test:38 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:07:57.639 W31OB_SignUp_Test:47 - 
+****** starting test:W31OB_SignUpUser******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:07:58.891 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:12.377 ParentClass:364 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-07-40/W31OB_SignUp_Test/W31OB_SignUpUser.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:12.386 W31OB_Signin_Onboarding_Test:24 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:12.386 ParentClass:265 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:12.389 W31OB_Signin_Onboarding_Test:28 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:13.154 W31OB_Signin_Onboarding_Test:37 - 
+****** starting test:W31OB_Signin_Onboarding******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:25.815 ParentClass:364 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-07-40/W31OB_Signin_Onboarding_Test/W31OB_Signin_Onboarding.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:30.898 ParentClass:144 - Closing App
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:08:31.133 ParentClass:146 - Closing Driver
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:22.235 ParentClass:244 - log path: logs/Android_RZ8M3002DGL
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:32.986 ParentClass:211 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:33.014 W31OB_SignUp_Test:30 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:33.014 ParentClass:268 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:33.017 W31OB_SignUp_Test:38 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:33.740 W31OB_SignUp_Test:47 - 
+****** starting test:W31OB_SignUpUser******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:35.086 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:48.874 ParentClass:367 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-12-22/W31OB_SignUp_Test/W31OB_SignUpUser.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:57.799 W31OB_Signin_Onboarding_Test:24 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:57.802 ParentClass:268 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:57.807 W31OB_Signin_Onboarding_Test:28 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:58.555 W31OB_Signin_Onboarding_Test:37 - 
+****** starting test:W31OB_Signin_Onboarding******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:12:59.664 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:13:09.765 ParentClass:367 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-12-22/W31OB_Signin_Onboarding_Test/W31OB_Signin_Onboarding.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:13:18.539 ParentClass:144 - Closing App
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:13:18.794 ParentClass:146 - Closing Driver
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:15:41.413 ParentClass:244 - log path: logs/Android_RZ8M3002DGL
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:15:52.167 ParentClass:211 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:15:52.193 W31OB_SignUp_Test:30 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:15:52.193 ParentClass:268 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:15:52.196 W31OB_SignUp_Test:38 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:15:52.911 W31OB_SignUp_Test:47 - 
+****** starting test:W31OB_SignUpUser******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:15:54.151 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:02.880 ParentClass:367 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-15-41/W31OB_SignUp_Test/W31OB_SignUpUser.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:11.795 W31OB_Signin_Onboarding_Test:24 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:11.798 ParentClass:268 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:11.806 W31OB_Signin_Onboarding_Test:28 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:12.583 W31OB_Signin_Onboarding_Test:37 - 
+****** starting test:W31OB_Signin_Onboarding******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:13.720 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:23.650 ParentClass:367 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-15-41/W31OB_Signin_Onboarding_Test/W31OB_Signin_Onboarding.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:32.573 ParentClass:144 - Closing App
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:16:32.808 ParentClass:146 - Closing Driver
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:04.477 ParentClass:243 - log path: logs/Android_RZ8M3002DGL
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:15.384 ParentClass:211 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:18.813 W31OB_SignUp_Test:31 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:18.815 ParentClass:267 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:18.822 W31OB_SignUp_Test:39 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:19.600 W31OB_SignUp_Test:48 - 
+****** starting test:W31OB_SignUpUser******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:20.842 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:34.884 ParentClass:366 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-19-04/W31OB_SignUp_Test/W31OB_SignUpUser.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:40.157 W31OB_Signin_Onboarding_Test:24 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:40.159 ParentClass:267 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:40.163 W31OB_Signin_Onboarding_Test:28 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:40.917 W31OB_Signin_Onboarding_Test:37 - 
+****** starting test:W31OB_Signin_Onboarding******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:52.704 ParentClass:366 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-19-04/W31OB_Signin_Onboarding_Test/W31OB_Signin_Onboarding.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:57.861 ParentClass:144 - Closing App
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:19:58.033 ParentClass:146 - Closing Driver
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:26.432 ParentClass:243 - log path: logs/Android_RZ8M3002DGL
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:37.359 ParentClass:211 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:37.385 W31OB_SignUp_Test:30 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:37.385 ParentClass:267 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:37.388 W31OB_SignUp_Test:38 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:38.132 W31OB_SignUp_Test:47 - 
+****** starting test:W31OB_SignUpUser******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:39.618 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:49.286 ParentClass:366 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-25-26/W31OB_SignUp_Test/W31OB_SignUpUser.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:58.106 W31OB_Signin_Onboarding_Test:25 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:58.111 ParentClass:267 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:58.120 W31OB_Signin_Onboarding_Test:29 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:58.835 W31OB_Signin_Onboarding_Test:38 - 
+****** starting test:W31OB_Signin_Onboarding******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:25:59.892 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:26:10.053 ParentClass:366 - video path: videos/Android_RZ8M3002DGL/2021-10-06-21-25-26/W31OB_Signin_Onboarding_Test/W31OB_Signin_Onboarding.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:26:15.296 ParentClass:144 - Closing App
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-06 21:26:15.516 ParentClass:146 - Closing Driver

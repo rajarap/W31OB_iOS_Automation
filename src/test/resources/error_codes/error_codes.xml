@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Get Started Page -->
+	<string name="0001-0000">Bluetooth Connection failed</string>
+	<string name="0002-0000">Internet connection not available</string>	
+    <string name="0003-0000">Service is not available</string>
+    <string name="0005-0000">Bluetooth not enabled</string> 
+    <string name="0006-0000">Bluetooth Communication failure</string> 
+	<string name="0008-0000">User pool validation failed</string> 
+	<string name="0013-0000">Multiple devices found</string> 
+	<string name="0014-0000">Bluetooth pairing failed</string> 
+	<string name="0015-0000">Cannot connect to mAX devices</string> 
+</resources>
