@@ -36,6 +36,11 @@ public class CongratulationsPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
+	public void clickContinueButton()
+	{
+		click(continueButton);
+		utils.log().info("Congratulations Page - Clicked on Continue Button");
+	}
 	@Override
 	public boolean isAt() {
 		super.pause();

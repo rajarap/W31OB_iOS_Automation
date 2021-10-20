@@ -2,6 +2,10 @@ package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 
@@ -79,7 +83,7 @@ public class SignUpTest extends ParentClass
 //			  signup.clickSignupButton();
 //			  super.pause(15);
 		  }).otpVerificationPage(otpverify -> {
-			  otpverify.enterPassCode();
+			  otpverify.enterValidPassCode(this.email);
 		  }).codeVerifiedPage(codeVerified -> {
 			  codeVerified.getCodeVerifiedText();
 		  });

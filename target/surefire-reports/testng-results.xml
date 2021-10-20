@@ -1,134 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-08T02:03:13 IST" name="W31-Onboarding-BOBA" finished-at="2021-10-08T02:04:09 IST" duration-ms="55763">
+  <suite started-at="2021-10-20T15:53:45 IST" name="Android : W31-OnBoarding" finished-at="2021-10-20T16:03:22 IST" duration-ms="577392">
     <groups>
     </groups>
-    <test started-at="2021-10-08T02:03:13 IST" name="W31OB_SignUp_And_Onboard_Test" finished-at="2021-10-08T02:03:41 IST" duration-ms="28388">
-      <class name="com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b]" started-at="2021-10-08T02:03:13 IST" name="beforeTest" finished-at="2021-10-08T02:03:13 IST" duration-ms="3" status="PASS">
+    <test started-at="2021-10-20T15:53:45 IST" name="Enter_Invalid_OTP_Test" finished-at="2021-10-20T15:55:13 IST" duration-ms="88250">
+      <class name="com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb]" started-at="2021-10-20T15:53:45 IST" name="beforeTest" finished-at="2021-10-20T15:53:50 IST" duration-ms="4922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b]" started-at="2021-10-08T02:03:13 IST" name="beforeClass" finished-at="2021-10-08T02:03:13 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb]" started-at="2021-10-20T15:53:50 IST" name="beforeClass" finished-at="2021-10-20T15:53:50 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b]" started-at="2021-10-08T02:03:13 IST" name="beforeMethod" finished-at="2021-10-08T02:03:14 IST" duration-ms="688" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb]" started-at="2021-10-20T15:53:50 IST" name="beforeMethod" finished-at="2021-10-20T15:53:51 IST" duration-ms="817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b]" started-at="2021-10-08T02:03:14 IST" name="beforeMethod" finished-at="2021-10-08T02:03:14 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb]" started-at="2021-10-20T15:53:51 IST" name="beforeMethod" finished-at="2021-10-20T15:53:51 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.W31OB_SignUpUser()]]>
+                <![CDATA[public void com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test.Verify_Invalid_PassCode()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="W31OB_SignUpUser()[pri:1, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b]" started-at="2021-10-08T02:03:14 IST" name="W31OB_SignUpUser" finished-at="2021-10-08T02:03:37 IST" duration-ms="23977" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:411)
-at com.cs.arris.Pages.EnterOTPPage.enterPassCode(EnterOTPPage.java:62)
-at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.lambda$8(W31OB_SignUp_And_Onboard_Test.java:80)
-at com.cs.arris.Workflows.W31OB_SignUp_Workflow.enterOTPPage(W31OB_SignUp_Workflow.java:91)
-at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.W31OB_SignUpUser(W31OB_SignUp_And_Onboard_Test.java:74)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@15f35bc3 (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 39 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 41 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="Verify_Invalid_PassCode()[pri:1, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb]" started-at="2021-10-20T15:53:51 IST" name="Verify_Invalid_PassCode" finished-at="2021-10-20T15:55:08 IST" duration-ms="77236" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- W31OB_SignUpUser -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b]" started-at="2021-10-08T02:03:38 IST" name="afterMethod" finished-at="2021-10-08T02:03:41 IST" duration-ms="2627" status="PASS">
+        </test-method> <!-- Verify_Invalid_PassCode -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb]" started-at="2021-10-20T15:55:08 IST" name="afterMethod" finished-at="2021-10-20T15:55:13 IST" duration-ms="4697" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=W31OB_SignUpUser status=FAILURE method=W31OB_SignUp_And_Onboard_Test.W31OB_SignUpUser()[pri:1, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Invalid_PassCode status=SUCCESS method=TC03_Verify_Invalid_OTP_Test.Verify_Invalid_PassCode()[pri:1, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test@48aca48b]" started-at="2021-10-08T02:03:41 IST" name="afterTest" finished-at="2021-10-08T02:03:41 IST" duration-ms="296" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@576d5deb]" started-at="2021-10-20T15:55:13 IST" name="afterTest" finished-at="2021-10-20T15:55:13 IST" duration-ms="395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test -->
-    </test> <!-- W31OB_SignUp_And_Onboard_Test -->
-    <test started-at="2021-10-08T02:03:47 IST" name="W31OB_Signin_And_Onboard_Test" finished-at="2021-10-08T02:04:09 IST" duration-ms="21795">
-      <class name="com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:02:50 IST" name="beforeSuite" finished-at="2021-10-08T02:03:13 IST" duration-ms="22454" status="PASS">
+      </class> <!-- com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test -->
+    </test> <!-- Enter_Invalid_OTP_Test -->
+    <test started-at="2021-10-20T15:55:19 IST" name="EC_0002_1002_Disconnect_Wifi_On_Mobile_Test" finished-at="2021-10-20T15:56:16 IST" duration-ms="56971">
+      <class name="com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934]" started-at="2021-10-20T15:55:19 IST" name="beforeTest" finished-at="2021-10-20T15:55:24 IST" duration-ms="5284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934]" started-at="2021-10-20T15:55:24 IST" name="beforeClass" finished-at="2021-10-20T15:55:24 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934]" started-at="2021-10-20T15:55:24 IST" name="beforeMethod" finished-at="2021-10-20T15:55:25 IST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934]" started-at="2021-10-20T15:55:25 IST" name="beforeMethod" finished-at="2021-10-20T15:55:25 IST" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.EC_0002_1002_Disconnect_Wifi_On_Mobile_Test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="EC_0002_1002_Disconnect_Wifi_On_Mobile_Test()[pri:1, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934]" started-at="2021-10-20T15:55:25 IST" name="EC_0002_1002_Disconnect_Wifi_On_Mobile_Test" finished-at="2021-10-20T15:56:14 IST" duration-ms="49020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC_0002_1002_Disconnect_Wifi_On_Mobile_Test -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934]" started-at="2021-10-20T15:56:14 IST" name="afterMethod" finished-at="2021-10-20T15:56:15 IST" duration-ms="1682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EC_0002_1002_Disconnect_Wifi_On_Mobile_Test status=SUCCESS method=TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.EC_0002_1002_Disconnect_Wifi_On_Mobile_Test()[pri:1, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test@11392934]" started-at="2021-10-20T15:56:15 IST" name="afterTest" finished-at="2021-10-20T15:56:16 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test -->
+    </test> <!-- EC_0002_1002_Disconnect_Wifi_On_Mobile_Test -->
+    <test started-at="2021-10-20T15:56:21 IST" name="EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test" finished-at="2021-10-20T15:57:41 IST" duration-ms="80336">
+      <class name="com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23]" started-at="2021-10-20T15:56:21 IST" name="beforeTest" finished-at="2021-10-20T15:56:26 IST" duration-ms="4861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23]" started-at="2021-10-20T15:56:26 IST" name="beforeClass" finished-at="2021-10-20T15:56:26 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23]" started-at="2021-10-20T15:56:26 IST" name="beforeMethod" finished-at="2021-10-20T15:56:26 IST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23]" started-at="2021-10-20T15:56:26 IST" name="beforeMethod" finished-at="2021-10-20T15:56:26 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test()[pri:1, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23]" started-at="2021-10-20T15:56:26 IST" name="EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test" finished-at="2021-10-20T15:57:36 IST" duration-ms="69612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23]" started-at="2021-10-20T15:57:36 IST" name="afterMethod" finished-at="2021-10-20T15:57:41 IST" duration-ms="4586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test status=SUCCESS method=TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test()[pri:1, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test@449a4f23]" started-at="2021-10-20T15:57:41 IST" name="afterTest" finished-at="2021-10-20T15:57:41 IST" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test -->
+    </test> <!-- EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test -->
+    <test started-at="2021-10-20T15:57:46 IST" name="Signin_And_Onboard_Test" finished-at="2021-10-20T16:03:22 IST" duration-ms="336022">
+      <class name="com.cs.arris.Tests.TC51_Signin_And_Onboard_Test">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T15:53:20 IST" name="beforeSuite" finished-at="2021-10-20T15:53:45 IST" duration-ms="24854" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,152 +161,53 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:03:47 IST" name="beforeTest" finished-at="2021-10-08T02:03:47 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T15:57:46 IST" name="beforeTest" finished-at="2021-10-20T15:57:51 IST" duration-ms="5088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:03:47 IST" name="beforeClass" finished-at="2021-10-08T02:03:50 IST" duration-ms="3547" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T15:57:51 IST" name="beforeClass" finished-at="2021-10-20T15:57:51 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:03:50 IST" name="beforeMethod" finished-at="2021-10-08T02:03:51 IST" duration-ms="657" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T15:57:51 IST" name="beforeMethod" finished-at="2021-10-20T15:57:52 IST" duration-ms="680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:03:51 IST" name="beforeMethod" finished-at="2021-10-08T02:03:51 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T15:57:52 IST" name="beforeMethod" finished-at="2021-10-20T15:57:52 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.W31OB_Signin_Onboarding()]]>
+                <![CDATA[public void com.cs.arris.Tests.TC51_Signin_And_Onboard_Test.Verify_Signin_And_Onboard()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="W31OB_Signin_Onboarding()[pri:1, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:03:51 IST" name="W31OB_Signin_Onboarding" finished-at="2021-10-08T02:04:05 IST" duration-ms="14072" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.cs.arris.Pages.CodeVerifiedPage.getCodeVerifiedText(CodeVerifiedPage.java:35)
-at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.lambda$8(W31OB_Signin_And_Onboard_Test.java:69)
-at com.cs.arris.Workflows.W31OB_Signin_Workflow.codeVerifiedPage(W31OB_Signin_Workflow.java:98)
-at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.W31OB_Signin_Onboarding(W31OB_Signin_And_Onboard_Test.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="Verify_Signin_And_Onboard()[pri:1, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T15:57:52 IST" name="Verify_Signin_And_Onboard" finished-at="2021-10-20T16:03:13 IST" duration-ms="321224" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- W31OB_Signin_Onboarding -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:04:06 IST" name="afterMethod" finished-at="2021-10-08T02:04:08 IST" duration-ms="2664" status="PASS">
+        </test-method> <!-- Verify_Signin_And_Onboard -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T16:03:13 IST" name="afterMethod" finished-at="2021-10-20T16:03:22 IST" duration-ms="8538" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=W31OB_Signin_Onboarding status=FAILURE method=W31OB_Signin_And_Onboard_Test.W31OB_Signin_Onboarding()[pri:1, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Signin_And_Onboard status=SUCCESS method=TC51_Signin_And_Onboard_Test.Verify_Signin_And_Onboard()[pri:1, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:04:08 IST" name="afterTest" finished-at="2021-10-08T02:04:09 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T16:03:22 IST" name="afterTest" finished-at="2021-10-20T16:03:22 IST" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test@55a147cc]" started-at="2021-10-08T02:04:14 IST" name="afterSuite" finished-at="2021-10-08T02:04:14 IST" duration-ms="313" status="FAIL">
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
-            <message>
-              <![CDATA[The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/prabhu/Documents/apk..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/Documents/apk..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 40f87af6-e0ad-43b1-bafd-fe01add6beed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/prabhu/Documents/apk..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/Documents/apk..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 40f87af6-e0ad-43b1-bafd-fe01add6beed
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.cs.arris.Base.ParentClass.afterSuite(ParentClass.java:150)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.cs.arris.Tests.TC51_Signin_And_Onboard_Test@4b741d6d]" started-at="2021-10-20T16:03:27 IST" name="afterSuite" finished-at="2021-10-20T16:03:28 IST" duration-ms="619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test -->
-    </test> <!-- W31OB_Signin_And_Onboard_Test -->
-  </suite> <!-- W31-Onboarding-BOBA -->
+      </class> <!-- com.cs.arris.Tests.TC51_Signin_And_Onboard_Test -->
+    </test> <!-- Signin_And_Onboard_Test -->
+  </suite> <!-- Android : W31-OnBoarding -->
 </testng-results>

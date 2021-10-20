@@ -30,4 +30,11 @@
 	<string name="OTPVerification_page_enter_verification_code_message">ENTER VERIFICATION CODE</string>
 	<string name="OTPVerification_page_check_email_account_message">Check your email account for the verification code and enter it here. If not found, check your Spam folder. Tap on RESEND for a new code if needed.</string>
 	<string name="OTPVerification_page_invalid_passcode_message">The code you entered is not valid. Please verify your code and try again. If needed, you can try to Resend the code.</string>
+
+	<string name="resend_otp_text">New Code Sent!</string>
+	<string name="resend_otp_message">We have sent a new verification code to the email you provided. Please check both the Inbox and Spam folders for the code and enter it to verify your account.</string>
+	<string name="resend_otp_ok_button">OK</string>
+	<string name="resend_otp_link">I did not receive</string>
+	<string name="resend_otp_link_validation_code">Validation Code</string>
+	<string name="resend_otp_link_validation_text">As added security to confirm your account, an email containing a uniquely generated code has been sent to you. Please note that this typically takes under a minute. If you have not received an email from our team, please check your Spam mail folder. If you have not received the email please try again. If you are not able to receive the email, please verify your email address or contact our support team.</string>
 </resources>

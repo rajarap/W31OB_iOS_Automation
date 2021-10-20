@@ -10,8 +10,8 @@ import com.cs.arris.Pages.GetStartedPage;
 import com.cs.arris.Pages.GrantPermissionsPage;
 import com.cs.arris.Pages.SelectYourDevicePage;
 import com.cs.arris.Pages.SelectYourDevicePage2;
-import com.cs.arris.Pages.WelcomeSigninPage;
-import com.cs.arris.Pages.WelcomeSignupPage;
+import com.cs.arris.Pages.SiginPage;
+import com.cs.arris.Pages.SignupPage;
 import com.cs.arris.Utilities.TestUtils;
 
 public class UserUnSuccessfulSigninWorkflow 
@@ -68,16 +68,16 @@ TestUtils utils = new TestUtils();
     }
     
     //Enter invalid email id
-    public UserUnSuccessfulSigninWorkflow welcomeSigninPage(Consumer<WelcomeSigninPage> c){
-    	WelcomeSigninPage p = new WelcomeSigninPage();
+    public UserUnSuccessfulSigninWorkflow welcomeSigninPage(Consumer<SiginPage> c){
+    	SiginPage p = new SiginPage();
     	this.waitForPageLoad(p);
         c.accept(p);
         return this;
     }
     
     //singup page appears since there is no user account matching the invalid email id
-    public UserUnSuccessfulSigninWorkflow welcomeSignupPage(Consumer<WelcomeSignupPage> c){
-    	WelcomeSignupPage p = new WelcomeSignupPage();
+    public UserUnSuccessfulSigninWorkflow welcomeSignupPage(Consumer<SignupPage> c){
+    	SignupPage p = new SignupPage();
     	this.waitForPageLoad(p);
         c.accept(p);
         return this;

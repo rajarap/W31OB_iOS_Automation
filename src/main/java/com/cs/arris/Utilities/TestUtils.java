@@ -117,9 +117,9 @@ public class TestUtils {
 	
 	 public String getOTP()
 	 {
-			String hostName = "smtp.gmail.com";
-			String username = "prabhu.rajarathinam@mobileprogramming.com";
-			String password = "RI11**ya"; 
+			String hostName;
+			String username ;
+			String password ;
 			int messageCount;
 			int newMessageCount;
 			int unreadMsgCount;
@@ -133,7 +133,7 @@ public class TestUtils {
 		    {
 		        Session session = Session.getInstance(sysProps, null);
 		        Store store = session.getStore();
-		        store.connect(hostName, username, password);
+		   //     store.connect(hostName, username, password);
 		        Folder emailInbox = store.getFolder("INBOX");
 		        emailInbox.open(Folder.READ_WRITE);
 		        messageCount = emailInbox.getMessageCount();

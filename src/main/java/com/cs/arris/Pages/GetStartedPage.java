@@ -40,7 +40,9 @@ public class GetStartedPage extends ParentClass implements Page
 	
 	public void clickGetStartedButton() 
 	{
-			click(getStartedButton);
+		click(getStartedButton);
+		utils.log().info("Get Started - Clicked on Get Started Button");
+
 	}
 		
 	public void getGetStartedImage()
@@ -68,9 +70,15 @@ public class GetStartedPage extends ParentClass implements Page
 
 	@Override
 	public boolean isAt() {
-		super.pause();
-		return true;
+		if(getStartedButton.isDisplayed())
+		{
+			utils.log().info("At Get Started Page displayed");
+			return true;
+		}
+		else
+		{
+			utils.log().info("Get Started Page is not displayed");
+			return false;
+		}
 	}
-	
-
 }

@@ -1,440 +1,59 @@
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:27:43.974 ParentClass:247 - log path: logs/Android_RZ8M3002DGL
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:27:54.394 ParentClass:215 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, networkConnectionEnabled=true, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:27:54.423 W31OB_SignUp_And_Onboard_Test:30 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:27:54.425 ParentClass:271 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:27:54.428 W31OB_SignUp_And_Onboard_Test:38 - Retrieved...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:27:55.125 W31OB_SignUp_And_Onboard_Test:47 - 
-****** starting test:W31OB_SignUpUser******
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:56:50.577 ParentClass:261 - log path: logs/Android_RZ8M3002DGL
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:56:50.589 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:08.062 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:08.064 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.356 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.358 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.370 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.370 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.371 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.374 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.375 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.376 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:12.376 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:13.075 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
 
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:27:56.531 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 00:28:38.779 TestListener:39 - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:413)
-	at com.cs.arris.Pages.WelcomeSignupPage.enterValidEmailAddress(WelcomeSignupPage.java:88)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.lambda$7(W31OB_SignUp_And_Onboard_Test.java:70)
-	at com.cs.arris.Workflows.W31OB_SignUp_Workflow.welcomeSignupPage(W31OB_SignUp_Workflow.java:77)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.W31OB_SignUpUser(W31OB_SignUp_And_Onboard_Test.java:69)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:28:42.844 ParentClass:370 - video path: videos/Android_RZ8M3002DGL/2021-10-08-00-27-43/W31OB_SignUp_And_Onboard_Test/W31OB_SignUpUser.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:28:49.013 ParentClass:147 - Closing App
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:28:49.299 ParentClass:149 - Closing Driver
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:03.214 ParentClass:247 - log path: logs/Android_RZ8M3002DGL
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:14.803 ParentClass:215 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, networkConnectionEnabled=true, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:14.840 W31OB_SignUp_And_Onboard_Test:30 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:14.841 ParentClass:271 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:14.843 W31OB_SignUp_And_Onboard_Test:38 - Retrieved...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:15.532 W31OB_SignUp_And_Onboard_Test:47 - 
-****** starting test:W31OB_SignUpUser******
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:16.899 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 00:33:33.011 TestListener:39 - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:413)
-	at com.cs.arris.Pages.WelcomeSignupPage.enterValidEmailAddress(WelcomeSignupPage.java:88)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.lambda$7(W31OB_SignUp_And_Onboard_Test.java:70)
-	at com.cs.arris.Workflows.W31OB_SignUp_Workflow.welcomeSignupPage(W31OB_SignUp_Workflow.java:77)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.W31OB_SignUpUser(W31OB_SignUp_And_Onboard_Test.java:69)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:35.527 ParentClass:370 - video path: videos/Android_RZ8M3002DGL/2021-10-08-00-33-03/W31OB_SignUp_And_Onboard_Test/W31OB_SignUpUser.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:41.599 ParentClass:147 - Closing App
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 00:33:41.799 ParentClass:149 - Closing Driver
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:13.321 ParentClass:247 - log path: logs/Android_RZ8M3002DGL
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:29.931 ParentClass:215 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, networkConnectionEnabled=true, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:33.986 W31OB_Signin_And_Onboard_Test:25 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:33.989 ParentClass:271 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:33.992 W31OB_Signin_And_Onboard_Test:29 - Retrieved...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:34.697 W31OB_Signin_And_Onboard_Test:38 - 
-****** starting test:W31OB_Signin_Onboarding******
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:35.997 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 01:46:48.091 TestListener:39 - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:413)
-	at com.cs.arris.Pages.WelcomeSigninPage.enterEmailAddress(WelcomeSigninPage.java:51)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.lambda$W31OB_Signin_Onboarding$6(W31OB_Signin_And_Onboard_Test.java:59)
-	at com.cs.arris.Workflows.W31OB_Signin_Workflow.welcomeSigninPage(W31OB_Signin_Workflow.java:75)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.W31OB_Signin_Onboarding(W31OB_Signin_And_Onboard_Test.java:58)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:50.283 ParentClass:370 - video path: videos/Android_RZ8M3002DGL/2021-10-08-01-46-13/W31OB_Signin_And_Onboard_Test/W31OB_Signin_Onboarding.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:56.139 ParentClass:147 - Closing App
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:46:56.316 ParentClass:149 - Closing Driver
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:51:46.466 ParentClass:247 - log path: logs/Android_RZ8M3002DGL
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:51:57.857 ParentClass:215 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, networkConnectionEnabled=true, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:52:01.832 W31OB_Signin_And_Onboard_Test:25 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:52:01.836 ParentClass:271 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:52:02.546 W31OB_Signin_And_Onboard_Test:38 - 
-****** starting test:W31OB_Signin_Onboarding******
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:52:03.896 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 01:52:16.449 TestListener:39 - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:413)
-	at com.cs.arris.Pages.WelcomeSigninPage.enterEmailAddress(WelcomeSigninPage.java:51)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.lambda$6(W31OB_Signin_And_Onboard_Test.java:59)
-	at com.cs.arris.Workflows.W31OB_Signin_Workflow.welcomeSigninPage(W31OB_Signin_Workflow.java:75)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.W31OB_Signin_Onboarding(W31OB_Signin_And_Onboard_Test.java:58)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:52:18.694 ParentClass:370 - video path: videos/Android_RZ8M3002DGL/2021-10-08-01-51-46/W31OB_Signin_And_Onboard_Test/W31OB_Signin_Onboarding.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:52:24.727 ParentClass:147 - Closing App
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:52:24.944 ParentClass:149 - Closing Driver
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:58:24.289 ParentClass:245 - log path: logs/Android_RZ8M3002DGL
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:58:35.759 ParentClass:214 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:58:35.777 W31OB_SignUp_And_Onboard_Test:30 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:58:35.777 ParentClass:269 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:58:36.533 W31OB_SignUp_And_Onboard_Test:47 - 
-****** starting test:W31OB_SignUpUser******
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:58:37.874 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 01:58:51.361 TestListener:39 - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:411)
-	at com.cs.arris.Pages.WelcomeSignupPage.enterValidEmailAddress(WelcomeSignupPage.java:85)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.lambda$7(W31OB_SignUp_And_Onboard_Test.java:70)
-	at com.cs.arris.Workflows.W31OB_SignUp_Workflow.welcomeSignupPage(W31OB_SignUp_Workflow.java:77)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.W31OB_SignUpUser(W31OB_SignUp_And_Onboard_Test.java:69)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:58:53.654 ParentClass:368 - video path: videos/Android_RZ8M3002DGL/2021-10-08-01-58-24/W31OB_SignUp_And_Onboard_Test/W31OB_SignUpUser.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:59:04.089 W31OB_Signin_And_Onboard_Test:25 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:59:04.092 ParentClass:269 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:59:04.796 W31OB_Signin_And_Onboard_Test:38 - 
-****** starting test:W31OB_Signin_Onboarding******
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:59:05.780 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 01:59:13.449 TestListener:39 - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:411)
-	at com.cs.arris.Pages.WelcomeSigninPage.enterEmailAddress(WelcomeSigninPage.java:51)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.lambda$6(W31OB_Signin_And_Onboard_Test.java:59)
-	at com.cs.arris.Workflows.W31OB_Signin_Workflow.welcomeSigninPage(W31OB_Signin_Workflow.java:75)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.W31OB_Signin_Onboarding(W31OB_Signin_And_Onboard_Test.java:58)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:59:15.330 ParentClass:368 - video path: videos/Android_RZ8M3002DGL/2021-10-08-01-58-24/W31OB_Signin_And_Onboard_Test/W31OB_Signin_Onboarding.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:59:20.705 ParentClass:147 - Closing App
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 01:59:20.984 ParentClass:149 - Closing Driver
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:02:56.551 ParentClass:245 - log path: logs/Android_RZ8M3002DGL
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:13.284 ParentClass:214 - driver initialized: io.appium.java_client.android.AndroidDriver, Capabilities: {app=/Users/prabhu/Documents/apk/app-staging-debug.apk, appPackage=com.arris.sbcBeta, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, version=11, app=/Users/prabhu/Documents/apk/app-staging-debug.apk, automationName=UiAutomator2, deviceName=Android, noReset=false, udid=RZ8M3002DGL}, deviceApiLevel=30, deviceManufacturer=samsung, deviceModel=SM-G973F, deviceName=RZ8M3002DGL, deviceScreenDensity=420, deviceScreenSize=1080x2280, deviceUDID=RZ8M3002DGL, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=11, statBarHeight=112, takesScreenshot=true, udid=RZ8M3002DGL, version=11, viewportRect={left=0, top=112, width=1080, height=1930}, warnings={}, webStorageEnabled=false}
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:13.301 W31OB_SignUp_And_Onboard_Test:30 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:13.302 ParentClass:269 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:13.305 W31OB_SignUp_And_Onboard_Test:38 - Retrieved...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:14.002 W31OB_SignUp_And_Onboard_Test:47 - 
-****** starting test:W31OB_SignUpUser******
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:15.312 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 02:03:38.726 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
-	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:411)
-	at com.cs.arris.Pages.EnterOTPPage.enterPassCode(EnterOTPPage.java:62)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.lambda$8(W31OB_SignUp_And_Onboard_Test.java:80)
-	at com.cs.arris.Workflows.W31OB_SignUp_Workflow.enterOTPPage(W31OB_SignUp_Workflow.java:91)
-	at com.cs.arris.Tests.W31OB_SignUp_And_Onboard_Test.W31OB_SignUpUser(W31OB_SignUp_And_Onboard_Test.java:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@15f35bc3 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 39 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:14.266 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:15.499 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:16.391 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:17.106 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:24.086 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL ERROR] 2021-10-18 14:57:29.919 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: com.android.permissioncontroller:id/permission_allow_one_time_button' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 41 more
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:41.354 ParentClass:368 - video path: videos/Android_RZ8M3002DGL/2021-10-08-02-02-56/W31OB_SignUp_And_Onboard_Test/W31OB_SignUpUser.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:50.801 W31OB_Signin_And_Onboard_Test:25 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:50.804 ParentClass:269 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:50.805 W31OB_Signin_And_Onboard_Test:29 - Retrieved...Sign Up Test Data
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:51.466 W31OB_Signin_And_Onboard_Test:38 - 
-****** starting test:W31OB_Signin_Onboarding******
-
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:03:52.433 DeviceLocationPage:105 - Clicking Only This Time Link on Grant Access Permissions Mini Page
-[logs/Android_RZ8M3002DGL ERROR] 2021-10-08 02:04:06.107 TestListener:39 - java.lang.NullPointerException
-	at com.cs.arris.Pages.CodeVerifiedPage.getCodeVerifiedText(CodeVerifiedPage.java:35)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.lambda$8(W31OB_Signin_And_Onboard_Test.java:69)
-	at com.cs.arris.Workflows.W31OB_Signin_Workflow.codeVerifiedPage(W31OB_Signin_Workflow.java:98)
-	at com.cs.arris.Tests.W31OB_Signin_And_Onboard_Test.W31OB_Signin_Onboarding(W31OB_Signin_And_Onboard_Test.java:68)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/Documents/apk..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/Documents/apk..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0683decc-6eb4-420b-9fbc-e7fbecf10b0a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(<generated>)
+	at com.cs.arris.Pages.DeviceLocationPage.clickOnlyThisTimeLink(DeviceLocationPage.java:107)
+	at com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.lambda$EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test$2(TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.java:90)
+	at com.cs.arris.Workflows.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow.deviceLocationPage(TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow.java:62)
+	at com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test(TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.java:89)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -468,6 +87,90 @@ Driver info: driver.version: AndroidDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:04:08.779 ParentClass:368 - video path: videos/Android_RZ8M3002DGL/2021-10-08-02-02-56/W31OB_Signin_And_Onboard_Test/W31OB_Signin_Onboarding.mp4
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:04:14.180 ParentClass:147 - Closing App
-[logs/Android_RZ8M3002DGL INFO ] 2021-10-08 02:04:14.433 ParentClass:149 - Closing Driver
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:32.200 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-14-56-50/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:42.294 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:42.296 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:42.300 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:42.300 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:42.981 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:43.221 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:43.994 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:44.729 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:55.101 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:55.320 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:56.807 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:57.641 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:59.322 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:57:59.633 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:01.184 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:02.516 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:12.538 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:16.868 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:18.286 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:18.505 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:29.832 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:33.793 EnterValidOTPPage:61 - Entering valid OTP...961503
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:34.686 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:42.506 ErrorCode_0015_1805_Something_Went_Wrong_Page:63 - At Something Went Wrong Page displayed
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:49.202 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-14-56-50/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:58.733 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:58.735 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:58.752 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:59.441 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:59.442 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:58:59.679 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:01.944 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:02.699 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:03.418 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:14.345 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:14.528 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:47.951 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:48.255 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:49.892 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-14-56-50/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:55.196 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 14:59:55.440 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:05:50.494 ParentClass:261 - log path: logs/Android_RZ8M3002DGL
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:05:50.506 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:00.946 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:00.948 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.130 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.133 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.142 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.142 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.144 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.146 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.147 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.148 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.148 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:05.858 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:07.045 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:08.336 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:09.239 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:09.979 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:25.927 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:26.272 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:27.691 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:28.592 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:29.830 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:30.730 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:32.655 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:33.508 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:43.543 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:48.167 EnterValidOTPPage:61 - Entering valid OTP...867333
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:49.733 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:56.441 ErrorCode_0015_1805_Something_Went_Wrong_Page:63 - At Something Went Wrong Page displayed
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:58.366 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:06:59.503 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:00.381 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:09.231 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:09.403 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:09.473 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:10.562 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:20.436 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-15-05-50/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:26.352 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL INFO ] 2021-10-18 15:07:26.570 ParentClass:156 - Quitting Driver

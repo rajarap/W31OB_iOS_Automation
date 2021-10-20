@@ -36,6 +36,13 @@ public class UnPackYourBoxPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
+	
+	public void clickNextButton()
+	{
+		utils.log().info("UnPack your Box Page - Clicked on Next Button");
+		click(nextButton);
+	}
+	
 	@Override
 	public boolean isAt() {
 		super.pause();

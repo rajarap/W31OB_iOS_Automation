@@ -36,6 +36,12 @@ public class SetupHomeNetworkPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
+	public void clickNextButton()
+	{
+		utils.log().info("Setup Home Network Page - Clicked on Next Button");
+		click(nextButton);
+	}
+	
 	@Override
 	public boolean isAt() {
 		super.pause();

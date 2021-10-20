@@ -1,0 +1,769 @@
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:31.570 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:31.589 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:42.805 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:42.806 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:46.869 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:46.873 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:46.879 TC03_Verify_Invalid_OTP_Test:40 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:46.881 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:47.613 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:48.183 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:48.962 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:24:49.716 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:05.416 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:05.727 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:07.230 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:08.147 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:09.422 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:10.326 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:11.941 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:12.766 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:22.877 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:28.961 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:30.449 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:30.748 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:42.178 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:47.317 EnterValidOTPPage:61 - Entering valid OTP...243112
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:48.229 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:25:59.465 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-00-24-31/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:09.583 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:09.585 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:09.620 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:10.371 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:10.377 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:10.624 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:13.102 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:13.843 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:14.560 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:25.055 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:25.288 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:59.162 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:26:59.484 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:27:01.069 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-00-24-31/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:27:06.463 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:27:06.699 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:37.770 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:37.780 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:48.361 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:48.362 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:52.450 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:52.452 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:52.461 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:53.192 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:53.335 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:53.583 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:56.112 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:56.902 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:34:57.631 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:35:13.387 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:35:13.720 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:35:47.830 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:35:48.069 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:35:49.809 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-00-34-37/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:35:55.685 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 00:35:55.906 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:19.913 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:19.922 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:30.998 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:30.999 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:35.293 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:35.297 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:35.317 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:36.111 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:36.283 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:36.530 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:39.163 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:40.146 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:40.853 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:56.542 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:13:56.841 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:14:30.919 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:14:31.263 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:14:32.992 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-01-13-19/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:14:38.890 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:14:39.068 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:01.268 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:01.277 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:11.610 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:11.611 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:15.708 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:15.711 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:15.730 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:16.439 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:16.590 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:16.811 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:19.393 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:20.217 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:20.945 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:36.808 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:25:37.097 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:26:10.702 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:26:10.963 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:26:12.646 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-01-25-01/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:26:18.472 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:26:18.637 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:31:47.809 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:31:47.817 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:31:58.334 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:31:58.335 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:02.385 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:02.388 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:02.409 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:03.113 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:03.238 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:03.488 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:06.058 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:06.857 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:07.597 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:23.782 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:24.137 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:58.166 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:32:58.486 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:33:00.291 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-01-31-47/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:33:06.287 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:33:06.461 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:12.223 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:12.232 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:23.322 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:23.323 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:27.397 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:27.400 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:27.412 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:28.137 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:28.304 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:28.536 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:31.096 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:32.025 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:32.755 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:48.631 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:49:48.942 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:50:22.601 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:50:22.818 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:50:24.582 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-01-49-12/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:50:30.447 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:50:30.619 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:11.870 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:11.878 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:22.460 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:22.461 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:26.687 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:26.694 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:26.714 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:27.436 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:27.630 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:27.868 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:30.433 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:31.198 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:31.916 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:47.719 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:58:47.990 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:59:22.107 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:59:22.367 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:59:24.055 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-01-58-11/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:59:29.941 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 01:59:30.158 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:29.661 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:29.668 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:40.143 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:40.144 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:44.257 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:44.259 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:44.271 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:44.984 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:45.122 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:45.368 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:47.896 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:48.711 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:02:49.441 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:03:05.808 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:03:06.096 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:03:40.221 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:03:40.471 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:03:42.201 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-02-02-29/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:03:48.013 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:03:48.184 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:04.274 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:04.285 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:14.876 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:14.877 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:18.980 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:18.983 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:19.003 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:19.733 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:19.884 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:20.112 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:22.746 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:23.558 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:24.295 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:40.136 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:13:40.470 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:14:14.655 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:14:14.881 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:14:16.518 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-02-13-04/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:14:22.351 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:14:22.498 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:42.994 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:43.003 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:53.737 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:53.738 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:57.791 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:57.794 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:57.810 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:58.573 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:58.737 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:25:58.957 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:01.560 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:02.359 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:03.086 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:19.067 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:19.413 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:53.400 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:53.671 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:26:55.398 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-02-25-42/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:27:01.283 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:27:01.502 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:10.603 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:10.611 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:21.252 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:21.254 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:25.408 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:25.419 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:25.435 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:26.272 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:26.435 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:26.761 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:29.412 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:30.230 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:30.979 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:47.301 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:35:47.628 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:36:21.451 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:36:21.737 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:36:23.509 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-02-35-10/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:36:29.416 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:36:29.733 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:22.043 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:22.052 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:32.767 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:32.768 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:36.776 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:36.778 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:36.788 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:37.506 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:37.651 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:37.865 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:40.524 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:41.540 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:42.282 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:57.938 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:41:58.270 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:42:32.433 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:42:32.703 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:42:34.323 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-02-41-22/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:42:40.168 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:42:40.378 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:45:59.515 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:45:59.525 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:10.359 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:10.360 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:14.492 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:14.496 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:14.518 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:15.231 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:15.371 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:15.621 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:18.172 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:18.968 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:19.722 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:35.573 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:46:35.868 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:47:09.938 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:47:10.199 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:47:11.907 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-02-45-59/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:47:17.744 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 02:47:17.920 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:48:38.843 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:48:38.864 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:48:56.975 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:48:56.976 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:01.774 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:01.775 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:01.780 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:01.781 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:02.477 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:03.051 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:03.830 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:04.627 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:20.522 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:20.855 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:22.351 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:23.332 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:24.513 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:25.428 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:27.125 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:28.007 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:38.167 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:44.602 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:46.201 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:46.531 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:49:58.134 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:02.665 EnterValidOTPPage:61 - Entering valid OTP...530690
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:04.888 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:18.796 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-12-48-38/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:29.901 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:29.902 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:29.916 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:30.602 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:30.608 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:30.855 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:33.340 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:34.109 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:34.845 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:45.710 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:50:45.974 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:19.385 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:19.693 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:21.310 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-12-48-38/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.498 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.499 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.511 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.512 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.512 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.516 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.517 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.518 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:31.518 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:32.216 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:33.356 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:34.708 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:35.448 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:36.172 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:46.739 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:46.996 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:48.514 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:49.394 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:50.439 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:51.304 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:52.941 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:51:53.713 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:03.805 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:07.693 EnterValidOTPPage:61 - Entering valid OTP...683152
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:09.207 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:17.775 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:18.633 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:19.513 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:28.386 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:28.536 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:28.590 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:29.640 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:39.210 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-12-48-38/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:44.625 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 12:52:44.956 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:21.129 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:21.139 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:40.723 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:40.745 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:45.691 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:45.694 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:45.704 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:45.706 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:46.486 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:47.150 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:47.934 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:21:48.673 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:05.066 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:05.366 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:06.927 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:07.881 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:09.134 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:10.116 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:12.126 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:12.994 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:23.080 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:27.515 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:28.996 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:29.294 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:40.671 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:45.167 EnterValidOTPPage:61 - Entering valid OTP...639863
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:22:47.611 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:01.423 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-18-21-21/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:12.629 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:12.631 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:12.651 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:13.389 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:13.392 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:13.641 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:16.574 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:17.459 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:18.197 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:28.905 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:23:29.141 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:03.509 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:03.815 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:05.455 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-18-21-21/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.579 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.580 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.600 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.600 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.600 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.603 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.603 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.604 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:15.604 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:16.298 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:17.709 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:18.976 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:19.746 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:20.497 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:31.051 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:31.277 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:32.748 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:33.719 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:34.825 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:35.729 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:37.834 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:38.568 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:48.669 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:52.925 EnterValidOTPPage:61 - Entering valid OTP...436974
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:24:54.454 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:02.948 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:03.824 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:04.660 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:13.561 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:13.752 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:13.833 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:14.887 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:24.384 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-18-21-21/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:29.819 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 18:25:30.089 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:39:40.356 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:39:40.367 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:39:58.503 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:39:58.508 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:03.548 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:03.551 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:03.555 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:03.556 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:04.259 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:04.879 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:05.655 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:06.427 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:22.307 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:22.657 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:24.161 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:25.064 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:26.184 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:27.183 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:28.731 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:29.594 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:39.705 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:44.046 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:46.366 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:46.685 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:40:58.287 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:02.488 EnterValidOTPPage:61 - Entering valid OTP...950155
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:05.131 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:18.282 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-19-39-40/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:29.080 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:29.082 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:29.101 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:29.854 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:29.857 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:30.115 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:32.708 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:33.487 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:34.238 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:44.814 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:41:45.086 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:18.767 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:19.106 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:20.767 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-19-39-40/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.137 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.139 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.166 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.167 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.167 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.170 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.171 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.171 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.171 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:31.903 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:33.068 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:34.392 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:35.122 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:35.844 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:46.207 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:46.441 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:47.860 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:48.775 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:49.831 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:50.747 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:52.314 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:42:53.129 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:03.289 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:07.371 EnterValidOTPPage:61 - Entering valid OTP...097558
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:08.877 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:17.788 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:18.644 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:19.519 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:28.541 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:28.757 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:28.827 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:29.912 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:39.917 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-19-39-40/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:46.364 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 19:43:46.624 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:19.298 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:19.307 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:36.700 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:36.702 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:41.451 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:41.453 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:41.457 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:41.458 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:42.135 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:42.763 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:43.608 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:44.376 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 20:59:59.960 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:00.258 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:01.791 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:02.827 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:03.950 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:04.860 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:06.573 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:07.473 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:17.648 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:22.201 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:23.716 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:24.048 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:35.638 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:40.582 EnterValidOTPPage:61 - Entering valid OTP...060593
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:43.060 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:00:57.357 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-20-59-19/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:08.403 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:08.407 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:08.426 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:09.185 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:09.188 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:09.490 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:12.058 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:12.804 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:13.529 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:24.021 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:24.259 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:57.595 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:57.881 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:01:59.552 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-20-59-19/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.812 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.814 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.828 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.828 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.828 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.830 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.831 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.831 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:09.831 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:10.507 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:11.623 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:12.949 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:13.718 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:14.470 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:25.396 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:25.623 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:26.981 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:27.913 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:28.952 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:29.820 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:31.355 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:32.144 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:42.188 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:46.722 EnterValidOTPPage:61 - Entering valid OTP...359525
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:48.280 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:57.013 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:57.920 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:02:59.363 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:03:08.232 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:03:08.462 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:03:08.528 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:03:09.595 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:03:19.163 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-20-59-19/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:03:24.555 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 21:03:24.811 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:35:48.823 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-19
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:35:48.831 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:07.625 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:07.626 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:12.706 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:12.713 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:12.726 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:12.728 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:13.511 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:14.142 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:14.889 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:15.635 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:31.632 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:31.925 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:33.503 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:34.416 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:35.603 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:36.523 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:38.378 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:39.250 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:49.357 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:53.725 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:55.987 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:36:56.300 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:07.752 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:12.764 EnterValidOTPPage:61 - Entering valid OTP...204323
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:15.337 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:29.292 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-22-35-48/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:40.053 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:40.071 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:40.089 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:40.823 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:40.828 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:41.058 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:43.478 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:44.273 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:45.036 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:55.645 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:37:55.936 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:29.703 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:29.993 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:31.603 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-22-35-48/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.801 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.803 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.826 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.826 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.827 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.829 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.829 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.829 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:41.830 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:42.537 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:43.698 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:44.984 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:45.725 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:46.486 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:57.467 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:57.722 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:38:59.431 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:00.311 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:01.371 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:02.289 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:03.820 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:04.606 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:14.701 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:18.649 EnterValidOTPPage:61 - Entering valid OTP...634906
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:20.289 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:28.947 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:29.777 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:30.640 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:39.585 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:39.740 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:39.791 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:40.852 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:39:50.347 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-22-35-48/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.565 TC51_Signin_And_Onboard_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.566 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.568 TC51_Signin_And_Onboard_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.568 TC51_Signin_And_Onboard_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.569 TC51_Signin_And_Onboard_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.569 TC51_Signin_And_Onboard_Test:49 - SSID Name : arrisw3132
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.569 TC51_Signin_And_Onboard_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.569 TC51_Signin_And_Onboard_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:00.571 TC51_Signin_And_Onboard_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:01.228 TC51_Signin_And_Onboard_Test:67 - 
+****** starting test:Verify_Signin_And_Onboard******
+
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:01.466 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:02.186 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:02.907 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:13.758 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:13.985 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:15.403 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:16.309 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:17.363 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:18.269 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:21.594 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:22.331 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:34.400 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:38.515 EnterValidOTPPage:61 - Entering valid OTP...508777
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:40.024 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:48.787 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:49.625 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:40:50.478 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:41:12.979 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:41:28.058 ConnectMaxRouterToInternetPage:41 - Successfully Connected to Internet Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:42:08.470 SystemFirmwareUpdatePage:41 - System Firmware Update Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:42:23.934 ErrorCode_0000_1506_Warranty_Support_Page:46 - Warranty and Support Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:42:24.235 NameYourNetwokSSIDPage:55 - Name Your Network Page - Entered SSID Name
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:42:25.624 NameYourNetwokSSIDPage:61 - Name Your Network Page - Entered SSID Password
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:42:27.008 NameYourNetwokSSIDPage:68 - Name Your Network Page  - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:43:10.949 ConnectionToWifiNeededPage:56 - Running App in the Background
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:43:22.527 ConnectionToWifiNeededPage:60 - Running adb shell to login to mAX arrisw3132 network
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:43:25.628 ConnectionToWifiNeededPage:70 - Activating App running in Background
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:43:45.226 ConnectionToWifiNeededPage:83 - Connection Needed Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:44:00.703 CongratulationsPage:42 - Congratulations Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:44:16.321 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:44:32.708 InstallAdditionalSatellitePage:49 - Install Additonal Satellite Dialog - Clicked on Install Later Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:44:38.049 NetworkOptimizationDialog:42 - Network Optimization Dialog - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:45:03.720 HomePage:64 - Network Optimization Dialog2 - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:45:09.195 HomePage:58 - You are connected to your arrisw3132 home network....Happy Surfing
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:45:18.874 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-19-22-35-48/TC51_Signin_And_Onboard_Test/Verify_Signin_And_Onboard.mp4
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:45:24.425 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-19 INFO ] 2021-10-19 22:45:24.617 ParentClass:156 - Quitting Driver

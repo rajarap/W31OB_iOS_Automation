@@ -31,6 +31,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -41,6 +42,7 @@ import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
+import com.cs.arris.JsonMappers.Signin_TestData;
 import com.cs.arris.Reports.ExtentReport;
 import com.cs.arris.Utilities.TestUtils;
 
@@ -49,6 +51,8 @@ import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.InteractsWithApps;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.SupportsNetworkStateManagement;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.screenrecording.CanRecordScreen;
@@ -68,12 +72,14 @@ public class ParentClass
 	protected static ThreadLocal <String> platformName = new ThreadLocal<String>();
 	protected static ThreadLocal <String> deviceName = new ThreadLocal<String>();
 	protected static ThreadLocal <String> dateTime = new ThreadLocal<String>();
+//	protected static ThreadLocal <Properties> otpEmailprops = new ThreadLocal<Properties>();
 	private static AppiumDriverLocalService server;
 	
 	TestUtils utils = new TestUtils();
+	public AndroidDriver andDriver ;
 	public AppiumDriver<MobileElement> driver;
 	public AndroidDriver<MobileElement> androidDriver;
-	DesiredCapabilities desiredCapabilities ;
+	public DesiredCapabilities desiredCapabilities ;
 	public URL url;
 	public InputStream inputStream = null;
 	public InputStream stringsis = null;
@@ -83,7 +89,8 @@ public class ParentClass
 	public String dvcName;
 	public File ssFile;
 	public String OTP;
-	public String randomEmailAdress;
+	
+	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
 //	@BeforeSuite
 //	public void beforeSuite() throws Exception
@@ -103,7 +110,7 @@ public class ParentClass
 	
 	public ParentClass() 
 	{ 
-		//PageFactory.initElements(new AppiumFieldDecorator(getDriver(), Duration.ofSeconds(10)), this); 
+		
 	}
 	
 //	public boolean checkIfAppiumServerIsRunnning(int port) throws Exception {
@@ -146,10 +153,8 @@ public class ParentClass
 			}
 		utils.log().info("Closing App");
 		getDriver().closeApp();
-		utils.log().info("Closing Driver");
-		driver.close();
 		utils.log().info("Quitting Driver");
-		driver.quit();
+		getDriver().quit();
 		
 //		server.stop();
 //		utils.log().info("Appium server stopped");
@@ -202,7 +207,7 @@ public class ParentClass
 			
 			if(getPlatformName().equalsIgnoreCase("Android"))
 			{
-				System.out.println("Inside Android DesiredCapabilities...Platform Name ---> : " + getPlatformName());
+				utils.log().info("Setting " + getPlatformName() + " driver capabilities");
 				desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("androidAutomationName"));
 				desiredCapabilities.setCapability(MobileCapabilityType.UDID, getProps().getProperty("androidUDID"));
 				desiredCapabilities.setCapability(MobileCapabilityType.VERSION, getProps().getProperty("androidVersion"));
@@ -210,32 +215,43 @@ public class ParentClass
 				desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, false);
 				driver = new AndroidDriver<MobileElement>(url, desiredCapabilities);
 				setDriver(driver);
-				System.out.println("Android Driver is set to the Thread Local context =======> "+ getDriver().getPlatformName());
-				utils.log().info("driver initialized: " + getDriver()); 
-				//PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
+				getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+				utils.log().info("Android Driver is set to the Thread Local context " + getDriver().getPlatformName());
+				utils.log().info(getPlatformName() + " driver initialized: "); 
+			}
+			if(getPlatformName().equalsIgnoreCase("iOS"))
+			{
+				utils.log().info("Setting " + getPlatformName() + " driver capabilities");
+				desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("iOSAutomationName"));
+				desiredCapabilities.setCapability(MobileCapabilityType.UDID, getProps().getProperty("androidUDID"));
+				desiredCapabilities.setCapability(MobileCapabilityType.APP, getProps().getProperty("iOSAppLocation"));
+				desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, false);
+				desiredCapabilities.setCapability(MobileCapabilityType.SUPPORTS_ALERTS, true);
+				setDriver(new IOSDriver<MobileElement>(url, desiredCapabilities));
+				utils.log().info("iOS Driver is set to the Thread Local context " + getDriver().getPlatformName());
+				utils.log().info(getPlatformName() + " driver initialized: "); 
 			}
 		}catch (Exception e) 
 		{
-			  utils.log().fatal("Unable to initialization driver...... ABORTING !!!\n" + e.toString());
-		  } 
-	  }
-	
-	@BeforeTest
-	public void beforeTest()
-	{
-		
+		  utils.log().fatal("Unable to initialize " + getPlatformName() + " driver...... ABORTING !!!\n" + e.toString());
+		} 
 	}
 	
-	  @AfterTest
-	  public void afterTest() 
-	  {
-		  closeApp();
-	  
-	  }
+		@BeforeTest
+		public void beforeTest()
+		{
+			launchApp();
+		}
+	
+		@AfterTest
+		public void afterTest() 
+		{
+			closeApp();
+		}
 	
 	  public void loadLogs() throws Exception 
 	  {
-		  String strFile = "logs" + File.separator + getPlatformName() + "_" + getUDID();
+		  String strFile = "logs" + File.separator + getPlatformName() + "_" + getUDID() + File.separator + utils.onlyDate();
 			File logFile = new File(strFile);
 			if (!logFile.exists()) {
 				logFile.mkdirs();
@@ -249,7 +265,7 @@ public class ParentClass
 	  {
 			//load config.properties and assign properties object to properties ThreadLocal
 			String propFileName = "config.properties";
-			utils.log().info("load " + propFileName);
+			utils.log().info("loading... " + propFileName);
 			inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
 			try {
 				properties.load(inputStream);
@@ -257,12 +273,12 @@ public class ParentClass
 				e.printStackTrace();
 			}
 			setProps(properties);
-			System.out.println("Config.properties object set to Thread Local");
+			utils.log().info("Config.properties object is set to Thread Local");
 	  }
 	  
 	  public void loadTestData(String filePath)
 	  {
-			//load the strings.xml file and assign strings object to strings ThreadLocal
+			//load the json file and assign strings object to strings ThreadLocal
 			try 
 			{
 				String dataFilename = filePath; 
@@ -280,7 +296,7 @@ public class ParentClass
 			try 
 			{
 				String xmlFileName = stringsFile; 
-				utils.log().info("load " + xmlFileName);
+				utils.log().info("loading... " + xmlFileName);
 				stringsis = getClass().getClassLoader().getResourceAsStream(xmlFileName);
 				setStrings(utils.parseStringXML(stringsis));
 			} catch (Exception e) {
@@ -294,7 +310,7 @@ public class ParentClass
 			try 
 			{
 				String xmlFileName = errorFile; 
-				utils.log().info("load " + xmlFileName);
+				utils.log().info("loading... " + xmlFileName);
 				errorCode = getClass().getClassLoader().getResourceAsStream(xmlFileName);
 				setErrorCode(utils.parseStringXML(errorCode));
 			} catch (Exception e) {
@@ -336,6 +352,10 @@ public class ParentClass
 	public Properties getProps() { return props.get(); }
 	 
 	public void setProps(Properties props2) { props.set(props2); }
+	
+//	public Properties getOtpProps() { return otpEmailprops.get(); }
+//	 
+//	public void setOtpProps(Properties otpProps) { otpEmailprops.set(otpProps); }
 	
 	@BeforeMethod
 	public void beforeMethod() 
@@ -394,6 +414,11 @@ public class ParentClass
 		  e.clear();
 	  }
 	  
+	  public void click(WebElement w) {
+		  waitForVisibility(w);
+		  w.click();
+	  }
+	  
 	  public void click(MobileElement e) {
 		  waitForVisibility(e);
 		  e.click();
@@ -407,7 +432,7 @@ public class ParentClass
 	  }
 	  
 	  public void sendKeys(MobileElement e, String txt) {
-		  //waitForVisibility(e);
+		  waitForVisibility(e);
 		  e.sendKeys(txt);
 	  }
 	  
@@ -467,6 +492,7 @@ public class ParentClass
 	  
 	  public void takeScreenshot(String methodName, ITestResult result) 
 	  {
+		  	System.setProperty("org.uncommons.reportng.escape-output", "false");
 		  	String ssPath = "Screenshots" + File.separator + getPlatformName() + "_" + getUDID() + File.separator + utils.onlyDate();
 			ssFile = new File(ssPath);
 			if (!ssFile.exists()) 
@@ -479,27 +505,15 @@ public class ParentClass
 			    } catch (IOException e) {
 			        e.printStackTrace();
 			    }
+			    Reporter.log("<a href = " + ssFile.getAbsolutePath() + File.separator + result.getTestClass().getRealClass().getSimpleName() + File.separator + methodName + ".jpg" + ">screenshot</a>");
 		}
 	  
-		 public void setBlueTooth(String statusToSet, MobileElement bluetoothIcon) 
-		 {
-		        Capabilities cap = getDriver().getCapabilities();
-		        try {
-		            Runtime.getRuntime().exec("adb -s " + cap.getCapability(MobileCapabilityType.UDID).toString() + " shell am start -a android.settings.BLUETOOTH_SETTINGS");
-		            //MobileElement bluetoothIcon = driver.findElementById("com.android.settings:id/switch_text");
-		            String actualStatus = bluetoothIcon.getText();
-		            System.out.println(actualStatus);
-		            if (!actualStatus.equalsIgnoreCase(statusToSet)) {
-		                Runtime.getRuntime().exec("adb -s " + cap.getCapability(MobileCapabilityType.UDID).toString() + " shell input keyevent 19");
-		                Runtime.getRuntime().exec("adb -s " + cap.getCapability(MobileCapabilityType.UDID).toString() + " shell input keyevent 23");
-		                Runtime.getRuntime().exec("adb -s " + cap.getCapability(MobileCapabilityType.UDID).toString() + " shell input keyevent 3");
-		            }
-		        } catch (IOException e) {
-		            e.printStackTrace();
-		            //android.widget.Switch[@resource-id='com.android.settings:id/switch_widget']
-		            //aandroid.widget.Switch[@text='Bluetooth, On']
-		        }
-		    }
+
+		public void toggleWiFI()
+		{
+			((AndroidDriver) this.getDriver()).toggleWifi();
+		}
+
 		 
 		 public void pause()
 		 {

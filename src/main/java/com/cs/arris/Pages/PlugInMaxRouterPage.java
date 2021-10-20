@@ -36,6 +36,12 @@ public class PlugInMaxRouterPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
+	public void clickNextButton()
+	{
+		utils.log().info("Plugin Max Router Page - Clicked on Next Button");
+		click(nextButton);
+	}
+	
 	@Override
 	public boolean isAt() {
 		super.pause();

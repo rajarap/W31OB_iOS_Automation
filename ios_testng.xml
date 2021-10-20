@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="iOS : W31-OnBoarding">
+	<listeners>
+		<listener class-name="com.cs.arris.Listeners.TestListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	</listeners>
+	<parameter name="platform" value="iOS" />
+	<parameter name="device" value="iPhone X" />
+	
+  <!--<test name="W31-OnBoarding-Smoke-Test">
+    <classes>
+      <class name="com.cs.arris.Tests.SampleTest"/>
+      <class name="com.cs.arris.Tests.W31OB_Enter_Invalid_OTP_Test"/>
+      <class name="com.cs.arris.Tests.W31OB_Error_Code_0002_1002_Test"/>
+    </classes>
+  </test>  Test 
+</suite> Suite -->
+      
+      
+  <test name="SampleTest">
+    <classes>
+      <class name="com.cs.arris.Tests.SampleTest"/>
+    </classes>
+  </test> 
+
+  <test name="W31OB_Error_Code_0005_1200_No_Bluetooth_Connection_Test">
+    <classes>
+      <class name="com.cs.arris.Tests.W31OB_No_Bluetooth_Connection_Test"/>
+    </classes>
+  </test>
+  
+   <test name="W31OB_Error_Code_0000_1002_No_Internet_Connection">
+    <classes>
+      <class name="com.cs.arris.Tests.W31OB_Error_Code_0002_1002_Test"/>
+    </classes>
+  </test> 
+  
+  <test name="W31OB_Entering_Invalid_OTP_Test">
+    <classes>
+      <class name="com.cs.arris.Tests.W31OB_Enter_Invalid_OTP_Test"/>
+    </classes>
+  </test>
+  
+</suite> 

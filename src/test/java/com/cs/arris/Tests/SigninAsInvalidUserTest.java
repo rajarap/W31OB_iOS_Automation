@@ -2,6 +2,10 @@ package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.lang.reflect.Method;
 
 import org.testng.annotations.BeforeClass;

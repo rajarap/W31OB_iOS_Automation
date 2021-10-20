@@ -1,0 +1,1394 @@
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:53:52.907 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:53:52.917 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:10.603 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:10.604 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.309 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.311 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.316 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.317 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.318 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.319 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3132
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.320 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.321 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.322 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:15.972 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:Verify_Signin_And_Onboard******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:16.507 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:17.286 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:18.017 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:33.801 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:34.052 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:35.558 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:36.432 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:37.535 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:38.399 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:41.693 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:42.531 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:52.552 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:57.138 EnterValidOTPPage:61 - Entering valid OTP...548735
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:54:59.191 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 00:55:14.202 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.lambda$Verify_Signin_And_Onboard$9(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:100)
+	at com.cs.arris.Workflows.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.codeVerifiedPage(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java:113)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.Verify_Signin_And_Onboard(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@29ebbdf4 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 37 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 39 more
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:55:18.083 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-00-53-52/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test/Verify_Signin_And_Onboard.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:55:23.989 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:55:24.178 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:59:59.011 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 00:59:59.031 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:16.487 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:16.488 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.308 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.311 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.318 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.319 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.321 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.323 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3132
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.325 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.326 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:21.326 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:22.022 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:22.663 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:23.434 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:24.202 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:39.953 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:40.190 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:41.695 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:42.585 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:43.733 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:44.687 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:48.009 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:48.851 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:00:58.886 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:01:03.260 EnterValidOTPPage:61 - Entering valid OTP...004242
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:01:04.882 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 01:01:19.799 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.lambda$EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test$9(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:100)
+	at com.cs.arris.Workflows.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.codeVerifiedPage(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java:113)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@542f6803 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 37 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 39 more
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:01:23.526 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-00-59-58/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test/EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:01:29.404 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:01:29.592 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:17.113 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:17.124 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:28.636 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:28.638 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.384 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.389 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.392 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.394 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.398 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.401 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3132
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.405 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.406 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:33.407 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:34.095 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:34.632 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:35.437 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:36.162 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:51.875 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:52.170 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:53.587 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:54.473 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:55.722 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:56.512 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:05:59.868 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:00.711 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:10.734 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:15.174 EnterValidOTPPage:61 - Entering valid OTP...954111
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:16.688 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:22.258 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:23.108 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:23.994 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:06:45.082 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 01:07:06.768 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.id: com.arris.sbcBeta:id/btn_generic_error_retry}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:400)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:423)
+	at com.cs.arris.Pages.ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.clickTryAgainButton(ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.java:65)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.lambda$EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test$15(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:118)
+	at com.cs.arris.Workflows.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.maxRouterConnectedToInternetPage(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java:163)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.arris.sbcBeta:id/btn_generic_error_retry})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3667faa8 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.arris.sbcBeta:id/btn_generic_error_retry})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 47 more
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:07:14.313 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-01-05-17/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test/EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:07:20.353 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:07:20.747 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:21.571 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:21.580 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:32.752 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:32.754 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.438 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.441 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.449 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.451 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.454 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.456 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3132
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.458 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.461 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:37.462 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:38.151 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:38.653 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:39.428 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:40.167 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:56.168 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:56.511 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:57.941 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:08:59.484 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:00.690 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:01.600 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:04.920 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:05.766 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:15.801 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:20.322 EnterValidOTPPage:61 - Entering valid OTP...792844
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:21.854 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:27.630 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:28.576 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:29.485 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:09:52.454 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 01:10:34.464 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.id: com.arris.sbcBeta:id/btn_generic_error_retry}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:400)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:423)
+	at com.cs.arris.Pages.ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.clickTryAgainButton(ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.java:65)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.lambda$EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test$15(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:118)
+	at com.cs.arris.Workflows.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.maxRouterConnectedToInternetPage(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java:163)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.arris.sbcBeta:id/btn_generic_error_retry})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6198e9b5 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.arris.sbcBeta:id/btn_generic_error_retry})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 47 more
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:10:44.482 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-01-08-21/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test/EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:10:50.310 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:10:50.474 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:11.611 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:11.622 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:22.771 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:22.772 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.448 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.450 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.457 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.460 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.462 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.464 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3132
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.467 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.469 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:27.470 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:28.182 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:28.684 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:29.457 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:30.195 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:45.947 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:46.186 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:47.729 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:48.565 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:49.770 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:50.640 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:53.940 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:12:54.772 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:13:04.805 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:13:08.976 EnterValidOTPPage:61 - Entering valid OTP...364137
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:13:10.540 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:13:16.403 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:13:17.240 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:13:18.111 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:13:39.625 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:24:53.482 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:24:53.495 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:04.899 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:04.901 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.722 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.726 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.733 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.737 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.739 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.741 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3132
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.744 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.746 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:09.747 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:10.450 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:10.946 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:11.703 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:12.461 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:28.373 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:28.633 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:30.083 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:30.989 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:32.087 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:33.023 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:36.354 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:37.193 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:47.214 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:25:51.966 EnterValidOTPPage:61 - Entering valid OTP...364137
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 01:26:03.829 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:400)
+	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:435)
+	at com.cs.arris.Pages.EnterValidOTPPage.enterValidPassCode(EnterValidOTPPage.java:62)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.lambda$EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test$8(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:95)
+	at com.cs.arris.Workflows.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.enterOTPPage(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java:104)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@619f2afc (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etConfirmPasscode']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 47 more
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:26:06.740 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-01-24-53/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test/EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:26:12.566 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:26:12.764 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:42.496 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:42.507 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:53.731 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:53.733 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.544 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.548 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.556 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.559 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.562 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.565 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3130
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.569 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.570 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:58.571 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:59.322 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:27:59.880 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:00.655 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:01.373 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:17.148 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:17.389 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:18.876 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:19.761 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:20.968 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:21.874 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:25.227 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:26.054 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:36.085 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:42.163 EnterValidOTPPage:61 - Entering valid OTP...561163
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:43.754 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:58.051 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:28:59.347 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:29:00.206 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:29:29.294 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:02.561 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:02.571 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:13.902 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:13.907 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.587 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.590 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.596 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : arris
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.599 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.601 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : arrisuser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.603 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3134
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.605 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.609 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:18.610 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:19.347 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:19.868 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:20.668 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:21.391 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:37.148 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:37.430 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:38.878 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:39.770 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:40.970 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:41.854 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:45.132 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:45.976 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:56.008 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:38:57.949 EnterValidOTPPage:61 - Entering valid OTP...null
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 01:38:58.914 TestListener:39 - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
+	at com.cs.arris.Base.ParentClass.sendKeys(ParentClass.java:436)
+	at com.cs.arris.Pages.EnterValidOTPPage.enterValidPassCode(EnterValidOTPPage.java:62)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.lambda$EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test$8(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:95)
+	at com.cs.arris.Workflows.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.enterOTPPage(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java:104)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:39:01.695 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-01-38-02/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test/EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:39:07.674 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:39:07.884 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:15.591 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:15.602 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:26.687 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:26.689 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.480 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.483 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.493 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : arris
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.498 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.501 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : arrisuser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.504 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3134
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.507 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.512 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:31.514 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:32.209 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:32.784 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:33.608 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:34.316 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:50.156 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:50.474 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:51.930 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:52.874 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:53.952 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:54.890 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:58.229 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:46:59.447 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:47:09.478 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:47:14.129 EnterValidOTPPage:61 - Entering valid OTP...556864
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:47:15.598 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:47:30.176 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:47:31.008 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:47:31.870 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:47:55.896 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:01.748 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:01.758 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:18.129 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:18.130 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.025 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.029 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.034 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : arris
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.035 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.036 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : arrisuser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.037 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3134
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.039 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.039 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.040 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:23.730 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:24.293 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:25.039 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:25.769 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:41.587 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:41.820 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:43.292 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:44.164 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:45.254 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:46.133 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:49.440 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:56:50.300 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:57:00.321 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:57:11.105 EnterValidOTPPage:61 - Entering valid OTP...199927
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:57:12.728 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:57:27.208 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:57:28.055 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:57:28.951 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 01:57:50.108 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:42.977 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:42.989 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:54.577 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:54.579 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.323 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.328 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.336 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : arris
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.337 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.339 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : arrisuser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.340 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3134
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.341 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.342 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:01:59.342 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:00.028 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:00.575 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:01.368 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:02.114 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:17.895 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:18.185 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:19.670 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:20.504 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:21.676 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:22.525 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:25.823 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:26.744 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:36.772 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:41.791 EnterValidOTPPage:61 - Entering valid OTP...078106
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:43.334 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:57.376 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:58.234 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:02:59.308 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 02:03:20.554 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:28.627 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:28.673 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:42.078 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:42.090 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:46.964 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:46.970 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:46.991 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:46.992 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:47.730 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:48.399 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:49.239 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:17:49.984 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:05.872 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:06.237 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:07.731 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:08.633 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:09.665 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:10.589 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:12.050 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:12.899 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:23.015 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:27.200 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:28.609 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:28.955 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:40.321 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:44.640 EnterValidOTPPage:61 - Entering valid OTP...935194
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:18:46.771 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:05.546 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-11-17-28/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:16.466 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:16.468 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:16.485 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:17.226 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:17.229 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:17.457 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:19.870 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:20.623 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:21.362 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:32.263 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:19:32.500 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:06.296 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:06.567 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:08.197 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-11-17-28/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.682 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.684 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.697 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.697 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.697 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.703 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.704 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.706 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:18.706 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:19.381 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:20.467 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:21.685 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:22.441 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:23.194 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:33.903 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:34.107 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:35.600 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:36.416 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:37.538 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:38.440 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:40.017 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:40.767 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:50.847 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:55.033 EnterValidOTPPage:61 - Entering valid OTP...031526
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:20:56.575 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:10.947 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:11.825 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:12.651 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:21.565 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:21.778 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:21.836 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:22.911 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:32.287 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-11-17-28/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.670 TC51_Signin_And_Onboard_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.672 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.680 TC51_Signin_And_Onboard_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.681 TC51_Signin_And_Onboard_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.681 TC51_Signin_And_Onboard_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.682 TC51_Signin_And_Onboard_Test:49 - SSID Name : arrisw3134
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.682 TC51_Signin_And_Onboard_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.683 TC51_Signin_And_Onboard_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:42.684 TC51_Signin_And_Onboard_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:43.322 TC51_Signin_And_Onboard_Test:67 - 
+****** starting test:Verify_Signin_And_Onboard******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:43.572 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:44.339 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:45.058 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:56.408 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:56.628 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:58.056 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:21:59.406 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:00.701 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:01.563 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:04.891 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:05.665 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:17.737 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:21.912 EnterValidOTPPage:61 - Entering valid OTP...361490
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:23.347 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 11:22:37.911 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Tests.TC51_Signin_And_Onboard_Test.lambda$Verify_Signin_And_Onboard$9(TC51_Signin_And_Onboard_Test.java:100)
+	at com.cs.arris.Workflows.TC51_Signin_And_Onboard_Workflow.codeVerifiedPage(TC51_Signin_And_Onboard_Workflow.java:112)
+	at com.cs.arris.Tests.TC51_Signin_And_Onboard_Test.Verify_Signin_And_Onboard(TC51_Signin_And_Onboard_Test.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7574d4ad (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 37 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 39 more
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:41.387 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-11-17-28/TC51_Signin_And_Onboard_Test/Verify_Signin_And_Onboard.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:46.818 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:22:47.090 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:28.677 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:28.709 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:47.194 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:47.200 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.313 TC51_Signin_And_Onboard_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.320 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.326 TC51_Signin_And_Onboard_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.327 TC51_Signin_And_Onboard_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.329 TC51_Signin_And_Onboard_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.329 TC51_Signin_And_Onboard_Test:49 - SSID Name : arrisw3134
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.332 TC51_Signin_And_Onboard_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.334 TC51_Signin_And_Onboard_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:52.336 TC51_Signin_And_Onboard_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:53.071 TC51_Signin_And_Onboard_Test:67 - 
+****** starting test:Verify_Signin_And_Onboard******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:53.684 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:54.475 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:46:55.242 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:11.450 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:11.754 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:13.329 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:14.276 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:15.298 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:16.201 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:19.561 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:20.506 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:32.598 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:37.207 EnterValidOTPPage:61 - Entering valid OTP...227166
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:38.831 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:53.511 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:54.387 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:47:55.263 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:48:19.849 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:48:34.973 ConnectMaxRouterToInternetPage:41 - Successfully Connected to Internet Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:49:15.304 SystemFirmwareUpdatePage:41 - System Firmware Update Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:49:30.744 ErrorCode_0000_1506_Warranty_Support_Page:46 - Warranty and Support Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:49:31.030 NameYourNetwokSSIDPage:55 - Name Your Network Page - Entered SSID Name
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:49:32.490 NameYourNetwokSSIDPage:61 - Name Your Network Page - Entered SSID Password
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:49:33.317 NameYourNetwokSSIDPage:68 - Name Your Network Page  - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:50:17.266 ConnectionToWifiNeededPage:56 - Running App in the Background
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:50:28.816 ConnectionToWifiNeededPage:60 - Running adb shell to login to mAX arrisw3134 network
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:50:31.913 ConnectionToWifiNeededPage:70 - Activating App running in Background
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:50:51.850 ConnectionToWifiNeededPage:83 - Connection Needed Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:51:07.361 CongratulationsPage:42 - Congratulations Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:51:23.347 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:51:38.888 InstallAdditionalSatellitePage:49 - Install Additonal Satellite Dialog - Clicked on Install Later Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:51:44.279 NetworkOptimizationDialog:42 - Network Optimization Dialog - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:52:10.118 HomePage:64 - Network Optimization Dialog2 - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:52:15.450 HomePage:58 - You are connected to your arrisw3134 home network....Happy Surfing
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:52:24.109 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-11-46-28/TC51_Signin_And_Onboard_Test/Verify_Signin_And_Onboard.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:52:29.929 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 11:52:30.112 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:01.640 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:01.651 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:29.091 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:29.093 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.807 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.812 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.818 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.819 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.820 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.823 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3135
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.824 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.824 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:33.824 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:34.513 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:35.711 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:36.170 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:36.894 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:52.726 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:09:52.995 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 ERROR] 2021-10-20 13:10:09.780 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.all({By.xpath: //android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/radioButton_product_category_selection'],By.xpath: //android.widget.ImageView[@bounds='[905,1079][965,1139]'],By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView})}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:400)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:423)
+	at com.cs.arris.Pages.SelectYourDevicePage.selectSurfboardMaxOption(SelectYourDevicePage.java:63)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.lambda$EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test$4(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:82)
+	at com.cs.arris.Workflows.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.selectYourDevicePage(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java:75)
+	at com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test(TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/radioButton_product_category_selection'],By.xpath: //android.widget.ImageView[@bounds='[905,1079][965,1139]'],By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView})})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@71904469 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/radioButton_product_category_selection'],By.xpath: //android.widget.ImageView[@bounds='[905,1079][965,1139]'],By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView})})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 47 more
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:10:12.813 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-13-09-01/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test/EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:10:18.928 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:10:19.114 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:15:46.545 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:15:46.557 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:15:57.915 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:15:57.916 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.677 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.680 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.689 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.693 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.696 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.699 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3135
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.704 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.705 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:02.715 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:03.480 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:04.014 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:04.789 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:05.520 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:21.338 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:21.613 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:26.984 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:27.838 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:28.942 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:29.854 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:35.176 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:35.981 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:46.020 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:50.403 EnterValidOTPPage:61 - Entering valid OTP...717045
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:16:51.894 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:17:01.063 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:17:01.903 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:17:02.762 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:17:24.140 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:21:46.914 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:21:46.925 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:21:57.936 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:21:57.938 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.657 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.660 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.665 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:40 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.668 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.670 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:46 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.673 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:49 - SSID Name : arrisw3135
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.676 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.679 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:02.680 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:03.392 TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test:67 - 
+****** starting test:EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:03.894 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:04.683 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:05.410 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:21.274 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:21.535 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:26.924 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:27.795 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:29.000 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:29.883 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:35.185 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:36.018 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:46.036 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:50.240 EnterValidOTPPage:61 - Entering valid OTP...066101
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:22:51.701 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:23:01.031 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:23:01.959 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:23:02.882 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 13:23:24.052 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:00.378 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:00.392 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:18.398 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:18.401 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.414 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.416 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.426 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.426 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.428 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.430 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : surfboard
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.431 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.432 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:23.432 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:24.182 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:25.372 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:26.604 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:27.392 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:28.171 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:43.939 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:44.224 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:45.657 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:46.543 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:47.608 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:48.476 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:50.056 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:34:50.903 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:00.939 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:05.364 EnterValidOTPPage:61 - Entering valid OTP...398806
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:06.880 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:15.166 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:16.092 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:17.034 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:25.998 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:26.235 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:26.298 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:27.339 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:37.474 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-14-34-00/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:43.388 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:35:43.620 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:22.494 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:22.504 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:33.719 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:33.720 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.719 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.722 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.731 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.732 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.734 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.736 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.738 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.738 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:38.739 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:39.428 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:40.489 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:41.768 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:42.554 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:43.278 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:59.357 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:37:59.600 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:01.073 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:01.927 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:02.925 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:03.828 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:05.582 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:06.353 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:16.388 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:22.272 EnterValidOTPPage:61 - Entering valid OTP...110774
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:23.949 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:38.242 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:39.109 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:39.989 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:48.847 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:49.046 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:49.110 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:50.146 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:38:59.908 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-14-37-22/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:39:05.868 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 14:39:06.094 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:26.305 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-20
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:26.315 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:45.320 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:45.322 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:50.300 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:50.303 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:50.319 TC03_Verify_Invalid_OTP_Test:40 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:50.322 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:51.207 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:51.893 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:52.675 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:53:53.466 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:09.817 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:10.133 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:11.671 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:12.614 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:13.846 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:14.818 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:16.562 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:17.391 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:27.484 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:33.197 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:34.698 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:35.002 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:46.393 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:51.892 EnterValidOTPPage:61 - Entering valid OTP...370296
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:54:54.100 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:13.156 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-15-53-26/TC03_Verify_Invalid_OTP_Test/Verify_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:24.454 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:24.456 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:24.470 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:25.175 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:25.177 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:25.419 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:27.834 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:28.587 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:29.322 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:39.853 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:55:40.086 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:13.914 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:14.195 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:15.879 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-15-53-26/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.139 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:45 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.141 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.163 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:51 - Retrieved...Bluetooth Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.164 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:54 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.164 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.170 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:58 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.170 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:61 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.171 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:64 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.171 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:66 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:26.859 TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test:76 - ****** starting test:EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:27.899 BlueToothPage:89 - Clicked Allow button to disable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:29.151 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:30.009 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:30.712 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:42.042 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:42.253 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:43.571 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:44.415 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:45.566 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:46.370 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:47.849 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:48.662 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:56:58.748 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:03.964 EnterValidOTPPage:61 - Entering valid OTP...470176
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:05.521 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:19.398 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:20.278 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:21.159 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:30.079 Error_0005_1200_Bluetooth_Connection_Failed_Page:78 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Error Code
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:30.241 Error_0005_1200_Bluetooth_Connection_Failed_Page:60 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Text
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:30.307 Error_0005_1200_Bluetooth_Connection_Failed_Page:66 - Bluetooth Connection Failed Page - Retrieving Bluetooth Connection Failed Message
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:31.404 BlueToothPage:67 - Clicked Allow button to enable Bluetooth
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:41.058 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-15-53-26/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test/EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.798 TC51_Signin_And_Onboard_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.802 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.818 TC51_Signin_And_Onboard_Test:40 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.818 TC51_Signin_And_Onboard_Test:43 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.819 TC51_Signin_And_Onboard_Test:46 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.819 TC51_Signin_And_Onboard_Test:49 - SSID Name : arrisw3136
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.820 TC51_Signin_And_Onboard_Test:52 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.822 TC51_Signin_And_Onboard_Test:55 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:51.822 TC51_Signin_And_Onboard_Test:57 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:52.507 TC51_Signin_And_Onboard_Test:67 - 
+****** starting test:Verify_Signin_And_Onboard******
+
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:52.757 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:53.494 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:57:54.215 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:05.350 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:05.582 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:07.077 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:07.888 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:08.946 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:09.812 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:13.146 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:13.902 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:25.978 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:31.518 EnterValidOTPPage:61 - Entering valid OTP...485761
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:33.012 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:47.227 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:48.111 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:58:48.980 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:59:16.335 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 15:59:31.359 ConnectMaxRouterToInternetPage:41 - Successfully Connected to Internet Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:00:11.705 SystemFirmwareUpdatePage:41 - System Firmware Update Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:00:27.227 ErrorCode_0000_1506_Warranty_Support_Page:46 - Warranty and Support Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:00:27.488 NameYourNetwokSSIDPage:55 - Name Your Network Page - Entered SSID Name
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:00:28.917 NameYourNetwokSSIDPage:61 - Name Your Network Page - Entered SSID Password
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:00:30.326 NameYourNetwokSSIDPage:68 - Name Your Network Page  - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:01:14.461 ConnectionToWifiNeededPage:56 - Running App in the Background
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:01:26.153 ConnectionToWifiNeededPage:60 - Running adb shell to login to mAX arrisw3136 network
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:01:29.187 ConnectionToWifiNeededPage:70 - Activating App running in Background
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:01:48.969 ConnectionToWifiNeededPage:83 - Connection Needed Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:02:04.651 CongratulationsPage:42 - Congratulations Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:02:20.488 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:02:36.613 InstallAdditionalSatellitePage:49 - Install Additonal Satellite Dialog - Clicked on Install Later Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:02:41.972 NetworkOptimizationDialog:42 - Network Optimization Dialog - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:03:08.392 HomePage:64 - Network Optimization Dialog2 - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:03:13.729 HomePage:58 - You are connected to your arrisw3136 home network....Happy Surfing
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:03:22.272 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-20-15-53-26/TC51_Signin_And_Onboard_Test/Verify_Signin_And_Onboard.mp4
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:03:27.858 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-20 INFO ] 2021-10-20 16:03:28.082 ParentClass:156 - Quitting Driver

@@ -45,16 +45,19 @@ public class AccessResourcesPage extends ParentClass implements Page
 
 	public void clickwhileUsingTheApp() 
 	{
+		utils.log().info("Access Resources - Clicked on While Using This App Link");
 		click(whileUsingTheAppLink);
 	}
 	
 	public void clickOnlyThisTimeLink()
 	{
+		utils.log().info("Access Resources - Clicked on Only This Time Link");
 		click(onlyThisTimeLink);
 	}
 
 	public void clickOnDenyLink() 
 	{
+		utils.log().info("Access Resources - Clicked on Deny Link");
 		click(denyLink);
 	}
 	

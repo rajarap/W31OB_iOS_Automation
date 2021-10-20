@@ -1,0 +1,13 @@
+[logs/Android_AE7BE69A-9B47-5F73-AD2E-83F2CAE06F78 INFO ] 2021-10-14 17:52:44.518 ParentClass:262 - log path: logs/Android_AE7BE69A-9B47-5F73-AD2E-83F2CAE06F78
+[logs/Android_AE7BE69A-9B47-5F73-AD2E-83F2CAE06F78 INFO ] 2021-10-14 17:52:44.529 ParentClass:211 - Setting Android driver capabilities
+[logs/Android_AE7BE69A-9B47-5F73-AD2E-83F2CAE06F78 FATAL] 2021-10-14 17:52:45.985 ParentClass:237 - Unable to initialize Android driver...... ABORTING !!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Device AE7BE69A-9B47-5F73-AD2E-83F2CAE06F78 was not in the list of connected devices
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Device AE7BE69A-9B47-5F73-AD2E-83F2CAE06F78 was not in the list of connected devices
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver

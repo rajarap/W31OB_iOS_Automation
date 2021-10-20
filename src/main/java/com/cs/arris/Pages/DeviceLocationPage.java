@@ -19,13 +19,15 @@ public class DeviceLocationPage  extends ParentClass implements Page
 		@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.android.permissioncontroller:id/permission_message']")
 		public MobileElement accessDeviceLocationMessage;	
 		
-		@AndroidFindAll({
-			@AndroidBy (id = "com.android.permissioncontroller:id/permission_allow_foreground_only_button"),
-			@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']"),
-			@AndroidBy (xpath = "//android.widget.Button[@bounds='[64,1689][1016,1784]']"),
-			@AndroidBy (xpath = "//android.widget.Button[@text='Deny']"),
-			@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.Button[1]")
-		})
+		
+//		@AndroidFindAll({
+//			@AndroidBy (id = "com.android.permissioncontroller:id/permission_allow_foreground_only_button"),
+//			@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']"),
+//			@AndroidBy (xpath = "//android.widget.Button[@bounds='[64,1689][1016,1784]']"),
+//			@AndroidBy (xpath = "//android.widget.Button[@text='While using the app']"),
+//			@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.Button[1]")
+//		})
+		@AndroidFindBy(xpath = "//android.widget.Button[@text='While using the app']")
 		public MobileElement whileUsingTheAppLink;
 		
 		@AndroidFindAll({
@@ -41,7 +43,7 @@ public class DeviceLocationPage  extends ParentClass implements Page
 			@AndroidBy (id = "com.android.permissioncontroller:id/permission_deny_button"),
 			@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_deny_button']"),
 			@AndroidBy (xpath = "//android.widget.Button[@bounds='[64,1963][1016,2042]']"),
-			@AndroidBy (xpath = "//android.widget.Button[@text='While using the app']"),
+			@AndroidBy (xpath = "//android.widget.Button[@text='Deny']"),
 			@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.Button[3]")
 		})
 		public MobileElement denyLink;
@@ -50,7 +52,7 @@ public class DeviceLocationPage  extends ParentClass implements Page
 		
 		//Click the Deny button - An alert window appears
 		
-		@AndroidFindBy (id = "android:id/message")
+		@AndroidFindBy (id = "android:id/message") //These permissions are mandatory for the application. Please allow access from App settings.
 		public MobileElement denyPopUpMessage;
 		
 		@AndroidFindBy (id = "android:id/button1")
@@ -72,50 +74,57 @@ public class DeviceLocationPage  extends ParentClass implements Page
 	
 	public String getDeviceLocationMessage()
 	{
-		utils.log().info("Grant Access Permissions Page - Device Location mini page");
+		//utils.log().info("Grant Access Permissions Page Text : " + accessDeviceLocationMessage.getText());
 		return accessDeviceLocationMessage.getText();
 	}
 	
 	public String getWhileUsingTheAppLinkText()
 	{
-		utils.log().info("Grant Access Permissions Page - Device Location mini page - Retrieving While Using the App Text");
 		return whileUsingTheAppLink.getText();
 	}
 	
 	public String getOnlyThisTimeLinkText()
 	{
-		utils.log().info("Grant Access Permissions Page - Device Location mini page - Retrieving Only This Time Text");
 		return onlyThisTimeLink.getText();
 	}
 	
 	public String getDenyLinkText()
 	{
-		utils.log().info("Grant Access Permissions Page - Device Location mini page - Retrieving Deny Text");
 		return denyLink.getText();
 	}
 	
 	public void clickWhileUsingTheAppLink() 
 	{
-		utils.log().info("Clicking While Using The App Link on Grant Access Permissions Mini Page");
+		utils.log().info("Device Location - Clicked " + whileUsingTheAppLink.getText());
 		click(whileUsingTheAppLink);
+		utils.log().info("Device Location - Clicked " + whileUsingTheAppLink.getText());
 	}
 	
 	public void clickOnlyThisTimeLink() 
 	{
-		utils.log().info("Clicking Only This Time Link on Grant Access Permissions Mini Page");
+		utils.log().info("Device Location - Clicked " + onlyThisTimeLink.getText());
 		click(onlyThisTimeLink);
+		utils.log().info("Device Location - Clicked " + onlyThisTimeLink.getText());
 	}
 	
 	public void clickDenyLink() 
 	{
-		utils.log().info("Clicking Deny Link on Grant Access Permissions Mini Page");
-		click(denyLink, "Clicking Deny Link on Grant Access Permissions Mini Page");
+		click(denyLink);
+		utils.log().info("Device Location - Clicked " + denyLink.getText());
 	}
 	
 	@Override
 	public boolean isAt() {
-		super.pause();
-		return true;
+		if(onlyThisTimeLink.isDisplayed())
+		{
+			utils.log().info("At Device Location Page");
+			return true;
+		}
+		else
+		{
+			utils.log().info("Device Location Page is not displayed");
+			return false;
+		}
 	}
 	
 }

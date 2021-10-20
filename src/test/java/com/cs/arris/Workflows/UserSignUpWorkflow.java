@@ -9,11 +9,11 @@ import com.cs.arris.Pages.CodeVerifiedPage;
 import com.cs.arris.Pages.DeviceLocationPage;
 import com.cs.arris.Pages.GetStartedPage;
 import com.cs.arris.Pages.GrantPermissionsPage;
-import com.cs.arris.Pages.EnterOTPPage;
+import com.cs.arris.Pages.EnterValidOTPPage;
 import com.cs.arris.Pages.SelectYourDevicePage;
 import com.cs.arris.Pages.SelectYourDevicePage2;
-import com.cs.arris.Pages.WelcomeSigninPage;
-import com.cs.arris.Pages.WelcomeSignupPage;
+import com.cs.arris.Pages.SiginPage;
+import com.cs.arris.Pages.SignupPage;
 import com.cs.arris.Utilities.TestUtils;
 
 public class UserSignUpWorkflow 
@@ -64,21 +64,21 @@ public class UserSignUpWorkflow
         return this;
     }
     
-    public UserSignUpWorkflow welcomeSigninPage(Consumer<WelcomeSigninPage> c){
-    	WelcomeSigninPage p = new WelcomeSigninPage();
+    public UserSignUpWorkflow welcomeSigninPage(Consumer<SiginPage> c){
+    	SiginPage p = new SiginPage();
         c.accept(p);
         return this;
     }
     
-    public UserSignUpWorkflow welcomeSignupPage(Consumer<WelcomeSignupPage> c){
-    	WelcomeSignupPage p = new WelcomeSignupPage();
+    public UserSignUpWorkflow welcomeSignupPage(Consumer<SignupPage> c){
+    	SignupPage p = new SignupPage();
     	this.waitForPageLoad(p);
         c.accept(p);
         return this;
     }
     
-    public UserSignUpWorkflow otpVerificationPage(Consumer<EnterOTPPage> c){
-    	EnterOTPPage p = new EnterOTPPage();
+    public UserSignUpWorkflow otpVerificationPage(Consumer<EnterValidOTPPage> c){
+    	EnterValidOTPPage p = new EnterValidOTPPage();
     	this.waitForPageLoad(p);
         c.accept(p);
         return this;

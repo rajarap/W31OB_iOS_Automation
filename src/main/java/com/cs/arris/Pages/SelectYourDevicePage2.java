@@ -70,6 +70,8 @@ public class SelectYourDevicePage2 extends ParentClass implements Page
 	public void selectMaxProAX11000RadioButton()
 	{
 		click(selectYourDeviceMaxProAX11000RadioButton);
+		utils.log().info("Select your Device 2 - Selected mAX Pro AX11000 option");
+
 	}
 	
 	public void clickNextButton()
@@ -77,6 +79,7 @@ public class SelectYourDevicePage2 extends ParentClass implements Page
 		if(selectYourDeviceNextButton.isEnabled())
 		{
 			click(selectYourDeviceNextButton);
+			utils.log().info("Select your Device 2 - Clicked Next Button");
 		}else {
 			selectMaxProAX11000RadioButton();
 			clickNextButton();

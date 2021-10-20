@@ -179,13 +179,23 @@ public class GrantPermissionsPage extends ParentClass implements Page
 	
 	public void clickContinueButton() 
 	{
-			click(continueButton);
+		click(continueButton);
+		utils.log().info("Grant Permissions - Clicked on Continue Button");
+
 	}
 	
 	@Override
 	public boolean isAt() {
-		super.pause();
-		return true;
+		if(continueButton.isDisplayed())
+		{
+			utils.log().info("At Grant Permissions Page");
+			return true;
+		}
+		else
+		{
+			utils.log().info("Grant Permissions Page is not displayed");
+			return false;
+		}
 	}
 	
 }

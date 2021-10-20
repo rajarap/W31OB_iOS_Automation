@@ -61,13 +61,17 @@ public class SelectYourDevicePage  extends ParentClass implements Page
 	public void selectSurfboardMaxOption()
 	{
 		click(selectYourDeviceSurfboardMaxOption);
+		utils.log().info("Select your Device 1 - Selected SURFboard mAX option");
 	}
 	
 	public void clickNextButton()
 	{
+		
 		if(selectYourDeviceNextButton.isEnabled())
 		{
 			click(selectYourDeviceNextButton);
+			utils.log().info("Select your Device 1 - Clicked Next Button");
+
 		}else {
 			selectSurfboardMaxOption();
 			clickNextButton();
@@ -76,8 +80,16 @@ public class SelectYourDevicePage  extends ParentClass implements Page
 
 	@Override
 	public boolean isAt() {
-		super.pause();
-		return true;
+		if(selectYourDeviceNextButton.isDisplayed())
+		{
+			utils.log().info("At Select your Device Page");
+			return true;
+		}
+		else
+		{
+			utils.log().info("Select your Device Page is not displayed");
+			return false;
+		}
 	}
 	
 }

@@ -1,0 +1,482 @@
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:27.573 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:27.584 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:45.127 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:45.128 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:49.901 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:49.904 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:49.914 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:49.915 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:50.745 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:51.338 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:52.138 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:24:52.882 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:08.848 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:09.142 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:10.793 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:11.689 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:12.808 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:13.762 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:15.654 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:16.521 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:26.701 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:31.246 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:32.732 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:33.113 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:44.777 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:48.992 EnterValidOTPPage:61 - Entering valid OTP...294838
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:49.962 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:25:58.164 ErrorCode_0015_1805_Something_Went_Wrong_Page:63 - At Something Went Wrong Page displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:26:05.087 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-19-24-27/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:26:10.932 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 19:26:11.126 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:06:54.396 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:06:54.406 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:11.624 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:11.626 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:16.449 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:16.451 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:16.455 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:16.456 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:17.137 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:17.790 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:18.541 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:19.285 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:35.200 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:35.560 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:37.138 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:38.135 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:39.230 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:40.166 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:41.894 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:42.764 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:52.879 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:57.137 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:58.644 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:07:59.526 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:08:11.008 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:08:15.133 EnterValidOTPPage:61 - Entering valid OTP...303383
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:08:16.134 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:08:24.027 ErrorCode_0015_1805_Something_Went_Wrong_Page:63 - At Something Went Wrong Page displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:08:30.835 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-20-06-54/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:08:36.730 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:08:36.935 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:12.621 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:12.630 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:30.200 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:30.201 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:34.958 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:34.960 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:34.970 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:34.971 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:35.723 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:36.316 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:37.091 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:37.867 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:53.704 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:53.970 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:55.440 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:56.412 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:57.476 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:42:58.428 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:00.049 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:00.887 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:10.944 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:15.949 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:17.459 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:17.788 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:29.225 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:33.884 EnterValidOTPPage:61 - Entering valid OTP...116022
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:34.858 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:43.131 ErrorCode_0015_1805_Something_Went_Wrong_Page:63 - At Something Went Wrong Page displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:49.583 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-20-42-12/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:55.537 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:43:55.731 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:22.030 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:22.041 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:33.090 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:33.091 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:37.738 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:37.741 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:37.749 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:37.750 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:38.473 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:39.099 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:39.874 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:40.639 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:56.395 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:56.766 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:58.249 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:48:59.609 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:00.643 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:01.611 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:03.147 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:04.005 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:14.116 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:18.897 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:20.371 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:20.695 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:32.220 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:36.482 EnterValidOTPPage:61 - Entering valid OTP...452924
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:37.335 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:45.184 ErrorCode_0015_1805_Something_Went_Wrong_Page:63 - At Something Went Wrong Page displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:49:51.709 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-20-48-22/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:02.609 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:02.617 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:02.630 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:03.399 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:03.403 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:03.651 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:06.056 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:06.804 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:07.529 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:17.975 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:18.205 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:51.652 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:51.928 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:53.565 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-20-48-22/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:58.944 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:50:59.224 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:28.762 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:28.774 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:47.848 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:47.871 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:52.713 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:52.714 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:52.719 TC03_Verify_Invalid_OTP_Test:40 - Email address : surfboarduser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:52.720 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:53.423 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:54.236 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:55.032 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:58:55.754 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:11.986 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:12.315 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:13.887 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:14.921 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:16.009 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:16.931 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:18.568 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:19.406 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:29.496 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:33.748 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:35.318 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:35.664 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 ERROR] 2021-10-18 20:59:47.609 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_otp_send']}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:400)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:423)
+	at com.cs.arris.Pages.ResendOTPDialog.clickOKButton(ResendOTPDialog.java:54)
+	at com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test.lambda$Verify_Enter_Invalid_PassCode$9(TC03_Verify_Invalid_OTP_Test.java:82)
+	at com.cs.arris.Workflows.TC03_Verify_Invalid_OTP_Workflow.resendOTPDialog(TC03_Verify_Invalid_OTP_Workflow.java:106)
+	at com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test.Verify_Enter_Invalid_PassCode(TC03_Verify_Invalid_OTP_Test.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_otp_send']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@340d6d89 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_otp_send']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 47 more
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 20:59:51.080 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-20-58-28/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:01.868 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:01.872 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:01.895 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:02.629 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:02.633 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:02.870 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:05.266 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:06.027 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:06.754 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:17.383 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:17.629 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:51.147 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:51.424 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:53.096 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-20-58-28/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:58.453 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:00:58.598 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:16:42.873 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:16:42.882 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:00.431 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:00.433 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:05.210 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:05.211 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:05.216 TC03_Verify_Invalid_OTP_Test:40 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:05.216 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:05.921 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:06.461 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:07.242 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:07.975 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:23.827 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:24.164 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:25.716 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:26.639 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:27.843 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:28.875 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:30.528 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:31.386 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:41.492 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:47.539 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:49.067 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:17:49.410 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:00.829 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:06.342 EnterValidOTPPage:61 - Entering valid OTP...618521
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:07.366 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 ERROR] 2021-10-18 21:18:25.991 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Pages.ErrorCode_0015_1805_Something_Went_Wrong_Page.isAt(ErrorCode_0015_1805_Something_Went_Wrong_Page.java:61)
+	at com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test.lambda$Verify_Enter_Invalid_PassCode$13(TC03_Verify_Invalid_OTP_Test.java:93)
+	at com.cs.arris.Workflows.TC03_Verify_Invalid_OTP_Workflow.somethingWentWrongPage(TC03_Verify_Invalid_OTP_Workflow.java:128)
+	at com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test.Verify_Enter_Invalid_PassCode(TC03_Verify_Invalid_OTP_Test.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7d979d34 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.TextView[@resource-id='com.arris.sbcBeta:id/btn_continue_onboarding],By.xpath: //android.widget.TextView[@bounds='[61,1812][1019,1949]'],By.id: com.arris.sbcBeta:id/btn_continue_onboarding})})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:30.543 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-21-16-42/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:41.428 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:41.432 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:41.446 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:42.198 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:42.200 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:42.442 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:44.859 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:45.634 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:46.401 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:57.298 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:18:57.527 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:19:30.975 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:19:31.273 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:19:32.920 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-21-16-42/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:19:38.310 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:19:38.580 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:36.672 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:36.683 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:54.518 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:54.519 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:59.302 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:59.304 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:59.309 TC03_Verify_Invalid_OTP_Test:40 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:59.310 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:37:59.992 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:00.525 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:01.299 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:02.051 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:18.124 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:18.408 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:19.884 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:20.791 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:21.894 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:22.826 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:24.477 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:25.338 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:35.464 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:41.847 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:43.377 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:43.692 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:38:55.326 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:02.154 EnterValidOTPPage:61 - Entering valid OTP...939035
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:03.092 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:15.182 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-21-37-36/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:26.017 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:26.024 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:26.040 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:26.742 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:26.746 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:26.994 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:29.466 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:30.225 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:30.954 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:41.452 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:39:41.684 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:40:15.414 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:40:15.739 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:40:17.419 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-21-37-36/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:40:22.818 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 21:40:23.087 ParentClass:156 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:24.213 ParentClass:261 - log path: logs/Android_RZ8M3002DGL/2021-10-18
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:24.222 ParentClass:210 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:41.785 ParentClass:219 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:41.786 ParentClass:220 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:46.665 TC03_Verify_Invalid_OTP_Test:36 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:46.669 ParentClass:285 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:46.677 TC03_Verify_Invalid_OTP_Test:40 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:46.678 TC03_Verify_Invalid_OTP_Test:42 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:47.499 TC03_Verify_Invalid_OTP_Test:51 - 
+****** starting test:Verify_Enter_Invalid_PassCode******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:48.166 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:48.946 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:11:49.701 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:05.484 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:05.839 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:07.337 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:08.243 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:09.460 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:10.424 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:12.050 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:12.865 SiginPage:61 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:22.975 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:28.250 EnterValidOTPPage:67 - Entering invalid OTP...000000.
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:29.736 EnterValidOTPPage:75 - Invalid passcode message is displayed
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:30.022 EnterValidOTPPage:88 - Clicked Resend OTP Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:41.640 InValidOTP:119 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:47.249 EnterValidOTPPage:61 - Entering valid OTP...197561
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:48.197 CodeVerifiedPage:45 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:12:59.879 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-22-11-24/TC03_Verify_Invalid_OTP_Test/Verify_Enter_Invalid_PassCode.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:10.875 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:43 - Loading...Error Code XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:10.877 ParentClass:313 - loading... error_codes/error_codes.xml
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:10.894 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:50 - Retrieved...Internet Not Avialable Error code from XML file
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:11.582 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:59 - 
+****** starting test:EC_0002_1002_Disconnect_Wifi_On_Mobile_Test******
+
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:11.585 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:67 - Turning OFF Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:11.811 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:69 - Wifi Turned OFF
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:14.214 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:15.059 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:15.788 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:26.225 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:13:26.483 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:14:00.132 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:96 - Turning ON Wifi..........
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:14:00.409 TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test:98 - Wifi Turned ON
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:14:01.990 ParentClass:388 - video path: videos/Android_RZ8M3002DGL/2021-10-18-22-11-24/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test/EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:14:07.375 ParentClass:154 - Closing App
+[logs/Android_RZ8M3002DGL/2021-10-18 INFO ] 2021-10-18 22:14:07.609 ParentClass:156 - Quitting Driver

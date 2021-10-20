@@ -36,7 +36,7 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.Button[@bounds='[61,770][1019,882]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/etNetworkName") 
 	})
-	public MobileElement ssidName;
+	public MobileElement ssIDName;
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etNetworkPassword']"),
@@ -49,6 +49,26 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
+	
+	public void enterSSIDName(String ssidName)
+	{
+		utils.log().info("Name Your Network Page - Entered SSID Name");
+		sendKeys(ssIDName, ssidName);
+	}
+	
+	public void enterSSIDPassword(String pwd)
+	{
+		utils.log().info("Name Your Network Page - Entered SSID Password");
+		sendKeys(ssidPassword, pwd);
+	}
+
+	
+	public void clickNextButton()
+	{
+		utils.log().info("Name Your Network Page  - Clicked on Next Button");
+		click(nextButton);
+	}
+	
 	
 	@Override
 	public boolean isAt() {

@@ -10,17 +10,33 @@ import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Store;
 
-import com.cs.arris.Utilities.OTP;
+import com.cs.arris.Utilities.GetOTPFromNada;
+import com.cs.arris.Utilities.InValidOTP;
+import com.cs.arris.Utilities.ValidOTP;
 
 public class TestOTP 
 {
+	public static ValidOTP otp;
 
 	public static void main(String[] args)
 	{
-		OTP otp = new OTP();
-		otp.getOTP();
-		System.out.println();
-		System.out.println();
+//		OTP otp = new OTP();
+//		otp.getOTP();
+//		System.out.println();
+//		System.out.println();
+		getOTP();
+	}
+	
+	private static void getOTP() 
+	{
+		try {
+			otp = new ValidOTP();
+			String pass = otp.getValidOTP();
+			System.out.println("OTP CODE is : " + pass);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	//Explaination: mailFolderName(Eg- "INBOX"), emailSubjectContent(Eg- Mail for OTP), emailContent(Eg- OTP is 111111), OTP length(Eg- 6) as my activation code is 6 digits.
@@ -78,4 +94,17 @@ public class TestOTP
 //	            }
 //	            return searchText;
 //	        }
+
+//	private static void getOTP() 
+//	{
+//		try {
+//			otp = new GetOTPFromNada();
+//			//otp.createNewEmailAddress("demouser106@getnada.com");
+//			System.out.println(otp.getPassCode("demouser106@getnada.com"));
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//
+//	}
 }
