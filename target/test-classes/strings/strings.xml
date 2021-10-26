@@ -31,10 +31,47 @@
 	<string name="OTPVerification_page_check_email_account_message">Check your email account for the verification code and enter it here. If not found, check your Spam folder. Tap on RESEND for a new code if needed.</string>
 	<string name="OTPVerification_page_invalid_passcode_message">The code you entered is not valid. Please verify your code and try again. If needed, you can try to Resend the code.</string>
 
+<!-- Resend OTP -->
 	<string name="resend_otp_text">New Code Sent!</string>
 	<string name="resend_otp_message">We have sent a new verification code to the email you provided. Please check both the Inbox and Spam folders for the code and enter it to verify your account.</string>
 	<string name="resend_otp_ok_button">OK</string>
 	<string name="resend_otp_link">I did not receive</string>
 	<string name="resend_otp_link_validation_code">Validation Code</string>
 	<string name="resend_otp_link_validation_text">As added security to confirm your account, an email containing a uniquely generated code has been sent to you. Please note that this typically takes under a minute. If you have not received an email from our team, please check your Spam mail folder. If you have not received the email please try again. If you are not able to receive the email, please verify your email address or contact our support team.</string>
+<!-- Resend OTP -->
+	
+<!-- Home Screen -->
+	<string name="home_page_title">Home</string>
+	<string name="home_page_text">Network Speed</string>
+	<string name="home_page_download">Download</string>
+	<string name="home_page_upload">Upload</string>
+	<string name="home_page_leader_board">Device Signal Strength Leader Board</string>
+	<string name="home_page_speed_test_history">Speed Test History</string>
+	<string name="home_page_blocked_devices">Currently Blocked Devices</string>
+	<string name="home_page_home_button">Home</string>
+	<string name="home_page_network_button">Network</string>
+	<string name="home_page_parental">Parental</string>
+	<string name="home_page_main">MAIN</string>
+<!-- Home Screen -->
+	
+<!-- Restart Router Dialog -->
+	<string name="restart_router_title">Reboot your router?</string>
+	<string name="restart_router_text1">Your devices will no longer be able to access this network, the Internet, or each other until Internet is restored.</string>
+	<string name="restart_router_text2">Are you sure you want to do this?</string>
+	<string name="restart_router_button_text">RESTART ROUTER</string>
+<!-- Restart Router Dialog -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </resources>

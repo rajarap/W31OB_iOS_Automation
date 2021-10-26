@@ -146,15 +146,28 @@ public class TC51_Signin_And_Onboard_Test extends ParentClass
 			  setupwifi.clickskipTutorialButton();
 			  super.pause(5);
 		  }).installSatellite(insatellite -> {
-			  insatellite.clickinstallLaterButton();
+			  insatellite.clickInstallLaterButton();
 			  super.pause(5);
 		  }).networkOptimization(optimization -> {
 			  optimization.clickOkButton();
 			  super.pause(25);
 	  	  }).homePage(homepage -> {		//Network optimization dialog2 is included inside homepage
 	  		  homepage.clickOkButton();
-	  		super.pause(5);
-			  homepage.getSSIDName();			  
+	  		  super.pause(5);
+			  //Successfully onboarded mAX router 
+			  homepage.verifyUIOnHomePage();
+			  homepage.clickDeviceSignalStrengthButton();
+	  	  }).deviceSignalStrengthPage(deviceSignalStrength -> {
+	  		deviceSignalStrength.verifyUIOnDeviceSignalStrengthPage();
+	  		deviceSignalStrength.clickHomeButton();
+	  	  }).homePage(homepage -> {		
+	  		  homepage.clickSpeedTestHistoryButton();
+	  	  }).speedTestHistoryPage(speedTest -> {
+	  		speedTest.clickHomeButton();
+	  	  }).homePage(homepage -> {		
+	  		  homepage.clickCurrentlyBlockedDevicesButton();
+	  	  }).currentlyBlockedDevicesPage(blockedDevices -> {
+	  		blockedDevices.clickHomeButton();
 		  });
 	  }
 }

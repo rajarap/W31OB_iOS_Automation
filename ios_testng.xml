@@ -6,7 +6,7 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
 	</listeners>
 	<parameter name="platform" value="iOS" />
-	<parameter name="device" value="iPhone X" />
+	<parameter name="device" value="iPhone" />
 	
   <!--<test name="W31-OnBoarding-Smoke-Test">
     <classes>

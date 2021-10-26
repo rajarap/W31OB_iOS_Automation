@@ -149,7 +149,7 @@ public class TC50_SignUp_And_Onboard_Test extends ParentClass
 		  }).setupWifi(setupwifi ->{
 			  setupwifi.clickskipTutorialButton();
 		  }).installSatellite(insatellite -> {
-			  insatellite.clickinstallLaterButton();
+			  insatellite.clickInstallLaterButton();
 			  super.pause(5);
 		  }).networkOptimization(optimization -> {
 			  optimization.clickOkButton();

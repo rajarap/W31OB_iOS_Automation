@@ -54,6 +54,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.SupportsNetworkStateManagement;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.screenrecording.CanRecordScreen;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -89,6 +90,12 @@ public class ParentClass
 	public String dvcName;
 	public File ssFile;
 	public String OTP;
+	public String mainDevice;
+	public String device1;
+	public String device2;
+	public int noOfDevices;
+	public String deviceStatus;
+	
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
@@ -222,12 +229,19 @@ public class ParentClass
 			if(getPlatformName().equalsIgnoreCase("iOS"))
 			{
 				utils.log().info("Setting " + getPlatformName() + " driver capabilities");
-				desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("iOSAutomationName"));
-				desiredCapabilities.setCapability(MobileCapabilityType.UDID, getProps().getProperty("androidUDID"));
-				desiredCapabilities.setCapability(MobileCapabilityType.APP, getProps().getProperty("iOSAppLocation"));
 				desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, false);
-				desiredCapabilities.setCapability(MobileCapabilityType.SUPPORTS_ALERTS, true);
+				desiredCapabilities.setCapability(MobileCapabilityType.SUPPORTS_ALERTS, true);				
+				desiredCapabilities.setCapability(IOSMobileCapabilityType.PLATFORM_NAME, getProps().getProperty("iOSPlatformName"));
+				desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, getProps().getProperty("iOSPlatformVersion"));
+				desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("iOSAutomationName"));
+				desiredCapabilities.setCapability(MobileCapabilityType.UDID, getProps().getProperty("iOSUDID"));
+				desiredCapabilities.setCapability(MobileCapabilityType.APP, getProps().getProperty("iOSAppLocation"));
+				desiredCapabilities.setCapability(IOSMobileCapabilityType.BUNDLE_ID, getProps().getProperty("iOSBundleId"));
+				desiredCapabilities.setCapability(IOSMobileCapabilityType.XCODE_ORG_ID, getProps().getProperty("xcodeOrgId"));
+				desiredCapabilities.setCapability(IOSMobileCapabilityType.UPDATE_WDA_BUNDLEID, getProps().getProperty("updatedWDABundleId"));
+				desiredCapabilities.setCapability(IOSMobileCapabilityType.XCODE_SIGNING_ID, getProps().getProperty("xcodeSigningId"));	
 				setDriver(new IOSDriver<MobileElement>(url, desiredCapabilities));
+				getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 				utils.log().info("iOS Driver is set to the Thread Local context " + getDriver().getPlatformName());
 				utils.log().info(getPlatformName() + " driver initialized: "); 
 			}
@@ -532,6 +546,13 @@ public class ParentClass
 				e.printStackTrace();
 			}
 		 }
+
+		public Integer getCountOfDevices(String noOfDevicesText) 
+		{
+			String[] devices = noOfDevicesText.split("");
+			Integer count = Integer.valueOf(devices[1].substring(1, 2));
+			return count;
+		}
 }
 	
 	

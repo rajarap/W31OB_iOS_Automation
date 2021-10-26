@@ -8,18 +8,24 @@ import com.cs.arris.Pages.CodeVerifiedPage;
 import com.cs.arris.Pages.CongratulationsPage;
 import com.cs.arris.Pages.ConnectToWifiUsingRouterSSID;
 import com.cs.arris.Pages.ConnectionToWifiNeededPage;
+import com.cs.arris.Pages.CurrentlyBlockedDevicesPage;
 import com.cs.arris.Pages.DeviceLocationPage;
+import com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage;
+import com.cs.arris.Pages.DevicesPage;
 import com.cs.arris.Pages.GetStartedPage;
 import com.cs.arris.Pages.GrantPermissionsPage;
 import com.cs.arris.Pages.HomePage;
 import com.cs.arris.Pages.InstallAdditionalSatellitePage;
+import com.cs.arris.Pages.MainDevicePage;
 import com.cs.arris.Pages.NameYourNetwokSSIDPage;
 import com.cs.arris.Pages.NetworkOptimizationDialog;
+import com.cs.arris.Pages.NetworkPage;
 import com.cs.arris.Pages.ConnectMaxRouterToMobileDevicePage;
 import com.cs.arris.Pages.EnterValidOTPPage;
 import com.cs.arris.Pages.ErrorCode_0000_1506_Warranty_Support_Page;
 import com.cs.arris.Pages.ErrorCode_0015_1805_Something_Went_Wrong_Page;
 import com.cs.arris.Pages.OptimizeYourNetworkPage;
+import com.cs.arris.Pages.ParentalControlPage;
 import com.cs.arris.Pages.PlugInMaxRouterPage;
 import com.cs.arris.Pages.RetrieveOTPPage;
 import com.cs.arris.Pages.SelectYourDevicePage;
@@ -31,6 +37,7 @@ import com.cs.arris.Pages.SystemFirmwareUpdatePage;
 import com.cs.arris.Pages.UnPackYourBoxPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Pages.SignupPage;
+import com.cs.arris.Pages.SpeedTestHistoryPage;
 import com.cs.arris.Utilities.ValidOTP;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Utilities.ValidOTP;
@@ -229,6 +236,55 @@ TestUtils utils = new TestUtils();
     //Setup Home Management
     public TC51_Signin_And_Onboard_Workflow homePage(Consumer<HomePage> c){
     	HomePage p = new HomePage();
+        c.accept(p);
+        return this;
+    }
+    
+    //Main Device Page
+    public TC51_Signin_And_Onboard_Workflow mainDevicePage(Consumer<MainDevicePage> c){
+    	MainDevicePage p = new MainDevicePage();
+        c.accept(p);
+        return this;
+    }
+
+    //Devices Page
+    public TC51_Signin_And_Onboard_Workflow devicesPage(Consumer<DevicesPage> c){
+    	DevicesPage p = new DevicesPage();
+        c.accept(p);
+        return this;
+    }
+    
+    //Device Signal Strength Leader Board Page
+    public TC51_Signin_And_Onboard_Workflow deviceSignalStrengthPage(Consumer<DeviceSignalStrengthLeaderBoardPage> c){
+    	DeviceSignalStrengthLeaderBoardPage p = new DeviceSignalStrengthLeaderBoardPage();
+        c.accept(p);
+        return this;
+    }
+       
+    //Speed Test History Page
+    public TC51_Signin_And_Onboard_Workflow speedTestHistoryPage(Consumer<SpeedTestHistoryPage> c){
+    	SpeedTestHistoryPage p = new SpeedTestHistoryPage();
+        c.accept(p);
+        return this;
+    }
+    
+    //Currently Blocked Devices Page
+    public TC51_Signin_And_Onboard_Workflow currentlyBlockedDevicesPage(Consumer<CurrentlyBlockedDevicesPage> c){
+    	CurrentlyBlockedDevicesPage p = new CurrentlyBlockedDevicesPage();
+        c.accept(p);
+        return this;
+    }
+    
+    //Network Page
+    public TC51_Signin_And_Onboard_Workflow networkPage(Consumer<NetworkPage> c){
+    	NetworkPage p = new NetworkPage();
+        c.accept(p);
+        return this;
+    }
+    
+    //Parental Control Page
+    public TC51_Signin_And_Onboard_Workflow parentalControlPage(Consumer<ParentalControlPage> c){
+    	ParentalControlPage p = new ParentalControlPage();
         c.accept(p);
         return this;
     }

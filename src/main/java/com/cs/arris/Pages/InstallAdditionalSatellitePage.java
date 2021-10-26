@@ -17,14 +17,35 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 	public TestUtils utils = new TestUtils();
 	
 	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/dialog_install_now]"),  //INSTALL NOW
+		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/dialog_title']"),  //INSTALL ADDITIONAL SATELLITE
+		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[151,803][929,990]']"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_title") 
+	})
+	public MobileElement installAdditionalSatelliteTitleText; 
+	
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/dialog_description']"),  //Press Install Now if you have an additional satellite unit to install.
+		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[151,1024][929,1159]']"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_description") 
+	})
+	public MobileElement installAdditionalSatelliteDescription; 
+	
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/dialog_install_now']"),  //INSTALL NOW
 		@AndroidBy (xpath = "//android.widget.Button[@bounds='[151,1179][929,1316]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_install_now") 
 	})
 	public MobileElement installNowButton; 
 	
 	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/dialog_install_later]"),  //SKIP TUTORIAL
+		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/dialog_install_later']"),  //CANCEL
+		@AndroidBy (xpath = "//android.widget.Button[@bounds='[151,1412][929,1549]']"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_install_later") 
+	})
+	public MobileElement cancelButton; 
+	
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/dialog_install_later']"),  //SKIP TUTORIAL
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[151,1374][929,1511]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_install_later") 
 	})
@@ -43,7 +64,7 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickinstallLaterButton()
+	public void clickInstallLaterButton()
 	{
 		click(installLaterButton);
 		utils.log().info("Install Additonal Satellite Dialog - Clicked on Install Later Button");

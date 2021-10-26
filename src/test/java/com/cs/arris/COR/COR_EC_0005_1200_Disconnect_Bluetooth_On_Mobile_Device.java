@@ -343,7 +343,7 @@ public class COR_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device extends Pare
 
 		public final UnaryOperator<Signin_TestData> InstallAdditionalSatellitePage = (d) -> {
 		//	Assert.assertTrue(installSatellite.isAt());
-			installSatellite.clickinstallLaterButton();;
+			installSatellite.clickInstallLaterButton();;
 			super.pause(5);
 			return d;
 	};

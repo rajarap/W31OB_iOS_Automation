@@ -50,7 +50,6 @@ public class SiginPage  extends ParentClass implements Page
 	{
 		sendKeys(emailAddress, email);
 		utils.log().info("Sigin Page - Entered user email address");
-
 	}
 	
 	public void clickSigninButton()
@@ -59,7 +58,6 @@ public class SiginPage  extends ParentClass implements Page
 		{
 			click(signinButton);
 			utils.log().info("Sigin Page - Clicked on Signin Button");
-
 		}
 	}
 	
