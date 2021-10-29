@@ -54,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 21, 2021 03:02:55 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 29, 2021 08:04:35 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -70,6 +70,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -143,17 +144,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify_Invalid_PassCode</span>
-						<span class='test-time'>Oct 21, 2021 03:02:55 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Verify_HomePage</span>
+						<span class='test-time'>Oct 29, 2021 08:04:35 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 21, 2021 03:02:55 PM</span>
-	<span class='label end-time'>Oct 21, 2021 03:04:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 11s+252ms</span>
+	<span class='label start-time'>Oct 29, 2021 08:04:35 PM</span>
+	<span class='label end-time'>Oct 29, 2021 08:06:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 33s+211ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -173,11 +174,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:04:07 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>8:06:08 PM</td>
 				<td class='step-details'>
-						Test Passed
+						Test Failed
 					
 				</td>
 			</tr>
@@ -188,130 +189,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>EC_0002_1002_Disconnect_Wifi_On_Mobile_Test</span>
-						<span class='test-time'>Oct 21, 2021 03:04:23 PM</span>
+						<span class='test-name'>Verify_HomePage</span>
+						<span class='test-time'>Oct 29, 2021 08:06:09 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 21, 2021 03:04:23 PM</span>
-	<span class='label end-time'>Oct 21, 2021 03:05:11 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+725ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>Android_Android</span>
-	</div>
-	<div class='author-list'>
-		<span class='author label'>PrabhuRajarathinam</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:05:11 PM</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test</span>
-						<span class='test-time'>Oct 21, 2021 03:05:24 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 21, 2021 03:05:24 PM</span>
-	<span class='label end-time'>Oct 21, 2021 03:06:28 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 4s+31ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>Android_Android</span>
-	</div>
-	<div class='author-list'>
-		<span class='author label'>PrabhuRajarathinam</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:06:28 PM</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify_Signin_And_Onboard</span>
-						<span class='test-time'>Oct 21, 2021 03:06:43 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 21, 2021 03:06:43 PM</span>
-	<span class='label end-time'>Oct 21, 2021 03:11:56 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 5m 12s+330ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>Android_Android</span>
-	</div>
-	<div class='author-list'>
-		<span class='author label'>PrabhuRajarathinam</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:11:56 PM</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<span class='label start-time'>Oct 29, 2021 08:06:09 PM</span>
+	<span class='label end-time'>Oct 29, 2021 08:06:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 					</div>
 				</li>
@@ -357,13 +243,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>Android_Android</span>
 						<span class='category-status right'>
-						<span class='label pass'>4</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -377,24 +263,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 21, 2021 03:02:55 PM</td>
-										<td class='linked' test-id='1'>Verify_Invalid_PassCode</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 21, 2021 03:04:23 PM</td>
-										<td class='linked' test-id='2'>EC_0002_1002_Disconnect_Wifi_On_Mobile_Test</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 21, 2021 03:05:24 PM</td>
-										<td class='linked' test-id='3'>EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 21, 2021 03:06:43 PM</td>
-										<td class='linked' test-id='4'>Verify_Signin_And_Onboard</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Oct 29, 2021 08:04:35 PM</td>
+										<td class='linked' test-id='1'>Verify_HomePage</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -432,13 +303,13 @@
 					<div class='author-heading'>
 						<span class='author-name'>PrabhuRajarathinam</span>
 						<span class='author-status right'>
-						<span class='label pass'>4</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='author-tests'>
@@ -452,24 +323,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 21, 2021 03:02:55 PM</td>
-										<td class='linked' test-id='1'>Verify_Invalid_PassCode</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 21, 2021 03:04:23 PM</td>
-										<td class='linked' test-id='2'>EC_0002_1002_Disconnect_Wifi_On_Mobile_Test</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 21, 2021 03:05:24 PM</td>
-										<td class='linked' test-id='3'>EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 21, 2021 03:06:43 PM</td>
-										<td class='linked' test-id='4'>Verify_Signin_And_Onboard</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Oct 29, 2021 08:04:35 PM</td>
+										<td class='linked' test-id='1'>Verify_HomePage</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -493,7 +349,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -505,19 +361,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 21, 2021 03:02:55 PM</div>
+					<div class='panel-lead'>Oct 29, 2021 08:04:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 21, 2021 03:12:11 PM</div>
+			 		<div class='panel-lead'>Oct 29, 2021 08:06:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 9m 15s+516ms</div>
+					<div class='panel-lead'>0h 1m 42s+871ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -534,11 +390,11 @@
 						</tr>
 						<tr>
 							<td>Android_Android</td>
-							<td>4</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -552,14 +408,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 4,
-				passParent: 4,
-				failParent: 0,
+                parentCount: 2,
+				passParent: 1,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -584,7 +440,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Verify_Invalid_PassCode":71.252,"EC_0002_1002_Disconnect_Wifi_On_Mobile_Test":48.725,"EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test":64.031,"Verify_Signin_And_Onboard":312.33
+			        "Verify_HomePage":93.211,"Verify_HomePage":0
 			};
 		</script>
 	

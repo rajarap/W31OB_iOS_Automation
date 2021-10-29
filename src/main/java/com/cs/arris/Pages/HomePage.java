@@ -29,10 +29,10 @@ public class HomePage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.Button[@bounds='[396,259][684,323]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/speedtitle") 
 	})
-	public MobileElement networkSpeed; 
+	public MobileElement networkSpeedTitle; 
 	
 	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc=\"Navigate up\"]"),  
+		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),  
 		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']"),
 	})
 	public MobileElement navigateButton; 
@@ -320,6 +320,41 @@ public class HomePage extends ParentClass implements Page
 	})
 	public MobileElement okButton;
 	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgMainRouter")
+	private MainDevicePage mainDevicePage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgtotalperipheral") 
+	private DevicesPage devicesPage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_full_screen2")
+	private DeviceSignalStrengthLeaderBoardPage devicesSignalStrengthPage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_full_screen3")
+	private SpeedTestHistoryPage speedTestHistoryPage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_full_screen5")
+	private CurrentlyBlockedDevicesPage currentlyBlockedDevicePage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/home_view")
+	private HomePage homePage;;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/network_view")
+	private NetworkPage networkPage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_full_screen5")
+	private ParentalControlPage parentalControlPage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgNoLeftSatellite")
+	private InstallAdditionalSatellitePage installLeftSatellitePage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgNoRightSatellite")
+	private InstallAdditionalSatellitePage installRightSatellitePage;
+	
+	@AndroidFindBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	private HamburgerMenuPage hamburgerMenuPage;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/bottom_view_navigation")
+	private FooterIconsPage footerIconsPage;
 	
 	public HomePage()
 	{
@@ -329,7 +364,7 @@ public class HomePage extends ParentClass implements Page
 	public void getSSIDName()
 	{
 		String ssidname = ssidName.getText();
-		utils.log().info("You are connected to your " + ssidname + " home network....Happy Surfing");
+		utils.log().info("You are connected to your router " + ssidname + " home network....Happy Surfing");
 	}
 	
 	public void clickOkButton()
@@ -338,6 +373,7 @@ public class HomePage extends ParentClass implements Page
 		utils.log().info("Network Optimization Dialog2 - Clicked on OK Button");
 	}
 	
+	//Verify if all the required UI elements are displayed on the Home Page
 	public void verifyUIOnHomePage()
 	{
 		if(homeTitle.isDisplayed())
@@ -345,8 +381,8 @@ public class HomePage extends ParentClass implements Page
 		else
 			utils.log().info("Home Title is not displayed");
 		
-		if(networkSpeed.isDisplayed())
-			utils.log().info("Network Speed  Title - " + networkSpeed.getText() + " - is displayed");
+		if(networkSpeedTitle.isDisplayed())
+			utils.log().info("Network Speed  Title - " + networkSpeedTitle.getText() + " - is displayed");
 		else
 			utils.log().info("Network Title is not displayed");
 		
@@ -411,7 +447,7 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Total number of devices image is not displayed");
 		
 		if(totalNoOfDevices.isDisplayed())
-			utils.log().info("Total of - " + super.getCountOfDevices(totalNoOfDevices.getText())+ " - devices are connected to the main Router");
+			utils.log().info("Total of - " + super.getCountOfDevices(totalNoOfDevices.getText()) + " - devices are connected to the main Router");
 		else
 			utils.log().info("Total number of devices connected to the router is not displayed");
 		
@@ -491,60 +527,143 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Parental Button Image is not displayed");
 	}
 	
+	 public MainDevicePage getMainDevicePageObject() {
+		 mainDevicePage = new MainDevicePage();
+	     return mainDevicePage;
+	  }
+	 
+	 public DevicesPage getDevicesPageObject() {
+		 devicesPage = new DevicesPage();
+	     return devicesPage;
+	  }
+	 
+	 public DeviceSignalStrengthLeaderBoardPage getDeviceSignalStrengthPageObject() {
+		 devicesSignalStrengthPage = new DeviceSignalStrengthLeaderBoardPage();
+	     return devicesSignalStrengthPage;
+	  }
+	 
+	 public SpeedTestHistoryPage getSpeedTestHistoryPageObject() {
+		 speedTestHistoryPage = new SpeedTestHistoryPage();
+	     return speedTestHistoryPage;
+	  }
+	 
+	 public CurrentlyBlockedDevicesPage getCurrentlyBlockedDevicesPageObject() {
+		 currentlyBlockedDevicePage = new CurrentlyBlockedDevicesPage();
+	     return currentlyBlockedDevicePage;
+	  }
+	 
+	 public HomePage getHomePageObject() {
+		 homePage = new HomePage();
+	     return homePage;
+	  }
+	 
+	 public NetworkPage getNetworkPageObject() {
+		 networkPage = new NetworkPage();
+	     return networkPage;
+	  }
+	 
+	 public ParentalControlPage getParentalControlPageObject() {
+		 parentalControlPage = new ParentalControlPage();
+	     return parentalControlPage;
+	  }
+	 
+	 public InstallAdditionalSatellitePage getInstallLeftSatellitePageObject() {
+		 installLeftSatellitePage = new InstallAdditionalSatellitePage();
+	     return installLeftSatellitePage;
+	  }
+	 
+	 public InstallAdditionalSatellitePage getInstallRightSatellitePageObject() {
+		 installRightSatellitePage = new InstallAdditionalSatellitePage();
+	     return installRightSatellitePage;
+	  }
+	 
+	 public HamburgerMenuPage getHamburgerMenuPageObject() {
+		 hamburgerMenuPage = new HamburgerMenuPage();
+	     return hamburgerMenuPage;
+	  }
+	 
+	 public FooterIconsPage getFooterIconsPageObject() {
+		 footerIconsPage = new FooterIconsPage();
+	     return footerIconsPage;
+	  }
+	
 	public void clickNotificationsIcon()
 	{
 		click(notificationsIcon);
+		utils.log().info("Home Page - Clicked on Notifications Icon");
 	}
 	
 	public void clickNavigationButton()
 	{
 		click(navigateButton);
+		utils.log().info("Home Page - Clicked on Navigation Icon to display the Hamburger Menu");
 	}
 	
 	public void clickSpeedTestHistoryButton()
 	{
 		click(speedTestHistoryButton);
+		utils.log().info("Home Page - Clicked on Speed Test History Button");
 	}
 	
 	public void clickDeviceSignalStrengthButton()
 	{
 		click(deviceSignalStrengthButton);
+		utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board Button");
 	}
 	
 	public void clickCurrentlyBlockedDevicesButton()
 	{
 		click(currentlyBlockedDevicesButton);
+		utils.log().info("Home Page - Clicked on Currently Blocked Devices Button");
 	}
 	
 	public void clickHomeButton()
 	{
 		click(homeButton);
+		utils.log().info("Home Page - Clicked on Home button on the Footer Icons Page");
 	}
 	
 	public void clickNetworkButton()
 	{
 		click(networkButton);
+		utils.log().info("Home Page - Clicked on Network button on the Footer Icons Page");
 	}
 	
 	public void clickParentalButton()
 	{
 		click(parentalButton);
+		utils.log().info("Home Page - Clicked on Parental button on the Footer Icons Page");
 	}
 	
 	public void clickMainDeviceImage()
 	{
-		click(mainDeviceImage);	//Click this link to navigate to the Devices1Page
+		click(mainDeviceImage);	//Click this link to navigate to the Main Devices Page
+		utils.log().info("Home Page - Clicked on Main Device Image");
 	}
 	
 	public void clicktotalNoOfDeviceImage()
 	{
-		click(totalNoOfDevicesImage);  //Click this link to navigate to the Devices2Page
+		click(totalNoOfDevicesImage);  //Click this link to navigate to the Devices Page
+		utils.log().info("Home Page - Clicked on Devices Image");
 	}
 	
-	public void getTotalCountOfDevices()
+	public void clickLeftSatelliteImage()
+	{
+		click(totalNoOfLeftSatellites); 
+		utils.log().info("Home Page - Clicked on Left Satellite Image");
+	}
+	
+	public void clickRightSatelliteImage()
+	{
+		click(totalNoOfRightSatellites);
+		utils.log().info("Home Page - Clicked on Right Satellite Image");
+	}
+	
+	public int getTotalCountOfDevices()
 	{
 		String noOfDevices = totalNoOfDevices.getText();  //Devices (2)
 		count = getCountOfDevices(noOfDevices);
+		return count;
 	}
 	
 	
@@ -558,6 +677,98 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Not on Home Page");
 		return false;}
 		
+	}
+
+	public Integer getCount() {
+		return count;
+	}
+
+	public MobileElement getHomeTitle() {
+		return homeTitle;
+	}
+
+	public MobileElement getNetworkSpeedTitle() {
+		return networkSpeedTitle;
+	}
+
+	public MobileElement getDownloadText() {
+		return downloadText;
+	}
+
+	public MobileElement getDownloadSpeedText() {
+		return downloadSpeedText;
+	}
+
+	public MobileElement getUploadText() {
+		return uploadText;
+	}
+
+	public MobileElement getUploadSpeedText() {
+		return uploadSpeedText;
+	}
+
+	public MobileElement getSsidName() {
+		return ssidName;
+	}
+
+	public MobileElement getMainDeviceName() {
+		return mainDeviceName;
+	}
+
+	public MobileElement getMainDeviceCounter() {
+		return mainDeviceCounter;
+	}
+
+	public MobileElement getTotalNoOfDevices() {
+		return totalNoOfDevices;
+	}
+
+	public MobileElement getDeviceSignalStrengthLeaderBoardText() {
+		return deviceSignalStrengthLeaderBoardText;
+	}
+
+	public MobileElement getBitRateDevices() {
+		return bitRateDevices;
+	}
+
+	public MobileElement getSpeedTestHistoryText() {
+		return speedTestHistoryText;
+	}
+	
+	public MobileElement getSpeedTestDevices() {
+		return speedTestDevices;
+	}
+
+	public MobileElement getCurrentlyBlockedDevicesText() {
+		return currentlyBlockedDevicesText;
+	}
+
+	public MobileElement getParentalControlIsDisabled() {
+		return parentalControlIsDisabled;
+	}
+
+	public MobileElement getCurrentlyBlockedDevicesEnabledText() {
+		return currentlyBlockedDevicesEnabledText;
+	}
+
+	public MobileElement getHomeButtonText() {
+		return homeButtonText;
+	}
+	
+	public MobileElement getNetworkButtonText() {
+		return networkButtonText;
+	}
+
+	public MobileElement getParentalButtonText() {
+		return parentalButtonText;
+	}
+
+	public MobileElement getNetworkOptimizationTitle() {
+		return networkOptimizationTitle;
+	}
+
+	public MobileElement getNetworkOptimizationMessage() {
+		return networkOptimizationMessage;
 	}
 
 }

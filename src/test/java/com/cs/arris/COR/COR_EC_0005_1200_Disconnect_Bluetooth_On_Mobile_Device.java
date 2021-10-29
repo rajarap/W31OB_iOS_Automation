@@ -312,8 +312,8 @@ public class COR_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device extends Pare
 	
 		public final UnaryOperator<Signin_TestData> NameYourNetwokSSIDPage = (d) -> {
 		//	Assert.assertTrue(ssidPage.isAt());
-			ssidPage.enterSSIDName(d.getSsid_name());
-			ssidPage.enterSSIDPassword(d.getSsid_pwd());
+			ssidPage.enterSSIDName();
+			ssidPage.enterSSIDPassword();
 			ssidPage.clickNextButton();
 			super.pause(25);
 			return d;

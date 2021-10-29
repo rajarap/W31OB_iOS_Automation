@@ -272,12 +272,63 @@ public class MainDevicePage extends ParentClass implements Page
 	
 	//**************** MAIN mAX ROUTER DETAILS ******************
 	
+	//**************** CONNECTED DEVICES DETAILS ******************
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/recycleViewDiningRoom']"),  //list of devices connected to the main device (router)
 		@AndroidBy (id = "com.arris.sbcBeta:id/recycleViewDiningRoom") 
 	})
-	public MobileElement listOfDevicesConnected;
+	public MobileElement listOfAllDevicesConnected;
+	
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/devicesNumbers']"),  //Connected Devices (2)
+		@AndroidBy (id = "com.arris.sbcBeta:id/devicesNumbers") 
+	})
+	public MobileElement noOfConnectedDevices;
+	
+	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
+	public MobileElement deviceImage;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
+	public MobileElement deviceName;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/txtSignalStrength")
+	public MobileElement deviceSignalStrength;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceDownloadSpeed']")
+	public MobileElement deviceDownloadSpeed;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']")
+	public MobileElement deviceUploadSpeed;
+	
+	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDeviceInfoOpen']")
+	public MobileElement expandButton;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
+	public MobileElement ipAddressLabel;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceIpAddress']")
+	public MobileElement deviceIPAddress;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/tv_mac_address']")
+	public MobileElement macAddressLabel1;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceMacAddress']")
+	public MobileElement deviceMACAddress;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
+	public MobileElement channelLabel1;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceChannel']")
+	public MobileElement deviceChannelNumber;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']")
+	public MobileElement rssiLabel;
+	
+	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssi']")
+	public MobileElement deviceRSSIText;
+	
+	//**************** CONNECTED DEVICES DETAILS ******************
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/restartRouter']"),  //Restart Router Button
@@ -286,6 +337,7 @@ public class MainDevicePage extends ParentClass implements Page
 	})
 	public MobileElement restartRouterButton;
 	 
+
 	
 	public MainDevicePage()
 	{

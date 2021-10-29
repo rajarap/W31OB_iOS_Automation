@@ -46,13 +46,7 @@ public class TC50_SignUp_And_Onboard_Test extends ParentClass
 			  
 			  this.email = properties.getProperty("email");
 			  utils.log().info("Email address : " + this.email);
-			  
-			  this.ssid = properties.getProperty("ssidname");
-			  utils.log().info("SSID Name : " + this.ssid);
-			  
-			  this.ssidpass = properties.getProperty("ssidpwd");
-			  utils.log().info("SSID Password : " + this.ssidpass);
-			  
+			  	  
 			  this.udid = properties.getProperty("udid");
 			  utils.log().info("UDID : " + this.udid);
 			  
@@ -133,13 +127,13 @@ public class TC50_SignUp_And_Onboard_Test extends ParentClass
 		  }).warrantyAndSupportPage(warrantyAndSupport -> {
 			  warrantyAndSupport.clickContinueButton();
 		  }).nameYourNetworkPage(nameYourNetwork -> {
-			  nameYourNetwork.enterSSIDName(this.ssid);
-			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
+			  nameYourNetwork.enterSSIDName();
+			  nameYourNetwork.enterSSIDPassword();
 			  nameYourNetwork.clickNextButton();
 			  super.pause(25);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
 			  super.pause(15);
-			  connectionRequired.turnOnRouterWifi(this.ssid, this.ssidpass, this.udid);
+			  connectionRequired.turnOnRouterWifi(super.ssidName, super.ssidpwd, this.udid);
 			  super.pause(15);
 			  connectionRequired.clickContinue();
 			  super.pause(20);

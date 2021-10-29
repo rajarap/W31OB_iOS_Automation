@@ -8,34 +8,12 @@
 	</listeners>
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
-	<parameter name="signup_data" value="testdata/registered_users.json" />
 	
-	<test name="Enter_Invalid_OTP_Test">
+	<test name="Login_And_Home_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test" />
+			<class name="com.cs.arris.Tests.TC52_HomePage_Test" />
 		</classes>
 	</test>
-	
-	<test name="EC_0002_1002_Disconnect_Wifi_On_Mobile_Test">
-		<classes>
-			<class
-				name="com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test" />
-		</classes>
-	</test> 
-	
-	<test name="EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test">
-		<classes>
-			<class
-				name="com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test" />
-		</classes>
-	</test>
-	
-	<test name="Signin_And_Onboard_Test">
-		<classes>
-			<class
-				name="com.cs.arris.Tests.TC51_Signin_And_Onboard_Test" />
-		</classes>
-	</test> 
 
 </suite>
 
@@ -51,29 +29,25 @@
 	
 	<test name="EC_0002_1002_Disconnect_Wifi_On_Mobile_Test">
 		<classes>
-			<class
-				name="com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test" />
+			<class name="com.cs.arris.Tests.TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test" />
 		</classes>
 	</test> 
 	
 	<test name="EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test">
 		<classes>
-			<class
-				name="com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test" />
+			<class name="com.cs.arris.Tests.TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test" />
 		</classes>
 	</test>
 	
 	<test name="Signin_And_Onboard_Test">
 		<classes>
-			<class
-				name="com.cs.arris.Tests.TC51_Signin_And_Onboard_Test" />
+			<class name="com.cs.arris.Tests.TC51_Signin_And_Onboard_Test" />
 		</classes>
 	</test> 
 	
 	<test name="EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test">
 		<classes>
-			<class
-				name="com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test" />
+			<class name="com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test" />
 		</classes>
 	</test>
 

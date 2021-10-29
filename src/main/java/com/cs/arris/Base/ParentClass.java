@@ -95,6 +95,9 @@ public class ParentClass
 	public String device2;
 	public int noOfDevices;
 	public String deviceStatus;
+	public String ssidNumber;
+	public String ssidName;
+	public String ssidpwd;
 	
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
@@ -552,6 +555,15 @@ public class ParentClass
 			String[] devices = noOfDevicesText.split("");
 			Integer count = Integer.valueOf(devices[1].substring(1, 2));
 			return count;
+		}
+		
+		public void getSSIDNameAndPassword()
+		{
+			 Integer randomNumber = (int)(Math.random()*9000)+1000;
+			 ssidNumber = String.valueOf(randomNumber);
+			 ssidName = "arris"+ssidNumber;
+			 ssidpwd = "1234567890";
+
 		}
 }
 	

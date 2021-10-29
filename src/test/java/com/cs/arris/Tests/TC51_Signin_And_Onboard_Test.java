@@ -129,8 +129,8 @@ public class TC51_Signin_And_Onboard_Test extends ParentClass
 		  }).warrantyAndSupportPage(warrantyAndSupport -> {
 			  warrantyAndSupport.clickContinueButton();
 		  }).nameYourNetworkPage(nameYourNetwork -> {
-			  nameYourNetwork.enterSSIDName(this.ssid);
-			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
+			  nameYourNetwork.enterSSIDName();
+			  nameYourNetwork.enterSSIDPassword();
 			  nameYourNetwork.clickNextButton();
 			  super.pause(25);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
@@ -153,21 +153,21 @@ public class TC51_Signin_And_Onboard_Test extends ParentClass
 			  super.pause(25);
 	  	  }).homePage(homepage -> {		//Network optimization dialog2 is included inside homepage
 	  		  homepage.clickOkButton();
-	  		  super.pause(5);
+//	  		  super.pause(5);
 			  //Successfully onboarded mAX router 
-			  homepage.verifyUIOnHomePage();
-			  homepage.clickDeviceSignalStrengthButton();
-	  	  }).deviceSignalStrengthPage(deviceSignalStrength -> {
-	  		deviceSignalStrength.verifyUIOnDeviceSignalStrengthPage();
-	  		deviceSignalStrength.clickHomeButton();
-	  	  }).homePage(homepage -> {		
-	  		  homepage.clickSpeedTestHistoryButton();
-	  	  }).speedTestHistoryPage(speedTest -> {
-	  		speedTest.clickHomeButton();
-	  	  }).homePage(homepage -> {		
-	  		  homepage.clickCurrentlyBlockedDevicesButton();
-	  	  }).currentlyBlockedDevicesPage(blockedDevices -> {
-	  		blockedDevices.clickHomeButton();
+//			  homepage.verifyUIOnHomePage();
+//			  homepage.clickDeviceSignalStrengthButton();
+//	  	  }).deviceSignalStrengthPage(deviceSignalStrength -> {
+//	  		deviceSignalStrength.verifyUIOnDeviceSignalStrengthPage();
+//	  		deviceSignalStrength.clickHomeButton();
+//	  	  }).homePage(homepage -> {		
+//	  		  homepage.clickSpeedTestHistoryButton();
+//	  	  }).speedTestHistoryPage(speedTest -> {
+//	  		speedTest.clickHomeButton();
+//	  	  }).homePage(homepage -> {		
+//	  		  homepage.clickCurrentlyBlockedDevicesButton();
+//	  	  }).currentlyBlockedDevicesPage(blockedDevices -> {
+//	  		blockedDevices.clickHomeButton();
 		  });
 	  }
 }

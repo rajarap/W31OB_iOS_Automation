@@ -1,0 +1,4 @@
+[logs/null_RZ8M3002DGL/2021-10-29 INFO ] 2021-10-29 19:02:18.787 ParentClass:285 - log path: logs/null_RZ8M3002DGL/2021-10-29
+[logs/null_RZ8M3002DGL/2021-10-29 FATAL] 2021-10-29 19:02:18.798 ParentClass:260 - Unable to initialize null driver...... ABORTING !!!
+java.lang.NullPointerException
+[logs/null_RZ8M3002DGL/2021-10-29 INFO ] 2021-10-29 19:04:49.073 ParentClass:285 - log path: logs/null_RZ8M3002DGL/2021-10-29

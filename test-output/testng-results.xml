@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-16T17:25:41 IST" name="Default suite" finished-at="2021-10-16T17:25:42 IST" duration-ms="66">
+  <suite started-at="2021-10-29T19:17:04 IST" name="Default suite" finished-at="2021-10-29T19:17:04 IST" duration-ms="68">
     <groups>
     </groups>
-    <test started-at="2021-10-16T17:25:41 IST" name="Default test" finished-at="2021-10-16T17:25:42 IST" duration-ms="66">
-      <class name="com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="beforeSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385341921" status="FAIL">
+    <test started-at="2021-10-29T19:17:04 IST" name="Default test" finished-at="2021-10-29T19:17:04 IST" duration-ms="68">
+      <class name="com.cs.arris.Tests.TC52_HomePage_Test">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="beforeSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515224471" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'platform' is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
-in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-1803603618/testng-customsuite.xml]]>
+in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-770484736/testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'platform' is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
-in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-1803603618/testng-customsuite.xml
+in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-770484736/testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:270)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 at org.testng.internal.Parameters.createParameters(Parameters.java:700)
@@ -40,33 +40,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="beforeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385341937" status="SKIP">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="beforeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515224486" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385341968" status="SKIP">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515224512" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385341980" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515224529" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385341981" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515224530" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Verify_Enter_Invalid_PassCode()[pri:1, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="Verify_Enter_Invalid_PassCode" finished-at="2021-10-16T17:25:41 IST" duration-ms="0" status="SKIP">
+        <test-method signature="Verify_HomePage()[pri:1, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="Verify_HomePage" finished-at="2021-10-29T19:17:04 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'platform' is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
-in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-1803603618/testng-customsuite.xml]]>
+in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-770484736/testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'platform' is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
-in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-1803603618/testng-customsuite.xml
+in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse-770484736/testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:270)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 at org.testng.internal.Parameters.createParameters(Parameters.java:700)
@@ -88,20 +88,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Enter_Invalid_PassCode -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385341993" status="SKIP">
+        </test-method> <!-- Verify_HomePage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515224544" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:41 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385341998" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:04 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515224548" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test@17f9d882]" started-at="2021-10-16T17:25:47 IST" name="afterSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1634385347128" status="SKIP">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.cs.arris.Tests.TC52_HomePage_Test@196a42c3]" started-at="2021-10-29T19:17:09 IST" name="afterSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1635515229665" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test -->
+      </class> <!-- com.cs.arris.Tests.TC52_HomePage_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

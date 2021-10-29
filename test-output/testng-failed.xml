@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test">
+      <class name="com.cs.arris.Tests.TC52_HomePage_Test">
         <methods>
-          <include name="beforeMethod"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="Verify_HomePage"/>
+          <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
-          <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="Verify_Enter_Invalid_PassCode"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.cs.arris.Tests.TC03_Verify_Invalid_OTP_Test -->
+      </class> <!-- com.cs.arris.Tests.TC52_HomePage_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

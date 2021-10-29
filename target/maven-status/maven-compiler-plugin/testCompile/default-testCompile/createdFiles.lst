@@ -3,7 +3,7 @@ com/cs/arris/Workflows/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Workflow.clas
 com/cs/arris/Tests/AccessResourcesOnDevicePageTest.class
 com/cs/arris/Tests/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.class
 com/cs/arris/Tests/TestBluetooth.class
-com/cs/arris/Tests/COR_TC01_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device_Test.class
+com/cs/arris/Workflows/TC52_Login_And_HomePage_Workflow.class
 com/cs/arris/Workflows/UserSignUpWorkflow.class
 com/cs/arris/Workflows/UserUnSuccessfulSigninWorkflow.class
 com/cs/arris/Workflows/TC51_Signin_And_Onboard_Workflow.class
@@ -12,6 +12,7 @@ com/cs/arris/Tests/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.class
 com/cs/arris/Workflows/UserSuccessfulSigninWorkflow.class
 com/cs/arris/Tests/GrantPermissionPageTest.class
 com/cs/arris/Tests/SigninAsValidUserTest.class
+com/cs/arris/Tests/TC52_HomePage_Test.class
 com/cs/arris/Tests/TestOTP.class
 com/cs/arris/Tests/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.class
 com/cs/arris/Workflows/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow.class
@@ -21,6 +22,7 @@ com/cs/arris/Tests/SignUpTest.class
 com/cs/arris/Workflows/TC04_EC_0002_1304_Internet_Connection_Not_Available_On_Router_Workflow.class
 com/cs/arris/Workflows/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.class
 com/cs/arris/COR/COR_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device.class
+com/cs/arris/Workflows/HomePage_Workflow.class
 com/cs/arris/Workflows/TC03_Verify_Invalid_OTP_Workflow.class
 com/cs/arris/Workflows/TC50_SignUp_And_Onboard_Workflow.class
 com/cs/arris/Tests/SampleTest.class
