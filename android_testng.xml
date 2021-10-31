@@ -9,12 +9,11 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	<test name="Login_And_Home_Page_Test">
+	<test name="Login_And_Verify_Home_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC52_HomePage_Test" />
+			<class name="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test" />
 		</classes>
 	</test>
-
 </suite>
 
 
@@ -48,6 +47,25 @@
 	<test name="EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test" />
+		</classes>
+	</test>
+	
+	<test name="Login_And_Verify_Home_Page_Test">
+		<classes>
+			<class name="com.cs.arris.Tests.TC52_Login_And_Verify_HomePage_Test" />
+		</classes>
+	</test>
+	
+	<test name="Login_And_Verify_Devices_Page_Test">
+		<classes>
+			<class name="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test" />
+		</classes>
+	</test>
+	
+	<test name="Login_And_Verify_Home_Page_Test">
+		<classes>
+			<class name="com.cs.arris.Tests.TC52_Login_And_Verify_HomePage_Test" />
+			<class name="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test" />
 		</classes>
 	</test>
 

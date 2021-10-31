@@ -17,6 +17,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -49,6 +50,7 @@ import com.cs.arris.Utilities.TestUtils;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.InteractsWithApps;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.SupportsNetworkStateManagement;
@@ -480,13 +482,27 @@ public class ParentClass
 //		  return txt;
 //	  }
 	  
-	  public MobileElement scrollToElement() 
-	  {	  
-			return (MobileElement) ((FindsByAndroidUIAutomator<?>) getDriver()).findElementByAndroidUIAutomator(
-					"new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
-							+ "new UiSelector().description(\"test-Price\"));");
+//	  public MobileElement scrollToElement() 
+//	  {	  
+//			return (MobileElement) ((FindsByAndroidUIAutomator<?>) getDriver()).findElementByAndroidUIAutomator(
+//					"new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
+//							+ "new UiSelector().description(\"test-Price\"));");
+//	  }
+	  
+			
+	  public void scrollToElement(MobileElement id) 
+	  {
+		   MobileElement obj = (MobileElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()"+
+				  						".scrollable(true)).scrollIntoView(new UiSelector().resourceIdMatches(\" + id + \"));"));
+		   waitForVisibility(obj);
+		   
 	  }
 	  
+//	  public static void scrollToId(AndroidDriver<MobileElement> driver, String id) {
+//			MobileElement el = (MobileElement) driver.findElementByAndroidUIAutomator(
+//					"new UiScrollable(" + "new UiSelector().scrollable(true)).scrollIntoView("
+//							+ "new UiSelector().resourceIdMatches(\"" + id + "\"));");
+//	  }
 	  public void iOSScrollToElement() {
 		  RemoteWebElement element = (RemoteWebElement)getDriver().findElement(By.name("test-ADD TO CART"));
 		  String elementID = element.getId();
@@ -552,9 +568,18 @@ public class ParentClass
 
 		public Integer getCountOfDevices(String noOfDevicesText) 
 		{
-			String[] devices = noOfDevicesText.split("");
-			Integer count = Integer.valueOf(devices[1].substring(1, 2));
-			return count;
+			
+			//String[] devices = noOfDevicesText.trim().split(" "); //Devices(12)
+			String devices = noOfDevicesText.trim(); //Devices (12)
+			int length = devices.length();
+			if (length == 10)//Devices(2)
+			{
+				return Integer.valueOf(devices.substring(8, 9));
+			}
+			else
+			{
+				return Integer.valueOf(devices.substring(8, 10));
+			}
 		}
 		
 		public void getSSIDNameAndPassword()

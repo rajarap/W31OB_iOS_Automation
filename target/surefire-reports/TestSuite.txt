@@ -1,23 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 127.556 s <<< FAILURE! - in TestSuite
-Verify_HomePage(com.cs.arris.Tests.TC52_HomePage_Test)  Time elapsed: 93.355 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.all({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_ok'],By.xpath: //android.widget.Button[@bounds='[147,1312][933,1449]'],By.id: com.arris.sbcBeta:id/btn_dialog_ok})}) (tried for 10 second(s) with 500 milliseconds interval)
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_ok'],By.xpath: //android.widget.Button[@bounds='[147,1312][933,1449]'],By.id: com.arris.sbcBeta:id/btn_dialog_ok})})
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@590f0c50 (tried for 1 second(s) with 500 milliseconds interval)
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_ok'],By.xpath: //android.widget.Button[@bounds='[147,1312][933,1449]'],By.id: com.arris.sbcBeta:id/btn_dialog_ok})})
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 324.004 s <<< FAILURE! - in TestSuite
+Verify_DevicesPage(com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test)  Time elapsed: 290.415 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
-Driver info: driver.version: AndroidDriver
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3614e9b3-46f5-43a5-ac64-1a756be7eb2d
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup}
+	at com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test.lambda$Verify_DevicesPage$12(TC53_Login_And_Verify_DevicesPage_Test.java:164)
+	at com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test.Verify_DevicesPage(TC53_Login_And_Verify_DevicesPage_Test.java:135)
 

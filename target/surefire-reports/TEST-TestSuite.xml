@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="127.556" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="324.004" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/surefire/surefirebooter14725489283670035825.jar /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/surefire 2021-10-29T20-04-11_440-jvmRun1 surefire13245258374155203462tmp surefire_09578316178642595867tmp"/>
+    <property name="sun.java.command" value="/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/surefire/surefirebooter9163647016171916847.jar /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/surefire 2021-11-01T01-03-26_727-jvmRun1 surefire14881484284794783547tmp surefire_010267887811501124756tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/test-classes:/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/classes:/Users/prabhu/.m2/repository/io/appium/java-client/7.3.0/java-client-7.3.0.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/prabhu/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/prabhu/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/prabhu/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/prabhu/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/prabhu/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/prabhu/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/prabhu/.m2/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar:/Users/prabhu/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/Users/prabhu/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/prabhu/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/prabhu/.m2/repository/cglib/cglib/3.2.12/cglib-3.2.12.jar:/Users/prabhu/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/prabhu/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/prabhu/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/prabhu/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/prabhu/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/prabhu/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/Users/prabhu/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/prabhu/.m2/repository/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar:/Users/prabhu/.m2/repository/org/springframework/spring-aop/5.1.8.RELEASE/spring-aop-5.1.8.RELEASE.jar:/Users/prabhu/.m2/repository/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar:/Users/prabhu/.m2/repository/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE.jar:/Users/prabhu/.m2/repository/org/springframework/spring-jcl/5.1.8.RELEASE/spring-jcl-5.1.8.RELEASE.jar:/Users/prabhu/.m2/repository/org/springframework/spring-expression/5.1.8.RELEASE/spring-expression-5.1.8.RELEASE.jar:/Users/prabhu/.m2/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar:/Users/prabhu/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/Users/prabhu/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/prabhu/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/prabhu/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/prabhu/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/prabhu/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/prabhu/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/prabhu/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:/Users/prabhu/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/Users/prabhu/.m2/repository/com/aventstack/extentreports/4.1.2/extentreports-4.1.2.jar:/Users/prabhu/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/Users/prabhu/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/prabhu/.m2/repository/org/mongodb/mongodb-driver/3.12.0/mongodb-driver-3.12.0.jar:/Users/prabhu/.m2/repository/org/mongodb/mongodb-driver-core/3.12.0/mongodb-driver-core-3.12.0.jar:/Users/prabhu/.m2/repository/org/mongodb/bson/3.12.0/bson-3.12.0.jar:/Users/prabhu/.m2/repository/io/github/bonigarcia/webdrivermanager/3.8.1/webdrivermanager-3.8.1.jar:/Users/prabhu/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/prabhu/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/prabhu/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/prabhu/.m2/repository/org/uncommons/reportng/1.1.4/reportng-1.1.4.jar:/Users/prabhu/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar:/Users/prabhu/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar:/Users/prabhu/.m2/repository/com/google/inject/guice/5.0.1/guice-5.0.1.jar:/Users/prabhu/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/prabhu/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/prabhu/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre.jar:/Users/prabhu/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/prabhu/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/prabhu/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/prabhu/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/Users/prabhu/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/prabhu/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/prabhu/.m2/repository/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar:/Users/prabhu/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/prabhu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/prabhu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/prabhu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/surefire/surefirebooter14725489283670035825.jar"/>
+    <property name="surefire.real.class.path" value="/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/target/surefire/surefirebooter9163647016171916847.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.2+9"/>
@@ -61,63 +61,88 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Verify_HomePage" classname="com.cs.arris.Tests.TC52_HomePage_Test" time="93.355">
-    <failure message="Expected condition failed: waiting for visibility of Located by By.chained({By.all({By.xpath: //android.widget.Button[@resource-id=&apos;com.arris.sbcBeta:id/btn_dialog_ok&apos;],By.xpath: //android.widget.Button[@bounds=&apos;[147,1312][933,1449]&apos;],By.id: com.arris.sbcBeta:id/btn_dialog_ok})}) (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.all({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_ok'],By.xpath: //android.widget.Button[@bounds='[147,1312][933,1449]'],By.id: com.arris.sbcBeta:id/btn_dialog_ok})}) (tried for 10 second(s) with 500 milliseconds interval)
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_ok'],By.xpath: //android.widget.Button[@bounds='[147,1312][933,1449]'],By.id: com.arris.sbcBeta:id/btn_dialog_ok})})
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@590f0c50 (tried for 1 second(s) with 500 milliseconds interval)
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_ok'],By.xpath: //android.widget.Button[@bounds='[147,1312][933,1449]'],By.id: com.arris.sbcBeta:id/btn_dialog_ok})})
+  <testcase name="Verify_DevicesPage" classname="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test" time="290.415">
+    <failure message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;techleads-Mac-mini.local&apos;, ip: &apos;192.168.0.131&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;11.0.2&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 3614e9b3-46f5-43a5-ac64-1a756be7eb2d&#10;*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
-Driver info: driver.version: AndroidDriver
-	at com.cs.arris.Tests.TC52_HomePage_Test.lambda$Verify_HomePage$11(TC52_HomePage_Test.java:118)
-	at com.cs.arris.Tests.TC52_HomePage_Test.Verify_HomePage(TC52_HomePage_Test.java:117)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3614e9b3-46f5-43a5-ac64-1a756be7eb2d
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup}
+	at com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test.lambda$Verify_DevicesPage$12(TC53_Login_And_Verify_DevicesPage_Test.java:164)
+	at com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test.Verify_DevicesPage(TC53_Login_And_Verify_DevicesPage_Test.java:135)
 </failure>
-    <system-out><![CDATA[[INFO ] 2021-10-29 20:04:18.966 com.cs.arris.Base.ParentClass:285 - loading... config.properties
-[INFO ] 2021-10-29 20:04:18.990 com.cs.arris.Base.ParentClass:293 - Config.properties object is set to Thread Local
-[INFO ] 2021-10-29 20:04:18.992 com.cs.arris.Base.ParentClass:316 - loading... strings/strings.xml
-[INFO ] 2021-10-29 20:04:19.000 com.cs.arris.Base.ParentClass:330 - loading... error_codes/error_codes.xml
-[INFO ] 2021-10-29 20:04:19.053 com.cs.arris.Base.ParentClass:278 - log path: logs/Android_RZ8M3002DGL/2021-10-29
-[INFO ] 2021-10-29 20:04:19.063 com.cs.arris.Base.ParentClass:220 - Setting Android driver capabilities
-[INFO ] 2021-10-29 20:04:30.766 com.cs.arris.Base.ParentClass:229 - Android Driver is set to the Thread Local context android
-[INFO ] 2021-10-29 20:04:30.767 com.cs.arris.Base.ParentClass:230 - Android driver initialized: 
-[INFO ] 2021-10-29 20:04:34.887 com.cs.arris.Tests.TC52_HomePage_Test:45 - Loading...Sign Up Test Data
-[INFO ] 2021-10-29 20:04:34.891 com.cs.arris.Base.ParentClass:302 - loading...testdata/signup
-[INFO ] 2021-10-29 20:04:34.899 com.cs.arris.Tests.TC52_HomePage_Test:49 - First Name : demo
-[INFO ] 2021-10-29 20:04:34.903 com.cs.arris.Tests.TC52_HomePage_Test:52 - Last Name : user 
-[INFO ] 2021-10-29 20:04:34.905 com.cs.arris.Tests.TC52_HomePage_Test:55 - Email address : demouser2652@gmail.com
-[INFO ] 2021-10-29 20:04:34.908 com.cs.arris.Tests.TC52_HomePage_Test:58 - UDID : RZ8M3002DGL
-[INFO ] 2021-10-29 20:04:34.909 com.cs.arris.Tests.TC52_HomePage_Test:60 - Retrieved...Sign Up Test Data
-[INFO ] 2021-10-29 20:04:35.648 com.cs.arris.Tests.TC52_HomePage_Test:70 - 
-****** starting test:Verify_HomePage******
+    <system-out><![CDATA[[INFO ] 2021-11-01 01:03:33.924 com.cs.arris.Base.ParentClass:287 - loading... config.properties
+[INFO ] 2021-11-01 01:03:33.945 com.cs.arris.Base.ParentClass:295 - Config.properties object is set to Thread Local
+[INFO ] 2021-11-01 01:03:33.946 com.cs.arris.Base.ParentClass:318 - loading... strings/strings.xml
+[INFO ] 2021-11-01 01:03:33.953 com.cs.arris.Base.ParentClass:332 - loading... error_codes/error_codes.xml
+[INFO ] 2021-11-01 01:03:33.989 com.cs.arris.Base.ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[INFO ] 2021-11-01 01:03:33.998 com.cs.arris.Base.ParentClass:222 - Setting Android driver capabilities
+[INFO ] 2021-11-01 01:03:44.644 com.cs.arris.Base.ParentClass:231 - Android Driver is set to the Thread Local context android
+[INFO ] 2021-11-01 01:03:44.646 com.cs.arris.Base.ParentClass:232 - Android driver initialized: 
+[INFO ] 2021-11-01 01:03:48.775 com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test:47 - Loading...Sign Up Test Data
+[INFO ] 2021-11-01 01:03:48.783 com.cs.arris.Base.ParentClass:304 - loading...testdata/signup
+[INFO ] 2021-11-01 01:03:48.794 com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test:51 - First Name : demo
+[INFO ] 2021-11-01 01:03:48.796 com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test:54 - Last Name : user 
+[INFO ] 2021-11-01 01:03:48.798 com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test:57 - Email address : demouser2652@gmail.com
+[INFO ] 2021-11-01 01:03:48.802 com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test:60 - UDID : RZ8M3002DGL
+[INFO ] 2021-11-01 01:03:48.803 com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test:62 - Retrieved...Sign Up Test Data
+[INFO ] 2021-11-01 01:03:49.510 com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
 
-[INFO ] 2021-10-29 20:04:36.164 com.cs.arris.Pages.GetStartedPage:44 - Get Started - Clicked on Get Started Button
-[INFO ] 2021-10-29 20:04:36.932 com.cs.arris.Pages.GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
-[INFO ] 2021-10-29 20:04:37.652 com.cs.arris.Pages.DeviceLocationPage:105 - Device Location - Clicked Only this time
-[INFO ] 2021-10-29 20:04:53.518 com.cs.arris.Pages.DeviceLocationPage:107 - Device Location - Clicked Allow
-[INFO ] 2021-10-29 20:04:53.825 com.cs.arris.Pages.AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
-[INFO ] 2021-10-29 20:04:55.142 com.cs.arris.Pages.SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
-[INFO ] 2021-10-29 20:04:56.061 com.cs.arris.Pages.SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
-[INFO ] 2021-10-29 20:04:57.079 com.cs.arris.Pages.SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
-[INFO ] 2021-10-29 20:04:57.952 com.cs.arris.Pages.SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
-[INFO ] 2021-10-29 20:05:01.296 com.cs.arris.Pages.SiginPage:52 - Sigin Page - Entered user email address
-[INFO ] 2021-10-29 20:05:02.135 com.cs.arris.Pages.SiginPage:60 - Sigin Page - Clicked on Signin Button
-[INFO ] 2021-10-29 20:05:14.159 com.cs.arris.Utilities.ValidOTP:118 - loading...emailDetails
-[INFO ] 2021-10-29 20:05:20.259 com.cs.arris.Pages.EnterValidOTPPage:61 - Entering valid OTP...054683
+[INFO ] 2021-11-01 01:03:50.108 com.cs.arris.Pages.GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[INFO ] 2021-11-01 01:03:50.878 com.cs.arris.Pages.GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[INFO ] 2021-11-01 01:03:51.581 com.cs.arris.Pages.DeviceLocationPage:105 - Device Location - Clicked Only this time
+[INFO ] 2021-11-01 01:04:07.397 com.cs.arris.Pages.DeviceLocationPage:107 - Device Location - Clicked Allow
+[INFO ] 2021-11-01 01:04:10.801 com.cs.arris.Pages.AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[INFO ] 2021-11-01 01:04:21.211 com.cs.arris.Pages.SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[INFO ] 2021-11-01 01:04:22.051 com.cs.arris.Pages.SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[INFO ] 2021-11-01 01:04:23.136 com.cs.arris.Pages.SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[INFO ] 2021-11-01 01:04:24.021 com.cs.arris.Pages.SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[INFO ] 2021-11-01 01:04:33.500 com.cs.arris.Pages.SiginPage:52 - Sigin Page - Entered user email address
+[INFO ] 2021-11-01 01:04:34.301 com.cs.arris.Pages.SiginPage:60 - Sigin Page - Clicked on Signin Button
+[INFO ] 2021-11-01 01:04:46.323 com.cs.arris.Utilities.ValidOTP:118 - loading...emailDetails
+[INFO ] 2021-11-01 01:04:53.782 com.cs.arris.Pages.EnterValidOTPPage:61 - Entering valid OTP...808240
 ------------------------------
-Waiting for com.cs.arris.Pages.CodeVerifiedPage@34d45ec0 to load
+Waiting for com.cs.arris.Pages.CodeVerifiedPage@6b63e6ad to load
 CODE VERIFIED
-[INFO ] 2021-10-29 20:05:21.800 com.cs.arris.Pages.CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
-[INFO ] 2021-10-29 20:05:46.893 com.cs.arris.Pages.SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[INFO ] 2021-11-01 01:04:55.450 com.cs.arris.Pages.CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[INFO ] 2021-11-01 01:05:20.605 com.cs.arris.Pages.SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[INFO ] 2021-11-01 01:05:44.939 com.cs.arris.Pages.HomePage:813 - On Home Page
+[INFO ] 2021-11-01 01:05:56.100 com.cs.arris.Pages.HomePage:693 - Home Page - Clicked on Devices Image
+[INFO ] 2021-11-01 01:05:57.501 com.cs.arris.Pages.DevicesPage:721 - On Devices Page
+[INFO ] 2021-11-01 01:05:57.644 com.cs.arris.Pages.DevicesPage:599 - Device Title is displayed
+[INFO ] 2021-11-01 01:05:57.758 com.cs.arris.Pages.DevicesPage:604 - Back Icon is displayed
+[INFO ] 2021-11-01 01:05:57.862 com.cs.arris.Pages.DevicesPage:609 - Help Icon is displayed
+[INFO ] 2021-11-01 01:06:08.185 com.cs.arris.Pages.DevicesPage:614 - Online Tab is displayed
+[INFO ] 2021-11-01 01:06:19.023 com.cs.arris.Pages.DevicesPage:619 - Offline Tab is displayed
+[INFO ] 2021-11-01 01:06:19.260 com.cs.arris.Pages.DevicesPage:624 - Main Device name - MAIN - is displayed
+[INFO ] 2021-11-01 01:06:19.498 com.cs.arris.Pages.DevicesPage:657 - Devices Page - Clicked on Back Button
+[INFO ] 2021-11-01 01:06:25.338 com.cs.arris.Pages.HomePage:813 - On Home Page
+[INFO ] 2021-11-01 01:06:36.157 com.cs.arris.Pages.HomePage:693 - Home Page - Clicked on Devices Image
+[INFO ] 2021-11-01 01:06:36.863 com.cs.arris.Pages.DevicesPage:721 - On Devices Page
+[INFO ] 2021-11-01 01:06:36.975 com.cs.arris.Pages.DevicesPage:270 - Device Page Title : Devices(2)
+[INFO ] 2021-11-01 01:06:36.977 com.cs.arris.Pages.DevicesPage:272 - Number of Devices connected to the main mAX Router is : 2
+[INFO ] 2021-11-01 01:07:32.477 com.cs.arris.Pages.DevicesPage:312 - Clicked on Online Button
+[INFO ] 2021-11-01 01:07:32.612 com.cs.arris.Pages.DevicesPage:326 - Number of Devices currently online are : 1
+[INFO ] 2021-11-01 01:07:32.613 com.cs.arris.Pages.DevicesPage:327 - Number of Devices currently offline are : 1
+[INFO ] 2021-11-01 01:07:32.614 com.cs.arris.Pages.DevicesPage:175 - Online Device Count is : 1
+[INFO ] 2021-11-01 01:07:32.614 com.cs.arris.Pages.DevicesPage:385 - Details of Online Devices Connected to Main Device
+[INFO ] 2021-11-01 01:07:32.615 com.cs.arris.Pages.DevicesPage:386 - ****************************************************
+[INFO ] 2021-11-01 01:07:32.616 com.cs.arris.Pages.DevicesPage:391 - Verifying Online Devices Details
+[INFO ] 2021-11-01 01:07:33.211 com.cs.arris.Pages.DevicesPage:397 - Device Image is displayed
+[INFO ] 2021-11-01 01:07:33.351 com.cs.arris.Pages.DevicesPage:402 - Device Name : Galaxy-S10(me) - is displayed
+[INFO ] 2021-11-01 01:08:29.141 com.cs.arris.Pages.DevicesPage:360 - Clicked on Offline Button
+[INFO ] 2021-11-01 01:08:34.655 com.cs.arris.Pages.DevicesPage:364 - No of offline devices : 0
+[INFO ] 2021-11-01 01:08:34.656 com.cs.arris.Pages.DevicesPage:374 - Number of Devices currently offline are : 2
+[INFO ] 2021-11-01 01:08:34.657 com.cs.arris.Pages.DevicesPage:375 - Number of Devices currently online are : 0
+[INFO ] 2021-11-01 01:08:34.658 com.cs.arris.Pages.DevicesPage:182 - Offline Device Count is : 2
+[INFO ] 2021-11-01 01:08:34.658 com.cs.arris.Pages.DevicesPage:495 - List of Offline Devices Connected to Main Device
+[INFO ] 2021-11-01 01:08:34.658 com.cs.arris.Pages.DevicesPage:496 - *************************************************
 ]]></system-out>
-    <system-err><![CDATA[Oct 29, 2021 8:04:30 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+    <system-err><![CDATA[Nov 01, 2021 1:03:44 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

@@ -39,6 +39,7 @@ com/cs/arris/Pages/SetUpYourWiFiManagementPage.class
 com/cs/arris/Pages/NetworkPage.class
 com/cs/arris/Pages/BTDisabledTroubleShootPage.class
 com/cs/arris/Pages/SpeedTestHistoryPage.class
+com/cs/arris/Utilities/TestingDeviceCount.class
 com/cs/arris/Pages/ParentalControlPage.class
 com/cs/arris/Pages/NameYourNetwokSSIDPage.class
 com/cs/arris/Pages/ErrorCode_0003_1003_Service_Is_Currently_Not_Available.class

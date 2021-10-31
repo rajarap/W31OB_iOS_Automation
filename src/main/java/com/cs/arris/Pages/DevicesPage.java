@@ -18,9 +18,13 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class DevicesPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
-	public int count;
-	public int offlineDevices;
-	public int onlineDevices;
+	HomePage homePage = new HomePage();
+	public List<MobileElement> onlineDeviceList;
+	public List<MobileElement> offlineDeviceList;
+	public Integer deviceCount;
+	public int offlineDeviceCount;
+	public int onlineDeviceCount;
+	
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle']"),  //Devices (2)
@@ -98,6 +102,13 @@ public class DevicesPage extends ParentClass implements Page
 	})
 	public MobileElement parentalButton; 
 	
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/setBackgroundForFreezingList']"),  
+		@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/setBackgroundForFreezingList") 
+	})
+	public MobileElement firstFreezingItem; 
+	
 	@AndroidFindBy (xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id=com.arris.sbcBeta:id/recycleViewDiningRoom")
 	public MobileElement listOfDevicesConnected;
 	
@@ -154,180 +165,166 @@ public class DevicesPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public int getCount() {
-		return count;
+	public Integer getDeviceCount() {
+		return deviceCount;
+	}
+	
+	public int getOnlineDeviceCount()
+	{
+		this.getOnlineDevicesCount();
+	    utils.log().info("Online Device Count is : " + this.onlineDeviceCount);
+		return onlineDeviceCount;
+	}
+	
+	public int getOfflineDeviceCount()
+	{
+		this.getOfflineDevicesCount();
+   	    utils.log().info("Offline Device Count is : " + this.offlineDeviceCount);
+		return offlineDeviceCount;
+	}
+	
+
+	public String getDeviceTitleText() {
+		return deviceTitle.getText();
 	}
 
-	public MobileElement getDeviceTitle() {
-		return deviceTitle;
+	public String getOnlineButtonText() {
+		return onlineButton.getText();
 	}
 
-	public MobileElement getCloudIcon() {
-		return cloudIcon;
+	public String getOfflineButton() {
+		return offlineButton.getText();
 	}
 
-	public MobileElement getOnlineButton() {
-		return onlineButton;
+	public String getBackButton() {
+		return backButton.getText();
 	}
 
-	public MobileElement getOfflineButton() {
-		return offlineButton;
-	}
-
-	public MobileElement getBackButton() {
-		return backButton;
-	}
-
-	public MobileElement getHelpIcon() {
-		return helpIcon;
-	}
-
-	public MobileElement getMainDeviceName() {
-		return mainDeviceName;
+	public String getMainDeviceName() {
+		return mainDeviceName.getText();
 	}
 
 	public MobileElement getListOfDevicesConnected() {
 		return listOfDevicesConnected;
 	}
 
-	public MobileElement getDeviceImage() {
-		return deviceImage;
+	public String getListDeviceName() {
+		return deviceName.getText();
 	}
 
-	public MobileElement getDeviceName2() {
-		return deviceName;
+	public String getDeviceSignalStrengthText() {
+		return deviceSignalStrength.getText();
 	}
 
-	public MobileElement getDeviceSignalStrength() {
-		return deviceSignalStrength;
+	public String getDeviceDownloadSpeedValue() {
+		return deviceDownloadSpeed.getText();
 	}
 
-	public MobileElement getDeviceDownloadSpeed() {
-		return deviceDownloadSpeed;
+	public String getDeviceUploadSpeedValue() {
+		return deviceUploadSpeed.getText();
 	}
 
-	public MobileElement getDeviceUploadSpeed() {
-		return deviceUploadSpeed;
+	public String getIpAddressLabelText() {
+		return ipAddressLabel.getText();
 	}
 
-	public MobileElement getIpAddressLabel() {
-		return ipAddressLabel;
+	public String getDeviceIPAddressValue() {
+		return deviceIPAddress.getText();
 	}
 
-	public MobileElement getDeviceIPAddress() {
-		return deviceIPAddress;
+	public String getMacAddressLabelText() {
+		return macAddressLabel.getText();
 	}
 
-	public MobileElement getMacAddressLabel() {
-		return macAddressLabel;
+	public String getDeviceMACAddressValue() {
+		return deviceMACAddress.getText();
 	}
 
-	public MobileElement getDeviceMACAddress() {
-		return deviceMACAddress;
+	public String getChannelLabelText() {
+		return channelLabel.getText();
 	}
 
-	public MobileElement getChannelLabel() {
-		return channelLabel;
+	public String getDeviceChannelNumber() {
+		return deviceChannelNumber.getText();
 	}
 
-	public MobileElement getDeviceChannelNumber() {
-		return deviceChannelNumber;
+	public String getStatusLabelText() {
+		return statusLabel.getText();
 	}
 
-	public MobileElement getStatusLabel() {
-		return statusLabel;
+	public String getDeviceStatus() {
+		return deviceStatus.getText();
 	}
 
-	public MobileElement getDeviceStatus() {
-		return deviceStatus;
+	public String getRssiLabelText() {
+		return rssiLabel.getText();
 	}
 
-	public MobileElement getRssiLabel() {
-		return rssiLabel;
-	}
-
-	public MobileElement getDeviceRSSIText() {
-		return deviceRSSIText;
+	public String getDeviceRSSIValue() {
+		return deviceRSSIText.getText();
 	}
 	
 	public void getTotalCountOfDevices()
 	{
-		String noOfDevices = deviceTitle.getText();  //Devices (2)
-		count = getCountOfDevices(noOfDevices);
-		utils.log().info("Number of Devices connected to the main mAX Router is : " + count);
+		String noOfDevices = deviceTitle.getText();  //Devices(2)
+		utils.log().info("Device Page Title : " + noOfDevices);
+		deviceCount = getCountOfDevices(noOfDevices);
+		utils.log().info("Number of Devices connected to the main mAX Router is : " + deviceCount.toString());
 	}
 	
-	//To verify if the number of devices listed are equal to the count of devices displayed in the home page and the number of online and offline devices
-	public void verifyCountOfDeviceList()
-	{
-		//get device count displayed in home page
-		getTotalCountOfDevices();
-		
-		if (onlineButton.isDisplayed() && onlineButton.isEnabled() && onlineButton.isSelected())
-		{
-			List<MobileElement> deviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id=com.arris.sbcBeta:id/recycleViewDiningRoom");
-			//List<MobileElement> deviceList = (List<MobileElement>) super.getDriver().findElementsByClassName("androidx.recyclerview.widget.RecyclerView");
-			int size = deviceList.size();
-			if (size == count)
-			{
-				onlineDevices = size;
-				utils.log().info("Number of Devices listed in the Devices page is equal to the count of devices displayed in the homepage");
-				utils.log().info("All the Devices listed in the Devices page are currently online");
-			}else if(size < count)
-			{
-				offlineDevices = count - size;  //5-4 = 1  4-online and 1-offline
-				onlineDevices = size;
-				utils.log().info("Number of Devices currently online are : " + onlineDevices);
-				utils.log().info("Number of Devices currently offline are : " + offlineDevices);
-			}
-		}
-		else
-		{
-			click(onlineButton);
-		}		
-	}
-	
+
+//	//To verify if the number of devices listed are equal to the count of devices displayed in the home page and the number of online and offline devices
+//	public void getTotalCountOfDeviceList()
+//	{
+//		//get device count displayed in home page
+//		getTotalCountOfDevices();	
+//	}
+//	
 	public void getOnlineDevicesCount()
 	{
-		//get device count displayed in home page
-		getTotalCountOfDevices();
+//		//get device count displayed in home page
+//		getTotalCountOfDevices();
 		
 		if (onlineButton.isDisplayed() && onlineButton.isEnabled() && onlineButton.isSelected())
 		{
-			List<MobileElement> onlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id=com.arris.sbcBeta:id/recycleViewDiningRoom");
+			utils.log().info("Online Button is displayed, enabled and selected");
+			List<MobileElement> onlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView");
+			//androidx.recyclerview.widget.RecyclerView[@resource-id=com.arris.sbcBeta:id/recycleViewDiningRoom");
 			//List<MobileElement> deviceList = (List<MobileElement>) super.getDriver().findElementsByClassName("androidx.recyclerview.widget.RecyclerView");
 			int size = onlineDeviceList.size();
-			if (size == count)
+			utils.log().info("Total count of devicss : " + deviceCount);
+			if (size == deviceCount)
 			{
-				onlineDevices = size;
+				onlineDeviceCount = size;
 				utils.log().info("Number of Devices listed in the Devices page is equal to the count of devices displayed in the homepage");
 				utils.log().info("All the Devices listed in the Devices page are currently online");
-			}else if(size < count)
+			}else if(size < deviceCount)
 			{
-				offlineDevices = count - size;  //5-4 = 1  4-online and 1-offline
-				onlineDevices = size;
-				utils.log().info("Number of Devices currently online are : " + onlineDevices);
-				utils.log().info("Number of Devices currently offline are : " + offlineDevices);
+				offlineDeviceCount = deviceCount - size;  //5-4 = 1  4-online and 1-offline
+				onlineDeviceCount = size;
+				utils.log().info("Number of Devices currently online are : " + onlineDeviceCount);
+				utils.log().info("Number of Devices currently offline are : " + offlineDeviceCount);
 			}
 		}
 		else
 		{
 			click(onlineButton);
+			utils.log().info("Clicked on Online Button");
 			
-			List<MobileElement> onlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id=com.arris.sbcBeta:id/recycleViewDiningRoom");
+			onlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView");
 			//List<MobileElement> deviceList = (List<MobileElement>) super.getDriver().findElementsByClassName("androidx.recyclerview.widget.RecyclerView");
 			int size = onlineDeviceList.size();
-			if (size == count)
+			if (size == deviceCount)
 			{
-				onlineDevices = size;
+				onlineDeviceCount = size;
 				utils.log().info("Number of Devices listed in the Devices page is equal to the count of devices displayed in the homepage");
 				utils.log().info("All the Devices listed in the Devices page are currently online");
-			}else if(size < count)
+			}else if(size < deviceCount)
 			{
-				offlineDevices = count - size;  //5-4 = 1  4-online and 1-offline
-				onlineDevices = size;
-				utils.log().info("Number of Devices currently online are : " + onlineDevices);
-				utils.log().info("Number of Devices currently offline are : " + offlineDevices);
+				offlineDeviceCount = deviceCount - size;  //5-4 = 1  4-online and 1-offline
+				onlineDeviceCount = size;
+				utils.log().info("Number of Devices currently online are : " + onlineDeviceCount);
+				utils.log().info("Number of Devices currently offline are : " + offlineDeviceCount);
 			}
 		}		
 	}
@@ -335,44 +332,47 @@ public class DevicesPage extends ParentClass implements Page
 	public void getOfflineDevicesCount()
 	{
 		//get device count displayed in home page
-		getTotalCountOfDevices();
+		//getTotalCountOfDevices();
 		
 		if (offlineButton.isDisplayed() && offlineButton.isEnabled() && offlineButton.isSelected())
 		{
-			List<MobileElement> offlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id=com.arris.sbcBeta:id/recycleViewDiningRoom");
+			utils.log().info("Offline Button is displayed, enabled and selected");
+			offlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView");
 			//List<MobileElement> deviceList = (List<MobileElement>) super.getDriver().findElementsByClassName("androidx.recyclerview.widget.RecyclerView");
 			int size = offlineDeviceList.size();
-			if (size == count)
+			if (size == deviceCount)
 			{
-				offlineDevices = size;
+				offlineDeviceCount = size;
 				utils.log().info("Number of Devices listed in the Devices page is equal to the count of devices displayed in the homepage");
 				utils.log().info("All the Devices listed in the Devices page are currently offline");
-			}else if(size < count)
+			}else if(size < deviceCount)
 			{
-				offlineDevices = count - size;  //5-4 = 1  4-online and 1-offline
-				onlineDevices = size;
-				utils.log().info("Number of Devices currently offline are : " + offlineDevices);
-				utils.log().info("Number of Devices currently online are : " + onlineDevices);
+				offlineDeviceCount = deviceCount - size;  //5-4 = 1  4-online and 1-offline
+				onlineDeviceCount = size;
+				utils.log().info("Number of Devices listed in the Devices page is equal to the count of devices displayed in the homepage");
+				utils.log().info("Number of Devices currently offline are : " + offlineDeviceCount);
+				utils.log().info("Number of Devices currently online are : " + onlineDeviceCount);
 			}
 		}
 		else
 		{
 			click(offlineButton);
-			
-			List<MobileElement> offlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id=com.arris.sbcBeta:id/recycleViewDiningRoom");
+			utils.log().info("Clicked on Offline Button");
+			List<MobileElement> offlineDeviceList = (List<MobileElement>) super.getDriver().findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView");
 			//List<MobileElement> deviceList = (List<MobileElement>) super.getDriver().findElementsByClassName("androidx.recyclerview.widget.RecyclerView");
 			int size = offlineDeviceList.size();
-			if (size == count)
+			utils.log().info("No of offline devices : " + size);
+			if (size == deviceCount)
 			{
-				offlineDevices = size;
+				offlineDeviceCount = size;
 				utils.log().info("Number of Devices listed in the Devices page is equal to the count of devices displayed in the homepage");
 				utils.log().info("All the Devices listed in the Devices page are currently offline");
-			}else if(size < count)
+			}else if(size < deviceCount)
 			{
-				offlineDevices = count - size;  //5-4 = 1  4-online and 1-offline
-				onlineDevices = size;
-				utils.log().info("Number of Devices currently offline are : " + offlineDevices);
-				utils.log().info("Number of Devices currently online are : " + onlineDevices);
+				offlineDeviceCount = deviceCount - size;  //5-4 = 1  4-online and 1-offline
+				onlineDeviceCount = size;
+				utils.log().info("Number of Devices currently offline are : " + offlineDeviceCount);
+				utils.log().info("Number of Devices currently online are : " + onlineDeviceCount);
 			}
 		}		
 	}
@@ -380,103 +380,109 @@ public class DevicesPage extends ParentClass implements Page
 	//To verify the details of online devices
 	public void verifyOnlineDeviceDetails()
 	{
-		getOnlineDevicesCount();
+		//getOnlineDevicesCount();
 				
-		utils.log().info("Detatils of Online Devices Connected to Main Device");
+		utils.log().info("Details of Online Devices Connected to Main Device");
 		utils.log().info("****************************************************");
 				
-		for (int i = 1; i <= onlineDevices ; i++)
+		//for (int i = 1; i <= this.onlineDeviceCount ; i++)
+		for(MobileElement e : onlineDeviceList)
 		{
-			List<MobileElement> deviceDetails = listOfDevicesConnected.findElementsByXPath("//android.view.ViewGroup["+i+"][@resource-id='com.arris.sbcBeta:id/setBackgroundForFreezingList']");
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/imgDevice") && deviceDetails.get(i).isDisplayed())
+			utils.log().info("Verifying Online Devices Details");
+			//MobileElement deviceDetails = (MobileElement) super.getDriver().findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
+			//MobileElement deviceDetailss = (MobileElement) super.getDriver().findElement("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.view.ViewGroup");
+			//MobileElement deviceDetails = (MobileElement) super.getDriver().findElementByXPath("//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/setBackgroundForFreezingList']");
+			if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']").isDisplayed())
 			{
 				utils.log().info("Device Image is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtDeviceName") && deviceDetails.get(i).isDisplayed())
+			if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']").isDisplayed())
 			{
-				utils.log().info("Device Name : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Device Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']").getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainSignalStrength") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Device Signal Strength: " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/imgAllDeviceExpand") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Expand image is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainDownloadSpeed") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Download Speed : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainUpLoadSpeed") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Upload Speed : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_ip_address") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("IP Address Label : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtIpAddress") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("IP address of the device : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/macAddressTitle") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("MAC Address Title: " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("MAC Address Label : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("MAC Address : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_channel") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Channel Label : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtChannelValue") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Channel Number : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/statusTitle") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Status Label : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Status : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("Status Label: " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/rssiTitle") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("RSSI Label : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
-			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtRssi") && deviceDetails.get(i).isDisplayed())
-			{
-				utils.log().info("RSSI : " + deviceDetails.get(i).getText() + " - is displayed");
-			}
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainSignalStrength") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Device Signal Strength: " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/imgAllDeviceExpand") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Expand image is displayed");
+//				clickPlusButton();
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainDownloadSpeed") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Download Speed : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainUpLoadSpeed") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Upload Speed : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_ip_address") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("IP Address Label : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtIpAddress") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("IP address of the device : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/macAddressTitle") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("MAC Address Title: " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("MAC Address Label : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("MAC Address : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_channel") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Channel Label : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtChannelValue") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Channel Number : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/statusTitle") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Status Label : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Status : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("Status Label: " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/rssiTitle") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("RSSI Label : " + deviceDetails.getText() + " - is displayed");
+//			}
+//			
+//			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtRssi") && deviceDetails.isDisplayed())
+//			{
+//				utils.log().info("RSSI : " + deviceDetails.getText() + " - is displayed");
+//				clickMinusButton();
+//			}
 		}
 	}
 	
@@ -484,105 +490,141 @@ public class DevicesPage extends ParentClass implements Page
 	public void verifyOfflineDeviceDetails()
 	{
 		//get the number of devices currently offline
-		getOfflineDevicesCount();
+		//getOfflineDevicesCount();
 				
 		utils.log().info("List of Offline Devices Connected to Main Device");
 		utils.log().info("*************************************************");
 				
-		for (int i = 1; i <= count ; i++)
+		for (int i = 1; i <= offlineDeviceCount ; i++)
 		{
-			List<MobileElement> deviceDetails = listOfDevicesConnected.findElementsByXPath("//android.view.ViewGroup["+i+"][@resouce-d='com.arris.sbcBeta:id/setBackgroundForFreezingList']");
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/imgDevice") && deviceDetails.get(i).isDisplayed())
+			MobileElement deviceDetails = (MobileElement) super.getDriver().findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.view.ViewGroup");
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/imgDevice") && deviceDetails.isDisplayed())
 			{
 				utils.log().info("Device Image is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtDeviceName") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtDeviceName") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Device Name : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Device Name : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainSignalStrength") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainSignalStrength") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Device Signal Strength: " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Device Signal Strength: " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/imgAllDeviceExpand") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/imgAllDeviceExpand") && deviceDetails.isDisplayed())
 			{
 				utils.log().info("Expand image is displayed");
+				clickPlusButton();
 			}
 			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainDownloadSpeed") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainDownloadSpeed") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Download Speed : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Download Speed : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainUpLoadSpeed") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMainUpLoadSpeed") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Upload Speed : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Upload Speed : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_ip_address") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_ip_address") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("IP Address Label : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("IP Address Label : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtIpAddress") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtIpAddress") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("IP address of the device : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("IP address of the device : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/macAddressTitle") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/macAddressTitle") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("MAC Address Title: " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("MAC Address Title: " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("MAC Address Label : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("MAC Address Label : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtMacAddress") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("MAC Address : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("MAC Address : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_channel") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txt_channel") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Channel Label : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Channel Label : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtChannelValue") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtChannelValue") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Channel Number : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Channel Number : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/statusTitle") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/statusTitle") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Status Label : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Status Label : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Status : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Status : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtStatus") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("Status Label: " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("Status Label: " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/rssiTitle") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/rssiTitle") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("RSSI Label : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("RSSI Label : " + deviceDetails.getText() + " - is displayed");
 			}
 			
-			if (deviceDetails.get(i).getAttribute("id").equalsIgnoreCase("com.arris.sbcBeta:id/txtRssi") && deviceDetails.get(i).isDisplayed())
+			if (deviceDetails.getAttribute("resource-id").equalsIgnoreCase("com.arris.sbcBeta:id/txtRssi") && deviceDetails.isDisplayed())
 			{
-				utils.log().info("RSSI : " + deviceDetails.get(i).getText() + " - is displayed");
+				utils.log().info("RSSI : " + deviceDetails.getText() + " - is displayed");
+				clickMinusButton();
 			}
 		}
 	}
+	
+	//Verify if all the required UI elements are displayed on the Home Page
+		public void verifyUIOnDevicesPage()
+		{
+			if(deviceTitle.isDisplayed())
+				utils.log().info("Device Title is displayed");
+			else
+				utils.log().info("Device Title - " + deviceTitle.getText() + " - is not displayed");
+			
+			if(backButton.isDisplayed())
+				utils.log().info("Back Icon is displayed");
+			else
+				utils.log().info("Back Icon is displayed");
+			
+			if(helpIcon.isDisplayed())
+				utils.log().info("Help Icon is displayed");
+			else
+				utils.log().info("Help Icon is displayed");
+			
+			if(onlineButton.isDisplayed())
+				utils.log().info("Online Tab is displayed");
+			else
+				utils.log().info("Online Tab is not displayed");
+			
+			if(offlineButton.isDisplayed())
+				utils.log().info("Offline Tab is displayed");
+			else
+				utils.log().info("Offline Tab is not displayed");
+			
+			if(mainDeviceName.isDisplayed())
+				utils.log().info("Main Device name - " + mainDeviceName.getText() + " - is displayed");
+			else
+				utils.log().info("Main Device name is not displayed");
+		}
 	
 	
 	public void clickOnlineTab()
@@ -617,19 +659,19 @@ public class DevicesPage extends ParentClass implements Page
 	
 	public void clickHomeButton()
 	{
-		click(homeButton);
+		homePage.getFooterIconsPageObject().clickHomeButton();
 		utils.log().info("Devices Page - Clicked on Home Button");
 	}
 	
 	public void clickNetworkButton()
 	{
-		click(networkButton);
+		homePage.getFooterIconsPageObject().clickNetworkButton();
 		utils.log().info("Devices Page - Clicked on Network Button");
 	}
 	
 	public void clickParentalButton()
 	{
-		click(parentalButton);
+		homePage.getFooterIconsPageObject().clickParentalButton();
 		utils.log().info("Devices Page - Clicked on Parental Button");
 	}
 	
@@ -645,9 +687,42 @@ public class DevicesPage extends ParentClass implements Page
 		utils.log().info("Devices Help Page - Clicked on Close Button");
 	}
 	
+	public HomePage getHomePageObject()
+	{
+		HomePage homePage = new HomePage();
+		return homePage;
+	}
+	
+	 public NetworkPage getNetworkPageObject() {
+		 NetworkPage networkPage = new NetworkPage();
+	     return networkPage;
+	  }
+	 
+	 public ParentalControlPage getParentalControlPageObject() {
+		 ParentalControlPage parentalControlPage = new ParentalControlPage();
+	     return parentalControlPage;
+	  }
+	
+	public DevicesHelpPage getDevicesHelpPageObject()
+	{
+		DevicesHelpPage devicesHelpPage = new  DevicesHelpPage();
+		return devicesHelpPage;
+	}
+	
+	 public FooterIconsPage getFooterIconsPageObject() {
+		 FooterIconsPage footerIconsPage = new FooterIconsPage();
+	     return footerIconsPage;
+	  }
+	
 	@Override
 	public boolean isAt() {
-		super.pause();
-		return true;
+		if(deviceTitle.isDisplayed())
+		{
+			utils.log().info("On Devices Page");
+			return true;}
+		else {
+			utils.log().info("Not on Devices Page");
+		return false;}
+		
 	}
 }

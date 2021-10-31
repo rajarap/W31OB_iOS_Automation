@@ -63,8 +63,14 @@
 	
 <!-- Device List Details Help -->
 	<string name="device_list_details_help1">Device List Detail</string>
-	<string name="device_list_details_help2">Device Details List The Device List is sorted by router (Main and satellites) showing the connected devices. You can switch between the currently online devices and offline devices using the top bar selector. Please note that Offline device list can be maintained over a fairly long period of time.</string>
-	<string name="device_list_details_help3">Device Card You can expand the information shown by clicking on the + symbol. You can click on the device icon to change the icon to a more fitting description. You can also change the device name using the pencil icon near the name.</string>
+	<string name="device_list_details_help2">Device Details List 
+	The Device List is sorted by router (Main and satellites) showing the connected devices.
+	
+	You can switch between the currently online devices and offline devices using the top bar selector. Please note that Offline device list can be maintained over a fairly long period of time.</string>
+	<string name="device_list_details_help3">Device Card
+	You can expand the information shown by clicking on the + symbol. 
+	
+	You can click on the device icon to change the icon to a more fitting description. You can also change the device name using the pencil icon near the name.</string>
 	<string name="device_list_details_help4">Network SSID is not seen. If your client device is not showing the expected broadcast SSID - please disable your Wi-Fi and re-enable to enter scanning mode. If this problem persists, please note that for certain Intel-based Wi-Fi clients installed in certain laptops, a driver update is required in order to connect to Wi-Fi6 (802.11AX) routers. Please consult the Intel driver update documentation to update your Wi-Fi driver.</string>
 <!-- Device List Details Help -->
 	

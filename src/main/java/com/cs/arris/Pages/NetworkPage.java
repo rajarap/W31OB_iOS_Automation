@@ -15,20 +15,18 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class NetworkPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
+	HomePage homePage;
+	NetworkPage networkPage;
+	ParentalControlPage parentalControlPage;
+	FooterIconsPage footerIconsPage ;
 	
 	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/buttonOnline']"),  //Online
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[79,397][541,484]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/buttonOnline") 
+		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle']"),  //Online
+		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[450,149][631,223]']"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/txtToolBarTitle") 
 	})
-	public MobileElement onlineButton; 
+	public MobileElement networkTitleText; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/buttonOffline']"),  //Offline
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[539,397][1001,484]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/buttonOffline") 
-	})
-	public MobileElement offlineButton; 
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),  //back button
@@ -43,37 +41,77 @@ public class NetworkPage extends ParentClass implements Page
 	})
 	public MobileElement helpIcon; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtAllDeviceTitleOne']"),  //main device name
-		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[55,380][141,437]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/txtAllDeviceTitleOne") 
-	})
-	public MobileElement mainDeviceName;
-	
-	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/recycleViewDiningRoom']"),  //list of devices connected to the main device (router)
-		@AndroidBy (id = "com.arris.sbcBeta:id/recycleViewDiningRoom") 
-	})
-	public MobileElement listOfDevicesConnected;
-	 
-	
+
 	public NetworkPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickContinueButton()
+	public HomePage getHomePageObject()
 	{
-
-		utils.log().info("Congratulations Page - Clicked on Continue Button");
+		homePage = new HomePage();
+		return homePage;
 	}
 	
+	 public NetworkPage getNetworkPageObject() {
+		 networkPage = new NetworkPage();
+	     return networkPage;
+	  }
+	 
+	 public ParentalControlPage getParentalControlPageObject() {
+		 parentalControlPage = new ParentalControlPage();
+	     return parentalControlPage;
+	  }
 	
+	 public FooterIconsPage getFooterIconsPageObject() {
+		 footerIconsPage = new FooterIconsPage();
+	     return footerIconsPage;
+	  }
+	
+	public void verifyUIOnNetworkPage()
+	{
+
+		utils.log().info("on Network Page");
+	}
+	
+	public void clickBackButton()
+	{
+		click(backButton);
+		utils.log().info("Network Page - Clicked on Back Button");
+	}
+	
+	public void clickHomeButton()
+	{
+		homePage.getFooterIconsPageObject().clickHomeButton();
+		utils.log().info("Network Page - Clicked on Home Button");
+	}
+	
+	public void clickNetworkButton()
+	{
+		homePage.getFooterIconsPageObject().clickNetworkButton();
+		utils.log().info("Network Page - Clicked on Network Button");
+	}
+	
+	public void clickParentalButton()
+	{
+		homePage.getFooterIconsPageObject().clickParentalButton();
+		utils.log().info("Network Page - Clicked on Parental Button");
+	}
+	
+	public void clickHelpButton()
+	{
+		click(helpIcon);
+		utils.log().info("Network Page - Clicked on Help Button");
+	}
 	
 	@Override
 	public boolean isAt() {
-		super.pause();
-		return true;
+		if(networkTitleText.isDisplayed())
+		{
+			utils.log().info("On Network Page");
+			return true;}
+		else {
+			utils.log().info("Not on Network Page");
+		return false;}
 	}
 }

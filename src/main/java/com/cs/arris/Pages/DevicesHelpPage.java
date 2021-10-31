@@ -24,17 +24,19 @@ public class DevicesHelpPage extends ParentClass implements Page
 	})
 	public MobileElement closeButton; 
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[52,401][1029,558]']")
+	//@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[52,401][1029,558]']")
+	@AndroidFindBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.webkit.WebView/android.webkit.WebView/android.widget.TextView")
 	public MobileElement deviceHelp1;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[157,1556][1029,2042]']")
+	//@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[157,1556][1029,2042]']")
+	@AndroidFindBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.webkit.WebView/android.webkit.WebView/android.widget.ListView/android.view.View[1]")
 	public MobileElement deviceHelp2;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[157,905][1029,1766]']")
+	@AndroidFindBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.webkit.WebView/android.webkit.WebView/android.widget.ListView/android.view.View[2]")
 	public MobileElement deviceHelp3;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[157,936][1029,2042]']")
-	public MobileElement deviceHelp4;
+	//@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[157,936][1029,2042]']")
+	//public MobileElement deviceHelp4;
 	
 	public DevicesHelpPage()
 	{
@@ -49,14 +51,14 @@ public class DevicesHelpPage extends ParentClass implements Page
 	
 	public void verifyHelpText()
 	{
-		Assert.assertEquals(deviceHelp1.getText(), super.getStrings().get("device_list_details_help1"));
+		Assert.assertEquals(deviceHelp1.getText(), getStrings().get("device_list_details_help1"));
 		utils.log().info("Device List Help Page - Title is displayed correctly");
-		Assert.assertEquals(deviceHelp2.getText(), super.getStrings().get("device_list_details_help2"));
+		Assert.assertEquals(deviceHelp2.getText(), getStrings().get("device_list_details_help2"));
 		utils.log().info("Device List Help Page - Device List Details are displayed correctly");
-		Assert.assertEquals(deviceHelp3.getText(), super.getStrings().get("device_list_details_help3"));
+		Assert.assertEquals(deviceHelp3.getText(), getStrings().get("device_list_details_help3"));
 		utils.log().info("Device List Help Page - Device Card details are displayed correctly");
-		Assert.assertEquals(deviceHelp4.getText(), super.getStrings().get("device_list_details_help4"));
-		utils.log().info("Device List Help Page - Network SSID details are displayed correctly");
+//		Assert.assertEquals(deviceHelp4.getText(), getStrings().get("device_list_details_help4"));
+//		utils.log().info("Device List Help Page - Network SSID details are displayed correctly");
 	}
 	
 	

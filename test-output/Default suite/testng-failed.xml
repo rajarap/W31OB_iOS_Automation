@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cs.arris.Tests.TC52_HomePage_Test">
+      <class name="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test">
         <methods>
+          <include name="Verify_DevicesPage"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="Verify_HomePage"/>
-          <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.cs.arris.Tests.TC52_HomePage_Test -->
+      </class> <!-- com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

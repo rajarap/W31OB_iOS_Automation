@@ -123,17 +123,17 @@ public class HomePage extends ParentClass implements Page
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgNoLeftSatellite"),  
-		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[217,1008][302,1192']']"),
+		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[217,1008][302,1192]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/imgNoLeftSatellite") 
 	})
-	public MobileElement totalNoOfLeftSatellites; 
+	public MobileElement leftSatelliteImage; 
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgNoRightSatellite"),  
 		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[769,1008][854,1192]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/imgNoRightSatellite") 
 	})
-	public MobileElement totalNoOfRightSatellites; 
+	public MobileElement rightSatelliteImage; 
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView162"),  
@@ -178,7 +178,7 @@ public class HomePage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[85,1919][129,1979]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/textSpeedHistoryDevices") 
 	})
-	public MobileElement speedTestDevices; 
+	public MobileElement speedTestHistoryDevices; 
 	
 	@AndroidFindBy (xpath = "//android.view.ViewGroup[@bounds='[51,1397][1029,1657]']")
 	public MobileElement speedTestHistoryButton; 
@@ -193,7 +193,14 @@ public class HomePage extends ParentClass implements Page
 	})
 	public MobileElement currentlyBlockedDevicesText;   //Currently Blocked Devices
 	
-	@AndroidFindBy (xpath = "//android.view.ViewGroup[@bounds='[51,1708][1029,1913]']")
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_full_screen5"),  
+		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[924,1742][995,1813]']"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/img_full_screen5") 
+	})
+	public MobileElement currentlyBlockedDevicesImage; 
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgBlockedDevices")
 	public MobileElement currentlyBlockedDevicesButton; 
 	
 	@AndroidFindAll({
@@ -356,177 +363,6 @@ public class HomePage extends ParentClass implements Page
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/bottom_view_navigation")
 	private FooterIconsPage footerIconsPage;
 	
-	public HomePage()
-	{
-		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
-	}
-	
-	public void getSSIDName()
-	{
-		String ssidname = ssidName.getText();
-		utils.log().info("You are connected to your router " + ssidname + " home network....Happy Surfing");
-	}
-	
-	public void clickOkButton()
-	{
-		click(okButton);
-		utils.log().info("Network Optimization Dialog2 - Clicked on OK Button");
-	}
-	
-	//Verify if all the required UI elements are displayed on the Home Page
-	public void verifyUIOnHomePage()
-	{
-		if(homeTitle.isDisplayed())
-			utils.log().info("Home Title - " + homeTitle.getText() + " - is displayed");
-		else
-			utils.log().info("Home Title is not displayed");
-		
-		if(networkSpeedTitle.isDisplayed())
-			utils.log().info("Network Speed  Title - " + networkSpeedTitle.getText() + " - is displayed");
-		else
-			utils.log().info("Network Title is not displayed");
-		
-		if(navigateButton.isDisplayed())
-			utils.log().info("Navigate Icon is displayed");
-		else
-			utils.log().info("Navigate Icon is displayed");
-		
-		if(cloudIcon.isDisplayed())
-			utils.log().info("Cloud Icon is displayed");
-		else
-			utils.log().info("Cloud Icon is not displayed");
-		
-		if(notificationsIcon.isDisplayed())
-			utils.log().info("Notifications Icon is displayed");
-		else
-			utils.log().info("Notifications Icon is not displayed");
-		
-		if(downloadText.isDisplayed())
-			utils.log().info("Download Text is displayed");
-		else
-			utils.log().info("Download Text is not displayed");
-		
-		if(downloadSpeedText.isDisplayed())
-			utils.log().info("Download Speed Text - " + downloadSpeedText.getText() + " - is displayed");
-		else
-			utils.log().info("Download Speed Text is not displayed");
-		
-		if(uploadText.isDisplayed())
-			utils.log().info("Upload Text is displayed");
-		else
-			utils.log().info("Upload Text is not displayed");
-		
-		if(uploadSpeedText.isDisplayed())
-			utils.log().info("Upload Speed Text - " + uploadSpeedText.getText() + " - is displayed");
-		else
-			utils.log().info("Upload Speed Text is not displayed");
-		
-		if(ssidName.isDisplayed())
-			utils.log().info("Main Router SSID Name - " + ssidName.getText() + " - is displayed");
-		else
-			utils.log().info("Main Router SSID Name is not displayed");
-		
-		if(mainDeviceImage.isDisplayed())
-			utils.log().info("Main Router Device image is displayed");
-		else
-			utils.log().info("Main Router Device is not displayed");
-		
-		if(mainDeviceName.isDisplayed())
-			utils.log().info("Main Router Device Name - " + mainDeviceName.getText() + " - is displayed");
-		else
-			utils.log().info("Main Router Device Name is displayed");
-			
-		if(mainDeviceCounter.isDisplayed())
-			utils.log().info("Number of Devices Connected to Main Router - " + mainDeviceCounter.getText() + " - is displayed");
-		else
-			utils.log().info("Main devices counter is not displayed");
-		
-		if(totalNoOfDevicesImage.isDisplayed())
-			utils.log().info("Total number of devices image is displayed");
-		else
-			utils.log().info("Total number of devices image is not displayed");
-		
-		if(totalNoOfDevices.isDisplayed())
-			utils.log().info("Total of - " + super.getCountOfDevices(totalNoOfDevices.getText()) + " - devices are connected to the main Router");
-		else
-			utils.log().info("Total number of devices connected to the router is not displayed");
-		
-		if(totalNoOfLeftSatellites.isDisplayed())
-			utils.log().info("Left Satellite Image is displayed");
-		else 
-			utils.log().info("Left Satellite Image is not displayed");
-		
-		if(totalNoOfRightSatellites.isDisplayed())
-			utils.log().info("Right Satellite Image is displayed");
-		else
-			utils.log().info("Right Satellite Image is not displayed");
-		
-		if(deviceSignalStrengthLeaderBoardText.isDisplayed())
-			utils.log().info("Device Signal Strength Leader Board Text is displayed");
-		else
-			utils.log().info("Device Signal Strength Leader Board Text is not displayed");
-		
-		if(speedTestDevices.isDisplayed())
-			utils.log().info("Speed Test History Text is displayed");
-		else
-			utils.log().info("Speed Test History Text is not displayed");
-		
-		if(currentlyBlockedDevicesText.isDisplayed())
-			utils.log().info("Currently Blocked Devices Text is displayed");
-		else
-			utils.log().info("Currently Blocked Devices is not displayed");
-		
-		if(parentalControlBlockedDevices.isDisplayed())
-			utils.log().info("Count of devices blocked Text is displayed");
-		else
-			utils.log().info("Count of devices blocked is not displayed");
-		
-		if(homeButton.isDisplayed())
-			utils.log().info("Home Button is displayed");
-		else
-			utils.log().info("Home Button is not displayed");
-		
-		if(homeButtonText.isDisplayed())
-			utils.log().info("Home Button Text is displayed");
-		else
-			utils.log().info("Home Button Text is not displayed");
-		
-		if(homeButtonImage.isDisplayed())
-			utils.log().info("Home Button Image is displayed");
-		else
-			utils.log().info("Home Button Image is not displayed");
-		
-		if(networkButton.isDisplayed())
-			utils.log().info("Network Button is displayed");
-		else
-			utils.log().info("Network Button is not displayed");
-		
-		if(networkButtonText.isDisplayed())
-			utils.log().info("Network Button Text is displayed");
-		else
-			utils.log().info("Network Button Text is not displayed");
-		
-		if(networkButtonImage.isDisplayed())
-			utils.log().info("Network Button Image is displayed");
-		else
-			utils.log().info("Network Button Image is not displayed");
-		
-		if(parentalButton.isDisplayed())
-			utils.log().info("Partental Button is displayed");
-		else
-			utils.log().info("Parental Button is not displayed");
-		
-		if(parentalButtonText.isDisplayed())
-			utils.log().info("Partental Button Text is displayed");
-		else
-			utils.log().info("Parental Button Text is not displayed");
-		
-		if(parentalButtonImage.isDisplayed())
-			utils.log().info("Parental Button Image is displayed");
-		else
-			utils.log().info("Parental Button Image is not displayed");
-	}
-	
 	 public MainDevicePage getMainDevicePageObject() {
 		 mainDevicePage = new MainDevicePage();
 	     return mainDevicePage;
@@ -587,6 +423,216 @@ public class HomePage extends ParentClass implements Page
 	     return footerIconsPage;
 	  }
 	
+	public HomePage()
+	{
+		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
+	}
+	
+	public void getSSIDName()
+	{
+		String ssidname = ssidName.getText();
+		utils.log().info("You are connected to your router " + ssidname + " home network....Happy Surfing");
+	}
+	
+	public void clickOkButton()
+	{
+		click(okButton);
+		utils.log().info("Network Optimization Dialog2 - Clicked on OK Button");
+	}
+	
+	//Verify if all the required UI elements are displayed on the Home Page
+	public void verifyUIOnHomePage()
+	{
+		if(homeTitle.isDisplayed())
+			utils.log().info("Title - " + homeTitle.getText() + " - is displayed");
+		else
+			utils.log().info("Home Title is not displayed");
+		
+		if(networkSpeedTitle.isDisplayed())
+			utils.log().info("Title - " + networkSpeedTitle.getText() + " - is displayed");
+		else
+			utils.log().info("Network Title is not displayed");
+		
+		if(navigateButton.isDisplayed())
+			utils.log().info("Navigate Icon is displayed");
+		else
+			utils.log().info("Navigate Icon is displayed");
+		
+//		if(cloudIcon.isDisplayed())
+//			utils.log().info("Cloud Icon is displayed");
+//		else
+//			utils.log().info("Cloud Icon is not displayed");
+		
+		if(notificationsIcon.isDisplayed())
+			utils.log().info("Notifications Icon is displayed");
+		else
+			utils.log().info("Notifications Icon is not displayed");
+		
+		if(downloadText.isDisplayed())
+			utils.log().info("Download Text is displayed");
+		else
+			utils.log().info("Download Text is not displayed");
+		
+		if(downloadSpeedText.isDisplayed())
+			utils.log().info("Download Speed Text - " + downloadSpeedText.getText() + " - is displayed");
+		else
+			utils.log().info("Download Speed Text is not displayed");
+		
+		if(uploadText.isDisplayed())
+			utils.log().info("Upload Text is displayed");
+		else
+			utils.log().info("Upload Text is not displayed");
+		
+		if(uploadSpeedText.isDisplayed())
+			utils.log().info("Upload Speed Text - " + uploadSpeedText.getText() + " - is displayed");
+		else
+			utils.log().info("Upload Speed Text is not displayed");
+		
+		if(ssidName.isDisplayed())
+			utils.log().info("Main Router SSID Name - " + ssidName.getText() + " - is displayed");
+		else
+			utils.log().info("Main Router SSID Name is not displayed");
+		
+		if(mainDeviceImage.isDisplayed())
+			utils.log().info("Main Router Device image is displayed");
+		else
+			utils.log().info("Main Router Device is not displayed");
+		
+		if(mainDeviceName.isDisplayed())
+			utils.log().info("Main Router Device Name - " + mainDeviceName.getText() + " - is displayed");
+		else
+			utils.log().info("Main Router Device Name is displayed");
+			
+		if(mainDeviceCounter.isDisplayed())
+			utils.log().info("Number of Devices Connected to Main Router - " + mainDeviceCounter.getText() + " - is displayed");
+		else
+			utils.log().info("Main devices counter is not displayed");
+		
+		if(totalNoOfDevicesImage.isDisplayed())
+			utils.log().info("Total number of devices image is displayed");
+		else
+			utils.log().info("Total number of devices image is not displayed");
+		
+		if(totalNoOfDevices.isDisplayed())
+			utils.log().info("Total of - " + super.getCountOfDevices(totalNoOfDevices.getText()) + " - devices are connected to the main Router");
+		else
+			utils.log().info("Total number of devices connected to the router is not displayed");
+		
+		if(leftSatelliteImage.isDisplayed())
+			utils.log().info("Left Satellite Image is displayed");
+		else 
+			utils.log().info("Left Satellite Image is not displayed");
+		
+		if(rightSatelliteImage.isDisplayed())
+			utils.log().info("Right Satellite Image is displayed");
+		else
+			utils.log().info("Right Satellite Image is not displayed");
+		
+		if(deviceSignalStrengthLeaderBoardText.isDisplayed())
+			utils.log().info("Device Signal Strength Leader Board Text is displayed");
+		else
+			utils.log().info("Device Signal Strength Leader Board Text is not displayed");
+
+		if(deviceSignalStrengthLeaderBoardImage.isDisplayed())
+			utils.log().info("Device Signal Strength Leader Board Image is displayed");
+		else
+			utils.log().info("Device Signal Strength Leader Board Image is not displayed");
+		
+		if(bitRateDevices.isDisplayed())
+			utils.log().info("Count of - " + bitRateDevices.getText() + " - Device Signal Strength Leader Board is displayed");
+		else
+			utils.log().info("Device Signal Strength Leader Board Count is not displayed");
+		
+		if(speedTestHistoryText.isDisplayed())
+			utils.log().info("Speed Test History Text is displayed");
+		else
+			utils.log().info("Speed Test History Text is not displayed");
+
+		if(speedTestHistoryImage.isDisplayed())
+			utils.log().info("Speed Test History Image is displayed");
+		else
+			utils.log().info("Speed Test History Image is not displayed");
+
+		if(speedTestHistoryDevices.isDisplayed())
+			utils.log().info("Count of Speed Test History Devices - " + speedTestHistoryDevices.getText() + " - is displayed");
+		else
+			utils.log().info("Count of Speed Test History Devices is not displayed");
+		
+//		super.scrollToElement(currentlyBlockedDevicesButton); 
+//		super.pause(20);
+//		
+//		if(currentlyBlockedDevicesText.isDisplayed())
+//			utils.log().info("Currently Blocked Devices Text is displayed");
+//		else
+//			utils.log().info("Currently Blocked Devices is not displayed");
+//
+//		if(currentlyBlockedDevicesImage.isDisplayed())
+//			utils.log().info("Currently Blocked Devices Image is displayed");
+//		else
+//			utils.log().info("Currently Blocked Devices Image is not displayed");
+//		
+//		try
+//		{
+//			if(parentalControlIsDisabled.isDisplayed())
+//				utils.log().info("Parental Control is currently disabled.. Parental Control is Disabled text is displayed");
+//			else
+//				utils.log().info("Parental Control is Disabled text is not displayed");
+//		}catch(Exception e){ e.getMessage();}
+//	
+//		try
+//		{
+//			if(parentalControlBlockedDevices.isDisplayed())
+//				utils.log().info("Parental Control is currently enabled - " + parentalControlBlockedDevices.getText() + " - devices are under Parental Control");
+//			else
+//				utils.log().info("Parental Control is currently enabled but count of Parental Control devices is not displayed");
+//		}catch(Exception e){ e.getMessage();}
+		
+		if(getFooterIconsPageObject().homeButton.isDisplayed())
+			utils.log().info("Home Button is displayed");
+		else
+			utils.log().info("Home Button is not displayed");
+		
+		if(getFooterIconsPageObject().homeButtonText.isDisplayed())
+			utils.log().info("Home Button Text is displayed");
+		else
+			utils.log().info("Home Button Text is not displayed");
+		
+		if(getFooterIconsPageObject().homeButtonImage.isDisplayed())
+			utils.log().info("Home Button Image is displayed");
+		else
+			utils.log().info("Home Button Image is not displayed");
+		
+		if(getFooterIconsPageObject().networkButton.isDisplayed())
+			utils.log().info("Network Button is displayed");
+		else
+			utils.log().info("Network Button is not displayed");
+		
+		if(getFooterIconsPageObject().networkButtonText.isDisplayed())
+			utils.log().info("Network Button Text is displayed");
+		else
+			utils.log().info("Network Button Text is not displayed");
+		
+		if(getFooterIconsPageObject().networkButtonImage.isDisplayed())
+			utils.log().info("Network Button Image is displayed");
+		else
+			utils.log().info("Network Button Image is not displayed");
+		
+		if(getFooterIconsPageObject().parentalButton.isDisplayed())
+			utils.log().info("Partental Button is displayed");
+		else
+			utils.log().info("Parental Button is not displayed");
+		
+		if(getFooterIconsPageObject().parentalButtonText.isDisplayed())
+			utils.log().info("Partental Button Text is displayed");
+		else
+			utils.log().info("Parental Button Text is not displayed");
+		
+		if(getFooterIconsPageObject().parentalButtonImage.isDisplayed())
+			utils.log().info("Parental Button Image is displayed");
+		else
+			utils.log().info("Parental Button Image is not displayed");
+	}
+	
 	public void clickNotificationsIcon()
 	{
 		click(notificationsIcon);
@@ -641,7 +687,7 @@ public class HomePage extends ParentClass implements Page
 		utils.log().info("Home Page - Clicked on Main Device Image");
 	}
 	
-	public void clicktotalNoOfDeviceImage()
+	public void clickDevicesImage()
 	{
 		click(totalNoOfDevicesImage);  //Click this link to navigate to the Devices Page
 		utils.log().info("Home Page - Clicked on Devices Image");
@@ -649,13 +695,13 @@ public class HomePage extends ParentClass implements Page
 	
 	public void clickLeftSatelliteImage()
 	{
-		click(totalNoOfLeftSatellites); 
+		click(leftSatelliteImage); 
 		utils.log().info("Home Page - Clicked on Left Satellite Image");
 	}
 	
 	public void clickRightSatelliteImage()
 	{
-		click(totalNoOfRightSatellites);
+		click(rightSatelliteImage);
 		utils.log().info("Home Page - Clicked on Right Satellite Image");
 	}
 	
@@ -667,6 +713,99 @@ public class HomePage extends ParentClass implements Page
 	}
 	
 	
+
+	public Integer getCount() {
+		return count;
+	}
+
+	public String getHomeTitleText() {
+		return homeTitle.getText();
+	}
+
+	public String getNetworkSpeedText() {
+		return networkSpeedTitle.getText();
+	}
+
+	public String getDownloadText() {
+		return downloadText.getText();
+	}
+
+	public String getDownloadSpeedText() {
+		return downloadSpeedText.getText();
+	}
+
+	public String getUploadText() {
+		return uploadText.getText();
+	}
+
+	public String getUploadSpeedText() {
+		return uploadSpeedText.getText();
+	}
+
+	public String getSsidName() {
+		return ssidName.getText();
+	}
+
+	public String getMainDeviceName() {
+		return mainDeviceName.getText();
+	}
+
+	public String getMainDeviceCounter() {
+		return mainDeviceCounter.getText();
+	}
+
+	public String getTotalNoOfDevices() {
+		return totalNoOfDevices.getText();
+	}
+
+	public String getDeviceSignalStrengthLeaderBoardText() {
+		return deviceSignalStrengthLeaderBoardText.getText();
+	}
+
+	public String getBitRateDevices() {
+		return bitRateDevices.getText();
+	}
+
+	public String getSpeedTestHistoryText() {
+		return speedTestHistoryText.getText();
+	}
+	
+	public String getSpeedTestDevices() {
+		return speedTestHistoryDevices.getText();
+	}
+
+	public String getCurrentlyBlockedDevicesText() {
+		return currentlyBlockedDevicesText.getText();
+	}
+
+	public String getParentalControlIsDisabled() {
+		return parentalControlIsDisabled.getText();
+	}
+
+	public String getCurrentlyBlockedDevicesEnabledText() {
+		return currentlyBlockedDevicesEnabledText.getText();
+	}
+
+	public String getHomeButtonText() {
+		return getFooterIconsPageObject().homeButtonText.getText();
+	}
+	
+	public String getNetworkButtonText() {
+		return getFooterIconsPageObject().networkButtonText.getText();
+	}
+
+	public String getParentalButtonText() {
+		return getFooterIconsPageObject().parentalButtonText.getText();
+	}
+
+	public MobileElement getNetworkOptimizationTitle() {
+		return networkOptimizationTitle;
+	}
+
+	public MobileElement getNetworkOptimizationMessage() {
+		return networkOptimizationMessage;
+	}
+	
 	@Override
 	public boolean isAt() {
 		if(homeTitle.isDisplayed())
@@ -676,99 +815,6 @@ public class HomePage extends ParentClass implements Page
 		else {
 			utils.log().info("Not on Home Page");
 		return false;}
-		
-	}
-
-	public Integer getCount() {
-		return count;
-	}
-
-	public MobileElement getHomeTitle() {
-		return homeTitle;
-	}
-
-	public MobileElement getNetworkSpeedTitle() {
-		return networkSpeedTitle;
-	}
-
-	public MobileElement getDownloadText() {
-		return downloadText;
-	}
-
-	public MobileElement getDownloadSpeedText() {
-		return downloadSpeedText;
-	}
-
-	public MobileElement getUploadText() {
-		return uploadText;
-	}
-
-	public MobileElement getUploadSpeedText() {
-		return uploadSpeedText;
-	}
-
-	public MobileElement getSsidName() {
-		return ssidName;
-	}
-
-	public MobileElement getMainDeviceName() {
-		return mainDeviceName;
-	}
-
-	public MobileElement getMainDeviceCounter() {
-		return mainDeviceCounter;
-	}
-
-	public MobileElement getTotalNoOfDevices() {
-		return totalNoOfDevices;
-	}
-
-	public MobileElement getDeviceSignalStrengthLeaderBoardText() {
-		return deviceSignalStrengthLeaderBoardText;
-	}
-
-	public MobileElement getBitRateDevices() {
-		return bitRateDevices;
-	}
-
-	public MobileElement getSpeedTestHistoryText() {
-		return speedTestHistoryText;
-	}
-	
-	public MobileElement getSpeedTestDevices() {
-		return speedTestDevices;
-	}
-
-	public MobileElement getCurrentlyBlockedDevicesText() {
-		return currentlyBlockedDevicesText;
-	}
-
-	public MobileElement getParentalControlIsDisabled() {
-		return parentalControlIsDisabled;
-	}
-
-	public MobileElement getCurrentlyBlockedDevicesEnabledText() {
-		return currentlyBlockedDevicesEnabledText;
-	}
-
-	public MobileElement getHomeButtonText() {
-		return homeButtonText;
-	}
-	
-	public MobileElement getNetworkButtonText() {
-		return networkButtonText;
-	}
-
-	public MobileElement getParentalButtonText() {
-		return parentalButtonText;
-	}
-
-	public MobileElement getNetworkOptimizationTitle() {
-		return networkOptimizationTitle;
-	}
-
-	public MobileElement getNetworkOptimizationMessage() {
-		return networkOptimizationMessage;
 	}
 
 }
