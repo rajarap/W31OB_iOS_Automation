@@ -51,7 +51,7 @@ public class HamburgerMenuPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void verifyUIOnDeviceSignalStrengthPage()
+	public void verifyUIOnHamburgerMenuPage()
 	{
 		if(addDevice.isDisplayed())
 			utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is displayed");
@@ -94,9 +94,54 @@ public class HamburgerMenuPage extends ParentClass implements Page
 			utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is not displayed");
 	}
 	
+	 public HomePage getHomePageObject() {
+		 HomePage homePage = new HomePage();
+	     return homePage;
+	  }
+	 
+	 public SpeedTestPage getSpeedTestPageObject() {
+		 SpeedTestPage speedTestPage = new SpeedTestPage();
+	     return speedTestPage;
+	  }
+
 	public void clickCloseButton()
 	{
 		click(closeHamburgerMenu); //back to home page
+	}
+	
+	public void clickAddDeviceButton()
+	{
+		click(addDevice); 
+	}
+	
+	public void clickRemoveDeviceButton()
+	{
+		click(removeDevice); 
+	}
+	
+	public void clickSpeedTestButton()
+	{
+		click(speedTest); 
+	}
+	
+	public void clickAddSatelliteButton()
+	{
+		click(addNewSatellite); 
+	}
+	
+	public void clickAmazonFeaturesButton()
+	{
+		click(amazonFeatures); 
+	}
+	
+	public void clickHelpManuButton()
+	{
+		click(helpMenu); 
+	}
+	
+	public void clickAboutAppButton()
+	{
+		click(aboutApp); 
 	}
 	
 	@Override

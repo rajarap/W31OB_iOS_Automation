@@ -533,3 +533,1616 @@ Session ID: 3614e9b3-46f5-43a5-ac64-1a756be7eb2d
 [logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 01:08:44.604 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-01-03-33/TC53_Login_And_Verify_DevicesPage_Test/Verify_DevicesPage.mp4
 [logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 01:08:50.572 ParentClass:166 - Closing App
 [logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 01:08:50.809 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:19:53.242 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:19:53.253 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:04.559 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:04.561 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:08.651 TC53_Login_And_Verify_DevicesPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:08.653 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:08.660 TC53_Login_And_Verify_DevicesPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:08.663 TC53_Login_And_Verify_DevicesPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:08.665 TC53_Login_And_Verify_DevicesPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:08.669 TC53_Login_And_Verify_DevicesPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:08.671 TC53_Login_And_Verify_DevicesPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:09.503 TC53_Login_And_Verify_DevicesPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:10.060 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:11.526 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:11.575 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 15:20:18.197 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: com.android.permissioncontroller:id/permission_allow_one_time_button' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: cf7c2e72-0c32-4dc8-a557-1697cde050ed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(<generated>)
+	at com.cs.arris.Pages.DeviceLocationPage.clickOnlyThisTimeLink(DeviceLocationPage.java:107)
+	at com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test.lambda$Verify_DevicesPage$2(TC53_Login_And_Verify_DevicesPage_Test.java:84)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceLocationPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:67)
+	at com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test.Verify_DevicesPage(TC53_Login_And_Verify_DevicesPage_Test.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:19.700 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-15-19-53/TC53_Login_And_Verify_DevicesPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:20.569 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:20.751 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:49.093 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:49.103 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:59.930 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:20:59.932 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.015 TC53_Login_And_Verify_DevicesPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.024 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.040 TC53_Login_And_Verify_DevicesPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.047 TC53_Login_And_Verify_DevicesPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.052 TC53_Login_And_Verify_DevicesPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.062 TC53_Login_And_Verify_DevicesPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.064 TC53_Login_And_Verify_DevicesPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:04.814 TC53_Login_And_Verify_DevicesPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:05.338 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:06.105 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:06.821 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:22.751 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:26.168 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:27.524 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:28.407 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:29.442 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:30.280 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:33.557 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:34.399 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:46.433 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:51.648 EnterValidOTPPage:61 - Entering valid OTP...703369
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:21:53.231 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:22:18.019 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:22:43.168 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:22:54.962 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:22:55.753 DevicesPage:713 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:22:55.862 DevicesPage:591 - Device Title is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:22:55.963 DevicesPage:596 - Back Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:22:56.052 DevicesPage:601 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:06.792 DevicesPage:606 - Online Tab is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:17.614 DevicesPage:611 - Offline Tab is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:17.859 DevicesPage:616 - Main Device name - MAIN - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:18.149 DevicesPage:649 - Devices Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:23.693 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:35.252 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:35.943 DevicesPage:713 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:36.062 DevicesPage:270 - Device Page Title : Devices(2)
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:23:36.065 DevicesPage:272 - Number of Devices connected to the main mAX Router is : 2
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.145 DevicesPage:312 - Clicked on Online Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.280 DevicesPage:326 - Number of Devices currently online are : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.282 DevicesPage:327 - Number of Devices currently offline are : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.282 DevicesPage:175 - Online Device Count is : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.283 DevicesPage:385 - Details of Online Devices Connected to Main Device
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.283 DevicesPage:386 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.283 DevicesPage:391 - Verifying Online Devices Details
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:31.888 DevicesPage:397 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:32.114 DevicesPage:402 - Device Name : Galaxy-S10(me) is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:32.262 DevicesPage:407 - Device Name : 5GHz is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:32.328 DevicesPage:412 - Expand Button image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:33.081 DevicesPage:414 - Clicked Expand Button image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:33.251 DevicesPage:419 - Download speed of : 0.02 Mbps is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:33.385 DevicesPage:424 - Upload speed of : 0.01 Mbps  is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:33.518 DevicesPage:429 - Label : IP Address is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:33.652 DevicesPage:434 - IP Address : 192.168.7.109 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:33.788 DevicesPage:439 - Label : MAC Address is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:33.927 DevicesPage:444 - MAC Address : 32:06:8b:d9:08:fb is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:34.054 DevicesPage:449 - Label : Channel is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:34.242 DevicesPage:454 - Channel Number : 149 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:34.372 DevicesPage:459 - Label : Status is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:34.488 DevicesPage:464 - Status : Online is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:34.614 DevicesPage:469 - Label : RSSI is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:34.744 DevicesPage:474 - RSSI : -53 dBm is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:35.482 DevicesPage:476 - Clicked Collapse Button image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:35.595 DevicesPage:713 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:35.946 FooterIconsPage:140 - Footer Icons Page - Clicked on Home Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:41.232 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:52.857 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:53.568 DevicesPage:713 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:55.055 FooterIconsPage:146 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:56.985 NetworkPage:111 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:24:57.303 NetworkPage:80 - Network Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:25:02.646 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:25:13.264 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:25:16.272 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-15-20-49/TC53_Login_And_Verify_DevicesPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:25:22.142 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 15:25:22.329 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:35:44.749 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:35:44.760 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:35:56.787 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:35:56.789 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:01.706 TC53_Login_And_Verify_DevicesPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:01.712 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:01.728 TC53_Login_And_Verify_DevicesPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:01.731 TC53_Login_And_Verify_DevicesPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:01.735 TC53_Login_And_Verify_DevicesPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:01.739 TC53_Login_And_Verify_DevicesPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:01.741 TC53_Login_And_Verify_DevicesPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:02.500 TC53_Login_And_Verify_DevicesPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:03.158 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:03.973 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:04.672 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:20.421 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:23.830 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:25.285 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:26.155 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:27.208 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:28.111 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:31.424 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:32.262 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:44.293 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:49.911 EnterValidOTPPage:61 - Entering valid OTP...370982
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:36:51.444 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:37:15.825 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:37:39.793 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:37:50.489 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:37:51.767 DevicesPage:708 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:37:51.903 DevicesPage:586 - Device Title is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:37:53.116 DevicesPage:591 - Back Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:37:53.246 DevicesPage:596 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:03.934 DevicesPage:601 - Online Tab is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:16.108 DevicesPage:606 - Offline Tab is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:16.390 DevicesPage:611 - Main Device name - MAIN - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:16.671 DevicesPage:644 - Devices Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:22.479 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:34.482 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:34.607 DevicesPage:708 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:34.715 DevicesPage:270 - Device Page Title : Devices(2)
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:38:34.715 DevicesPage:272 - Number of Devices connected to the main mAX Router is : 2
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:17.444 DevicesPage:312 - Clicked on Online Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:17.560 DevicesPage:327 - Number of Devices currently online are : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:17.561 DevicesPage:328 - Number of Devices currently offline are : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:17.561 DevicesPage:383 - Details of Online Devices Connected to Main Device
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:17.562 DevicesPage:384 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:17.562 DevicesPage:388 - Online Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:17.563 DevicesPage:389 - --------------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:18.187 DevicesPage:392 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:18.378 DevicesPage:397 - Device Name : Galaxy-S10(me) is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:18.530 DevicesPage:402 - Device Name : 5GHz is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:18.593 DevicesPage:407 - Expand Button image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:19.321 DevicesPage:409 - Clicked Expand Button image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:19.478 DevicesPage:414 - Download speed of : 0.03 Mbps is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:19.598 DevicesPage:419 - Upload speed of : 0.01 Mbps  is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:19.750 DevicesPage:424 - Label : IP Address is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:19.881 DevicesPage:429 - IP Address : 192.168.7.109 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:19.991 DevicesPage:434 - Label : MAC Address is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:20.120 DevicesPage:439 - MAC Address : 32:06:8b:d9:08:fb is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:20.256 DevicesPage:444 - Label : Channel is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:20.383 DevicesPage:449 - Channel Number : 149 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:20.548 DevicesPage:454 - Label : Status is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:20.682 DevicesPage:459 - Status : Online is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:20.791 DevicesPage:464 - Label : RSSI is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:20.924 DevicesPage:469 - RSSI : -53 dBm is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:21.627 DevicesPage:471 - Clicked Collapse Button image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:21.745 DevicesPage:708 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:23.142 FooterIconsPage:140 - Footer Icons Page - Clicked on Home Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:28.642 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:39.353 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:42.008 DevicesPage:708 - On Devices Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:42.479 FooterIconsPage:146 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:43.391 NetworkPage:111 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:44.312 NetworkPage:80 - Network Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:39:50.217 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:40:00.791 HomePage:693 - Home Page - Clicked on Devices Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:40:03.936 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-16-35-44/TC53_Login_And_Verify_DevicesPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:40:09.814 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 16:40:10.027 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:13.489 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:13.500 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:26.108 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:26.109 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:30.924 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:30.927 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:30.934 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:30.935 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:30.937 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:30.939 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:30.939 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:31.685 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:32.298 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:33.100 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:33.840 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:49.751 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:53.106 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:54.558 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:55.458 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:56.499 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:56:57.388 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:57:00.745 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:57:01.588 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:57:13.627 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:57:19.297 EnterValidOTPPage:61 - Entering valid OTP...054010
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:57:20.980 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:57:45.680 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:58:10.896 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 18:58:22.474 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.view.ViewGroup[@bounds='[51,1154][1029,1346]']}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:419)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:442)
+	at com.cs.arris.Pages.HomePage.clickDeviceSignalStrengthButton(HomePage.java:656)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$11(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:133)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.homePage(TC53_Login_And_Verify_DevicesPage_Workflow.java:141)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.view.ViewGroup[@bounds='[51,1154][1029,1346]']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@d257579 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.ViewGroup[@bounds='[51,1154][1029,1346]']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 47 more
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:58:26.552 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-18-56-13/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:58:32.461 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 18:58:32.668 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:03:47.314 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:03:47.323 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:03:59.382 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:03:59.384 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.095 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.096 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.103 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.106 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.108 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.110 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.111 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:04.814 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:05.340 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:06.143 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:06.861 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:22.730 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:26.157 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:27.520 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:28.415 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:29.463 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:30.344 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:33.658 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:34.453 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:46.486 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:52.323 EnterValidOTPPage:61 - Entering valid OTP...561466
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:04:54.081 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:05:19.213 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:05:43.585 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:05:49.737 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 19:06:01.805 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: //android.widget.TextView[@content-desc='SBC Test']/android.widget.TextView[1],By.xpath: //android.widget.TextView[@bounds='[102,348][978,527]']})})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.isAt(DeviceSignalStrengthLeaderBoardPage.java:233)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:137)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5b20706 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.all({By.xpath: //android.widget.TextView[@content-desc='SBC Test']/android.widget.TextView[1],By.xpath: //android.widget.TextView[@bounds='[102,348][978,527]']})})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:06:05.570 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-19-03-47/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:06:11.532 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:06:11.744 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:13:51.123 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:13:51.134 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:02.617 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:02.618 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:07.409 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:07.413 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:07.423 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:07.426 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:07.430 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:07.434 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:07.435 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:08.168 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:09.419 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:09.875 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:10.625 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:26.797 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:30.214 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:31.582 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:32.521 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:33.522 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:34.429 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:37.773 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:38.713 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:50.755 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:56.490 EnterValidOTPPage:61 - Entering valid OTP...582042
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:14:58.032 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:23.346 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:48.283 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:54.551 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:54.727 DeviceSignalStrengthLeaderBoardPage:233 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:54.876 DeviceSignalStrengthLeaderBoardPage:118 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:55.243 DeviceSignalStrengthLeaderBoardPage:123 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:55.400 DeviceSignalStrengthLeaderBoardPage:128 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:55.675 DeviceSignalStrengthLeaderBoardPage:133 - Sorting based on Device Signal Strength - Strong to Weak - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:55.810 DeviceSignalStrengthLeaderBoardPage:138 - Mobile Device image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.038 DeviceSignalStrengthLeaderBoardPage:143 - Mobile Device Name - Galaxy-S10 - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.277 DeviceSignalStrengthLeaderBoardPage:148 - Mobile Device Signal Strength - 5GHz - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.498 DeviceSignalStrengthLeaderBoardPage:153 - Upload Speed - 0.03 Mbps - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.703 DeviceSignalStrengthLeaderBoardPage:158 - Download Speed - 0.06 Mbps - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.842 DeviceSignalStrengthLeaderBoardPage:207 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.843 DeviceSignalStrengthLeaderBoardPage:208 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.843 DeviceSignalStrengthLeaderBoardPage:212 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.844 DeviceSignalStrengthLeaderBoardPage:213 - --------------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:56.902 DeviceSignalStrengthLeaderBoardPage:216 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:57.294 DeviceSignalStrengthLeaderBoardPage:219 - Device Signal Strength Details 
+------------------------------
+Device Name: Galaxy-S10
+Device Signal Strength : 5GHz
+Device Download Speed : 0.06 Mbps
+Device Upload Speed : 0.03 Mbps
+RSSI Label : RSSI:
+RSSI Value : -51 dBm
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:15:58.510 FooterIconsPage:140 - Footer Icons Page - Clicked on Home Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:04.315 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:11.126 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:11.265 DeviceSignalStrengthLeaderBoardPage:233 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:14.005 FooterIconsPage:146 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:14.774 NetworkPage:111 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:15.169 NetworkPage:80 - Network Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:21.116 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:22.214 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:22.340 DeviceSignalStrengthLeaderBoardPage:233 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:23.839 FooterIconsPage:152 - Footer Icons Page - Clicked on Parental Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:23.980 ParentalControlPage:53 - On Parental Control Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:24.199 ParentalControlPage:47 - Parental Control Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:30.076 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:31.122 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:35.198 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-19-13-51/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:41.436 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 19:16:41.692 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:19.472 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:19.484 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:31.416 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:31.418 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:36.255 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:36.259 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:36.263 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:36.264 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:36.265 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:36.267 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:36.267 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:37.026 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:37.616 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:38.392 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:39.113 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:55.148 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:34:58.549 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:00.567 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:01.758 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:02.954 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:03.818 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:07.182 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:08.011 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:20.046 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:25.974 EnterValidOTPPage:61 - Entering valid OTP...253327
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:27.576 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:35:52.220 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:19.140 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:26.088 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:26.287 DeviceSignalStrengthLeaderBoardPage:342 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:26.473 DeviceSignalStrengthLeaderBoardPage:121 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:27.414 DeviceSignalStrengthLeaderBoardPage:126 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:28.518 DeviceSignalStrengthLeaderBoardPage:131 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:28.827 DeviceSignalStrengthLeaderBoardPage:136 - Sorting based on Device Signal Strength - Strong to Weak - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:28.974 DeviceSignalStrengthLeaderBoardPage:141 - Mobile Device image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 21:36:31.205 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 10db9436-9971-47a6-b0af-554dfca2be65
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.verifyUIOnDeviceSignalStrengthPage(DeviceSignalStrengthLeaderBoardPage.java:145)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:139)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:35.242 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-21-34-19/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:41.334 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:36:41.557 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:18.470 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:18.482 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:29.566 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:29.569 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:34.281 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:34.284 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:34.291 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:34.294 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:34.297 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:34.300 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:34.302 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:35.036 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:35.592 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:36.366 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:37.113 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:52.981 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:56.364 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:57.730 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:46:58.573 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:00.725 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:01.630 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:04.940 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:05.778 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:17.810 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:22.648 EnterValidOTPPage:61 - Entering valid OTP...797745
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:24.353 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:47:49.230 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:13.934 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:20.194 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:21.247 DeviceSignalStrengthLeaderBoardPage:328 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:21.465 DeviceSignalStrengthLeaderBoardPage:107 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:22.370 DeviceSignalStrengthLeaderBoardPage:112 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:23.459 DeviceSignalStrengthLeaderBoardPage:117 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:23.700 DeviceSignalStrengthLeaderBoardPage:122 - Sorting based on Device Signal Strength - Strong to Weak - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:23.826 DeviceSignalStrengthLeaderBoardPage:127 - Mobile Device image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 21:48:26.270 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 59a4ab9e-d7bf-43cf-b8d6-f9b069ed1939
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(<generated>)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.verifyUIOnDeviceSignalStrengthPage(DeviceSignalStrengthLeaderBoardPage.java:132)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:139)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:30.034 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-21-46-18/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:35.974 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 21:48:36.232 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:03:58.142 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:03:58.153 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:09.731 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:09.733 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:14.488 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:14.490 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:14.497 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:14.498 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:14.499 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:14.499 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:14.501 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:15.300 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:15.936 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:16.721 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:17.438 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:33.233 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:36.643 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:38.109 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:39.052 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:40.133 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:41.054 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:44.377 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:45.204 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:04:57.238 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:05:02.752 EnterValidOTPPage:61 - Entering valid OTP...549358
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:05:04.292 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:05:29.371 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:05:55.120 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:01.624 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:02.718 DeviceSignalStrengthLeaderBoardPage:327 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:02.966 DeviceSignalStrengthLeaderBoardPage:107 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:04.823 DeviceSignalStrengthLeaderBoardPage:112 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:05.060 DeviceSignalStrengthLeaderBoardPage:117 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:05.359 DeviceSignalStrengthLeaderBoardPage:122 - Sorting based on Device Signal Strength - Strong to Weak - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:05.514 DeviceSignalStrengthLeaderBoardPage:195 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:05.515 DeviceSignalStrengthLeaderBoardPage:199 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:05.515 DeviceSignalStrengthLeaderBoardPage:200 - --------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:06.148 DeviceSignalStrengthLeaderBoardPage:204 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:06.209 DeviceSignalStrengthLeaderBoardPage:206 - Device Name			 : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:06.268 DeviceSignalStrengthLeaderBoardPage:207 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:07.308 DeviceSignalStrengthLeaderBoardPage:208 - Device Download Speed  : 0.07 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:07.385 DeviceSignalStrengthLeaderBoardPage:209 - Device Upload Speed    : 0.03 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:07.468 DeviceSignalStrengthLeaderBoardPage:210 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:07.530 DeviceSignalStrengthLeaderBoardPage:211 - RSSI Value             : -51 dBm
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 22:06:08.163 TestListener:39 - org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "null"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:48)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.sortWeakToStrong(DeviceSignalStrengthLeaderBoardPage.java:263)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:141)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:11.931 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-22-03-58/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:17.799 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:06:18.009 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:11:58.864 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:11:58.875 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:10.130 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:10.132 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:14.920 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:14.924 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:14.931 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:14.932 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:14.933 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:14.936 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:14.936 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:15.683 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:16.248 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:17.458 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:18.186 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:18.315 DeviceLocationPage:107 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 22:12:32.342 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.Button[@text='Allow']}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:419)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:442)
+	at com.cs.arris.Pages.AccessResourcesOnDevicePage.clickAllowLink(AccessResourcesOnDevicePage.java:48)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$3(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:87)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.accessResourcesOnDevicePage(TC53_Login_And_Verify_DevicesPage_Workflow.java:74)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Button[@text='Allow']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@113e13f9 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 45 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.Button[@text='Allow']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 47 more
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:34.717 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-22-11-58/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:35.739 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:12:35.944 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:15.264 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:15.274 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:26.672 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:26.674 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:31.395 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:31.398 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:31.403 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:31.404 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:31.404 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:31.405 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:31.407 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:32.111 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:32.623 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:33.409 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:34.141 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:49.964 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:53.304 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:54.677 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:55.583 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:56.652 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:13:57.924 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:14:01.216 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:14:02.040 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:14:14.064 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:14:19.674 EnterValidOTPPage:61 - Entering valid OTP...295167
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:14:21.403 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:14:46.218 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:10.398 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:15.970 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:16.771 DeviceSignalStrengthLeaderBoardPage:327 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:16.945 DeviceSignalStrengthLeaderBoardPage:107 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:17.877 DeviceSignalStrengthLeaderBoardPage:112 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:19.221 DeviceSignalStrengthLeaderBoardPage:117 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:20.129 DeviceSignalStrengthLeaderBoardPage:122 - Sorting based on Device Signal Strength -  - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:20.343 DeviceSignalStrengthLeaderBoardPage:195 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:20.344 DeviceSignalStrengthLeaderBoardPage:199 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:20.344 DeviceSignalStrengthLeaderBoardPage:200 - --------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:21.348 DeviceSignalStrengthLeaderBoardPage:204 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:21.426 DeviceSignalStrengthLeaderBoardPage:206 - Device Name  : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:21.486 DeviceSignalStrengthLeaderBoardPage:207 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:21.522 DeviceSignalStrengthLeaderBoardPage:208 - Device Download Speed  : 0.07 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:21.572 DeviceSignalStrengthLeaderBoardPage:209 - Device Upload Speed    : 0.03 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:21.620 DeviceSignalStrengthLeaderBoardPage:210 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:21.661 DeviceSignalStrengthLeaderBoardPage:211 - RSSI Value             : -51 dBm
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 22:15:22.912 TestListener:39 - org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "null"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:48)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.sortWeakToStrong(DeviceSignalStrengthLeaderBoardPage.java:263)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:141)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:26.710 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-22-13-15/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:32.648 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:15:32.870 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:28:16.566 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:28:16.575 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 FATAL] 2021-11-01 22:28:54.211 ParentClass:255 - Unable to initialize Android driver...... ABORTING !!!
+org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.arris.sbcBeta' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command '/Users/prabhu/Library/Android/sdk/platform-tools/adb -P 5037 -s RZ8M3002DGL shell am start -W -n com.arris.sbcBeta/com.arris.sbc.ui.activity.authetication.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.arris.sbcBeta' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command '/Users/prabhu/Library/Android/sdk/platform-tools/adb -P 5037 -s RZ8M3002DGL shell am start -W -n com.arris.sbcBeta/com.arris.sbc.ui.activity.authetication.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:09.011 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:09.020 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:20.347 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:20.349 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.017 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.021 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.029 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.032 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.034 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.038 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.040 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:25.740 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:26.276 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:27.031 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:27.776 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:43.537 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:46.955 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:48.332 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:49.240 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:50.461 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:51.378 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:54.739 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:30:55.542 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:31:07.578 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:31:14.151 EnterValidOTPPage:61 - Entering valid OTP...476320
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:31:15.776 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:31:40.376 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:06.004 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:11.476 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:13.217 DeviceSignalStrengthLeaderBoardPage:328 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:13.444 DeviceSignalStrengthLeaderBoardPage:108 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:13.892 DeviceSignalStrengthLeaderBoardPage:113 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:15.652 DeviceSignalStrengthLeaderBoardPage:118 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:15.977 DeviceSignalStrengthLeaderBoardPage:123 - Sorting based on Device Signal Strength -  - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:16.093 DeviceSignalStrengthLeaderBoardPage:196 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:16.093 DeviceSignalStrengthLeaderBoardPage:200 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:16.094 DeviceSignalStrengthLeaderBoardPage:201 - --------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:16.147 DeviceSignalStrengthLeaderBoardPage:205 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:16.185 DeviceSignalStrengthLeaderBoardPage:207 - Device Name  : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:16.247 DeviceSignalStrengthLeaderBoardPage:208 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:16.283 DeviceSignalStrengthLeaderBoardPage:209 - Device Download Speed  : 0.06 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 22:32:18.413 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: d6820a70-e230-4334-a4a7-226e70d50e28
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.verifySignalStrengthForDevices(DeviceSignalStrengthLeaderBoardPage.java:210)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:140)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:22.629 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-22-30-08/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:28.563 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:32:28.784 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:19.300 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:19.312 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:34.349 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:34.350 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.156 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.159 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.164 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.165 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.165 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.167 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.167 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:39.856 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:40.501 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:41.297 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:42.459 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 22:42:49.232 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: The element 'By.id: com.android.permissioncontroller:id/permission_allow_one_time_button' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/prabhu/.jenkins/work..., appPackage: com.arris.sbcBeta, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/prabhu/.jenkins/work..., automationName: UiAutomator2, deviceName: Android, noReset: false, platformName: android, udid: RZ8M3002DGL, version: 11}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M3002DGL, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RZ8M3002DGL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 112, takesScreenshot: true, udid: RZ8M3002DGL, version: 11, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 62307e34-45e8-4a8e-a37b-af7e3e533790
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(<generated>)
+	at com.cs.arris.Pages.DeviceLocationPage.clickOnlyThisTimeLink(DeviceLocationPage.java:107)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$2(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:84)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceLocationPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:67)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:50.781 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-22-42-19/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:51.702 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:42:51.858 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:18.778 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:18.788 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:30.008 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:30.010 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:34.785 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:34.787 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:34.793 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:34.794 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:34.794 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:34.794 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:34.795 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:35.528 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:36.083 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:36.857 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:37.556 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:53.808 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:57.208 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:58.558 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:43:59.480 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:00.699 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:01.569 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:04.876 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:05.754 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:17.782 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:22.982 EnterValidOTPPage:61 - Entering valid OTP...794677
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:24.715 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:44:49.894 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:14.296 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:20.549 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:21.317 DeviceSignalStrengthLeaderBoardPage:328 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:22.536 DeviceSignalStrengthLeaderBoardPage:106 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:22.967 DeviceSignalStrengthLeaderBoardPage:111 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:23.138 DeviceSignalStrengthLeaderBoardPage:116 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:23.271 DeviceSignalStrengthLeaderBoardPage:121 - Sorting based on Device Signal Strength is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:23.406 DeviceSignalStrengthLeaderBoardPage:194 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:23.407 DeviceSignalStrengthLeaderBoardPage:198 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:23.408 DeviceSignalStrengthLeaderBoardPage:199 - --------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:23.496 DeviceSignalStrengthLeaderBoardPage:203 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:23.543 DeviceSignalStrengthLeaderBoardPage:205 - Device Name  : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:24.178 DeviceSignalStrengthLeaderBoardPage:206 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:25.463 DeviceSignalStrengthLeaderBoardPage:207 - Device Download Speed  : 0.06 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:25.539 DeviceSignalStrengthLeaderBoardPage:208 - Device Upload Speed    : 0.03 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:25.597 DeviceSignalStrengthLeaderBoardPage:209 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:26.245 DeviceSignalStrengthLeaderBoardPage:210 - RSSI Value             : -53 dBm
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 22:45:26.899 TestListener:39 - org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "null"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:48)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.sortWeakToStrong(DeviceSignalStrengthLeaderBoardPage.java:264)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:141)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:30.524 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-22-43-18/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:36.384 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 22:45:36.569 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:22:51.920 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:22:51.931 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:04.618 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:04.619 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:09.344 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:09.348 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:09.354 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:09.356 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:09.358 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:09.361 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:09.362 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:10.087 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:10.577 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:11.362 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:12.096 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:27.658 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:31.023 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:32.545 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:33.417 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:34.438 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:35.306 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:38.641 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:39.457 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:51.475 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:56.520 EnterValidOTPPage:61 - Entering valid OTP...498141
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:23:58.082 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:22.606 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:49.608 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:56.089 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:56.248 DeviceSignalStrengthLeaderBoardPage:346 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:57.338 DeviceSignalStrengthLeaderBoardPage:122 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:57.754 DeviceSignalStrengthLeaderBoardPage:127 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:57.907 DeviceSignalStrengthLeaderBoardPage:132 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:58.608 DeviceSignalStrengthLeaderBoardPage:137 - Sorting based on Device Signal Strength is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:59.710 DeviceSignalStrengthLeaderBoardPage:210 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:59.712 DeviceSignalStrengthLeaderBoardPage:214 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:59.712 DeviceSignalStrengthLeaderBoardPage:215 - --------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:24:59.826 DeviceSignalStrengthLeaderBoardPage:219 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:00.868 DeviceSignalStrengthLeaderBoardPage:221 - Device Name  : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:01.888 DeviceSignalStrengthLeaderBoardPage:222 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:01.960 DeviceSignalStrengthLeaderBoardPage:223 - Device Download Speed  : 0.08 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:02.021 DeviceSignalStrengthLeaderBoardPage:224 - Device Upload Speed    : 0.04 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:02.077 DeviceSignalStrengthLeaderBoardPage:225 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:02.119 DeviceSignalStrengthLeaderBoardPage:226 - RSSI Value             : -53 dBm
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 23:25:02.713 TestListener:39 - org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "null"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:48)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.sortWeakToStrong(DeviceSignalStrengthLeaderBoardPage.java:281)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:141)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:06.543 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-23-22-51/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:12.351 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:25:12.544 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:33:44.223 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:33:44.233 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:33:55.481 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:33:55.483 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:00.281 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:00.285 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:00.295 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:00.299 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:00.303 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:00.307 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:00.308 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:01.042 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:01.589 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:02.398 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:03.115 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:19.117 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:22.458 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:23.867 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:24.754 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:25.797 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:26.678 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:30.003 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:31.128 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:43.151 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:48.349 EnterValidOTPPage:61 - Entering valid OTP...332193
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:34:49.757 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:15.177 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:39.988 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:45.883 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:46.859 DeviceSignalStrengthLeaderBoardPage:347 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:47.062 DeviceSignalStrengthLeaderBoardPage:122 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:47.401 DeviceSignalStrengthLeaderBoardPage:127 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.045 DeviceSignalStrengthLeaderBoardPage:132 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.176 DeviceSignalStrengthLeaderBoardPage:137 - Sorting based on Device Signal Strength is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.279 DeviceSignalStrengthLeaderBoardPage:210 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.283 DeviceSignalStrengthLeaderBoardPage:214 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.283 DeviceSignalStrengthLeaderBoardPage:215 - --------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.341 DeviceSignalStrengthLeaderBoardPage:219 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.380 DeviceSignalStrengthLeaderBoardPage:221 - Device Name  : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.423 DeviceSignalStrengthLeaderBoardPage:222 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.469 DeviceSignalStrengthLeaderBoardPage:223 - Device Download Speed  : 0.08 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.512 DeviceSignalStrengthLeaderBoardPage:224 - Device Upload Speed    : 0.04 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.574 DeviceSignalStrengthLeaderBoardPage:225 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:35:49.674 DeviceSignalStrengthLeaderBoardPage:226 - RSSI Value             : -54 dBm
+[logs/Android_RZ8M3002DGL/2021-11-01 ERROR] 2021-11-01 23:36:03.415 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.all({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2],By.xpath: //android.widget.TextView[@bounds='[526,647][979,715]']})})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage.sortWeakToStrong(DeviceSignalStrengthLeaderBoardPage.java:284)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.lambda$Verify_DevicesPage$12(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:141)
+	at com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow.deviceSignalStrengthPage(TC53_Login_And_Verify_DevicesPage_Workflow.java:155)
+	at com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.Verify_DevicesPage(TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5d94a2dc (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.all({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2],By.xpath: //android.widget.TextView[@bounds='[526,647][979,715]']})})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:36:07.000 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-23-33-44/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:36:12.910 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:36:13.127 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:19.469 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-01
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:19.480 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:30.935 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:30.937 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:35.748 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:47 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:35.752 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:35.757 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:51 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:35.760 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:54 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:35.763 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:57 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:35.767 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:60 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:35.768 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:62 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:36.524 TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test:72 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:37.125 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:37.885 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:38.586 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:54.539 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:57.928 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:44:59.286 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:00.792 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:01.845 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:02.712 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:06.068 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:06.897 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:18.932 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:24.725 EnterValidOTPPage:61 - Entering valid OTP...184427
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:26.264 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:45:51.348 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:15.532 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:21.504 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:22.257 DeviceSignalStrengthLeaderBoardPage:348 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:22.410 DeviceSignalStrengthLeaderBoardPage:122 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:22.739 DeviceSignalStrengthLeaderBoardPage:127 - Number of Devices - 01 Devices - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:24.963 DeviceSignalStrengthLeaderBoardPage:132 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.123 DeviceSignalStrengthLeaderBoardPage:137 - Sorting based on Device Signal Strength is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.327 DeviceSignalStrengthLeaderBoardPage:210 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.328 DeviceSignalStrengthLeaderBoardPage:214 - Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.329 DeviceSignalStrengthLeaderBoardPage:215 - --------------
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.809 DeviceSignalStrengthLeaderBoardPage:219 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.855 DeviceSignalStrengthLeaderBoardPage:221 - Device Name  : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.900 DeviceSignalStrengthLeaderBoardPage:222 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:25.949 DeviceSignalStrengthLeaderBoardPage:223 - Device Download Speed  : 0.06 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:26.000 DeviceSignalStrengthLeaderBoardPage:224 - Device Upload Speed    : 0.03 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:27.163 DeviceSignalStrengthLeaderBoardPage:225 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:27.211 DeviceSignalStrengthLeaderBoardPage:226 - RSSI Value             : -51 dBm
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:31.576 DeviceSignalStrengthLeaderBoardPage:288 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:31.647 DeviceSignalStrengthLeaderBoardPage:316 - Signal Strength option selected is - Weak to Strong
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:31.648 DeviceSignalStrengthLeaderBoardPage:317 - The devices are displayed from Weakest to Strongest signal strength order
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:37.981 DeviceSignalStrengthLeaderBoardPage:241 - Verifying Signal Strength for 1 devices
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:38.025 DeviceSignalStrengthLeaderBoardPage:269 - Signal Strength option selected is - Strong to Weak
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:38.025 DeviceSignalStrengthLeaderBoardPage:270 - The devices are displayed from Strongest to Weakest signal strength order
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:39.251 FooterIconsPage:140 - Footer Icons Page - Clicked on Home Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:44.445 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:51.633 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:51.736 DeviceSignalStrengthLeaderBoardPage:348 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:54.741 FooterIconsPage:146 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:54.880 NetworkPage:111 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:46:55.798 NetworkPage:80 - Network Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:01.268 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:02.280 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:02.415 DeviceSignalStrengthLeaderBoardPage:348 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:03.840 FooterIconsPage:152 - Footer Icons Page - Clicked on Parental Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:03.957 ParentalControlPage:53 - On Parental Control Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:04.143 ParentalControlPage:47 - Parental Control Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:09.441 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:10.471 HomePage:657 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:14.827 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-01-23-44-19/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:20.669 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-01 INFO ] 2021-11-01 23:47:20.897 ParentClass:168 - Quitting Driver

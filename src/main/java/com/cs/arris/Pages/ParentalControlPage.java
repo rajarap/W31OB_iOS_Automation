@@ -17,25 +17,43 @@ public class ParentalControlPage extends ParentClass implements Page
 	public TestUtils utils = new TestUtils();
 	
 	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_congratulations]"),  //CONTINUE
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[61,1926][1019,2042]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/btn_congratulations") 
+		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle']"),  //Devices (2)
+		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[359,149][721,223]']"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/txtToolBarTitle") 
 	})
-	public MobileElement continueButton; 
+	public MobileElement parentalControlTitle; 
+	
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),  //back button
+		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']")
+	})
+	public MobileElement backButton; 
+	
+	@AndroidFindAll({
+		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"),  //help Icon
+		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[980,153][1046,219]']"),
+		@AndroidBy (id = "com.arris.sbcBeta:id/helpIcon") 
+	})
+	public MobileElement helpIcon; 
 	
 	public ParentalControlPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickContinueButton()
+	public void clickBackButton()
 	{
-		click(continueButton);
-		utils.log().info("Congratulations Page - Clicked on Continue Button");
+		click(backButton);
+		utils.log().info("Parental Control Page - Clicked on Back Button");
 	}
 	@Override
 	public boolean isAt() {
-		super.pause();
-		return true;
+		if(parentalControlTitle.isDisplayed())
+		{
+			utils.log().info("On Parental Control Page");
+			return true;}
+		else {
+			utils.log().info("Not on Parental Control Page");
+		return false;}
 	}
 }

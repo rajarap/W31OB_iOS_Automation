@@ -653,8 +653,8 @@ public class HomePage extends ParentClass implements Page
 	
 	public void clickDeviceSignalStrengthButton()
 	{
-		click(deviceSignalStrengthButton);
-		utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board Button");
+		click(deviceSignalStrengthLeaderBoardImage);
+		utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board Image");
 	}
 	
 	public void clickCurrentlyBlockedDevicesButton()

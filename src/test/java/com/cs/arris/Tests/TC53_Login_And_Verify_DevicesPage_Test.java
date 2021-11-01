@@ -159,10 +159,10 @@ public class TC53_Login_And_Verify_DevicesPage_Test extends ParentClass
 				 {
 					 devices.verifyOnlineDeviceDetails();
 				 }
-				 if (devices.getOfflineDeviceCount() > 0)
-				 {
-					 devices.verifyOfflineDeviceDetails();
-				 }
+//				 if (devices.getOfflineDeviceCount() > 0)
+//				 {
+//					 devices.verifyOfflineDeviceDetails();
+//				 }
 			 }
 			 if(devices.isAt())
 			 {
@@ -177,21 +177,21 @@ public class TC53_Login_And_Verify_DevicesPage_Test extends ParentClass
 				 devices.getFooterIconsPageObject().clickNetworkButton();
 				 if (devices.getNetworkPageObject().isAt())
 				 {
-					 devices.getNetworkPageObject().clickBackButton(); //Change this to clickBackIcon() which will go to HomePage instead of Devices page
+					 devices.getNetworkPageObject().clickBackButton();
 				 }
 			 }
 			 if(devices.getHomePageObject().isAt())
 			 {
 				 devices.getHomePageObject().clickDevicesImage();
 			 }
-//			 if(devices.isAt())
-//			 {
-//				 devices.getFooterIconsPageObject().clickParentalButton();
-//				 if (devices.getParentalControlPageObject().isAt())
-//				 {
-//					 devices.getParentalControlPageObject().clickBackButton(); 
-//				 }
-//			 }
+			 if(devices.isAt())
+			 {
+				 devices.getFooterIconsPageObject().clickParentalButton();
+				 if (devices.getParentalControlPageObject().isAt())
+				 {
+					 devices.getParentalControlPageObject().clickBackButton(); 
+				 }
+			 }
 
 		  });
 	  }

@@ -1,0 +1,89 @@
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:10.237 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-02
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:10.247 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:21.536 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:21.537 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.530 TC60_Login_And_Verify_HamburgerMenuPage_Test:48 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.532 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.540 TC60_Login_And_Verify_HamburgerMenuPage_Test:52 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.542 TC60_Login_And_Verify_HamburgerMenuPage_Test:55 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.545 TC60_Login_And_Verify_HamburgerMenuPage_Test:58 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.548 TC60_Login_And_Verify_HamburgerMenuPage_Test:61 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.549 TC60_Login_And_Verify_HamburgerMenuPage_Test:63 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:26.261 TC60_Login_And_Verify_HamburgerMenuPage_Test:73 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:26.819 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:27.593 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:28.324 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:44.138 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:47.454 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:48.854 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:49.794 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:50.928 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:51.786 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:55.279 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:56.117 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:08.147 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:13.903 EnterValidOTPPage:61 - Entering valid OTP...088352
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:15.493 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:40.528 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:05.228 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:10.560 HomePage:645 - Home Page - Clicked on Navigation Icon to display the Hamburger Menu
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:11.596 HamburgerMenuPage:151 - At Hamburger Menu Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:11.779 HamburgerMenuPage:57 - Hamburger Menu - Add Device - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:11.905 HamburgerMenuPage:62 - Hamburger Menu - Remove Device - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:12.512 HamburgerMenuPage:67 - Hamburger Menu - Speed Test - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:13.581 HamburgerMenuPage:72 - Hamburger Menu - Add a New Satellite - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:13.823 HamburgerMenuPage:77 - Hamburger Menu - Amazon Features - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:13.947 HamburgerMenuPage:82 - Hamburger Menu - Help - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:14.742 HamburgerMenuPage:87 - Hamburger Menu - About - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:14.888 HamburgerMenuPage:92 - Hamburger Menu - Settings - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:16.708 SpeedTestPage:250 - At Speed Test Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:16.908 SpeedTestPage:116 - Speed Test Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:20.773 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-02-01-19-10/TC60_Login_And_Verify_HamburgerMenuPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:26.565 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:26.749 ParentClass:168 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:46:58.268 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-02
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:46:58.277 ParentClass:222 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:10.517 ParentClass:231 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:10.518 ParentClass:232 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.593 TC60_Login_And_Verify_HamburgerMenuPage_Test:48 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.599 ParentClass:304 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.607 TC60_Login_And_Verify_HamburgerMenuPage_Test:52 - First Name : demo
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.609 TC60_Login_And_Verify_HamburgerMenuPage_Test:55 - Last Name : user 
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.611 TC60_Login_And_Verify_HamburgerMenuPage_Test:58 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.615 TC60_Login_And_Verify_HamburgerMenuPage_Test:61 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.617 TC60_Login_And_Verify_HamburgerMenuPage_Test:63 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:15.330 TC60_Login_And_Verify_HamburgerMenuPage_Test:73 - 
+****** starting test:Verify_DevicesPage******
+
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:15.953 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:16.728 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:17.453 DeviceLocationPage:105 - Device Location - Clicked Only this time
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:33.331 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:36.687 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:38.048 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:38.921 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:39.944 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:40.824 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:44.122 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:44.961 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:56.995 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:02.969 EnterValidOTPPage:61 - Entering valid OTP...558779
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:04.511 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:29.380 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:53.179 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:58.634 HomePage:645 - Home Page - Clicked on Navigation Icon to display the Hamburger Menu
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:59.600 HamburgerMenuPage:151 - At Hamburger Menu Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:59.724 HamburgerMenuPage:57 - Hamburger Menu - Add Device - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:59.889 HamburgerMenuPage:62 - Hamburger Menu - Remove Device - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:00.554 HamburgerMenuPage:67 - Hamburger Menu - Speed Test - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:00.662 HamburgerMenuPage:72 - Hamburger Menu - Add a New Satellite - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.556 HamburgerMenuPage:77 - Hamburger Menu - Amazon Features - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.702 HamburgerMenuPage:82 - Hamburger Menu - Help - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.824 HamburgerMenuPage:87 - Hamburger Menu - About - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.936 HamburgerMenuPage:92 - Hamburger Menu - Settings - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:03.148 SpeedTestPage:350 - At Speed Test Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:03.223 SpeedTestPage:250 - Speed Test Page - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:03.398 SpeedTestPage:233 - Speed Test Page - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:04.202 SpeedTestPage:252 - Speed Test Page - Label on button during speed Test: STOP TEST

@@ -7,12 +7,16 @@ com/cs/arris/Tests/TestBluetooth.class
 com/cs/arris/Workflows/UserSignUpWorkflow.class
 com/cs/arris/Workflows/UserUnSuccessfulSigninWorkflow.class
 com/cs/arris/Workflows/TC51_Signin_And_Onboard_Workflow.class
+com/cs/arris/Tests/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.class
+com/cs/arris/Workflows/TC60_Login_And_Verify_HamburgerManuPage_Workflow.class
 com/cs/arris/Tests/TestSSID.class
 com/cs/arris/Tests/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.class
 com/cs/arris/Workflows/UserSuccessfulSigninWorkflow.class
 com/cs/arris/Tests/GrantPermissionPageTest.class
 com/cs/arris/Tests/SigninAsValidUserTest.class
+com/cs/arris/Workflows/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Workflow.class
 com/cs/arris/Tests/TestOTP.class
+com/cs/arris/Tests/TC60_Login_And_Verify_HamburgerMenuPage_Test.class
 com/cs/arris/Tests/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.class
 com/cs/arris/Workflows/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow.class
 com/cs/arris/Tests/DeviceLocationPageTest.class
