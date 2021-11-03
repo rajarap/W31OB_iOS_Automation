@@ -126,51 +126,85 @@ public class TC52_Login_And_Verify_HomePage_Test extends ParentClass
 			  {
 				  e.getMessage();
 			  }
-			 if(home.isAt())
-			 {
-				 home.verifyUIOnHomePage();
+			  if(home.isAt())
+			  {
+			  	home.verifyUIOnHomePage();
+			  	
+			  	home.clickDeviceSignalStrengthImage();
+			  	if(home.getDeviceSignalStrengthPageObject().isAt())
+			  	{
+			  		utils.log().info("On Devices Page ");
+			  		home.getDeviceSignalStrengthPageObject().clickCloseIcon();
+			  	}
 				 
-				 totalCountOfDevices = home.getTotalCountOfDevices();
-				 utils.log().info("Total Number of Devices connected are : " + totalCountOfDevices);
-				 
-				 countOfDeviceSignalStrength = home.getBitRateDevices();
-				 utils.log().info("Count of Devices Signal Strength : " + countOfDeviceSignalStrength);
-				 
-				 countOfDevicesSpeedHistory = home.getSpeedTestDevices();
-				 utils.log().info("Count of Devices Speed Test History : " + countOfDevicesSpeedHistory);
-				 //add count of blocked devices here.  Deferred
-				 
-				 Assert.assertEquals(home.getHomeTitleText(), getStrings().get("home_page_title"));
-				 utils.log().info("Verified Home Page Title Text : " + home.getHomeTitleText());
-				 
-				 Assert.assertEquals(home.getNetworkSpeedText(), getStrings().get("home_page_text"));
-				 utils.log().info("Verified Home Page Network Speed Text : " + home.getNetworkSpeedText());
-				 
-				 Assert.assertEquals(home.getDownloadText(), getStrings().get("home_page_download"));
-				 utils.log().info("Verified Home Page Download Text : " + home.getDownloadText());
-				 
-				 Assert.assertEquals(home.getUploadText(), getStrings().get("home_page_upload"));
-				 utils.log().info("Verified Home Page Upload Text : " + home.getUploadText());
-				 
-				 Assert.assertEquals(home.getMainDeviceName(), getStrings().get("home_page_main"));	
-				 utils.log().info("Verified Home Page Main Device Name : " + home.getMainDeviceName());
-				 
-				 Assert.assertEquals(home.getDeviceSignalStrengthLeaderBoardText(), getStrings().get("home_page_leader_board"));
-				 utils.log().info("Verified Home Page Device Signal Strength Leader Board Text : " + home.getDeviceSignalStrengthLeaderBoardText());
-				 
-				 Assert.assertEquals(home.getSpeedTestHistoryText(), getStrings().get("home_page_speed_test_history"));
-				 utils.log().info("Verified Home Page Speed Test History Text : " + home.getSpeedTestHistoryText());
-				 
-//				 Assert.assertEquals(home.getCurrentlyBlockedDevicesText(), getStrings().get("home_page_blocked_devices"));
-				 Assert.assertEquals(home.getHomeButtonText(), getStrings().get("home_page_home_button"));
-				 utils.log().info("Verified Home Page Home Button Text : " + home.getHomeButtonText());
-				 
-				 Assert.assertEquals(home.getNetworkButtonText(), getStrings().get("home_page_network_button"));
-				 utils.log().info("Verified Home Page Network Button Text : " + home.getNetworkButtonText());
-				 
-				 Assert.assertEquals(home.getParentalButtonText(), getStrings().get("home_page_parental"));
-				 utils.log().info("Verified Home Page Parental Button Text : " + home.getParentalButtonText());
-			 }
+			  	home.clickCurrentlyBlockedDevicesImage();
+			  	if(home.getBlankBlockedDevicesPageObject().isAt())
+			  	{
+			  		utils.log().info("On Blank Blocked Devices Page ");
+			  		home.getBlankBlockedDevicesPageObject().clickCloseIcon();
+			  	}
+			  }
+				 //Verify if Speed Test History page is displayed
+			  if(home.isAt())
+			  {
+				 home.clickSpeedTestHistoryImage();
+			    if(home.getBlankSpeedTestHistoryPageObject().isAt())
+			    {
+				   utils.log().info("On Blank Speed Test History Page ");
+				   home.getBlankSpeedTestHistoryPageObject().clickCloseIcon();
+			    }
+			    if(home.getSpeedTestHistoryPageObject().isAt())
+			    {
+			      utils.log().info("On Speed Test History Page : " + home.getSpeedTestHistoryPageObject().speedTestHistoryTitle.getText());
+				  home.getSpeedTestHistoryPageObject().clickBackIcon();
+			    }
+			  }
 		  });
 	  }
 }
+				 
+				 
+				 
+
+//				 totalCountOfDevices = home.getTotalCountOfDevices();
+//				 utils.log().info("Total Number of Devices connected are : " + totalCountOfDevices);
+//				 
+//				 countOfDeviceSignalStrength = home.getBitRateDevices();
+//				 utils.log().info("Count of Devices Signal Strength : " + countOfDeviceSignalStrength);
+//				 
+//				 countOfDevicesSpeedHistory = home.getSpeedTestDevices();
+//				 utils.log().info("Count of Devices Speed Test History : " + countOfDevicesSpeedHistory);
+//				 //add count of blocked devices here.  Deferred
+				 
+//				 Assert.assertEquals(home.getHomeTitleText(), getStrings().get("home_page_title"));
+//				 utils.log().info("Verified Home Page Title Text : " + home.getHomeTitleText());
+//				 
+//				 Assert.assertEquals(home.getNetworkSpeedText(), getStrings().get("home_page_text"));
+//				 utils.log().info("Verified Home Page Network Speed Text : " + home.getNetworkSpeedText());
+//				 
+//				 Assert.assertEquals(home.getDownloadText(), getStrings().get("home_page_download"));
+//				 utils.log().info("Verified Home Page Download Text : " + home.getDownloadText());
+//				 
+//				 Assert.assertEquals(home.getUploadText(), getStrings().get("home_page_upload"));
+//				 utils.log().info("Verified Home Page Upload Text : " + home.getUploadText());
+//				 
+//				 Assert.assertEquals(home.getMainDeviceName(), getStrings().get("home_page_main"));	
+//				 utils.log().info("Verified Home Page Main Device Name : " + home.getMainDeviceName());
+//				 
+//				 Assert.assertEquals(home.getDeviceSignalStrengthLeaderBoardText(), getStrings().get("home_page_leader_board"));
+//				 utils.log().info("Verified Home Page Device Signal Strength Leader Board Text : " + home.getDeviceSignalStrengthLeaderBoardText());
+//				 
+//				 Assert.assertEquals(home.getSpeedTestHistoryText(), getStrings().get("home_page_speed_test_history"));
+//				 utils.log().info("Verified Home Page Speed Test History Text : " + home.getSpeedTestHistoryText());
+//				 
+////				 Assert.assertEquals(home.getCurrentlyBlockedDevicesText(), getStrings().get("home_page_blocked_devices"));
+//				 Assert.assertEquals(home.getHomeButtonText(), getStrings().get("home_page_home_button"));
+//				 utils.log().info("Verified Home Page Home Button Text : " + home.getHomeButtonText());
+//				 
+//				 Assert.assertEquals(home.getNetworkButtonText(), getStrings().get("home_page_network_button"));
+//				 utils.log().info("Verified Home Page Network Button Text : " + home.getNetworkButtonText());
+//				 
+//				 Assert.assertEquals(home.getParentalButtonText(), getStrings().get("home_page_parental"));
+//				 utils.log().info("Verified Home Page Parental Button Text : " + home.getParentalButtonText());
+
+

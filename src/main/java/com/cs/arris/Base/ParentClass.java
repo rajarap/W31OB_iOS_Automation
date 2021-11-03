@@ -17,6 +17,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
@@ -100,7 +101,8 @@ public class ParentClass
 	public String ssidNumber;
 	public String ssidName;
 	public String ssidpwd;
-	
+	public String randNum;
+	public String profileName;
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
@@ -225,6 +227,7 @@ public class ParentClass
 				desiredCapabilities.setCapability(MobileCapabilityType.VERSION, getProps().getProperty("androidVersion"));
 				desiredCapabilities.setCapability(MobileCapabilityType.APP, getProps().getProperty("androidAppLocation"));
 				desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, false);
+				desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, getProps().getProperty("timeout"));
 				driver = new AndroidDriver<MobileElement>(url, desiredCapabilities);
 				setDriver(driver);
 				getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -490,19 +493,20 @@ public class ParentClass
 //	  }
 	  
 			
-	  public void scrollToElement(MobileElement id) 
+	  public void scrollToElementById(MobileElement id) 
 	  {
 		   MobileElement obj = (MobileElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()"+
 				  						".scrollable(true)).scrollIntoView(new UiSelector().resourceIdMatches(\" + id + \"));"));
-		   waitForVisibility(obj);
-		   
+		   waitForVisibility(obj); 
 	  }
 	  
-//	  public static void scrollToId(AndroidDriver<MobileElement> driver, String id) {
-//			MobileElement el = (MobileElement) driver.findElementByAndroidUIAutomator(
-//					"new UiScrollable(" + "new UiSelector().scrollable(true)).scrollIntoView("
-//							+ "new UiSelector().resourceIdMatches(\"" + id + "\"));");
-//	  }
+	  public void scrollToElementByXpath(MobileElement id) 
+	  {
+		   MobileElement obj = (MobileElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()"+
+				  						".scrollable(true)).scrollIntoView(new UiSelector().resourceIdMatches(\" + id + \"));"));
+		   waitForVisibility(obj); 
+	  }
+	  
 	  public void iOSScrollToElement() {
 		  RemoteWebElement element = (RemoteWebElement)getDriver().findElement(By.name("test-ADD TO CART"));
 		  String elementID = element.getId();
@@ -566,11 +570,28 @@ public class ParentClass
 			}
 		 }
 
+		public Integer getCountOfDevicesWithSpace(String noOfDevicesText) 
+		{
+			//From Home page Devices (2)
+			
+			//String[] devices = noOfDevicesText.trim().split(" "); //Devices(12)
+			String devices = noOfDevicesText.trim(); //Device (12)
+			int length = devices.length();
+			if (length == 11)//Devices(2)
+			{
+				return Integer.valueOf(devices.substring(9, 10));
+			}
+			else
+			{
+				return Integer.valueOf(devices.substring(9, 11));
+			}
+		}
+		
 		public Integer getCountOfDevices(String noOfDevicesText) 
 		{
 			
-			//String[] devices = noOfDevicesText.trim().split(" "); //Devices(12)
-			String devices = noOfDevicesText.trim(); //Devices (12)
+			//From Devices Page Devices(2)
+			String devices = noOfDevicesText.trim(); //Device (12)
 			int length = devices.length();
 			if (length == 10)//Devices(2)
 			{
@@ -582,12 +603,19 @@ public class ParentClass
 			}
 		}
 		
-		public void getSSIDNameAndPassword()
+		public void generateSSIDNameAndPassword()
 		{
 			 Integer randomNumber = (int)(Math.random()*9000)+1000;
 			 ssidNumber = String.valueOf(randomNumber);
 			 ssidName = "arris"+ssidNumber;
 			 ssidpwd = "1234567890";
+		}
+		
+		public void generateProfileName()
+		{
+			 Integer randomNumber = (int)(Math.random()*9000)+1000;
+			 randNum = String.valueOf(randomNumber);
+			 profileName = "profile"+ randNum;
 
 		}
 }

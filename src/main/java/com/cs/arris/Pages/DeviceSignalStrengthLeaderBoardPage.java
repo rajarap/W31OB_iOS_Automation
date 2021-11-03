@@ -23,7 +23,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 {
 	public TestUtils utils = new TestUtils();
 	public List<MobileElement> listOfDevices;
-	public int counter = 01;
+	public int counter = 1;
 	
 	@AndroidFindAll({
 		@AndroidBy (id = "com.arris.sbcBeta:id/txtHeader"),  //DEVICE SIGNAL STRENGTH LEADER BOARD
@@ -164,7 +164,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 //			utils.log().info("Download Speed is not displayed");
 	}
 	
-	public void clickCloseButton()
+	public void clickCloseIcon()
 	{
 		click(closeIcon);
 		utils.log().info("Device Signal Strength Leader Board - Clicked on Close Icon");

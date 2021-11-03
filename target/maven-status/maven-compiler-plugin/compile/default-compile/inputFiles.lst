@@ -7,9 +7,11 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/DisableBlueToothPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SpeedTestHistoryPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/InstallAdditionalSatellitePage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Utilities/SwipeActions.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ServiceNotAvailablePage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Utilities/TestUtils.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Utilities/RandomEmailAddress.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Utilities/Direction.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/JsonMappers/Signin_TestData.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/GenerateEmailAndPasscode.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0000_1015_Invalid_OTP_Page.java
@@ -39,6 +41,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0000_1506_Warranty_Support_Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/DeviceLocationPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/OptimizeYourNetworkPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/BlankSpeedTestHistoryPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/RebootYouRouterDialog.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/CurrentlyBlockedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0002_1002_Internet_Connection_Not_Available_On_Mobile_Device.java
@@ -55,6 +58,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/GrantPermissionsPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0003_1003_Service_Is_Currently_Not_Available.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Reports/ExtentReport.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/BlankCurrentlyBlockedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/EnableBlueToothPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0002_1304_Internet_Connection_Not_Available_On_Router.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/TurnOnBluetoothDialog.java
@@ -63,6 +67,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SystemFirmwareUpdatePage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SelectYourDevicePage2.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/AccessResourcesPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/HomeSpeedTestHistoryPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0015_1805_Something_Went_Wrong_Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Interface/W31_Onboarding_TestData.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/CodeVerifiedPage.java

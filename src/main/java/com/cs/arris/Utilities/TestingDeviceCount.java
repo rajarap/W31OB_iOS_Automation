@@ -7,7 +7,7 @@ public class TestingDeviceCount
 	public static void main(String args[])
 	{
 		ParentClass pc = new ParentClass();
-		Integer count = pc.getCountOfDevices("Devices(12)");
+		Integer count = pc.getCountOfDevicesWithSpace("Devices (2)");
 		System.out.println(count.toString());
 	
 	}

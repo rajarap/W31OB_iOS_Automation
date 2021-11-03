@@ -1,89 +1,121 @@
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:10.237 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-02
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:10.247 ParentClass:222 - Setting Android driver capabilities
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:21.536 ParentClass:231 - Android Driver is set to the Thread Local context android
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:21.537 ParentClass:232 - Android driver initialized: 
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.530 TC60_Login_And_Verify_HamburgerMenuPage_Test:48 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.532 ParentClass:304 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.540 TC60_Login_And_Verify_HamburgerMenuPage_Test:52 - First Name : demo
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.542 TC60_Login_And_Verify_HamburgerMenuPage_Test:55 - Last Name : user 
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.545 TC60_Login_And_Verify_HamburgerMenuPage_Test:58 - Email address : demouser2652@gmail.com
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.548 TC60_Login_And_Verify_HamburgerMenuPage_Test:61 - UDID : RZ8M3002DGL
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:25.549 TC60_Login_And_Verify_HamburgerMenuPage_Test:63 - Retrieved...Sign Up Test Data
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:26.261 TC60_Login_And_Verify_HamburgerMenuPage_Test:73 - 
-****** starting test:Verify_DevicesPage******
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:05.181 DeviceLocationPage:107 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:08.626 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:09.794 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:10.679 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:11.813 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:12.648 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:15.918 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:16.736 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:28.754 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:34.981 EnterValidOTPPage:61 - Entering valid OTP...529232
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:00:36.583 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:01.682 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:26.712 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:32.062 HomePage:645 - Home Page - Clicked on Navigation Icon to display the Hamburger Menu
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:33.072 HamburgerMenuPage:151 - At Hamburger Menu Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:34.401 SpeedTestPage:370 - At Speed Test Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:34.503 SpeedTestPage:242 - Speed Test Page - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:34.684 SpeedTestPage:223 - Speed Test Page - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:01:35.466 SpeedTestPage:244 - Speed Test Page - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:03:15.722 SpeedTestPage:246 - Speed Test Page - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:03:15.834 SpeedTestPage:242 - Speed Test Page - Label on button before speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:03:16.719 SpeedTestPage:223 - Speed Test Page - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:03:16.886 SpeedTestPage:244 - Speed Test Page - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:04:57.186 SpeedTestPage:246 - Speed Test Page - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:04:57.293 SpeedTestPage:242 - Speed Test Page - Label on button before speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:04:58.195 SpeedTestPage:223 - Speed Test Page - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:04:58.361 SpeedTestPage:244 - Speed Test Page - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:38.658 SpeedTestPage:246 - Speed Test Page - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:39.069 SpeedTestPage:142 - Speed Test Page - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:44.648 HomePage:813 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:45.906 HomePage:651 - Home Page - Clicked on Speed Test History Image
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:46.360 HomeSpeedTestHistoryPage:175 - On Speed Test History Page
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:46.364 HomeSpeedTestHistoryPage:90 - Home - Speed Test History Details
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:46.365 HomeSpeedTestHistoryPage:91 - **********************************
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:46.611 HomeSpeedTestHistoryPage:99 - Speed Test History : 0
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:46.612 HomeSpeedTestHistoryPage:100 - -------------------------
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:46.928 HomeSpeedTestHistoryPage:102 - Speed Test Date-Time   : Nov 03, 2021 at 12:06 am
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:47.209 HomeSpeedTestHistoryPage:103 - Device Name		     : Device
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:47.495 HomeSpeedTestHistoryPage:104 - Router Name		     : arrisw3138
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:47.761 HomeSpeedTestHistoryPage:105 - Internet Name		     : Internet
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:48.046 HomeSpeedTestHistoryPage:106 - Wifi Download Text	 : Download
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:48.322 HomeSpeedTestHistoryPage:107 - Wifi Download Speed	 : 614.63  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:48.563 HomeSpeedTestHistoryPage:108 - Wifi Upload Text	 	 : Upload
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:48.797 HomeSpeedTestHistoryPage:109 - Wifi Upload Speed	 	 : 606.48  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:49.054 HomeSpeedTestHistoryPage:110 - Internet Download Text : Download
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:49.312 HomeSpeedTestHistoryPage:111 - Internet Download Speed: 92.4  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:50.117 HomeSpeedTestHistoryPage:112 - Internet Upload Text	 : Upload
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:50.390 HomeSpeedTestHistoryPage:113 - Internet Upload Speed	 : 97.1  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:50.612 HomeSpeedTestHistoryPage:99 - Speed Test History : 1
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:50.613 HomeSpeedTestHistoryPage:100 - -------------------------
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:51.469 HomeSpeedTestHistoryPage:102 - Speed Test Date-Time   : Nov 03, 2021 at 12:04 am
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:52.672 HomeSpeedTestHistoryPage:103 - Device Name		     : Device
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:52.987 HomeSpeedTestHistoryPage:104 - Router Name		     : arrisw3138
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:53.790 HomeSpeedTestHistoryPage:105 - Internet Name		     : Internet
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:54.785 HomeSpeedTestHistoryPage:106 - Wifi Download Text	 : Download
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:55.064 HomeSpeedTestHistoryPage:107 - Wifi Download Speed	 : 636.94  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:55.323 HomeSpeedTestHistoryPage:108 - Wifi Upload Text	 	 : Upload
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:56.164 HomeSpeedTestHistoryPage:109 - Wifi Upload Speed	 	 : 651.4  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:57.168 HomeSpeedTestHistoryPage:110 - Internet Download Text : Download
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:57.459 HomeSpeedTestHistoryPage:111 - Internet Download Speed: 87.2  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:57.756 HomeSpeedTestHistoryPage:112 - Internet Upload Text	 : Upload
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:58.446 HomeSpeedTestHistoryPage:113 - Internet Upload Speed	 : 96.8  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:59.659 HomeSpeedTestHistoryPage:99 - Speed Test History : 2
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:06:59.660 HomeSpeedTestHistoryPage:100 - -------------------------
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:00.898 HomeSpeedTestHistoryPage:102 - Speed Test Date-Time   : Nov 03, 2021 at 12:02 am
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:01.892 HomeSpeedTestHistoryPage:103 - Device Name		     : Device
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:02.194 HomeSpeedTestHistoryPage:104 - Router Name		     : arrisw3138
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:02.509 HomeSpeedTestHistoryPage:105 - Internet Name		     : Internet
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:03.188 HomeSpeedTestHistoryPage:106 - Wifi Download Text	 : Download
+[logs/Android_RZ8M3002DGL/2021-11-02 ERROR] 2021-11-03 00:07:04.051 TestListener:39 - java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.intercept(InterceptorOfAListOfElements.java:49)
+	at $java.util.ArrayList$$EnhancerByCGLIB$$b5855c01.get(<generated>)
+	at com.cs.arris.Pages.HomeSpeedTestHistoryPage.verifyHomeSpeedTestHistory(HomeSpeedTestHistoryPage.java:107)
+	at com.cs.arris.Tests.TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test.lambda$Verify_DevicesPage$14(TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test.java:162)
+	at com.cs.arris.Workflows.TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.homeSpeedTestHistoryPage(TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.java:165)
+	at com.cs.arris.Tests.TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test.Verify_DevicesPage(TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test.java:159)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:26.819 GetStartedPage:44 - Get Started - Clicked on Get Started Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:27.593 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:28.324 DeviceLocationPage:105 - Device Location - Clicked Only this time
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:44.138 DeviceLocationPage:107 - Device Location - Clicked Allow
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:47.454 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:48.854 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:49.794 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:50.928 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:51.786 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:55.279 SiginPage:52 - Sigin Page - Entered user email address
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:19:56.117 SiginPage:60 - Sigin Page - Clicked on Signin Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:08.147 ValidOTP:118 - loading...emailDetails
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:13.903 EnterValidOTPPage:61 - Entering valid OTP...088352
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:15.493 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:20:40.528 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:05.228 HomePage:813 - On Home Page
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:10.560 HomePage:645 - Home Page - Clicked on Navigation Icon to display the Hamburger Menu
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:11.596 HamburgerMenuPage:151 - At Hamburger Menu Page
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:11.779 HamburgerMenuPage:57 - Hamburger Menu - Add Device - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:11.905 HamburgerMenuPage:62 - Hamburger Menu - Remove Device - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:12.512 HamburgerMenuPage:67 - Hamburger Menu - Speed Test - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:13.581 HamburgerMenuPage:72 - Hamburger Menu - Add a New Satellite - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:13.823 HamburgerMenuPage:77 - Hamburger Menu - Amazon Features - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:13.947 HamburgerMenuPage:82 - Hamburger Menu - Help - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:14.742 HamburgerMenuPage:87 - Hamburger Menu - About - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:14.888 HamburgerMenuPage:92 - Hamburger Menu - Settings - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:16.708 SpeedTestPage:250 - At Speed Test Page
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:16.908 SpeedTestPage:116 - Speed Test Page - Clicked on Back Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:20.773 ParentClass:407 - video path: videos/Android_RZ8M3002DGL/2021-11-02-01-19-10/TC60_Login_And_Verify_HamburgerMenuPage_Test/Verify_DevicesPage.mp4
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:26.565 ParentClass:166 - Closing App
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 01:21:26.749 ParentClass:168 - Quitting Driver
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:46:58.268 ParentClass:280 - log path: logs/Android_RZ8M3002DGL/2021-11-02
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:46:58.277 ParentClass:222 - Setting Android driver capabilities
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:10.517 ParentClass:231 - Android Driver is set to the Thread Local context android
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:10.518 ParentClass:232 - Android driver initialized: 
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.593 TC60_Login_And_Verify_HamburgerMenuPage_Test:48 - Loading...Sign Up Test Data
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.599 ParentClass:304 - loading...testdata/signup
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.607 TC60_Login_And_Verify_HamburgerMenuPage_Test:52 - First Name : demo
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.609 TC60_Login_And_Verify_HamburgerMenuPage_Test:55 - Last Name : user 
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.611 TC60_Login_And_Verify_HamburgerMenuPage_Test:58 - Email address : demouser2652@gmail.com
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.615 TC60_Login_And_Verify_HamburgerMenuPage_Test:61 - UDID : RZ8M3002DGL
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:14.617 TC60_Login_And_Verify_HamburgerMenuPage_Test:63 - Retrieved...Sign Up Test Data
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:15.330 TC60_Login_And_Verify_HamburgerMenuPage_Test:73 - 
-****** starting test:Verify_DevicesPage******
-
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:15.953 GetStartedPage:44 - Get Started - Clicked on Get Started Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:16.728 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:17.453 DeviceLocationPage:105 - Device Location - Clicked Only this time
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:33.331 DeviceLocationPage:107 - Device Location - Clicked Allow
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:36.687 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:38.048 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:38.921 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:39.944 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:40.824 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:44.122 SiginPage:52 - Sigin Page - Entered user email address
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:44.961 SiginPage:60 - Sigin Page - Clicked on Signin Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:47:56.995 ValidOTP:118 - loading...emailDetails
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:02.969 EnterValidOTPPage:61 - Entering valid OTP...558779
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:04.511 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:29.380 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:53.179 HomePage:813 - On Home Page
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:58.634 HomePage:645 - Home Page - Clicked on Navigation Icon to display the Hamburger Menu
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:59.600 HamburgerMenuPage:151 - At Hamburger Menu Page
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:59.724 HamburgerMenuPage:57 - Hamburger Menu - Add Device - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:48:59.889 HamburgerMenuPage:62 - Hamburger Menu - Remove Device - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:00.554 HamburgerMenuPage:67 - Hamburger Menu - Speed Test - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:00.662 HamburgerMenuPage:72 - Hamburger Menu - Add a New Satellite - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.556 HamburgerMenuPage:77 - Hamburger Menu - Amazon Features - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.702 HamburgerMenuPage:82 - Hamburger Menu - Help - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.824 HamburgerMenuPage:87 - Hamburger Menu - About - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:01.936 HamburgerMenuPage:92 - Hamburger Menu - Settings - is displayed
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:03.148 SpeedTestPage:350 - At Speed Test Page
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:03.223 SpeedTestPage:250 - Speed Test Page - Label on button before speed Test: START TEST
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:03.398 SpeedTestPage:233 - Speed Test Page - Clicked Start Speed Test Button
-[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-02 02:49:04.202 SpeedTestPage:252 - Speed Test Page - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:09.771 ParentClass:408 - video path: videos/Android_RZ8M3002DGL/2021-11-02-23-59-27/TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test/Verify_DevicesPage.mp4
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:15.706 ParentClass:166 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-02 INFO ] 2021-11-03 00:07:15.896 ParentClass:168 - Quitting Driver

@@ -4,6 +4,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
+import com.cs.arris.Utilities.Direction;
+import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
@@ -309,8 +311,6 @@ public class HomePage extends ParentClass implements Page
 	})
 	public MobileElement parentalButtonImage; 
 	
-	
-	
 	//Network Optimization dialog elements
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialog_heading") 
 	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/dialog_heading']") // text = Network Optimization
@@ -418,6 +418,16 @@ public class HomePage extends ParentClass implements Page
 	     return hamburgerMenuPage;
 	  }
 	 
+	 public BlankSpeedTestHistoryPage getBlankSpeedTestHistoryPageObject() {
+		 BlankSpeedTestHistoryPage blankSpeedHistoryPage = new BlankSpeedTestHistoryPage();
+	     return blankSpeedHistoryPage;
+	  }
+	 
+	 public BlankCurrentlyBlockedDevicesPage getBlankBlockedDevicesPageObject() {
+		 BlankCurrentlyBlockedDevicesPage blankBlockedDevicesPage = new BlankCurrentlyBlockedDevicesPage();
+	     return blankBlockedDevicesPage;
+	  }
+	 
 	 public FooterIconsPage getFooterIconsPageObject() {
 		 footerIconsPage = new FooterIconsPage();
 	     return footerIconsPage;
@@ -444,12 +454,12 @@ public class HomePage extends ParentClass implements Page
 	public void verifyUIOnHomePage()
 	{
 		if(homeTitle.isDisplayed())
-			utils.log().info("Title - " + homeTitle.getText() + " - is displayed");
+			utils.log().info("Title : " + homeTitle.getText() + " is displayed");
 		else
 			utils.log().info("Home Title is not displayed");
 		
 		if(networkSpeedTitle.isDisplayed())
-			utils.log().info("Title - " + networkSpeedTitle.getText() + " - is displayed");
+			utils.log().info("Title : " + networkSpeedTitle.getText() + " is displayed");
 		else
 			utils.log().info("Network Title is not displayed");
 		
@@ -474,7 +484,7 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Download Text is not displayed");
 		
 		if(downloadSpeedText.isDisplayed())
-			utils.log().info("Download Speed Text - " + downloadSpeedText.getText() + " - is displayed");
+			utils.log().info("Download Speed Text : " + downloadSpeedText.getText() + " is displayed");
 		else
 			utils.log().info("Download Speed Text is not displayed");
 		
@@ -484,12 +494,12 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Upload Text is not displayed");
 		
 		if(uploadSpeedText.isDisplayed())
-			utils.log().info("Upload Speed Text - " + uploadSpeedText.getText() + " - is displayed");
+			utils.log().info("Upload Speed Text : " + uploadSpeedText.getText() + " is displayed");
 		else
 			utils.log().info("Upload Speed Text is not displayed");
 		
 		if(ssidName.isDisplayed())
-			utils.log().info("Main Router SSID Name - " + ssidName.getText() + " - is displayed");
+			utils.log().info("Main Router SSID Name : " + ssidName.getText() + "  is displayed");
 		else
 			utils.log().info("Main Router SSID Name is not displayed");
 		
@@ -499,12 +509,12 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Main Router Device is not displayed");
 		
 		if(mainDeviceName.isDisplayed())
-			utils.log().info("Main Router Device Name - " + mainDeviceName.getText() + " - is displayed");
+			utils.log().info("Main Router Device Name : " + mainDeviceName.getText() + " is displayed");
 		else
 			utils.log().info("Main Router Device Name is displayed");
 			
 		if(mainDeviceCounter.isDisplayed())
-			utils.log().info("Number of Devices Connected to Main Router - " + mainDeviceCounter.getText() + " - is displayed");
+			utils.log().info("Number of Devices Connected to Main Router : " + mainDeviceCounter.getText() + " is displayed");
 		else
 			utils.log().info("Main devices counter is not displayed");
 		
@@ -514,7 +524,7 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Total number of devices image is not displayed");
 		
 		if(totalNoOfDevices.isDisplayed())
-			utils.log().info("Total of - " + super.getCountOfDevices(totalNoOfDevices.getText()) + " - devices are connected to the main Router");
+			utils.log().info("Total of : " + super.getCountOfDevicesWithSpace(totalNoOfDevices.getText()) + " devices are connected to the main Router");
 		else
 			utils.log().info("Total number of devices connected to the router is not displayed");
 		
@@ -539,7 +549,7 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Device Signal Strength Leader Board Image is not displayed");
 		
 		if(bitRateDevices.isDisplayed())
-			utils.log().info("Count of - " + bitRateDevices.getText() + " - Device Signal Strength Leader Board is displayed");
+			utils.log().info("Count of : " + bitRateDevices.getText() + " Device Signal Strength Leader Board is displayed");
 		else
 			utils.log().info("Device Signal Strength Leader Board Count is not displayed");
 		
@@ -554,38 +564,38 @@ public class HomePage extends ParentClass implements Page
 			utils.log().info("Speed Test History Image is not displayed");
 
 		if(speedTestHistoryDevices.isDisplayed())
-			utils.log().info("Count of Speed Test History Devices - " + speedTestHistoryDevices.getText() + " - is displayed");
+			utils.log().info("Count of Speed Test History Devices : " + speedTestHistoryDevices.getText() + " is displayed");
 		else
 			utils.log().info("Count of Speed Test History Devices is not displayed");
 		
-//		super.scrollToElement(currentlyBlockedDevicesButton); 
-//		super.pause(20);
-//		
-//		if(currentlyBlockedDevicesText.isDisplayed())
-//			utils.log().info("Currently Blocked Devices Text is displayed");
-//		else
-//			utils.log().info("Currently Blocked Devices is not displayed");
-//
-//		if(currentlyBlockedDevicesImage.isDisplayed())
-//			utils.log().info("Currently Blocked Devices Image is displayed");
-//		else
-//			utils.log().info("Currently Blocked Devices Image is not displayed");
-//		
-//		try
-//		{
-//			if(parentalControlIsDisabled.isDisplayed())
-//				utils.log().info("Parental Control is currently disabled.. Parental Control is Disabled text is displayed");
-//			else
-//				utils.log().info("Parental Control is Disabled text is not displayed");
-//		}catch(Exception e){ e.getMessage();}
-//	
-//		try
-//		{
-//			if(parentalControlBlockedDevices.isDisplayed())
-//				utils.log().info("Parental Control is currently enabled - " + parentalControlBlockedDevices.getText() + " - devices are under Parental Control");
-//			else
-//				utils.log().info("Parental Control is currently enabled but count of Parental Control devices is not displayed");
-//		}catch(Exception e){ e.getMessage();}
+		new SwipeActions().swipeScreen(Direction.UP);
+		super.pause(5);
+			
+		if(currentlyBlockedDevicesText.isDisplayed())
+			utils.log().info("Currently Blocked Devices Text is displayed");
+		else
+			utils.log().info("Currently Blocked Devices is not displayed");
+
+		if(currentlyBlockedDevicesImage.isDisplayed())
+			utils.log().info("Currently Blocked Devices Image is displayed");
+		else
+			utils.log().info("Currently Blocked Devices Image is not displayed");
+		
+		try
+		{
+			if(parentalControlIsDisabled.isDisplayed())
+				utils.log().info("Parental Control is currently disabled text is displayed on HomePage");
+			else
+				utils.log().info("Parental Control is Disabled text is not displayed");
+		}catch(Exception e){ e.getMessage();}
+	
+		try
+		{
+			if(parentalControlBlockedDevices.isDisplayed())
+				utils.log().info("Parental Control is currently enabled : " + parentalControlBlockedDevices.getText() + " devices are under Parental Control");
+			else
+				utils.log().info("Parental Control is currently enabled but count of Parental Control devices is not displayed");
+		}catch(Exception e){ e.getMessage();}
 		
 		if(getFooterIconsPageObject().homeButton.isDisplayed())
 			utils.log().info("Home Button is displayed");
@@ -645,22 +655,22 @@ public class HomePage extends ParentClass implements Page
 		utils.log().info("Home Page - Clicked on Navigation Icon to display the Hamburger Menu");
 	}
 	
-	public void clickSpeedTestHistoryButton()
+	public void clickSpeedTestHistoryImage()
 	{
-		click(speedTestHistoryButton);
-		utils.log().info("Home Page - Clicked on Speed Test History Button");
+		click(speedTestHistoryImage);
+		utils.log().info("Home Page - Clicked on Speed Test History Image");
 	}
 	
-	public void clickDeviceSignalStrengthButton()
+	public void clickDeviceSignalStrengthImage()
 	{
 		click(deviceSignalStrengthLeaderBoardImage);
 		utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board Image");
 	}
 	
-	public void clickCurrentlyBlockedDevicesButton()
+	public void clickCurrentlyBlockedDevicesImage()
 	{
-		click(currentlyBlockedDevicesButton);
-		utils.log().info("Home Page - Clicked on Currently Blocked Devices Button");
+		click(currentlyBlockedDevicesImage);
+		utils.log().info("Home Page - Clicked on Currently Blocked Devices Image");
 	}
 	
 	public void clickHomeButton()
@@ -708,11 +718,9 @@ public class HomePage extends ParentClass implements Page
 	public int getTotalCountOfDevices()
 	{
 		String noOfDevices = totalNoOfDevices.getText();  //Devices (2)
-		count = getCountOfDevices(noOfDevices);
+		count = getCountOfDevicesWithSpace(noOfDevices);
 		return count;
 	}
-	
-	
 
 	public Integer getCount() {
 		return count;

@@ -15,12 +15,8 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Pages.HomePage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
-import com.cs.arris.Workflows.HomePage_Workflow;
-import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
-import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
+import com.cs.arris.Workflows.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Workflow;
  
-
-
 public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test extends ParentClass
 {
 	TestUtils utils = new TestUtils();
@@ -65,7 +61,7 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 		} 
      }
 	
-	
+	 
 	  @BeforeMethod
 	  public void beforeMethod(Method m) 
 	  {
@@ -76,7 +72,7 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 	  @Test(priority = 1)
 	  public void Verify_DevicesPage()
 	  {
-		  TC53_Login_And_Verify_DevicesPage_Workflow.getStartedPage(getStarted -> {
+		  TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Workflow.getStartedPage(getStarted -> {
 			  getStarted.clickGetStartedButton();
 		  }).grantPermissionsPage(grantPermission -> {
 			  grantPermission.clickContinueButton();
@@ -131,7 +127,7 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 			 if(home.isAt())
 			 {
 				 super.pause(5);
-				 home.clickDeviceSignalStrengthButton();
+				 home.clickDeviceSignalStrengthImage();
 			 }
 	  		}).deviceSignalStrengthPage(deviceSignalStrength -> {
 	  			if(deviceSignalStrength.isAt())
@@ -144,7 +140,7 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 				    if (deviceSignalStrength.getHomePageObject().isAt())
 				    {
 				    	super.pause(5);
-				    	deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthButton();
+				    	deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthImage();
 				    }
 	  			}
 	  			if(deviceSignalStrength.isAt())
@@ -157,7 +153,7 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 	  			}
 	  			if(deviceSignalStrength.getHomePageObject().isAt())
 	  			{
-	  				deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthButton();
+	  				deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthImage();
 	  			}
 			 if(deviceSignalStrength.isAt())
 			 {
@@ -169,7 +165,7 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 			 }
 			 if(deviceSignalStrength.getHomePageObject().isAt())
 	  		 {
-				 deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthButton();
+				 deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthImage();
 	  		 }
 
 		  });

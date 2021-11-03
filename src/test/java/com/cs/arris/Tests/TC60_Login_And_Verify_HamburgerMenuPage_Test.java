@@ -138,20 +138,7 @@ public class TC60_Login_And_Verify_HamburgerMenuPage_Test extends ParentClass
 	  			if(hamburger.isAt())
 	  			{
 	  				hamburger.verifyUIOnHamburgerMenuPage();
-	  				hamburger.clickSpeedTestButton();
 	  			}
-	  			if(hamburger.getSpeedTestPageObject().isAt())
-	  			{
-	  				hamburger.getSpeedTestPageObject().clickSpeedTest();
-	  				if(hamburger.getSpeedTestPageObject().wifiSpeedGoodForText.isDisplayed())
-	  				{
-	  					hamburger.getSpeedTestPageObject().verifySpeedTestResults();
-	  				}
-	  			}
-//	  			if(hamburger.getHomePageObject().isAt())
-//	  			{
-//	  				
-//	  			}
 		  });
 	  }
 }
