@@ -76,7 +76,7 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 	  
 	  
 	  @Test(priority = 1)
-	  public void Verify_DevicesPage()
+	  public void Verify_Home_Speed_Test_History_Page()
 	  {
 		  TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.getStartedPage(getStarted -> {
 			  getStarted.clickGetStartedButton();
@@ -85,7 +85,6 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 		  }).deviceLocationPage(deviceLocation -> {
 			  deviceLocation.clickOnlyThisTimeLink();
 		  }).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			  super.pause(3);
 			  accessResoucesOnDevice.clickAllowLink();
 		  }).selectYourDevicePage(selectDevice -> {
 			  selectDevice.selectSurfboardMaxOption();
@@ -93,7 +92,6 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 		  }).selectYourDevicePage2(selectDevice2 -> {
 			  selectDevice2.selectMaxProAX11000RadioButton();
 			  selectDevice2.clickNextButton();
-			  super.pause(3);
 		  }).welcomeSigninPage(signin -> {
 			  signin.enterEmailAddress(email);
 			  signin.clickSigninButton();
@@ -118,7 +116,6 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 				  }
 			  }).setupWifi(setupwifi ->{
 				  setupwifi.clickskipTutorialButton();
-				  super.pause(3);
 	  		}).homePage(home -> {
 			  try
 			  {
@@ -132,7 +129,7 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 			  }
 			 if(home.isAt())
 			 {
-				 super.pause(5);
+				 super.pause(2);
 				 home.clickNavigationButton();
 				 if(home.getHamburgerMenuPageObject().isAt())
 				 {
@@ -150,7 +147,6 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 					 for (int i = 0; i < 3; i++)
 					 {
 						 speedTest.performSpeedTest();
-						 
 					 }
 					 speedTest.clickBackIcon();
 				 }
@@ -173,14 +169,14 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 	  			{
 	  				speedTestHistory.getHomePageObject().clickSpeedTestHistoryImage();
 	  			}
-			 if(speedTestHistory.isAt())
-			 {
-				 speedTestHistory.getFooterIconsPageObject().clickParentalButton();
-				 if (speedTestHistory.getParentalControlPageObject().isAt())
-				 {
-					 speedTestHistory.getParentalControlPageObject().clickBackButton();
-				 }
-			 }
+	  			if(speedTestHistory.isAt())
+	  			{
+	  				speedTestHistory.getFooterIconsPageObject().clickParentalButton();
+	  				if (speedTestHistory.getParentalControlPageObject().isAt())
+	  					{
+	  						speedTestHistory.getParentalControlPageObject().clickBackButton();
+	  					}
+	  			}
 		  });
 	  }
 }

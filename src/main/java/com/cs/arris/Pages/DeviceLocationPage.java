@@ -95,14 +95,12 @@ public class DeviceLocationPage  extends ParentClass implements Page
 	
 	public void clickWhileUsingTheAppLink() 
 	{
-		utils.log().info("Device Location - Clicked " + whileUsingTheAppLink.getText());
 		click(whileUsingTheAppLink);
 		utils.log().info("Device Location - Clicked " + whileUsingTheAppLink.getText());
 	}
 	
 	public void clickOnlyThisTimeLink() 
 	{
-		utils.log().info("Device Location - Clicked " + onlyThisTimeLink.getText());
 		click(onlyThisTimeLink);
 		utils.log().info("Device Location - Clicked " + onlyThisTimeLink.getText());
 	}

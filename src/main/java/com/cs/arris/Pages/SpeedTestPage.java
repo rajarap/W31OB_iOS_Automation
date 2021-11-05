@@ -242,7 +242,7 @@ public class SpeedTestPage extends ParentClass implements Page
 			clickStartSpeedTestButton();
 			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
 			super.pause(100);
-			verifySpeedTestResultsUI();
+			//verifySpeedTestResultsUI();
 			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
 		}catch(Exception e)
 		{

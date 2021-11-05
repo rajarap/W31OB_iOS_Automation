@@ -185,8 +185,7 @@ public class ParentalControlProfilesTabEmptyPage extends ParentClass implements 
 		click(okButton);
 		utils.log().info("Clicked OK button on Alert Dialog box");
 		
-		click(parentalControlToggleIconOFF);
-		utils.log().info("Clicked to enable Parental Control");
+		this.enableParentalConrol();
 		
 		if(addProfileLink.isDisplayed() && parentalControlToggleIconON.isDisplayed())
 		{
@@ -200,9 +199,24 @@ public class ParentalControlProfilesTabEmptyPage extends ParentClass implements 
 		utils.log().info("Clicked Currently Blocked Tab on Profiles Tab Page");
 	}
 	
+	public AppRatingDialog getAppRatingDialogObject()
+	{
+		AppRatingDialog appRating = new AppRatingDialog();
+		return appRating;
+	}
+	
 	public void enableParentalConrol()
 	{
 		click(parentalControlToggleIconOFF);
+		try
+		{
+			if(getAppRatingDialogObject().isAt())
+			{
+				getAppRatingDialogObject().clickRemindMeLaterLink();
+				utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
+			}
+		}catch(Exception e) { utils.log().info("App Rating Dialog is not displayed");}
+		
 		utils.log().info("Enabled Parental Control");
 	}
 	

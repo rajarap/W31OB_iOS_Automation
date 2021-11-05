@@ -589,9 +589,7 @@ public class ParentClass
 		
 		public Integer getCountOfDevices(String noOfDevicesText) 
 		{
-			
-			//From Devices Page Devices(2)
-			String devices = noOfDevicesText.trim(); //Device (12)
+			String devices = noOfDevicesText.trim(); 
 			int length = devices.length();
 			if (length == 10)//Devices(2)
 			{
@@ -599,7 +597,18 @@ public class ParentClass
 			}
 			else
 			{
+				//Device (12)
 				return Integer.valueOf(devices.substring(8, 10));
+			}
+		}
+		
+		public Integer getDeviceSignalStrengthCount(String numberOfDevicesText1) {
+			// 02 Devices
+			String devices = numberOfDevicesText1;
+			if (devices.startsWith("0")) {
+				return Integer.valueOf(devices.substring(1, 2));
+			} else {
+				return Integer.valueOf(devices.substring(0, 2));
 			}
 		}
 		

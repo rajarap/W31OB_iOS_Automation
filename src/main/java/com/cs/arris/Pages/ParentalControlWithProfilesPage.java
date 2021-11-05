@@ -205,6 +205,27 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 			}
 		}
 	}	
+	
+	public AppRatingDialog getAppRatingDialogObject()
+	{
+		AppRatingDialog appRating = new AppRatingDialog();
+		return appRating;
+	}
+	
+	public void enableParentalConrol()
+	{
+		click(parentalControlToggleIconOFF);
+		try
+		{
+			if(getAppRatingDialogObject().isAt())
+			{
+				getAppRatingDialogObject().clickRemindMeLaterLink();
+				utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
+			}
+		}catch(Exception e) { utils.log().info("App Rating Dialog is not displayed");}
+		
+		utils.log().info("Enabled Parental Control");
+	}
 
 	
 	@Override

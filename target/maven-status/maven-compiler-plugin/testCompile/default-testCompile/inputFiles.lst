@@ -1,3 +1,4 @@
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC66_Verify_Hamburger_SettingsPage_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/COR_TC01_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/HomePage_Workflow.java
@@ -37,5 +38,6 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC04_EC_0002_1304_Internet_Connection_Not_Available_On_Router_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/GrantPermissionPageTest.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TestBluetooth.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC66_Verify_Hamburger_SettingsPage_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC03_Verify_Invalid_OTP_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Workflow.java

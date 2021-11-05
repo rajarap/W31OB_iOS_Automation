@@ -144,6 +144,11 @@ public class HamburgerMenuPage extends ParentClass implements Page
 		click(aboutApp); 
 	}
 	
+	public void clickSettingsButton()
+	{
+		click(appSettings); 
+	}
+	
 	@Override
 	public boolean isAt() {
 		if(logo.isDisplayed())

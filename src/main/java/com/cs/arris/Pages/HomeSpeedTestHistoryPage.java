@@ -24,8 +24,8 @@ public class HomeSpeedTestHistoryPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	public SwipeActions swipe = new SwipeActions();
-	public MobileElement me;
-	public int counter = 2;
+	public List<MobileElement> me;
+	public int counter = 1;
 	int size;
 	
 	@AndroidFindAll({
@@ -40,113 +40,56 @@ public class HomeSpeedTestHistoryPage extends ParentClass implements Page
 		@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/speed_test_history") 
 	})
-	public List<MobileElement> speedTestHistoryDinning;
+	public MobileElement speedTestHistoryDinning;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/date']")
 	public List<MobileElement> speedTestHistoryDateTime;
 	
 	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/left_speed_test_icon']")
-	public List<MobileElement> speedTestHistoryDeviceImage;
+	public List<MobileElement>  speedTestHistoryDeviceImage;
 	
 	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/router_image']")
-	public List<MobileElement> speedTestHistoryRouterImage;
+	public List<MobileElement>  speedTestHistoryRouterImage;
 	
 	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/right_speed_test_icon']")
-	public List<MobileElement> speedTestHistoryInternetImage;
+	public List<MobileElement>  speedTestHistoryInternetImage;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']")
-	public List<MobileElement> speedTestHistoryDeviceName;
+	public List<MobileElement>  speedTestHistoryDeviceName;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/routerName']")
-	public List<MobileElement> speedTestHistoryRouterName;
+	public List<MobileElement>  speedTestHistoryRouterName;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Internet']")
-	public List<MobileElement> speedTestHistoryInternetName;
+	public List<MobileElement>  speedTestHistoryInternetName;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Download']")
-	public List<MobileElement> wifiDownloadText;
+	public List<MobileElement>  wifiDownloadText;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Upload']")
-	public List<MobileElement> wifiUploadText;
+	public List<MobileElement>  wifiUploadText;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Download']")
-	public List<MobileElement> internetDownloadText;
+	public List<MobileElement>  internetDownloadText;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Upload']")
-	public List<MobileElement> internetUploadText;
+	public List<MobileElement>  internetUploadText;
 
 	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiDownloadSpeed']")
-	public List<MobileElement> wifiDownloadSpeed;
+	public List<MobileElement>  wifiDownloadSpeed;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiUploadSpeed']")
-	public List<MobileElement> wifiUploadSpeed;
+	public List<MobileElement>  wifiUploadSpeed;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetDownloadSpeed']")
-	public List<MobileElement> internetDownloadSpeed;
+	public List<MobileElement>  internetDownloadSpeed;
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetUploadSpeed']")
-	public List<MobileElement> internetUploadSpeed;
+	public List<MobileElement>  internetUploadSpeed;
 	
 	public HomeSpeedTestHistoryPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
-	}
-
-	public void verifyHomeSpeedTestHistory()
-	{
-		utils.log().info("Size of Speed Test History is : " + size);
-		utils.log().info("Home - Speed Test History Details");
-		utils.log().info("**********************************");
-		
-		for(int i = 0 ; i < 3 ; i++)
-		{
-//			new SwipeActions().swipeScreen(Direction.UP);
-
-			me = (MobileElement) super.getDriver().findElementByXPath("//android.view.ViewGroup[@index="+i+"]");		
-			if (i < 2 && me.isDisplayed())
-			{
-				utils.log().info("Speed Test History : " + i);
-				utils.log().info("----------------------------------------------------------------------");
-				utils.log().info("Speed Test Date-Time		: " + speedTestHistoryDateTime.get(i).getText());
-				utils.log().info("Device Name			: " + speedTestHistoryDeviceName.get(i).getText());
-				utils.log().info("Router Name			: " + speedTestHistoryRouterName.get(i).getText());
-				utils.log().info("Internet Name			: " + speedTestHistoryInternetName.get(i).getText());
-				utils.log().info("Wifi Download Text		: " + wifiDownloadText.get(i).getText());
-				utils.log().info("Wifi Download Speed		: " + wifiDownloadSpeed.get(i).getText());
-				utils.log().info("Wifi Upload Text		: " + wifiUploadText.get(i).getText());
-				utils.log().info("Wifi Upload Speed		: " + wifiUploadSpeed.get(i).getText());
-				utils.log().info("Internet Download Text	: " + internetDownloadText.get(i).getText());
-				utils.log().info("Internet Download Speed	: " + internetDownloadSpeed.get(i).getText());
-				utils.log().info("Internet Upload Text	 	: " + internetUploadText.get(i).getText());
-				utils.log().info("Internet Upload Speed	 	: " + internetUploadSpeed.get(i).getText());
-				utils.log().info("----------------------------------------------------------------------");
-				utils.log().info("");
-			}
-//			else
-//			{
-//				new SwipeActions().swipeScreen(Direction.UP);
-//				super.pause(5);
-//				me = (MobileElement) super.getDriver().findElementByXPath("//android.view.ViewGroup[@index="+i+"]");
-//				if (i >= size-- && me.isDisplayed())
-//				{
-//					utils.log().info("Speed Test History : " + i++);
-//					utils.log().info("-------------------------");
-//								
-//					utils.log().info("Speed Test Date-Time		: " + speedTestHistoryDateTime.get(i).getText());
-//					utils.log().info("Device Name				: " + speedTestHistoryDeviceName.get(i).getText());
-//					utils.log().info("Router Name				: " + speedTestHistoryRouterName.get(i).getText());
-//					utils.log().info("Internet Name				: " + speedTestHistoryInternetName.get(i).getText());
-//					utils.log().info("Wifi Download Text		: " + wifiDownloadText.get(i).getText());
-//					utils.log().info("Wifi Download Speed		: " + wifiDownloadSpeed.get(i).getText());
-//					utils.log().info("Wifi Upload Text			: " + wifiUploadText.get(i).getText());
-//					utils.log().info("Wifi Upload Speed			: " + wifiUploadSpeed.get(i).getText());
-//					utils.log().info("Internet Download Text	: " + internetDownloadText.get(i).getText());
-//					utils.log().info("Internet Download Speed	: " + internetDownloadSpeed.get(i).getText());
-//					utils.log().info("Internet Upload Text	 	: " + internetUploadText.get(i).getText());
-//					utils.log().info("Internet Upload Speed	 	: " + internetUploadSpeed.get(i).getText());
-//				}
-//			}
-		}
 	}
 	
 	public HomePage getHomePageObject()
@@ -174,6 +117,51 @@ public class HomeSpeedTestHistoryPage extends ParentClass implements Page
 		 SpeedTestPage speedTestPage = new SpeedTestPage();
 	     return speedTestPage;
 	  }
+	 
+		public void verifyHomeSpeedTestHistory()
+		{
+			utils.log().info("*************************************");
+			utils.log().info("Details of Speed Test History Details");
+			utils.log().info("*************************************");
+			
+			utils.log().info("Title : " + speedTestHistoryTitle.getText());
+	 		MobileElement recycleView = (MobileElement) super.getDriver().findElementByXPath("//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView");
+	 		
+	 		for(int i = 1 ; i <= 3 ; i++)
+	 		{
+	 			List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
+	 			for(MobileElement m : entity)
+				{
+					utils.log().info("Speed Test History : " + counter);
+					utils.log().info("------------------------------");
+					if (m.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/left_speed_test_icon']").isDisplayed())
+						utils.log().info("Device Image is displayed");
+					
+					if (m.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/router_image']").isDisplayed())
+						utils.log().info("Router Image is displayed");
+					
+					if (m.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/right_speed_test_icon']").isDisplayed())
+						utils.log().info("Internet Image is displayed");
+					
+					utils.log().info("Date and Time: " + m.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/date']").getText());
+					utils.log().info("Device Name : " + m.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").getText());
+					utils.log().info("Router Name : " + m.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/routerName']").getText());
+					utils.log().info("Internet Name : " + m.findElementByXPath("//android.widget.TextView[@text='Internet']").getText());
+					utils.log().info("Wifi Download Text : " + m.findElementByXPath("//android.widget.TextView[@text='Download']").getText());
+					utils.log().info("Wifi Download Speed: " + m.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiDownloadSpeed']").getText());
+					utils.log().info("Wifi Upload Text : " + m.findElementByXPath("//android.widget.TextView[@text='Upload']").getText());
+					utils.log().info("Wifi Upload Speed: " + m.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiUploadSpeed']").getText());
+					utils.log().info("Internet Download Text : " + m.findElementByXPath("//android.widget.TextView[@text='Download']").getText());
+					utils.log().info("Internet Download Speed: " + m.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetDownloadSpeed']").getText());
+					utils.log().info("Internet Upload Text	: " + m.findElementByXPath("//android.widget.TextView[@text='Upload']").getText());
+					utils.log().info("Internet Upload Speed : " + m.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetUploadSpeed']").getText());
+					utils.log().info("****************************************************");
+					counter++;
+				}
+	 			if (i == 2)
+	 				new SwipeActions().swipeScreen(Direction.UP);
+	 		}
+		}
 	
 	@Override
 	public boolean isAt() {

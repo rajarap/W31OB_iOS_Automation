@@ -7,6 +7,7 @@ com/cs/arris/Pages/ErrorCode_0000_1603_Failure_To_Configure_Your_Router_Page.cla
 com/cs/arris/Listeners/TestListener.class
 com/cs/arris/Pages/ErrorCode_0000_1015_Invalid_OTP_Page.class
 com/cs/arris/Pages/EditMainDeviceNameDialog.class
+com/cs/arris/Pages/ParentalControlCurrentlyBlockedPage.class
 com/cs/arris/Base/ParentClass.class
 com/cs/arris/Pages/FooterIconsPage.class
 com/cs/arris/Utilities/Direction.class
@@ -26,6 +27,7 @@ com/cs/arris/Pages/NetworkOptimizationDialog.class
 com/cs/arris/Pages/SamplePage.class
 com/cs/arris/Pages/SignupPage.class
 com/cs/arris/Pages/ErrorCode_0000_1016_Maximum_Verification_Attempts_Exceeded.class
+com/cs/arris/Pages/ParentalControlWithProfilesPage.class
 com/cs/arris/Pages/UnPackYourBoxPage.class
 com/cs/arris/Pages/NetworkOptimizationDialog2.class
 com/cs/arris/Utilities/RandomEmailAddress.class
@@ -37,6 +39,7 @@ com/cs/arris/Pages/ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.clas
 com/cs/arris/Utilities/TestUtils.class
 com/cs/arris/Pages/DeviceLocationPage.class
 com/cs/arris/Pages/AccessResourcesPage.class
+com/cs/arris/Pages/SettingsPage.class
 com/cs/arris/Pages/HomePage.class
 com/cs/arris/Pages/PlugInMaxRouterPage.class
 com/cs/arris/Pages/SetUpYourWiFiManagementPage.class
@@ -62,6 +65,7 @@ com/cs/arris/Pages/ServiceNotAvailablePage.class
 com/cs/arris/Pages/DisableBlueToothPage.class
 com/cs/arris/Pages/ConnectToWifiUsingRouterSSID.class
 com/cs/arris/Pages/GetStartedPage.class
+com/cs/arris/Pages/AppRatingDialog.class
 com/cs/arris/Pages/SelectYourDevicePage2.class
 com/cs/arris/Pages/SiginPage.class
 com/cs/arris/Pages/RetrieveOTPPage.class
@@ -79,7 +83,9 @@ com/cs/arris/Pages/ConnectMaxRouterToMobileDevicePage.class
 com/cs/arris/Pages/RebootYouRouterDialog.class
 com/cs/arris/Pages/EditDeviceNameDialog.class
 com/cs/arris/Pages/ErrorCode_0002_1002_Internet_Connection_Not_Available_On_Mobile_Device.class
+com/cs/arris/Pages/ParentalControlProfilesTabAddProfileDialog.class
 com/cs/arris/Pages/ErrorCode_0000_1506_Warranty_Support_Page.class
+com/cs/arris/Pages/ParentalControlProfilesTabEmptyPage.class
 com/cs/arris/Pages/MainDevicePage.class
 com/cs/arris/Pages/Error_0001_1201_Bluetooth_Pairing_Failed_Page.class
 com/cs/arris/Reports/ExtentReport.class
