@@ -9,11 +9,12 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	<test name="Login_And_Verify_Device_Signal_Strength_Leader_Board_Page_Test">
+	<test name="Login_And_Verify_HamburgerMenu_Settings_About_Help_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test" />
+			<class name="com.cs.arris.Tests.TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Test" />
 		</classes>
 	</test>
+	
 </suite>
 
 
@@ -79,7 +80,7 @@
 			<class name="com.cs.arris.Tests.TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test" />
 		</classes>
 	</test>
-	
+		
 	<test name="Login_And_Verify_Home_Page_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC52_Login_And_Verify_HomePage_Test" />

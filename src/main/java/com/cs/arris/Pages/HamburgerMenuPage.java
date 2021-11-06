@@ -107,53 +107,62 @@ public class HamburgerMenuPage extends ParentClass implements Page
 	public void clickCloseButton()
 	{
 		click(closeHamburgerMenu); //back to home page
+		utils.log().info("Clicked Close Icon on Hanburger Manu");
 	}
 	
 	public void clickAddDeviceButton()
 	{
 		click(addDevice); 
+		utils.log().info("Clicked on Add Device Menu Button");
 	}
 	
 	public void clickRemoveDeviceButton()
 	{
 		click(removeDevice); 
+		utils.log().info("Clicked on Remove Device Menu Button");
 	}
 	
 	public void clickSpeedTestButton()
 	{
 		click(speedTest); 
+		utils.log().info("Clicked on Speed Test Menu Button");
 	}
 	
 	public void clickAddSatelliteButton()
 	{
 		click(addNewSatellite); 
+		utils.log().info("Clicked on Add New Satellite Menu Button");
 	}
 	
 	public void clickAmazonFeaturesButton()
 	{
 		click(amazonFeatures); 
+		utils.log().info("Clicked on Amazon Features Menu Button");
 	}
 	
-	public void clickHelpManuButton()
+	public void clickHelpMenuButton()
 	{
 		click(helpMenu); 
+		utils.log().info("Clicked on Help Menu Button");
 	}
 	
 	public void clickAboutAppButton()
 	{
 		click(aboutApp); 
+		utils.log().info("Clicked on About Menu Button");
 	}
 	
 	public void clickSettingsButton()
 	{
 		click(appSettings); 
+		utils.log().info("Clicked on Settings Menu Button");
 	}
 	
 	@Override
 	public boolean isAt() {
 		if(logo.isDisplayed())
 		{
-			utils.log().info("At Hamburger Menu Page");
+			utils.log().info("On Hamburger Menu Page");
 			return true;
 		}
 		else
