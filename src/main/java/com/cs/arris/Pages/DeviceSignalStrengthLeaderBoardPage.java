@@ -126,8 +126,8 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 		return networkPage;
 	}
 
-	public ParentalControlPage getParentalControlPageObject() {
-		ParentalControlPage parentalControlPage = new ParentalControlPage();
+	public ParentalControlProfilesPage getParentalControlPageObject() {
+		ParentalControlProfilesPage parentalControlPage = new ParentalControlProfilesPage();
 		return parentalControlPage;
 	}
 

@@ -17,6 +17,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.android.nativekey.KeyEventFlag;
@@ -24,7 +25,7 @@ import io.appium.java_client.android.nativekey.PressesKey;
 
 public class SettingsAboutHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
-	public RemoteWebDriver driver;
+	public WebDriver driver;
 
 	// ****************************Settings*****************************************
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") // Settings
@@ -387,12 +388,14 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		}
 		utils.log().info("Switched to WEBVIEW");
 
-		String webURL = super.getDriver().getCurrentUrl();// http://shop.surfboard.com
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		String webURL = driver.getCurrentUrl();// http://shop.surfboard.com
 		if (webURL.equalsIgnoreCase("http://shop.surfboard.com")) {
-			super.getDriver().getPageSource();
-			if (super.getDriver().findElement(By.xpath("//android.view.View[@content-desc='Vertical Categories']"))
+			driver.getPageSource();
+			if (driver.findElement(By.xpath("//android.view.View[@content-desc='Vertical Categories']"))
 					.isDisplayed()
-					&& super.getDriver()
+					&& driver
 							.findElement(By.xpath(
 									"//android.view.View[@content-desc=' SIGN IN']/android.widget.TextView[2]]"))
 							.isDisplayed())
@@ -403,6 +406,9 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		super.getDriver().context("NATIVE_APP");
 		utils.log().info("Switched to NATIVE_APP View");
 		((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+		if (driver != null) {
+            driver.quit();
+        }
 	}
 
 	public void clickSelfHelp() {
@@ -417,6 +423,7 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		}
 		utils.log().info("Switched to WEBVIEW");
 
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		String webURL = driver.getCurrentUrl(); // arris.secure.force.com/consumers
 		try {
@@ -438,6 +445,9 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		super.getDriver().context("NATIVE_APP");
 		utils.log().info("Switched to NATIVE_APP View");
 		((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+		if (driver != null) {
+            driver.quit();
+        }
 	}
 
 	public void clickLiveChatHelp() {
@@ -452,17 +462,18 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		}
 		utils.log().info("Switched to WEBVIEW");
 		
-		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		String webURL = driver.getCurrentUrl();
 		// www5.nohold.net/Arris/ukp.aspx?pid=15&login=1&alt1=app&alt2=mAX+Pro+W31&model=mAX+Pro+W31&donelr=1
 		if (webURL.contains(
 				"www5.nohold.net/Arris/ukp.aspx?pid=15&login=1&alt1=app&alt2=mAX+Pro+W31&model=mAX+Pro+W31&donelr=1")) {
-			super.getDriver().getPageSource();
-			if (super.getDriver()
+			driver.getPageSource();
+			if (driver
 					.findElement(
 							By.xpath("//android.view.View[@content-desc='Change Product']/android.widget.TextView"))
 					.isDisplayed()
-					&& super.getDriver()
+					&& driver
 							.findElement(
 									By.xpath("//android.view.View[@content-desc='Feedback']/android.widget.TextView"))
 							.isDisplayed())
@@ -473,6 +484,9 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		super.getDriver().context("NATIVE_APP");
 		utils.log().info("Switched to NATIVE_APP View");
 		((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+		if (driver != null) {
+            driver.quit();
+        }
 	}
 
 	public String getUserAccountName() {

@@ -17,7 +17,7 @@ public class NetworkPage extends ParentClass implements Page
 	public TestUtils utils = new TestUtils();
 	HomePage homePage;
 	NetworkPage networkPage;
-	ParentalControlPage parentalControlPage;
+	ParentalControlProfilesPage parentalControlPage;
 	FooterIconsPage footerIconsPage ;
 	
 	@AndroidFindAll({
@@ -58,8 +58,8 @@ public class NetworkPage extends ParentClass implements Page
 	     return networkPage;
 	  }
 	 
-	 public ParentalControlPage getParentalControlPageObject() {
-		 parentalControlPage = new ParentalControlPage();
+	 public ParentalControlProfilesPage getParentalControlPageObject() {
+		 parentalControlPage = new ParentalControlProfilesPage();
 	     return parentalControlPage;
 	  }
 	

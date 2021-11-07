@@ -7,7 +7,9 @@ import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.URL;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
@@ -104,6 +106,8 @@ public class ParentClass
 	public String ssidpwd;
 	public String randNum;
 	public String profileName;
+	public List<String> profileNames = new ArrayList<String>();
+	public List<String> selectedProfileNames = new ArrayList<String>();
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
@@ -626,7 +630,7 @@ public class ParentClass
 			 Integer randomNumber = (int)(Math.random()*9000)+1000;
 			 randNum = String.valueOf(randomNumber);
 			 profileName = "profile"+ randNum;
-
+			 profileNames.add(profileName);
 		}
 }
 	

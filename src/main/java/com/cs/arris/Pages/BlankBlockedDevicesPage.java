@@ -1,0 +1,65 @@
+package com.cs.arris.Pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.cs.arris.Base.ParentClass;
+import com.cs.arris.Interface.Page;
+import com.cs.arris.Utilities.TestUtils;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidBy;
+import io.appium.java_client.pagefactory.AndroidFindAll;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
+//Accessed from HomePage
+public class BlankBlockedDevicesPage extends ParentClass implements Page
+{
+	public TestUtils utils = new TestUtils();
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgCloseIcon") 
+	public MobileElement closeIcon;
+	
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/txtHeader") 
+	public MobileElement curentlyBlockedDevicesTitle;
+	
+	//is either "Parental Control is disabled" or count of devices blocked - 00
+	@AndroidFindBy (xpath = "//android.widget.TextView[resource-id='com.arris.sbcBeta:id/txtTotalDevices']") 
+	public MobileElement totalDevicesBlocked;
+	
+	public BlankBlockedDevicesPage()
+	{
+		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
+	}
+	
+	public void clickCloseIcon()
+	{
+		click(closeIcon);
+		utils.log().info("Blank Speed Test History Page - Clicked on Close Icon");
+	}
+	
+	public void getDeviceBlockedCountText()
+	{
+		try {
+			if (totalDevicesBlocked.isDisplayed() && totalDevicesBlocked.getText().equals("00"))
+				utils.log().info("Parental Control is enabled and " + totalDevicesBlocked.getText() + " devices are blocked");
+			else if(totalDevicesBlocked.isDisplayed())
+				utils.log().info(totalDevicesBlocked.getText());
+		} catch (Exception e) {
+			utils.log().info("Count of devices blocked is not displayed");
+		}
+	}
+	
+	@Override
+	public boolean isAt() {
+		if(curentlyBlockedDevicesTitle.isDisplayed())
+		{
+			utils.log().info("On Blank Currently Blocked Devices Page");
+			return true;}
+		else {
+			utils.log().info("Not on Blank Currently Blocked Devices Page");
+		return false;}
+	}
+	
+}
+

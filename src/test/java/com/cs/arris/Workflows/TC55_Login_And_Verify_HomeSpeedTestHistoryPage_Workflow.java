@@ -27,7 +27,7 @@ import com.cs.arris.Pages.EnterValidOTPPage;
 import com.cs.arris.Pages.ErrorCode_0000_1506_Warranty_Support_Page;
 import com.cs.arris.Pages.ErrorCode_0015_1805_Something_Went_Wrong_Page;
 import com.cs.arris.Pages.OptimizeYourNetworkPage;
-import com.cs.arris.Pages.ParentalControlPage;
+import com.cs.arris.Pages.ParentalControlProfilesPage;
 import com.cs.arris.Pages.PlugInMaxRouterPage;
 import com.cs.arris.Pages.RetrieveOTPPage;
 import com.cs.arris.Pages.SelectYourDevicePage;
@@ -195,8 +195,8 @@ TestUtils utils = new TestUtils();
     }
     
     //Parental Control Page
-    public TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow parentalControlPage(Consumer<ParentalControlPage> c){
-    	ParentalControlPage p = new ParentalControlPage();
+    public TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow parentalControlPage(Consumer<ParentalControlProfilesPage> c){
+    	ParentalControlProfilesPage p = new ParentalControlProfilesPage();
         c.accept(p);
         return this;
     }

@@ -48,7 +48,7 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[540,276][978,378]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/blocked_parental_view") 
 	})
-	public MobileElement blockedTab; 
+	public MobileElement currentlyBlockedTab; 
 
 		@AndroidFindBy (id = "com.arris.sbcBeta:id/heading_error_message")  //There are currently no Blocked Profiles
 	public MobileElement currentlyBlockederrorMessage1; 
@@ -56,11 +56,7 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/heading_error_message_1")  //Please note the profile will only appear here if the time block applied on the particular profile is active.
 	public MobileElement currentlyBlockederrorMessage2; 
 	
-	
-	
-	
-	
-	
+		
 	public ParentalControlCurrentlyBlockedPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -69,11 +65,11 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 	public void clickBackButton()
 	{
 		click(backButton);
-		utils.log().info("Parental Control - Currently Blocked Page - Clicked on Back Button");
+		utils.log().info("Clicked on Back Button");
 	}
 	@Override
 	public boolean isAt() {
-		if(currentlyBlockederrorMessage1.isDisplayed())
+		if(parentalControlTitle.isDisplayed())
 		{
 			utils.log().info("On Parental Control - Currently Blocked Page");
 			return true;}

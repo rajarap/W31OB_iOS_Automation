@@ -516,8 +516,8 @@ public class DevicesPage extends ParentClass implements Page
 		return networkPage;
 	}
 
-	public ParentalControlPage getParentalControlPageObject() {
-		ParentalControlPage parentalControlPage = new ParentalControlPage();
+	public ParentalControlProfilesPage getParentalControlPageObject() {
+		ParentalControlProfilesPage parentalControlPage = new ParentalControlProfilesPage();
 		return parentalControlPage;
 	}
 

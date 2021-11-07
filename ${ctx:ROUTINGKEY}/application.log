@@ -26,3 +26,7 @@
 [${ctx:ROUTINGKEY} INFO ] 2021-11-07 02:12:57.193 ParentClass:299 - Config.properties object is set to Thread Local
 [${ctx:ROUTINGKEY} INFO ] 2021-11-07 02:12:57.195 ParentClass:322 - loading... strings/strings.xml
 [${ctx:ROUTINGKEY} INFO ] 2021-11-07 02:12:57.202 ParentClass:336 - loading... error_codes/error_codes.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-11-07 12:17:13.806 ParentClass:291 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-11-07 12:17:13.833 ParentClass:299 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-11-07 12:17:13.835 ParentClass:322 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-11-07 12:17:13.843 ParentClass:336 - loading... error_codes/error_codes.xml

@@ -1,5 +1,6 @@
 package com.cs.arris.Pages;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.support.PageFactory;
@@ -21,7 +22,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	public TestUtils utils = new TestUtils();
 	public SwipeActions swipe = new SwipeActions();
 	public MobileElement me;
-	public int counter = 2;
+	public int counter = 1;
 	int size;
 	
 	@AndroidFindAll({
@@ -45,6 +46,13 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	public MobileElement helpIcon; 
 	
 	@AndroidFindAll({
+		@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_toolbar_remote_lca"),
+		@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[909,154][972,217]']"),
+		@AndroidBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca") 
+	})
+	public MobileElement cloudIcon;
+	
+	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_parental_view']"),  //Profile tab
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[102,276][540,378]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/profile_parental_view") 
@@ -56,7 +64,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[540,276][978,378]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/blocked_parental_view") 
 	})
-	public MobileElement blockedTab; 
+	public MobileElement currentlyBlockedTab; 
 	
 	@AndroidFindAll({
 		@AndroidBy (xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/parental_enable_disable']"),  //toggle Icon
@@ -141,92 +149,354 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickBackButton()
-	{
-		click(backButton);
-		utils.log().info("Profiles Page - Clicked on Back Button");
+	public HomePage getHomePageObject() {
+		HomePage homePage = new HomePage();
+		return homePage;
+	}
+
+	//click currently blocked devices tab when enable parental control on profiles tab is ON and profiles are blocked.
+	public ParentalControlCurrentlyBlockedPage getParentalControlCurrentlyBlockedTabPageObject() {
+		ParentalControlCurrentlyBlockedPage parentalControlCurrentlyBlockedTabPage = new ParentalControlCurrentlyBlockedPage();
+		return parentalControlCurrentlyBlockedTabPage;
+	}
+
+	public FooterIconsPage getFooterIconsPageObject() {
+		FooterIconsPage footerIconsPage = new FooterIconsPage();
+		return footerIconsPage;
 	}
 	
-	public void clickHelpIcon()
-	{
+	//click on currently blocked tab. Alert dialog should be displayed when enable prarental control toggle button is off.
+	public ParentalControlAlertDialog getParentalControlAlertDialogObject() {
+		ParentalControlAlertDialog alertDialog = new ParentalControlAlertDialog();
+		return alertDialog;
+	}
+	
+	//On-click of Enable parent control toggle button sometime ratings page comes up
+	public AppRatingDialog getAppRatingDialogObject() {
+		AppRatingDialog ratingDialog = new AppRatingDialog();
+		return ratingDialog;
+	}
+	
+	public ParentalControlAddProfileDialog getAddProfileDialogObject(){
+		ParentalControlAddProfileDialog addProfileDialog = new ParentalControlAddProfileDialog();
+		return addProfileDialog;
+	}
+	
+	public ParentalControlPauseInternetForAllDialog getPauseInternetForAllDialogObject(){
+		ParentalControlPauseInternetForAllDialog pauseInternetAllDialog = new ParentalControlPauseInternetForAllDialog();
+		return pauseInternetAllDialog;
+	}
+		
+	public void verifyUIOnParentalControlPage() {
+		try {
+			if (parentalControlTitle.isDisplayed())
+				utils.log().info("Title - " + parentalControlTitle.getText() + " - is displayed");
+		} catch (Exception e) {
+			utils.log().info("Parental Control Title Text is not displayed");
+		}
+
+		try {
+			if (backButton.isDisplayed())
+				utils.log().info("Back Button is displayed");
+		} catch (Exception e) {
+			utils.log().info("Back Button is not displayed");
+		}
+		
+		try {
+			if (cloudIcon.isDisplayed())
+				utils.log().info("Cloud Icon is displayed");
+		} catch (Exception e) {
+			utils.log().info("PCloud Icon is not displayed");
+		}
+
+		try {
+			if (helpIcon.isDisplayed())
+				utils.log().info("Help Icon is displayed");
+		} catch (Exception e) {
+			utils.log().info("Help Icon is not displayed");
+		}
+
+		try {
+			if (profilesTab.isDisplayed())
+				utils.log().info("Profiles Tab is displayed");
+		} catch (Exception e) {
+			utils.log().info("Profiles Tab is not displayed");
+		}
+
+		try {
+			if (currentlyBlockedTab.isDisplayed())
+				utils.log().info("Currently Blocked Tab is displayed");
+		} catch (Exception e) {
+			utils.log().info("Currently Blocked Tab is not displayed");
+		}
+		
+		try {
+			if (parentalControlToggleIconOFF.isDisplayed())
+				utils.log().info("Parental Control toggle button is OFF");
+		} catch (Exception e) {
+			utils.log().info("Parental Control toggle button is not displayed");
+		}
+		
+		try {
+			if (parentalControlToggleIconON.isDisplayed())
+				utils.log().info("Parental Control toggle button is ON");
+		} catch (Exception e) {
+			utils.log().info("Parental Control toggle button is not displayed");
+		}
+		
+		try {
+			if (userProfilesText.isDisplayed())
+				utils.log().info(userProfilesText.getText() + " text is displayed");
+		} catch (Exception e) {
+			utils.log().info("User Profiles text is not displayed");
+		}
+		
+		try {
+			if (addProfileLink.isDisplayed())
+				utils.log().info(addProfileLink.getText() + " link is displayed");
+		} catch (Exception e) {
+			utils.log().info("Add Profile link is not displayed");
+		}
+		
+		try {
+			if (pauseAllProfilesText.isDisplayed())
+				utils.log().info(pauseAllProfilesText.getText() + " text is displayed");
+		} catch (Exception e) {
+			utils.log().info("Pause All Profiles text is not displayed");
+		}
+		
+		try {
+			if (pauseInternetAccessToAllText.isDisplayed())
+				utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
+		} catch (Exception e) {
+			utils.log().info("Pause Internet For All Profiles text is not displayed");
+		}
+		
+		try {
+			if (pauseAllInternetProfileToggleIconOFF.isDisplayed())
+				utils.log().info("Pause Internet Access to All Profiles toggle button is OFF");
+		} catch (Exception e) {
+			utils.log().info("Pause Internet Access to All Profiles toggle button is not displayed");
+		}
+		
+		try {
+			if (pauseAllInternetProfileToggleIconON.isDisplayed())
+				utils.log().info("Pause Internet Access to All Profiles toggle button is ON");
+		} catch (Exception e) {
+			utils.log().info("Pause Internet Access to All Profiles toggle button is not displayed");
+		}
+	}
+	
+	public void clickBackButton() {
+		click(backButton);
+		utils.log().info("Parental Control Page - Clicked on Back Button");
+	}
+
+	public void clickHelpIcon() {
 		click(helpIcon);
-		utils.log().info("Profiles Page - Clicked on Help Icon");
+		utils.log().info("Parental Control Page - Clicked on Help Icon");
+	}
+	
+	public void enableParentalConrol() {
+		try {
+			if (parentalControlToggleIconOFF.isDisplayed()) {
+				click(parentalControlToggleIconOFF);
+				utils.log().info("Enabled Parental Control - Add Profile option is enabled to add new profiles.");
+			} else {
+				utils.log().info(
+						"Parental Control is already enabled. Add Profile option is already enabled to add new profiles.");
+			}
+
+			if (getAppRatingDialogObject().isAt()) {
+				getAppRatingDialogObject().clickRemindMeLaterLink();
+				utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
+			}
+		} catch (Exception e) {
+			utils.log().info("App Rating Dialog is not displayed");
+		}
+	}
+
+	public void disableParentalConrol()
+	{
+		try {
+			if (parentalControlToggleIconON.isDisplayed()) {
+				click(parentalControlToggleIconON);
+				utils.log().info("Disabled Parental Control - Add Profile option is disabled. No new profiles can be added");
+			} else {
+				utils.log().info(
+						"Parental Control is already disabled. No new profiles can be added");
+			}
+
+			if (getAppRatingDialogObject().isAt()) {
+				getAppRatingDialogObject().clickRemindMeLaterLink();
+				utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
+			}
+		} catch (Exception e) {
+			utils.log().info("App Rating Dialog is not displayed");
+		}
+	}
+	
+	public void enablePauseInternetAccessForAllProfiles(){
+		try {
+			if (pauseAllInternetProfileToggleIconOFF.isDisplayed()) {
+				click(pauseAllInternetProfileToggleIconOFF);
+				utils.log().info("Paused Internet Access to all Profiles.");
+			} else {
+				utils.log().info(
+						"Internet Access is already paused for all profiles");
+			}
+
+			if (getAppRatingDialogObject().isAt()) {
+				getAppRatingDialogObject().clickRemindMeLaterLink();
+				utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
+			}
+		} catch (Exception e) {
+			utils.log().info("App Rating Dialog is not displayed");
+		}
+	}
+	
+	public int getCountOfProfiles()
+	{
+		int size = profileListView.size();
+		try
+		{
+			if(super.profileNames.size() == size)
+				utils.log().info("Count of User Profiles : " + size);
+		}catch(Exception e)
+		{
+			utils.log().info("Count of User Profiles in app does not match with count of profiles created");
+		}
+		return size;
 	}
 	
 	public void verifyUserProfile()
 	{
-		utils.log().info("User Profile Details");
-		utils.log().info("********************");
-		size = profileListView.size();
-		
-		for(int i = 0 ; i < size ; i++)
-		{
-//			new SwipeActions().swipeScreen(Direction.UP);
-			me = (MobileElement) super.getDriver().findElementByXPath("//android.view.ViewGroup[@index="+i+"]");		
-			if (me.isDisplayed())
-			{
-				utils.log().info("----------------------------------------------------------------------");
-				if(profileImage.get(i).isDisplayed())
-					utils.log().info("User Profile Image is displayed");
-				else
-					utils.log().info("User Profile Image is not displayed");
-				utils.log().info("User Profile Name		: " + profileName.get(i).getText());
-				utils.log().info("Connected	Devices		: " + profileConnectedDevices.get(i).getText());
-				utils.log().info("Pause Internet		: " + pauseInternet.get(i).getText());
-				if(pauseInternetToggleOFF.get(i).isDisplayed())
-					utils.log().info("Internet access is allowed for this user");
-				if(pauseInternetToggleON.get(i).isDisplayed())
-					utils.log().info("Internet access is paused for this user");
-				utils.log().info("----------------------------------------------------------------------");
-			}
-			else
-			{
-				new SwipeActions().swipeScreen(Direction.UP);
-				if (me.isDisplayed())
-				{
-					utils.log().info("----------------------------------------------------------------------");
-					if(profileImage.get(i).isDisplayed())
-						utils.log().info("User Profile Image is displayed");
-					else
-						utils.log().info("User Profile Image is not displayed");
-					utils.log().info("User Profile Name		: " + profileName.get(i).getText());
-					utils.log().info("Connected	Devices		: " + profileConnectedDevices.get(i).getText());
-					utils.log().info("Pause Internet		: " + pauseInternet.get(i).getText());
-					if(pauseInternetToggleOFF.get(i).isDisplayed())
-						utils.log().info("Internet access is allowed for this user");
-					if(pauseInternetToggleON.get(i).isDisplayed())
-						utils.log().info("Internet access is paused for this user");
-					utils.log().info("----------------------------------------------------------------------");
-				}
-				else
-				{
-					utils.log().info("Unable to access the invisible user profiles");
-				}
-			}
-		}
-	}	
-	
-	public AppRatingDialog getAppRatingDialogObject()
-	{
-		AppRatingDialog appRating = new AppRatingDialog();
-		return appRating;
-	}
-	
-	public void enableParentalConrol()
-	{
-		click(parentalControlToggleIconOFF);
 		try
 		{
-			if(getAppRatingDialogObject().isAt())
-			{
-				getAppRatingDialogObject().clickRemindMeLaterLink();
-				utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
-			}
-		}catch(Exception e) { utils.log().info("App Rating Dialog is not displayed");}
-		
-		utils.log().info("Enabled Parental Control");
-	}
+			utils.log().info("**********************************************************");
+			utils.log().info("Details of User Profiles created in Parental Control Page");
+			utils.log().info("**********************************************************");
 
+			for (int i = 0; i < super.profileNames.size(); i++) 
+			{
+				utils.log().info("User Profile : " + counter);
+				utils.log().info("----------------------");
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+				for (MobileElement e : entity)
+				{
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']")
+								.isDisplayed())
+							utils.log().info("Profile Image is displayed");
+					} catch (Exception exp) {
+						utils.log().info("Profile Image is not displayed ");
+					}
+					
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
+								.isDisplayed()) {
+							utils.log().info("Profile user Name is : " + e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("User Profile Name is not displayed ");
+					}
+					
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']")
+								.isDisplayed()) {
+							utils.log().info("Number of Devices Paused for Internet Connection is : " + (e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").getText()));
+						}
+					} catch (Exception exp) {
+						utils.log().info("Number of Devices Paused for Internet Connection is not displayed ");
+					}
+					
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']")
+								.isDisplayed()) {
+							utils.log().info("Paused Internet Label is displayed : " + (e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").getText()));
+						}
+					} catch (Exception exp) {
+						utils.log().info("Paused Internet Label is not displayed ");
+					}
+					
+					try {
+						if (e.findElementByXPath("//android.widget.Switch[@text='OFF']").isDisplayed()) {
+							utils.log().info("Internet is not Paused for this user. Switch is : " + (e.findElementByXPath("//android.widget.Switch[@text='OFF']").getText()));
+						}else if(e.findElementByXPath("//android.widget.Switch[@text='ON']").isDisplayed()) {
+							utils.log().info("Internet is Paused for this user. Switch is : " + (e.findElementByXPath("//android.widget.Switch[@text='ON']").getText()));
+						}
+					} catch (Exception exp) {
+						utils.log().info("Paused Internet Switch is not displayed ");
+					}
+					utils.log().info("****************************************************");
+					utils.log().info("                                                    ");
+					counter++;
+				}
+				if (i >= 3)
+					new SwipeActions().swipeScreen(Direction.UP);
+				super.pause(3);
+			}
+		}catch(Exception exp)
+		{
+			utils.log().info("Error in retrieving User Profile list in Parental Control Profiles Page ");
+		}
+	}
+	
+	public void pauseInternetForSelectedUserProfile()
+	{
+		try
+		{
+			for (int i = 0; i < super.profileNames.size(); i += 2) 
+			{
+				utils.log().info("User Profile : " + i);
+				utils.log().info("----------------------");
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+				for (MobileElement e : entity)
+				{	
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
+								.isDisplayed()) {
+							utils.log().info("Profile user Name is : " + e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
+							selectedProfileNames.add(e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("User Profile Name is not displayed ");
+					}
+								
+					try {
+						if (e.findElementByXPath("//android.widget.Switch[@text='OFF']").isDisplayed()) {
+							click(e.findElementByXPath("//android.widget.Switch[@text='OFF']"));
+							utils.log().info("Internet is now Paused for this user" );
+						}else if(e.findElementByXPath("//android.widget.Switch[@text='ON']").isDisplayed()) {
+							utils.log().info("Internet is already Paused for this user");
+						}
+					} catch (Exception exp) {
+						utils.log().info("Paused Internet Switch is not displayed ");
+					}
+					utils.log().info("****************************************************");
+					utils.log().info("                                                    ");
+				}
+				if (i >= 3)
+					new SwipeActions().swipeScreen(Direction.UP);
+				super.pause(3);
+			}
+		}catch(Exception exp)
+		{
+			utils.log().info("Error in retrieving User Profile list in Parental Control Profiles Page ");
+		}
+	}
 	
 	@Override
 	public boolean isAt() {
