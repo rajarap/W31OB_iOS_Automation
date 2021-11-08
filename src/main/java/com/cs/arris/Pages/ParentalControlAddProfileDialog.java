@@ -43,24 +43,24 @@ public class ParentalControlAddProfileDialog extends ParentClass implements Page
 	public void verifyUIOnProfilesPage()
 	{
 		if(profileName.isDisplayed())
-			utils.log().info(profileName.getText() + " Text is displayed");
+			utils.log().info(profileName.getText() + " text is displayed");
 		else
-			utils.log().info(profileName.getText() + " Text is not displayed");
+			utils.log().info(profileName.getText() + " text is not displayed");
 		
 		if(profileMessage1.isDisplayed())
-			utils.log().info(profileMessage1.getText() + " Text is displayed");
+			utils.log().info(profileMessage1.getText() + " text is displayed");
 		else
-			utils.log().info(profileMessage1.getText() + " Text is not displayed");
+			utils.log().info(profileMessage1.getText() + " text is not displayed");
 		
 		if(profileTitle.isDisplayed())
-			utils.log().info(profileTitle.getText() + " Text is displayed");
+			utils.log().info(profileTitle.getText() + " text is displayed");
 		else
-			utils.log().info(profileTitle.getText() + " Text is not displayed");
+			utils.log().info(profileTitle.getText() + " text is not displayed");
 		
 		if(enterProfileName.isDisplayed())
-			utils.log().info(enterProfileName.getText() + " Text is displayed");
+			utils.log().info(enterProfileName.getText() + " text is displayed");
 		else
-			utils.log().info(enterProfileName.getText() + " Text is not displayed");
+			utils.log().info(enterProfileName.getText() + " text is not displayed");
 		
 		if(closeIcon.isDisplayed())
 			utils.log().info("Close Icon is displayed");

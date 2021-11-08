@@ -12,7 +12,7 @@ public class TestingDeviceCount
 //		System.out.println(count.toString());
 		
 		ParentClass pc = new ParentClass();
-		int i = pc.getDeviceSignalStrengthCount("02 Devices");
+		int i = pc.getTotalDevicesAdded("12 Total Devices Added");
 		System.out.println(i);
 	
 	}

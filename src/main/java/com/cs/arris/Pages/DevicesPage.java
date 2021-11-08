@@ -60,8 +60,7 @@ public class DevicesPage extends ParentClass implements Page
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
 	public MobileElement backButton;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), // help
-																														// Icon
+	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), 
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[980,153][1046,219]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/helpIcon") })
 	public MobileElement helpIcon;
@@ -73,9 +72,7 @@ public class DevicesPage extends ParentClass implements Page
 	public MobileElement closeButton;
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtAllDeviceTitleOne']"), // main
-																														// device
-																														// name
+			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtAllDeviceTitleOne']"), 
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[55,380][141,437]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtAllDeviceTitleOne") })
 	public MobileElement mainDeviceName;
@@ -211,10 +208,7 @@ public class DevicesPage extends ParentClass implements Page
 	public void getOnlineDevicesCount() {
 		clickOnlineTab();
 		utils.log().info("Online Device Page Title : " + getOnlineDeviceTitleText());// Devices(2)
-		onlineDeviceCount = getCountOfDevices(getOnlineDeviceTitleText());// store total count of devices to deviceCount
-																			// variable. total number of devices
-																			// connected to router = total number of
-																			// online devices
+		onlineDeviceCount = getCountOfDevices(getOnlineDeviceTitleText());
 		utils.log().info("Number of online devices connected to the main mAX Router is : " + onlineDeviceCount);
 	}
 
@@ -268,6 +262,9 @@ public class DevicesPage extends ParentClass implements Page
 					try {
 						utils.log()
 								.info("Device Name: " + e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
+										.getText());
+								deviceNames.add(e.findElementByXPath(
 										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
 										.getText());
 					} catch (Exception exp) {

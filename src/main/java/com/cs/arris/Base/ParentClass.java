@@ -108,6 +108,7 @@ public class ParentClass
 	public String profileName;
 	public List<String> profileNames = new ArrayList<String>();
 	public List<String> selectedProfileNames = new ArrayList<String>();
+	public List<String> deviceNames = new ArrayList<String>();
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
@@ -582,11 +583,10 @@ public class ParentClass
 			//String[] devices = noOfDevicesText.trim().split(" "); //Devices(12)
 			String devices = noOfDevicesText.trim(); //Device (12)
 			int length = devices.length();
-			if (length == 11)//Devices(2)
+			if (length == 11)//Devices (2)
 			{
 				return Integer.valueOf(devices.substring(9, 10));
-			}
-			else
+			} else
 			{
 				return Integer.valueOf(devices.substring(9, 11));
 			}
@@ -604,6 +604,21 @@ public class ParentClass
 			{
 				//Device (12)
 				return Integer.valueOf(devices.substring(8, 10));
+			}
+		}
+		
+		public Integer getTotalDevicesAdded(String noOfDevicesText) 
+		{
+			String devices = noOfDevicesText.trim(); 
+			int length = devices.length();
+			if (length == 21)//1 Total Devices Added - 21
+			{
+				return Integer.valueOf(devices.substring(0, 1));
+			}
+			else
+			{
+				//12 Total Devices Added - 22
+				return Integer.valueOf(devices.substring(0, 2));
 			}
 		}
 		
