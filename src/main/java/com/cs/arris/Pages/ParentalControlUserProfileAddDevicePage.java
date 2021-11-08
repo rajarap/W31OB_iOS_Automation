@@ -52,7 +52,7 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	@AndroidBy (id = "com.arris.sbcBeta:id/add_connected_devices") 
 	public MobileElement addDeviceButton;
 	
-	public ParentalControlAddDeviceHelpPage getParentalAddDeviceHeloPageObject(){
+	public ParentalControlAddDeviceHelpPage getParentalAddDeviceHelpPageObject(){
 		ParentalControlAddDeviceHelpPage addDeviceHelpPage = new ParentalControlAddDeviceHelpPage();
 		return addDeviceHelpPage;
 	}

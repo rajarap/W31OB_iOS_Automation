@@ -5,6 +5,8 @@ import org.testng.Assert;
 
 import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
+import com.cs.arris.Utilities.Direction;
+import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
@@ -22,12 +24,12 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Parental Control Profile']") 
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Parental Control Profile']")
 	public MobileElement helptitle;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Profile view']")
 	public MobileElement profileView;
-	
+
 	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1044][1021,2042]']")
 	public MobileElement profileText;
 
@@ -37,6 +39,7 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 
 	public void clickCloseButton() {
 		try {
+			new SwipeActions().swipeScreen(Direction.UP);
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
 		} catch (Exception e) {
@@ -44,21 +47,21 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 		}
 	}
 
-	public void verifyUIOnAboutHelpPage() {
+	public void verifyUIOnUserProfilePage() {
 		try {
 			if (helptitle.isDisplayed())
 				utils.log().info(helptitle.getText() + " title is displayed ");
 		} catch (Exception e) {
 			utils.log().info("Parental Control Profile title is not displayed");
 		}
-		
+
 		try {
 			if (profileView.isDisplayed())
 				utils.log().info(profileView.getText() + " text is displayed ");
 		} catch (Exception e) {
 			utils.log().info("Profile View Text is not displayed");
 		}
-		
+
 		try {
 			if (profileText.isDisplayed())
 				utils.log().info(profileText.getText() + " text is displayed ");

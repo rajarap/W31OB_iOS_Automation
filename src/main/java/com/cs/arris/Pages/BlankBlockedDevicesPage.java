@@ -35,7 +35,7 @@ public class BlankBlockedDevicesPage extends ParentClass implements Page
 	public void clickCloseIcon()
 	{
 		click(closeIcon);
-		utils.log().info("Blank Speed Test History Page - Clicked on Close Icon");
+		utils.log().info("Blank Currently Blocked Devices Page - Clicked on Close Icon");
 	}
 	
 	public void getDeviceBlockedCountText()

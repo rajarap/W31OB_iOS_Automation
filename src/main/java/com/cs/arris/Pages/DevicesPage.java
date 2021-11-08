@@ -254,6 +254,7 @@ public class DevicesPage extends ParentClass implements Page
 							utils.log().info("Expand Button Image is displayed");
 							click(e.findElementByXPath(
 									"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']"));
+							super.pause(2);
 						}
 					} catch (Exception exp) {
 						utils.log().info("Expand button is not available : ");

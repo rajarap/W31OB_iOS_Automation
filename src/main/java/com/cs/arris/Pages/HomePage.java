@@ -610,8 +610,16 @@ public class HomePage extends ParentClass implements Page {
 
 	public void clickCurrentlyBlockedDevicesImage() {
 		try {
-			click(currentlyBlockedDevicesImage);
+			if(currentlyBlockedDevicesImage.isDisplayed()) {
+				click(currentlyBlockedDevicesImage);
 			utils.log().info("Home Page - Clicked on Currently Blocked Devices Image");
+			}else {
+				new SwipeActions().swipeScreen(Direction.UP);
+				super.pause(3);
+				if (currentlyBlockedDevicesImage.isDisplayed())
+					click(currentlyBlockedDevicesImage);
+					utils.log().info("Currently Blocked Devices Text is displayed");
+			}
 		} catch (Exception e) {
 			utils.log().info(
 					"Home Page - Currently Blocked Devices Image is either not visible or is not present on the DOM");

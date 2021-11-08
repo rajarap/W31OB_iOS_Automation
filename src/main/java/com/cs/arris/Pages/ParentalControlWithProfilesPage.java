@@ -198,7 +198,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	}
 	
 	
-	public void verifyUIOnParentalControlPage() {
+	public void verifyUIOnParentalControlProfilesPage() {
 		try {
 			if (parentalControlTitle.isDisplayed())
 				utils.log().info("Title - " + parentalControlTitle.getText() + " - is displayed");
@@ -348,7 +348,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		}
 	}
 	
-	public void enableParentalConrol() {
+	public void enableParentalControl() {
 		try {
 			if (parentalControlToggleIconOFF.isDisplayed()) {
 				click(parentalControlToggleIconOFF);
@@ -366,7 +366,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		}
 	}
 
-	public void disableParentalConrol() {
+	public void disableParentalControl() {
 		try {
 			if (parentalControlToggleIconON.isDisplayed()) {
 				click(parentalControlToggleIconON);
@@ -453,7 +453,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 			utils.log().info("Details of User Profiles created in Parental Control Page");
 			utils.log().info("**********************************************************");
 
-			for (int i = 0; i < super.profileNames.size(); i++) 
+			for (int i = 1; i < super.profileNames.size(); i++) 
 			{
 				utils.log().info("User Profile : " + counter);
 				utils.log().info("----------------------");

@@ -5,6 +5,8 @@ import org.testng.Assert;
 
 import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
+import com.cs.arris.Utilities.Direction;
+import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
@@ -45,6 +47,7 @@ public class DevicesHelpPage extends ParentClass implements Page
 	
 	public void clickCloseButton()
 	{
+		new SwipeActions().swipeScreen(Direction.UP);
 		click(closeButton);
 		utils.log().info("Devices Help Page - Clicked on Close Button");
 	}

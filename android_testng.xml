@@ -9,9 +9,9 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	<test name="Login_And_Verify_HamburgerMenu_Settings_About_Help_Page_Test">
+	<test name="Login_And_Verify_Devices_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Test" />
+			<class name="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test" />
 		</classes>
 	</test>
 	
@@ -69,9 +69,9 @@
 		</classes>
 	</test>
 	
-	<test name="Login_And_Verify_Hamburger_Menu_Page_Test">
+	<test name="Login_And_Verify_HamburgerMenu_Settings_About_Help_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC60_Login_And_Verify_HamburgerMenuPage_Test" />
+			<class name="com.cs.arris.Tests.TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Test" />
 		</classes>
 	</test>
 	
