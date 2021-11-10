@@ -56,7 +56,7 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 
 			this.udid = properties.getProperty("udid");
 			utils.log().info("UDID : " + this.udid);
-			
+
 			this.phoneToPause = properties.getProperty("phoneToPauseInternet");
 			utils.log().info("Phone To Pause Internet : " + this.phoneToPause);
 
@@ -113,102 +113,89 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 			super.pause(3);
 		}).homePage(home -> {
 			try {
-				if (home.okButton.isDisplayed()) {
+				if (home.okButton.isDisplayed()) 
 					home.clickOkButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
+			} catch (Exception e) {	e.getMessage();	}
+			if (home.isAt()) {
+				home.getFooterIconsPageObject().clickParentalButton();
 			}
-			if(home.isAt()) {
+		}).parentalControlWithProfilesPage(profiles -> {
+			profiles.disableParentalControl();
+			profiles.clickBackButton();
+		}).homePage(home -> {
+			home.clickCurrentlyBlockedDevicesImage();
+		}).blankBlockedDevicesPage(blankBlockedDevices -> {
+			if (blankBlockedDevices.isAt()) {
+				blankBlockedDevices.getDeviceBlockedCountText();
+				blankBlockedDevices.clickCloseIcon();
+			}
+		}).homePage(home -> {
+			home.getFooterIconsPageObject().clickParentalButton();
+		}).parentalControlWithProfilesPage(profiles -> {
+			if (profiles.isAt()) {
+				profiles.clickHelpIcon();
 				super.pause(3);
-				home.getFooterIconsPageObject().clickParentalButton();
-			}
-			}).parentalControlWithProfilesPage(profiles -> {
-				profiles.disableParentalControl();
-				profiles.clickBackButton();
-			}).homePage(home -> {
-				home.clickCurrentlyBlockedDevicesImage();
-			}).blankBloxkedDevicesPage(blankBlockedDevices -> {
-				if(blankBlockedDevices.isAt())
-				{
-					blankBlockedDevices.getDeviceBlockedCountText();
-					blankBlockedDevices.clickCloseIcon();
-				}
-			}).homePage(home -> {
-				home.getFooterIconsPageObject().clickParentalButton();
-			}).parentalControlWithProfilesPage(profiles -> {
-				if(profiles.isAt())
-				{
-					profiles.clickHelpIcon();
-					super.pause(3);
-				}
-			}).parentalControlHelpPage(helpPage ->{
-				if(helpPage.isAt())
-				{
-					helpPage.verifyUIOnParentalControlOverviewHelpPage();
-					helpPage.clickCloseButton();
-				}
-			}).parentalControlWithProfilesPage(profiles -> {
-				if(profiles.isAt())
-				{
+				if(profiles.getParentalHeloPageObject().isAt()){
+					profiles.getParentalHeloPageObject().verifyUIOnParentalControlOverviewHelpPage();
+					profiles.getParentalHeloPageObject().clickCloseButton();
+					super.pause(2);
 					profiles.clickBackButton();
 					super.pause(3);
 				}
-			}).homePage(home -> {
-				home.getFooterIconsPageObject().clickParentalButton();
-			}).parentalControlWithProfilesPage(profiles -> {
-				if(profiles.isAt())
-				{
-					profiles.verifyUIOnParentalControlProfilesPage();
-					profiles.enableParentalControl();
-					
-					for (int i = 1 ; i <=5 ; i ++)
-					{
-						profiles.clickAddProfilesLink();
-						profiles.getAddProfileDialogObject().enterProfileName();
-						profiles.getAddProfileDialogObject().clickCreateProfileButton();
-					}
-					
-					profiles.verifyUserProfile();
-					profiles.clickOnUserProfile();
-					
-					if(profiles.getUserProfilePageObject().isAt())
-					{
-						profiles.getUserProfilePageObject().verifyUIOnUserProfilePage();
-						profiles.getUserProfilePageObject().clickHelpIcon();
-						super.pause(3);
-						if(profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt())
-						{
-							profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().verifyUIOnUserProfilePage();
-							profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton();
-						}
-						profiles.getUserProfilePageObject().getExistingUserName();
-						profiles.getUserProfilePageObject().clickUserProfileNameEditButton();
-						if(profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt())
-						{
-							profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog();
-							profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName();
-							profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton();
-							super.pause(3);
-						}
-						profiles.getUserProfilePageObject().validateUserProfileEditedName();
-						profiles.getUserProfilePageObject().clickAddDeviceLink();
-						if(profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt())
-						{
-							profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon();
-							if(profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().isAt())
-							{
-								profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().verifyUIOnAddDeviceHelpPage();
-								profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton();
-							}
-							
-							profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyandSelectDevice(this.phoneToPause);
-							profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton();
-							profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser();
-						}
-						
-					}
+			}
+		}).homePage(home -> {
+			home.getFooterIconsPageObject().clickParentalButton();
+		}).parentalControlWithProfilesPage(profiles -> {
+			if (profiles.isAt()) {
+				profiles.verifyUIOnParentalControlProfilesPage();
+				profiles.enableParentalControl();
+
+				for (int i = 1; i <= 5; i++) {
+					profiles.clickAddProfilesLink();
+					profiles.getAddProfileDialogObject().enterProfileName();
+					profiles.getAddProfileDialogObject().clickCreateProfileButton();
 				}
+
+				profiles.verifyUserProfile();
+				profiles.clickOnUserProfile();
+
+				if (profiles.getUserProfilePageObject().isAt()) {
+					profiles.getUserProfilePageObject().verifyUIOnUserProfilePage();
+					profiles.getUserProfilePageObject().clickHelpIcon();
+					super.pause(3);
+					if (profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt()) {
+						profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().verifyUIOnUserProfilePage();
+						profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton();
+					}
+					profiles.getUserProfilePageObject().getExistingUserName();
+					profiles.getUserProfilePageObject().clickUserProfileNameEditButton();
+					if (profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()) {
+						profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog();
+						profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName();
+						profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton();
+						super.pause(3);
+					}
+					profiles.getUserProfilePageObject().validateUserProfileEditedName();
+					profiles.getUserProfilePageObject().clickAddDeviceLink();
+					if (profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
+						profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon();
+						if (profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
+								.getParentalAddDeviceHelpPageObject().isAt()) {
+							profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
+									.getParentalAddDeviceHelpPageObject().verifyUIOnAddDeviceHelpPage();
+							profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
+									.getParentalAddDeviceHelpPageObject().clickCloseButton();
+						}
+						profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
+								.verifyandSelectDevice(this.phoneToPause);
+						profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
+								.clickAddDeviceButton();
+						profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
+								.verifyDeviceCountAfterAssociatingToUser();
+					}
+
+				}
+			}
 		});
 	}
 }

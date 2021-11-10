@@ -203,7 +203,7 @@ TestUtils utils = new TestUtils();
     }
     
     //Parental Control Page
-    public TC61_Login_And_Verify_ParentalControl_Workflow blankBloxkedDevicesPage(Consumer<BlankBlockedDevicesPage> c){
+    public TC61_Login_And_Verify_ParentalControl_Workflow blankBlockedDevicesPage(Consumer<BlankBlockedDevicesPage> c){
     	BlankBlockedDevicesPage p = new BlankBlockedDevicesPage();
         c.accept(p);
         return this;

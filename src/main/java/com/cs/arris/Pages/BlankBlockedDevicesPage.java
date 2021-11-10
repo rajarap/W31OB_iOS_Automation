@@ -43,7 +43,7 @@ public class BlankBlockedDevicesPage extends ParentClass implements Page
 		try {
 			if (totalDevicesBlocked.isDisplayed() && totalDevicesBlocked.getText().equals("00"))
 				utils.log().info("Parental Control is enabled and " + totalDevicesBlocked.getText() + " devices are blocked");
-			else if(totalDevicesBlocked.isDisplayed())
+			else if(totalDevicesBlocked.isDisplayed() && !totalDevicesBlocked.getText().equals("00"))
 				utils.log().info(totalDevicesBlocked.getText());
 		} catch (Exception e) {
 			utils.log().info("Count of devices blocked is not displayed");

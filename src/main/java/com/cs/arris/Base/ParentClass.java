@@ -575,6 +575,21 @@ public class ParentClass
 				e.printStackTrace();
 			}
 		 }
+		 
+		 
+		 public Integer getCountOfRulesWithSpace(String noOfRulessText) 
+			{
+				//Rules (2)
+				String rules = noOfRulessText.trim(); 
+				int length = rules.length();
+				if (length == 9)//Rules (12)
+				{
+					return Integer.valueOf(rules.substring(7, 8));
+				} else
+				{
+					return Integer.valueOf(rules.substring(7, 9));
+				}
+			}
 
 		public Integer getCountOfDevicesWithSpace(String noOfDevicesText) 
 		{
