@@ -68,7 +68,7 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 		}
 	}
 
-	public void verifyUIOnUserProfilePage() {
+	public void verifyUIOnDatePickerDialog() {
 		try {
 			if (okButton.isDisplayed())
 				utils.log().info(okButton.getText() + " title is displayed ");

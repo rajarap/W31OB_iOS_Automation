@@ -36,8 +36,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
 	public MobileElement backButton;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), // help
-																														// Icon
+	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), 
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[980,153][1046,219]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/helpIcon") })
 	public MobileElement helpIcon;
@@ -62,21 +61,11 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Pause Internet access for current profile']")
 	public MobileElement pauseInternetForCurrentProfileText;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/internet_enable_disable']"), // toggle
-																														// Icon
-			@AndroidBy(xpath = "//android.widget.Switch[@text='ON']"),
-			@AndroidBy(xpath = "//android.widget.Switch[@bounds='[797,694][957,786]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/internet_enable_disable") })
-	public MobileElement pauseInternetForProfileToggleIconON;
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/internet_enable_disable' and @checked='true']")
+	public MobileElement enablePauseInternetToggleButton;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/internet_enable_disable']"), // toggle
-																														// Icon
-			@AndroidBy(xpath = "//android.widget.Switch[@text='OFF']"),
-			@AndroidBy(xpath = "//android.widget.Switch[@bounds='[797,694][957,786]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/internet_enable_disable") })
-	public MobileElement pauseInternetForProfileToggleIconOFF;
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/internet_enable_disable' and @checked='false']")
+	public MobileElement disablePauseInternetToggleButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/profile_device_count")
 	public MobileElement deviceCountPausedForProfile;
@@ -89,14 +78,12 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Associated Devices']")
 	public MobileElement associatedDevicesText;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_count']"), // +ADD
-																															// RULE
+	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_count']"), 
 			@AndroidBy(id = "com.arris.sbcBeta:id/device_count") })
 	public MobileElement totalDevicesAdded;
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_list_expand_icon']"), // +ADD
-																															// RULW
+			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_list_expand_icon']"), 
 			@AndroidBy(id = "com.arris.sbcBeta:id/device_list_expand_icon") })
 	public MobileElement expandDeviceListButton;
 	
@@ -107,8 +94,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	public MobileElement ruleCountForProfile;
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/add_time_rule']"), // +ADD
-																												// RULE
+			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/add_time_rule']"), 
 			@AndroidBy(id = "com.arris.sbcBeta:id/add_time_rule") })
 	public MobileElement addRuleLink;
 
@@ -116,11 +102,18 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	public MobileElement associatedRulesText;
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_rule_warning_message']"), // +ADD
-																															// RULE
+			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_rule_warning_message']"), 
 			@AndroidBy(id = "com.arris.sbcBeta:id/time_rule_warning_message") })
 	public MobileElement totalTimeActiveRule;
 
+	
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']")
+	public MobileElement enableTimeBlockToggleButton;
+
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']")
+	public MobileElement disableTimeBlockToggleButton;
+	
+	
 //	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']")  //profile Image
 //	public List<MobileElement> profileImage; 
 //	
@@ -245,15 +238,15 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		}
 
 		try {
-			if (pauseInternetForProfileToggleIconON.isDisplayed())
+			if (enablePauseInternetToggleButton.isDisplayed())
 				utils.log().info("Pause Internet for Current Profile toggle button is ON");
 		} catch (Exception e) {
 			utils.log().info("Pause Internet for Current Profile toggle button is not displayed");
 		}
 
 		try {
-			if (pauseInternetForProfileToggleIconOFF.isDisplayed())
-				utils.log().info("Pause Internet for Current Profile toggle button is ON");
+			if (disablePauseInternetToggleButton.isDisplayed())
+				utils.log().info("Pause Internet for Current Profile toggle button is OFF");
 		} catch (Exception e) {
 			utils.log().info("Pause Internet for Current Profile toggle button is not displayed");
 		}
@@ -374,7 +367,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		}
 	}
 	
-	public void clickDRuleListExpandButton() {
+	public void clickRuleListExpandButton() {
 		try {
 			if (expandRuleListButton.isDisplayed())
 				click(expandRuleListButton);
@@ -384,8 +377,6 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		}
 	}
 	
-	
-
 	public void getExistingUserName() {
 		try {
 			if (userProfileTitle.isDisplayed())
@@ -417,35 +408,37 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 
 	public void enablePauseInternetAccessForCurentProfiles() {
 		try {
-			if (pauseInternetForProfileToggleIconOFF.isDisplayed()) {
-				click(pauseInternetForProfileToggleIconOFF);
-				if (getAppRatingDialogObject().isAt()) {
-					getAppRatingDialogObject().clickRemindMeLaterLink();
+			if (disablePauseInternetToggleButton.isDisplayed()) {
+				click(disablePauseInternetToggleButton);
+				
+				if (this.getAppRatingDialogObject().isAt()) {
+					this.getAppRatingDialogObject().clickRemindMeLaterLink();
 					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
 				} else {
-					utils.log().info("Paused Internet Access for Current User Profile");
+					utils.log().info("App Rating Dialog is not displayed");
 				}
-			} else {
-				utils.log().info("Pause Internet access for current user profile is already enabled");
 			}
+			else if(enablePauseInternetToggleButton.isDisplayed())
+				utils.log().info("Pause Internet Access for current user profile is already enabled.");
 		} catch (Exception e) {
 			utils.log().info("Pause Internet Access for current user profile is not displayed");
 		}
 	}
-
+	
 	public void disablePauseInternetAccessForAllProfiles() {
 		try {
-			if (pauseInternetForProfileToggleIconON.isDisplayed()) {
-				click(pauseInternetForProfileToggleIconON);
+			if (enablePauseInternetToggleButton.isDisplayed()) {
+				click(enablePauseInternetToggleButton);
+				
 				if (getAppRatingDialogObject().isAt()) {
 					getAppRatingDialogObject().clickRemindMeLaterLink();
 					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
 				} else {
 					utils.log().info("Internet Access is allowed for the Current User Profiles.");
 				}
-			} else {
-				utils.log().info("Internet access is already allowed for the Current User profiles");
 			}
+			else if(disablePauseInternetToggleButton.isDisplayed())
+				utils.log().info("Pause Internet Access for current user profile is already disabled.");
 		} catch (Exception e) {
 			utils.log().info("Pause Internet Access for Current User Profile is not displayed");
 		}
@@ -499,7 +492,6 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	public void verifyAssociatedRulesList() {
 		try {
 			if (this.getCountOfRules() > 0) {
-				this.clickDRuleListExpandButton();
 
 				for (int i = 1; i <= this.getCountOfRules(); i++) {
 					utils.log().info("Associated Rules : " + i);
@@ -567,17 +559,12 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 							}
 							
 							try {
-								if (e.findElementByXPath("//android.widget.Switch[@text='OFF']").isDisplayed())
-									utils.log().info("Switch button is displayed. It is currently disabled ");
+								if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently disabled");
+								else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently enabled");
 							} catch (Exception exp) {
-								utils.log().info("Switch button is not displayed ");
-							}
-							
-							try {
-								if (e.findElementByXPath("//android.widget.Switch[@text='ON']").isDisplayed())
-									utils.log().info("Switch button is displayed. It is currently enabled ");
-							} catch (Exception exp) {
-								utils.log().info("Switch button is not displayed ");
+								utils.log().info("STime Block Toggle Button is not displayed ");
 							}
 						}else
 						{
@@ -596,17 +583,12 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 							}
 							
 							try {
-								if (e.findElementByXPath("//android.widget.Switch[@text='OFF']").isDisplayed())
-									utils.log().info("Switch button is displayed. It is currently disabled ");
+								if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently disabled");
+								else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently enabled");
 							} catch (Exception exp) {
-								utils.log().info("Switch button is not displayed ");
-							}
-							
-							try {
-								if (e.findElementByXPath("//android.widget.Switch[@text='ON']").isDisplayed())
-									utils.log().info("Switch button is displayed. It is currently enabled ");
-							} catch (Exception exp) {
-								utils.log().info("Switch button is not displayed ");
+								utils.log().info("STime Block Toggle Button is not displayed ");
 							}
 						}
 
@@ -614,7 +596,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 						utils.log().info("                                                    ");
 						counter++;
 					}
-					if (i >= 6)
+					if (i >= 1)
 						new SwipeActions().swipeScreen(Direction.UP);
 				}
 			}

@@ -9,12 +9,17 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	<test name="Login_And_Verify_Devices_Page_Test">
+	<test name="Login_And_Verify_Home_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test" />
+			<class name="com.cs.arris.Tests.TC52_Login_And_Verify_HomePage_Test" />
 		</classes>
 	</test>
 	
+	<test name="Login_And_Verify_Parental_Control_Page_Test">
+		<classes>
+			<class name="com.cs.arris.Tests.TC61_Login_And_Verify_ParentalControlPage_Test" />
+		</classes>
+	</test>
 </suite>
 
 
@@ -69,15 +74,21 @@
 		</classes>
 	</test>
 	
+	<test name="Login_And_Verify_Home_Page_Speed_Test_History_Page_Test">
+		<classes>
+			<class name="com.cs.arris.Tests.TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test" />
+		</classes>
+	</test>
+	
 	<test name="Login_And_Verify_HamburgerMenu_Settings_About_Help_Page_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Test" />
 		</classes>
 	</test>
 	
-	<test name="Login_And_Verify_Home_Page_Speed_Test_History_Page_Test">
+	<test name="Login_And_Verify_Parental_Control_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test" />
+			<class name="com.cs.arris.Tests.TC61_Login_And_Verify_ParentalControlPage_Test" />
 		</classes>
 	</test>
 		

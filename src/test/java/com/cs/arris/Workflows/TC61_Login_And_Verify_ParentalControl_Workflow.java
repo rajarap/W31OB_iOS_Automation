@@ -32,13 +32,17 @@ import com.cs.arris.Pages.FAQHelpPage;
 import com.cs.arris.Pages.OptimizeYourNetworkPage;
 import com.cs.arris.Pages.ParentalControlAddDeviceHelpPage;
 import com.cs.arris.Pages.ParentalControlAddProfileDialog;
+import com.cs.arris.Pages.ParentalControlAddRuleAddInternetBlockingScheduleDialog;
+import com.cs.arris.Pages.ParentalControlAddRuleHelpPage;
 import com.cs.arris.Pages.ParentalControlAlertDialog;
 import com.cs.arris.Pages.ParentalControlCurrentlyBlockedPage;
 import com.cs.arris.Pages.ParentalControlEditUserProfileNameDialog;
 import com.cs.arris.Pages.ParentalControlHelpPage;
-import com.cs.arris.Pages.ParentalControlPauseInternetForAllDialog;
+import com.cs.arris.Pages.ParentalControlPauseInternetforAllProfilesDialog;
 import com.cs.arris.Pages.ParentalControlProfilesPage;
 import com.cs.arris.Pages.ParentalControlUserProfileAddDevicePage;
+import com.cs.arris.Pages.ParentalControlUserProfileAddRuleDatePickerDialog;
+import com.cs.arris.Pages.ParentalControlUserProfileAddRulePage;
 import com.cs.arris.Pages.ParentalControlUserProfileHelpPage;
 import com.cs.arris.Pages.ParentalControlUserProfilePage;
 import com.cs.arris.Pages.ParentalControlWithProfilesPage;
@@ -233,8 +237,8 @@ TestUtils utils = new TestUtils();
         return this;
     }
     
-    public TC61_Login_And_Verify_ParentalControl_Workflow parentalControlPauseInternetFoAllDialog(Consumer<ParentalControlPauseInternetForAllDialog> c){
-    	ParentalControlPauseInternetForAllDialog p = new ParentalControlPauseInternetForAllDialog();
+    public TC61_Login_And_Verify_ParentalControl_Workflow parentalControlPauseInternetFoAllDialog(Consumer<ParentalControlPauseInternetforAllProfilesDialog> c){
+    	ParentalControlPauseInternetforAllProfilesDialog p = new ParentalControlPauseInternetforAllProfilesDialog();
         c.accept(p);
         return this;
     }
@@ -273,6 +277,30 @@ TestUtils utils = new TestUtils();
     	ParentalControlEditUserProfileNameDialog p = new ParentalControlEditUserProfileNameDialog();
         c.accept(p);
         return this;
+    }
+    
+    public TC61_Login_And_Verify_ParentalControl_Workflow parentalControlUserProfileAddRulePage(Consumer<ParentalControlUserProfileAddRulePage> c){
+    	ParentalControlUserProfileAddRulePage p = new ParentalControlUserProfileAddRulePage();
+        c.accept(p);
+        return this;
+    }
+
+    public TC61_Login_And_Verify_ParentalControl_Workflow parentalControlAddRuleHelpPage(Consumer<ParentalControlAddRuleHelpPage> c){
+    	ParentalControlAddRuleHelpPage p = new ParentalControlAddRuleHelpPage();
+        c.accept(p);
+       return this;  
+    }
+   
+    public TC61_Login_And_Verify_ParentalControl_Workflow parentalControlInternetBlockingPage(Consumer<ParentalControlAddRuleAddInternetBlockingScheduleDialog> c){
+    	ParentalControlAddRuleAddInternetBlockingScheduleDialog p = new ParentalControlAddRuleAddInternetBlockingScheduleDialog();
+        c.accept(p);
+       return this;  
+    }
+    
+    public TC61_Login_And_Verify_ParentalControl_Workflow parentalControlDatePickerDialog(Consumer<ParentalControlUserProfileAddRuleDatePickerDialog> c){
+    	ParentalControlUserProfileAddRuleDatePickerDialog p = new ParentalControlUserProfileAddRuleDatePickerDialog();
+        c.accept(p);
+       return this;  
     }
        
   //handle page sync techniques here

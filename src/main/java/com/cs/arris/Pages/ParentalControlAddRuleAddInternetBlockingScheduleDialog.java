@@ -81,7 +81,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void verifyUIOnAddRuleHelpPage() {
+	public void verifyUIOnAddInternetBlockingScheduleDialog() {
 		try {
 			if (addInternetBlockingScheduleTitle.isDisplayed())
 				utils.log().info(addInternetBlockingScheduleTitle.getText() + " title is displayed ");

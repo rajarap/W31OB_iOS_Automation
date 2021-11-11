@@ -39,27 +39,32 @@ public class AppRatingDialog extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickRemindMeLaterLink()
-	{
-		click(remindMeLaterText);
-		utils.log().info("App Rating Dialog - Clicked on Remind Me Later");
-	}
-	
-	public void clickCloseDialog()
-	{
-		click(cancelDialogIcon);
-		utils.log().info("App Rating Dialog - Clicked on Close Icon");
-	}
-	
-	@Override
-	public boolean isAt() {
-		if(appRatingTitle.isDisplayed())
-		{
-			utils.log().info("On App Rating Dialog Page");
-			return true;}
-		else {
-			utils.log().info("Not on App Rating Dialog Page");
-		return false;}
+	public void clickRemindMeLaterLink() {
+		try {
+			click(remindMeLaterText);
+			utils.log().info("App Rating Dialog - Clicked on Remind Me Later");
+		} catch (Exception e) {
+			utils.log().info("App Rating Dialog - Remind Me Later link is not displayd");
+		}
 	}
 
+	public void clickCloseDialog() {
+		try {
+			click(cancelDialogIcon);
+			utils.log().info("App Rating Dialog - Clicked on Close Icon");
+		} catch (Exception e) {
+			utils.log().info("App Rating Dialog - Close Icon is not displayd");
+		}
+	}
+
+	@Override
+	public boolean isAt() {
+		if (appRatingTitle.isDisplayed()) {
+			utils.log().info("On App Rating Dialog Page");
+			return true;
+		} else {
+			utils.log().info("Not on App Rating Dialog Page");
+			return false;
+		}
+	}
 }

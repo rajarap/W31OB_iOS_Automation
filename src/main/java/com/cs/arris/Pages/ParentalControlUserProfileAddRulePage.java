@@ -69,6 +69,7 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 		return addinternetBlockingDialog;
 	}
 	
+	
 	public ParentalControlUserProfileAddRulePage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -94,7 +95,7 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 		}
 	}
 	
-	public void clickAddDeviceButton()
+	public void clickAddScheduleButton()
 	{
 		try {
 			click(addScheduleButton); 
@@ -106,7 +107,7 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 	
 	
 	// To verify the devices listed in Add Device Page
-	public void verifyandSelectDevice(String dname) {
+	public void verifyUIonAddRuleEnableScheduleTimePage() {
 		int counter = 1;
 		String devName;
 		utils.log().info("********************************************");
@@ -182,17 +183,12 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 					}
 					
 					try {
-						if (e.findElementByXPath("//android.widget.Switch[@text='OFF']").isDisplayed())
-							utils.log().info("Switch button is displayed. It is currently disabled ");
+						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
+							utils.log().info("Time Block Toggle Button is currently disabled");
+						else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+							utils.log().info("Time Block Toggle Button is currently enabled");
 					} catch (Exception exp) {
-						utils.log().info("Switch button is not displayed ");
-					}
-					
-					try {
-						if (e.findElementByXPath("//android.widget.Switch[@text='ON']").isDisplayed())
-							utils.log().info("Switch button is displayed. It is currently enabled ");
-					} catch (Exception exp) {
-						utils.log().info("Switch button is not displayed ");
+						utils.log().info("STime Block Toggle Button is not displayed ");
 					}
 				}else
 				{
@@ -211,17 +207,12 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 					}
 					
 					try {
-						if (e.findElementByXPath("//android.widget.Switch[@text='OFF']").isDisplayed())
-							utils.log().info("Switch button is displayed. It is currently disabled ");
+						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
+							utils.log().info("Time Block Toggle Button is currently disabled");
+						else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+							utils.log().info("Time Block Toggle Button is currently enabled");
 					} catch (Exception exp) {
-						utils.log().info("Switch button is not displayed ");
-					}
-					
-					try {
-						if (e.findElementByXPath("//android.widget.Switch[@text='ON']").isDisplayed())
-							utils.log().info("Switch button is displayed. It is currently enabled ");
-					} catch (Exception exp) {
-						utils.log().info("Switch button is not displayed ");
+						utils.log().info("STime Block Toggle Button is not displayed ");
 					}
 				}
 

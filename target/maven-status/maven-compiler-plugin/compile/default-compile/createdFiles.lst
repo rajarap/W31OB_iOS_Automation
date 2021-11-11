@@ -14,6 +14,7 @@ com/cs/arris/Pages/SamplePage.class
 com/cs/arris/Pages/SignupPage.class
 com/cs/arris/Pages/SettingsAboutHelpPage.class
 com/cs/arris/Pages/ParentalControlWithProfilesPage.class
+com/cs/arris/Pages/ParentalControlEditUserProfileNameDialog.class
 com/cs/arris/Pages/SpeedTestPage.class
 com/cs/arris/Pages/DeviceLocationPage.class
 com/cs/arris/Pages/ParentalControlProfilesPage.class
@@ -28,6 +29,7 @@ com/cs/arris/Pages/EnterValidOTPPage.class
 com/cs/arris/Pages/ConnectionToWifiNeededPage.class
 com/cs/arris/Pages/InstallAdditionalSatellitePage.class
 com/cs/arris/Pages/CurrentlyBlockedDevicesPage.class
+com/cs/arris/Pages/ParentalControlAddRuleHelpPage.class
 com/cs/arris/Pages/ServiceNotAvailablePage.class
 com/cs/arris/Pages/ParentalControlAddProfileDialog.class
 com/cs/arris/Pages/DisableBlueToothPage.class
@@ -48,6 +50,7 @@ com/cs/arris/Pages/Error_0001_1201_Bluetooth_Pairing_Failed_Page.class
 com/cs/arris/Reports/ExtentReport.class
 com/cs/arris/Pages/FAQHelpPage.class
 com/cs/arris/Pages/ParentalControlUserProfileAddDevicePage.class
+com/cs/arris/Pages/ParentalControlUserProfileAddRuleDatePickerDialog.class
 com/cs/arris/Pages/ErrorCode_0015_1805_Something_Went_Wrong_Page.class
 com/cs/arris/Pages/Error_0005_1200_Bluetooth_Connection_Failed_Page.class
 com/cs/arris/Pages/SetupHomeNetworkPage.class
@@ -65,9 +68,9 @@ com/cs/arris/Pages/ErrorCode_0002_1304_Internet_Connection_Not_Available_Page.cl
 com/cs/arris/Utilities/GetOTPFromNada.class
 com/cs/arris/Interface/Page.class
 com/cs/arris/Pages/RemoveDeviceFromHomePage.class
+com/cs/arris/Pages/ParentalControlResumeInternetforAllProfilesDialog.class
 com/cs/arris/Pages/BlankSpeedTestHistoryPage.class
 com/cs/arris/Pages/NetworkOptimizationDialog.class
-com/cs/arris/Pages/ParentalControlPauseInternetForAllDialog.class
 com/cs/arris/Pages/ErrorCode_0000_1016_Maximum_Verification_Attempts_Exceeded.class
 com/cs/arris/Pages/UnPackYourBoxPage.class
 com/cs/arris/Pages/NetworkOptimizationDialog2.class
@@ -91,9 +94,11 @@ com/cs/arris/Pages/DevicesHelpPage.class
 com/cs/arris/Pages/GrantPermissionsPage.class
 com/cs/arris/Pages/OptimizeYourNetworkPage.class
 com/cs/arris/Pages/AppRatingDialog.class
+com/cs/arris/Pages/ParentalControlPauseInternetforAllProfilesDialog.class
 com/cs/arris/Pages/SiginPage.class
 com/cs/arris/Pages/ResendOTPDialog.class
 com/cs/arris/Pages/CodeVerifiedPage.class
+com/cs/arris/Pages/ParentalControlAddRuleAddInternetBlockingScheduleDialog.class
 com/cs/arris/Pages/BlueToothPage.class
 com/cs/arris/Pages/ValidationCodePage.class
 com/cs/arris/Utilities/SwipeActions.class
@@ -101,5 +106,4 @@ com/cs/arris/Pages/ParentalControlAddDeviceHelpPage.class
 com/cs/arris/Pages/ErrorCode_0002_1002_Internet_Connection_Not_Available_On_Mobile_Device.class
 com/cs/arris/Pages/MainDevicePage.class
 com/cs/arris/Pages/ParentalControlUserProfileAddRulePage.class
-com/cs/arris/Pages/EditProfileNameDialog.class
 com/cs/arris/Pages/SystemFirmwareUpdatePage.class
