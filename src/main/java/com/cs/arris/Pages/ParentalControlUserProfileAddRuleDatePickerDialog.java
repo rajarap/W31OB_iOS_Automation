@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -114,7 +115,7 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 		this.pickTime();
 		Integer hrInt = Integer.valueOf(hh);
 		Integer hr = hrInt++;
-		if(hr >= 12)
+		if(hr == 12)
 		{
 			hr = hr -= 11;
 			if(med.equals("PM"))
@@ -123,11 +124,13 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 				med = "PM";
 			
 			String hrs = Integer.toString(hr);
-	    	hour.sendKeys(hrs);
+			System.out.println("hrs : " + hrs);
+	    	sendKeys(hour, hrs);
 		}else
 		{
 			String hrs = Integer.toString(hr);
-	    	hour.sendKeys(hrs);
+			System.out.println("hrs : " + hrs);
+			sendKeys(hour, hrs);
 		}
 	}
 	
@@ -136,24 +139,43 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 		this.pickTime();
 		Integer minInt = Integer.valueOf(mm);
 		Integer mint = minInt += 5;
-		if(mint >= 60)
+		if(mint == 59)
 		{
 			mint = mint -= 55;
 			String mins = Integer.toString(mint);
-	    	min.sendKeys(mins);
+			System.out.println("mins : " + mins);
+			sendKeys(min, mins);
 		}else
 		{
 			String mins = Integer.toString(mint);
-	    	min.sendKeys(mins);
+			System.out.println("mins : " + mins);
+	    	sendKeys(min, mins);
 		}
 	}
 	
 	public void pickMedian()
 	{
-    	median.sendKeys(med);
+		System.out.println("median : " + med);
+    	sendKeys(median, med);
 	}
 	
-	
+	public void pickYourTime()
+	{
+		MobileElement hour = (MobileElement) super.getDriver().findElement(By.xpath("//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]"));
+		MobileElement minute = (MobileElement) super.getDriver().findElement(By.xpath("//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]"));
+		MobileElement median = (MobileElement) super.getDriver().findElement(By.xpath("//android.widget.TimePicker/android.widget.LinearLayout/android.widget.NumberPicker"));
+		
+		HashMap<String, Object> params = new HashMap<>();
+        params.put("order", "next");
+        params.put("offset", 0.15);
+        params.put("element", hour);
+        super.getDriver().executeScript("mobile: swipeGesture", params);
+        
+        params.put("order", "next");
+        params.put("offset", 0.15);
+        params.put("element", minute);
+        super.getDriver().executeScript("mobile: swipeGesture", params);
+	}
 	
 	@Override
 	public boolean isAt() {

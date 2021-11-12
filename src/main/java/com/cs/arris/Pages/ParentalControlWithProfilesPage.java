@@ -25,18 +25,16 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	int size;
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle']"), // Devices
-																													// (2)
+			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle']"), 
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[359,149][721,223]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") })
 	public MobileElement parentalControlTitle;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"), // back button
+	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"), 
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
 	public MobileElement backButton;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), // help
-																														// Icon
+	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), 
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[980,153][1046,219]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/helpIcon") })
 	public MobileElement helpIcon;
@@ -48,8 +46,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	public MobileElement cloudIcon;
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_parental_view']"), // Profile
-																														// tab
+			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_parental_view']"), 
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[102,276][540,378]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/profile_parental_view") })
 	public MobileElement profilesTab;
@@ -105,7 +102,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enable Parental Control']") // Enable Parental Control Text
 	public MobileElement enableParentalControlText;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enable Parental Control']") // Enable Disable Profile Text
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enable/Disble For All Profiles']") // Enable Disable Profile Text
 	public MobileElement enableDisableProfileText;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='User Profiles']") // User Profiles Text
@@ -120,21 +117,16 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/profile_list_view") // Profile Dinning List View
 	public List<MobileElement> profileListView;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']") // profile
-																											// Image
+	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']") 
 	public List<MobileElement> profileImage;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']") // profile
-																											// name
+	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']") 
 	public List<MobileElement> profileName;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']") // profile
-																														// connected
-																														// devices
+	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']") 
 	public List<MobileElement> profileConnectedDevices;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='ccom.arris.sbcBeta:id/pause_internet_message']") // pause
-																														// internet
+	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='ccom.arris.sbcBeta:id/pause_internet_message']") 
 	public List<MobileElement> pauseInternet;
 
 	@AndroidFindBy(xpath = "/android.widget.Switch[@text='OFF']") // disable toggle icon
@@ -171,8 +163,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		return alertDialog;
 	}
 
-	// On-click of Enable parent control toggle button sometime ratings page comes
-	// up
+	// On-click of Enable parent control toggle button sometime ratings page comes up
 	public AppRatingDialog getAppRatingDialogObject() {
 		AppRatingDialog ratingDialog = new AppRatingDialog();
 		return ratingDialog;
@@ -205,6 +196,10 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	
 
 	public void verifyUIOnParentalControlProfilesPage() {
+		utils.log().info("**********************************************************");
+		utils.log().info("Verifying Objects on Parental Control - Profiles Tab      ");
+		utils.log().info("**********************************************************");
+		
 		try {
 			if (parentalControlTitle.isDisplayed())
 				utils.log().info("Title - " + parentalControlTitle.getText() + " - is displayed");
@@ -255,17 +250,10 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		}
 
 		try {
-			if (enableDisableProfileText.isDisplayed())
-				utils.log().info(enableDisableProfileText.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Enable/Disable for All Profiles is not displayed");
-		}
-
-		try {
 			if (disableParentalControlToggleButton.isDisplayed())
 				utils.log().info("Parental Control toggle button is disabled(OFF)");
-			else if(enableParentalControlToggleButton.isDisplayed())
-					utils.log().info("Parental Control toggle button enabled(ON)");
+			else 
+				utils.log().info("Parental Control toggle button enabled(ON)");
 		} catch (Exception e) {
 			utils.log().info("Parental Control toggle button not displayed");
 		}
@@ -296,13 +284,6 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 				utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
 		} catch (Exception e) {
 			utils.log().info("Pause Internet For All Profiles text is not displayed");
-		}
-
-		try {
-			if (disablePauseAllProfilesToggleButton.isDisplayed())
-				utils.log().info("Pause Internet Access to All Profiles toggle button is disabled(OFF)");
-		} catch (Exception e) {
-			utils.log().info("Pause Internet Access to All Profiles toggle button is not displayed");
 		}
 
 		try {
@@ -354,17 +335,9 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	public void enableParentalControl() {
 		try {
 			if (disableParentalControlToggleButton.isDisplayed()) {
-				click(disableParentalControlToggleButton);
-				
-				if (this.getAppRatingDialogObject().isAt()) {
-					this.getAppRatingDialogObject().clickRemindMeLaterLink();
-					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
-				} else {
-					utils.log().info("App Rating Dialog is not displayed");
-				}
-				
+				click(disableParentalControlToggleButton);		
 				utils.log().info("Parental Control is turned ON. Add Profile option is enabled to add new profiles.");}
-			else if(enableParentalControlToggleButton.isDisplayed())
+			else 
 				utils.log().info("Parental Control is already enabled. Add Profile option is already enabled to add new profiles.");
 		} catch (Exception e) {
 			utils.log().info("Parental Control toggle switch button is not displayed");
@@ -374,18 +347,10 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	public void disableParentalControl() {
 		try {
 			if (enableParentalControlToggleButton.isDisplayed()) {
-				click(enableParentalControlToggleButton);
-
-				if (this.getAppRatingDialogObject().isAt()) {
-					this.getAppRatingDialogObject().clickRemindMeLaterLink();
-					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
-				} else {
-					utils.log().info("App Rating Dialog is not displayed");
-				}
-			
+				click(enableParentalControlToggleButton);			
 				utils.log().info("Parental Control is turned OFF. Add Profile option is disabled");}
-			else if(disableParentalControlToggleButton.isDisplayed())
-				utils.log().info("Parental Control is already diabled. Add Profile option is already disabled.");
+			else 
+				utils.log().info("Parental Control is already disabled. Add Profile option is already disabled.");
 		} catch (Exception e) {
 			utils.log().info("Parental Control toggle switch button is not displayed");
 		}
@@ -395,25 +360,16 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		try {
 			if (disablePauseAllProfilesToggleButton.isDisplayed()) {
 				click(disablePauseAllProfilesToggleButton);
-				
-				if (this.getAppRatingDialogObject().isAt()) {
-					this.getAppRatingDialogObject().clickRemindMeLaterLink();
-					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
-				} else {
-					utils.log().info("App Rating Dialog is not displayed");
-				}
-				
 				if (this.getPauseInternetForAllDialogObject().isAt()) {
 					this.getPauseInternetForAllDialogObject().verifyUIOnPauseInternetForAllDialog();
 					this.getPauseInternetForAllDialogObject().clickYesPauseButton();
 					super.pause(5);
 				}
 				utils.log().info("Pause All Profiles is turned ON");}
-			else if (enablePauseAllProfilesToggleButton.isDisplayed()) {
+			else  
 				utils.log().info("Internet is already Paused for all user profiles");
-			}
 		} catch (Exception exp) {
-			utils.log().info("Paused Internet Accesss to all toggle Switch is not displayed ");
+			utils.log().info("Paused Internet Accesss to all toggle switch button is not displayed ");
 		}
 	}
 
@@ -421,23 +377,16 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		try {
 			if (enablePauseAllProfilesToggleButton.isDisplayed()) {
 				click(enablePauseAllProfilesToggleButton);
-				
-				if (getAppRatingDialogObject().isAt()) {
-					getAppRatingDialogObject().clickRemindMeLaterLink();
-					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
-				} else {
-					utils.log().info("App Rating Dialog is not displayed");
-				}
 				if (this.getResumeInternetForAllDialogObject().isAt()) {
 					this.getResumeInternetForAllDialogObject().verifyUIOnResumeInternetForAllDialog();
 					this.getResumeInternetForAllDialogObject().clickYesResumeButton();
 					super.pause(5);
 				}
-			} else if (disablePauseAllProfilesToggleButton.isDisplayed()) {
+				utils.log().info("Pause All Profiles is turned OFF");}
+			else 
 				utils.log().info("Internet is already Resumed for all users");
-			} 
 		} catch (Exception e) {
-			utils.log().info("Pause Internet Access to all switch button is not displayed");
+			utils.log().info("Pause Internet Access to all toggle switch button is not displayed");
 		}
 	}
 
@@ -464,16 +413,18 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 	public void verifyUserProfile() {
 		try {
+			counter = 1;
 			utils.log().info("**********************************************************");
 			utils.log().info("Details of User Profiles created in Parental Control Page");
 			utils.log().info("**********************************************************");
-
-			for (int i = 1; i < super.profileNames.size(); i++) {
+			
+			for (int i = 1; i <= 5; i++) {
 				utils.log().info("User Profile : " + counter);
 				utils.log().info("----------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
 								+ "]");
+				
 				for (MobileElement e : entity) {
 					try {
 						if (e.findElementByXPath(
@@ -524,21 +475,20 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					try {
 						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").isDisplayed()) {
 							utils.log().info("Internet is not Paused for this user. Switch is : "
-									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").getText()));
-						} else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").isDisplayed()) {
+									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").getText()));}
+						else
 							utils.log().info("Internet is Paused for this user. Switch is : "
 									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").getText()));
-						}
 					} catch (Exception exp) {
-						utils.log().info("Paused Internet Switch is not displayed ");
-					}
+						utils.log().info("Paused Internet Switch is not displayed ");}
+					
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
 					counter++;
 				}
 				if (i >= 3)
 					new SwipeActions().swipeScreen(Direction.UP);
-				super.pause(3);
+					super.pause(3);
 			}
 		} catch (Exception exp) {
 			utils.log().info("Error in retrieving User Profile list in Parental Control Profiles Page ");
@@ -547,12 +497,14 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 	public void pauseInternetForSelectedUserProfile() {
 		try {
-			for (int i = 0; i < super.profileNames.size(); i += 2) {
+			utils.log().info("********************************************");
+			utils.log().info("Internet Is Paused For Selected User Profiles ");
+			utils.log().info("********************************************");
+			for (int i = 0; i < 5; i += 2) {
 				utils.log().info("User Profile : " + i);
 				utils.log().info("----------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-								+ "]");
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
 				for (MobileElement e : entity) {
 					try {
 						if (e.findElementByXPath(
@@ -570,20 +522,19 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					}
 
 					try {
-						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").isDisplayed()) {
+						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").isDisplayed()) 
 							utils.log().info("Internet is not Paused for this user. Switch is : "
 									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").getText()));
-						} else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").isDisplayed()) {
+							else
 							utils.log().info("Internet is Paused for this user. Switch is : "
 									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").getText()));
-						}
 					} catch (Exception exp) {
 						utils.log().info("Paused Internet Switch is not displayed ");
 					}
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
 				}
-				if (i >= 3)
+				if (i == 3)
 					new SwipeActions().swipeScreen(Direction.UP);
 				super.pause(3);
 			}
@@ -594,11 +545,31 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 	public void clickOnUserProfile() {
 		try {
-			MobileElement entity = (MobileElement) super.getDriver().findElementsByXPath(
-					"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[0]");
-			if (entity.isDisplayed()) {
-				click(entity);
-				utils.log().info("Clicking on User Profile");
+			utils.log().info("****************************************");
+			utils.log().info("Selecting a User Profile from the list  ");
+			utils.log().info("****************************************");
+			super.generateRandomNumber13();
+
+			
+			for (int i = 1; i <= 1; i++) 
+			{
+//				utils.log().info("User Profile : " + i);
+//				utils.log().info("------------------");
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+				
+				for (MobileElement e : entity) {
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed()) {
+							utils.log().info("Clicking on User profile Name : " + e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
+							click(e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']"));
+						}
+					} catch (Exception exp) {
+						utils.log().info("User Profile Name is not displayed ");
+					}
+				}
 			}
 		} catch (Exception exp) {
 			utils.log().info("User Profile does not exits. Please create one");
@@ -607,11 +578,12 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	
 	public void verifyPauseInternetAccessForAllUserProfile() {
 		try {
+			counter = 1;
 			utils.log().info("****************************************");
-			utils.log().info("Internt Is Paused For All User Profiles ");
+			utils.log().info("Internet Is Paused For All User Profiles ");
 			utils.log().info("****************************************");
 
-			for (int i = 1; i < super.profileNames.size(); i++) {
+			for (int i = 1; i < 5; i++) {
 				utils.log().info("User Profile : " + counter);
 				utils.log().info("----------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
@@ -656,13 +628,13 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					}
 
 					try {
-						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").isDisplayed()) {
+						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").isDisplayed()) 
 							utils.log().info("Internet is not Paused for this user. Switch is : "
 									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").getText()));
-						} else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").isDisplayed()) {
+						else 
 							utils.log().info("Internet is Paused for this user. Switch is : "
 									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").getText()));
-						}
+						
 					} catch (Exception exp) {
 						utils.log().info("Paused Internet Switch is not displayed ");
 					}
@@ -670,7 +642,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					utils.log().info("                                                    ");
 					counter++;
 				}
-				if (i >= 3)
+				if (i == 3)
 					new SwipeActions().swipeScreen(Direction.UP);
 				super.pause(3);
 			}
@@ -681,11 +653,12 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	
 	public void verifyResumeInternetAccessForAllUserProfile() {
 		try {
+			counter  = 1;
 			utils.log().info("*****************************************");
 			utils.log().info("Internt Is Resumed For All User Profiles ");
 			utils.log().info("*****************************************");
 
-			for (int i = 1; i < super.profileNames.size(); i++) {
+			for (int i = 1; i < 5; i++) {
 				utils.log().info("User Profile : " + counter);
 				utils.log().info("----------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
@@ -733,10 +706,9 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").isDisplayed()) {
 							utils.log().info("Internet is not Paused for this user. Switch is : "
 									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='false']").getText()));
-						} else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").isDisplayed()) {
+						} else 
 							utils.log().info("Internet is Paused for this user. Switch is : "
 									+ (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/profile_enable_disable' and @checked='true']").getText()));
-						}
 					} catch (Exception exp) {
 						utils.log().info("Paused Internet Switch is not displayed ");
 					}
@@ -744,7 +716,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					utils.log().info("                                                    ");
 					counter++;
 				}
-				if (i >= 3)
+				if (i == 3)
 					new SwipeActions().swipeScreen(Direction.UP);
 				super.pause(3);
 			}

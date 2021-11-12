@@ -365,14 +365,14 @@ public class HomePage extends ParentClass implements Page {
 	public void verifyUIOnHomePage() {
 		try {
 			if (homeTitle.isDisplayed())
-				utils.log().info("Title : " + homeTitle.getText() + " is displayed");
+				utils.log().info("Title " + homeTitle.getText() + " is displayed");
 		} catch (Exception e) {
 			utils.log().info("Home Title is not displayed");
 		}
 
 		try {
 			if (networkSpeedTitle.isDisplayed())
-				utils.log().info("Title : " + networkSpeedTitle.getText() + " is displayed");
+				utils.log().info("Title " + networkSpeedTitle.getText() + " is displayed");
 		} catch (Exception e) {
 			utils.log().info("Network Title is not displayed");
 		}
@@ -407,7 +407,7 @@ public class HomePage extends ParentClass implements Page {
 
 		try {
 			if (downloadSpeedText.isDisplayed())
-				utils.log().info("Download Speed Text : " + downloadSpeedText.getText() + " is displayed");
+				utils.log().info("Download Speed Text " + downloadSpeedText.getText() + " is displayed");
 		} catch (Exception e) {
 			utils.log().info("Download Speed Text is not displayed");
 		}
@@ -421,14 +421,14 @@ public class HomePage extends ParentClass implements Page {
 
 		try {
 			if (uploadSpeedText.isDisplayed())
-				utils.log().info("Upload Speed Text : " + uploadSpeedText.getText() + " is displayed");
+				utils.log().info("Upload Speed Text " + uploadSpeedText.getText() + " is displayed");
 		} catch (Exception e) {
 			utils.log().info("Upload Speed Text is not displayed");
 		}
 
 		try {
 			if (ssidName.isDisplayed())
-				utils.log().info("Main Router SSID Name : " + ssidName.getText() + "  is displayed");
+				utils.log().info("Main Router SSID Name " + ssidName.getText() + "  is displayed");
 		} catch (Exception e) {
 			utils.log().info("Main Router SSID Name is not displayed");
 		}
@@ -442,17 +442,16 @@ public class HomePage extends ParentClass implements Page {
 
 		try {
 			if (mainDeviceName.isDisplayed())
-				utils.log().info("Main Router Device Name : " + mainDeviceName.getText() + " is displayed");
+				utils.log().info("Main Router Device Name " + mainDeviceName.getText() + " is displayed");
 		} catch (Exception e) {
 			utils.log().info("Main Router Device Name is displayed");
 		}
 
 		try {
 			if (mainDeviceCounter.isDisplayed())
-				utils.log().info("Number of Devices Connected to Main Router : " + mainDeviceCounter.getText()
-						+ " is displayed");
+				utils.log().info(mainDeviceCounter.getText() + " are connected to Main Router : " );
 		} catch (Exception e) {
-			utils.log().info("Main devices counter is not displayed");
+			utils.log().info("Devices conneced to the Main Router is not displayed");
 		}
 
 		try {
@@ -464,10 +463,10 @@ public class HomePage extends ParentClass implements Page {
 
 		try {
 			if (totalNoOfDevices.isDisplayed())
-				utils.log().info("Total of : " + super.getCountOfDevicesWithSpace(totalNoOfDevices.getText())
+				utils.log().info(super.getCountOfDevicesWithSpace(totalNoOfDevices.getText())
 						+ " devices are connected to the main Router");
 		} catch (Exception e) {
-			utils.log().info("Total number of devices connected to the router is not displayed");
+			utils.log().info("Number of devices connected to the router is not displayed");
 		}
 
 		try {
@@ -501,20 +500,21 @@ public class HomePage extends ParentClass implements Page {
 		try {
 			if (bitRateDevices.isDisplayed())
 				utils.log().info(
-						"Count of : " + bitRateDevices.getText() + " Device Signal Strength Leader Board is displayed");
+						"Device Signal Strength Leader Board is displayed for " + bitRateDevices.getText());
 		} catch (Exception e) {
 			utils.log().info("Device Signal Strength Leader Board Count is not displayed");
+		}
+		
+		try	{
+			new SwipeActions().swipeScreen(Direction.UP);
+		    waitForVisibility(currentlyBlockedDevicesImage);
+		}catch (Exception e) {
+			utils.log().info("Unable to swipe UP");
 		}
 
 		try {
 			if (speedTestHistoryText.isDisplayed())
 				utils.log().info("Speed Test History Text is displayed");
-			else {
-				new SwipeActions().swipeScreen(Direction.UP);
-				super.pause(3);
-				if (speedTestHistoryText.isDisplayed())
-					utils.log().info("Speed Test History Text is displayed");
-			}
 		} catch (Exception e) {
 			utils.log().info("Speed Test History Text is not displayed");
 		}
@@ -528,8 +528,7 @@ public class HomePage extends ParentClass implements Page {
 
 		try {
 			if (speedTestHistoryDevices.isDisplayed())
-				utils.log().info(
-						"Count of Speed Test History Devices : " + speedTestHistoryDevices.getText() + " is displayed");
+				utils.log().info("Count of Speed Test History Devices : " + speedTestHistoryDevices.getText() + " is displayed");
 		} catch (Exception e) {
 			utils.log().info("Count of Speed Test History Devices is not displayed");
 		}
@@ -537,12 +536,6 @@ public class HomePage extends ParentClass implements Page {
 		try {
 			if (currentlyBlockedDevicesText.isDisplayed())
 				utils.log().info("Currently Blocked Devices Text is displayed");
-			else {
-				new SwipeActions().swipeScreen(Direction.UP);
-				super.pause(3);
-				if (currentlyBlockedDevicesText.isDisplayed())
-					utils.log().info("Currently Blocked Devices Text is displayed");
-			}
 		} catch (Exception e) {
 			utils.log().info("Currently Blocked Devices is not displayed");
 		}
@@ -552,22 +545,6 @@ public class HomePage extends ParentClass implements Page {
 				utils.log().info("Currently Blocked Devices Image is displayed");
 		} catch (Exception e) {
 			utils.log().info("Currently Blocked Devices Image is not displayed");
-		}
-
-		try {
-			if (parentalControlIsDisabled.isDisplayed())
-				utils.log().info("Parental Control is currently disabled");
-		} catch (Exception e) {
-			utils.log().info("Parental Control is currently enabled");
-		}
-
-		try {
-			if (parentalControlBlockedDevices.isDisplayed())
-				utils.log().info("Parental Control is currently enabled : " + parentalControlBlockedDevices.getText()
-						+ " devices are under Parental Control");
-		} catch (Exception e) {
-			utils.log().info(
-					"Parental Control is currently enabled but count of Parental Control devices is not displayed");
 		}
 	}
 
@@ -608,23 +585,6 @@ public class HomePage extends ParentClass implements Page {
 		}
 	}
 
-//	public void clickCurrentlyBlockedDevicesImage() {
-//		try {
-//			if(currentlyBlockedDevicesImage.isDisplayed()) {
-//				click(currentlyBlockedDevicesImage);
-//				utils.log().info("Home Page - Clicked on Currently Blocked Devices Image");
-//			}else {
-//				new SwipeActions().swipeScreen(Direction.UP);
-//				if (currentlyBlockedDevicesImage.isDisplayed())
-//					click(currentlyBlockedDevicesImage);
-//					utils.log().info("Currently Blocked Devices Text is displayed");
-//			}
-//		} catch (Exception e) {
-//			utils.log().info(
-//					"Home Page - Currently Blocked Devices Image is either not visible or is not present on the DOM");
-//		}
-//	}
-	
 	public void clickCurrentlyBlockedDevicesImage() {
 		try {
 				new SwipeActions().swipeScreen(Direction.UP);
@@ -639,7 +599,7 @@ public class HomePage extends ParentClass implements Page {
 
 	public void clickMainDeviceImage() {
 		try {
-			click(mainDeviceImage); // Click this link to navigate to the Main Devices Page
+			click(mainDeviceImage); 
 			utils.log().info("Home Page - Clicked on Main Device Image");
 		} catch (Exception e) {
 			utils.log().info("Home Page - Main Device Image is either not visible or is not present on the DOM");

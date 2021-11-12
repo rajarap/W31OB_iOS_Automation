@@ -16,22 +16,22 @@ public class AppRatingDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/textView9") //Enjoying our SURFboard Central App?
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView9") //Enjoying our SURFboard Central App?
 	public MobileElement appRatingTitle; 
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/textView13") //Let us know how we are doing by rating us below. We welcome your feedback to help us improve.
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView13") //Let us know how we are doing by rating us below. We welcome your feedback to help us improve.
 	public MobileElement appRatingMessage; 
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/feedbackRatingBar") //
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/feedbackRatingBar") //
 	public MobileElement appRatingStarBar;
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/textView10") //Tap the star to rate
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView10") //Tap the star to rate
 	public MobileElement tapTheStarToRate;
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/remindMeLaterTxt") //REMIND ME LATER
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/remindMeLaterTxt") //REMIND ME LATER
 	public MobileElement remindMeLaterText;
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/imgCancelDialog") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgCancelDialog") 
 	public MobileElement cancelDialogIcon; 
 		
 	public AppRatingDialog()

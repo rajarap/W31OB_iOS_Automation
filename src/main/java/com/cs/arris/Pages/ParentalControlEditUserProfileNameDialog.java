@@ -16,22 +16,22 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/add_profile_text") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/add_profile_text") 
 	public MobileElement editProfileNameTitle; 
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/profile_message") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_message") 
 	public MobileElement editProfileNameMessage; 
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/profile_title") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_title") 
 	public MobileElement editProfileNameLabel;
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/edt_profile_name") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/edt_profile_name") 
 	public MobileElement enterProfileName;
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/profile_save_dialog") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_save_dialog") 
 	public MobileElement saveButton; 
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/profile_cancel_dialog") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_cancel_dialog") 
 	public MobileElement closeButton; 
 	
 	
@@ -78,9 +78,9 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 		
 		try {
 			if (closeButton.isDisplayed())
-				utils.log().info(closeButton.getText() + " button is displayed");
+				utils.log().info("Close Icon is displayed");
 		} catch (Exception e) {
-			utils.log().info("Close button is not displayed");
+			utils.log().info("Close Icon is not displayed");
 		}
 	}
 	
@@ -108,7 +108,7 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 	{
 		super.generateProfileName();
 		super.sendKeys(enterProfileName, super.profileName);
-		utils.log().info("Changed Profle Name");
+		utils.log().info("Changed User Profle Name");
 	}
 	
 	@Override

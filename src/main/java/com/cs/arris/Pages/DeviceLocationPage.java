@@ -95,20 +95,32 @@ public class DeviceLocationPage  extends ParentClass implements Page
 	
 	public void clickWhileUsingTheAppLink() 
 	{
-		click(whileUsingTheAppLink);
-		utils.log().info("Device Location - Clicked " + whileUsingTheAppLink.getText());
+		try {
+			click(whileUsingTheAppLink);
+			utils.log().info("Device Location - Clicked " + whileUsingTheAppLink.getText());
+		} catch (Exception e) {
+			utils.log().info("Device Location - While Using The App Link is not displayed");
+		}
 	}
 	
 	public void clickOnlyThisTimeLink() 
 	{
-		click(onlyThisTimeLink);
-		utils.log().info("Device Location - Clicked " + onlyThisTimeLink.getText());
+		try {
+			click(onlyThisTimeLink);
+			utils.log().info("Device Location - Clicked " + onlyThisTimeLink.getText());
+		} catch (Exception e) {
+			utils.log().info("Device Location - Only This Time Link is not displayed");
+		}
 	}
 	
 	public void clickDenyLink() 
 	{
-		click(denyLink);
-		utils.log().info("Device Location - Clicked " + denyLink.getText());
+		try {
+			click(denyLink);
+			utils.log().info("Device Location - Clicked " + denyLink.getText());
+		} catch (Exception e) {
+			utils.log().info("Device Location - Deny Link is not displayed");
+		}
 	}
 	
 	@Override
@@ -124,5 +136,4 @@ public class DeviceLocationPage  extends ParentClass implements Page
 			return false;
 		}
 	}
-	
 }

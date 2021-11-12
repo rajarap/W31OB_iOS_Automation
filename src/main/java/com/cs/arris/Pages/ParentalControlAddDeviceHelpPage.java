@@ -54,7 +54,7 @@ public class ParentalControlAddDeviceHelpPage extends ParentClass implements Pag
 		
 		try {
 			if (deviceText.isDisplayed())
-				utils.log().info(deviceText.getText() + " text is displayed ");
+				utils.log().info("Parent Control Devices Help text is displayed ");
 		} catch (Exception e) {
 			utils.log().info("Parental Control Devices Help Text is not displayed");
 		}

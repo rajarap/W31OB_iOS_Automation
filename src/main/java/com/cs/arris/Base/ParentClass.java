@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -106,6 +107,7 @@ public class ParentClass
 	public String ssidpwd;
 	public String randNum;
 	public String profileName;
+	public int randNumber;
 	public List<String> profileNames = new ArrayList<String>();
 	public List<String> selectedProfileNames = new ArrayList<String>();
 	public List<String> deviceNames = new ArrayList<String>();
@@ -661,6 +663,14 @@ public class ParentClass
 			 randNum = String.valueOf(randomNumber);
 			 profileName = "profile"+ randNum;
 			 profileNames.add(profileName);
+		}
+		
+		public void generateRandomNumber13()
+		{
+			int min = 1;
+			int max = 2;
+			Random rand = new Random();
+			randNumber = rand.nextInt(max - min + 1) + min;
 		}
 }
 	

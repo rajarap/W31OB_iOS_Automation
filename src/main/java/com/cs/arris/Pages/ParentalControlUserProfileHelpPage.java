@@ -64,7 +64,7 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 
 		try {
 			if (profileText.isDisplayed())
-				utils.log().info(profileText.getText() + " text is displayed ");
+				utils.log().info("Profile Help Text is displayed ");
 		} catch (Exception e) {
 			utils.log().info("Profile Help Text is not displayed");
 		}

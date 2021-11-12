@@ -57,14 +57,14 @@ public class ParentalControlHelpPage extends ParentClass implements Page {
 
 		try {
 			if (overView.isDisplayed())
-				utils.log().info(overView.getText() + " text is displayed ");
+				utils.log().info("OverView Text is displayed ");
 		} catch (Exception e) {
 			utils.log().info("OverView Text is not displayed");
 		}
 
 		try {
 			if (parentalHelpText.isDisplayed())
-				utils.log().info(parentalHelpText.getText() + " text is displayed ");
+				utils.log().info("Parental Help Text is displayed");
 		} catch (Exception e) {
 			utils.log().info("Parental Help Text is not displayed");
 		}

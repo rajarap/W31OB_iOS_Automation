@@ -133,19 +133,16 @@ public class TC52_Login_And_Verify_HomePage_Test extends ParentClass
 			  	home.clickDeviceSignalStrengthImage();
 			  	if(home.getDeviceSignalStrengthPageObject().isAt())
 			  	{
-			  		utils.log().info("On Devices Page ");
 			  		home.getDeviceSignalStrengthPageObject().clickCloseIcon();
 			  	}
 			  	home.clickSpeedTestHistoryImage();
 			    if(home.getBlankSpeedTestHistoryPageObject().isAt())
 			    {
-				   utils.log().info("On Blank Speed Test History Page ");
 				   home.getBlankSpeedTestHistoryPageObject().clickCloseIcon();
 			    }
 			  	home.clickCurrentlyBlockedDevicesImage();
 			  	if(home.getBlankBlockedDevicesPageObject().isAt())
 			  	{
-			  		utils.log().info("On Blank Blocked Devices Page ");
 			  		home.getBlankBlockedDevicesPageObject().clickCloseIcon();
 			  	}
 			  }

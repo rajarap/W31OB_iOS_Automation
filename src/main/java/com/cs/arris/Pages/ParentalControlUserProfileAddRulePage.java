@@ -110,13 +110,13 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 	public void verifyUIonAddRuleEnableScheduleTimePage() {
 		int counter = 1;
 		String devName;
-		utils.log().info("********************************************");
-		utils.log().info("Add Rule - Details of Enabled Schedule Time");
-		utils.log().info("********************************************");
+		utils.log().info("******************************************************************");
+		utils.log().info("Add Rule - Details of Devices Listed in Enabled Schedule Time Page");
+		utils.log().info("******************************************************************");
 		
 		int scheduleList = super.getDriver().findElements(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/time_block_list_view']")).size();
 		
-		for (int i = 1; i < scheduleList; i++) {
+		for (int i = 1; i < 4; i++) {
 			utils.log().info("Enable Schedule Time - Rule : " + counter);
 			utils.log().info("-----------------------------------------");
 
@@ -185,7 +185,7 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 					try {
 						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
 							utils.log().info("Time Block Toggle Button is currently disabled");
-						else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+						else 
 							utils.log().info("Time Block Toggle Button is currently enabled");
 					} catch (Exception exp) {
 						utils.log().info("STime Block Toggle Button is not displayed ");
@@ -209,7 +209,7 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 					try {
 						if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
 							utils.log().info("Time Block Toggle Button is currently disabled");
-						else if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+						else
 							utils.log().info("Time Block Toggle Button is currently enabled");
 					} catch (Exception exp) {
 						utils.log().info("STime Block Toggle Button is not displayed ");

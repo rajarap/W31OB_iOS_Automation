@@ -52,12 +52,12 @@ public class ParentalControlAddRuleHelpPage extends ParentClass implements Page 
 			utils.log().info("Enable Schedule Time title is not displayed");
 		}
 		
-		try {
-			if (deviceText.isDisplayed())
-				utils.log().info(deviceText.getText() + " text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Parental Control TimeBlock Help Text is not displayed");
-		}
+//		try {
+//			if (deviceText.isDisplayed())
+//				utils.log().info(deviceText.getText() + " text is displayed ");
+//		} catch (Exception e) {
+//			utils.log().info("Parental Control TimeBlock Help Text is not displayed");
+//		}
 	}
 
 	@Override

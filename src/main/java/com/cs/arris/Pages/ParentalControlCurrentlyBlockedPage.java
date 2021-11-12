@@ -91,21 +91,20 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 	public void verifyInternetPausedUserProfiles() {
 		try {
 			int counter = 1;
-			utils.log().info("**************************************************************");
-			utils.log().info("Details of User Profiles For Whom Internt is Currently Paused");
-			utils.log().info("**************************************************************");
+			utils.log().info("*********************************************************************");
+			utils.log().info("Details of User Profiles For Whom Internet is Currently Paused/Blocked");
+			utils.log().info("*********************************************************************");
 
-			for (int i = 1; i < super.profileNames.size(); i++) {
-				utils.log().info("User Profile : " + counter);
-				utils.log().info("----------------------");
+			for (int i = 1; i < 5; i++) {
+				utils.log().info("Blocked User Profile : " + counter);
+				utils.log().info("--------------------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-								+ "]");
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+				
 				for (MobileElement e : entity) {
 					try {
 						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']")
-								.isDisplayed())
+								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']").isDisplayed())
 							utils.log().info("Profile Image is displayed");
 					} catch (Exception exp) {
 						utils.log().info("Profile Image is not displayed ");
@@ -113,24 +112,18 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 
 					try {
 						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
-								.isDisplayed()) {
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed()) 
 							utils.log().info("Profile user Name is : " + e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
-									.getText());
-						}
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
 					} catch (Exception exp) {
 						utils.log().info("User Profile Name is not displayed ");
 					}
 
 					try {
 						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']")
-								.isDisplayed()) {
-							utils.log().info("Number of Devices Paused for Internet Connection is : " + (e
-									.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']")
-									.getText()));
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").isDisplayed()) {
+							utils.log().info("Number of Devices Paused for Internet Connection is : " + (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").getText()));
 						}
 					} catch (Exception exp) {
 						utils.log().info("Number of Devices Paused for Internet Connection is not displayed ");
@@ -138,11 +131,9 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 
 					try {
 						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']")
-								.isDisplayed()) {
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").isDisplayed()) {
 							utils.log().info("Internet Paused Label is displayed : " + (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']")
-									.getText()));
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").getText()));
 						}
 					} catch (Exception exp) {
 						utils.log().info("Internet Paused Label is not displayed ");
@@ -156,7 +147,7 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 				super.pause(3);
 			}
 		} catch (Exception exp) {
-			utils.log().info("Error in retrieving User Profile list in Parental Control Profiles Page ");
+			utils.log().info("No User Profile list in Parental Control Profiles Page ");
 		}
 	}
 	
