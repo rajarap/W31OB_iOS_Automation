@@ -9,9 +9,9 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	<test name="Login_And_Verify_Parental_Control_Page_Test">
+	<test name="Login_And_Verify_Main_Router_Device_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC61_Login_And_Verify_ParentalControlPage_Test" />
+			<class name="com.cs.arris.Tests.TC56_Login_And_Verify_MainDevicesPage_Test" />
 		</classes>
 	</test>
 </suite>

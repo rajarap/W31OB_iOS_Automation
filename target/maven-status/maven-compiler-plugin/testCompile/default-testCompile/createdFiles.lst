@@ -1,6 +1,7 @@
 com/cs/arris/Workflows/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Workflow.class
 com/cs/arris/Tests/AccessResourcesOnDevicePageTest.class
 com/cs/arris/Workflows/TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.class
+com/cs/arris/Tests/TC56_Login_And_Verify_MainDevicesPage_Test.class
 com/cs/arris/Workflows/UserSignUpWorkflow.class
 com/cs/arris/Workflows/UserUnSuccessfulSigninWorkflow.class
 com/cs/arris/Tests/TestSSID.class
@@ -24,6 +25,7 @@ com/cs/arris/Tests/SigninAsInvalidUserTest.class
 com/cs/arris/Tests/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.class
 com/cs/arris/Tests/TC52_Login_And_Verify_HomePage_Test.class
 com/cs/arris/Tests/TestBluetooth.class
+com/cs/arris/Workflows/TC56_Login_And_Verify_MainDevicesPage_Workflow.class
 com/cs/arris/Workflows/TC51_Signin_And_Onboard_Workflow.class
 com/cs/arris/Tests/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test.class
 com/cs/arris/Tests/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test.class

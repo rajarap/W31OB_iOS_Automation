@@ -90,7 +90,5 @@ public class ParentalControlAlertDialog extends ParentClass implements Page {
 			utils.log().info("Not on Parental Control Alert Dialog");
 			return false;
 		}
-
 	}
-
 }

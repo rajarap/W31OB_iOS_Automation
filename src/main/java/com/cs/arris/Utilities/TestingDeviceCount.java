@@ -21,13 +21,13 @@ public class TestingDeviceCount
 //		System.out.println(count.toString());
 		
 		ParentClass pc = new ParentClass();
-		int i = pc.getTotalDevicesAdded("12 Total Devices Added");
-		System.out.println(i);
-		System.out.println(java.time.LocalTime.now());
+		pc.getAllCountOfDevices("Connected Devices (4)");
+//		System.out.println(i);
+//		System.out.println(java.time.LocalTime.now());
 	
-    	pickHour();
-    	pickMinute();
-    	pickMedian();
+//    	pickHour();
+//    	pickMinute();
+//    	pickMedian();
     	
 		
 	}
@@ -101,5 +101,12 @@ public class TestingDeviceCount
 		System.out.println("Median = " + med);
 	}
 	
+	
+	public static void getAllDevicesCount(String allDevices)
+	{
+		String str1 = allDevices.replaceAll("\\p{P}", "");
+		System.out.println(str1);
+		
+	}
 
 }

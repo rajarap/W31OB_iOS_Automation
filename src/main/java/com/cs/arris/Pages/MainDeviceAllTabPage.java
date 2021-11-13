@@ -22,491 +22,185 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class MainDeviceAllTabPage extends ParentClass implements Page
-{
+public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
-	HomePage homePage = new HomePage();
-	public List<MobileElement> onlineDeviceList;
-	public List<MobileElement> offlineDeviceList;
-	public MobileElement me;
-	public int offlineDeviceCount;
-	public int onlineDeviceCount;
+	public int allDevicesCount;
+	public int fiveGHzDevicesCount;
+	public int twoFourGHzDevicesCount;
 	public int counter = 1;
-	
-	public Integer[] brightnessPercentage = {20, 40, 60, 80, 100};
-	
+
+	public Integer[] increaseBrightness = { 30, 60, 90 };
+	public Integer[] decreaseBrightness = { 90, 60, 30 };
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
 	public MobileElement mainTitle;
-	
+
 	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
 	public MobileElement backIcon;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
 	public MobileElement helpIcon;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/buttonAll")
 	public MobileElement allTab;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/button5Ghz")
 	public MobileElement fiveGhzTab;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/button2.4Ghz")
 	public MobileElement twentyFourGhzTab;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/buttonEthernet")
 	public MobileElement ethernetTab;
-	
+
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_dining_room_router")
+	public MobileElement mainRouterImage;
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
 	public MobileElement totalDeviceImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtExcellentDevices")
 	public MobileElement excellentDeviceImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtMediumDevices")
 	public MobileElement mediumDeviceImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtPoorDevices")
 	public MobileElement poorDeviceImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtRoutername")
 	public MobileElement mainRouterName;
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtRoutername")
+
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_online")
 	public MobileElement mainRouterStatus;
-	
-	//====================LED Settings=====================
+
+	// ====================LED Settings=====================
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtLed")
 	public MobileElement ledSettingsText;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgLedOpenClose")
 	public MobileElement ledExpandImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgLedColor")
 	public MobileElement ledColorImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgMoon")
 	public MobileElement ledMoonColorImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgSun")
 	public MobileElement ledSunColorImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_led_color_title")
 	public MobileElement chooseColorBrightnessLabel;
-	
+
 //	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/android.widget.ImageView/android.widget.SeekBar[@resource-id='com.arris.sbcBeta:id/seekBar']")
 //	public MobileElement seekBar;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/seekBar")
 	public MobileElement seekBar;
 	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ten_progress_tv")
+	public MobileElement ten;
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/twenty_progress_tv")
 	public MobileElement twenty;
 	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/thirty_progress_tv")
+	public MobileElement thirty;
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/forty_progress_tv")
 	public MobileElement forty;
 	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/fifty_progress_tv")
+	public MobileElement fifty;
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/sixty_progress_tv")
 	public MobileElement sixty;
 	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/seventy_progress_tv")
+	public MobileElement seventy;
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/eighty_progress_tv")
 	public MobileElement eighty;
 	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ninety_progress_tv")
+	public MobileElement ninety;
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/hundred_progress_tv")
 	public MobileElement hundred;
-	//====================LED Settings=====================
-	
-	
-	//====================Connected Devices=====================
+	// ====================LED Settings=====================
+
+	// ====================Connected Devices=====================
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/devicesNumbers")
 	public MobileElement connectedDevicesCountText;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgDeviceInfoOpen")
 	public MobileElement connectedDevicesExpandImage;
-	//====================Connected Devices=====================
-	
-	
-	//====================Main Router Details=====================
-	
+
+	@AndroidFindBy(xpath = "//android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]")
+	public MobileElement deviceName1;
+	// ====================Connected Devices=====================
+
+	// ====================Main Router Details=====================
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_title")
 	public MobileElement detailsText;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgDeviceOpenClose")
 	public MobileElement mainRouterExpandImage;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_channel")
 	public MobileElement channelLabel;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtChannelOne")
 	public MobileElement fiveGhzDeviceCount;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtChannelTwo")
 	public MobileElement twoFourGhzDeviceCount;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_wan_ip_address")
 	public MobileElement wanIPAddressLabel;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceWanIp")
 	public MobileElement mainDeviceWANIPAddress;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceLanIp")
 	public MobileElement lanIPAddressLabel;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceLanIpA")
 	public MobileElement mainDeviceLANIPAddress;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_mac_add_title")
-	public MobileElement macIPAddressLabel;
-	
+	public MobileElement macAddressLabel;
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceMacAddress")
 	public MobileElement mainDeviceMACAddress;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_serial_title")
 	public MobileElement serialNumberLabel;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceSerialNum")
 	public MobileElement mainDeviceSerialNumber;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_firmware_title")
 	public MobileElement firmwareLabel;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceFirmware")
 	public MobileElement firmwareVersion;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_model_title")
 	public MobileElement mainDeviceModelNoLabel;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceModelNumber")
 	public MobileElement mainDeviceModelNumber;
-	
-	//====================Main Router Details=====================
-	
-	
+
+	// ====================Main Router Details=====================
+
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/restartRouter")
+	public MobileElement restartRouterButton;
+
 	public MainDeviceAllTabPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
-	}
-
-	
-    public void dragTo40()throws  Exception
-    {
-    	int startX = seekBar.getLocation().getX();
-    	int endX = seekBar.getSize().getWidth();
-    	int yAxis = seekBar.getLocation().getY();
-    	
-    	int start=seekBar.getLocation().getX();
-    	int end=seekBar.getSize().getWidth();
-    	int y=seekBar.getLocation().getY();
-
-        TouchAction action=new TouchAction(super.getDriver());
-        action.press(start,y).moveTo(end,y).release().perform();
-
-        //Move it 40%
-        int moveTo=(int)(end*0.4);
-        action.press(start,y).moveTo(moveTo,y).release().perform();
-
-    }
-	
-	
-	
-	
-	
-
-	public void getOnlineDevicesCount() {
-		clickOnlineTab();
-		utils.log().info("Online Device Page Title : " + getOnlineDeviceTitleText());// Devices(2)
-		onlineDeviceCount = getCountOfDevices(getOnlineDeviceTitleText());
-		utils.log().info("Number of online devices connected to the main mAX Router is : " + onlineDeviceCount);
-	}
-
-	public void getOfflineDevicesCount() {
-		clickOfflineTab();
-		utils.log().info("Offline Device Page Title : " + getOfflineDeviceTitleText());
-		offlineDeviceCount = getCountOfDevices(getOfflineDeviceTitleText());
-		utils.log().info("Number of offline devices are : " + offlineDeviceCount);
-	}	
-
-	
-	//To verify the details of online devices
-	public void verifyOnlineDeviceDetails()
-	{
-		try {
-
-			utils.log().info("****************************************************");
-			utils.log().info("Details of Online Devices Connected to Main Device");
-			utils.log().info("****************************************************");
-
-			for (int i = 1; i <= onlineDeviceCount; i++) {
-				utils.log().info("Online Device : " + i);
-				utils.log().info("--------------------");
-				// me = (MobileElement)
-				// super.getDriver().findElementByXPath("//android.view.ViewGroup[@index="+i+"]");
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-								+ "]");
-				for (MobileElement e : entity) {
-					try {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
-								.isDisplayed())
-							utils.log().info("Device Image is displayed");
-					} catch (Exception exp) {
-						utils.log().info("Expand button is not available : ");
-					}
-
-					try {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']")
-								.isDisplayed()) {
-							utils.log().info("Expand Button Image is displayed");
-							click(e.findElementByXPath(
-									"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']"));
-							super.pause(2);
-						}
-					} catch (Exception exp) {
-						utils.log().info("Expand button is not available : ");
-					}
-
-					try {
-						utils.log()
-								.info("Device Name: " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
-										.getText());
-								deviceNames.add(e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Name is not available ");
-					}
-					try {
-						utils.log().info("Device Signal Strength : " + e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainSignalStrength']")
-								.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Signal Strength is not available ");
-					}
-					try {
-						utils.log().info("Device Download Speed : " + e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainDownloadSpeed']")
-								.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Download Speed data is not available ");
-					}
-					try {
-						utils.log().info("Device Upload Speed : " + e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainUpLoadSpeed']")
-								.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Upload Speed data is not available ");
-					}
-					try {
-						utils.log()
-								.info("Label : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("IP Address Label is not displayed ");
-					}
-					try {
-						utils.log()
-								.info("Device IP Address : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtIpAddress']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device IP Address is not available ");
-					}
-					try {
-						utils.log().info("Label : " + e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/macAddressTitle']")
-								.getText());
-					} catch (Exception exp) {
-						utils.log().info("MAC Address Label is not displayed");
-					}
-					try {
-						utils.log()
-								.info("Device MAC Address : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMacAddress']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device MAC Address is not available");
-					}
-					try {
-						utils.log()
-								.info("Label : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("Channel Label is not displayed");
-					}
-					try {
-						utils.log().info("Device Channel Number : " + e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtChannelValue']")
-								.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Channel Number is not available");
-					}
-					try {
-						utils.log()
-								.info("Label	: " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/statusTitle']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("Status Label is not displayed");
-					}
-					try {
-						utils.log()
-								.info("Device Status : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtStatus']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Status is not available");
-					}
-					try {
-						utils.log()
-								.info("Label : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssiTitle']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI Label is not displayed");
-					}
-					try {
-						utils.log()
-								.info("RSSI Value : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']")
-										.getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI data is not available ");
-					}
-
-					click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']"));
-
-					// utils.log().info("Clicked Collapse Button image");
-					utils.log().info("****************************************************");
-					utils.log().info("                                                    ");
-					counter++;
-				}
-				if (i >= 5)
-					new SwipeActions().swipeScreen(Direction.UP);
-				super.pause(3);
-			}
-		} catch (Exception ex) {
-			utils.log().info("Error in Online Devices Page ");
-		}
-	}
-	
-	
-	//To verify the details of online devices
-	public void verifyOfflineDeviceDetails() {
-		counter = 1;
-		utils.log().info("****************************************************");
-		utils.log().info("Details of Offline Devices Connected to Main Device");
-		utils.log().info("****************************************************");
-
-		for (int i = 1; i <= offlineDeviceCount; i++) {
-			utils.log().info("Offline Device : " + counter);
-			utils.log().info("--------------------");
-
-			List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-					"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-							+ "]");
-			for (MobileElement e : entity) {
-				try {
-					if (e.findElementById("com.arris.sbcBeta:id/imgDevice").isDisplayed())
-						utils.log().info("Device Image is displayed");
-				} catch (Exception exp) {
-					utils.log().info("Expand button is not available : ");
-				}
-				try {
-					utils.log()
-							.info("Device Name: " + e.findElementById("com.arris.sbcBeta:id/txtDeviceName").getText());
-				} catch (Exception exp) {
-					utils.log().info("Device Name is not available ");
-				}
-				try {
-					utils.log().info(e.findElementById("com.arris.sbcBeta:id/txtLastOnline").getText());
-				} catch (Exception exp) {
-					utils.log().info("Last Online data is not available ");
-				}
-
-				utils.log().info("****************************************************");
-				utils.log().info("                                                    ");
-				counter++;
-			}
-			if (i >= 7)
-				new SwipeActions().swipeScreen(Direction.UP);
-		}
-	}
-
-	// Verify if all the required UI elements are displayed on the Home Page
-	public void verifyUIOnDevicesPage() {
-		if (onlineDeviceTitle.isDisplayed())
-			utils.log().info("Device Title is displayed");
-		else
-			utils.log().info("Device Title - " + onlineDeviceTitle.getText() + " - is not displayed");
-
-		if (backButton.isDisplayed())
-			utils.log().info("Back Icon is displayed");
-		else
-			utils.log().info("Back Icon is displayed");
-
-		if (helpIcon.isDisplayed())
-			utils.log().info("Help Icon is displayed");
-		else
-			utils.log().info("Help Icon is displayed");
-
-		if (onlineButton.isDisplayed())
-			utils.log().info("Online Tab is displayed");
-		else
-			utils.log().info("Online Tab is not displayed");
-
-		if (offlineButton.isDisplayed())
-			utils.log().info("Offline Tab is displayed");
-		else
-			utils.log().info("Offline Tab is not displayed");
-
-		if (mainDeviceName.isDisplayed())
-			utils.log().info("Main Device name - " + mainDeviceName.getText() + " - is displayed");
-		else
-			utils.log().info("Main Device name is not displayed");
-	}
-	
-	
-	public void clickOnlineTab() {
-		click(onlineButton);
-		utils.log().info("Devices Page - Clicked on Online Tab");
-	}
-
-	public void clickOfflineTab() {
-		click(offlineButton);
-		utils.log().info("Devices Page - Clicked on Offile Tab");
-	}
-
-	public void clickBackButton() {
-		click(backButton);
-		utils.log().info("Devices Page - Clicked on Back Button");
-	}
-
-	public void clickHomeButton() {
-		homePage.getFooterIconsPageObject().clickHomeButton();
-		utils.log().info("Devices Page - Clicked on Home Button");
-	}
-
-	public void clickNetworkButton() {
-		homePage.getFooterIconsPageObject().clickNetworkButton();
-		utils.log().info("Devices Page - Clicked on Network Button");
-	}
-
-	public void clickParentalButton() {
-		homePage.getFooterIconsPageObject().clickParentalButton();
-		utils.log().info("Devices Page - Clicked on Parental Button");
-	}
-
-	public void clickHelpButton() {
-		click(helpIcon);
-		utils.log().info("Devices Page - Clicked on Help Button");
-	}
-
-	public void clickCloseButton() {
-		click(closeButton);
-		utils.log().info("Devices Help Page - Clicked on Close Button");
 	}
 
 	public HomePage getHomePageObject() {
@@ -514,33 +208,743 @@ public class MainDeviceAllTabPage extends ParentClass implements Page
 		return homePage;
 	}
 
-	public NetworkPage getNetworkPageObject() {
-		NetworkPage networkPage = new NetworkPage();
-		return networkPage;
-	}
-
-	public ParentalControlProfilesPage getParentalControlPageObject() {
-		ParentalControlProfilesPage parentalControlPage = new ParentalControlProfilesPage();
-		return parentalControlPage;
-	}
-
-	public DevicesHelpPage getDevicesHelpPageObject() {
-		DevicesHelpPage devicesHelpPage = new DevicesHelpPage();
-		return devicesHelpPage;
-	}
-
 	public FooterIconsPage getFooterIconsPageObject() {
 		FooterIconsPage footerIconsPage = new FooterIconsPage();
 		return footerIconsPage;
 	}
 
+	public MainRouterDetailsHelpPage getMainRouterDetailsHelpPageObject() {
+		MainRouterDetailsHelpPage routerDetialsHelpPage = new MainRouterDetailsHelpPage();
+		return routerDetialsHelpPage;
+	}
+
+	public EditMainDeviceNameDialog getEditMainDeviceNameDialogObject() {
+		EditMainDeviceNameDialog editDeviceNameDialog = new EditMainDeviceNameDialog();
+		return editDeviceNameDialog;
+	}
+
+	public EditDeviceNameDialog getEditDeviceNameDialogObject() {
+		EditDeviceNameDialog editDevNameDialog = new EditDeviceNameDialog();
+		return editDevNameDialog;
+	}
+	
+	public void increaseLedBrightnessSettings()
+	{
+		try {
+			click(ledExpandImage);
+			for(int i = 0; i < increaseBrightness.length; i++)
+			{
+				switch(increaseBrightness[i])
+				{
+					case 30 :
+						click(thirty);
+						utils.log().info("Increased LED light by 30%");
+						break;
+					case 60 :
+						click(sixty);
+						utils.log().info("Increased LED light by 60%");
+						break;
+					case 90 :
+						click(ninety);
+						utils.log().info("Increased LED light by 90%");
+						break;
+					default:
+						utils.log().info("Enter valid brightness value");	
+				}
+			}
+			click(ledExpandImage);
+			utils.log().info("-----------------------------");
+			utils.log().info("                             ");
+		}catch(Exception e)
+		{
+			utils.log().info("Enter valid brightness value");
+		}
+	}
+	
+	public void decreaseLedBrightnessSettings()
+	{
+		utils.log().info("                             ");
+		utils.log().info("-----------------------------");
+		try {
+			click(ledExpandImage);
+			for(int i = 0; i < decreaseBrightness.length; i++)
+			{
+				switch(decreaseBrightness[i])
+				{
+					case 90 :
+						click(ninety);
+						utils.log().info("Decrease LED light to 90%");
+						break;
+					case 60 :
+						click(sixty);
+						utils.log().info("Decrease LED light to 60%");
+						break;
+					case 30 :
+						click(thirty);
+						utils.log().info("Decrease LED light to 30%");
+						break;
+					default:
+						utils.log().info("Enter valid brightness value");	
+				}
+			}
+			click(ledExpandImage);
+			utils.log().info("-----------------------------");
+			utils.log().info("                             ");
+		}catch(Exception e)
+		{
+			utils.log().info("Enter valid brightness value");
+		}
+	}
+	
+	public void verifyUIOnLedSettings() {
+		utils.log().info("                         ");
+		utils.log().info("**************************");
+		utils.log().info("LED Settings Verficiation");
+		utils.log().info("*************************");
+		try {
+			if (ledSettingsText.isDisplayed())
+				utils.log().info(ledSettingsText.getText() + " text is displayed ");
+		} catch (Exception e) {
+			utils.log().info("LED SEttings text is not displayed");
+		}
+
+		try {
+			if (ledExpandImage.isDisplayed())
+				utils.log().info("Expand button image is displayed ");
+			click(ledExpandImage);
+		} catch (Exception e) {
+			utils.log().info("Expand button image is not displayed");
+		}
+
+		try {
+			if (ledColorImage.isDisplayed())
+				utils.log().info("Brightness Icon is displayed");
+		} catch (Exception e) {
+			utils.log().info("Brightness Icon is not displayed");
+		}
+
+		try {
+			if (ledMoonColorImage.isDisplayed())
+				utils.log().info("Moon Image is displayed");
+		} catch (Exception e) {
+			utils.log().info("Moon Image is not displayed");
+		}
+
+		try {
+			if (ledSunColorImage.isDisplayed())
+				utils.log().info("Sun Brightness image is displayed");
+		} catch (Exception e) {
+			utils.log().info("Sun Brightness image is not displayed");
+		}
+
+		try {
+			if (chooseColorBrightnessLabel.isDisplayed())
+				utils.log().info("Choose Color Brightness label is displayed");
+		} catch (Exception e) {
+			utils.log().info("Choose Color Brightness label is not displayed");
+		}
+
+		try {
+			if (ten.isDisplayed())
+				utils.log().info("Scale of 10 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 10 is not displayed");
+		}
+
+		try {
+			if (twenty.isDisplayed())
+				utils.log().info("Scale of 20 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 20 is not displayed");
+		}
+
+		try {
+			if (thirty.isDisplayed())
+				utils.log().info("Scale of 30 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 30 is not displayed");
+		}
+
+		try {
+			if (forty.isDisplayed())
+				utils.log()
+						.info("Scale of 40 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 40 is not displayed");
+		}
+
+		try {
+			if (fifty.isDisplayed())
+				utils.log().info("Scale of 50 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 50 is displayed");
+		}
+
+		try {
+			if (sixty.isDisplayed())
+				utils.log().info("Scale of 60 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 60 is not displayed");
+		}
+
+		try {
+			if (seventy.isDisplayed())
+				utils.log().info("Scale of 70 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 70 is not displayed");
+		}
+
+		try {
+			if (eighty.isDisplayed())
+				utils.log().info("Scale of 80 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 80 is not displayed");
+		}
+		
+		try {
+			if (ninety.isDisplayed())
+				utils.log().info("Scale of 90 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 80 is not displayed");
+		}
+		
+		try {
+			if (hundred.isDisplayed())
+				utils.log().info("Scale of 100 is displayed");
+		} catch (Exception e) {
+			utils.log().info("Scale of 100 is not displayed");
+		}
+		
+		try {
+			click(ledExpandImage);
+			utils.log().info("Clicked on collapse button image");
+		} catch (Exception e) {
+			utils.log().info("Collapse button image is not displayed");
+		}
+	}
+
+	public void clickAllTab() {
+		try {
+			click(allTab);
+			utils.log().info("Clicked on All tab ");
+		} catch (Exception exp) {
+			utils.log().info("All Tab is not displayed ");
+		}
+	}
+
+	public void click5GhzTab() {
+		try {
+			click(fiveGhzTab);
+			utils.log().info("Clicked on 5GHz tab ");
+		} catch (Exception exp) {
+			utils.log().info("5GHz Tab is not displayed ");
+		}
+	}
+
+	public void click24GhzTab() {
+		try {
+			click(twentyFourGhzTab);
+			utils.log().info("Clicked on 2.4GHz tab ");
+		} catch (Exception exp) {
+			utils.log().info("2.4GHz Tab is not displayed ");
+		}
+	}
+
+	public void clickEthernetTab() {
+		try {
+			click(ethernetTab);
+			utils.log().info("Clicked on Ethernet tab ");
+		} catch (Exception exp) {
+			utils.log().info("Ethernet Tab is not displayed ");
+		}
+	}
+
+	public void clickHelpButton() {
+		try {
+			click(helpIcon);
+			utils.log().info("Clicked on Main Router Help tab ");
+		} catch (Exception exp) {
+			utils.log().info("Help Icon is not displayed ");
+		}
+	}
+
+	public void clickBackButton() {
+		try {
+			click(backIcon);
+			utils.log().info("Clicked on Back button ");
+		} catch (Exception exp) {
+			utils.log().info("Back Button is not displayed ");
+		}
+	}
+
+	public void getAllDevicesCount() {
+		// this.clickAllTab();
+		allDevicesCount = super.getAllCountOfDevices(connectedDevicesCountText.getText());
+		utils.log().info("Number of online devices connected to the main mAX Router is : " + allDevicesCount);
+	}
+
+	public void get5GHzDevicesCount() {
+		fiveGHzDevicesCount = super.get5GHzCountOfDevices(fiveGhzDeviceCount.getText());
+		utils.log().info("Number of 5GHz devices connected to the main mAX Router is : " + fiveGHzDevicesCount);
+	}
+
+	public void get24GHzDevicesCount() {
+		twoFourGHzDevicesCount = super.get24GHzCountOfDevices(twoFourGhzDeviceCount.getText());
+		utils.log().info("Number of 2.4GHz devices connected to the main mAX Router is : " + twoFourGHzDevicesCount);
+	}
+
+	public void verifyDevicesCount() {
+		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText()))
+		{
+			utils.log().info("");
+			utils.log().info("Device Count displayed on the main device image is equal to the Connected Devices count");
+			utils.log().info("");
+		}
+		else
+			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
+	}
+
+	public void changeMainDeviceName() {
+		try {
+			click(mainRouterName);
+			utils.log().info("Clicked on Main Router Name ");
+			utils.log().info("--------------------------- ");
+		} catch (Exception exp) {
+			utils.log().info("Main Router name is not displayed ");
+		}
+	}
+
+	public void changeDeviceName() {
+		try {
+			click(deviceName1);
+			utils.log().info("Clicked on Device " + deviceName1.getText());
+			utils.log().info("----------------------------------- ");
+		} catch (Exception exp) {
+			utils.log().info("Device Name is not displayed ");
+		}
+	}
+
+	public void verifyUIOnMainDevicePage() {
+		try {
+			if (mainTitle.isDisplayed())
+				utils.log().info(mainTitle.getText() + " Title text is displayed ");
+		} catch (Exception e) {
+			utils.log().info("Main title text is not displayed");
+		}
+
+		try {
+			if (backIcon.isDisplayed())
+				utils.log().info("Back Icon image is displayed ");
+		} catch (Exception e) {
+			utils.log().info("EBack Icon image is not displayed");
+		}
+
+		try {
+			if (helpIcon.isDisplayed())
+				utils.log().info("Help Icon is displayed");
+		} catch (Exception e) {
+			utils.log().info("Help Icon is not displayed");
+		}
+
+		try {
+			if (allTab.isDisplayed())
+				utils.log().info("All tab is displayed");
+		} catch (Exception e) {
+			utils.log().info("All tab is not displayed");
+		}
+
+		try {
+			if (fiveGhzTab.isDisplayed())
+				utils.log().info("5GHz tab is displayed");
+		} catch (Exception e) {
+			utils.log().info("5GHz tab is not displayed");
+		}
+
+		try {
+			if (twentyFourGhzTab.isDisplayed())
+				utils.log().info("2.4GHz tab is displayed");
+		} catch (Exception e) {
+			utils.log().info("2.4GHz tab is not displayed");
+		}
+
+		try {
+			if (ethernetTab.isDisplayed())
+				utils.log().info("Ethernet tab is displayed");
+		} catch (Exception e) {
+			utils.log().info("Ethernet tab is not displayed");
+		}
+
+		try {
+			if (mainRouterImage.isDisplayed())
+				utils.log().info("Main Router image is displayed");
+		} catch (Exception e) {
+			utils.log().info("Main Router image is not displayed");
+		}
+
+		try {
+			if (totalDeviceImage.isDisplayed())
+				utils.log().info(totalDeviceImage.getText() + " devices are connected to the Main Router ");
+		} catch (Exception e) {
+			utils.log().info("Count of devices connected to the Main Router is not displayed");
+		}
+
+		try {
+			if (excellentDeviceImage.isDisplayed())
+				utils.log()
+						.info(excellentDeviceImage.getText() + " excellent devices are connected to the Main Router");
+		} catch (Exception e) {
+			utils.log().info("Count of excellent devices connected to the Main Router is not displayed");
+		}
+
+		try {
+			if (mediumDeviceImage.isDisplayed())
+				utils.log().info(mediumDeviceImage.getText() + " medium devices are connected to the Main Router");
+		} catch (Exception e) {
+			utils.log().info("Count of medium devices connected to the Main Router is not displayed");
+		}
+
+		try {
+			if (poorDeviceImage.isDisplayed())
+				utils.log().info(poorDeviceImage.getText() + " poor devices are connected to the Main Router");
+		} catch (Exception e) {
+			utils.log().info("Count of poor devices connected to the Main Router is not displayed");
+		}
+
+		try {
+			if (mainRouterName.isDisplayed())
+				utils.log().info("Main Router Device Name is " + mainRouterName.getText());
+		} catch (Exception e) {
+			utils.log().info("Main Router Name is not displayed");
+		}
+
+		try {
+			if (mainRouterStatus.isDisplayed())
+				utils.log().info("Main Router Status " + mainRouterStatus.getText());
+		} catch (Exception e) {
+			utils.log().info("Main Router Status is not displayed");
+		}
+	}
+
+	// To verify the details of all connected devices
+	public void verifyConnectedDeviceDetails() {
+		try {
+			utils.log().info("                                               ");
+			utils.log().info("***********************************************");
+			utils.log().info("Details of All Devices Connected to Main Router");
+			utils.log().info("***********************************************");
+
+			this.getAllDevicesCount();
+			if (connectedDevicesExpandImage.isDisplayed()) {
+				click(connectedDevicesExpandImage);
+				utils.log().info("Clicked on Connected Devices Expand button ");
+			} else {
+				utils.log().info("Connected Devices Expand button is not available");
+			}
+
+			for (int i = 1; i <= allDevicesCount; i++) {
+				utils.log().info("Connected Device  : " + i);
+				utils.log().info("--------------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
+								+ i + "]");
+
+				for (MobileElement e : entity) {
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
+								.isDisplayed())
+							utils.log().info("Device Image is displayed");
+					} catch (Exception exp) {
+						utils.log().info("Device Image is not displayed ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
+								.isDisplayed())
+							utils.log().info("Device Name: " + e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
+									.getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Name is not available ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
+								.isDisplayed()) {
+							utils.log().info("Device Signal Strength : " + e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
+									.getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("Device Signal Strength data is not available ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceDownloadSpeed']")
+								.isDisplayed()) {
+							utils.log().info("Device Download Speed : " + e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceDownloadSpeed']")
+									.getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("Device Download Speed data is not available ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']")
+								.isDisplayed()) {
+							utils.log().info("Device Upload Speed : " + e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']")
+									.getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("Device Upload Speed data is not available ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
+								.isDisplayed()
+								&& e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceIpAddress']")
+										.isDisplayed()) {
+							utils.log().info(e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
+									.getText()
+									+ " : "
+									+ e.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceIpAddress']")
+											.getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("IP Address Details are not available or displayed ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/tv_mac_address']")
+								.isDisplayed()
+								&& e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceIpAddress']")
+										.isDisplayed()) {
+							utils.log().info(e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/tv_mac_address']")
+									.getText()
+									+ " : "
+									+ e.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceMacAddress']")
+											.getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("MAC Address Details are not available or displayed ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
+								.isDisplayed()
+								&& e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceChannel']")
+										.isDisplayed()) {
+							utils.log().info(e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
+									.getText()
+									+ " : "
+									+ e.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceChannel']")
+											.getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("Channel Details are not available or displayed ");
+					}
+
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']").isDisplayed()
+								&& e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssi']")
+										.isDisplayed()) {
+							utils.log().info(e
+									.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']")
+									.getText()
+									+ " : "
+									+ e.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssi']")
+											.getText());
+						}
+					} catch (Exception exp) {
+						utils.log().info("RSSI Details are not available or displayed ");
+					}
+
+					utils.log().info("****************************************************");
+					utils.log().info("                                                    ");
+					counter++;
+				}
+				if (i == 1)
+					new SwipeActions().swipeScreen(Direction.UP);
+				super.pause(3);
+			}
+
+		} catch (Exception ex) {
+			utils.log().info("Error found when verifying Connected Device Details on Main Device Page All Tab ");
+		}
+
+		new SwipeActions().swipeScreen(Direction.DOWN);
+		if (connectedDevicesExpandImage.isDisplayed()) {
+			click(connectedDevicesExpandImage);
+			utils.log().info("Clicked on Connected Devices Collapse button ");
+		} else {
+			utils.log().info("Connected Devices Collapse button is not available");
+		}
+	}
+
+	public void verifyMainRouterDetails() {
+		new SwipeActions().swipeScreen(Direction.UP);
+		super.waitForVisibility(mainRouterExpandImage);
+
+		if (mainRouterExpandImage.isDisplayed()) {
+			try {
+				if (detailsText.isDisplayed())
+					utils.log().info("Details Text is displayed");
+			} catch (Exception exp) {
+				utils.log().info("Details Text is not displayed ");
+			}
+
+			try {
+				if (mainRouterExpandImage.isDisplayed()) {
+					click(mainRouterExpandImage);
+					utils.log().info("Clicked on Main Router Device Expand Image");
+					new SwipeActions().swipeScreen(Direction.UP);
+					super.pause(3);
+				}
+			} catch (Exception exp) {
+				utils.log().info("Details Text is not displayed ");
+			}
+
+			try {
+				if (channelLabel.isDisplayed()) {
+					if (fiveGhzDeviceCount.isDisplayed())
+						utils.log().info("Channel : " + fiveGhzDeviceCount.getText());
+					else
+						utils.log().info("Count of 5GHz devices connected to Main Router is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("Channel Label is not displayed ");
+			}
+
+			try {
+				if (channelLabel.isDisplayed()) {
+					if (twoFourGhzDeviceCount.isDisplayed())
+						utils.log().info("Channel : " + twoFourGhzDeviceCount.getText());
+					else
+						utils.log().info("Count of 2.4GHz devices connected to Main Router is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("Channel Label is not displayed ");
+			}
+
+			try {
+				if (wanIPAddressLabel.isDisplayed()) {
+					if (mainDeviceWANIPAddress.isDisplayed())
+						utils.log().info("WAN IP Address : " + mainDeviceWANIPAddress.getText());
+					else
+						utils.log().info("WAN IP Address of the Main Router is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("WAN IP Address Label is not displayed ");
+			}
+
+			try {
+				if (lanIPAddressLabel.isDisplayed()) {
+					if (mainDeviceLANIPAddress.isDisplayed())
+						utils.log().info("LAN IP Address : " + mainDeviceLANIPAddress.getText());
+					else
+						utils.log().info("LAN IP Address of the Main Router is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("LAN IP Address Label is not displayed ");
+			}
+
+			try {
+				if (macAddressLabel.isDisplayed()) {
+					if (mainDeviceMACAddress.isDisplayed())
+						utils.log().info("MAC Address : " + mainDeviceMACAddress.getText());
+					else
+						utils.log().info("MAC Address of the Main Router is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("MAC Address Label is not displayed ");
+			}
+
+			try {
+				if (serialNumberLabel.isDisplayed()) {
+					if (mainDeviceSerialNumber.isDisplayed())
+						utils.log().info("Serial No. : " + mainDeviceSerialNumber.getText());
+					else
+						utils.log().info("Serial No. of the Main Router is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("Serial No. Label is not displayed ");
+			}
+
+			try {
+				if (firmwareLabel.isDisplayed()) {
+					if (firmwareVersion.isDisplayed())
+						utils.log().info("Firmware : " + firmwareVersion.getText());
+					else
+						utils.log().info("Firmware version is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("Firmware Label is not displayed ");
+			}
+
+			try {
+				if (mainDeviceModelNoLabel.isDisplayed()) {
+					if (mainDeviceModelNumber.isDisplayed())
+						utils.log().info("Model No. : " + mainDeviceModelNumber.getText());
+					else
+						utils.log().info("Model No. of the Main Router is not displayed ");
+				}
+			} catch (Exception exp) {
+				utils.log().info("Model No. Label is not displayed ");
+			}
+
+			try {
+				if (restartRouterButton.isDisplayed())
+					utils.log().info("Restart Router Button is displayed");
+			} catch (Exception exp) {
+				utils.log().info("Restart Router Button is not displayed");
+			}
+
+			try {
+				if (mainRouterExpandImage.isDisplayed()) {
+					click(mainRouterExpandImage);
+					utils.log().info("Clicked on Main Router Device Collapse Image");
+					new SwipeActions().swipeScreen(Direction.DOWN);
+					super.pause(3);
+				}
+			} catch (Exception exp) {
+				utils.log().info("Main Router Collapse Image is not displayed ");
+			}
+		} else
+			utils.log().info("Main Router Details Expand Button is either not visible or is not present in the DOM");
+	}
+
 	@Override
 	public boolean isAt() {
-		if (onlineDeviceTitle.isDisplayed()) {
-			utils.log().info("On Devices Page");
+		if (mainTitle.isDisplayed()) {
+			utils.log().info("                    ");
+			utils.log().info("--------------------");
+			utils.log().info("On MAIN Router Page");
 			return true;
 		} else {
-			utils.log().info("Not on Devices Page");
+			utils.log().info("Not on MAIN Page");
 			return false;
 		}
 	}

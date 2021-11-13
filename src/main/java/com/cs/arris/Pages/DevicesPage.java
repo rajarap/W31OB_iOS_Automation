@@ -532,6 +532,8 @@ public class DevicesPage extends ParentClass implements Page
 	@Override
 	public boolean isAt() {
 		if (onlineDeviceTitle.isDisplayed()) {
+			utils.log().info("                ");
+			utils.log().info("----------------");
 			utils.log().info("On Devices Page");
 			return true;
 		} else {

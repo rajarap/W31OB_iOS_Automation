@@ -596,17 +596,9 @@ public class ParentClass
 		public Integer getCountOfDevicesWithSpace(String noOfDevicesText) 
 		{
 			//From Home page Devices (2)
-			
-			//String[] devices = noOfDevicesText.trim().split(" "); //Devices(12)
-			String devices = noOfDevicesText.trim(); //Device (12)
-			int length = devices.length();
-			if (length == 11)//Devices (2)
-			{
-				return Integer.valueOf(devices.substring(9, 10));
-			} else
-			{
-				return Integer.valueOf(devices.substring(9, 11));
-			}
+			String text = noOfDevicesText.replaceAll("\\p{P}", "");
+			String[] devices = text.trim().split("");  //3
+			return Integer.valueOf(devices[1]);
 		}
 		
 		public Integer getCountOfDevices(String noOfDevicesText) 
@@ -671,6 +663,27 @@ public class ParentClass
 			int max = 2;
 			Random rand = new Random();
 			randNumber = rand.nextInt(max - min + 1) + min;
+		}
+
+		public Integer getAllCountOfDevices(String totalDevices) {
+			//Connected Devices (3)  Connected Devices (13)
+			String text = totalDevices.replaceAll("\\p{P}", "");
+			String[] allDevices = text.trim().split(" ");  //3
+			return Integer.valueOf(allDevices[2]);
+		}
+		
+		public Integer get5GHzCountOfDevices(String totalDevices) {
+			//Connected Devices (3)  Connected Devices (13)
+			String text = totalDevices.replaceAll("\\p{P}", "");
+			String[] allDevices = text.trim().split(" ");  //3
+			return Integer.valueOf(allDevices[0]);
+		}
+		
+		public Integer get24GHzCountOfDevices(String totalDevices) {
+			//Connected Devices (3)  Connected Devices (13)
+			String text = totalDevices.replaceAll("\\p{P}", "");
+			String[] allDevices = text.trim().split(" ");  //3
+			return Integer.valueOf(allDevices[0]);
 		}
 }
 	

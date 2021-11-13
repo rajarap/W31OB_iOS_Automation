@@ -158,10 +158,10 @@ TestUtils utils = new TestUtils();
     }
     
     //Home Page
-    public static TC61_Login_And_Verify_ParentalControl_Workflow homePage(Consumer<HomePage> c){
+    public TC61_Login_And_Verify_ParentalControl_Workflow homePage(Consumer<HomePage> c){
     	HomePage p = new HomePage();
         c.accept(p);
-        return new TC61_Login_And_Verify_ParentalControl_Workflow();
+        return this;
     }
     
     //Devices Page - Till here
