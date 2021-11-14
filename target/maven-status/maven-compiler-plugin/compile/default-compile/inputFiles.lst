@@ -14,6 +14,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NotificationPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Interface/Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SignupPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/MainDevice24GHzTabPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NameYourNetwokSSIDPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SiginPage.java
@@ -22,6 +23,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/RetrieveOTPPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/BlankBlockedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/DevicesPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/MainDeviceEthernetTabPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Utilities/InValidOTP.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/OptimizeYourNetworkPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/BlankSpeedTestHistoryPage.java
@@ -47,6 +49,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SettingsHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0000_1603_Failure_To_Configure_Your_Router_Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/EditMainDeviceNameDialog.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/MainDevice5GHzTabPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Utilities/GetOTPFromNada.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/DevicesHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Base/ParentClass.java

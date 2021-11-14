@@ -119,6 +119,7 @@ public class EditDeviceNameDialog extends ParentClass implements Page
 		{
 			click(saveButton);
 			utils.log().info("Clicked on Save Changes Button");
+			utils.log().info("                              ");
 			super.pause(3);
 		}catch (Exception e) {
 			utils.log().info("Save Changes button is not displayed");
@@ -142,6 +143,7 @@ public class EditDeviceNameDialog extends ParentClass implements Page
 		{
 			String device = enterDeviceName.getText();
 			String editedName = device + "-1";
+			super.editedDeviceName = editedName;
 			super.clear(enterDeviceName);
 			super.sendKeys(enterDeviceName, editedName);
 			utils.log().info("Changed device name from " + device + " to " + editedName);
@@ -154,9 +156,9 @@ public class EditDeviceNameDialog extends ParentClass implements Page
 	@Override
 	public boolean isAt() {
 			if (editDeviceNameTitle.isDisplayed()) {
-				utils.log().info("                           ");
-				utils.log().info("---------------------------");
+				utils.log().info("                          ");
 				utils.log().info("On Edit Device Name Dialog");
+				utils.log().info("--------------------------");
 				return true;
 			} else {
 				utils.log().info("Not on Edit Device Name Dialog");

@@ -23,15 +23,15 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class MainDeviceAllTabPage extends ParentClass implements Page {
+public class MainDevice5GHzTabPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public List<String> signal = new ArrayList<String>();
 	public String fiveGhzDevice;
 	public String twoFourGhzDevice;
+	public String editedDevName;
 	public int allDevicesCount;
 	public int fiveGHzDevicesCount;
 	public int twoFourGHzDevicesCount;
-	public int counter = 1;
 	public int counter5 = 0;
 	public int counter24 = 0;
 	public int counterEthernet = 0;
@@ -206,7 +206,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/restartRouter")
 	public MobileElement restartRouterButton;
 
-	public MainDeviceAllTabPage() {
+	public MainDevice5GHzTabPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
@@ -235,21 +235,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		return editDevNameDialog;
 	}
 
-	public MainDevice5GHzTabPage get5GHzPageObject() {
-		MainDevice5GHzTabPage device5GHz = new MainDevice5GHzTabPage();
-		return device5GHz;
-	}
-
-	public MainDevice24GHzTabPage get24GHzPageObject() {
-		MainDevice24GHzTabPage device24GHz = new MainDevice24GHzTabPage();
-		return device24GHz;
-	}
-		
-		public MainDeviceEthernetTabPage getEthernetPageObject() {
-			MainDeviceEthernetTabPage ethernetDevice = new MainDeviceEthernetTabPage();
-			return ethernetDevice;
-	}
-
 	public void increaseLedBrightnessSettings() {
 		try {
 			click(ledExpandImage);
@@ -273,12 +258,14 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			}
 			click(ledExpandImage);
 			utils.log().info("-----------------------------");
+			utils.log().info("                             ");
 		} catch (Exception e) {
 			utils.log().info("Enter valid brightness value");
 		}
 	}
 
 	public void decreaseLedBrightnessSettings() {
+		utils.log().info("                             ");
 		utils.log().info("-----------------------------");
 		try {
 			click(ledExpandImage);
@@ -302,6 +289,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			}
 			click(ledExpandImage);
 			utils.log().info("-----------------------------");
+			utils.log().info("                             ");
 		} catch (Exception e) {
 			utils.log().info("Enter valid brightness value");
 		}
@@ -427,7 +415,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 
 		try {
 			click(ledExpandImage);
-//			utils.log().info("Clicked on collapse button image");
+			utils.log().info("Clicked on collapse button image");
 		} catch (Exception e) {
 			utils.log().info("Collapse button image is not displayed");
 		}
@@ -494,19 +482,15 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	}
 
 	public void get5GHzDevicesCount() {
-		fiveGHzDevicesCount = super.get5GHzCountOfDevices(fiveGhzDeviceCount.getText());
+		fiveGHzDevicesCount = super.get5GHzCountOfDevices(this.fiveGhzDevice);
 		utils.log().info("Number of 5GHz devices connected to the main mAX Router is : " + fiveGHzDevicesCount);
-	}
-
-	public void get24GHzDevicesCount() {
-		twoFourGHzDevicesCount = super.get24GHzCountOfDevices(twoFourGhzDeviceCount.getText());
-		utils.log().info("Number of 2.4GHz devices connected to the main mAX Router is : " + twoFourGHzDevicesCount);
 	}
 
 	public void changeMainDeviceName() {
 		try {
 			click(mainRouterName);
 			utils.log().info("Clicked on Main Router Name ");
+			utils.log().info("--------------------------- ");
 		} catch (Exception exp) {
 			utils.log().info("Main Router name is not displayed ");
 		}
@@ -515,13 +499,14 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public void changeDeviceName() {
 		try {
 			click(deviceName1);
-//			utils.log().info("Clicked on Device " + deviceName1.getText());
+			utils.log().info("Clicked on Device " + deviceName1.getText());
+			utils.log().info("----------------------------------- ");
 		} catch (Exception exp) {
 			utils.log().info("Device Name is not displayed ");
 		}
 	}
 
-	public void verifyUIOnMainDevicePage() {
+	public void verifyUIOn5GHzDevicePage() {
 		try {
 			if (mainTitle.isDisplayed())
 				utils.log().info(mainTitle.getText() + " Title text is displayed ");
@@ -625,18 +610,18 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	// To verify the details of all connected devices
 	public void verifyConnectedDeviceDetails() {
 		try {
-			utils.log().info("                                               ");
-			utils.log().info("***********************************************");
-			utils.log().info("Details of All Devices Connected to Main Router");
-			utils.log().info("***********************************************");
+			utils.log().info("***************************************************");
+			utils.log().info("Details of 5.0 GHz Devices Connected to Main Router");
+			utils.log().info("***************************************************");
 
 			this.getAllDevicesCount();
 			if (connectedDevicesExpandImage.isDisplayed()) {
 				click(connectedDevicesExpandImage);
-//				utils.log().info("Clicked on Connected Devices Expand button ");
+				utils.log().info("                                                 ");
 			} else {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
+			
 			if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
@@ -663,6 +648,9 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 								utils.log().info("Device Name: " + e.findElementByXPath(
 										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
 										.getText());
+							editedDevName = e.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
+									.getText();
 						} catch (Exception exp) {
 							utils.log().info("Device Name is not available ");
 						}
@@ -783,17 +771,18 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 						}
 
 						utils.log().info("****************************************************");
-//						utils.log().info("                                                    ");
+						utils.log().info("                                                    ");
 					}
 					if (i == 1)
 						new SwipeActions().swipeScreen(Direction.UP);
 					super.pause(3);
 				}
 			} else
-				utils.log().info("Currently there are no devices connected to the main Router ");
+				utils.log()
+						.info("Currently there are no devices with signal strength 5GHz connected to the main Router ");
 
 		} catch (Exception ex) {
-			utils.log().info("Error found when verifying Connected Device Details on Main Device Page All Tab ");
+			utils.log().info("Error found when verifying Connected Device Details on Main Device Page 5.0 GHz Tab ");
 		}
 
 		new SwipeActions().swipeScreen(Direction.DOWN);
@@ -801,16 +790,14 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			click(connectedDevicesExpandImage);
 //			utils.log().info("Clicked on Connected Devices Collapse button ");
 		} else {
-			utils.log().info("Currently no devices are connected to the main router");
+			utils.log().info("Currently no 5GHz devices are connected to the main router");
 		}
 	}
 
 	public void verifyMainRouterDetails() {
 		new SwipeActions().swipeScreen(Direction.UP);
 		super.waitForVisibility(mainRouterExpandImage);
-		utils.log().info("***************************************************");
-		utils.log().info("Details of MAIN Router Device                      ");
-		utils.log().info("***************************************************");
+
 		if (mainRouterExpandImage.isDisplayed()) {
 			try {
 				if (detailsText.isDisplayed())
@@ -937,19 +924,22 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 					super.pause(3);
 				}
 			} catch (Exception exp) {
-//				utils.log().info("Main Router Collapse Image is not displayed ");
+				utils.log().info("Main Router Collapse Image is not displayed ");
 			}
 		} else
 			utils.log().info("Main Router Details Expand Button is either not visible or is not present in the DOM");
 	}
 
 	public void validations() {
-		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText()))
-			utils.log().info("Count of All devices displayed on the main device image is equal to the Connected Devices count");
+		utils.log().info(String.valueOf(allDevicesCount));
+		utils.log().info(totalDeviceImage.getText());
+		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText())) 
+			utils.log().info("Count of 5.0 GHz devices displayed on the main device image is equal to the Connected Devices count");
 		else
-			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
+			utils.log().info("Count of 5.0 GHz devices displayed on the main device image is not equal to the Connected Devices count");
+
 		for (String str : signal) {
-			if (str.contains("5GHz") || str.contains("5.0GHz"))
+			if (str.contains("5GHz") || str.contains("5GHz"))
 				counter5 += 1;
 			else if (str.contains("2.4GHz")) {
 				counter24 += 1;
@@ -957,17 +947,21 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 				counterEthernet += 1;
 			}
 		}
-		utils.log().info("Number of Devices with 5.0 GHz signal Strength conntected to the main router are : " + counter5);
-		utils.log().info("Number of Devices with 2.4 GHz signal Strength conntected to the main router are : " + counter24);
-		utils.log().info("Number of Ethernet Devices conntected to the main router are : " + counterEthernet);
-		utils.log().info("                                                                                 ");
+
+		if (fiveGHzDevicesCount == counter5) {
+			utils.log().info("All devices listed under the 5.0 GHz tab contains signal strength of 5GHz");
+			utils.log().info("                                                                         ");}
+		else
+			utils.log().info("Not all devices listed under the 5.0 GHz tab contains signal strength of 5GHz.  " + counter5
+							+ " 5GHz devices, " + counter24 + " 2.4GHz devices and " + counterEthernet
+							+ " Ethernet devices are listed under 5.0 GHz tab");
 	}
 
 	@Override
 	public boolean isAt() {
 		if (mainTitle.isDisplayed()) {
-			utils.log().info("On MAIN Router Page ");
-			utils.log().info("********************");
+			utils.log().info("********** On MAIN Router Page **********");
+			utils.log().info("*****************************************");
 			return true;
 		} else {
 			utils.log().info("Not on MAIN Page");

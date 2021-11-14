@@ -3,6 +3,8 @@ com/cs/arris/Pages/TurnOnBluetoothDialog.class
 com/cs/arris/Utilities/InValidOTP.class
 com/cs/arris/Listeners/TestListener.class
 com/cs/arris/Pages/ParentalControlAlertDialog.class
+com/cs/arris/Pages/MainDevice24GHzTabPage.class
+com/cs/arris/Pages/MainDeviceEthernetTabPage.class
 com/cs/arris/Pages/FooterIconsPage.class
 com/cs/arris/Pages/GenerateEmailAndPasscode.class
 com/cs/arris/Pages/AccessResourcesOnDevicePage.class
@@ -100,6 +102,7 @@ com/cs/arris/Pages/ParentalControlPauseInternetforAllProfilesDialog.class
 com/cs/arris/Pages/SiginPage.class
 com/cs/arris/Pages/ResendOTPDialog.class
 com/cs/arris/Pages/CodeVerifiedPage.class
+com/cs/arris/Pages/MainDevice5GHzTabPage.class
 com/cs/arris/Pages/ParentalControlAddRuleAddInternetBlockingScheduleDialog.class
 com/cs/arris/Pages/BlueToothPage.class
 com/cs/arris/Pages/ValidationCodePage.class

@@ -107,6 +107,7 @@ public class ParentClass
 	public String ssidpwd;
 	public String randNum;
 	public String profileName;
+	public String editedDeviceName;
 	public int randNumber;
 	public List<String> profileNames = new ArrayList<String>();
 	public List<String> selectedProfileNames = new ArrayList<String>();
@@ -673,16 +674,14 @@ public class ParentClass
 		}
 		
 		public Integer get5GHzCountOfDevices(String totalDevices) {
-			//Connected Devices (3)  Connected Devices (13)
-			String text = totalDevices.replaceAll("\\p{P}", "");
-			String[] allDevices = text.trim().split(" ");  //3
+			//2 Devices ( 5 GHz)
+			String[] allDevices = totalDevices.trim().split(" ");  //2
 			return Integer.valueOf(allDevices[0]);
 		}
 		
 		public Integer get24GHzCountOfDevices(String totalDevices) {
-			//Connected Devices (3)  Connected Devices (13)
-			String text = totalDevices.replaceAll("\\p{P}", "");
-			String[] allDevices = text.trim().split(" ");  //3
+			//2 Devices ( 2.4 GHz)
+			String[] allDevices = totalDevices.trim().split(" ");  //2
 			return Integer.valueOf(allDevices[0]);
 		}
 }

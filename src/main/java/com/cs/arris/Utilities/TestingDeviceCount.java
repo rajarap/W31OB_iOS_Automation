@@ -21,7 +21,9 @@ public class TestingDeviceCount
 //		System.out.println(count.toString());
 		
 		ParentClass pc = new ParentClass();
-		pc.getAllCountOfDevices("Connected Devices (4)");
+		System.out.println(pc.getAllCountOfDevices("Connected Devices (4)"));
+		System.out.println(pc.get5GHzCountOfDevices("2 Devices ( 5 GHz)"));
+		System.out.println(pc.get24GHzCountOfDevices("2 Devices ( 2.4 GHz)"));
 //		System.out.println(i);
 //		System.out.println(java.time.LocalTime.now());
 	

@@ -120,9 +120,12 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 	{
 		try
 		{
+			String device = enterDeviceName.getText();
+			String editedName = device + "-1";
+			super.editedDeviceName = editedName;
 			super.clear(enterDeviceName);
-			super.sendKeys(enterDeviceName, "MAIN-DEVICE");
-			utils.log().info("Changed Router name from MAIN to MAIN-DEVICE");
+			super.sendKeys(enterDeviceName, editedName);
+			utils.log().info("Changed device name from " + device + " to " + editedName);
 		}catch (Exception e) {
 			utils.log().info("Edit Router name text box is not displayed");
 		}
@@ -131,9 +134,8 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 	@Override
 	public boolean isAt() {
 		if (editDeviceNameTitle.isDisplayed()) {
-			utils.log().info("                               ");
-			utils.log().info("-------------------------------");
 			utils.log().info("On Edit Main Device Name Dialog");
+			utils.log().info("-------------------------------");
 			return true;
 		} else {
 			utils.log().info("Not on Edit Main Device Name Dialog");

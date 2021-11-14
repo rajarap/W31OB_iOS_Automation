@@ -125,7 +125,7 @@ public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
 				mainDevice.increaseLedBrightnessSettings();
 				mainDevice.verifyConnectedDeviceDetails();
 				mainDevice.verifyMainRouterDetails();
-				mainDevice.verifyDevicesCount();
+				
 				mainDevice.changeMainDeviceName();
 				if(mainDevice.getEditMainDeviceNameDialogObject().isAt())
 				{
@@ -142,6 +142,35 @@ public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
 					mainDevice.getEditDeviceNameDialogObject().clickSaveButton();
 					super.pause(5);
 				}
+				mainDevice.validations();
+				
+				mainDevice.click5GhzTab();
+//				mainDevice.get5GHzPageObject().verifyUIOn5GHzDevicePage();
+//				mainDevice.get5GHzPageObject().verifyUIOnLedSettings();
+//				mainDevice.get5GHzPageObject().decreaseLedBrightnessSettings();
+//				mainDevice.get5GHzPageObject().increaseLedBrightnessSettings();
+				mainDevice.get5GHzPageObject().verifyConnectedDeviceDetails();
+				mainDevice.get5GHzPageObject().verifyMainRouterDetails();
+				mainDevice.get5GHzPageObject().validations();
+				
+				mainDevice.click24GhzTab();
+//				mainDevice.get24GHzPageObject().verifyUIOn24DevicePage();
+//				mainDevice.get24GHzPageObject().verifyUIOnLedSettings();
+//				mainDevice.get24GHzPageObject().decreaseLedBrightnessSettings();
+//				mainDevice.get24GHzPageObject().increaseLedBrightnessSettings();
+				mainDevice.get24GHzPageObject().verifyConnectedDeviceDetails();
+				mainDevice.get24GHzPageObject().verifyMainRouterDetails();
+				mainDevice.get24GHzPageObject().validations();
+				
+				mainDevice.clickEthernetTab();
+//				mainDevice.getEthernetPageObject().verifyUIOnEthernetDevicePage();
+//				mainDevice.getEthernetPageObject().verifyUIOnLedSettings();
+//				mainDevice.getEthernetPageObject().decreaseLedBrightnessSettings();
+//				mainDevice.getEthernetPageObject().increaseLedBrightnessSettings();
+				mainDevice.getEthernetPageObject().verifyConnectedDeviceDetails();
+				mainDevice.getEthernetPageObject().verifyMainRouterDetails();
+				mainDevice.getEthernetPageObject().validations();
+				
 				mainDevice.clickHelpButton();
 				super.pause(3);
 				if(mainDevice.getMainRouterDetailsHelpPageObject().isAt())
@@ -151,10 +180,6 @@ public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
 				}
 				mainDevice.clickBackButton();
 				super.pause(3);
-				if(mainDevice.getHomePageObject().isAt())
-				{
-					mainDevice.getHomePageObject().clickMainDeviceImage();
-				}
 			}
 		});
 	}

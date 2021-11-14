@@ -67,9 +67,9 @@ public class MainRouterDetailsHelpPage extends ParentClass implements Page
 	public boolean isAt() {
 		if(routerDetails.isDisplayed())
 		{
-			utils.log().info("                           ");
-			utils.log().info("---------------------------");
 			utils.log().info("On Router Details Help Page");
+			utils.log().info("---------------------------");
+
 			return true;}
 		else {
 			utils.log().info("Not on Router Details Help Page");
