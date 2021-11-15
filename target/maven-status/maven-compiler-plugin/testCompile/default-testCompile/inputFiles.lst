@@ -1,3 +1,4 @@
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC57_Login_And_Verify_NetworkPage_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/COR_TC01_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/HomePage_Workflow.java
@@ -11,6 +12,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC53_Login_And_Verify_DevicesPage_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Workflow.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC57_Login_And_Verify_NetworkPage_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/SigninAsValidUserTest.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC52_Login_And_Verify_HomePage_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC51_Signin_And_Onboard_Test.java

@@ -476,7 +476,6 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 	}
 
 	public void getAllDevicesCount() {
-		// this.clickAllTab();
 		allDevicesCount = super.getAllCountOfDevices(connectedDevicesCountText.getText());
 		utils.log().info("Number of online devices connected to the main mAX Router is : " + allDevicesCount);
 	}
@@ -931,12 +930,10 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 	}
 
 	public void validations() {
-		utils.log().info(String.valueOf(allDevicesCount));
-		utils.log().info(totalDeviceImage.getText());
-		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText())) 
-			utils.log().info("Count of 5.0 GHz devices displayed on the main device image is equal to the Connected Devices count");
-		else
-			utils.log().info("Count of 5.0 GHz devices displayed on the main device image is not equal to the Connected Devices count");
+//		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText()))
+//			utils.log().info("Count of 5.0 GHz devices displayed on the main device image is equal to the Connected Devices count");
+//		else
+//			utils.log().info("Count of 5.0 GHz devices displayed on the main device image is not equal to the Connected Devices count");
 
 		for (String str : signal) {
 			if (str.contains("5GHz") || str.contains("5GHz"))

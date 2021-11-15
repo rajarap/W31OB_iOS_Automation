@@ -19,8 +19,9 @@ import com.cs.arris.Workflows.HomePage_Workflow;
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
 import com.cs.arris.Workflows.TC56_Login_And_Verify_MainDevicesPage_Workflow;
+import com.cs.arris.Workflows.TC57_Login_And_Verify_NetworkPage_Workflow;
 
-public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
+public class TC57_Login_And_Verify_NetworkPage_Test extends ParentClass {
 	TestUtils utils = new TestUtils();
 	String firstName;
 	String lastName;
@@ -63,12 +64,12 @@ public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
 
 	@BeforeMethod
 	public void beforeMethod(Method m) {
-		utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
+		utils.log().info("****** starting test:" + m.getName() + "******");
 	}
 
 	@Test(priority = 1)
-	public void Verify_Devices_Page() {
-		TC56_Login_And_Verify_MainDevicesPage_Workflow.getStartedPage(getStarted -> {
+	public void Verify_Network_Page() {
+		TC57_Login_And_Verify_NetworkPage_Workflow.getStartedPage(getStarted -> {
 			getStarted.clickGetStartedButton();
 		}).grantPermissionsPage(grantPermission -> {
 			grantPermission.clickContinueButton();
@@ -105,7 +106,6 @@ public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
 			}
 		}).setupWifi(setupwifi -> {
 			setupwifi.clickskipTutorialButton();
-			super.pause(3);
 		}).homePage(home -> {
 			try {
 				if (home.okButton.isDisplayed()) {
@@ -115,71 +115,53 @@ public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
 				e.getMessage();
 			}
 			if (home.isAt()) {
-				home.clickMainDeviceImage();
+				home.getFooterIconsPageObject().clickNetworkButton();
 			}
-		}).mainDevicePage(mainDevice -> {
-			if (mainDevice.isAt()) {
-				mainDevice.verifyUIOnMainDevicePage();
-				mainDevice.verifyUIOnLedSettings();
-				mainDevice.decreaseLedBrightnessSettings();
-				mainDevice.increaseLedBrightnessSettings();
-				mainDevice.verifyConnectedDeviceDetails();
-				mainDevice.verifyMainRouterDetails();
-				
-				mainDevice.changeMainDeviceName();
-				if(mainDevice.getEditMainDeviceNameDialogObject().isAt())
-				{
-					mainDevice.getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog();
-					mainDevice.getEditMainDeviceNameDialogObject().editMainDeviceName();
-					mainDevice.getEditMainDeviceNameDialogObject().clickSaveButton();
-					super.pause(5);
+		}).networkPage(network -> 
+		{
+			if (network.isAt()) {
+				network.verifyUIOnNetworkPage();
+				network.clickHelpButton();
+//				network.getNetworkPageObject().verifyUIOnNetworkHelpPage();
+				network.getNetworkPageObject().clickCloseButton();
+				network.clickTestConnectionSpeedButton();
+				network.getSpeedTestPageObject().performSpeedTest();
+				network.getSpeedTestPageObject().clickBackIcon();
+
+				// Verify WAN Settings
+				network.clickWANSettings();
+				try {
+					if (network.getAppRatingPageObject().isAt())
+						network.getAppRatingPageObject().clickRemindMeLaterLink();
+				} catch (Exception e) {
+					utils.log().info("App Rating Dialog did not appear");
 				}
-				mainDevice.changeDeviceName();
-				if(mainDevice.getEditDeviceNameDialogObject().isAt())
-				{
-					mainDevice.getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog();
-					mainDevice.getEditDeviceNameDialogObject().editDeviceName();
-					mainDevice.getEditDeviceNameDialogObject().clickSaveButton();
-					super.pause(5);
+				network.getWANSettingsPageObject().verifyUIOnWANSettingsPage();
+				network.getWANSettingsPageObject().clickHelpButton();
+				if (network.getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject().isAt()) {
+					network.getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject()
+							.verifyUIOnNetworWANSettingsHelpPage();
+					network.getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject().clickCloseButton();
 				}
-				mainDevice.validations();
-				
-				mainDevice.click5GhzTab();
-//				mainDevice.get5GHzPageObject().verifyUIOn5GHzDevicePage();
-//				mainDevice.get5GHzPageObject().verifyUIOnLedSettings();
-//				mainDevice.get5GHzPageObject().decreaseLedBrightnessSettings();
-//				mainDevice.get5GHzPageObject().increaseLedBrightnessSettings();
-				mainDevice.get5GHzPageObject().verifyConnectedDeviceDetails();
-				mainDevice.get5GHzPageObject().verifyMainRouterDetails();
-				mainDevice.get5GHzPageObject().validations();
-				
-				mainDevice.click24GhzTab();
-//				mainDevice.get24GHzPageObject().verifyUIOn24DevicePage();
-//				mainDevice.get24GHzPageObject().verifyUIOnLedSettings();
-//				mainDevice.get24GHzPageObject().decreaseLedBrightnessSettings();
-//				mainDevice.get24GHzPageObject().increaseLedBrightnessSettings();
-				mainDevice.get24GHzPageObject().verifyConnectedDeviceDetails();
-				mainDevice.get24GHzPageObject().verifyMainRouterDetails();
-				mainDevice.get24GHzPageObject().validations();
-				
-				mainDevice.clickEthernetTab();
-//				mainDevice.getEthernetPageObject().verifyUIOnEthernetDevicePage();
-//				mainDevice.getEthernetPageObject().verifyUIOnLedSettings();
-//				mainDevice.getEthernetPageObject().decreaseLedBrightnessSettings();
-//				mainDevice.getEthernetPageObject().increaseLedBrightnessSettings();
-				mainDevice.getEthernetPageObject().verifyConnectedDeviceDetails();
-				mainDevice.getEthernetPageObject().verifyMainRouterDetails();
-				
-				mainDevice.clickHelpButton();
-				super.pause(3);
-				if(mainDevice.getMainRouterDetailsHelpPageObject().isAt())
-				{
-					mainDevice.getMainRouterDetailsHelpPageObject().verifyUIOnMainRouterHelpPage();
-					mainDevice.getMainRouterDetailsHelpPageObject().clickCloseButton();
+				network.getWANSettingsPageObject().clickWANIPConfigurationLink();
+				if (network.getWANSettingsPageObject().getWANIPConfigurationPageObject().isAt()) {
+					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().verifyUIOnWANIPv4DHCP();
+					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().verifyUIOnWANIPv4Static();
+					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().clickHelpButton();
+					if (network.getWANSettingsPageObject().getWANIPConfigurationPageObject()
+							.getNetworkWANIPConfigurationHelpPageObject().isAt())
+						network.getWANSettingsPageObject().getWANIPConfigurationPageObject()
+								.getNetworkWANIPConfigurationHelpPageObject().clickCloseButton();
+					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().clickWANIPv6Tab();
+					
+					
+					
+					//network.getWANSettingsPageObject().getWANIPConfigurationPageObject().clickBackButton();
 				}
-				mainDevice.clickBackButton();
-				super.pause(3);
+				network.getWANSettingsPageObject().clickBackButton();
 			}
+			network.clickNetworkSettingsExpandButton();
+			// network.clickBackButton(); //goes back to home page
 		});
 	}
 }

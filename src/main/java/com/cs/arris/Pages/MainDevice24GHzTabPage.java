@@ -476,7 +476,6 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 	}
 
 	public void getAllDevicesCount() {
-		// this.clickAllTab();
 		allDevicesCount = super.getAllCountOfDevices(connectedDevicesCountText.getText());
 		utils.log().info("Number of online devices connected to the main mAX Router is : " + allDevicesCount);
 	}
@@ -627,7 +626,7 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 			this.getAllDevicesCount();
 			if (connectedDevicesExpandImage.isDisplayed()) {
 				click(connectedDevicesExpandImage);
-				utils.log().info("Clicked on Connected Devices Expand button ");
+//				utils.log().info("Clicked on Connected Devices Expand button ");
 			} else {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
@@ -936,12 +935,10 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 	}
 
 	public void validations() {
-		utils.log().info(String.valueOf(allDevicesCount));
-		utils.log().info(totalDeviceImage.getText());
-		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText())) 
-			utils.log().info("Count of 2.4 GHz devices displayed on the main device image is equal to the Connected Devices count");
-		else
-			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
+//		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText()))
+//			utils.log().info("Count of 2.4 GHz devices displayed on the main device image is equal to the Connected Devices count");
+//		else
+//			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
 
 		for (String str : signal) {
 			if (str.contains("5GHz") || str.contains("5GHz"))

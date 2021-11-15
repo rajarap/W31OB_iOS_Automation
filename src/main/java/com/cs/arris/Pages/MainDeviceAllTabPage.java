@@ -100,9 +100,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_led_color_title")
 	public MobileElement chooseColorBrightnessLabel;
 
-//	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/android.widget.ImageView/android.widget.SeekBar[@resource-id='com.arris.sbcBeta:id/seekBar']")
-//	public MobileElement seekBar;
-
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/seekBar")
 	public MobileElement seekBar;
 
@@ -488,7 +485,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	}
 
 	public void getAllDevicesCount() {
-		// this.clickAllTab();
 		allDevicesCount = super.getAllCountOfDevices(connectedDevicesCountText.getText());
 		utils.log().info("Number of online devices connected to the main mAX Router is : " + allDevicesCount);
 	}

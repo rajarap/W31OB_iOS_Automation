@@ -467,7 +467,6 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 	}
 
 	public void getAllDevicesCount() {
-		// this.clickAllTab();
 		allDevicesCount = super.getAllCountOfDevices(connectedDevicesCountText.getText());
 		utils.log().info("Number of online devices connected to the main mAX Router is : " + allDevicesCount);
 	}
@@ -910,12 +909,12 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 			utils.log().info("Main Router Details Expand Button is either not visible or is not present in the DOM");
 	}
 
-	public void validations() {
-		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText())) 
-			utils.log().info("Count of Ethernet devices displayed on the main device image is equal to the Connected Devices count");
-		else
-			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
-	}
+//	public void validations() {
+//		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText())) 
+//			utils.log().info("Count of Ethernet devices displayed on the main device image is equal to the Connected Devices count");
+//		else
+//			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
+//	}
 
 	@Override
 	public boolean isAt() {

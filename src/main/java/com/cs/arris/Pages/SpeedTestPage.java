@@ -134,6 +134,31 @@ public class SpeedTestPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
+	 public HomePage getHomePageObject() {
+		 HomePage homePage = new HomePage();
+	     return homePage;
+	  }
+	 
+	 public SpeedTestHistoryPage getSpeedTestHistoryPageObject() {
+		 SpeedTestHistoryPage speedTestHistoryPage = new SpeedTestHistoryPage();
+	     return speedTestHistoryPage;
+	  }
+	
+	 public NetworkPage getNetworkPageObject() {
+		 NetworkPage networkPage = new NetworkPage();
+	     return networkPage;
+	  }
+	 
+	 public ParentalControlProfilesPage getParentalControlPageObject() {
+		 ParentalControlProfilesPage parentalControlPage = new ParentalControlProfilesPage();
+	     return parentalControlPage;
+	  }
+	
+	 public FooterIconsPage getFooterIconsPageObject() {
+		 FooterIconsPage footerIconsPage = new FooterIconsPage();
+	     return footerIconsPage;
+	  }	
+	
 	//click back icon 
 	public void clickBackIcon()
 	{
@@ -338,31 +363,6 @@ public class SpeedTestPage extends ParentClass implements Page
 			utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon  is not displayed");
 	}
 	
-	 public HomePage getHomePageObject() {
-		 HomePage homePage = new HomePage();
-	     return homePage;
-	  }
-	 
-	 public SpeedTestHistoryPage getSpeedTestHistoryPageObject() {
-		 SpeedTestHistoryPage speedTestHistoryPage = new SpeedTestHistoryPage();
-	     return speedTestHistoryPage;
-	  }
-	
-	 public NetworkPage getNetworkPageObject() {
-		 NetworkPage networkPage = new NetworkPage();
-	     return networkPage;
-	  }
-	 
-	 public ParentalControlProfilesPage getParentalControlPageObject() {
-		 ParentalControlProfilesPage parentalControlPage = new ParentalControlProfilesPage();
-	     return parentalControlPage;
-	  }
-	
-	 public FooterIconsPage getFooterIconsPageObject() {
-		 FooterIconsPage footerIconsPage = new FooterIconsPage();
-	     return footerIconsPage;
-	  }	
-
 	@Override
 	public boolean isAt() {
 		if(speedTestTitle.isDisplayed())

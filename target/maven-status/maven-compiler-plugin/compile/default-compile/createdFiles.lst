@@ -11,6 +11,7 @@ com/cs/arris/Pages/AccessResourcesOnDevicePage.class
 com/cs/arris/Pages/EnterInValidOTPPage.class
 com/cs/arris/JsonMappers/Signin_TestData.class
 com/cs/arris/Pages/NotificationPage.class
+com/cs/arris/Pages/NetworkWANSettingsHelpPage.class
 com/cs/arris/Pages/AboutHelpPage.class
 com/cs/arris/Pages/SamplePage.class
 com/cs/arris/Pages/SignupPage.class
@@ -37,6 +38,8 @@ com/cs/arris/Pages/ParentalControlAddProfileDialog.class
 com/cs/arris/Pages/DisableBlueToothPage.class
 com/cs/arris/Pages/ConnectToWifiUsingRouterSSID.class
 com/cs/arris/Pages/GetStartedPage.class
+com/cs/arris/Pages/NetworkHelpPage.class
+com/cs/arris/Pages/NetworkWANIPConfigurationHelpPage.class
 com/cs/arris/Pages/SelectYourDevicePage2.class
 com/cs/arris/Pages/RetrieveOTPPage.class
 com/cs/arris/Pages/HamburgerMenuPage.class
@@ -48,6 +51,7 @@ com/cs/arris/Pages/ConnectMaxRouterToMobileDevicePage.class
 com/cs/arris/Pages/RebootYouRouterDialog.class
 com/cs/arris/Pages/EditDeviceNameDialog.class
 com/cs/arris/Pages/ErrorCode_0000_1506_Warranty_Support_Page.class
+com/cs/arris/Pages/NetworkWANIPConfigurationIPv4Page.class
 com/cs/arris/Pages/Error_0001_1201_Bluetooth_Pairing_Failed_Page.class
 com/cs/arris/Reports/ExtentReport.class
 com/cs/arris/Pages/FAQHelpPage.class
@@ -71,6 +75,7 @@ com/cs/arris/Utilities/GetOTPFromNada.class
 com/cs/arris/Interface/Page.class
 com/cs/arris/Pages/RemoveDeviceFromHomePage.class
 com/cs/arris/Pages/ParentalControlResumeInternetforAllProfilesDialog.class
+com/cs/arris/Pages/NetworkWANIPConfigurationIPv6Page.class
 com/cs/arris/Pages/BlankSpeedTestHistoryPage.class
 com/cs/arris/Pages/NetworkOptimizationDialog.class
 com/cs/arris/Pages/ErrorCode_0000_1016_Maximum_Verification_Attempts_Exceeded.class
@@ -81,6 +86,7 @@ com/cs/arris/Pages/DeviceSignalStrengthLeaderBoardPage.class
 com/cs/arris/Pages/BlankBlockedDevicesPage.class
 com/cs/arris/Pages/Error_0000_1401_Downloading_Firmware_File_Failed_Page.class
 com/cs/arris/Utilities/SwipeActions$1.class
+com/cs/arris/Pages/NetworkWANSettingsPage.class
 com/cs/arris/Pages/ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.class
 com/cs/arris/Utilities/TestUtils.class
 com/cs/arris/Pages/AccessResourcesPage.class

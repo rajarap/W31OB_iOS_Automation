@@ -20,6 +20,7 @@ com/cs/arris/Workflows/TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPa
 com/cs/arris/Tests/TC50_SignUp_And_Onboard_Test.class
 com/cs/arris/Tests/GetStartedPageTest.class
 com/cs/arris/Tests/TC61_Login_And_Verify_ParentalControlPage_Test.class
+com/cs/arris/Workflows/TC57_Login_And_Verify_NetworkPage_Workflow.class
 com/cs/arris/Tests/TC53_Login_And_Verify_DevicesPage_Test.class
 com/cs/arris/Tests/SigninAsInvalidUserTest.class
 com/cs/arris/Tests/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.class
@@ -41,5 +42,6 @@ com/cs/arris/Workflows/TC04_EC_0002_1304_Internet_Connection_Not_Available_On_Ro
 com/cs/arris/Workflows/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.class
 com/cs/arris/Tests/SampleTest.class
 com/cs/arris/Workflows/TC53_Login_And_Verify_DevicesPage_Workflow.class
+com/cs/arris/Tests/TC57_Login_And_Verify_NetworkPage_Test.class
 com/cs/arris/Tests/TC04_EC_0002_1304_Internet_Connection_Not_Available_On_Router_Test.class
 com/cs/arris/Tests/TC51_Signin_And_Onboard_Test.class
