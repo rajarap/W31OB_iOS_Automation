@@ -112,6 +112,7 @@ public class ParentClass
 	public List<String> profileNames = new ArrayList<String>();
 	public List<String> selectedProfileNames = new ArrayList<String>();
 	public List<String> deviceNames = new ArrayList<String>();
+	public List<SoftAssert> sa = new ArrayList<SoftAssert>();
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
@@ -500,8 +501,6 @@ public class ParentClass
 //					"new UiScrollable(new UiSelector()" + ".scrollable(true)).scrollIntoView("
 //							+ "new UiSelector().description(\"test-Price\"));");
 //	  }
-	  
-			
 	  public void scrollToElementById(MobileElement id) 
 	  {
 		   MobileElement obj = (MobileElement) getDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()"+

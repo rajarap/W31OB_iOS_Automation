@@ -251,12 +251,12 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 			utils.log().info("DHCP Radio button is not displayed");
 		}
 		
-		try {
-			if (dhcpRadioButtonUnChecked.isDisplayed())
-				utils.log().info("DHCP Radio button is displayed and is not selected ");
-		} catch (Exception e) {
-			utils.log().info("DHCP Radio button is displayed and is already selected");
-		}
+//		try {
+//			if (dhcpRadioButtonUnChecked.isDisplayed())
+//				utils.log().info("DHCP Radio button is displayed and is not selected ");
+//		} catch (Exception e) {
+//			utils.log().info("DHCP Radio button is not displayed");
+//		}
 
 		try {
 			if (ipAddressLabel.isDisplayed() && dhcp_ipAddress.isDisplayed() && !(dhcp_ipAddress.isEnabled()))
@@ -295,7 +295,7 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 		
 		try {
 			if (dhcp_saveChangesButton.isDisplayed() && !(dhcp_saveChangesButton.isEnabled()))
-				utils.log().info(dhcp_saveChangesButton.getText() + " button is displayed and is disabled");
+				utils.log().info(dhcp_saveChangesButton.getText() + " button is displayed but is disabled");
 		} catch (Exception e) {
 			utils.log().info("SAVE CHANGES button is not displayed");
 		}
@@ -351,12 +351,12 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 			utils.log().info("Static Radio button is not displayed");
 		}
 		
-		try {
-			if (staticRadioButtonUnChecked.isDisplayed())
-				utils.log().info("Static Radio button is displayed and is not selected ");
-		} catch (Exception e) {
-			utils.log().info("Static Radio button is displayed and is already selected");
-		}
+//		try {
+//			if (staticRadioButtonUnChecked.isDisplayed())
+//				utils.log().info("Static Radio button is displayed and is not selected ");
+//		} catch (Exception e) {
+//			utils.log().info("Static Radio button is displayed and is already selected");
+//		}
 		
 		try {
 			if (ipAddressLabel.isDisplayed() && static_ipAddress.isDisplayed() && static_ipAddress.isEnabled())

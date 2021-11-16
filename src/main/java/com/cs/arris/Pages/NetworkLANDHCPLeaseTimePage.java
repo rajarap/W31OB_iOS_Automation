@@ -14,7 +14,7 @@ import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class NetworkPage extends ParentClass implements Page {
+public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	// ====================Network SSID Password
@@ -139,7 +139,7 @@ public class NetworkPage extends ParentClass implements Page {
 	// ==================== Network Settings
 	// ===========================================
 
-	public NetworkPage() {
+	public NetworkLANDHCPLeaseTimePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 

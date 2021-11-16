@@ -117,8 +117,7 @@ public class TC57_Login_And_Verify_NetworkPage_Test extends ParentClass {
 			if (home.isAt()) {
 				home.getFooterIconsPageObject().clickNetworkButton();
 			}
-		}).networkPage(network -> 
-		{
+		}).networkPage(network -> {
 			if (network.isAt()) {
 				network.verifyUIOnNetworkPage();
 				network.clickHelpButton();
@@ -144,23 +143,60 @@ public class TC57_Login_And_Verify_NetworkPage_Test extends ParentClass {
 					network.getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject().clickCloseButton();
 				}
 				network.getWANSettingsPageObject().clickWANIPConfigurationLink();
-				if (network.getWANSettingsPageObject().getWANIPConfigurationPageObject().isAt()) {
-					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().verifyUIOnWANIPv4DHCP();
-					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().verifyUIOnWANIPv4Static();
-					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().clickHelpButton();
-					if (network.getWANSettingsPageObject().getWANIPConfigurationPageObject()
+				if (network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().isAt()) {
+					network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().verifyUIOnWANIPv4DHCP();
+					network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().verifyUIOnWANIPv4Static();
+					network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().clickHelpButton();
+					if (network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject()
 							.getNetworkWANIPConfigurationHelpPageObject().isAt())
-						network.getWANSettingsPageObject().getWANIPConfigurationPageObject()
+						network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject()
 								.getNetworkWANIPConfigurationHelpPageObject().clickCloseButton();
-					network.getWANSettingsPageObject().getWANIPConfigurationPageObject().clickWANIPv6Tab();
-					
-					
-					
-					//network.getWANSettingsPageObject().getWANIPConfigurationPageObject().clickBackButton();
+					network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().clickWANIPv6Tab();
+				}
+				if (network.getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().isAt()) {
+					network.getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().verifyUIOnWANIPv6Stateful();
+					network.getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().verifyUIOnWANIPv6Stateless();
+					network.getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickBackButton();
+					network.getWANSettingsPageObject().clickDNSConfigurationLink();
+				}
+				if (network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().isAt()) {
+					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject()
+							.verifyUIOnDNSIPv4Automatic();
+					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Static();
+					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().clickHelpButton();
+					if (network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject()
+							.getNetworkWANDNSConfigurationHelpPageObject().isAt())
+						network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject()
+								.getNetworkWANIPConfigurationHelpPageObject().clickCloseButton();
+					network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().clickWANIPv6Tab();
+				}
+				if (network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().isAt()) {
+					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject()
+							.verifyUIOnDNSIPv6Automatic();
+					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Static();
+					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().clickBackButton();
+				}
+				if (network.getWANSettingsPageObject().isAt()) {
+					network.getWANSettingsPageObject().clickLacAlertIcon();
+					if(network.getWANSettingsPageObject().getLACAlertDialogObject().isAt())
+						network.getWANSettingsPageObject().getLACAlertDialogObject().clickCloseDialog();
 				}
 				network.getWANSettingsPageObject().clickBackButton();
+				network.clickNetworkSettingsExpandButton();
+				
+				// Verify LAN Settings
+				network.clickLANSettings();
+				try {
+					if (network.getAppRatingPageObject().isAt())
+						network.getAppRatingPageObject().clickRemindMeLaterLink();
+				} catch (Exception e) {
+					utils.log().info("App Rating Dialog did not appear");
+				}
+				network.getLANSettingsPageObject().verifyUIOnLANSettingsPage();
+//				network.clickNetworkSettingsExpandButton();
 			}
-			network.clickNetworkSettingsExpandButton();
+
+			
 			// network.clickBackButton(); //goes back to home page
 		});
 	}

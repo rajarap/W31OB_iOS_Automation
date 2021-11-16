@@ -23,6 +23,7 @@ com/cs/arris/Pages/DeviceLocationPage.class
 com/cs/arris/Pages/ParentalControlProfilesPage.class
 com/cs/arris/Pages/SpeedTestHistoryPage.class
 com/cs/arris/Utilities/TestingDeviceCount.class
+com/cs/arris/Pages/NetworkLACConfigurationAlertDialog.class
 com/cs/arris/Pages/ParentalControlUserProfileHelpPage.class
 com/cs/arris/Pages/ErrorCode_0003_1003_Service_Is_Currently_Not_Available.class
 com/cs/arris/JsonMappers/SignUp_TestData.class
@@ -44,6 +45,7 @@ com/cs/arris/Pages/SelectYourDevicePage2.class
 com/cs/arris/Pages/RetrieveOTPPage.class
 com/cs/arris/Pages/HamburgerMenuPage.class
 com/cs/arris/Pages/DevicesPage.class
+com/cs/arris/Pages/NetworkWANDNSConfigurationIPv6Page.class
 com/cs/arris/Pages/ConnectMaxRouterToInternetPage.class
 com/cs/arris/Pages/CongratulationsPage.class
 com/cs/arris/Pages/AboutViewLicensesPage.class
@@ -64,6 +66,7 @@ com/cs/arris/Pages/ErrorCode_0000_1603_Failure_To_Configure_Your_Router_Page.cla
 com/cs/arris/Pages/SettingsHelpPage.class
 com/cs/arris/Pages/ErrorCode_0000_1015_Invalid_OTP_Page.class
 com/cs/arris/Pages/EditMainDeviceNameDialog.class
+com/cs/arris/Pages/NetworkWANDNSConfigurationIPv4Page.class
 com/cs/arris/Pages/ParentalControlCurrentlyBlockedPage.class
 com/cs/arris/Base/ParentClass.class
 com/cs/arris/Utilities/Direction.class
@@ -86,6 +89,7 @@ com/cs/arris/Pages/DeviceSignalStrengthLeaderBoardPage.class
 com/cs/arris/Pages/BlankBlockedDevicesPage.class
 com/cs/arris/Pages/Error_0000_1401_Downloading_Firmware_File_Failed_Page.class
 com/cs/arris/Utilities/SwipeActions$1.class
+com/cs/arris/Pages/NetworkLANSettingsPage.class
 com/cs/arris/Pages/NetworkWANSettingsPage.class
 com/cs/arris/Pages/ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.class
 com/cs/arris/Utilities/TestUtils.class
@@ -96,6 +100,7 @@ com/cs/arris/Pages/SetUpYourWiFiManagementPage.class
 com/cs/arris/Pages/NetworkPage.class
 com/cs/arris/Pages/BTDisabledTroubleShootPage.class
 com/cs/arris/Pages/NameYourNetwokSSIDPage.class
+com/cs/arris/Pages/NetworkDNSConfigurationStaticAlertDialog.class
 com/cs/arris/Interface/W31_Onboarding_TestData.class
 com/cs/arris/Pages/EnableBlueToothPage.class
 com/cs/arris/Pages/MainDeviceAllTabPage.class
@@ -114,6 +119,7 @@ com/cs/arris/Pages/BlueToothPage.class
 com/cs/arris/Pages/ValidationCodePage.class
 com/cs/arris/Utilities/SwipeActions.class
 com/cs/arris/Pages/ParentalControlAddDeviceHelpPage.class
+com/cs/arris/Pages/NetworkWANDNSConfigurationHelpPage.class
 com/cs/arris/Pages/ErrorCode_0002_1002_Internet_Connection_Not_Available_On_Mobile_Device.class
 com/cs/arris/Pages/MainDevicePage.class
 com/cs/arris/Pages/ParentalControlUserProfileAddRulePage.class

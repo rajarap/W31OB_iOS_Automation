@@ -1,0 +1,1389 @@
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:39.729 ParentClass:292 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:39.739 ParentClass:233 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:51.544 ParentClass:243 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:51.546 ParentClass:244 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:55.670 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:55.677 ParentClass:316 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:55.688 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:55.691 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:55.693 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:55.696 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:55.697 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:56.427 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:56.986 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:58:57.760 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:14.886 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:18.222 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:19.637 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:20.522 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:21.539 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:22.397 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:25.732 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:26.583 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:38.618 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:42.977 EnterValidOTPPage:61 - Entering valid OTP...578931
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 13:59:44.466 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:09.872 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:31.495 HomePage:645 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:31.951 FooterIconsPage:169 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:32.832 NetworkPage:480 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:33.613 NetworkPage:285 - Network title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:33.741 NetworkPage:292 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:33.815 NetworkPage:299 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:33.894 NetworkPage:306 - Main WiFi expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:35.054 NetworkPage:314 - Network Name (SSID) : arrisw3140
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:35.425 NetworkPage:321 - Password : ••••••••••
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:35.509 NetworkPage:328 - Show Password Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:36.443 NetworkPage:336 - Guest Wi-Fi Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:36.587 NetworkPage:343 - Enable/Disable Guest Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:42.105 NetworkPage:354 - Guest Network toggle button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:42.189 NetworkPage:359 - Extended WiFi Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:43.171 NetworkPage:367 - Extended Wi-Fi Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:43.316 NetworkPage:374 - 5GHz Wideband Mode label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:43.582 NetworkPage:381 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:43.712 NetworkPage:388 - Extended Wifi toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:45.009 NetworkPage:398 - Network Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:47.314 NetworkPage:407 - Network Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:47.668 NetworkPage:414 - LAN IP Address : 192.168.7.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:48.030 NetworkPage:421 - Gateway IP Address : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:48.257 NetworkPage:428 - General Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:48.469 NetworkPage:435 - WAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:48.690 NetworkPage:442 - LAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:48.907 NetworkPage:449 - Device Priority Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:49.109 NetworkPage:456 - Time Zone label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:49.229 NetworkPage:463 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:49.369 NetworkPage:470 - TEST MY CONNECTION SPEED button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:50.429 NetworkPage:193 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:55.217 NetworkHelpPage:76 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:56.180 NetworkPage:204 - Clicked on Test Your Connection Speed button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:56.784 SpeedTestPage:266 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:56.941 SpeedTestPage:247 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:00:57.691 SpeedTestPage:268 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:38.037 SpeedTestPage:271 - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:38.421 SpeedTestPage:166 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:40.760 NetworkPage:239 - Clicked on WAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:41.463 AppRatingDialog:63 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:41.617 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.231 NetworkWANSettingsPage:156 - WAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.314 NetworkWANSettingsPage:163 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.371 NetworkWANSettingsPage:170 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.432 NetworkWANSettingsPage:177 - WAN IP Configuration Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.496 NetworkWANSettingsPage:184 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.583 NetworkWANSettingsPage:191 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.648 NetworkWANSettingsPage:198 - LAC toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.734 NetworkWANSettingsPage:207 - WAN IP RENEW button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:42.935 NetworkWANSettingsPage:102 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:44.806 NetworkWANSettingsHelpPage:94 - On WAN Settings Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:44.948 NetworkWANSettingsHelpPage:57 - WAN Settings title is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:45.017 NetworkWANSettingsHelpPage:64 - WAN Setting allows you to control and configure help is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:50.228 NetworkWANSettingsHelpPage:73 - You can configure DHCP help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:02:55.657 NetworkWANSettingsHelpPage:80 - DNS Server can als be configured help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:00.802 NetworkWANSettingsHelpPage:87 - WAN IP Renew help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:02.684 NetworkWANSettingsHelpPage:48 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:04.104 NetworkWANIPConfigurationIPv4Page:407 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:04.112 NetworkWANIPConfigurationIPv4Page:205 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:04.112 NetworkWANIPConfigurationIPv4Page:206 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:04.112 NetworkWANIPConfigurationIPv4Page:207 - Verifying WAN IPv4 - DHCP Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:04.113 NetworkWANIPConfigurationIPv4Page:208 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:04.992 NetworkWANIPConfigurationIPv4Page:184 - DHCP Radion button is already selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:05.125 NetworkWANIPConfigurationIPv4Page:214 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:05.236 NetworkWANIPConfigurationIPv4Page:221 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:05.292 NetworkWANIPConfigurationIPv4Page:228 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:05.471 NetworkWANIPConfigurationIPv4Page:242 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:05.584 NetworkWANIPConfigurationIPv4Page:249 - DHCP Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:11.151 NetworkWANIPConfigurationIPv4Page:258 - DHCP Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:11.731 NetworkWANIPConfigurationIPv4Page:263 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:12.390 NetworkWANIPConfigurationIPv4Page:270 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:12.925 NetworkWANIPConfigurationIPv4Page:277 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:13.451 NetworkWANIPConfigurationIPv4Page:284 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:13.963 NetworkWANIPConfigurationIPv4Page:291 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:14.278 NetworkWANIPConfigurationIPv4Page:298 - SAVE CHANGES button is displayed and is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:14.288 NetworkWANIPConfigurationIPv4Page:305 -                                                   
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:14.288 NetworkWANIPConfigurationIPv4Page:306 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:14.288 NetworkWANIPConfigurationIPv4Page:307 - Verifying WAN IPv4 - Static Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:14.288 NetworkWANIPConfigurationIPv4Page:308 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:15.424 NetworkWANIPConfigurationIPv4Page:314 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:15.544 NetworkWANIPConfigurationIPv4Page:321 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:15.618 NetworkWANIPConfigurationIPv4Page:328 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:15.795 NetworkWANIPConfigurationIPv4Page:342 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:15.934 NetworkWANIPConfigurationIPv4Page:349 - Satic Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:21.492 NetworkWANIPConfigurationIPv4Page:358 - Static Radio button is displayed and is already selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:22.069 NetworkWANIPConfigurationIPv4Page:363 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:22.575 NetworkWANIPConfigurationIPv4Page:370 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:23.086 NetworkWANIPConfigurationIPv4Page:377 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:23.633 NetworkWANIPConfigurationIPv4Page:384 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:24.160 NetworkWANIPConfigurationIPv4Page:391 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:24.479 NetworkWANIPConfigurationIPv4Page:398 - SAVE CHANGES button is displayed and is Enabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:24.752 NetworkWANIPConfigurationIPv4Page:140 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:25.490 NetworkWANIPConfigurationHelpPage:58 - On WAN IP Configuration Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:28.401 NetworkWANIPConfigurationHelpPage:49 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.227 NetworkWANIPConfigurationIPv4Page:151 - Clicked on IPv6 Tab
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.310 NetworkWANIPConfigurationIPv6Page:440 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.320 NetworkWANIPConfigurationIPv6Page:211 -                                                     
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.320 NetworkWANIPConfigurationIPv6Page:212 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.321 NetworkWANIPConfigurationIPv6Page:213 - Verifying WAN IPv6 - Stateful Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.321 NetworkWANIPConfigurationIPv6Page:214 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.460 NetworkWANIPConfigurationIPv6Page:219 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.569 NetworkWANIPConfigurationIPv6Page:226 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.619 NetworkWANIPConfigurationIPv6Page:233 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:30.870 NetworkWANIPConfigurationIPv6Page:247 - IPv4 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:31.014 NetworkWANIPConfigurationIPv6Page:254 - Stateful Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:36.531 NetworkWANIPConfigurationIPv6Page:263 - Stateful Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:37.087 NetworkWANIPConfigurationIPv6Page:268 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:37.626 NetworkWANIPConfigurationIPv6Page:275 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:38.182 NetworkWANIPConfigurationIPv6Page:282 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:38.399 NetworkWANIPConfigurationIPv6Page:289 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:38.523 NetworkWANIPConfigurationIPv6Page:296 - IPv6 Prefix Delegation checkbox is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:39.084 NetworkWANIPConfigurationIPv6Page:303 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:39.627 NetworkWANIPConfigurationIPv6Page:310 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:39.838 NetworkWANIPConfigurationIPv6Page:317 - SAVE CHANGESbutton is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:39.851 NetworkWANIPConfigurationIPv6Page:324 -                                                      
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:39.851 NetworkWANIPConfigurationIPv6Page:325 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:39.852 NetworkWANIPConfigurationIPv6Page:326 - Verifying WAN IPv6 - Stateless Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:39.852 NetworkWANIPConfigurationIPv6Page:327 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:40.368 NetworkWANIPConfigurationIPv6Page:176 - Clicked on Stateless Radio button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:41.077 NetworkWANIPConfigurationIPv6Page:333 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:41.186 NetworkWANIPConfigurationIPv6Page:340 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:41.240 NetworkWANIPConfigurationIPv6Page:347 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:41.402 NetworkWANIPConfigurationIPv6Page:361 - IPv4 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:41.526 NetworkWANIPConfigurationIPv6Page:368 - Stateless Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:47.067 NetworkWANIPConfigurationIPv6Page:377 - Stateless Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:47.622 NetworkWANIPConfigurationIPv6Page:382 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:48.143 NetworkWANIPConfigurationIPv6Page:389 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:48.692 NetworkWANIPConfigurationIPv6Page:396 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:48.891 NetworkWANIPConfigurationIPv6Page:403 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:48.983 NetworkWANIPConfigurationIPv6Page:410 - IPv6 Prefix Delegation checkbox is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:49.491 NetworkWANIPConfigurationIPv6Page:417 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:50.004 NetworkWANIPConfigurationIPv6Page:424 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:55.618 NetworkWANIPConfigurationIPv6Page:433 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:56.056 NetworkWANIPConfigurationIPv6Page:121 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:03:56.887 NetworkWANSettingsPage:91 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:04:03.274 ParentClass:419 - video path: videos/Android_RZ8M3002DGL/2021-11-16-13-58-39/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:04:09.173 ParentClass:177 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 14:04:09.342 ParentClass:179 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:31.454 ParentClass:292 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:31.465 ParentClass:233 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:43.176 ParentClass:243 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:43.177 ParentClass:244 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:47.282 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:47.284 ParentClass:316 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:47.292 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:47.295 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:47.297 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:47.303 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:47.306 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:48.043 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:48.633 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:51:49.389 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:06.143 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:09.535 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:10.902 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:11.772 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:12.792 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:13.718 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:17.107 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:17.930 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:29.962 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:34.582 EnterValidOTPPage:61 - Entering valid OTP...366677
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:52:36.112 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:00.330 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:22.434 HomePage:645 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:22.855 FooterIconsPage:169 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:23.876 NetworkPage:480 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:24.603 NetworkPage:285 - Network title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:24.763 NetworkPage:292 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:24.835 NetworkPage:299 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:24.917 NetworkPage:306 - Main WiFi expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:26.708 NetworkPage:314 - Network Name (SSID) : arrisw3140
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:27.082 NetworkPage:321 - Password : ••••••••••
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:27.165 NetworkPage:328 - Show Password Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:28.064 NetworkPage:336 - Guest Wi-Fi Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:28.212 NetworkPage:343 - Enable/Disable Guest Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:33.799 NetworkPage:354 - Guest Network toggle button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:33.913 NetworkPage:359 - Extended WiFi Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:34.958 NetworkPage:367 - Extended Wi-Fi Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:35.136 NetworkPage:374 - 5GHz Wideband Mode label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:35.409 NetworkPage:381 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:35.601 NetworkPage:388 - Extended Wifi toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:36.962 NetworkPage:398 - Network Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:39.292 NetworkPage:407 - Network Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:39.678 NetworkPage:414 - LAN IP Address : 192.168.7.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:40.103 NetworkPage:421 - Gateway IP Address : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:40.348 NetworkPage:428 - General Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:40.586 NetworkPage:435 - WAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:40.869 NetworkPage:442 - LAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:41.110 NetworkPage:449 - Device Priority Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:41.383 NetworkPage:456 - Time Zone label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:41.572 NetworkPage:463 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:41.750 NetworkPage:470 - TEST MY CONNECTION SPEED button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:42.771 NetworkPage:193 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:47.999 NetworkHelpPage:76 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:48.760 NetworkPage:204 - Clicked on Test Your Connection Speed button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:49.378 SpeedTestPage:266 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:50.182 SpeedTestPage:247 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:53:50.452 SpeedTestPage:268 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:30.745 SpeedTestPage:271 - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:31.108 SpeedTestPage:166 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:33.036 NetworkPage:239 - Clicked on WAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:33.735 AppRatingDialog:63 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:33.876 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:34.490 NetworkWANSettingsPage:166 - WAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:34.556 NetworkWANSettingsPage:173 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:34.603 NetworkWANSettingsPage:180 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:34.672 NetworkWANSettingsPage:187 - WAN IP Configuration Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:34.741 NetworkWANSettingsPage:194 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:34.812 NetworkWANSettingsPage:201 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:34.896 NetworkWANSettingsPage:208 - LAC toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:35.003 NetworkWANSettingsPage:217 - WAN IP RENEW button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:35.191 NetworkWANSettingsPage:112 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:36.092 NetworkWANSettingsHelpPage:94 - On WAN Settings Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:36.209 NetworkWANSettingsHelpPage:57 - WAN Settings title is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:36.284 NetworkWANSettingsHelpPage:64 - WAN Setting allows you to control and configure help is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:41.516 NetworkWANSettingsHelpPage:73 - You can configure DHCP help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:46.791 NetworkWANSettingsHelpPage:80 - DNS Server can als be configured help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:52.039 NetworkWANSettingsHelpPage:87 - WAN IP Renew help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:54.070 NetworkWANSettingsHelpPage:48 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:55.485 NetworkWANIPConfigurationIPv4Page:407 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:55.490 NetworkWANIPConfigurationIPv4Page:205 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:55.491 NetworkWANIPConfigurationIPv4Page:206 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:55.491 NetworkWANIPConfigurationIPv4Page:207 - Verifying WAN IPv4 - DHCP Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:55.492 NetworkWANIPConfigurationIPv4Page:208 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:56.200 NetworkWANIPConfigurationIPv4Page:184 - DHCP Radion button is already selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:56.327 NetworkWANIPConfigurationIPv4Page:214 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:56.418 NetworkWANIPConfigurationIPv4Page:221 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:56.461 NetworkWANIPConfigurationIPv4Page:228 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:56.644 NetworkWANIPConfigurationIPv4Page:242 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:56.740 NetworkWANIPConfigurationIPv4Page:249 - DHCP Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:57.222 NetworkWANIPConfigurationIPv4Page:263 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:57.701 NetworkWANIPConfigurationIPv4Page:270 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:58.209 NetworkWANIPConfigurationIPv4Page:277 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:59.400 NetworkWANIPConfigurationIPv4Page:284 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:55:59.919 NetworkWANIPConfigurationIPv4Page:291 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:00.256 NetworkWANIPConfigurationIPv4Page:298 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:00.265 NetworkWANIPConfigurationIPv4Page:305 -                                                   
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:00.265 NetworkWANIPConfigurationIPv4Page:306 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:00.265 NetworkWANIPConfigurationIPv4Page:307 - Verifying WAN IPv4 - Static Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:00.266 NetworkWANIPConfigurationIPv4Page:308 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:01.341 NetworkWANIPConfigurationIPv4Page:314 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:01.479 NetworkWANIPConfigurationIPv4Page:321 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:01.546 NetworkWANIPConfigurationIPv4Page:328 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:01.731 NetworkWANIPConfigurationIPv4Page:342 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:01.834 NetworkWANIPConfigurationIPv4Page:349 - Satic Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:02.346 NetworkWANIPConfigurationIPv4Page:363 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:02.850 NetworkWANIPConfigurationIPv4Page:370 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:03.363 NetworkWANIPConfigurationIPv4Page:377 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:03.884 NetworkWANIPConfigurationIPv4Page:384 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:04.466 NetworkWANIPConfigurationIPv4Page:391 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:04.757 NetworkWANIPConfigurationIPv4Page:398 - SAVE CHANGES button is displayed and is Enabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:04.975 NetworkWANIPConfigurationIPv4Page:140 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:05.716 NetworkWANIPConfigurationHelpPage:58 - On WAN IP Configuration Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:08.790 NetworkWANIPConfigurationHelpPage:49 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.595 NetworkWANIPConfigurationIPv4Page:151 - Clicked on IPv6 Tab
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.670 NetworkWANIPConfigurationIPv6Page:442 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.676 NetworkWANIPConfigurationIPv6Page:211 -                                                     
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.676 NetworkWANIPConfigurationIPv6Page:212 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.677 NetworkWANIPConfigurationIPv6Page:213 - Verifying WAN IPv6 - Stateful Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.677 NetworkWANIPConfigurationIPv6Page:214 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.777 NetworkWANIPConfigurationIPv6Page:219 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.904 NetworkWANIPConfigurationIPv6Page:226 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:10.962 NetworkWANIPConfigurationIPv6Page:233 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:11.108 NetworkWANIPConfigurationIPv6Page:247 - IPv4 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:11.223 NetworkWANIPConfigurationIPv6Page:254 - Stateful Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:11.796 NetworkWANIPConfigurationIPv6Page:268 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:12.371 NetworkWANIPConfigurationIPv6Page:275 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:12.985 NetworkWANIPConfigurationIPv6Page:282 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:13.216 NetworkWANIPConfigurationIPv6Page:289 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:13.328 NetworkWANIPConfigurationIPv6Page:296 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:13.930 NetworkWANIPConfigurationIPv6Page:303 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:14.466 NetworkWANIPConfigurationIPv6Page:310 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:15.880 NetworkWANIPConfigurationIPv6Page:318 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:15.892 NetworkWANIPConfigurationIPv6Page:325 -                                                      
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:15.892 NetworkWANIPConfigurationIPv6Page:326 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:15.893 NetworkWANIPConfigurationIPv6Page:327 - Verifying WAN IPv6 - Stateless Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:15.893 NetworkWANIPConfigurationIPv6Page:328 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:20.945 NetworkWANIPConfigurationIPv6Page:179 - Stateless Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:21.039 NetworkWANIPConfigurationIPv6Page:334 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:21.154 NetworkWANIPConfigurationIPv6Page:341 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:21.208 NetworkWANIPConfigurationIPv6Page:348 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:21.365 NetworkWANIPConfigurationIPv6Page:362 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:26.459 NetworkWANIPConfigurationIPv6Page:371 - Stateless Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:27.090 NetworkWANIPConfigurationIPv6Page:383 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:27.672 NetworkWANIPConfigurationIPv6Page:390 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:28.289 NetworkWANIPConfigurationIPv6Page:397 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:28.550 NetworkWANIPConfigurationIPv6Page:404 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:28.675 NetworkWANIPConfigurationIPv6Page:411 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:29.260 NetworkWANIPConfigurationIPv6Page:418 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:29.805 NetworkWANIPConfigurationIPv6Page:425 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:36.049 NetworkWANIPConfigurationIPv6Page:435 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:36.507 NetworkWANIPConfigurationIPv6Page:121 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:37.319 NetworkWANSettingsPage:156 - Clicked on DNS Configuration Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:37.924 NetworkWANDNSConfigurationIPv4Page:349 - On DNS IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:37.928 NetworkWANDNSConfigurationIPv4Page:190 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:37.928 NetworkWANDNSConfigurationIPv4Page:191 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:37.928 NetworkWANDNSConfigurationIPv4Page:192 - Verifying Automatic DNS Configuration for IPv4  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:37.928 NetworkWANDNSConfigurationIPv4Page:193 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:43.364 NetworkWANDNSConfigurationIPv4Page:169 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:43.487 NetworkWANDNSConfigurationIPv4Page:199 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:43.560 NetworkWANDNSConfigurationIPv4Page:206 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:43.608 NetworkWANDNSConfigurationIPv4Page:213 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:43.772 NetworkWANDNSConfigurationIPv4Page:227 - IPV6 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:43.860 NetworkWANDNSConfigurationIPv4Page:234 - Automatic Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:44.276 NetworkWANDNSConfigurationIPv4Page:248 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:44.668 NetworkWANDNSConfigurationIPv4Page:255 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:44.907 NetworkWANDNSConfigurationIPv4Page:262 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:44.914 NetworkWANDNSConfigurationIPv4Page:269 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:44.914 NetworkWANDNSConfigurationIPv4Page:270 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:44.914 NetworkWANDNSConfigurationIPv4Page:271 - Verifying Static DNS Configuration for IPv4  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:44.915 NetworkWANDNSConfigurationIPv4Page:272 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:46.035 NetworkDNSConfigurationStaticAlertDialog:39 - Alert Dialog - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:46.036 NetworkWANDNSConfigurationIPv4Page:181 - Clicked OK button on Alert Dialog
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:46.036 NetworkWANDNSConfigurationIPv4Page:183 - Automatic Radion button is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:46.665 NetworkWANDNSConfigurationIPv4Page:278 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:46.747 NetworkWANDNSConfigurationIPv4Page:285 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:46.808 NetworkWANDNSConfigurationIPv4Page:292 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:46.984 NetworkWANDNSConfigurationIPv4Page:306 - IPV6 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:47.063 NetworkWANDNSConfigurationIPv4Page:313 - Static Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:47.433 NetworkWANDNSConfigurationIPv4Page:327 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:47.802 NetworkWANDNSConfigurationIPv4Page:334 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:53.078 NetworkWANDNSConfigurationIPv4Page:343 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:53.291 NetworkWANDNSConfigurationIPv4Page:121 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:54.179 NetworkWANDNSConfigurationHelpPage:47 - On WAN DNS Configuration Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:56:57.094 NetworkWANIPConfigurationHelpPage:49 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:02.356 NetworkWANIPConfigurationIPv4Page:154 - IPv6 Tab is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:02.420 NetworkWANDNSConfigurationIPv6Page:349 - On DNS IPv6 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:02.423 NetworkWANDNSConfigurationIPv6Page:190 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:02.423 NetworkWANDNSConfigurationIPv6Page:191 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:02.424 NetworkWANDNSConfigurationIPv6Page:192 - Verifying Automatic DNS Configuration for IPv6  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:02.424 NetworkWANDNSConfigurationIPv6Page:193 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:07.729 NetworkWANDNSConfigurationIPv6Page:169 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:07.845 NetworkWANDNSConfigurationIPv6Page:199 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:07.922 NetworkWANDNSConfigurationIPv6Page:206 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:07.978 NetworkWANDNSConfigurationIPv6Page:213 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:08.145 NetworkWANDNSConfigurationIPv6Page:227 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:13.513 NetworkWANDNSConfigurationIPv6Page:236 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:18.871 NetworkWANDNSConfigurationIPv6Page:250 - Automatic Primary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:24.233 NetworkWANDNSConfigurationIPv6Page:257 - Automatic Secondary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:29.630 NetworkWANDNSConfigurationIPv6Page:264 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:29.635 NetworkWANDNSConfigurationIPv6Page:269 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:29.636 NetworkWANDNSConfigurationIPv6Page:270 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:29.636 NetworkWANDNSConfigurationIPv6Page:271 - Verifying Static DNS Configuration for IPv6     
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:29.637 NetworkWANDNSConfigurationIPv6Page:272 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:35.039 NetworkWANDNSConfigurationIPv6Page:185 - Static Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:35.202 NetworkWANDNSConfigurationIPv6Page:278 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:35.296 NetworkWANDNSConfigurationIPv6Page:285 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:35.348 NetworkWANDNSConfigurationIPv6Page:292 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:35.510 NetworkWANDNSConfigurationIPv6Page:306 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:40.830 NetworkWANDNSConfigurationIPv6Page:315 - Static Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:46.262 NetworkWANDNSConfigurationIPv6Page:329 - Static Primary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:51.797 NetworkWANDNSConfigurationIPv6Page:336 - Static Secondary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:57.237 NetworkWANDNSConfigurationIPv6Page:343 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:57.632 NetworkWANDNSConfigurationIPv6Page:110 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:57:59.080 NetworkWANSettingsPage:101 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:58:05.848 ParentClass:419 - video path: videos/Android_RZ8M3002DGL/2021-11-16-15-51-31/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:58:11.778 ParentClass:177 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 15:58:11.956 ParentClass:179 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:43.747 ParentClass:293 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:43.761 ParentClass:234 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:55.558 ParentClass:244 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:55.563 ParentClass:245 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:59.785 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:59.787 ParentClass:317 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:59.794 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:59.796 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:59.798 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:59.800 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:48:59.800 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:00.551 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:01.130 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:01.924 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:18.478 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:21.851 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:23.272 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:24.139 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:25.443 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:26.367 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:29.708 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:30.560 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:42.592 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:46.853 EnterValidOTPPage:61 - Entering valid OTP...711491
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:49:48.369 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:13.167 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:34.421 HomePage:645 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:35.478 FooterIconsPage:169 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:36.464 NetworkPage:480 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:37.297 NetworkPage:285 - Network title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:37.480 NetworkPage:292 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:37.560 NetworkPage:299 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:37.624 NetworkPage:306 - Main WiFi expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:38.727 NetworkPage:314 - Network Name (SSID) : arrisw3140
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:39.108 NetworkPage:321 - Password : ••••••••••
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:39.181 NetworkPage:328 - Show Password Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:40.136 NetworkPage:336 - Guest Wi-Fi Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:40.325 NetworkPage:343 - Enable/Disable Guest Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:45.378 NetworkPage:354 - Guest Network toggle button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:45.478 NetworkPage:359 - Extended WiFi Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:46.856 NetworkPage:367 - Extended Wi-Fi Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:47.043 NetworkPage:374 - 5GHz Wideband Mode label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:47.410 NetworkPage:381 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:47.539 NetworkPage:388 - Extended Wifi toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:49.110 NetworkPage:398 - Network Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:51.383 NetworkPage:407 - Network Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:51.752 NetworkPage:414 - LAN IP Address : 192.168.7.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:52.148 NetworkPage:421 - Gateway IP Address : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:52.395 NetworkPage:428 - General Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:52.619 NetworkPage:435 - WAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:52.886 NetworkPage:442 - LAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:53.099 NetworkPage:449 - Device Priority Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:53.356 NetworkPage:456 - Time Zone label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:53.586 NetworkPage:463 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:53.981 NetworkPage:470 - TEST MY CONNECTION SPEED button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:50:55.006 NetworkPage:193 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:51:00.198 NetworkHelpPage:76 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:51:00.912 NetworkPage:204 - Clicked on Test Your Connection Speed button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:51:01.504 SpeedTestPage:266 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:51:01.683 SpeedTestPage:247 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:51:02.537 SpeedTestPage:268 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:42.859 SpeedTestPage:271 - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:43.236 SpeedTestPage:166 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:45.193 NetworkPage:239 - Clicked on WAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:45.877 AppRatingDialog:63 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:46.017 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:46.629 NetworkWANSettingsPage:199 - WAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:46.706 NetworkWANSettingsPage:208 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:46.755 NetworkWANSettingsPage:217 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:46.824 NetworkWANSettingsPage:226 - WAN IP Configuration Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:46.901 NetworkWANSettingsPage:235 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:46.972 NetworkWANSettingsPage:244 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:47.261 NetworkWANSettingsPage:255 - LAC toggle button is displayed and is enabled(ON)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:47.364 NetworkWANSettingsPage:264 - WAN IP RENEW button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 ERROR] 2021-11-16 16:52:47.845 TestListener:39 - java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.verifyUIOnWANSettingsPage(NetworkWANSettingsPage.java:270)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.lambda$Verify_Network_Page$12(TC57_Login_And_Verify_NetworkPage_Test.java:138)
+	at com.cs.arris.Workflows.TC57_Login_And_Verify_NetworkPage_Workflow.networkPage(TC57_Login_And_Verify_NetworkPage_Workflow.java:148)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.Verify_Network_Page(TC57_Login_And_Verify_NetworkPage_Test.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:52.482 ParentClass:420 - video path: videos/Android_RZ8M3002DGL/2021-11-16-16-48-43/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:58.596 ParentClass:178 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:52:58.806 ParentClass:180 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:55:57.835 ParentClass:293 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:55:57.846 ParentClass:234 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:09.422 ParentClass:244 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:09.423 ParentClass:245 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:13.482 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:13.485 ParentClass:317 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:13.491 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:13.493 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:13.494 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:13.499 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:13.502 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:14.210 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:14.755 GetStartedPage:45 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:15.528 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:31.965 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:35.307 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:36.703 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:37.592 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:38.778 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:39.699 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:42.995 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:43.868 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:56:55.895 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:02.483 EnterValidOTPPage:61 - Entering valid OTP...485179
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:04.085 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:28.523 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:50.806 HomePage:645 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:51.289 FooterIconsPage:169 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:52.200 NetworkPage:480 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:52.968 NetworkPage:285 - Network title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:53.137 NetworkPage:292 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:53.224 NetworkPage:299 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:53.315 NetworkPage:306 - Main WiFi expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:54.573 NetworkPage:314 - Network Name (SSID) : arrisw3140
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:54.926 NetworkPage:321 - Password : ••••••••••
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:54.989 NetworkPage:328 - Show Password Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:55.912 NetworkPage:336 - Guest Wi-Fi Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:57:56.040 NetworkPage:343 - Enable/Disable Guest Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:01.517 NetworkPage:354 - Guest Network toggle button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:01.600 NetworkPage:359 - Extended WiFi Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:02.561 NetworkPage:367 - Extended Wi-Fi Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:02.691 NetworkPage:374 - 5GHz Wideband Mode label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:02.970 NetworkPage:381 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:03.088 NetworkPage:388 - Extended Wifi toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:04.361 NetworkPage:398 - Network Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:06.600 NetworkPage:407 - Network Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:06.972 NetworkPage:414 - LAN IP Address : 192.168.7.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:07.343 NetworkPage:421 - Gateway IP Address : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:07.535 NetworkPage:428 - General Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:07.749 NetworkPage:435 - WAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:07.971 NetworkPage:442 - LAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:08.170 NetworkPage:449 - Device Priority Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:08.380 NetworkPage:456 - Time Zone label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:08.523 NetworkPage:463 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:08.654 NetworkPage:470 - TEST MY CONNECTION SPEED button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:09.686 NetworkPage:193 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:15.334 NetworkHelpPage:76 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:16.135 NetworkPage:204 - Clicked on Test Your Connection Speed button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:16.742 SpeedTestPage:266 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:16.918 SpeedTestPage:247 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:58:17.822 SpeedTestPage:268 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:59:58.066 SpeedTestPage:271 - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 16:59:59.119 SpeedTestPage:166 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:00.772 NetworkPage:239 - Clicked on WAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:01.473 AppRatingDialog:63 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:01.647 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:02.285 NetworkWANSettingsPage:199 - WAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:02.362 NetworkWANSettingsPage:208 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:02.418 NetworkWANSettingsPage:217 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:02.500 NetworkWANSettingsPage:226 - WAN IP Configuration Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:02.570 NetworkWANSettingsPage:235 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:02.645 NetworkWANSettingsPage:244 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:02.955 NetworkWANSettingsPage:255 - LAC toggle button is displayed and is enabled(ON)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:03.073 NetworkWANSettingsPage:264 - WAN IP RENEW button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 ERROR] 2021-11-16 17:00:03.586 TestListener:39 - java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.verifyUIOnWANSettingsPage(NetworkWANSettingsPage.java:270)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.lambda$Verify_Network_Page$12(TC57_Login_And_Verify_NetworkPage_Test.java:138)
+	at com.cs.arris.Workflows.TC57_Login_And_Verify_NetworkPage_Workflow.networkPage(TC57_Login_And_Verify_NetworkPage_Workflow.java:148)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.Verify_Network_Page(TC57_Login_And_Verify_NetworkPage_Test.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:08.063 ParentClass:420 - video path: videos/Android_RZ8M3002DGL/2021-11-16-16-55-57/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:13.936 ParentClass:178 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:00:14.112 ParentClass:180 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:10.038 ParentClass:293 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:10.050 ParentClass:234 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:20.930 ParentClass:244 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:20.937 ParentClass:245 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.192 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.194 ParentClass:317 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.201 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.204 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.204 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.205 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.205 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.956 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.966 ParentClass:510 - Size of softAssert arrylist: 1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.967 ParentClass:510 - Size of softAssert arrylist: 2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.967 ParentClass:510 - Size of softAssert arrylist: 3
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.967 ParentClass:510 - Size of softAssert arrylist: 4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.967 ParentClass:510 - Size of softAssert arrylist: 5
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.967 ParentClass:510 - Size of softAssert arrylist: 6
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.967 ParentClass:510 - Size of softAssert arrylist: 7
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.967 ParentClass:510 - Size of softAssert arrylist: 8
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.968 ParentClass:510 - Size of softAssert arrylist: 9
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.968 ParentClass:510 - Size of softAssert arrylist: 10
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.968 ParentClass:510 - Size of softAssert arrylist: 11
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.970 ParentClass:510 - Size of softAssert arrylist: 12
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.971 ParentClass:510 - Size of softAssert arrylist: 13
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.971 ParentClass:510 - Size of softAssert arrylist: 14
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.971 ParentClass:510 - Size of softAssert arrylist: 15
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.971 ParentClass:510 - Size of softAssert arrylist: 16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.971 ParentClass:510 - Size of softAssert arrylist: 17
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.971 ParentClass:510 - Size of softAssert arrylist: 18
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.971 ParentClass:510 - Size of softAssert arrylist: 19
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.972 ParentClass:510 - Size of softAssert arrylist: 20
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.972 ParentClass:510 - Size of softAssert arrylist: 21
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.972 ParentClass:510 - Size of softAssert arrylist: 22
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.973 ParentClass:510 - Size of softAssert arrylist: 23
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.974 ParentClass:510 - Size of softAssert arrylist: 24
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.974 ParentClass:510 - Size of softAssert arrylist: 25
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.974 ParentClass:510 - Size of softAssert arrylist: 26
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.974 ParentClass:510 - Size of softAssert arrylist: 27
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.974 ParentClass:510 - Size of softAssert arrylist: 28
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.974 ParentClass:510 - Size of softAssert arrylist: 29
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.975 ParentClass:510 - Size of softAssert arrylist: 30
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.975 ParentClass:510 - Size of softAssert arrylist: 31
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.976 ParentClass:510 - Size of softAssert arrylist: 32
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.976 ParentClass:510 - Size of softAssert arrylist: 33
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.976 ParentClass:510 - Size of softAssert arrylist: 34
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.976 ParentClass:510 - Size of softAssert arrylist: 35
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.977 ParentClass:510 - Size of softAssert arrylist: 36
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.977 ParentClass:510 - Size of softAssert arrylist: 37
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.977 ParentClass:510 - Size of softAssert arrylist: 38
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.980 ParentClass:510 - Size of softAssert arrylist: 39
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.983 ParentClass:510 - Size of softAssert arrylist: 40
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.985 ParentClass:510 - Size of softAssert arrylist: 41
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.986 ParentClass:510 - Size of softAssert arrylist: 42
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.987 ParentClass:510 - Size of softAssert arrylist: 43
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.987 ParentClass:510 - Size of softAssert arrylist: 44
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.988 ParentClass:510 - Size of softAssert arrylist: 45
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.989 ParentClass:510 - Size of softAssert arrylist: 46
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.989 ParentClass:510 - Size of softAssert arrylist: 47
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.990 ParentClass:510 - Size of softAssert arrylist: 48
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.990 ParentClass:510 - Size of softAssert arrylist: 49
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.990 ParentClass:510 - Size of softAssert arrylist: 50
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.991 ParentClass:510 - Size of softAssert arrylist: 51
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.991 ParentClass:510 - Size of softAssert arrylist: 52
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.991 ParentClass:510 - Size of softAssert arrylist: 53
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.991 ParentClass:510 - Size of softAssert arrylist: 54
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.991 ParentClass:510 - Size of softAssert arrylist: 55
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.991 ParentClass:510 - Size of softAssert arrylist: 56
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.992 ParentClass:510 - Size of softAssert arrylist: 57
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.993 ParentClass:510 - Size of softAssert arrylist: 58
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.993 ParentClass:510 - Size of softAssert arrylist: 59
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.993 ParentClass:510 - Size of softAssert arrylist: 60
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.994 ParentClass:510 - Size of softAssert arrylist: 61
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.994 ParentClass:510 - Size of softAssert arrylist: 62
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.994 ParentClass:510 - Size of softAssert arrylist: 63
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.995 ParentClass:510 - Size of softAssert arrylist: 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.995 ParentClass:510 - Size of softAssert arrylist: 65
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.995 ParentClass:510 - Size of softAssert arrylist: 66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.996 ParentClass:510 - Size of softAssert arrylist: 67
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.996 ParentClass:510 - Size of softAssert arrylist: 68
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.996 ParentClass:510 - Size of softAssert arrylist: 69
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.996 ParentClass:510 - Size of softAssert arrylist: 70
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.996 ParentClass:510 - Size of softAssert arrylist: 71
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.996 ParentClass:510 - Size of softAssert arrylist: 72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.997 ParentClass:510 - Size of softAssert arrylist: 73
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.997 ParentClass:510 - Size of softAssert arrylist: 74
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.997 ParentClass:510 - Size of softAssert arrylist: 75
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.998 ParentClass:510 - Size of softAssert arrylist: 76
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.998 ParentClass:510 - Size of softAssert arrylist: 77
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.998 ParentClass:510 - Size of softAssert arrylist: 78
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.998 ParentClass:510 - Size of softAssert arrylist: 79
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.998 ParentClass:510 - Size of softAssert arrylist: 80
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.998 ParentClass:510 - Size of softAssert arrylist: 81
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.998 ParentClass:510 - Size of softAssert arrylist: 82
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.999 ParentClass:510 - Size of softAssert arrylist: 83
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.999 ParentClass:510 - Size of softAssert arrylist: 84
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.999 ParentClass:510 - Size of softAssert arrylist: 85
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.999 ParentClass:510 - Size of softAssert arrylist: 86
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.999 ParentClass:510 - Size of softAssert arrylist: 87
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:25.999 ParentClass:510 - Size of softAssert arrylist: 88
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 89
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 90
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 91
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 92
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 93
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 94
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 95
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 96
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.000 ParentClass:510 - Size of softAssert arrylist: 97
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.001 ParentClass:510 - Size of softAssert arrylist: 98
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.001 ParentClass:510 - Size of softAssert arrylist: 99
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.001 ParentClass:510 - Size of softAssert arrylist: 100
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.001 ParentClass:510 - Size of softAssert arrylist: 101
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.120 ParentClass:510 - Size of softAssert arrylist: 1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.121 ParentClass:510 - Size of softAssert arrylist: 2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.121 ParentClass:510 - Size of softAssert arrylist: 3
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.122 ParentClass:510 - Size of softAssert arrylist: 4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.123 ParentClass:510 - Size of softAssert arrylist: 5
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.126 ParentClass:510 - Size of softAssert arrylist: 6
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.126 ParentClass:510 - Size of softAssert arrylist: 7
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.126 ParentClass:510 - Size of softAssert arrylist: 8
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.126 ParentClass:510 - Size of softAssert arrylist: 9
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.127 ParentClass:510 - Size of softAssert arrylist: 10
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.128 ParentClass:510 - Size of softAssert arrylist: 11
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.128 ParentClass:510 - Size of softAssert arrylist: 12
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.128 ParentClass:510 - Size of softAssert arrylist: 13
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.128 ParentClass:510 - Size of softAssert arrylist: 14
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 15
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 17
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 18
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 19
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 20
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 21
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.129 ParentClass:510 - Size of softAssert arrylist: 22
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.130 ParentClass:510 - Size of softAssert arrylist: 23
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.130 ParentClass:510 - Size of softAssert arrylist: 24
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.130 ParentClass:510 - Size of softAssert arrylist: 25
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.130 ParentClass:510 - Size of softAssert arrylist: 26
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.130 ParentClass:510 - Size of softAssert arrylist: 27
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.130 ParentClass:510 - Size of softAssert arrylist: 28
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.131 ParentClass:510 - Size of softAssert arrylist: 29
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.131 ParentClass:510 - Size of softAssert arrylist: 30
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.131 ParentClass:510 - Size of softAssert arrylist: 31
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.131 ParentClass:510 - Size of softAssert arrylist: 32
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.131 ParentClass:510 - Size of softAssert arrylist: 33
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 34
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 35
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 36
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 37
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 38
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 39
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 40
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 41
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.132 ParentClass:510 - Size of softAssert arrylist: 42
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 43
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 44
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 45
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 46
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 47
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 48
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 49
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.133 ParentClass:510 - Size of softAssert arrylist: 50
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.134 ParentClass:510 - Size of softAssert arrylist: 51
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.134 ParentClass:510 - Size of softAssert arrylist: 52
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.134 ParentClass:510 - Size of softAssert arrylist: 53
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.134 ParentClass:510 - Size of softAssert arrylist: 54
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.134 ParentClass:510 - Size of softAssert arrylist: 55
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.134 ParentClass:510 - Size of softAssert arrylist: 56
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.134 ParentClass:510 - Size of softAssert arrylist: 57
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.135 ParentClass:510 - Size of softAssert arrylist: 58
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.135 ParentClass:510 - Size of softAssert arrylist: 59
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.135 ParentClass:510 - Size of softAssert arrylist: 60
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.135 ParentClass:510 - Size of softAssert arrylist: 61
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.135 ParentClass:510 - Size of softAssert arrylist: 62
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.135 ParentClass:510 - Size of softAssert arrylist: 63
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.136 ParentClass:510 - Size of softAssert arrylist: 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.137 ParentClass:510 - Size of softAssert arrylist: 65
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.141 ParentClass:510 - Size of softAssert arrylist: 66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.146 ParentClass:510 - Size of softAssert arrylist: 67
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.147 ParentClass:510 - Size of softAssert arrylist: 68
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.148 ParentClass:510 - Size of softAssert arrylist: 69
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.148 ParentClass:510 - Size of softAssert arrylist: 70
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.148 ParentClass:510 - Size of softAssert arrylist: 71
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.148 ParentClass:510 - Size of softAssert arrylist: 72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.148 ParentClass:510 - Size of softAssert arrylist: 73
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.148 ParentClass:510 - Size of softAssert arrylist: 74
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.148 ParentClass:510 - Size of softAssert arrylist: 75
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.149 ParentClass:510 - Size of softAssert arrylist: 76
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.149 ParentClass:510 - Size of softAssert arrylist: 77
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.149 ParentClass:510 - Size of softAssert arrylist: 78
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.149 ParentClass:510 - Size of softAssert arrylist: 79
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.149 ParentClass:510 - Size of softAssert arrylist: 80
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.150 ParentClass:510 - Size of softAssert arrylist: 81
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.150 ParentClass:510 - Size of softAssert arrylist: 82
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.150 ParentClass:510 - Size of softAssert arrylist: 83
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.150 ParentClass:510 - Size of softAssert arrylist: 84
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.150 ParentClass:510 - Size of softAssert arrylist: 85
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.150 ParentClass:510 - Size of softAssert arrylist: 86
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 87
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 88
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 89
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 90
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 91
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 92
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 93
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.151 ParentClass:510 - Size of softAssert arrylist: 94
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.152 ParentClass:510 - Size of softAssert arrylist: 95
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.152 ParentClass:510 - Size of softAssert arrylist: 96
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.152 ParentClass:510 - Size of softAssert arrylist: 97
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.152 ParentClass:510 - Size of softAssert arrylist: 98
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.152 ParentClass:510 - Size of softAssert arrylist: 99
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.152 ParentClass:510 - Size of softAssert arrylist: 100
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.152 ParentClass:510 - Size of softAssert arrylist: 101
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.547 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.549 ParentClass:510 - Size of softAssert arrylist: 1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.550 ParentClass:510 - Size of softAssert arrylist: 2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.550 ParentClass:510 - Size of softAssert arrylist: 3
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.550 ParentClass:510 - Size of softAssert arrylist: 4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.550 ParentClass:510 - Size of softAssert arrylist: 5
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.550 ParentClass:510 - Size of softAssert arrylist: 6
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.550 ParentClass:510 - Size of softAssert arrylist: 7
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.551 ParentClass:510 - Size of softAssert arrylist: 8
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.551 ParentClass:510 - Size of softAssert arrylist: 9
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.551 ParentClass:510 - Size of softAssert arrylist: 10
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.551 ParentClass:510 - Size of softAssert arrylist: 11
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.551 ParentClass:510 - Size of softAssert arrylist: 12
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.551 ParentClass:510 - Size of softAssert arrylist: 13
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.551 ParentClass:510 - Size of softAssert arrylist: 14
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 15
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 17
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 18
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 19
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 20
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 21
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.552 ParentClass:510 - Size of softAssert arrylist: 22
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.553 ParentClass:510 - Size of softAssert arrylist: 23
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.553 ParentClass:510 - Size of softAssert arrylist: 24
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.554 ParentClass:510 - Size of softAssert arrylist: 25
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.554 ParentClass:510 - Size of softAssert arrylist: 26
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.554 ParentClass:510 - Size of softAssert arrylist: 27
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.554 ParentClass:510 - Size of softAssert arrylist: 28
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.556 ParentClass:510 - Size of softAssert arrylist: 29
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.565 ParentClass:510 - Size of softAssert arrylist: 30
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.567 ParentClass:510 - Size of softAssert arrylist: 31
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.568 ParentClass:510 - Size of softAssert arrylist: 32
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.568 ParentClass:510 - Size of softAssert arrylist: 33
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.568 ParentClass:510 - Size of softAssert arrylist: 34
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.569 ParentClass:510 - Size of softAssert arrylist: 35
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.569 ParentClass:510 - Size of softAssert arrylist: 36
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.569 ParentClass:510 - Size of softAssert arrylist: 37
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.570 ParentClass:510 - Size of softAssert arrylist: 38
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.570 ParentClass:510 - Size of softAssert arrylist: 39
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.571 ParentClass:510 - Size of softAssert arrylist: 40
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.574 ParentClass:510 - Size of softAssert arrylist: 41
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.575 ParentClass:510 - Size of softAssert arrylist: 42
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.575 ParentClass:510 - Size of softAssert arrylist: 43
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.575 ParentClass:510 - Size of softAssert arrylist: 44
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.576 ParentClass:510 - Size of softAssert arrylist: 45
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.576 ParentClass:510 - Size of softAssert arrylist: 46
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.576 ParentClass:510 - Size of softAssert arrylist: 47
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.576 ParentClass:510 - Size of softAssert arrylist: 48
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.576 ParentClass:510 - Size of softAssert arrylist: 49
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.577 ParentClass:510 - Size of softAssert arrylist: 50
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.577 ParentClass:510 - Size of softAssert arrylist: 51
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.577 ParentClass:510 - Size of softAssert arrylist: 52
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.577 ParentClass:510 - Size of softAssert arrylist: 53
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.578 ParentClass:510 - Size of softAssert arrylist: 54
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.578 ParentClass:510 - Size of softAssert arrylist: 55
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.580 ParentClass:510 - Size of softAssert arrylist: 56
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.580 ParentClass:510 - Size of softAssert arrylist: 57
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.581 ParentClass:510 - Size of softAssert arrylist: 58
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.581 ParentClass:510 - Size of softAssert arrylist: 59
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.581 ParentClass:510 - Size of softAssert arrylist: 60
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.581 ParentClass:510 - Size of softAssert arrylist: 61
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.581 ParentClass:510 - Size of softAssert arrylist: 62
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.581 ParentClass:510 - Size of softAssert arrylist: 63
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.582 ParentClass:510 - Size of softAssert arrylist: 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.582 ParentClass:510 - Size of softAssert arrylist: 65
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.582 ParentClass:510 - Size of softAssert arrylist: 66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 67
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 68
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 69
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 70
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 71
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 73
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.583 ParentClass:510 - Size of softAssert arrylist: 74
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.584 ParentClass:510 - Size of softAssert arrylist: 75
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.584 ParentClass:510 - Size of softAssert arrylist: 76
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.584 ParentClass:510 - Size of softAssert arrylist: 77
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.584 ParentClass:510 - Size of softAssert arrylist: 78
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.584 ParentClass:510 - Size of softAssert arrylist: 79
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.584 ParentClass:510 - Size of softAssert arrylist: 80
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 81
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 82
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 83
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 84
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 85
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 86
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 87
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.585 ParentClass:510 - Size of softAssert arrylist: 88
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.586 ParentClass:510 - Size of softAssert arrylist: 89
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.586 ParentClass:510 - Size of softAssert arrylist: 90
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.587 ParentClass:510 - Size of softAssert arrylist: 91
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.590 ParentClass:510 - Size of softAssert arrylist: 92
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.593 ParentClass:510 - Size of softAssert arrylist: 93
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.595 ParentClass:510 - Size of softAssert arrylist: 94
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.596 ParentClass:510 - Size of softAssert arrylist: 95
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.596 ParentClass:510 - Size of softAssert arrylist: 96
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.596 ParentClass:510 - Size of softAssert arrylist: 97
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.597 ParentClass:510 - Size of softAssert arrylist: 98
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.597 ParentClass:510 - Size of softAssert arrylist: 99
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.597 ParentClass:510 - Size of softAssert arrylist: 100
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:26.597 ParentClass:510 - Size of softAssert arrylist: 101
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.475 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.480 ParentClass:510 - Size of softAssert arrylist: 1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.480 ParentClass:510 - Size of softAssert arrylist: 2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.481 ParentClass:510 - Size of softAssert arrylist: 3
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.481 ParentClass:510 - Size of softAssert arrylist: 4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.481 ParentClass:510 - Size of softAssert arrylist: 5
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.481 ParentClass:510 - Size of softAssert arrylist: 6
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.482 ParentClass:510 - Size of softAssert arrylist: 7
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.482 ParentClass:510 - Size of softAssert arrylist: 8
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.482 ParentClass:510 - Size of softAssert arrylist: 9
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.482 ParentClass:510 - Size of softAssert arrylist: 10
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.482 ParentClass:510 - Size of softAssert arrylist: 11
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.483 ParentClass:510 - Size of softAssert arrylist: 12
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.483 ParentClass:510 - Size of softAssert arrylist: 13
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.483 ParentClass:510 - Size of softAssert arrylist: 14
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.483 ParentClass:510 - Size of softAssert arrylist: 15
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.483 ParentClass:510 - Size of softAssert arrylist: 16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.484 ParentClass:510 - Size of softAssert arrylist: 17
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.484 ParentClass:510 - Size of softAssert arrylist: 18
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.484 ParentClass:510 - Size of softAssert arrylist: 19
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.484 ParentClass:510 - Size of softAssert arrylist: 20
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.485 ParentClass:510 - Size of softAssert arrylist: 21
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.485 ParentClass:510 - Size of softAssert arrylist: 22
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.485 ParentClass:510 - Size of softAssert arrylist: 23
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.485 ParentClass:510 - Size of softAssert arrylist: 24
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.485 ParentClass:510 - Size of softAssert arrylist: 25
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.486 ParentClass:510 - Size of softAssert arrylist: 26
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.486 ParentClass:510 - Size of softAssert arrylist: 27
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.486 ParentClass:510 - Size of softAssert arrylist: 28
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.487 ParentClass:510 - Size of softAssert arrylist: 29
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.487 ParentClass:510 - Size of softAssert arrylist: 30
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.487 ParentClass:510 - Size of softAssert arrylist: 31
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.487 ParentClass:510 - Size of softAssert arrylist: 32
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.488 ParentClass:510 - Size of softAssert arrylist: 33
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.488 ParentClass:510 - Size of softAssert arrylist: 34
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.488 ParentClass:510 - Size of softAssert arrylist: 35
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.488 ParentClass:510 - Size of softAssert arrylist: 36
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.489 ParentClass:510 - Size of softAssert arrylist: 37
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.489 ParentClass:510 - Size of softAssert arrylist: 38
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.489 ParentClass:510 - Size of softAssert arrylist: 39
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.489 ParentClass:510 - Size of softAssert arrylist: 40
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.489 ParentClass:510 - Size of softAssert arrylist: 41
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.490 ParentClass:510 - Size of softAssert arrylist: 42
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.490 ParentClass:510 - Size of softAssert arrylist: 43
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.490 ParentClass:510 - Size of softAssert arrylist: 44
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.490 ParentClass:510 - Size of softAssert arrylist: 45
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.490 ParentClass:510 - Size of softAssert arrylist: 46
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.490 ParentClass:510 - Size of softAssert arrylist: 47
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.491 ParentClass:510 - Size of softAssert arrylist: 48
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.491 ParentClass:510 - Size of softAssert arrylist: 49
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.491 ParentClass:510 - Size of softAssert arrylist: 50
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.491 ParentClass:510 - Size of softAssert arrylist: 51
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.491 ParentClass:510 - Size of softAssert arrylist: 52
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.492 ParentClass:510 - Size of softAssert arrylist: 53
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.492 ParentClass:510 - Size of softAssert arrylist: 54
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.492 ParentClass:510 - Size of softAssert arrylist: 55
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.492 ParentClass:510 - Size of softAssert arrylist: 56
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.492 ParentClass:510 - Size of softAssert arrylist: 57
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.492 ParentClass:510 - Size of softAssert arrylist: 58
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.493 ParentClass:510 - Size of softAssert arrylist: 59
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.493 ParentClass:510 - Size of softAssert arrylist: 60
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.493 ParentClass:510 - Size of softAssert arrylist: 61
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.493 ParentClass:510 - Size of softAssert arrylist: 62
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.493 ParentClass:510 - Size of softAssert arrylist: 63
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.493 ParentClass:510 - Size of softAssert arrylist: 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.494 ParentClass:510 - Size of softAssert arrylist: 65
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.494 ParentClass:510 - Size of softAssert arrylist: 66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.494 ParentClass:510 - Size of softAssert arrylist: 67
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.494 ParentClass:510 - Size of softAssert arrylist: 68
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.495 ParentClass:510 - Size of softAssert arrylist: 69
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.495 ParentClass:510 - Size of softAssert arrylist: 70
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.495 ParentClass:510 - Size of softAssert arrylist: 71
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.495 ParentClass:510 - Size of softAssert arrylist: 72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.495 ParentClass:510 - Size of softAssert arrylist: 73
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.495 ParentClass:510 - Size of softAssert arrylist: 74
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.495 ParentClass:510 - Size of softAssert arrylist: 75
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.496 ParentClass:510 - Size of softAssert arrylist: 76
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.496 ParentClass:510 - Size of softAssert arrylist: 77
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.496 ParentClass:510 - Size of softAssert arrylist: 78
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.496 ParentClass:510 - Size of softAssert arrylist: 79
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.496 ParentClass:510 - Size of softAssert arrylist: 80
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.496 ParentClass:510 - Size of softAssert arrylist: 81
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.497 ParentClass:510 - Size of softAssert arrylist: 82
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.498 ParentClass:510 - Size of softAssert arrylist: 83
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.499 ParentClass:510 - Size of softAssert arrylist: 84
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.500 ParentClass:510 - Size of softAssert arrylist: 85
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.500 ParentClass:510 - Size of softAssert arrylist: 86
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.501 ParentClass:510 - Size of softAssert arrylist: 87
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.502 ParentClass:510 - Size of softAssert arrylist: 88
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.502 ParentClass:510 - Size of softAssert arrylist: 89
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.503 ParentClass:510 - Size of softAssert arrylist: 90
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.503 ParentClass:510 - Size of softAssert arrylist: 91
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.503 ParentClass:510 - Size of softAssert arrylist: 92
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.504 ParentClass:510 - Size of softAssert arrylist: 93
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.504 ParentClass:510 - Size of softAssert arrylist: 94
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.505 ParentClass:510 - Size of softAssert arrylist: 95
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.505 ParentClass:510 - Size of softAssert arrylist: 96
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.505 ParentClass:510 - Size of softAssert arrylist: 97
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.506 ParentClass:510 - Size of softAssert arrylist: 98
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.506 ParentClass:510 - Size of softAssert arrylist: 99
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.506 ParentClass:510 - Size of softAssert arrylist: 100
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:05:27.506 ParentClass:510 - Size of softAssert arrylist: 101
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:39.984 ParentClass:293 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:39.996 ParentClass:234 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:51.698 ParentClass:244 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:51.699 ParentClass:245 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:55.923 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:55.925 ParentClass:317 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:55.935 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:55.938 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:55.940 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:55.941 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:07:55.942 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:07.344 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:07.669 ParentClass:511 - Size of softAssert arrylist: 101
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:07.936 GetStartedPage:45 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:08.761 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:25.165 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:28.494 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:29.793 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:30.730 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:31.786 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:32.684 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:36.017 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:36.830 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:48.862 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:53.300 EnterValidOTPPage:61 - Entering valid OTP...145575
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:08:54.865 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:19.717 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:41.579 HomePage:645 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:42.036 FooterIconsPage:169 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:43.069 NetworkPage:480 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:43.859 NetworkPage:285 - Network title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:43.999 NetworkPage:292 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:44.060 NetworkPage:299 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:44.122 NetworkPage:306 - Main WiFi expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:45.264 NetworkPage:314 - Network Name (SSID) : arrisw3140
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:45.630 NetworkPage:321 - Password : ••••••••••
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:45.704 NetworkPage:328 - Show Password Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:46.618 NetworkPage:336 - Guest Wi-Fi Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:46.795 NetworkPage:343 - Enable/Disable Guest Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:52.349 NetworkPage:354 - Guest Network toggle button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:52.439 NetworkPage:359 - Extended WiFi Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:53.453 NetworkPage:367 - Extended Wi-Fi Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:53.680 NetworkPage:374 - 5GHz Wideband Mode label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:54.076 NetworkPage:381 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:54.261 NetworkPage:388 - Extended Wifi toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:55.758 NetworkPage:398 - Network Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:58.062 NetworkPage:407 - Network Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:59.004 NetworkPage:414 - LAN IP Address : 192.168.7.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:59.412 NetworkPage:421 - Gateway IP Address : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:59.642 NetworkPage:428 - General Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:09:59.878 NetworkPage:435 - WAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:00.132 NetworkPage:442 - LAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:00.376 NetworkPage:449 - Device Priority Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:00.591 NetworkPage:456 - Time Zone label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:00.743 NetworkPage:463 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:00.893 NetworkPage:470 - TEST MY CONNECTION SPEED button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:01.950 NetworkPage:193 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:06.786 NetworkHelpPage:76 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:07.592 NetworkPage:204 - Clicked on Test Your Connection Speed button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:08.193 SpeedTestPage:266 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:08.404 SpeedTestPage:247 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:10:09.273 SpeedTestPage:268 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:49.604 SpeedTestPage:271 - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:49.967 SpeedTestPage:166 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:52.228 NetworkPage:239 - Clicked on WAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:52.915 AppRatingDialog:63 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:53.065 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:53.698 NetworkWANSettingsPage:199 - WAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:53.936 NetworkWANSettingsPage:208 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:53.999 NetworkWANSettingsPage:217 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:54.074 NetworkWANSettingsPage:226 - WAN IP Configuration Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:54.143 NetworkWANSettingsPage:235 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:54.216 NetworkWANSettingsPage:244 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:54.513 NetworkWANSettingsPage:255 - LAC toggle button is displayed and is enabled(ON)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:54.612 NetworkWANSettingsPage:264 - WAN IP RENEW button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 ERROR] 2021-11-16 17:11:55.128 TestListener:39 - java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.verifyUIOnWANSettingsPage(NetworkWANSettingsPage.java:270)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.lambda$Verify_Network_Page$12(TC57_Login_And_Verify_NetworkPage_Test.java:138)
+	at com.cs.arris.Workflows.TC57_Login_And_Verify_NetworkPage_Workflow.networkPage(TC57_Login_And_Verify_NetworkPage_Workflow.java:148)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.Verify_Network_Page(TC57_Login_And_Verify_NetworkPage_Test.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:11:59.238 ParentClass:420 - video path: videos/Android_RZ8M3002DGL/2021-11-16-17-07-39/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:12:05.265 ParentClass:178 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:12:05.452 ParentClass:180 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:39.832 ParentClass:293 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:39.845 ParentClass:234 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:50.850 ParentClass:244 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:50.853 ParentClass:245 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:54.955 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:54.958 ParentClass:317 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:54.963 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:54.964 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:54.965 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:54.966 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:54.967 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:55.684 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:55.984 ParentClass:511 - Size of softAssert arrylist: 101
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:56.270 GetStartedPage:45 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:22:57.049 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:13.880 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:17.209 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:18.644 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:19.619 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:20.647 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:21.522 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:24.916 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:25.760 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:37.784 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:42.654 EnterValidOTPPage:61 - Entering valid OTP...105194
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:23:44.198 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:09.145 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:31.021 HomePage:645 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:31.497 FooterIconsPage:169 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:32.367 NetworkPage:480 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:33.170 NetworkPage:285 - Network title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:33.314 NetworkPage:292 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:33.396 NetworkPage:299 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:33.483 NetworkPage:306 - Main WiFi expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:34.719 NetworkPage:314 - Network Name (SSID) : arrisw3140
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:35.138 NetworkPage:321 - Password : ••••••••••
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:35.236 NetworkPage:328 - Show Password Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:36.194 NetworkPage:336 - Guest Wi-Fi Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:36.362 NetworkPage:343 - Enable/Disable Guest Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:41.444 NetworkPage:354 - Guest Network toggle button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:41.549 NetworkPage:359 - Extended WiFi Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:42.570 NetworkPage:367 - Extended Wi-Fi Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:42.762 NetworkPage:374 - 5GHz Wideband Mode label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:43.023 NetworkPage:381 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:43.152 NetworkPage:388 - Extended Wifi toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:44.391 NetworkPage:398 - Network Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:46.669 NetworkPage:407 - Network Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:47.085 NetworkPage:414 - LAN IP Address : 192.168.7.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:47.519 NetworkPage:421 - Gateway IP Address : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:47.799 NetworkPage:428 - General Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:48.046 NetworkPage:435 - WAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:48.292 NetworkPage:442 - LAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:48.541 NetworkPage:449 - Device Priority Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:48.769 NetworkPage:456 - Time Zone label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:48.948 NetworkPage:463 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:49.122 NetworkPage:470 - TEST MY CONNECTION SPEED button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:50.207 NetworkPage:193 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:55.487 NetworkHelpPage:76 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:56.686 NetworkPage:204 - Clicked on Test Your Connection Speed button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:57.285 SpeedTestPage:266 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:58.113 SpeedTestPage:247 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:24:58.402 SpeedTestPage:268 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:38.711 SpeedTestPage:271 - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:39.088 SpeedTestPage:166 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:41.593 NetworkPage:239 - Clicked on WAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:42.293 AppRatingDialog:63 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:42.450 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.086 NetworkWANSettingsPage:200 - WAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.170 NetworkWANSettingsPage:209 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.230 NetworkWANSettingsPage:218 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.315 NetworkWANSettingsPage:227 - WAN IP Configuration Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.390 NetworkWANSettingsPage:236 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.469 NetworkWANSettingsPage:245 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.853 NetworkWANSettingsPage:256 - LAC toggle button is displayed and is enabled(ON)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:43.976 NetworkWANSettingsPage:265 - WAN IP RENEW button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:44.171 NetworkWANSettingsPage:125 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:46.000 NetworkWANSettingsHelpPage:94 - On WAN Settings Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:46.191 NetworkWANSettingsHelpPage:57 - WAN Settings title is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:46.270 NetworkWANSettingsHelpPage:64 - WAN Setting allows you to control and configure help is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:51.518 NetworkWANSettingsHelpPage:73 - You can configure DHCP help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:26:56.832 NetworkWANSettingsHelpPage:80 - DNS Server can als be configured help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:01.978 NetworkWANSettingsHelpPage:87 - WAN IP Renew help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:03.901 NetworkWANSettingsHelpPage:48 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:05.345 NetworkWANIPConfigurationIPv4Page:407 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:05.348 NetworkWANIPConfigurationIPv4Page:205 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:05.349 NetworkWANIPConfigurationIPv4Page:206 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:05.349 NetworkWANIPConfigurationIPv4Page:207 - Verifying WAN IPv4 - DHCP Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:05.349 NetworkWANIPConfigurationIPv4Page:208 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:06.049 NetworkWANIPConfigurationIPv4Page:184 - DHCP Radion button is already selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:06.192 NetworkWANIPConfigurationIPv4Page:214 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:06.317 NetworkWANIPConfigurationIPv4Page:221 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:06.378 NetworkWANIPConfigurationIPv4Page:228 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:06.588 NetworkWANIPConfigurationIPv4Page:242 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:06.719 NetworkWANIPConfigurationIPv4Page:249 - DHCP Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:07.256 NetworkWANIPConfigurationIPv4Page:263 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:07.755 NetworkWANIPConfigurationIPv4Page:270 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:08.279 NetworkWANIPConfigurationIPv4Page:277 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:08.755 NetworkWANIPConfigurationIPv4Page:284 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:09.268 NetworkWANIPConfigurationIPv4Page:291 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:09.686 NetworkWANIPConfigurationIPv4Page:298 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:09.696 NetworkWANIPConfigurationIPv4Page:305 -                                                   
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:09.696 NetworkWANIPConfigurationIPv4Page:306 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:09.696 NetworkWANIPConfigurationIPv4Page:307 - Verifying WAN IPv4 - Static Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:09.697 NetworkWANIPConfigurationIPv4Page:308 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:10.837 NetworkWANIPConfigurationIPv4Page:314 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:10.929 NetworkWANIPConfigurationIPv4Page:321 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:10.985 NetworkWANIPConfigurationIPv4Page:328 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:11.201 NetworkWANIPConfigurationIPv4Page:342 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:11.295 NetworkWANIPConfigurationIPv4Page:349 - Satic Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:11.827 NetworkWANIPConfigurationIPv4Page:363 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:12.325 NetworkWANIPConfigurationIPv4Page:370 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:12.811 NetworkWANIPConfigurationIPv4Page:377 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:13.369 NetworkWANIPConfigurationIPv4Page:384 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:13.914 NetworkWANIPConfigurationIPv4Page:391 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:14.263 NetworkWANIPConfigurationIPv4Page:398 - SAVE CHANGES button is displayed and is Enabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:14.525 NetworkWANIPConfigurationIPv4Page:140 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:15.273 NetworkWANIPConfigurationHelpPage:58 - On WAN IP Configuration Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:18.237 NetworkWANIPConfigurationHelpPage:49 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.128 NetworkWANIPConfigurationIPv4Page:151 - Clicked on IPv6 Tab
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.218 NetworkWANIPConfigurationIPv6Page:442 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.225 NetworkWANIPConfigurationIPv6Page:211 -                                                     
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.226 NetworkWANIPConfigurationIPv6Page:212 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.226 NetworkWANIPConfigurationIPv6Page:213 - Verifying WAN IPv6 - Stateful Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.226 NetworkWANIPConfigurationIPv6Page:214 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.338 NetworkWANIPConfigurationIPv6Page:219 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.468 NetworkWANIPConfigurationIPv6Page:226 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.534 NetworkWANIPConfigurationIPv6Page:233 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.789 NetworkWANIPConfigurationIPv6Page:247 - IPv4 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:20.928 NetworkWANIPConfigurationIPv6Page:254 - Stateful Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:21.585 NetworkWANIPConfigurationIPv6Page:268 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:22.251 NetworkWANIPConfigurationIPv6Page:275 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:22.937 NetworkWANIPConfigurationIPv6Page:282 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:23.218 NetworkWANIPConfigurationIPv6Page:289 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:23.359 NetworkWANIPConfigurationIPv6Page:296 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:24.144 NetworkWANIPConfigurationIPv6Page:303 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:24.799 NetworkWANIPConfigurationIPv6Page:310 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:26.265 NetworkWANIPConfigurationIPv6Page:318 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:26.269 NetworkWANIPConfigurationIPv6Page:325 -                                                      
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:26.269 NetworkWANIPConfigurationIPv6Page:326 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:26.269 NetworkWANIPConfigurationIPv6Page:327 - Verifying WAN IPv6 - Stateless Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:26.270 NetworkWANIPConfigurationIPv6Page:328 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:31.412 NetworkWANIPConfigurationIPv6Page:179 - Stateless Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:31.537 NetworkWANIPConfigurationIPv6Page:334 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:31.658 NetworkWANIPConfigurationIPv6Page:341 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:31.725 NetworkWANIPConfigurationIPv6Page:348 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:31.951 NetworkWANIPConfigurationIPv6Page:362 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:37.176 NetworkWANIPConfigurationIPv6Page:371 - Stateless Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:37.858 NetworkWANIPConfigurationIPv6Page:383 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:38.556 NetworkWANIPConfigurationIPv6Page:390 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:39.245 NetworkWANIPConfigurationIPv6Page:397 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:39.485 NetworkWANIPConfigurationIPv6Page:404 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:39.626 NetworkWANIPConfigurationIPv6Page:411 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:40.272 NetworkWANIPConfigurationIPv6Page:418 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:40.888 NetworkWANIPConfigurationIPv6Page:425 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:47.203 NetworkWANIPConfigurationIPv6Page:435 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:47.635 NetworkWANIPConfigurationIPv6Page:121 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:48.455 NetworkWANSettingsPage:188 - Clicked on DNS Configuration Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:49.061 NetworkWANDNSConfigurationIPv4Page:349 - On DNS IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:49.065 NetworkWANDNSConfigurationIPv4Page:190 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:49.066 NetworkWANDNSConfigurationIPv4Page:191 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:49.066 NetworkWANDNSConfigurationIPv4Page:192 - Verifying Automatic DNS Configuration for IPv4  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:49.067 NetworkWANDNSConfigurationIPv4Page:193 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:54.666 NetworkWANDNSConfigurationIPv4Page:169 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:54.844 NetworkWANDNSConfigurationIPv4Page:199 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:54.945 NetworkWANDNSConfigurationIPv4Page:206 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:55.008 NetworkWANDNSConfigurationIPv4Page:213 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:55.218 NetworkWANDNSConfigurationIPv4Page:227 - IPV6 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:55.302 NetworkWANDNSConfigurationIPv4Page:234 - Automatic Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:55.760 NetworkWANDNSConfigurationIPv4Page:248 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:56.167 NetworkWANDNSConfigurationIPv4Page:255 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:56.424 NetworkWANDNSConfigurationIPv4Page:262 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:56.431 NetworkWANDNSConfigurationIPv4Page:269 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:56.431 NetworkWANDNSConfigurationIPv4Page:270 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:56.431 NetworkWANDNSConfigurationIPv4Page:271 - Verifying Static DNS Configuration for IPv4  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:56.431 NetworkWANDNSConfigurationIPv4Page:272 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:57.540 NetworkDNSConfigurationStaticAlertDialog:39 - Alert Dialog - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:57.540 NetworkWANDNSConfigurationIPv4Page:181 - Clicked OK button on Alert Dialog
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:57.540 NetworkWANDNSConfigurationIPv4Page:183 - Automatic Radion button is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:58.175 NetworkWANDNSConfigurationIPv4Page:278 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:58.257 NetworkWANDNSConfigurationIPv4Page:285 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:58.308 NetworkWANDNSConfigurationIPv4Page:292 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:59.109 NetworkWANDNSConfigurationIPv4Page:306 - IPV6 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:59.205 NetworkWANDNSConfigurationIPv4Page:313 - Static Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:59.559 NetworkWANDNSConfigurationIPv4Page:327 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:27:59.947 NetworkWANDNSConfigurationIPv4Page:334 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:05.280 NetworkWANDNSConfigurationIPv4Page:343 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:05.532 NetworkWANDNSConfigurationIPv4Page:121 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:06.478 NetworkWANDNSConfigurationHelpPage:47 - On WAN DNS Configuration Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:09.395 NetworkWANIPConfigurationHelpPage:49 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:14.675 NetworkWANIPConfigurationIPv4Page:154 - IPv6 Tab is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:14.732 NetworkWANDNSConfigurationIPv6Page:349 - On DNS IPv6 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:14.734 NetworkWANDNSConfigurationIPv6Page:190 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:14.734 NetworkWANDNSConfigurationIPv6Page:191 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:14.735 NetworkWANDNSConfigurationIPv6Page:192 - Verifying Automatic DNS Configuration for IPv6  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:14.735 NetworkWANDNSConfigurationIPv6Page:193 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:20.085 NetworkWANDNSConfigurationIPv6Page:169 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:20.242 NetworkWANDNSConfigurationIPv6Page:199 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:20.333 NetworkWANDNSConfigurationIPv6Page:206 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:20.391 NetworkWANDNSConfigurationIPv6Page:213 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:20.569 NetworkWANDNSConfigurationIPv6Page:227 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:25.930 NetworkWANDNSConfigurationIPv6Page:236 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:31.438 NetworkWANDNSConfigurationIPv6Page:250 - Automatic Primary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:36.972 NetworkWANDNSConfigurationIPv6Page:257 - Automatic Secondary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:42.462 NetworkWANDNSConfigurationIPv6Page:264 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:42.465 NetworkWANDNSConfigurationIPv6Page:269 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:42.466 NetworkWANDNSConfigurationIPv6Page:270 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:42.466 NetworkWANDNSConfigurationIPv6Page:271 - Verifying Static DNS Configuration for IPv6     
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:42.466 NetworkWANDNSConfigurationIPv6Page:272 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:47.919 NetworkWANDNSConfigurationIPv6Page:185 - Static Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:48.064 NetworkWANDNSConfigurationIPv6Page:278 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:48.153 NetworkWANDNSConfigurationIPv6Page:285 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:48.222 NetworkWANDNSConfigurationIPv6Page:292 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:48.396 NetworkWANDNSConfigurationIPv6Page:306 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:53.864 NetworkWANDNSConfigurationIPv6Page:315 - Static Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:28:59.078 NetworkWANDNSConfigurationIPv6Page:329 - Static Primary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:04.523 NetworkWANDNSConfigurationIPv6Page:336 - Static Secondary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:09.943 NetworkWANDNSConfigurationIPv6Page:343 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:10.248 NetworkWANDNSConfigurationIPv6Page:110 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:10.874 NetworkWANSettingsPage:276 - On WAN Settings Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:11.082 NetworkWANSettingsPage:176 - Clicked on LAC Alert Icon
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:11.719 NetworkLACConfigurationAlertDialog:57 - On LAC Alert Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:11.864 NetworkLACConfigurationAlertDialog:48 - LAC Alert Dialog - Clicked on Close Icon
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:12.623 NetworkWANSettingsPage:113 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:18.714 ParentClass:420 - video path: videos/Android_RZ8M3002DGL/2021-11-16-17-22-39/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:24.636 ParentClass:178 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:24.811 ParentClass:180 - Quitting Driver
