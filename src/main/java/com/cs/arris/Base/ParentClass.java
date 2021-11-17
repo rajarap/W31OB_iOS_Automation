@@ -107,12 +107,14 @@ public class ParentClass
 	public String ssidpwd;
 	public String randNum;
 	public String profileName;
+	public String ruleName;
 	public String editedDeviceName;
 	public int randNumber;
+	public int ipNumber;
 	public List<String> profileNames = new ArrayList<String>();
 	public List<String> selectedProfileNames = new ArrayList<String>();
 	public List<String> deviceNames = new ArrayList<String>();
-	public List<SoftAssert> sa = new ArrayList<SoftAssert>();
+	public List<String> lanIPRuleName = new ArrayList<String>();
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
@@ -651,10 +653,14 @@ public class ParentClass
 		
 		public void generateProfileName()
 		{
-			 Integer randomNumber = (int)(Math.random()*9000)+1000;
-			 randNum = String.valueOf(randomNumber);
-			 profileName = "profile"+ randNum;
-			 profileNames.add(profileName);
+			//Integer randomNumber = (int)(Math.random()*9000)+1000;
+			Random r = new Random();
+			int low = 10;
+			int high = 100;
+			int result = r.nextInt(high-low) + low;
+			randNum = String.valueOf(result);
+			profileName = "profile"+ randNum;
+			profileNames.add(profileName);
 		}
 		
 		public void generateRandomNumber13()
@@ -663,6 +669,27 @@ public class ParentClass
 			int max = 2;
 			Random rand = new Random();
 			randNumber = rand.nextInt(max - min + 1) + min;
+		}
+		
+		//For Network - LAN IP Reservation
+		public void generateRuleName()
+		{
+			Random r = new Random();
+			int low = 10;
+			int high = 100;
+			int result = r.nextInt(high-low) + low;
+			 randNum = String.valueOf(result);
+			 ruleName = "rule"+ randNum;
+			 lanIPRuleName.add(ruleName);
+		}
+		
+		//generate IP between device id between 2 and 254.
+		public void generateRandomIPNumber()
+		{
+			int min = 2;
+			int max = 200;
+			Random rand = new Random();
+			ipNumber = rand.nextInt(max - min + 1) + min;
 		}
 
 		public Integer getAllCountOfDevices(String totalDevices) {

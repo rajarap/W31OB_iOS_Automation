@@ -1,6 +1,7 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -69,6 +70,7 @@ public class TC57_Login_And_Verify_NetworkPage_Test extends ParentClass {
 
 	@Test(priority = 1)
 	public void Verify_Network_Page() {
+		SoftAssert softnet = new SoftAssert();
 		TC57_Login_And_Verify_NetworkPage_Workflow.getStartedPage(getStarted -> {
 			getStarted.clickGetStartedButton();
 		}).grantPermissionsPage(grantPermission -> {
@@ -119,11 +121,25 @@ public class TC57_Login_And_Verify_NetworkPage_Test extends ParentClass {
 			}
 		}).networkPage(network -> {
 			if (network.isAt()) {
-				network.verifyUIOnNetworkPage();
-				network.clickHelpButton();
+				if (network.verifyUIOnNetworkPage())
+					utils.log().info("All controls/data on the Newtork Page are displayed correctly");
+				else
+					softnet.fail();
+				if (network.clickHelpButton())
+					utils.log().info("Clicked on Help Button");
+				else
+					softnet.fail();
 //				network.getNetworkPageObject().verifyUIOnNetworkHelpPage();
-				network.getNetworkPageObject().clickCloseButton();
-				network.clickTestConnectionSpeedButton();
+				if (network.getNetworkHelpPageObject().clickCloseButton())
+					utils.log().info("Clicked on Close Button");
+				else
+					softnet.fail();
+				if (network.clickTestConnectionSpeedButton())
+					utils.log().info("Clicked on Test Your Connection Speed button");
+				else {
+					utils.log().info("Test Your Connection Speed button is not displayed");
+					softnet.fail();
+				}
 				network.getSpeedTestPageObject().performSpeedTest();
 				network.getSpeedTestPageObject().clickBackIcon();
 
@@ -160,20 +176,18 @@ public class TC57_Login_And_Verify_NetworkPage_Test extends ParentClass {
 					network.getWANSettingsPageObject().clickDNSConfigurationLink();
 				}
 				if (network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().isAt()) {
-					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject()
-							.verifyUIOnDNSIPv4Automatic();
+					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Automatic();
 					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Static();
-					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().clickHelpButton();
-					if (network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject()
-							.getNetworkWANDNSConfigurationHelpPageObject().isAt())
-						network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject()
-								.getNetworkWANIPConfigurationHelpPageObject().clickCloseButton();
-					network.getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().clickWANIPv6Tab();
+					network.getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().clickDNSIPv6Tab();
 				}
 				if (network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().isAt()) {
-					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject()
-							.verifyUIOnDNSIPv6Automatic();
+					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Automatic();
 					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Static();
+					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().clickHelpButton();
+					if (network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject()
+							.getNetworkWANDNSConfigurationHelpPageObject().isAt())
+						network.getWANSettingsPageObject().getWANIPv6ConfigurationPageObject()
+								.getNetworkWANIPConfigurationHelpPageObject().clickCloseButton();
 					network.getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().clickBackButton();
 				}
 				if (network.getWANSettingsPageObject().isAt()) {
@@ -193,11 +207,40 @@ public class TC57_Login_And_Verify_NetworkPage_Test extends ParentClass {
 					utils.log().info("App Rating Dialog did not appear");
 				}
 				network.getLANSettingsPageObject().verifyUIOnLANSettingsPage();
+				network.getLANSettingsPageObject().clickLANIPResevationLink();
+				if(network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().isAt())
+				{
+					network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().verifyUIOnNetworkLANIPReservationPage();
+					network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickAddReservationButton();
+					if(network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().isAt())
+					{
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().verifyUIOnReserveLANIP();
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterRuleName();
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterIPAddress();
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().selectADevice();
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().clickSaveButton();
+					}
+					network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().verifyDevicesOnLAPIPReservationPage();
+					network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickEditLAPIPReservation();
+					if(network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().isAt())
+					{
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().verifyUIOnEditReserveLANIP();
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editRuleName();
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editIPAddress();
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().clickSaveButton();
+					}
+					network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickHelpButton();
+					if(network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLanIPReservationHelpPageObject().isAt())
+						network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLanIPReservationHelpPageObject().clickCloseButton();
+					network.getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickBackButton();
+				}
+				
 //				network.clickNetworkSettingsExpandButton();
 			}
 
 			
 			// network.clickBackButton(); //goes back to home page
+			softnet.assertAll();
 		});
 	}
 }

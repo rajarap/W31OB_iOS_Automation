@@ -1387,3 +1387,371 @@
 [logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:18.714 ParentClass:420 - video path: videos/Android_RZ8M3002DGL/2021-11-16-17-22-39/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
 [logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:24.636 ParentClass:178 - Closing App
 [logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 17:29:24.811 ParentClass:180 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:27.819 ParentClass:295 - log path: logs/Android_RZ8M3002DGL/2021-11-16
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:27.830 ParentClass:236 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:39.399 ParentClass:246 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:39.401 ParentClass:247 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:43.536 TC57_Login_And_Verify_NetworkPage_Test:44 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:43.538 ParentClass:319 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:43.544 TC57_Login_And_Verify_NetworkPage_Test:48 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:43.547 TC57_Login_And_Verify_NetworkPage_Test:51 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:43.550 TC57_Login_And_Verify_NetworkPage_Test:54 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:43.552 TC57_Login_And_Verify_NetworkPage_Test:57 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:43.554 TC57_Login_And_Verify_NetworkPage_Test:59 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:44.288 TC57_Login_And_Verify_NetworkPage_Test:67 - ****** starting test:Verify_Network_Page******
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:45.113 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:56:45.889 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:02.701 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:06.080 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:07.505 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:08.446 SelectYourDevicePage:73 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:09.530 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:10.484 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:13.881 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:14.731 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:26.763 ValidOTP:118 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:32.822 EnterValidOTPPage:61 - Entering valid OTP...631991
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:34.491 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:57:59.716 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:21.642 HomePage:645 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:22.072 FooterIconsPage:169 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.621 NetworkPage:487 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.622 NetworkPage:286 -                                      
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.623 NetworkPage:287 - **************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.624 NetworkPage:288 - Verifying UI Elements on Network Page 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.624 NetworkPage:289 - **************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.817 NetworkPage:292 - Network title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.932 NetworkPage:299 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:23.992 NetworkPage:306 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:24.064 NetworkPage:313 - Main WiFi expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:25.260 NetworkPage:321 - Network Name (SSID) : arrisw3140
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:25.632 NetworkPage:328 - Password : ••••••••••
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:25.706 NetworkPage:335 - Show Password Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:26.632 NetworkPage:343 - Guest Wi-Fi Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:26.772 NetworkPage:350 - Enable/Disable Guest Network label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:32.338 NetworkPage:361 - Guest Network toggle button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:32.438 NetworkPage:366 - Extended WiFi Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:33.461 NetworkPage:374 - Extended Wi-Fi Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:33.653 NetworkPage:381 - 5GHz Wideband Mode label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:33.965 NetworkPage:388 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:34.183 NetworkPage:395 - Extended Wifi toggle button is disabled(OFF)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:35.167 NetworkPage:405 - Network Settings expand button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:37.557 NetworkPage:414 - Network Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:37.945 NetworkPage:421 - LAN IP Address : 192.168.7.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:38.338 NetworkPage:428 - Gateway IP Address : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:38.560 NetworkPage:435 - General Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:38.785 NetworkPage:442 - WAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:39.022 NetworkPage:449 - LAN Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:39.260 NetworkPage:456 - Device Priority Settings label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:39.527 NetworkPage:463 - Time Zone label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:39.688 NetworkPage:470 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:39.868 NetworkPage:477 - TEST MY CONNECTION SPEED button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:40.854 NetworkPage:196 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:45.605 NetworkHelpPage:76 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:46.362 NetworkPage:207 - Clicked on Test Your Connection Speed button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:46.978 SpeedTestPage:266 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:47.745 SpeedTestPage:247 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 21:58:47.903 SpeedTestPage:268 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:28.207 SpeedTestPage:271 - Label on button after speed Test: RUN TEST AGAIN
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:28.550 SpeedTestPage:166 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:30.638 NetworkPage:242 - Clicked on WAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:31.366 AppRatingDialog:63 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:31.511 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:31.522 NetworkWANSettingsPage:198 -                                                      
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:31.522 NetworkWANSettingsPage:199 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:31.522 NetworkWANSettingsPage:200 - Verifying UI Elements on Network - WAN Settings Page 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:31.523 NetworkWANSettingsPage:201 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.136 NetworkWANSettingsPage:204 - WAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.202 NetworkWANSettingsPage:213 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.259 NetworkWANSettingsPage:222 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.344 NetworkWANSettingsPage:231 - WAN IP Configuration Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.414 NetworkWANSettingsPage:240 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.495 NetworkWANSettingsPage:249 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.803 NetworkWANSettingsPage:260 - LAC toggle button is displayed and is enabled(ON)
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:32.925 NetworkWANSettingsPage:269 - WAN IP RENEW button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:33.148 NetworkWANSettingsPage:125 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:35.009 NetworkWANSettingsHelpPage:94 - On WAN Settings Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:35.194 NetworkWANSettingsHelpPage:57 - WAN Settings title is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:35.270 NetworkWANSettingsHelpPage:64 - WAN Setting allows you to control and configure help is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:40.591 NetworkWANSettingsHelpPage:73 - You can configure DHCP help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:45.863 NetworkWANSettingsHelpPage:80 - DNS Server can als be configured help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:51.095 NetworkWANSettingsHelpPage:87 - WAN IP Renew help is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:52.979 NetworkWANSettingsHelpPage:48 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.071 NetworkWANIPConfigurationIPv4Page:407 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.079 NetworkWANIPConfigurationIPv4Page:205 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.080 NetworkWANIPConfigurationIPv4Page:206 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.080 NetworkWANIPConfigurationIPv4Page:207 - Verifying WAN IPv4 - DHCP Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.081 NetworkWANIPConfigurationIPv4Page:208 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.260 NetworkWANIPConfigurationIPv4Page:184 - DHCP Radion button is already selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.412 NetworkWANIPConfigurationIPv4Page:214 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.513 NetworkWANIPConfigurationIPv4Page:221 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.571 NetworkWANIPConfigurationIPv4Page:228 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.779 NetworkWANIPConfigurationIPv4Page:242 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:55.917 NetworkWANIPConfigurationIPv4Page:249 - DHCP Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:56.433 NetworkWANIPConfigurationIPv4Page:263 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:56.995 NetworkWANIPConfigurationIPv4Page:270 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:57.470 NetworkWANIPConfigurationIPv4Page:277 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:57.948 NetworkWANIPConfigurationIPv4Page:284 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:59.016 NetworkWANIPConfigurationIPv4Page:291 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:59.388 NetworkWANIPConfigurationIPv4Page:298 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:59.402 NetworkWANIPConfigurationIPv4Page:305 -                                                   
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:59.402 NetworkWANIPConfigurationIPv4Page:306 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:59.402 NetworkWANIPConfigurationIPv4Page:307 - Verifying WAN IPv4 - Static Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:00:59.403 NetworkWANIPConfigurationIPv4Page:308 - **************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:00.496 NetworkWANIPConfigurationIPv4Page:314 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:00.595 NetworkWANIPConfigurationIPv4Page:321 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:00.648 NetworkWANIPConfigurationIPv4Page:328 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:00.845 NetworkWANIPConfigurationIPv4Page:342 - IPV6 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:00.925 NetworkWANIPConfigurationIPv4Page:349 - Satic Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:01.346 NetworkWANIPConfigurationIPv4Page:363 - IP Address : 10.240.18.72
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:01.759 NetworkWANIPConfigurationIPv4Page:370 - Subnet Mask : 255.255.0.0
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:02.173 NetworkWANIPConfigurationIPv4Page:377 - Gateway : 10.240.0.1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:02.622 NetworkWANIPConfigurationIPv4Page:384 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:03.034 NetworkWANIPConfigurationIPv4Page:391 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:03.288 NetworkWANIPConfigurationIPv4Page:398 - SAVE CHANGES button is displayed and is Enabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:03.500 NetworkWANIPConfigurationIPv4Page:140 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:04.092 NetworkWANIPConfigurationHelpPage:58 - On WAN IP Configuration Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:07.086 NetworkWANIPConfigurationHelpPage:49 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:08.695 NetworkWANIPConfigurationIPv4Page:151 - Clicked on IPv6 Tab
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:08.798 NetworkWANIPConfigurationIPv6Page:442 - On WAN IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:08.812 NetworkWANIPConfigurationIPv6Page:211 -                                                     
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:08.813 NetworkWANIPConfigurationIPv6Page:212 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:08.814 NetworkWANIPConfigurationIPv6Page:213 - Verifying WAN IPv6 - Stateful Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:08.814 NetworkWANIPConfigurationIPv6Page:214 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:08.937 NetworkWANIPConfigurationIPv6Page:219 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:09.054 NetworkWANIPConfigurationIPv6Page:226 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:09.112 NetworkWANIPConfigurationIPv6Page:233 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:09.309 NetworkWANIPConfigurationIPv6Page:247 - IPv4 Tab is displayed and is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:09.422 NetworkWANIPConfigurationIPv6Page:254 - Stateful Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:09.969 NetworkWANIPConfigurationIPv6Page:268 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:10.570 NetworkWANIPConfigurationIPv6Page:275 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:11.157 NetworkWANIPConfigurationIPv6Page:282 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:11.383 NetworkWANIPConfigurationIPv6Page:289 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:11.508 NetworkWANIPConfigurationIPv6Page:296 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:12.082 NetworkWANIPConfigurationIPv6Page:303 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:12.644 NetworkWANIPConfigurationIPv6Page:310 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:14.070 NetworkWANIPConfigurationIPv6Page:318 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:14.074 NetworkWANIPConfigurationIPv6Page:325 -                                                      
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:14.074 NetworkWANIPConfigurationIPv6Page:326 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:14.075 NetworkWANIPConfigurationIPv6Page:327 - Verifying WAN IPv6 - Stateless Configuration Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:14.075 NetworkWANIPConfigurationIPv6Page:328 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:19.144 NetworkWANIPConfigurationIPv6Page:179 - Stateless Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:19.267 NetworkWANIPConfigurationIPv6Page:334 - WAN IP Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:19.377 NetworkWANIPConfigurationIPv6Page:341 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:19.439 NetworkWANIPConfigurationIPv6Page:348 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:19.630 NetworkWANIPConfigurationIPv6Page:362 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:24.737 NetworkWANIPConfigurationIPv6Page:371 - Stateless Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:25.363 NetworkWANIPConfigurationIPv6Page:383 - IPV6 Address : 2406:7400:70:d30f::1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:25.939 NetworkWANIPConfigurationIPv6Page:390 - IPV6 Prefix Length : 64
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:26.512 NetworkWANIPConfigurationIPv6Page:397 - IPV6 Gateway : fe80::427c:7dff:fe00:a001
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:26.741 NetworkWANIPConfigurationIPv6Page:404 - Prefix Delegation label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:26.849 NetworkWANIPConfigurationIPv6Page:411 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:27.403 NetworkWANIPConfigurationIPv6Page:418 - Primary DNS : 2406:7400:a:10::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:27.921 NetworkWANIPConfigurationIPv6Page:425 - Secondary DNS : 2406:7400:b0:b::2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:34.218 NetworkWANIPConfigurationIPv6Page:435 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:34.638 NetworkWANIPConfigurationIPv6Page:121 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:35.443 NetworkWANSettingsPage:188 - Clicked on DNS Configuration Link
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:36.052 NetworkWANDNSConfigurationIPv4Page:349 - On DNS IPv4 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:36.055 NetworkWANDNSConfigurationIPv4Page:190 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:36.055 NetworkWANDNSConfigurationIPv4Page:191 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:36.055 NetworkWANDNSConfigurationIPv4Page:192 - Verifying Automatic DNS Configuration for IPv4  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:36.056 NetworkWANDNSConfigurationIPv4Page:193 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:41.537 NetworkWANDNSConfigurationIPv4Page:169 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:41.679 NetworkWANDNSConfigurationIPv4Page:199 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:41.772 NetworkWANDNSConfigurationIPv4Page:206 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:41.835 NetworkWANDNSConfigurationIPv4Page:213 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:42.026 NetworkWANDNSConfigurationIPv4Page:227 - IPV6 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:42.107 NetworkWANDNSConfigurationIPv4Page:234 - Automatic Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:42.536 NetworkWANDNSConfigurationIPv4Page:248 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:42.950 NetworkWANDNSConfigurationIPv4Page:255 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:43.294 NetworkWANDNSConfigurationIPv4Page:262 - SAVE CHANGES button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:43.301 NetworkWANDNSConfigurationIPv4Page:269 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:43.302 NetworkWANDNSConfigurationIPv4Page:270 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:43.303 NetworkWANDNSConfigurationIPv4Page:271 - Verifying Static DNS Configuration for IPv4  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:43.304 NetworkWANDNSConfigurationIPv4Page:272 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:44.466 NetworkDNSConfigurationStaticAlertDialog:39 - Alert Dialog - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:44.467 NetworkWANDNSConfigurationIPv4Page:181 - Clicked OK button on Alert Dialog
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:44.468 NetworkWANDNSConfigurationIPv4Page:183 - Automatic Radion button is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:45.112 NetworkWANDNSConfigurationIPv4Page:278 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:45.189 NetworkWANDNSConfigurationIPv4Page:285 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:45.243 NetworkWANDNSConfigurationIPv4Page:292 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:45.410 NetworkWANDNSConfigurationIPv4Page:306 - IPV6 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:45.490 NetworkWANDNSConfigurationIPv4Page:313 - Static Radio button is displayed and is selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:45.861 NetworkWANDNSConfigurationIPv4Page:327 - Primary DNS : 49.205.72.130
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:46.249 NetworkWANDNSConfigurationIPv4Page:334 - Secondary DNS : 183.82.243.66
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:51.556 NetworkWANDNSConfigurationIPv4Page:343 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:51.780 NetworkWANDNSConfigurationIPv4Page:121 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:53.495 NetworkWANDNSConfigurationHelpPage:47 - On WAN DNS Configuration Help Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:01:56.469 NetworkWANIPConfigurationHelpPage:49 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:01.846 NetworkWANIPConfigurationIPv4Page:154 - IPv6 Tab is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:01.944 NetworkWANDNSConfigurationIPv6Page:349 - On DNS IPv6 Configuration Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:01.948 NetworkWANDNSConfigurationIPv6Page:190 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:01.949 NetworkWANDNSConfigurationIPv6Page:191 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:01.950 NetworkWANDNSConfigurationIPv6Page:192 - Verifying Automatic DNS Configuration for IPv6  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:01.950 NetworkWANDNSConfigurationIPv6Page:193 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:07.340 NetworkWANDNSConfigurationIPv6Page:169 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:07.510 NetworkWANDNSConfigurationIPv6Page:199 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:07.600 NetworkWANDNSConfigurationIPv6Page:206 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:07.695 NetworkWANDNSConfigurationIPv6Page:213 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:07.870 NetworkWANDNSConfigurationIPv6Page:227 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:13.207 NetworkWANDNSConfigurationIPv6Page:236 - Automatic Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:18.626 NetworkWANDNSConfigurationIPv6Page:250 - Automatic Primary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:24.069 NetworkWANDNSConfigurationIPv6Page:257 - Automatic Secondary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:29.443 NetworkWANDNSConfigurationIPv6Page:264 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:29.461 NetworkWANDNSConfigurationIPv6Page:269 -                                                 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:29.462 NetworkWANDNSConfigurationIPv6Page:270 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:29.462 NetworkWANDNSConfigurationIPv6Page:271 - Verifying Static DNS Configuration for IPv6     
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:29.462 NetworkWANDNSConfigurationIPv6Page:272 - ************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:34.898 NetworkWANDNSConfigurationIPv6Page:185 - Static Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:35.044 NetworkWANDNSConfigurationIPv6Page:278 - DNS Configuration title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:35.132 NetworkWANDNSConfigurationIPv6Page:285 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:35.184 NetworkWANDNSConfigurationIPv6Page:292 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:35.364 NetworkWANDNSConfigurationIPv6Page:306 - IPv4 Tab is displayed but is not selected
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:40.718 NetworkWANDNSConfigurationIPv6Page:315 - Static Radio button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:46.135 NetworkWANDNSConfigurationIPv6Page:329 - Static Primary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:51.628 NetworkWANDNSConfigurationIPv6Page:336 - Static Secondary DNS details is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:57.016 NetworkWANDNSConfigurationIPv6Page:343 - SAVE CHANGES button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:57.311 NetworkWANDNSConfigurationIPv6Page:110 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:57.917 NetworkWANSettingsPage:280 - On WAN Settings Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:58.091 NetworkWANSettingsPage:176 - Clicked on LAC Alert Icon
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:59.053 NetworkLACConfigurationAlertDialog:57 - On LAC Alert Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:59.220 NetworkLACConfigurationAlertDialog:48 - LAC Alert Dialog - Clicked on Close Icon
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:02:59.984 NetworkWANSettingsPage:113 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:03.074 NetworkPage:254 - Clicked on LAN Settings
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.623 TC57_Login_And_Verify_NetworkPage_Test:193 - App Rating Dialog did not appear
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.629 NetworkLANSettingsPage:138 -                                                      
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.629 NetworkLANSettingsPage:139 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.629 NetworkLANSettingsPage:140 - Verifying UI Elements on Network - LAN Settings Page 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.630 NetworkLANSettingsPage:141 - *****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.782 NetworkLANSettingsPage:144 - LAN Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.853 NetworkLANSettingsPage:151 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.905 NetworkLANSettingsPage:158 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:08.962 NetworkLANSettingsPage:165 - LAN IP Reservation Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:09.016 NetworkLANSettingsPage:172 - LAC Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:09.065 NetworkLANSettingsPage:179 - DNS Configuration Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.070 NetworkLANIPReservationPage:234 - On LAN IP Reservation Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.074 NetworkLANIPReservationPage:108 -                                                  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.075 NetworkLANIPReservationPage:109 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.075 NetworkLANIPReservationPage:110 - Verifying UI Elements on LAN IP Reservation Page 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.076 NetworkLANIPReservationPage:111 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.234 NetworkLANIPReservationPage:114 - LAN IP Reservation title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.348 NetworkLANIPReservationPage:121 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.402 NetworkLANIPReservationPage:128 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.543 NetworkLANIPReservationPage:135 - ADD RESERVATION button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:10.795 NetworkLANIPReservationPage:100 - Clicked on ADD RESERVATION button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.496 NetworkReserveLANIPDialog:206 - On Reserve LAN IP Reservation Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.513 NetworkReserveLANIPDialog:121 -                                                  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.514 NetworkReserveLANIPDialog:122 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.515 NetworkReserveLANIPDialog:123 - Verifying UI Elements on Reserve A LAN IP Dialog 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.515 NetworkReserveLANIPDialog:124 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.619 NetworkReserveLANIPDialog:127 - RESERVE A LAN IP title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.658 NetworkReserveLANIPDialog:134 - Close Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.704 NetworkReserveLANIPDialog:141 - Please enter a valid IP for a selected device is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.747 NetworkReserveLANIPDialog:148 - Please enter IP between 2 and 254 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.833 NetworkReserveLANIPDialog:155 - Enter Rule Name label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.875 NetworkReserveLANIPDialog:162 - Text box to enter Rule Name is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.953 NetworkReserveLANIPDialog:169 - Enter IP Address label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:11.996 NetworkReserveLANIPDialog:176 - Text box to enter IP address is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:12.079 NetworkReserveLANIPDialog:183 - Select Your Device label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:12.121 NetworkReserveLANIPDialog:190 - List box to select the device is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:12.205 NetworkReserveLANIPDialog:197 - SAVE CHANGES Save Button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:12.884 NetworkReserveLANIPDialog:95 - Enter Rule Name : rule12
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:13.488 NetworkReserveLANIPDialog:106 - IP Address is not enterned
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:13.562 NetworkReserveLANIPDialog:116 - No Option to select from list box
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:14.409 NetworkReserveLANIPDialog:73 - Clicked on Save Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:14.410 NetworkLANIPReservationPage:142 -                                                  
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:14.411 NetworkLANIPReservationPage:143 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:14.411 NetworkLANIPReservationPage:144 - Verifying Devicees UI on LAN IP Reservation Page 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:14.411 NetworkLANIPReservationPage:145 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:14.413 NetworkLANIPReservationPage:150 - Device with Reserved IP address  : 1
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:14.414 NetworkLANIPReservationPage:151 - ----------------------------------------
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:19.612 NetworkLANIPReservationPage:150 - Device with Reserved IP address  : 2
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:19.613 NetworkLANIPReservationPage:151 - ----------------------------------------
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.000 NetworkEditReserveLANIPDialog:176 - On Reserve LAN IP Reservation Page
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.000 NetworkEditReserveLANIPDialog:105 -                                                    
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.001 NetworkEditReserveLANIPDialog:106 - ***************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.001 NetworkEditReserveLANIPDialog:107 - Verifying Edit Elements on Reserve A LAN IP Dialog 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.001 NetworkEditReserveLANIPDialog:108 - ***************************************************
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.100 NetworkEditReserveLANIPDialog:111 - RESERVE A LAN IP title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.142 NetworkEditReserveLANIPDialog:118 - Close Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.182 NetworkEditReserveLANIPDialog:125 - Please enter a valid IP for a selected device is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.223 NetworkEditReserveLANIPDialog:132 - Please enter IP between 2 and 254 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.326 NetworkEditReserveLANIPDialog:139 - Enter Rule Name label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.380 NetworkEditReserveLANIPDialog:146 - Text box to enter Rule Name is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.465 NetworkEditReserveLANIPDialog:153 - Enter IP Address label is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.515 NetworkEditReserveLANIPDialog:160 - Text box to enter IP address is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:30.599 NetworkEditReserveLANIPDialog:167 - SAVE CHANGES Save Button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:31.243 NetworkEditReserveLANIPDialog:89 - Enter Rule Name : rule95
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:31.866 NetworkEditReserveLANIPDialog:100 - IP Address is not enterned
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:32.563 NetworkEditReserveLANIPDialog:67 - Clicked on Save Button
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:38.022 NetworkLANIPReservationPage:92 - Help Button is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-16 ERROR] 2021-11-16 22:03:43.846 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='LAN IP Reservation']})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkLANIPReservationHelpPage.isAt(NetworkLANIPReservationHelpPage.java:82)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.lambda$Verify_Network_Page$12(TC57_Login_And_Verify_NetworkPage_Test.java:219)
+	at com.cs.arris.Workflows.TC57_Login_And_Verify_NetworkPage_Workflow.networkPage(TC57_Login_And_Verify_NetworkPage_Workflow.java:148)
+	at com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test.Verify_Network_Page(TC57_Login_And_Verify_NetworkPage_Test.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@ce19c86 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='LAN IP Reservation']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:48.594 ParentClass:422 - video path: videos/Android_RZ8M3002DGL/2021-11-16-21-56-27/TC57_Login_And_Verify_NetworkPage_Test/Verify_Network_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:54.643 ParentClass:180 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-16 INFO ] 2021-11-16 22:03:54.845 ParentClass:182 - Quitting Driver

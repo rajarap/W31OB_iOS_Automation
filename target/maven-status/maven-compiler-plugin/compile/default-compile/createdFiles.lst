@@ -8,6 +8,7 @@ com/cs/arris/Pages/MainDeviceEthernetTabPage.class
 com/cs/arris/Pages/FooterIconsPage.class
 com/cs/arris/Pages/GenerateEmailAndPasscode.class
 com/cs/arris/Pages/AccessResourcesOnDevicePage.class
+com/cs/arris/Pages/NetworkLANIPReservationHelpPage.class
 com/cs/arris/Pages/EnterInValidOTPPage.class
 com/cs/arris/JsonMappers/Signin_TestData.class
 com/cs/arris/Pages/NotificationPage.class
@@ -17,6 +18,7 @@ com/cs/arris/Pages/SamplePage.class
 com/cs/arris/Pages/SignupPage.class
 com/cs/arris/Pages/SettingsAboutHelpPage.class
 com/cs/arris/Pages/ParentalControlWithProfilesPage.class
+com/cs/arris/Pages/NetworkLANSettingsHelpPage.class
 com/cs/arris/Pages/ParentalControlEditUserProfileNameDialog.class
 com/cs/arris/Pages/SpeedTestPage.class
 com/cs/arris/Pages/DeviceLocationPage.class
@@ -27,6 +29,7 @@ com/cs/arris/Pages/NetworkLACConfigurationAlertDialog.class
 com/cs/arris/Pages/ParentalControlUserProfileHelpPage.class
 com/cs/arris/Pages/ErrorCode_0003_1003_Service_Is_Currently_Not_Available.class
 com/cs/arris/JsonMappers/SignUp_TestData.class
+com/cs/arris/Pages/NetworkLANSubnetDHCPRangeConfigurationPage.class
 com/cs/arris/Pages/SelectYourDevicePage.class
 com/cs/arris/Pages/ParentalControlHelpPage.class
 com/cs/arris/Pages/EnterValidOTPPage.class
@@ -36,6 +39,7 @@ com/cs/arris/Pages/CurrentlyBlockedDevicesPage.class
 com/cs/arris/Pages/ParentalControlAddRuleHelpPage.class
 com/cs/arris/Pages/ServiceNotAvailablePage.class
 com/cs/arris/Pages/ParentalControlAddProfileDialog.class
+com/cs/arris/Pages/NetworkReserveLANIPDialog.class
 com/cs/arris/Pages/DisableBlueToothPage.class
 com/cs/arris/Pages/ConnectToWifiUsingRouterSSID.class
 com/cs/arris/Pages/GetStartedPage.class
@@ -99,9 +103,12 @@ com/cs/arris/Pages/PlugInMaxRouterPage.class
 com/cs/arris/Pages/SetUpYourWiFiManagementPage.class
 com/cs/arris/Pages/NetworkPage.class
 com/cs/arris/Pages/BTDisabledTroubleShootPage.class
+com/cs/arris/Pages/NetworkLANDHCPLeaseTimePage.class
+com/cs/arris/Pages/NetworkLANIPReservationPage.class
 com/cs/arris/Pages/NameYourNetwokSSIDPage.class
 com/cs/arris/Pages/NetworkDNSConfigurationStaticAlertDialog.class
 com/cs/arris/Interface/W31_Onboarding_TestData.class
+com/cs/arris/Pages/NetworkEditReserveLANIPDialog.class
 com/cs/arris/Pages/EnableBlueToothPage.class
 com/cs/arris/Pages/MainDeviceAllTabPage.class
 com/cs/arris/Pages/MainRouterDetailsHelpPage.class

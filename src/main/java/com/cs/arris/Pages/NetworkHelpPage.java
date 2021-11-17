@@ -66,16 +66,18 @@ public class NetworkHelpPage extends ParentClass implements Page {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
+	public boolean clickCloseButton() {
 		try {
 			if (closeButton.isDisplayed()) {
 				new SwipeActions().swipeScreen(Direction.UP);
 				new SwipeActions().swipeScreen(Direction.UP);
 				new SwipeActions().swipeScreen(Direction.UP);
-				click(closeButton);
-				utils.log().info("Clicked on Close Button");}
+				click(closeButton);}
+			//	utils.log().info("Clicked on Close Button");}
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Close button is not displayed");
+			return false;
 		}
 	}
 

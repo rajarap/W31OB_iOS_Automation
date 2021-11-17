@@ -17,10 +17,8 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	// ====================Network SSID Password
-	// ===========================================
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
-	public MobileElement networkTitle;
+	public MobileElement lanSubnetConfigurationTitle;
 
 	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
 	public MobileElement backIcon;
@@ -28,167 +26,98 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_plus_icon")
-	public MobileElement expandButton;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Name (SSID)']")
-	public MobileElement networkNameSSIDLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_ssid")
-	public MobileElement ssidName;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_ssid")
-	public MobileElement editSSIDName;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Password']")
-	public MobileElement passwordLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_password_show_hide")
-	public MobileElement showPasswordIcon;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_password")
-	public MobileElement showPassword;
-
-	// ==================== Network SSID Password
-	// ===========================================
-
-	// ==================== Guest Wi-Fi Network
-	// ===========================================
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_wifi_network_text")
-	public MobileElement guestWifiNetworkLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/enable_guest_wifi_text")
-	public MobileElement enableDisableGuestNetwork;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/pause_internet_enable_disable' and @checked='false']")
-	public MobileElement disableGuestNetworkToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/pause_internet_enable_disable' and @checked='true']")
-	public MobileElement enableGuestNetworkToggleButton;
-
-	// ==================== Guest Wi-Fi Network
-	// ===========================================
-
-	// ==================== Extended Wi-Fi Settings
-	// ===========================================
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/extended_wifi_network_text")
-	public MobileElement extendedWifiSettingsLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/extended_network_plus_icon")
-	public MobileElement extendedWifiExpandIcon;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/enable_wideband_wifi_text")
-	public MobileElement fiveGHzWidebandModeLabel;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='false']")
-	public MobileElement disableWidebandModeToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='true']")
-	public MobileElement enableWidebandModeToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enables DFS (up to) 160MHz channels']")
-	public MobileElement enableDFSLabel;
-
-	// ==================== Extended Wi-Fi Settings
-	// ===========================================
-
-	// ==================== Network Settings
-	// ===========================================
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Settings']")
-	public MobileElement networkSettingsLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_setting_plus_icon")
-	public MobileElement networkSettingsExpandIcon;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='LAN IP Address']")
-	public MobileElement lanIPAddressLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_address_close")
-	public MobileElement lanIPAddress;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Gateway IP Address']")
-	public MobileElement gatewayIPAddressLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/geteway_ip_address_close")
-	public MobileElement gatewayIPAddress;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='General Settings']")
-	public MobileElement generalSettingsLabel;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='WAN Settings']")
-	public MobileElement wanSettingsLabel;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='LAN Settings']")
-	public MobileElement lanSettingsLabel;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Device Priority Settings']")
-	public MobileElement devicePrioritySettings;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Time Zone']")
-	public MobileElement timeZone;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/time_zone_data")
-	public MobileElement gmt530;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/speed_test_view")
-	public MobileElement testMyConnectionSpeedButton;
-
-	// ==================== Network Settings
-	// ===========================================
-
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/textView")
+	public MobileElement configureSubnetLabel;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_rb_ipaddress_one_digit_1")
+	public MobileElement firstRadiodButtonFirstDigit;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_one_digit_2")
+	public MobileElement firstRadioButtonSecondDigit;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_one_digit_3")
+	public MobileElement firstRadioButtonThridDigit;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_tv_ipaddress_one_digit_4")
+	public MobileElement firstRadioButtonFourthDigit;
+	
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_rb_ipaddress_two_digit_1")
+	public MobileElement secondRadioFirstButton;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_two_digit_2")
+	public MobileElement secondRadioButtonSecondDigit;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_two_digit_3")
+	public MobileElement secondRadioButtonThridDigit;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_tv_ipaddress_two_digit_4")
+	public MobileElement secondRadioButtonFourthDigit;
+	
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_rb_ipaddress_three_digit_1")
+	public MobileElement thirdRadioFirstButton;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_three_digit_2")
+	public MobileElement thirdRadioButtonSecondDigit;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_three_digit_3")
+	public MobileElement thirdRadioButtonThridDigit;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_tv_ipaddress_three_digit_4")
+	public MobileElement thirdRadioButtonFourthDigit;
+	
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/linear_dhcp_range")
+	public MobileElement dncpRangeLabel;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Starting IP']")
+	public MobileElement startingIPLabel;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/sub_net_start_ip_prefix")
+	public MobileElement startingIPPrefix;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_starting_ip_digit_4")
+	public MobileElement startingIPSuffix;
+	
+		
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Ending IP']")
+	public MobileElement endingIPLabel;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/sub_net_end_ip_prefix")
+	public MobileElement endingIPPrefix;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_ending_ip_digit_4")
+	public MobileElement endingIPSuffix;
+	
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Subnet Mask']")
+	public MobileElement subnetMaskIPLabel;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_subnet_mask")
+	public MobileElement subnetMask;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/save_subnet_configure")
+	public MobileElement saveSubnetMask;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/rest_subnet_configure")
+	public MobileElement resetSubnetMask;
+	
+		
 	public NetworkLANSubnetDHCPRangeConfigurationPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
-	}
-
-	public HomePage getHomePageObject() {
-		HomePage homePage = new HomePage();
-		return homePage;
-	}
-	
-	public NetworkHelpPage getNetworkPageObject() {
-		NetworkHelpPage networkHelpPage = new NetworkHelpPage();
-		return networkHelpPage;
 	}
 
 	public FooterIconsPage getFooterIconsPageObject() {
 		FooterIconsPage footerIconsPage = new FooterIconsPage();
 		return footerIconsPage;
 	}
-
-	 public SpeedTestPage getSpeedTestPageObject() {
-		 SpeedTestPage speedTestPage = new SpeedTestPage();
-	     return speedTestPage;
-	  }
-	 
-	 public AppRatingDialog getAppRatingPageObject() {
-		 AppRatingDialog rating = new AppRatingDialog();
-	     return rating;
-	  }
-	 
-	 public NetworkWANSettingsPage getWANSettingsPageObject() {
-		 NetworkWANSettingsPage wanSettings = new NetworkWANSettingsPage();
-	     return wanSettings;
-	  }
 	 
 	 public NetworkLANSettingsPage getLANSettingsPageObject() {
 		 NetworkLANSettingsPage lanSettings = new NetworkLANSettingsPage();
 	     return lanSettings;
 	  }
 	 
-	public void clickBackButton() {
-		try {
-			if (backIcon.isDisplayed()) {
-				click(backIcon);
-				utils.log().info("Clicked on Back Button");
-			}
-		} catch (Exception e) {
-			utils.log().info("Back Button is not displayed");
-		}
-	}
-
 	public void clickHelpButton() {
 		try {
 			if (helpIcon.isDisplayed()) {
@@ -200,294 +129,126 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		}
 	}
 	
-	public void clickTestConnectionSpeedButton() {
+	public void clickBackButton() {
 		try {
-			if (testMyConnectionSpeedButton.isDisplayed()) {
-				click(testMyConnectionSpeedButton);
-				utils.log().info("Clicked on Test Your Connection Speed button");
+			if (backIcon.isDisplayed()) {
+				click(backIcon);
+				utils.log().info("Clicked on Back Button");
 			}
 		} catch (Exception e) {
-			utils.log().info("Test Your Connection Speed button is not displayed");
+			utils.log().info("Back Button is not displayed");
 		}
 	}
 	
-	public void clickNetworkSettingsExpandButton()
-	{
+	public void clickSaveButton() {
 		try {
-			if (networkSettingsExpandIcon.isDisplayed()) 
-				click(networkSettingsExpandIcon);
-		} catch (Exception e) {
-			utils.log().info("Network Settings Expand Button is not displayed");
-		}
-
-	}
-	
-	public void clickGeneralSettings() {
-		try {
-			click(networkSettingsExpandIcon);
-			if (generalSettingsLabel.isDisplayed()) {
-				click(generalSettingsLabel);
-				utils.log().info("Clicked on General Settings");
+			if (saveSubnetMask.isDisplayed()) {
+				click(saveSubnetMask);
+				utils.log().info("Clicked on Save Changes button");
 			}
 		} catch (Exception e) {
-			utils.log().info("General Settings Link is not displayed");
+			utils.log().info("Save Changes button is not displayed");
 		}
 	}
 	
-	public void clickWANSettings() {
+	public void clickResetToDefaultButton() {
 		try {
-			click(networkSettingsExpandIcon);
-			if (wanSettingsLabel.isDisplayed()) {
-				click(wanSettingsLabel);
-				utils.log().info("Clicked on WAN Settings");
+			if (resetSubnetMask.isDisplayed()) {
+				click(resetSubnetMask);
+				utils.log().info("Clicked on Reset To Default button");
 			}
 		} catch (Exception e) {
-			utils.log().info("WAN Settings Link is not displayed");
-		}
-	}
-	
-	public void clickLANSettings() {
-		try {
-			click(networkSettingsExpandIcon);
-			if (lanSettingsLabel.isDisplayed()) {
-				click(lanSettingsLabel);
-				utils.log().info("Clicked on LAN Settings");
-			}
-		} catch (Exception e) {
-			utils.log().info("LAN Settings Link is not displayed");
-		}
-	}
-	
-	public void clickDevicePrioritySettings() {
-		try {
-			click(networkSettingsExpandIcon);
-			if (devicePrioritySettings.isDisplayed()) {
-				click(devicePrioritySettings);
-				utils.log().info("Clicked on Device Priority Settings");
-			}
-		} catch (Exception e) {
-			utils.log().info("Device Priority Settings Link is not displayed");
-		}
-	}
-	
-	public void clickTimeZone() {
-		try {
-			click(timeZone);
-			if (timeZone.isDisplayed()) {
-				click(timeZone);
-				utils.log().info("Clicked on Time Zone Settings");
-			}
-		} catch (Exception e) {
-			utils.log().info("Time Zone Priority Settings Link is not displayed");
+			utils.log().info("Reset To Default button is not displayed");
 		}
 	}
 
-	public void verifyUIOnNetworkPage() {
-		utils.log().info("                                     ");
-		utils.log().info("**************************************");
-		utils.log().info("Verifying UI Elements on Network Page ");
-		utils.log().info("**************************************");
-		try {
-			if (networkTitle.isDisplayed())
-				utils.log().info(networkTitle.getText() + " title text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Network title text is not displayed");
-		}
+	public boolean verifyUIOnNetworkPage() {
+		utils.log().info("                                                       ");
+		utils.log().info("*******************************************************");
+		utils.log().info("Verifying UI Elements on LAN Subnet Configuration Page ");
+		utils.log().info("*******************************************************");
+		try
+		{
+			if (lanSubnetConfigurationTitle.isDisplayed())
+				utils.log().info(lanSubnetConfigurationTitle.getText() + " title text is displayed ");
+//			else
+//				utils.log().info("LAN DHCP Lease Time text is not displayed");
 
-		try {
 			if (backIcon.isDisplayed())
 				utils.log().info("Back Icon is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Back Icon is not displayed");
-		}
-
-		try {
+//			else
+//				utils.log().info("Back Icon is not displayed");
+			
 			if (helpIcon.isDisplayed())
-				utils.log().info("Help Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help Icon is not displayed");
-		}
+				utils.log().info("Help Icon is displayed ");
+//			else
+//				utils.log().info("Back Icon is not displayed");
 
-		try {
-			if (expandButton.isDisplayed())
-				utils.log().info("Main WiFi expand button is displayed");
-			click(expandButton);
-		} catch (Exception e) {
-			utils.log().info("Main WiFi expand button is not displayed");
-		}
+			if (configureSubnetLabel.isDisplayed())
+				utils.log().info(configureSubnetLabel.getText() + " label is displayed");
+//			else
+//				utils.log().info("Help Icon is not displayed");
+//		
+			if (firstRadiodButtonFirstDigit.isDisplayed() && firstRadioButtonSecondDigit.isDisplayed() && 
+					firstRadioButtonThridDigit.isDisplayed() && firstRadioButtonFourthDigit.isDisplayed())
+				utils.log().info("First subnet IP address is displayed");
+//			else
+//				utils.log().info("Set Lease Time label is displayed");
+			
+			if (secondRadioFirstButton.isDisplayed() && secondRadioButtonSecondDigit.isDisplayed() && 
+					secondRadioButtonThridDigit.isDisplayed() && secondRadioButtonFourthDigit.isDisplayed())
+				utils.log().info("Second subnet IP address is displayed");
+//			else
+//				utils.log().info("Enter Lease Time TextBoxis not displayed");
+			
+			if (thirdRadioFirstButton.isDisplayed() && thirdRadioButtonSecondDigit.isDisplayed() && 
+					thirdRadioButtonThridDigit.isDisplayed() && thirdRadioButtonFourthDigit.isDisplayed())
+				utils.log().info("Third subnet IP address is displayed");
 
-		try {
-			if (networkNameSSIDLabel.isDisplayed() && ssidName.isDisplayed())
-				utils.log().info(networkNameSSIDLabel.getText() + " : " + ssidName.getText());
+//			else
+//				utils.log().info("Select Time Unit Label is not displayed");
+			
+			if (dncpRangeLabel.isDisplayed())
+				utils.log().info("DHCP Range Label is displayed");
+//			else
+//				utils.log().info("Button to select the time unit is not displayed");
+			
+			if (startingIPLabel.isDisplayed())
+				utils.log().info("Starting IP Label is displayed");
+			
+			if (startingIPPrefix.isDisplayed() && startingIPSuffix.isDisplayed())
+				utils.log().info("Starting IP Label is displayed");
+			
+			if (endingIPLabel.isDisplayed())
+				utils.log().info("Ending IP Label is displayed");
+			
+			if (endingIPPrefix.isDisplayed() && endingIPSuffix.isDisplayed())
+				utils.log().info("Ending IP Label is displayed");
+			
+			if (subnetMaskIPLabel.isDisplayed())
+				utils.log().info("Subnet Mask Label is displayed");
+			
+			if (subnetMask.isDisplayed())
+				utils.log().info("Subnet Mask : " + subnetMask.getText() + " is displayed");
+			
+			if (saveSubnetMask.isDisplayed())
+				utils.log().info(saveSubnetMask.getText() + " button is displayed");
+			
+			if (resetSubnetMask.isDisplayed())
+				utils.log().info(resetSubnetMask.getText() + " button is displayed");
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Network SSID Name is not displayed");
-		}
-
-		try {
-			if (passwordLabel.isDisplayed() && showPassword.isDisplayed())
-				utils.log().info(passwordLabel.getText() + " : " + showPassword.getText());
-		} catch (Exception e) {
-			utils.log().info("SSID Password is not displayed");
-		}
-
-		try {
-			if (showPasswordIcon.isDisplayed())
-				utils.log().info("Show Password Icon is displayed ");
-			click(expandButton);
-		} catch (Exception e) {
-			utils.log().info("Show Password Icon is not displayed");
-		}
-
-		try {
-			if (guestWifiNetworkLabel.isDisplayed())
-				utils.log().info(guestWifiNetworkLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Guest Wi-Fi label is not displayed");
-		}
-
-		try {
-			if (enableDisableGuestNetwork.isDisplayed())
-				utils.log().info(enableDisableGuestNetwork.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Enable/disable Guest Network label is not displayed");
-		}
-
-		try {
-			if (disableGuestNetworkToggleButton.isDisplayed())
-				utils.log().info("Guest Newtork toggle button is disabled(OFF)");
-			else
-				utils.log().info("Guest Newtork toggle button is enabled(ON)");
-		} catch (Exception e) {
-			utils.log().info("Guest Network toggle button is not displayed");
-		}
-
-		try {
-			if (extendedWifiExpandIcon.isDisplayed())
-				utils.log().info("Extended WiFi Settings expand button is displayed");
-			click(extendedWifiExpandIcon);
-		} catch (Exception e) {
-			utils.log().info("Extended WiFi Settings expand button is not displayed");
-		}
-
-		try {
-			if (extendedWifiSettingsLabel.isDisplayed())
-				utils.log().info(extendedWifiSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Extended Wi-Fi Settings label is not displayed");
-		}
-
-		try {
-			if (fiveGHzWidebandModeLabel.isDisplayed())
-				utils.log().info(fiveGHzWidebandModeLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("5GHz Widebank Mode label is not displayed");
-		}
-
-		try {
-			if (enableDFSLabel.isDisplayed())
-				utils.log().info(enableDFSLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Enables DFS (up to) 160MHz channels label is not displayed");
-		}
-
-		try {
-			if (disableWidebandModeToggleButton.isDisplayed())
-				utils.log().info("Extended Wifi toggle button is disabled(OFF)");
-			else
-				utils.log().info("Extended Wifi toggle button is enabled(ON)");
-			click(extendedWifiExpandIcon);
-		} catch (Exception e) {
-			utils.log().info("Extended Wifi toogle button is not displayed");
-		}
-
-		try {
-			if (networkSettingsExpandIcon.isDisplayed())
-				utils.log().info("Network Settings expand button is displayed");
-			click(networkSettingsExpandIcon);
-			new SwipeActions().swipeScreen(Direction.UP);
-		} catch (Exception e) {
-			utils.log().info("Network Settings expand button is not displayed");
-		}
-
-		try {
-			if (networkSettingsLabel.isDisplayed())
-				utils.log().info(networkSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Netowrk Settings label is not displayed");
-		}
-
-		try {
-			if (lanIPAddressLabel.isDisplayed() && lanIPAddress.isDisplayed())
-				utils.log().info(lanIPAddressLabel.getText() + " : " + lanIPAddress.getText());
-		} catch (Exception e) {
-			utils.log().info("LAN IP Address data is not displayed");
-		}
-
-		try {
-			if (gatewayIPAddressLabel.isDisplayed() && gatewayIPAddress.isDisplayed())
-				utils.log().info(gatewayIPAddressLabel.getText() + " : " + gatewayIPAddress.getText());
-		} catch (Exception e) {
-			utils.log().info("Gateway IP Address label is not displayed");
-		}
-
-		try {
-			if (generalSettingsLabel.isDisplayed())
-				utils.log().info(generalSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("General Settings label is not displayed");
-		}
-
-		try {
-			if (wanSettingsLabel.isDisplayed())
-				utils.log().info(wanSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("WAN Settings label is not displayed");
-		}
-
-		try {
-			if (lanSettingsLabel.isDisplayed())
-				utils.log().info(lanSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("LAN Settings label is not displayed");
-		}
-
-		try {
-			if (devicePrioritySettings.isDisplayed())
-				utils.log().info(devicePrioritySettings.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Device Priority Settings label is not displayed");
-		}
-
-		try {
-			if (timeZone.isDisplayed())
-				utils.log().info(timeZone.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Time Zone label is not displayed");
-		}
-
-		try {
-			if (gmt530.isDisplayed())
-				utils.log().info(gmt530.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is not displayed");
-		}
-
-		try {
-			if (testMyConnectionSpeedButton.isDisplayed())
-				utils.log().info(testMyConnectionSpeedButton.getText() + " button is displayed");
-			click(networkSettingsExpandIcon);
-		} catch (Exception e) {
-			utils.log().info("Test My Connection Speed button is not displayed");
+			return false;
 		}
 	}
 
 	@Override
 	public boolean isAt() {
-		if (networkTitle.isDisplayed()) {
-			utils.log().info("On Network Page");
+		if (lanSubnetConfigurationTitle.isDisplayed()) {
+			utils.log().info("On LAN Subnet Configuration Page");
 			return true;
 		} else {
-			utils.log().info("Not on Network Page");
+			utils.log().info("Not on LAN Subnet Configuration Page");
 			return false;
 		}
 	}

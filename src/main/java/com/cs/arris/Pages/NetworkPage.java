@@ -17,8 +17,6 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class NetworkPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	// ====================Network SSID Password
-	// ===========================================
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
 	public MobileElement networkTitle;
 
@@ -49,11 +47,7 @@ public class NetworkPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_password")
 	public MobileElement showPassword;
 
-	// ==================== Network SSID Password
-	// ===========================================
 
-	// ==================== Guest Wi-Fi Network
-	// ===========================================
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_wifi_network_text")
 	public MobileElement guestWifiNetworkLabel;
@@ -67,11 +61,7 @@ public class NetworkPage extends ParentClass implements Page {
 	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/pause_internet_enable_disable' and @checked='true']")
 	public MobileElement enableGuestNetworkToggleButton;
 
-	// ==================== Guest Wi-Fi Network
-	// ===========================================
 
-	// ==================== Extended Wi-Fi Settings
-	// ===========================================
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/extended_wifi_network_text")
 	public MobileElement extendedWifiSettingsLabel;
@@ -91,11 +81,7 @@ public class NetworkPage extends ParentClass implements Page {
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enables DFS (up to) 160MHz channels']")
 	public MobileElement enableDFSLabel;
 
-	// ==================== Extended Wi-Fi Settings
-	// ===========================================
 
-	// ==================== Network Settings
-	// ===========================================
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Settings']")
 	public MobileElement networkSettingsLabel;
@@ -147,8 +133,8 @@ public class NetworkPage extends ParentClass implements Page {
 		HomePage homePage = new HomePage();
 		return homePage;
 	}
-	
-	public NetworkHelpPage getNetworkPageObject() {
+
+	public NetworkHelpPage getNetworkHelpPageObject() {
 		NetworkHelpPage networkHelpPage = new NetworkHelpPage();
 		return networkHelpPage;
 	}
@@ -158,131 +144,109 @@ public class NetworkPage extends ParentClass implements Page {
 		return footerIconsPage;
 	}
 
-	 public SpeedTestPage getSpeedTestPageObject() {
-		 SpeedTestPage speedTestPage = new SpeedTestPage();
-	     return speedTestPage;
-	  }
-	 
-	 public AppRatingDialog getAppRatingPageObject() {
-		 AppRatingDialog rating = new AppRatingDialog();
-	     return rating;
-	  }
-	 
-	 public NetworkWANSettingsPage getWANSettingsPageObject() {
-		 NetworkWANSettingsPage wanSettings = new NetworkWANSettingsPage();
-	     return wanSettings;
-	  }
-	 
-	 public NetworkLANSettingsPage getLANSettingsPageObject() {
-		 NetworkLANSettingsPage lanSettings = new NetworkLANSettingsPage();
-	     return lanSettings;
-	  }
-	 
-	public void clickBackButton() {
-		try {
-			if (backIcon.isDisplayed()) {
-				click(backIcon);
-				utils.log().info("Clicked on Back Button");
-			}
-		} catch (Exception e) {
-			utils.log().info("Back Button is not displayed");
-		}
+	public SpeedTestPage getSpeedTestPageObject() {
+		SpeedTestPage speedTestPage = new SpeedTestPage();
+		return speedTestPage;
 	}
 
-	public void clickHelpButton() {
+	public AppRatingDialog getAppRatingPageObject() {
+		AppRatingDialog rating = new AppRatingDialog();
+		return rating;
+	}
+
+	public NetworkWANSettingsPage getWANSettingsPageObject() {
+		NetworkWANSettingsPage wanSettings = new NetworkWANSettingsPage();
+		return wanSettings;
+	}
+
+	public NetworkLANSettingsPage getLANSettingsPageObject() {
+		NetworkLANSettingsPage lanSettings = new NetworkLANSettingsPage();
+		return lanSettings;
+	}
+
+	public void clickBackButton() {
+		if (backIcon.isDisplayed()) {
+			click(backIcon);
+			utils.log().info("Clicked on Back Button");
+		} else
+			utils.log().info("Back Button is not displayed");
+	}
+
+	public boolean clickHelpButton() {
 		try {
-			if (helpIcon.isDisplayed()) {
+			if (helpIcon.isDisplayed()) 
 				click(helpIcon);
-				utils.log().info("Clicked on Help Button");
-			}
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Help Button is not displayed");
+			return false;
 		}
 	}
-	
-	public void clickTestConnectionSpeedButton() {
+
+	public boolean clickTestConnectionSpeedButton() {
 		try {
-			if (testMyConnectionSpeedButton.isDisplayed()) {
+			if (testMyConnectionSpeedButton.isDisplayed()) 
 				click(testMyConnectionSpeedButton);
-				utils.log().info("Clicked on Test Your Connection Speed button");
-			}
-		} catch (Exception e) {
-			utils.log().info("Test Your Connection Speed button is not displayed");
-		}
+				//utils.log().info("Clicked on Test Your Connection Speed button");
+				return true;		
+			}catch(Exception e) {
+			//utils.log().info("Test Your Connection Speed button is not displayed");
+			return false;}
 	}
-	
-	public void clickNetworkSettingsExpandButton()
-	{
-		try {
-			if (networkSettingsExpandIcon.isDisplayed()) 
-				click(networkSettingsExpandIcon);
-		} catch (Exception e) {
+
+	public void clickNetworkSettingsExpandButton() {
+		if (networkSettingsExpandIcon.isDisplayed())
+			click(networkSettingsExpandIcon);
+		else
 			utils.log().info("Network Settings Expand Button is not displayed");
-		}
-
 	}
-	
+
 	public void clickGeneralSettings() {
-		try {
-			click(networkSettingsExpandIcon);
-			if (generalSettingsLabel.isDisplayed()) {
-				click(generalSettingsLabel);
-				utils.log().info("Clicked on General Settings");
-			}
-		} catch (Exception e) {
+		click(networkSettingsExpandIcon);
+		if (generalSettingsLabel.isDisplayed()) {
+			click(generalSettingsLabel);
+			utils.log().info("Clicked on General Settings");
+		} else
 			utils.log().info("General Settings Link is not displayed");
-		}
-	}
-	
-	public void clickWANSettings() {
-		try {
-			click(networkSettingsExpandIcon);
-			if (wanSettingsLabel.isDisplayed()) {
-				click(wanSettingsLabel);
-				utils.log().info("Clicked on WAN Settings");
-			}
-		} catch (Exception e) {
-			utils.log().info("WAN Settings Link is not displayed");
-		}
-	}
-	
-	public void clickLANSettings() {
-		try {
-			click(networkSettingsExpandIcon);
-			if (lanSettingsLabel.isDisplayed()) {
-				click(lanSettingsLabel);
-				utils.log().info("Clicked on LAN Settings");
-			}
-		} catch (Exception e) {
-			utils.log().info("LAN Settings Link is not displayed");
-		}
-	}
-	
-	public void clickDevicePrioritySettings() {
-		try {
-			click(networkSettingsExpandIcon);
-			if (devicePrioritySettings.isDisplayed()) {
-				click(devicePrioritySettings);
-				utils.log().info("Clicked on Device Priority Settings");
-			}
-		} catch (Exception e) {
-			utils.log().info("Device Priority Settings Link is not displayed");
-		}
-	}
-	
-	public void clickTimeZone() {
-		try {
-			click(timeZone);
-			if (timeZone.isDisplayed()) {
-				click(timeZone);
-				utils.log().info("Clicked on Time Zone Settings");
-			}
-		} catch (Exception e) {
-			utils.log().info("Time Zone Priority Settings Link is not displayed");
-		}
 	}
 
-	public void verifyUIOnNetworkPage() {
+	public void clickWANSettings() {
+		click(networkSettingsExpandIcon);
+		if (wanSettingsLabel.isDisplayed()) {
+			click(wanSettingsLabel);
+			utils.log().info("Clicked on WAN Settings");
+		} else
+			utils.log().info("WAN Settings Link is not displayed");
+	}
+
+	public void clickLANSettings() {
+		click(networkSettingsExpandIcon);
+		if (lanSettingsLabel.isDisplayed()) {
+			click(lanSettingsLabel);
+			utils.log().info("Clicked on LAN Settings");
+		} else
+			utils.log().info("LAN Settings Link is not displayed");
+	}
+
+	public void clickDevicePrioritySettings() {
+		click(networkSettingsExpandIcon);
+		if (devicePrioritySettings.isDisplayed()) {
+			click(devicePrioritySettings);
+			utils.log().info("Clicked on Device Priority Settings");
+		} else
+			utils.log().info("Device Priority Settings Link is not displayed");
+	}
+
+	public void clickTimeZone() {
+		click(timeZone);
+		if (timeZone.isDisplayed()) {
+			click(timeZone);
+			utils.log().info("Clicked on Time Zone Settings");
+		} else
+			utils.log().info("Time Zone Priority Settings Link is not displayed");
+	}
+
+	public boolean verifyUIOnNetworkPage() {
 		utils.log().info("                                     ");
 		utils.log().info("**************************************");
 		utils.log().info("Verifying UI Elements on Network Page ");
@@ -290,194 +254,143 @@ public class NetworkPage extends ParentClass implements Page {
 		try {
 			if (networkTitle.isDisplayed())
 				utils.log().info(networkTitle.getText() + " title text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Network title text is not displayed");
-		}
+			else
+				utils.log().info("Network title text is not displayed");
 
-		try {
 			if (backIcon.isDisplayed())
 				utils.log().info("Back Icon is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Back Icon is not displayed");
-		}
+			else
+				utils.log().info("Back Icon is not displayed");
 
-		try {
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help Icon is not displayed");
-		}
+			else
+				utils.log().info("Help Icon is not displayed");
 
-		try {
-			if (expandButton.isDisplayed())
+			if (expandButton.isDisplayed()) {
 				utils.log().info("Main WiFi expand button is displayed");
-			click(expandButton);
-		} catch (Exception e) {
-			utils.log().info("Main WiFi expand button is not displayed");
-		}
+				click(expandButton);} 
+			else
+				utils.log().info("Main WiFi expand button is not displayed");
 
-		try {
 			if (networkNameSSIDLabel.isDisplayed() && ssidName.isDisplayed())
 				utils.log().info(networkNameSSIDLabel.getText() + " : " + ssidName.getText());
-		} catch (Exception e) {
-			utils.log().info("Network SSID Name is not displayed");
-		}
+			else
+				utils.log().info("Network SSID Name is not displayed");
 
-		try {
 			if (passwordLabel.isDisplayed() && showPassword.isDisplayed())
 				utils.log().info(passwordLabel.getText() + " : " + showPassword.getText());
-		} catch (Exception e) {
-			utils.log().info("SSID Password is not displayed");
-		}
+			else
+				utils.log().info("SSID Password is not displayed");
 
-		try {
-			if (showPasswordIcon.isDisplayed())
+			if (showPasswordIcon.isDisplayed()) {
 				utils.log().info("Show Password Icon is displayed ");
-			click(expandButton);
-		} catch (Exception e) {
-			utils.log().info("Show Password Icon is not displayed");
-		}
+				click(expandButton);
+			} else
+				utils.log().info("Show Password Icon is not displayed");
 
-		try {
 			if (guestWifiNetworkLabel.isDisplayed())
 				utils.log().info(guestWifiNetworkLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Guest Wi-Fi label is not displayed");
-		}
+			else
+				utils.log().info("Guest Wi-Fi label is not displayed");
 
-		try {
 			if (enableDisableGuestNetwork.isDisplayed())
 				utils.log().info(enableDisableGuestNetwork.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Enable/disable Guest Network label is not displayed");
-		}
+			else
+				utils.log().info("Enable/disable Guest Network label is not displayed");
 
-		try {
 			if (disableGuestNetworkToggleButton.isDisplayed())
 				utils.log().info("Guest Newtork toggle button is disabled(OFF)");
 			else
 				utils.log().info("Guest Newtork toggle button is enabled(ON)");
-		} catch (Exception e) {
-			utils.log().info("Guest Network toggle button is not displayed");
-		}
 
-		try {
-			if (extendedWifiExpandIcon.isDisplayed())
+			if (extendedWifiExpandIcon.isDisplayed()) {
 				utils.log().info("Extended WiFi Settings expand button is displayed");
-			click(extendedWifiExpandIcon);
-		} catch (Exception e) {
-			utils.log().info("Extended WiFi Settings expand button is not displayed");
-		}
+				click(extendedWifiExpandIcon);} 
+			else
+				utils.log().info("Extended WiFi Settings expand button is not displayed");
 
-		try {
 			if (extendedWifiSettingsLabel.isDisplayed())
 				utils.log().info(extendedWifiSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Extended Wi-Fi Settings label is not displayed");
-		}
+			else
+				utils.log().info("Extended Wi-Fi Settings label is not displayed");
 
-		try {
 			if (fiveGHzWidebandModeLabel.isDisplayed())
 				utils.log().info(fiveGHzWidebandModeLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("5GHz Widebank Mode label is not displayed");
-		}
+			else
+				utils.log().info("5GHz Widebank Mode label is not displayed");
 
-		try {
 			if (enableDFSLabel.isDisplayed())
 				utils.log().info(enableDFSLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Enables DFS (up to) 160MHz channels label is not displayed");
-		}
+			else
+				utils.log().info("Enables DFS (up to) 160MHz channels label is not displayed");
 
-		try {
 			if (disableWidebandModeToggleButton.isDisplayed())
 				utils.log().info("Extended Wifi toggle button is disabled(OFF)");
 			else
 				utils.log().info("Extended Wifi toggle button is enabled(ON)");
 			click(extendedWifiExpandIcon);
-		} catch (Exception e) {
-			utils.log().info("Extended Wifi toogle button is not displayed");
-		}
 
-		try {
-			if (networkSettingsExpandIcon.isDisplayed())
+			if (networkSettingsExpandIcon.isDisplayed()) {
 				utils.log().info("Network Settings expand button is displayed");
-			click(networkSettingsExpandIcon);
-			new SwipeActions().swipeScreen(Direction.UP);
-		} catch (Exception e) {
-			utils.log().info("Network Settings expand button is not displayed");
-		}
+				click(networkSettingsExpandIcon);
+				new SwipeActions().swipeScreen(Direction.UP);}
+			else
+				utils.log().info("Network Settings expand button is not displayed");
 
-		try {
 			if (networkSettingsLabel.isDisplayed())
 				utils.log().info(networkSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Netowrk Settings label is not displayed");
-		}
+			else
+				utils.log().info("Netowrk Settings label is not displayed");
 
-		try {
 			if (lanIPAddressLabel.isDisplayed() && lanIPAddress.isDisplayed())
 				utils.log().info(lanIPAddressLabel.getText() + " : " + lanIPAddress.getText());
-		} catch (Exception e) {
-			utils.log().info("LAN IP Address data is not displayed");
-		}
+			else
+				utils.log().info("LAN IP Address data is not displayed");
 
-		try {
 			if (gatewayIPAddressLabel.isDisplayed() && gatewayIPAddress.isDisplayed())
 				utils.log().info(gatewayIPAddressLabel.getText() + " : " + gatewayIPAddress.getText());
-		} catch (Exception e) {
-			utils.log().info("Gateway IP Address label is not displayed");
-		}
+			else
+				utils.log().info("Gateway IP Address label is not displayed");
 
-		try {
 			if (generalSettingsLabel.isDisplayed())
 				utils.log().info(generalSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("General Settings label is not displayed");
-		}
+			else
+				utils.log().info("General Settings label is not displayed");
 
-		try {
 			if (wanSettingsLabel.isDisplayed())
 				utils.log().info(wanSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("WAN Settings label is not displayed");
-		}
+			else
+				utils.log().info("WAN Settings label is not displayed");
 
-		try {
 			if (lanSettingsLabel.isDisplayed())
 				utils.log().info(lanSettingsLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("LAN Settings label is not displayed");
-		}
+			else
+				utils.log().info("LAN Settings label is not displayed");
 
-		try {
 			if (devicePrioritySettings.isDisplayed())
 				utils.log().info(devicePrioritySettings.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Device Priority Settings label is not displayed");
-		}
+			else
+				utils.log().info("Device Priority Settings label is not displayed");
 
-		try {
 			if (timeZone.isDisplayed())
 				utils.log().info(timeZone.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Time Zone label is not displayed");
-		}
+			else
+				utils.log().info("Time Zone label is not displayed");
 
-		try {
 			if (gmt530.isDisplayed())
 				utils.log().info(gmt530.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is not displayed");
-		}
+			else
+				utils.log().info("Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is not displayed");
 
-		try {
-			if (testMyConnectionSpeedButton.isDisplayed())
+			if (testMyConnectionSpeedButton.isDisplayed()) {
 				utils.log().info(testMyConnectionSpeedButton.getText() + " button is displayed");
-			click(networkSettingsExpandIcon);
+				click(networkSettingsExpandIcon);
+			} else
+				utils.log().info("Test My Connection Speed button is not displayed");
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Test My Connection Speed button is not displayed");
+			return false;
 		}
 	}
 

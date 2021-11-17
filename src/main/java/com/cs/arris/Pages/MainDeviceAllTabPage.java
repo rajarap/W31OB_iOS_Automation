@@ -241,10 +241,10 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		MainDevice24GHzTabPage device24GHz = new MainDevice24GHzTabPage();
 		return device24GHz;
 	}
-		
-		public MainDeviceEthernetTabPage getEthernetPageObject() {
-			MainDeviceEthernetTabPage ethernetDevice = new MainDeviceEthernetTabPage();
-			return ethernetDevice;
+
+	public MainDeviceEthernetTabPage getEthernetPageObject() {
+		MainDeviceEthernetTabPage ethernetDevice = new MainDeviceEthernetTabPage();
+		return ethernetDevice;
 	}
 
 	public void increaseLedBrightnessSettings() {
@@ -633,6 +633,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			} else {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
+
 			if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
@@ -831,8 +832,8 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 					if (fiveGhzDeviceCount.isDisplayed()) {
 //						utils.log().info("Channel : " + fiveGhzDeviceCount.getText());
 						this.fiveGhzDevice = fiveGhzDeviceCount.getText();
-						utils.log().info("Channel 1 : " + this.fiveGhzDevice);}
-					else
+						utils.log().info("Channel 1 : " + this.fiveGhzDevice);
+					} else
 						utils.log().info("Count of 5GHz devices connected to Main Router is not displayed ");
 				}
 			} catch (Exception exp) {
@@ -844,8 +845,8 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 					if (twoFourGhzDeviceCount.isDisplayed()) {
 //						utils.log().info("Channel : " + twoFourGhzDeviceCount.getText());
 						this.twoFourGhzDevice = twoFourGhzDeviceCount.getText();
-						utils.log().info("Channel 2 : " + this.twoFourGhzDevice);}
-					else
+						utils.log().info("Channel 2 : " + this.twoFourGhzDevice);
+					} else
 						utils.log().info("Count of 2.4GHz devices connected to Main Router is not displayed ");
 				}
 			} catch (Exception exp) {
@@ -941,9 +942,11 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 
 	public void validations() {
 		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText()))
-			utils.log().info("Count of All devices displayed on the main device image is equal to the Connected Devices count");
+			utils.log().info(
+					"Count of All devices displayed on the main device image is equal to the Connected Devices count");
 		else
-			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
+			utils.log().info(
+					"Device Count displayed on the main device image is not equal to the Connected Devices count");
 		for (String str : signal) {
 			if (str.contains("5GHz") || str.contains("5.0GHz"))
 				counter5 += 1;
@@ -953,8 +956,10 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 				counterEthernet += 1;
 			}
 		}
-		utils.log().info("Number of Devices with 5.0 GHz signal Strength conntected to the main router are : " + counter5);
-		utils.log().info("Number of Devices with 2.4 GHz signal Strength conntected to the main router are : " + counter24);
+		utils.log()
+				.info("Number of Devices with 5.0 GHz signal Strength conntected to the main router are : " + counter5);
+		utils.log().info(
+				"Number of Devices with 2.4 GHz signal Strength conntected to the main router are : " + counter24);
 		utils.log().info("Number of Ethernet Devices conntected to the main router are : " + counterEthernet);
 		utils.log().info("                                                                                 ");
 	}

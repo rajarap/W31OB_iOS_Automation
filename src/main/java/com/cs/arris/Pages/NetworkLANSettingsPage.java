@@ -50,9 +50,9 @@ public class NetworkLANSettingsPage extends ParentClass implements Page {
 		return homePage;
 	}
 	
-	public NetworkWANSettingsHelpPage getNetworkWanSettingsHelpPageObject() {
-		NetworkWANSettingsHelpPage networkWANHelpPage = new NetworkWANSettingsHelpPage();
-		return networkWANHelpPage;
+	public NetworkLANSettingsHelpPage getNetworkLanSettingsHelpPageObject() {
+		NetworkLANSettingsHelpPage networkLANHelpPage = new NetworkLANSettingsHelpPage();
+		return networkLANHelpPage;
 	}
 
 	public FooterIconsPage getFooterIconsPageObject() {

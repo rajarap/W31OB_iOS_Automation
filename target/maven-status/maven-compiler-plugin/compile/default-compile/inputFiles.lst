@@ -15,6 +15,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/MainDevicePage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NotificationPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkHelpPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANSettingsHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Interface/Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SignupPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/MainDevice24GHzTabPage.java
@@ -37,6 +38,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/BlueToothPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/EnterValidOTPPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0000_1016_Maximum_Verification_Attempts_Exceeded.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANIPReservationPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0003_1003_Service_Is_Currently_Not_Available.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/EnableBlueToothPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/TurnOnBluetoothDialog.java
@@ -77,6 +79,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/Error_0005_1200_Bluetooth_Connection_Failed_Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/BTDisabledTroubleShootPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkReserveLANIPDialog.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/AppRatingDialog.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlUserProfilePage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/HamburgerMenuPage.java
@@ -87,6 +90,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/GetStartedPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/FooterIconsPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkOptimizationDialog.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANSubnetDHCPRangeConfigurationPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANSettingsHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANSettingsPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/AboutViewLicensesPage.java
@@ -96,12 +100,14 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlUserProfileAddRuleDatePickerDialog.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0000_1506_Warranty_Support_Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/DeviceLocationPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkEditReserveLANIPDialog.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/RebootYouRouterDialog.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/CurrentlyBlockedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SetupHomeNetworkPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/HomePage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Utilities/ValidOTP.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANDNSConfigurationIPv4Page.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANIPReservationHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/SetUpYourWiFiManagementPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANIPConfigurationHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkOptimizationDialog2.java
@@ -121,5 +127,6 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ConnectMaxRouterToInternetPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/Error_0000_1401_Downloading_Firmware_File_Failed_Page.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/CongratulationsPage.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANDHCPLeaseTimePage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/FAQHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/main/java/com/cs/arris/Pages/ConnectMaxRouterToMobileDevicePage.java
