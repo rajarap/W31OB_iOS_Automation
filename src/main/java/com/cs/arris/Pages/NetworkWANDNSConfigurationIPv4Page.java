@@ -180,7 +180,7 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 					this.getDNSStaticAlertDialogObject().clickOKButton();;
 					utils.log().info("Clicked OK button on Alert Dialog");
 				}
-				utils.log().info("Automatic Radion button is selected");}
+				utils.log().info("Static Radion button is selected");}
 		} catch (Exception e) {
 			utils.log().info("Static Radio button is not displayed");
 		}
@@ -271,7 +271,7 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 		utils.log().info("Verifying Static DNS Configuration for IPv4  ");
 		utils.log().info("************************************************");
 		
-		this.clickStaticRadioButton();
+//		this.clickStaticRadioButton();
 		
 		try {
 			if (dnsConfigurationTitle.isDisplayed())

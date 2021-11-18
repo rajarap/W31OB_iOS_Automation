@@ -378,6 +378,8 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 //			utils.log().info("Stateless Radio button is not displayed");
 //		}
 		
+		new SwipeActions().swipeScreen(Direction.UP);
+		
 		try {
 			if (ipv6AddressLabel.isDisplayed() && ipv6Address.isDisplayed() && !(ipv6Address.isEnabled()))
 				utils.log().info(ipv6AddressLabel.getText() + " : " + ipv6Address.getText());
@@ -428,7 +430,6 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 		}
 		
 		try {
-			new SwipeActions().swipeScreen(Direction.UP);
 			if (stateless_SaveChangesButton.isDisplayed())
 				utils.log().info(stateless_SaveChangesButton.getText() + " button is displayed and is enabled");
 		} catch (Exception e) {
@@ -439,10 +440,10 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 	@Override
 	public boolean isAt() {
 		if (wanIPConfigurationTitle.isDisplayed()) {
-			utils.log().info("On WAN IPv4 Configuration Page");
+			utils.log().info("On WAN IPv6 Configuration Page");
 			return true;
 		} else {
-			utils.log().info("Not on WAN IPv4 Configuration Page");
+			utils.log().info("Not on WAN IPv6 Configuration Page");
 			return false;
 		}
 	}

@@ -177,10 +177,10 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 				click(staticRadioButtonUnChecked);
 				if(this.getDNSStaticAlertDialogObject().alertTitle.isDisplayed())
 				{
-					this.getDNSStaticAlertDialogObject().clickOKButton();;
+					this.getDNSStaticAlertDialogObject().clickOKButton();
 					utils.log().info("Clicked OK button on Alert Dialog");
 				}
-				utils.log().info("Automatic Radion button is selected");}
+				utils.log().info("Static Radion button is selected");}
 		} catch (Exception e) {
 			utils.log().info("Static Radio button is not displayed");
 		}
