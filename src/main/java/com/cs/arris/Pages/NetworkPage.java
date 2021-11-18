@@ -71,7 +71,10 @@ public class NetworkPage extends ParentClass implements Page {
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/enable_wideband_wifi_text")
 	public MobileElement fiveGHzWidebandModeLabel;
-
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/wideband_info_icon")
+	public MobileElement fiveGHzWidebandInfoIcon;
+	
 	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='false']")
 	public MobileElement disableWidebandModeToggleButton;
 
@@ -163,7 +166,23 @@ public class NetworkPage extends ParentClass implements Page {
 		NetworkLANSettingsPage lanSettings = new NetworkLANSettingsPage();
 		return lanSettings;
 	}
-
+	
+	public Network5GHzWidebandModeInfoDialog get5GHzWidebandModeDialogObject() {
+		Network5GHzWidebandModeInfoDialog widebandMode = new Network5GHzWidebandModeInfoDialog();
+		return widebandMode;
+	}
+	
+	public Network5GHzWidebandModeAlertDialog get5GHzWidebandModeAlertDialogObject() {
+		Network5GHzWidebandModeAlertDialog widebandModeAlert = new Network5GHzWidebandModeAlertDialog();
+		return widebandModeAlert;
+	}
+	
+	public NetworkEnableGuestNetworkDialog getEnableGuestNetworkDialogObject() {
+		NetworkEnableGuestNetworkDialog guestNetwork = new NetworkEnableGuestNetworkDialog();
+		return guestNetwork;
+	}
+	
+	
 	public void clickBackButton() {
 		if (backIcon.isDisplayed()) {
 			click(backIcon);
@@ -193,12 +212,78 @@ public class NetworkPage extends ParentClass implements Page {
 			//utils.log().info("Test Your Connection Speed button is not displayed");
 			return false;}
 	}
+	
+	public void clickExtendedWifiSettingsExpandButton() {
+		if (extendedWifiExpandIcon.isDisplayed())
+			click(extendedWifiExpandIcon);
+		else
+			utils.log().info("Extended Wifi Settings Expand Button is not displayed");
+	}
 
 	public void clickNetworkSettingsExpandButton() {
 		if (networkSettingsExpandIcon.isDisplayed())
 			click(networkSettingsExpandIcon);
 		else
 			utils.log().info("Network Settings Expand Button is not displayed");
+	}
+	
+	public void clickfiveGHzWidebandInfoIcon() {
+		try {
+			if (fiveGHzWidebandInfoIcon.isDisplayed()) {
+				click(fiveGHzWidebandInfoIcon);
+				utils.log().info("Clicked on 5GHz Wideband Info Icon");
+			}
+		} catch (Exception e) {
+			utils.log().info("5GHz Wideband Mode Info Icon is not displayed");
+		}
+	}
+	
+	public void enable5GHzWidebandMode() {
+		try {
+			if (disableWidebandModeToggleButton.isDisplayed()) {
+				click(disableWidebandModeToggleButton);		
+				utils.log().info("5GHz Wideband Mode is enabled(ON)");}
+			else 
+				utils.log().info("5GHz Wideband Mode is already enabled");
+		} catch (Exception e) {
+			utils.log().info("5GHz Wideband Mode toggle switch button is not displayed");
+		}
+	}
+
+	public void disable5GHzWidebandMode() {
+		try {
+			if (enableWidebandModeToggleButton.isDisplayed()) {
+				click(enableWidebandModeToggleButton);			
+				utils.log().info("5GHz Wideband Mode is disabled(OFF)");}
+			else 
+				utils.log().info("5GHz Wideband Mode is already disabled");
+		} catch (Exception e) {
+			utils.log().info("5GHz Wideband Mode toggle switch button is not displayed");
+		}
+	}
+	
+	public void enableGuestWifiNetwork() {
+		try {
+			if (disableGuestNetworkToggleButton.isDisplayed()) {
+				click(disableGuestNetworkToggleButton);		
+				utils.log().info("Enable/Disable Guest Network is enabled(ON)");}
+			else 
+				utils.log().info("Enable/Disable Guest Network is already enabled");
+		} catch (Exception e) {
+			utils.log().info("Enable/Disable Guest Network toggle switch button is not displayed");
+		}
+	}
+
+	public void disableGuestWifiNetwork() {
+		try {
+			if (enableGuestNetworkToggleButton.isDisplayed()) {
+				click(enableGuestNetworkToggleButton);			
+				utils.log().info("Enable/Disable Guest Network is disabled(OFF)");}
+			else 
+				utils.log().info("Enable/Disable Guest Network is already disabled");
+		} catch (Exception e) {
+			utils.log().info("Enable/Disable Guest Network toggle switch button is not displayed");
+		}
 	}
 
 	public void clickGeneralSettings() {
