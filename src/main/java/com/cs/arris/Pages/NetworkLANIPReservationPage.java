@@ -40,7 +40,6 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 		return homePage;
 	}
 
-
 	public FooterIconsPage getFooterIconsPageObject() {
 		FooterIconsPage footerIconsPage = new FooterIconsPage();
 		return footerIconsPage;
@@ -71,40 +70,41 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 		return networkLANIPHelpPage;
 	}
 
-	public void clickBackButton() {
-		try {
-			if (backIcon.isDisplayed()) {
-				click(backIcon);
-				utils.log().info("Clicked on Back Button");
-			}
-		} catch (Exception e) {
+	public boolean clickBackButton() {
+		if (backIcon.isDisplayed()) {
+			click(backIcon);
+			utils.log().info("Clicked on Back Button");
+			return true;
+		} else {
 			utils.log().info("Back Button is not displayed");
+			return false;
 		}
 	}
 
-	public void clickHelpButton() {
-		try {
-			if (helpIcon.isDisplayed()) {
-				click(helpIcon);
-				utils.log().info("Clicked on Help Button");
-			}
-		} catch (Exception e) {
+	public boolean clickHelpButton() {
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
+			utils.log().info("Clicked on Help Button");
+			return true;
+		} else {
 			utils.log().info("Help Button is not displayed");
+			return false;
 		}
 	}
 
-	public void clickAddReservationButton() {
-		try {
-			if (addReservationButton.isDisplayed()) {
-				click(addReservationButton);
-				utils.log().info("Clicked on ADD RESERVATION button");
-			}
-		} catch (Exception e) {
+	public boolean clickAddReservationButton() {
+		if (addReservationButton.isDisplayed()) {
+			click(addReservationButton);
+			utils.log().info("Clicked on ADD RESERVATION button");
+			return true;
+		} else {
 			utils.log().info("ADD RESERVATION button is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyUIOnNetworkLANIPReservationPage() {
+
+	public boolean verifyUIOnNetworkLANIPReservationPage() {
 		utils.log().info("                                                 ");
 		utils.log().info("*************************************************");
 		utils.log().info("Verifying UI Elements on LAN IP Reservation Page ");
@@ -112,119 +112,103 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 		try {
 			if (lanIPTitle.isDisplayed())
 				utils.log().info(lanIPTitle.getText() + " title text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("LAN IP Reservation title text is not displayed");
-		}
+			else
+				utils.log().info("LAN IP Reservation title text is not displayed");
 
-		try {
 			if (backIcon.isDisplayed())
 				utils.log().info("Back Icon is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Back Icon is not displayed");
-		}
+			else
+				utils.log().info("LAN IP Reservation title text is not displayed");
 
-		try {
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help Icon is not displayed");
-		}
+			else
+				utils.log().info("LAN IP Reservation title text is not displayed");
 
-		try {
 			if (addReservationButton.isDisplayed())
 				utils.log().info(addReservationButton.getText() + " button is displayed");
+			else
+				utils.log().info("LAN IP Reservation title text is not displayed");
+
+			return true;
 		} catch (Exception e) {
-			utils.log().info("ADD RESERVATION button is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyDevicesOnLAPIPReservationPage() {
+	public boolean verifyDevicesOnLAPIPReservationPage() {
 		utils.log().info("                                                 ");
 		utils.log().info("*************************************************");
 		utils.log().info("Verifying Devicees UI on LAN IP Reservation Page ");
 		utils.log().info("*************************************************");
 
-		//int deviceCount = super.lanIPRuleName.size();
-		//if (deviceCount > 0) {
+		// int deviceCount = super.lanIPRuleName.size();
+		// if (deviceCount > 0) {
+		try {
 			for (int i = 1; i <= 2; i++) {
 				utils.log().info("Device Details with Reserved IP address  : " + i);
 				utils.log().info("-----------------------------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
+								+ "]");
+
+				for (MobileElement e : entity) {
+					if (e.findElementByXPath(
+							"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']").isDisplayed())
+						utils.log()
+								.info("Device Name: " + e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']")
+										.getText());
+
+					if (e.findElementByXPath("//android.widget.TextView[@text='IP Address']").isDisplayed() && (e
+							.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/lan_ip_address']")
+							.isDisplayed()))
+						utils.log().info(e.findElementByXPath("//android.widget.TextView[@text='IP Address']").getText()
+								+ " : "
+								+ (e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/lan_ip_address']")
+										.getText()));
+
+					if (e.findElementByXPath("//android.widget.TextView[@text='MAC Address']").isDisplayed() && (e
+							.findElementByXPath(
+									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/mac_address']")
+							.isDisplayed()))
+						utils.log().info(e.findElementByXPath("//android.widget.TextView[@text='MAC Address']")
+								.getText()
+								+ " : "
+								+ (e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/mac_address']")
+										.getText()));
+
+					if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']")
+							.isDisplayed())
+						utils.log().info("Edit Icon is displayed");
+				}
+			}
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	public boolean clickEditLAPIPReservation() {
+		try {
+			// int deviceCount = super.lanIPRuleName.size();
+			// if (deviceCount > 0) {
+			for (int i = 1; i <= 1; i++) {
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
 
 				for (MobileElement e : entity) {
-					try {
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']")
-								.isDisplayed())
-							utils.log()
-									.info("Device Name: " + e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']")
-											.getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Name is not displayed ");
-					}
-
-					try {
-						if (e.findElementByXPath("//android.widget.TextView[@text='IP Address']").isDisplayed() && (e
-								.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/lan_ip_address']")
-								.isDisplayed()))
-							utils.log().info(e.findElementByXPath("//android.widget.TextView[@text='IP Address']")
-									.getText()
-									+ " : "
-									+ (e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/lan_ip_address']")
-											.getText()));
-					} catch (Exception exp) {
-						utils.log().info("Device IP Address is not available ");
-					}
-
-					try {
-						if (e.findElementByXPath("//android.widget.TextView[@text='MAC Address']").isDisplayed() && (e
-								.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/mac_address']")
-								.isDisplayed()))
-							utils.log().info(e.findElementByXPath("//android.widget.TextView[@text='MAC Address']")
-									.getText()
-									+ " : "
-									+ (e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/mac_address']")
-											.getText()));
-					} catch (Exception exp) {
-						utils.log().info("Device MAC Address is not available ");
-					}
-
-					try {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']")
-								.isDisplayed())
-							utils.log().info("Edit Icon is displayed");
-					} catch (Exception exp) {
-						utils.log().info("Edit Icon is not displayed ");
-					}
-
+					click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']"));
 				}
 			}
+			return true;
+		} catch (Exception e) {
+			return false;
 		}
-//	}
-
-	
-	public void clickEditLAPIPReservation() 
-	{
-		//int deviceCount = super.lanIPRuleName.size();
-		//if (deviceCount > 0) {
-			for (int i = 1; i <= 1; i++) 
-			{
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
-
-				for (MobileElement e : entity) 
-				{
-						click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']"));
-				}
-			}
 	}
 	
 	@Override

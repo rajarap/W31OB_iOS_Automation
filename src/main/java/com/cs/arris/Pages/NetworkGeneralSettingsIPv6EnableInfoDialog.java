@@ -35,13 +35,14 @@ public class NetworkGeneralSettingsIPv6EnableInfoDialog extends ParentClass impl
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
-		try {
-			if (closeButton.isDisplayed()) {
-				click(closeButton);
-				utils.log().info("Clicked on Close Button");}
-		} catch (Exception e) {
+	public boolean clickCloseButton() {
+		if (closeButton.isDisplayed()) {
+			click(closeButton);
+			utils.log().info("Clicked on Close Button");
+			return true;
+		} else {
 			utils.log().info("Close button is not displayed");
+			return false;
 		}
 	}
 

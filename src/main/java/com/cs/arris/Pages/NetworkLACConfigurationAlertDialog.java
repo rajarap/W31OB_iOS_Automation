@@ -33,21 +33,25 @@ public class NetworkLACConfigurationAlertDialog extends ParentClass implements P
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickOKButton() {
-		try {
+	public boolean clickOKButton() {
+		if (okButton.isDisplayed()) {
 			click(okButton);
 			utils.log().info("LAC Alert Dialog - Clicked on OK Button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("LAC Alert Dialog - OK is not displayd");
+			return false;
 		}
 	}
 
-	public void clickCloseDialog() {
-		try {
+	public boolean clickCloseDialog() {
+		if (cancelDialogIcon.isDisplayed()) {
 			click(cancelDialogIcon);
 			utils.log().info("LAC Alert Dialog - Clicked on Close Icon");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("LAC Alert Dialog - Close Icon is not displayd");
+			return false;
 		}
 	}
 

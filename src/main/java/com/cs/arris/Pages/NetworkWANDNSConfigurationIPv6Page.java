@@ -65,7 +65,7 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure' and @enabled='false']")
 	public MobileElement automatic_saveChangesButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure' and @enabled='false']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure' and @enabled='true']")
 	public MobileElement static_saveChangesButton;
 
 
@@ -103,46 +103,45 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 		return wanDNSConfiguration;
 	}
  	 
-	public void clickBackButton() {
-		try {
-			if (backIcon.isDisplayed()) {
-				click(backIcon);
-				utils.log().info("Clicked on Back Button");
-			}
-		} catch (Exception e) {
+	public boolean clickBackButton() {
+		if (backIcon.isDisplayed()) {
+			click(backIcon);
+			utils.log().info("Clicked on Back Button");
+			return true;
+		} else {
 			utils.log().info("Back Button is not displayed");
+			return false;
 		}
 	}
 
-	public void clickHelpButton() {
-		try {
-			if (helpIcon.isDisplayed()) {
-				click(helpIcon);
-				utils.log().info("Clicked on Help Button");
-			}
-		} catch (Exception e) {
-			utils.log().info("Help Button is not displayed");
+	public boolean clickHelpButton() {
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
+			return true;
+		} else {
+			utils.log().info("Help button is not displayed");
+			return false;
 		}
 	}
-	
-	public void clickDNSIPv4Tab() {
-		try {
-			if (dnsIPv4Tab.isDisplayed()) {
-				click(dnsIPv4Tab);
-				utils.log().info("Clicked on IPv4 Tab");
-			}
-		} catch (Exception e) {
+
+	public boolean clickDNSIPv4Tab() {
+		if (dnsIPv4Tab.isDisplayed()) {
+			click(dnsIPv4Tab);
+			utils.log().info("Clicked on IPv4 Tab");
+			return true;
+		} else {
 			utils.log().info("IPv4 Tab is not displayed");
+			return false;
 		}
 	}
 	
-	public void clickSaveChangesButton_Automatic() {
-		try {
-			if (automatic_saveChangesButton.isDisplayed()) {
-				utils.log().info("SAVE CHANGES button is disabled. You are not allowed to modify the Primary and Secondary DNS Automatic configuration for IPv6");
-			}
-		} catch (Exception e) {
+	public boolean clickSaveChangesButton_Automatic() {
+		if (automatic_saveChangesButton.isDisplayed()) {
+			utils.log().info("SAVE CHANGES button is disabled. You are not allowed to modify the Primary and Secondary DNS Automatic configuration for IPv6");
+			return true;
+		} else {
 			utils.log().info("SAVE CHANGES button is not displayed");
+			return false;
 		}
 	}
 	
@@ -157,192 +156,153 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 //		}
 //	}
 //	
-	public void clickAutomaticRadioButton()
-	{
-		try {
-			if (automaticRadioButtonUnChecked.isDisplayed()) {
-				click(automaticRadioButtonUnChecked);
-				utils.log().info("Automatic Radion button is selected");}
-			else
-				utils.log().info("Automatic Radion button is already selected");
-		} catch (Exception e) {
+	public boolean clickAutomaticRadioButton() {
+		if (automaticRadioButtonChecked.isDisplayed()) {
+			utils.log().info("Automatic Radion button is already selected");
+			return true;
+		} else if (automaticRadioButtonUnChecked.isDisplayed()) {
+			click(automaticRadioButtonUnChecked);
+			utils.log().info("Automatic Radion button is selected");
+			return true;
+		} else {
 			utils.log().info("Automatic Radio button is not displayed");
+			return false;
 		}
 	}
 	
-	public void clickStaticRadioButton()
-	{
-		try {
-			if (staticRadioButtonUnChecked.isDisplayed()) {
-				click(staticRadioButtonUnChecked);
-				if(this.getDNSStaticAlertDialogObject().alertTitle.isDisplayed())
-				{
-					this.getDNSStaticAlertDialogObject().clickOKButton();
-					utils.log().info("Clicked OK button on Alert Dialog");
-				}
-				utils.log().info("Static Radion button is selected");}
-		} catch (Exception e) {
+	public boolean clickStaticRadioButton() {
+		if (staticRadioButtonUnChecked.isDisplayed()) {
+			click(staticRadioButtonUnChecked);
+			if (this.getDNSStaticAlertDialogObject().alertTitle.isDisplayed()) {
+				this.getDNSStaticAlertDialogObject().clickOKButton();
+			}
+			utils.log().info("Static Radion button is selected");
+			return true;
+		} else {
 			utils.log().info("Static Radio button is not displayed");
+			return false;
 		}
 	}
 	
-	public void verifyUIOnDNSIPv6Automatic() {
+	public boolean verifyUIOnDNSIPv6Automatic() {
 		utils.log().info("                                                ");
 		utils.log().info("************************************************");
 		utils.log().info("Verifying Automatic DNS Configuration for IPv6  ");
 		utils.log().info("************************************************");
 		
 		this.clickAutomaticRadioButton();
-		
 		try {
 			if (dnsConfigurationTitle.isDisplayed())
 				utils.log().info(dnsConfigurationTitle.getText() + " title text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("DNS Configuration title text is not displayed");
-		}
+			else
+				utils.log().info("DNS Configuration Title is not displayed");
 
-		try {
 			if (backIcon.isDisplayed())
 				utils.log().info("Back Icon is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Back Icon is not displayed");
-		}
+			else
+				utils.log().info("Back Icon is not displayed");
 
-		try {
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help Icon is not displayed");
-		}
+			else
+				utils.log().info("Help Icon is not displayed");
 
-		try {
 			if(dnsIPv6Tab.isDisplayed() && dnsIPv6Tab.isSelected())
 				utils.log().info("IPv6 Tab is displayed and is currently selected");
-		} catch (Exception e) {
-			utils.log().info("IPv6 Tab is not displayed");
-		}
+			else
+				utils.log().info("IPv6 Tab is not displayed");
 
-		try {
 			if (dnsIPv4Tab.isDisplayed())
 				utils.log().info("IPv4 Tab is displayed but is not selected");
-		} catch (Exception e) {
-			utils.log().info("IPv4 Tab is not displayed");
-		}
+			else
+				utils.log().info("IPv4 Tab is not displayed");
 
-		try {
 			if (automaticRadioButtonChecked.isDisplayed())
 				utils.log().info("Automatic Radio button is displayed and is selected");
-		} catch (Exception e) {
-			utils.log().info("Automatic Radio button is not displayed");
-		}
-		
-//		try {
-//			if (dhcpRadioButtonUnChecked.isDisplayed())
-//				utils.log().info("DHCP Radio button is displayed and is not selected ");
-//		} catch (Exception e) {
-//			utils.log().info("DHCP Radio button is not displayed");
-//		}
+			else
+				utils.log().info("Automatic Radio button is not displayed");
 
-		try {
 			if (primaryDNSLabel.isDisplayed() && automatic_primaryDNS.isDisplayed() && !(automatic_primaryDNS.isEnabled()))
 				utils.log().info(primaryDNSLabel.getText() + " : " + automatic_primaryDNS.getText());
-		} catch (Exception e) {
-			utils.log().info("Automatic Primary DNS details is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Primary DNS Label is not displayed");
+
 			if (secondayDNSLabel.isDisplayed() && automatic_secondaryDNS.isDisplayed() && !(automatic_secondaryDNS.isEnabled()))
 				utils.log().info(secondayDNSLabel.getText() + " : " + automatic_secondaryDNS.getText());
-		} catch (Exception e) {
-			utils.log().info("Automatic Secondary DNS details is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Secondary DNS Label is not displayed");
+
 			if (automatic_saveChangesButton.isDisplayed() && !(automatic_saveChangesButton.isEnabled()))
 				utils.log().info(automatic_saveChangesButton.getText() + " button is displayed but is disabled");
+			else
+				utils.log().info("Save Changes Button is not displayed");
+
+			return true;
 		} catch (Exception e) {
-			utils.log().info("SAVE CHANGES button is not displayed");
+			return false;
 		}
 	}
 	
-	public void verifyUIOnDNSIPv6Static() {
+	public boolean verifyUIOnDNSIPv6Static() {
 		utils.log().info("                                                ");
 		utils.log().info("************************************************");
 		utils.log().info("Verifying Static DNS Configuration for IPv6     ");
 		utils.log().info("************************************************");
 		
 		this.clickStaticRadioButton();
-		
 		try {
 			if (dnsConfigurationTitle.isDisplayed())
 				utils.log().info(dnsConfigurationTitle.getText() + " title text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("DNS Configuration title text is not displayed");
-		}
+			else
+				utils.log().info("DNS Configuration Title is not displayed");
 
-		try {
 			if (backIcon.isDisplayed())
 				utils.log().info("Back Icon is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Back Icon is not displayed");
-		}
+			else
+				utils.log().info("Back Icon is not displayed");
 
-		try {
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help Icon is not displayed");
-		}
+			else
+				utils.log().info("Help Icon is not displayed");
 
-		try {
 			if(dnsIPv6Tab.isDisplayed() && dnsIPv6Tab.isSelected())
 				utils.log().info("IPv6 Tab is displayed and is currently selected");
-		} catch (Exception e) {
-			utils.log().info("IPv6 Tab is not displayed");
-		}
+			else
+				utils.log().info("IPv6 Tab is not displayed");
 
-		try {
 			if (dnsIPv4Tab.isDisplayed())
 				utils.log().info("IPv4 Tab is displayed but is not selected");
-		} catch (Exception e) {
-			utils.log().info("IPv4 Tab is not displayed");
-		}
+			else
+				utils.log().info("IPv4 Tab is not displayed");
 
-		try {
 			if (staticRadioButtonChecked.isDisplayed())
 				utils.log().info("Static Radio button is displayed and is selected");
-		} catch (Exception e) {
-			utils.log().info("Static Radio button is not displayed");
-		}
-		
-//		try {
-//			if (dhcpRadioButtonUnChecked.isDisplayed())
-//				utils.log().info("DHCP Radio button is displayed and is not selected ");
-//		} catch (Exception e) {
-//			utils.log().info("DHCP Radio button is not displayed");
-//		}
+			else
+				utils.log().info("Static Radio button is not displayed");
 
-		try {
 			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed() && static_primaryDNS.isEnabled())
 				utils.log().info(primaryDNSLabel.getText() + " : " + static_primaryDNS.getText());
-		} catch (Exception e) {
-			utils.log().info("Static Primary DNS details is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Primary DNS Label is not displayed");
+
 			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed() && static_secondaryDNS.isEnabled())
 				utils.log().info(secondayDNSLabel.getText() + " : " + static_secondaryDNS.getText());
-		} catch (Exception e) {
-			utils.log().info("Static Secondary DNS details is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Secondary DNS Label is not displayed");
+
 			if (static_saveChangesButton.isDisplayed() && static_saveChangesButton.isEnabled())
 				utils.log().info(static_saveChangesButton.getText() + " button is displayed");
+			else
+				utils.log().info("Save Changes Button is not displayed");
+
+			return true;
 		} catch (Exception e) {
-			utils.log().info("SAVE CHANGES button is not displayed");
+			return false;
 		}
 	}
+	
+	
 	@Override
 	public boolean isAt() {
 		if (dnsConfigurationTitle.isDisplayed()) {

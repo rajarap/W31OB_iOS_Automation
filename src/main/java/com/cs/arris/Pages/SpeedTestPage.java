@@ -159,222 +159,251 @@ public class SpeedTestPage extends ParentClass implements Page
 	     return footerIconsPage;
 	  }	
 	
-	//click back icon 
-	public void clickBackIcon()
-	{
-		click(backIcon); // goes back to home page
-		utils.log().info("Clicked on Back Button");
-	}
+		public boolean clickBackButton() {
+			if (backIcon.isDisplayed()) {
+				click(backIcon);
+				utils.log().info("Clicked on Back Button");
+				return true;
+			} else {
+				utils.log().info("Back Button is not displayed");
+				return false;
+			}
+		}
 	
-	//click help icon 
-	public void clickHelpIcon()
-	{
-		click(helpIcon); // goes back to home page
-		utils.log().info("Clicked on Help Button");
-	}
+		public boolean clickHelpButton() {
+			if (helpIcon.isDisplayed()) {
+				click(helpIcon);
+				return true;
+			} else {
+				utils.log().info("Help button is not displayed");
+				return false;
+			}
+		}
+
 	
-	public void verifyUIOnSpeedTestPage()
-	{
-		if(speedTestTitle.isDisplayed())
-			utils.log().info("Title - " + speedTestTitle.getText() + " - is displayed");
-		else
-			utils.log().info("Notifications Title is not displayed");
-		
-		if(backIcon.isDisplayed())
-			utils.log().info("Back Icon is displayed");
-		else
-			utils.log().info("Back Icon is not displayed");
-		
+		public boolean verifyUIOnSpeedTestPage() {
+			utils.log().info("                                         ");
+			utils.log().info("*****************************************");
+			utils.log().info("Verifying UI Elements on Speed Test Page ");
+			utils.log().info("*****************************************");
+
+			try {
+				if (speedTestTitle.isDisplayed())
+					utils.log().info("Title - " + speedTestTitle.getText() + " - is displayed");
+				else
+					utils.log().info("Notifications Title is not displayed");
+
+				if (backIcon.isDisplayed())
+					utils.log().info("Back Icon is displayed");
+				else
+					utils.log().info("Back Icon is not displayed");
+
 //		if(cloudIcon.isDisplayed())
 //			utils.log().info("Cloud Icon is displayed");
 //		else
 //			utils.log().info("Cloud Icon is displayed");
-		
-		if(helpIcon.isDisplayed())
-			utils.log().info("Help Icon is displayed");
-		else
-			utils.log().info("Help Icon is displayed");
-		
-		if(deviceImage.isDisplayed())
-			utils.log().info("Device Image is displayed");
-		else
-			utils.log().info("Device Image is not displayed");
-		
-		if(deviceName.isDisplayed())
-			utils.log().info("Device Name is displayed");
-		else
-			utils.log().info("Device Name is not displayed");
-		
-		if(routerImage.isDisplayed())
-			utils.log().info("Router Image is displayed");
-		else
-			utils.log().info("Router Imnage Button is not displayed");
-		
-		if(ssidName.isDisplayed())
-			utils.log().info("SSID Name is displayed");
-		else
-			utils.log().info("SSID Name is not displayed");
-		
-		if(speedTestIcon.isDisplayed())
-			utils.log().info("Interet Icon is displayed");
-		else
-			utils.log().info("Interet Icon is not displayed");
-		
-		if(speedTestName.isDisplayed())
-			utils.log().info("Internet Text is displayed");
-		else
-			utils.log().info("Internet Text is not displayed");
-		
-		if(speedTestMeter.isDisplayed())
-			utils.log().info("Speed Test Meter is displayed");
-		else
-			utils.log().info("Speed Test Meter is not displayed");
-		
-		if(startSpeedTestButton.isDisplayed())
-			utils.log().info("Start Speed Test Button is displayed");
-		else
+
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+				else
+					utils.log().info("Help Icon is displayed");
+
+				if (deviceImage.isDisplayed())
+					utils.log().info("Device Image is displayed");
+				else
+					utils.log().info("Device Image is not displayed");
+
+				if (deviceName.isDisplayed())
+					utils.log().info("Device Name is displayed");
+				else
+					utils.log().info("Device Name is not displayed");
+
+				if (routerImage.isDisplayed())
+					utils.log().info("Router Image is displayed");
+				else
+					utils.log().info("Router Imnage Button is not displayed");
+
+				if (ssidName.isDisplayed())
+					utils.log().info("SSID Name is displayed");
+				else
+					utils.log().info("SSID Name is not displayed");
+
+				if (speedTestIcon.isDisplayed())
+					utils.log().info("Interet Icon is displayed");
+				else
+					utils.log().info("Interet Icon is not displayed");
+
+				if (speedTestName.isDisplayed())
+					utils.log().info("Internet Text is displayed");
+				else
+					utils.log().info("Internet Text is not displayed");
+
+				if (speedTestMeter.isDisplayed())
+					utils.log().info("Speed Test Meter is displayed");
+				else
+					utils.log().info("Speed Test Meter is not displayed");
+
+				if (startSpeedTestButton.isDisplayed())
+					utils.log().info("Start Speed Test Button is displayed");
+				else
+					utils.log().info("Start Speed Test Button is not displayed");
+
+				if (viewHistory.isDisplayed())
+					utils.log().info("View History Button is displayed");
+				else
+					utils.log().info("View History Button is not displayed");
+				return true;
+			} catch (Exception e) {
+				return false;
+			}
+		}
+	
+	public boolean clickStartSpeedTestButton() {
+		if (startSpeedTestButton.isDisplayed()) {
+			click(startSpeedTestButton);
+			utils.log().info("Clicked Start Speed Test Button");
+			return true;
+		} else {
 			utils.log().info("Start Speed Test Button is not displayed");
-			
-		if(viewHistory.isDisplayed())
-			utils.log().info("View History Button is displayed");
-		else
+			return false;
+		}
+	}
+	
+	public boolean clickStopSpeedTestButton()
+	{
+		if (stopSpeedTestButton.isDisplayed()) {
+			click(stopSpeedTestButton);
+			utils.log().info("Clicked Stop Speed Test Button");
+			return true;
+		} else {
+			utils.log().info("Stop Speed Test Button is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickViewHistoryButton() {
+		if (viewHistory.isDisplayed()) {
+			click(viewHistory);
+			utils.log().info("Clicked View History Button");
+			return true;
+		} else {
 			utils.log().info("View History Button is not displayed");
+			return false;
+		}
 	}
 	
-	public void clickStartSpeedTestButton()
+	public boolean performSpeedTest()
 	{
-		click(startSpeedTestButton);
-		utils.log().info("Clicked Start Speed Test Button");
-	}
-	
-	public void clickStopSpeedTestButton()
-	{
-		click(stopSpeedTestButton);
-		utils.log().info("Clicked Stop Speed Test Button");
-	}
-	
-	public void clickViewHistoryButton()
-	{
-		click(viewHistory);
-		utils.log().info("Clicked View History Button");
-	}
-	
-	public void performSpeedTest()
-	{
-		try
-		{
 			utils.log().info("Label on button before speed Test: " + startSpeedTestButton.getText());
 			clickStartSpeedTestButton();
 			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
 			super.pause(100);
 			//verifySpeedTestResultsUI();
 			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
-		}catch(Exception e)
-		{
-			utils.log().info("Speed Test was not executed" );
-		}
+			return true;
 	}
 	
-	public void verifySpeedTestResultsUI()
-	{
-		if(wifiDownloadView.isDisplayed())
-			utils.log().info("Wifi " + wifiDownloadView.getText() + " text is displayed");
-		else
-			utils.log().info("Wifi Download Text is not displayed");
-		
-		if(wifiDownloadSpeed.isDisplayed())
-			utils.log().info("Wifi " + wifiDownloadSpeed.getText() + " speed is displayed");
-		else
-			utils.log().info("Wifi Download Speed is not displayed");
-		
-		if(wifiUploadWifiView.isDisplayed())
-			utils.log().info("Wifi " + wifiUploadWifiView.getText() + " text is displayed");
-		else
-			utils.log().info("Wifi Upload Text is not displayed");
-		
-		if(wifiUploadloadSpeed.isDisplayed())
-			utils.log().info("Wifi " + wifiUploadloadSpeed.getText() + " speed is displayed");
-		else
-			utils.log().info("Wifi Upload Speed is not displayed");
-		
-		if(internetDownloadView.isDisplayed())
-			utils.log().info("Internet " + internetDownloadView.getText() + " text is displayed");
-		else
-			utils.log().info("Internet Download Text is not displayed");
-		
-		if(internetDownloadSpeed.isDisplayed())
-			utils.log().info("Internet " + internetDownloadSpeed.getText() + " speed is displayed");
-		else
-			utils.log().info("Internet Download Speed is not displayed");
-		
-		if(internetUploadView.isDisplayed())
-			utils.log().info("Internet " + internetUploadView.getText() + " text is displayed");
-		else
-			utils.log().info("Internet Upload Text is not displayed");
-		
-		if(internetUploadSpeed.isDisplayed())
-			utils.log().info("Internet " + internetUploadSpeed.getText() + " speed is displayed");
-		else
-			utils.log().info("Internet Download Speed is not displayed");
-		
-		if(wifiSpeedGoodForText.isDisplayed())
-			utils.log().info("" + wifiSpeedGoodForText.getText() + " is displayed");
-		else
-			utils.log().info("This Wi-Fi Speed is good for: text is not displayed");
-		
-		if(webBrowsingEmail.isDisplayed())
-			utils.log().info("" + webBrowsingEmail.getText() + " is displayed");
-		else
-			utils.log().info("Web Browsing/E-mail text is not displayed");
-		
-		if(emailEnableIcon.isDisplayed())
-			utils.log().info("Web Browsing/E-mail enable/disable icon is displayed");
-		else
-			utils.log().info("Web Browsing/E-mail enable/disable iconis not displayed");
-		
-		if(casualGaming.isDisplayed())
-			utils.log().info("" + casualGaming.getText() + " is displayed");
-		else
-			utils.log().info("SD Video, Music, and Casual Gaming text is not displayed");
-		
-		if(sdVideoEnableIcon.isDisplayed())
-			utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is displayed");
-		else
-			utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is not displayed");
-		
-		if(hdVideo.isDisplayed())
-			utils.log().info("" + hdVideo.getText() + " is displayed");
-		else
-			utils.log().info("HD Video and Competitive Gaming text is not displayed");
-		
-		if(hdVideoEnableIcon.isDisplayed())
-			utils.log().info("HD Video and Competitive Gaming enable/disable icon is displayed");
-		else
-			utils.log().info("HD Video and Competitive Gaming enable/disable icon is not displayed");
-		
-		if(virtualReality.isDisplayed())
-			utils.log().info("" + virtualReality.getText() + " is displayed");
-		else
-			utils.log().info("UHD/4K Video/ Virtual Reality text is not displayed");
-		
-		if(virtualEnableIcon.isDisplayed())
-			utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon is displayed");
-		else
-			utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon  is not displayed");
+	public boolean verifySpeedTestResultsUI() {
+		try {
+			if (wifiDownloadView.isDisplayed())
+				utils.log().info("Wifi " + wifiDownloadView.getText() + " text is displayed");
+			else
+				utils.log().info("Wifi Download Text is not displayed");
+
+			if (wifiDownloadSpeed.isDisplayed())
+				utils.log().info("Wifi " + wifiDownloadSpeed.getText() + " speed is displayed");
+			else
+				utils.log().info("Wifi Download Speed is not displayed");
+
+			if (wifiUploadWifiView.isDisplayed())
+				utils.log().info("Wifi " + wifiUploadWifiView.getText() + " text is displayed");
+			else
+				utils.log().info("Wifi Upload Text is not displayed");
+
+			if (wifiUploadloadSpeed.isDisplayed())
+				utils.log().info("Wifi " + wifiUploadloadSpeed.getText() + " speed is displayed");
+			else
+				utils.log().info("Wifi Upload Speed is not displayed");
+
+			if (internetDownloadView.isDisplayed())
+				utils.log().info("Internet " + internetDownloadView.getText() + " text is displayed");
+			else
+				utils.log().info("Internet Download Text is not displayed");
+
+			if (internetDownloadSpeed.isDisplayed())
+				utils.log().info("Internet " + internetDownloadSpeed.getText() + " speed is displayed");
+			else
+				utils.log().info("Internet Download Speed is not displayed");
+
+			if (internetUploadView.isDisplayed())
+				utils.log().info("Internet " + internetUploadView.getText() + " text is displayed");
+			else
+				utils.log().info("Internet Upload Text is not displayed");
+
+			if (internetUploadSpeed.isDisplayed())
+				utils.log().info("Internet " + internetUploadSpeed.getText() + " speed is displayed");
+			else
+				utils.log().info("Internet Download Speed is not displayed");
+
+			if (wifiSpeedGoodForText.isDisplayed())
+				utils.log().info("" + wifiSpeedGoodForText.getText() + " is displayed");
+			else
+				utils.log().info("This Wi-Fi Speed is good for: text is not displayed");
+
+			if (webBrowsingEmail.isDisplayed())
+				utils.log().info("" + webBrowsingEmail.getText() + " is displayed");
+			else
+				utils.log().info("Web Browsing/E-mail text is not displayed");
+
+			if (emailEnableIcon.isDisplayed())
+				utils.log().info("Web Browsing/E-mail enable/disable icon is displayed");
+			else
+				utils.log().info("Web Browsing/E-mail enable/disable iconis not displayed");
+
+			if (casualGaming.isDisplayed())
+				utils.log().info("" + casualGaming.getText() + " is displayed");
+			else
+				utils.log().info("SD Video, Music, and Casual Gaming text is not displayed");
+
+			if (sdVideoEnableIcon.isDisplayed())
+				utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is displayed");
+			else
+				utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is not displayed");
+
+			if (hdVideo.isDisplayed())
+				utils.log().info("" + hdVideo.getText() + " is displayed");
+			else
+				utils.log().info("HD Video and Competitive Gaming text is not displayed");
+
+			if (hdVideoEnableIcon.isDisplayed())
+				utils.log().info("HD Video and Competitive Gaming enable/disable icon is displayed");
+			else
+				utils.log().info("HD Video and Competitive Gaming enable/disable icon is not displayed");
+
+			if (virtualReality.isDisplayed())
+				utils.log().info("" + virtualReality.getText() + " is displayed");
+			else
+				utils.log().info("UHD/4K Video/ Virtual Reality text is not displayed");
+
+			if (virtualEnableIcon.isDisplayed())
+				utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon is displayed");
+			else
+				utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon  is not displayed");
+
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 	
 	@Override
 	public boolean isAt() {
-		if(speedTestTitle.isDisplayed())
-		{
+		if (speedTestTitle.isDisplayed()) {
 			utils.log().info("At Speed Test Page");
 			return true;
-		}
-		else
-		{
+		} else {
 			utils.log().info("Speed Test Page is not displayed");
 			return false;
 		}
 	}
-
 }

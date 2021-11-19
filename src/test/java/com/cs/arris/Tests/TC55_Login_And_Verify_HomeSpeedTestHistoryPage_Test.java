@@ -148,7 +148,7 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 					 {
 						 speedTest.performSpeedTest();
 					 }
-					 speedTest.clickBackIcon();
+					 speedTest.clickBackButton();
 				 }
 			 }).homePage(home -> {
 				 if(home.isAt())

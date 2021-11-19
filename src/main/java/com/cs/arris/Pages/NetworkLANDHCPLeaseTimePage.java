@@ -39,7 +39,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_select_unit")
 	public MobileElement selectTimeUnitButton;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/save_lease_time")
 	public MobileElement saveLeaseTimeButton;
 
@@ -47,38 +47,33 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public HomePage getHomePageObject() {
-		HomePage homePage = new HomePage();
-		return homePage;
-	}
-	
-	public NetworkHelpPage getNetworkPageObject() {
-		NetworkHelpPage networkHelpPage = new NetworkHelpPage();
-		return networkHelpPage;
+	public NetworkLANDHCPLeaseTimeHelpPage getLANDHCPLeaseTimeHelpPageObject() {
+		NetworkLANDHCPLeaseTimeHelpPage leaseTimeHelpPage = new NetworkLANDHCPLeaseTimeHelpPage();
+		return leaseTimeHelpPage;
 	}
 
 	public FooterIconsPage getFooterIconsPageObject() {
 		FooterIconsPage footerIconsPage = new FooterIconsPage();
 		return footerIconsPage;
 	}
-	 
-	 public NetworkLANSettingsPage getLANSettingsPageObject() {
-		 NetworkLANSettingsPage lanSettings = new NetworkLANSettingsPage();
-	     return lanSettings;
-	  }
-	 
-		public boolean clickBackButton() {
-			try {
-				if (backIcon.isDisplayed()) {
-					click(backIcon);
-					utils.log().info("Clicked on Back Button");
-				}
-				return true;
-			} catch (Exception e) {
-				utils.log().info("Back Button is not displayed");
-				return false;
+
+	public NetworkLANDHCPLeaseTimeEditTimeUnitDialog getEditTimeUnitPageObject() {
+		NetworkLANDHCPLeaseTimeEditTimeUnitDialog timeUnitPage = new NetworkLANDHCPLeaseTimeEditTimeUnitDialog();
+		return timeUnitPage;
+	}
+
+	public boolean clickBackButton() {
+		try {
+			if (backIcon.isDisplayed()) {
+				click(backIcon);
+				utils.log().info("Clicked on Back Button");
 			}
+			return true;
+		} catch (Exception e) {
+			utils.log().info("Back Button is not displayed");
+			return false;
 		}
+	}
 
 	public boolean clickHelpButton() {
 		try {
@@ -92,7 +87,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 			return false;
 		}
 	}
-	
+
 	public boolean clickTimeUnitButton() {
 		try {
 			if (selectTimeUnitButton.isDisplayed()) {
@@ -105,7 +100,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 			return false;
 		}
 	}
-	
+
 	public boolean clickSaveLeaseTimeButton() {
 		try {
 			if (saveLeaseTimeButton.isDisplayed()) {
@@ -118,20 +113,20 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 			return false;
 		}
 	}
-	
+
 	public boolean enterLeaseTime() {
 		try {
 			if (enterLeaseTimeTextBox.isDisplayed()) {
-				sendKeys(enterLeaseTimeTextBox, "1550");
-				utils.log().info("Entered Lease time of 1550");
+				clear(enterLeaseTimeTextBox);
+				sendKeys(enterLeaseTimeTextBox, "1440");
+				utils.log().info("Entered Lease time of 1440");
 			}
 			return true;
 		} catch (Exception e) {
-			utils.log().info("Save Lease Time Button is not displayed");
+			utils.log().info("Set Lease Time text box is not displayed");
 			return false;
 		}
 	}
-	
 
 	public boolean verifyUIOnLANLeaseTimePage() {
 		utils.log().info("                                             ");
@@ -142,49 +137,48 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		{
 			if (lanDHCPLeaseTimeTitle.isDisplayed())
 				utils.log().info(lanDHCPLeaseTimeTitle.getText() + " title text is displayed ");
-//			else
-//				utils.log().info("LAN DHCP Lease Time text is not displayed");
+			else
+				utils.log().info("LAN DHCP Lease Time text is not displayed");
 
 			if (backIcon.isDisplayed())
 				utils.log().info("Back Icon is displayed ");
-//			else
-//				utils.log().info("Back Icon is not displayed");
+			else
+				utils.log().info("Back Icon is not displayed");
 
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help Icon is displayed");
-//			else
-//				utils.log().info("Help Icon is not displayed");
-//		
+			else
+				utils.log().info("Help Icon is not displayed");
+	
 			if (setLeaseTimeLabel.isDisplayed())
 				utils.log().info(setLeaseTimeLabel.getText() + " label is displayed");
-//			else
-//				utils.log().info("Set Lease Time label is displayed");
+			else
+				utils.log().info("Set Lease Time label is displayed");
 			
 			if (enterLeaseTimeTextBox.isDisplayed())
 				utils.log().info("Enter Lease Time TextBox is displayed");
-//			else
-//				utils.log().info("Enter Lease Time TextBoxis not displayed");
+			else
+				utils.log().info("Enter Lease Time TextBoxis not displayed");
 			
 			if (selctTimeUnitLabel.isDisplayed())
 				utils.log().info(selctTimeUnitLabel.getText() + " label is displayed");
-//			else
-//				utils.log().info("Select Time Unit Label is not displayed");
+			else
+				utils.log().info("Select Time Unit Label is not displayed");
 			
 			if (selectTimeUnitButton.isDisplayed())
 				utils.log().info("Button to select the time unit is displayed");
-//			else
-//				utils.log().info("Button to select the time unit is not displayed");
+			else
+				utils.log().info("Button to select the time unit is not displayed");
 			
 			if (saveLeaseTimeButton.isDisplayed())
 				utils.log().info("Save Lease Time Button is displayed");
-//			else
-//				utils.log().info("Button to select the time unit is not displayed");
+			else
+				utils.log().info("Button to select the time unit is not displayed");
+			
 			return true;
 		} catch (Exception e) {
 			return false;
 		}
-
-
 	}
 
 	@Override

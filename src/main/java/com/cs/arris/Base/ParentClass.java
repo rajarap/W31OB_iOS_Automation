@@ -50,6 +50,8 @@ import org.testng.asserts.SoftAssert;
 import com.aventstack.extentreports.Status;
 import com.cs.arris.JsonMappers.Signin_TestData;
 import com.cs.arris.Reports.ExtentReport;
+import com.cs.arris.Utilities.Direction;
+import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.AppiumDriver;
@@ -580,6 +582,15 @@ public class ParentClass
 			}
 		 }
 		 
+		 public void swipeUp()
+		 {
+			 new SwipeActions().swipeScreen(Direction.UP);
+		 }
+		 
+		 public void swipeDown()
+		 {
+			 new SwipeActions().swipeScreen(Direction.DOWN);
+		 }
 		 
 		 public Integer getCountOfRulesWithSpace(String noOfRulessText) 
 			{

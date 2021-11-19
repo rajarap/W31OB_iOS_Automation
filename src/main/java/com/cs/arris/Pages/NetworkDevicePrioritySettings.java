@@ -30,22 +30,19 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Device Level Prioritization")
 	public MobileElement deviceLevelPrioritizationLabel;
-	
+
 	@AndroidFindBy(id = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable' and @text='OFF']")
 	public MobileElement disableDevicePrioritySettings;
-	
+
 	@AndroidFindBy(id = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable' and @text='ON']")
 	public MobileElement enableDevicePrioritySettings;
-	
+
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/add_device_configure")
 	public MobileElement addDeviceButton;
-	
+
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Device Priority")
 	public MobileElement networkDevicePriorityLabel;
-	
-	
-	
-	
+
 	public NetworkDevicePrioritySettings() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
@@ -54,64 +51,80 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 		FooterIconsPage footerIconsPage = new FooterIconsPage();
 		return footerIconsPage;
 	}
-		
+
 	public NetworkDevicePrioritySettingsHelpPage getDevicePriorityHelpPageObject() {
 		NetworkDevicePrioritySettingsHelpPage devicePrioritySettings = new NetworkDevicePrioritySettingsHelpPage();
 		return devicePrioritySettings;
 	}
-	
+
 	public NetworkDevicePrioritySettingsAddDevicePage getAddDevicePriorityPageObject() {
 		NetworkDevicePrioritySettingsAddDevicePage addDevice = new NetworkDevicePrioritySettingsAddDevicePage();
 		return addDevice;
 	}
 
-	public void clickBackButton() {
+	public boolean clickBackButton() {
 		if (backIcon.isDisplayed()) {
 			click(backIcon);
 			utils.log().info("Clicked on Back Button");
-		} else
+			return true;
+		} else {
 			utils.log().info("Back Button is not displayed");
+			return false;
+		}
 	}
 
 	public boolean clickHelpButton() {
-		try {
-			if (helpIcon.isDisplayed()) 
-				click(helpIcon);
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
+			utils.log().info("Clicked on Help Button");
 			return true;
-		} catch (Exception e) {
-			utils.log().info("Help Button is not displayed");
+		} else {
+			utils.log().info("Help button is not displayed");
 			return false;
 		}
 	}
 	
 	public boolean clickAddDeviceButton() {
-		try {
-			if (addDeviceButton.isDisplayed()) 
-				click(addDeviceButton);
-				//utils.log().info("Clicked on Test Your Connection Speed button");
-				return true;		
-			}catch(Exception e) {
-			//utils.log().info("Test Your Connection Speed button is not displayed");
-			return false;}
+		if (addDeviceButton.isDisplayed()) {
+			click(addDeviceButton);
+			utils.log().info("Clicked on Add Device Button");
+			return true;		
+		}else{
+			utils.log().info("Add Device button is not displayed");
+			return false;
+		}
 	}
 	
-	public void enableDevicePrioritySettings() {
-		if (disableDevicePrioritySettings.isDisplayed())
+	public boolean enableDevicePrioritySettings() {
+		if (disableDevicePrioritySettings.isDisplayed()) {
 			click(disableDevicePrioritySettings);
-		else
+			utils.log().info("Device Priority Settings is enabled");
+			return true;
+		}else if(enableDevicePrioritySettings.isDisplayed()) {
 			utils.log().info("Device Priority Settings is already enabled");
+			return true;
+		}else {
+			utils.log().info("Device Priority Settings toggle button is not displayed");
+			return false;
+		}
 	}
 	
-	public void disableDevicePrioritySettings() {
-		if (enableDevicePrioritySettings.isDisplayed())
+	public boolean disableDevicePrioritySettings() {
+		if (enableDevicePrioritySettings.isDisplayed()) {
 			click(enableDevicePrioritySettings);
-		else
+			utils.log().info("Device Priority Settings is disabled");
+			return true;
+	}else if(disableDevicePrioritySettings.isDisplayed()) {
 			utils.log().info("Device Priority Settings is already disabled");
+			return true;
+		}else {
+			utils.log().info("Device Priority Settings toggle button is not displayed");
+			return false;
+		}
 	}
+	
 
-
-
-	public boolean verifyUIOnNetworkAddDevicePage() {
+	public boolean verifyUIOnDevicePrioritySettingsPage() {
 		utils.log().info("                                                       ");
 		utils.log().info("*******************************************************");
 		utils.log().info("Verifying UI Elements on Device Priority Settings Page ");
@@ -153,70 +166,87 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 			return false;
 		}
 	}
-	
-	public void verifyUIOnNetworkPrioritizedDevices() {
+
+	public boolean verifyUIOnNetworkPrioritizedDevices() {
 		utils.log().info("                                                                                ");
 		utils.log().info("********************************************************************************");
 		utils.log().info("Verifying UI Elements after Adding Devices to the Device Priority Settings Page ");
 		utils.log().info("********************************************************************************");
-		
-		for (int i = 1; i <= 2; i++) {
-				utils.log().info("Prioritized Device  : " + i);
-				utils.log().info("--------------------------");
+		try {
+		for (int i = 1; i <= 1; i++) {
+			utils.log().info("Prioritized Device  : " + i);
+			utils.log().info("--------------------------");
 
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + i + "]/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup");
+			List<MobileElement> entity = (List<MobileElement>) super.getDriver()
+					.findElementsByXPath("//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[" + i
+							+ "]/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup");
 
-				for (MobileElement e : entity) {
-					try {
-						if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/deviceTypeImage']").isDisplayed())
-							utils.log().info("Device Image is displayed");
-					} catch (Exception exp) {
-						utils.log().info("Device Image is not displayed ");
-					}
-					
-					try {
-						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").isDisplayed())
-							utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Name is not displayed ");
-					}
-					
-					try {
-						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").isDisplayed())
-							utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Name is not displayed ");
-					}
-					
-					try {
-						if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest' and @checked=false]").isDisplayed())
-							utils.log().info("Highest Priority Radion Button is displayed");
-						if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest' and @checked=true]").isDisplayed())
-								utils.log().info("Priority : " + e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest']").getText() + " is selected");
-					} catch (Exception exp) {
-						utils.log().info("Highest Priority Radion Button is not displayed ");
-					}
-					
-					try {
-						if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_high' and @checked=false]").isDisplayed())
-							utils.log().info("High Priority Radion Button is displayed");
-						if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_high' and @checked=true]").isDisplayed())
-								utils.log().info("Priority : " + e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_high']").getText() + " is selected");
-					} catch (Exception exp) {
-						utils.log().info("High Priority Radion Button is not displayed ");
-					}
-					
-					try {
-						if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_normal' and @checked=false]").isDisplayed())
-							utils.log().info("Normal Priority Radio Button is displayed");
-						if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_normal' and @checked=true]").isDisplayed())
-								utils.log().info("Priority : " + e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_normal']").getText() + " is selected");
-					} catch (Exception exp) {
-						utils.log().info("Normal Priority Radion Button is not displayed ");
-					}
-					
-				}
+			for (MobileElement e : entity) {
+				if (e.findElementByXPath(
+						"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/deviceTypeImage']")
+						.isDisplayed())
+					utils.log().info("Device Image is displayed");
+
+				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']")
+						.isDisplayed())
+					utils.log()
+							.info("Device Name: " + e
+									.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']")
+									.getText());
+
+				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']")
+						.isDisplayed())
+					utils.log()
+							.info("Device Name: " + e
+									.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']")
+									.getText());
+
+				if (e.findElementByXPath(
+						"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest' and @checked=false]")
+						.isDisplayed())
+					utils.log().info("Highest Priority Radion Button is displayed");
+				if (e.findElementByXPath(
+						"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest' and @checked=true]")
+						.isDisplayed())
+					utils.log()
+							.info("Priority : " + e.findElementByXPath(
+									"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest']")
+									.getText() + " is selected");
+
+				if (e.findElementByXPath(
+						"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_high' and @checked=false]")
+						.isDisplayed())
+					utils.log().info("High Priority Radion Button is displayed");
+
+				if (e.findElementByXPath(
+						"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_high' and @checked=true]")
+						.isDisplayed())
+					utils.log()
+							.info("Priority : " + e
+									.findElementByXPath(
+											"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_high']")
+									.getText() + " is selected");
+
+				if (e.findElementByXPath(
+						"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_normal' and @checked=false]")
+						.isDisplayed())
+					utils.log().info("Normal Priority Radio Button is displayed");
+
+				if (e.findElementByXPath(
+						"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_normal' and @checked=true]")
+						.isDisplayed())
+					utils.log()
+							.info("Priority : " + e.findElementByXPath(
+									"//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_normal']")
+									.getText() + " is selected");
+			}
+		}
+			return true;
+		}catch(Exception e){
+			utils.log().info("No Device found to prioritize");
+			return false;
 		}
 
 	}

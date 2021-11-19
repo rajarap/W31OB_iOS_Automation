@@ -28,101 +28,87 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Hourly']")
 	public MobileElement hourly;
-	
+
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Days']")
 	public MobileElement days;
-	
+
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Weekly']")
 	public MobileElement weekly;
-	
+
 	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Forever']")
 	public MobileElement forever;
-
 
 	public NetworkLANDHCPLeaseTimeEditTimeUnitDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
 	public boolean clickCloseButton() {
-		try {
-			if (closeIcon.isDisplayed()) {
-				click(closeIcon);
-				utils.log().info("Clicked on Close Button");
-			}
+		if (closeIcon.isDisplayed()) {
+			click(closeIcon);
+			utils.log().info("Clicked on Close Button");
 			return true;
-		} catch (Exception e) {
+		} else {
 			utils.log().info("Close Button is not displayed");
 			return false;
 		}
 	}
-	
+
 	public boolean clickMinutesRadioButton() {
-		try {
-			if (minutes.isDisplayed()) {
-				click(minutes);
-				utils.log().info("Clicked on Minutes Radio Button");
-			}
+		if (minutes.isDisplayed()) {
+			click(minutes);
+			utils.log().info("Clicked on Minutes Radio Button");
 			return true;
-		} catch (Exception e) {
+		} else {
 			utils.log().info("Minutes Radio Button is not displayed");
 			return false;
 		}
 	}
-	
+
 	public boolean clickHourlyRadioButton() {
-		try {
-			if (hourly.isDisplayed()) {
-				click(hourly);
-				utils.log().info("Clicked on Hourly Radio Button");
-			}
+		if (hourly.isDisplayed()) {
+			click(hourly);
+			utils.log().info("Clicked on Hourly Radio Button");
 			return true;
-		} catch (Exception e) {
+		} else {
 			utils.log().info("Hourly Radio Button is not displayed");
 			return false;
 		}
 	}
-	
+
 	public boolean clickDaysRadioButton() {
-		try {
-			if (days.isDisplayed()) {
-				click(days);
-				utils.log().info("Clicked on Days Radio Button");
-			}
+		if (days.isDisplayed()) {
+			click(days);
+			utils.log().info("Clicked on Days Radio Button");
 			return true;
-		} catch (Exception e) {
+		} else {
 			utils.log().info("Days Radio Button is not displayed");
 			return false;
 		}
 	}
-	
+
 	public boolean clickWeeklyRadioButton() {
-		try {
-			if (weekly.isDisplayed()) {
-				click(weekly);
-				utils.log().info("Clicked on Weekly Radio Button");
-			}
+		if (weekly.isDisplayed()) {
+			click(weekly);
+			utils.log().info("Clicked on Weekly Radio Button");
 			return true;
-		} catch (Exception e) {
+		} else {
 			utils.log().info("Weekly Radio Button is not displayed");
 			return false;
 		}
 	}
-	
+
 	public boolean clickForeverRadioButton() {
-		try {
-			if (forever.isDisplayed()) {
-				click(forever);
-				utils.log().info("Clicked on Foever Radio Button");
-			}
+		if (forever.isDisplayed()) {
+			click(forever);
+			utils.log().info("Clicked on Foever Radio Button");
 			return true;
-		} catch (Exception e) {
+		} else {
 			utils.log().info("Forever Radio Button is not displayed");
 			return false;
 		}
 	}
-	
 
-	public boolean verifyUIOnLANLeaseTimePage() {
+	public boolean verifyUIOnLANEditLeaseTimePage() {
 		utils.log().info("                                             ");
 		utils.log().info("*********************************************");
 		utils.log().info("Verifying UI Elements on LAN Lease Time Page ");
@@ -131,38 +117,39 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 		{
 			if (editTimeUnitTitle.isDisplayed())
 				utils.log().info(editTimeUnitTitle.getText() + " title text is displayed ");
-//			else
-//				utils.log().info("LAN DHCP Lease Time text is not displayed");
+			else
+				utils.log().info("LAN DHCP Lease Time text is not displayed");
 
 			if (closeIcon.isDisplayed())
 				utils.log().info("Close Icon is displayed ");
-//			else
-//				utils.log().info("Back Icon is not displayed");
+			else
+				utils.log().info("Back Icon is not displayed");
 
 			if (minutes.isDisplayed())
 				utils.log().info("Minutes Radio button is displayed");
-//			else
-//				utils.log().info("Help Icon is not displayed");
-//		
+			else
+				utils.log().info("Help Icon is not displayed");
+		
 			if (hourly.isDisplayed())
 				utils.log().info("Hourly Radio button is displayed");
-//			else
-//				utils.log().info("Set Lease Time label is displayed");
+			else
+				utils.log().info("Set Lease Time label is displayed");
 			
 			if (days.isDisplayed())
 				utils.log().info("Days Radio button is displayed");
-//			else
-//				utils.log().info("Enter Lease Time TextBoxis not displayed");
+			else
+				utils.log().info("Enter Lease Time TextBoxis not displayed");
 			
 			if (weekly.isDisplayed())
 				utils.log().info(" Weekly Radio button is displayed");
-//			else
-//				utils.log().info("Select Time Unit Label is not displayed");
+			else
+				utils.log().info("Select Time Unit Label is not displayed");
 			
 			if (forever.isDisplayed())
 				utils.log().info("Forever Radion button is displayed");
-//			else
-//				utils.log().info("Button to select the time unit is not displayed");
+			else
+				utils.log().info("Button to select the time unit is not displayed");
+			
 			return true;
 		} catch (Exception e) {
 			return false;

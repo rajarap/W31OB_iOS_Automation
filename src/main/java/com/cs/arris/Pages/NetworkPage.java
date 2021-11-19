@@ -55,10 +55,10 @@ public class NetworkPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/enable_guest_wifi_text")
 	public MobileElement enableDisableGuestNetwork;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/pause_internet_enable_disable' and @checked='false']")
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='false']")
 	public MobileElement disableGuestNetworkToggleButton;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/pause_internet_enable_disable' and @checked='true']")
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='true']")
 	public MobileElement enableGuestNetworkToggleButton;
 
 
@@ -182,153 +182,195 @@ public class NetworkPage extends ParentClass implements Page {
 		return guestNetwork;
 	}
 	
+	public NetworkDevicePrioritySettings getNetworkDevicePrioritySettingsPageObject() {
+		NetworkDevicePrioritySettings widebandMode = new NetworkDevicePrioritySettings();
+		return widebandMode;
+	}
 	
-	public void clickBackButton() {
+	public NetworkTimeZoneSettingsPage getTimeZoneSettingsPageObject() {
+		NetworkTimeZoneSettingsPage timeZone = new NetworkTimeZoneSettingsPage();
+		return timeZone;
+	}
+	
+	public NetworkGeneralSettingsPage getGeneralSettingsPageObject() {
+		NetworkGeneralSettingsPage generalSettings = new NetworkGeneralSettingsPage();
+		return generalSettings;
+	}
+	
+	
+	public boolean clickBackButton() {
 		if (backIcon.isDisplayed()) {
 			click(backIcon);
 			utils.log().info("Clicked on Back Button");
-		} else
+			return true;
+		} else {
 			utils.log().info("Back Button is not displayed");
+			return false;
+		}
 	}
 
 	public boolean clickHelpButton() {
-		try {
-			if (helpIcon.isDisplayed()) 
-				click(helpIcon);
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
 			return true;
-		} catch (Exception e) {
-			utils.log().info("Help Button is not displayed");
+		} else {
+			utils.log().info("Help button is not displayed");
 			return false;
 		}
 	}
 
 	public boolean clickTestConnectionSpeedButton() {
-		try {
-			if (testMyConnectionSpeedButton.isDisplayed()) 
-				click(testMyConnectionSpeedButton);
-				//utils.log().info("Clicked on Test Your Connection Speed button");
-				return true;		
-			}catch(Exception e) {
-			//utils.log().info("Test Your Connection Speed button is not displayed");
-			return false;}
+		if (testMyConnectionSpeedButton.isDisplayed()) {
+			click(testMyConnectionSpeedButton);
+			utils.log().info("Clicked on Test Your Connection Speed button");
+			return true;
+		} else {
+			utils.log().info("Test Your Connection Speed button is not displayed");
+			return false;
+		}
 	}
 	
-	public void clickExtendedWifiSettingsExpandButton() {
-		if (extendedWifiExpandIcon.isDisplayed())
+	public boolean clickExtendedWifiSettingsExpandButton() {
+		if (extendedWifiExpandIcon.isDisplayed()) {
 			click(extendedWifiExpandIcon);
-		else
+			return true;
+		} else {
 			utils.log().info("Extended Wifi Settings Expand Button is not displayed");
+			return false;
+		}
 	}
 
-	public void clickNetworkSettingsExpandButton() {
-		if (networkSettingsExpandIcon.isDisplayed())
+	public boolean clickNetworkSettingsExpandButton() {
+		if (networkSettingsExpandIcon.isDisplayed()) {
 			click(networkSettingsExpandIcon);
-		else
+			return true;
+		}else {
 			utils.log().info("Network Settings Expand Button is not displayed");
+			return false;
+		}
 	}
 	
-	public void clickfiveGHzWidebandInfoIcon() {
-		try {
-			if (fiveGHzWidebandInfoIcon.isDisplayed()) {
-				click(fiveGHzWidebandInfoIcon);
-				utils.log().info("Clicked on 5GHz Wideband Info Icon");
-			}
-		} catch (Exception e) {
+	public boolean clickfiveGHzWidebandInfoIcon() {
+		if (fiveGHzWidebandInfoIcon.isDisplayed()) {
+			click(fiveGHzWidebandInfoIcon);
+			utils.log().info("Clicked on 5GHz Wideband Info Icon");
+			return true;
+		} else {
 			utils.log().info("5GHz Wideband Mode Info Icon is not displayed");
+			return false;
 		}
 	}
 	
-	public void enable5GHzWidebandMode() {
-		try {
-			if (disableWidebandModeToggleButton.isDisplayed()) {
-				click(disableWidebandModeToggleButton);		
-				utils.log().info("5GHz Wideband Mode is enabled(ON)");}
-			else 
-				utils.log().info("5GHz Wideband Mode is already enabled");
-		} catch (Exception e) {
+	public boolean enable5GHzWidebandMode() {
+		if (disableWidebandModeToggleButton.isDisplayed()) {
+			click(disableWidebandModeToggleButton);
+			utils.log().info("5GHz Wideband Mode is enabled(ON)");
+			return true;
+		} else if (enableWidebandModeToggleButton.isDisplayed()) {
+			utils.log().info("5GHz Wideband Mode is already enabled");
+			return true;
+		} else {
 			utils.log().info("5GHz Wideband Mode toggle switch button is not displayed");
+			return false;
 		}
 	}
 
-	public void disable5GHzWidebandMode() {
-		try {
-			if (enableWidebandModeToggleButton.isDisplayed()) {
-				click(enableWidebandModeToggleButton);			
-				utils.log().info("5GHz Wideband Mode is disabled(OFF)");}
-			else 
-				utils.log().info("5GHz Wideband Mode is already disabled");
-		} catch (Exception e) {
+	public boolean disable5GHzWidebandMode() {
+		if (enableWidebandModeToggleButton.isDisplayed()) {
+			click(enableWidebandModeToggleButton);
+			utils.log().info("5GHz Wideband Mode is disabled(OFF)");
+			return true;
+		} else if (disableWidebandModeToggleButton.isDisplayed()) {
+			utils.log().info("5GHz Wideband Mode is already disabled");
+			return true;
+		} else {
 			utils.log().info("5GHz Wideband Mode toggle switch button is not displayed");
+			return false;
 		}
 	}
 	
-	public void enableGuestWifiNetwork() {
-		try {
-			if (disableGuestNetworkToggleButton.isDisplayed()) {
-				click(disableGuestNetworkToggleButton);		
-				utils.log().info("Enable/Disable Guest Network is enabled(ON)");}
-			else 
-				utils.log().info("Enable/Disable Guest Network is already enabled");
-		} catch (Exception e) {
+	public boolean enableGuestWifiNetwork() {
+		if (disableGuestNetworkToggleButton.isDisplayed()) {
+			click(disableGuestNetworkToggleButton);
+			utils.log().info("Enable/Disable Guest Network is enabled(ON)");
+			return true;
+		} else if (enableGuestNetworkToggleButton.isDisplayed()) {
+			utils.log().info("Enable/Disable Guest Network is already enabled");
+			return true;
+		} else {
 			utils.log().info("Enable/Disable Guest Network toggle switch button is not displayed");
+			return false;
 		}
 	}
 
-	public void disableGuestWifiNetwork() {
-		try {
-			if (enableGuestNetworkToggleButton.isDisplayed()) {
-				click(enableGuestNetworkToggleButton);			
-				utils.log().info("Enable/Disable Guest Network is disabled(OFF)");}
-			else 
-				utils.log().info("Enable/Disable Guest Network is already disabled");
-		} catch (Exception e) {
+	public boolean disableGuestWifiNetwork() {
+		if (enableGuestNetworkToggleButton.isDisplayed()) {
+			click(enableGuestNetworkToggleButton);
+			utils.log().info("Enable/Disable Guest Network is disabled(OFF)");
+			return true;
+		} else if (disableGuestNetworkToggleButton.isDisplayed()) {
+			utils.log().info("Enable/Disable Guest Network is already disabled");
+			return true;
+		} else {
 			utils.log().info("Enable/Disable Guest Network toggle switch button is not displayed");
+			return false;
 		}
 	}
 
-	public void clickGeneralSettings() {
-		click(networkSettingsExpandIcon);
+	public boolean clickGeneralSettings() {
 		if (generalSettingsLabel.isDisplayed()) {
 			click(generalSettingsLabel);
 			utils.log().info("Clicked on General Settings");
-		} else
+			return true;
+		} else {
 			utils.log().info("General Settings Link is not displayed");
+			return false;
+		}
 	}
 
-	public void clickWANSettings() {
-		click(networkSettingsExpandIcon);
+	public boolean clickWANSettings() {
 		if (wanSettingsLabel.isDisplayed()) {
 			click(wanSettingsLabel);
 			utils.log().info("Clicked on WAN Settings");
-		} else
+			return true;
+		} else {
 			utils.log().info("WAN Settings Link is not displayed");
+			return false;
+		}
 	}
 
-	public void clickLANSettings() {
-		click(networkSettingsExpandIcon);
+	public boolean clickLANSettings() {
 		if (lanSettingsLabel.isDisplayed()) {
 			click(lanSettingsLabel);
 			utils.log().info("Clicked on LAN Settings");
-		} else
+			return true;
+		} else {
 			utils.log().info("LAN Settings Link is not displayed");
+			return false;
+		}
 	}
 
-	public void clickDevicePrioritySettings() {
-		click(networkSettingsExpandIcon);
+	public boolean clickDevicePrioritySettings() {
+		new SwipeActions().swipeScreen(Direction.UP);
 		if (devicePrioritySettings.isDisplayed()) {
 			click(devicePrioritySettings);
 			utils.log().info("Clicked on Device Priority Settings");
-		} else
+			return true;
+		} else {
 			utils.log().info("Device Priority Settings Link is not displayed");
+			return false;
+		}
 	}
 
-	public void clickTimeZone() {
-		click(timeZone);
+	public boolean clickTimeZone() {
 		if (timeZone.isDisplayed()) {
 			click(timeZone);
 			utils.log().info("Clicked on Time Zone Settings");
-		} else
+			return true;
+		} else {
 			utils.log().info("Time Zone Priority Settings Link is not displayed");
+			return false;
+		}
 	}
 
 	public boolean verifyUIOnNetworkPage() {
@@ -370,8 +412,8 @@ public class NetworkPage extends ParentClass implements Page {
 
 			if (showPasswordIcon.isDisplayed()) {
 				utils.log().info("Show Password Icon is displayed ");
-				click(expandButton);
-			} else
+				click(expandButton);}
+			else
 				utils.log().info("Show Password Icon is not displayed");
 
 			if (guestWifiNetworkLabel.isDisplayed())
@@ -391,7 +433,7 @@ public class NetworkPage extends ParentClass implements Page {
 
 			if (extendedWifiExpandIcon.isDisplayed()) {
 				utils.log().info("Extended WiFi Settings expand button is displayed");
-				click(extendedWifiExpandIcon);} 
+				click(extendedWifiExpandIcon);}  //1
 			else
 				utils.log().info("Extended WiFi Settings expand button is not displayed");
 
@@ -414,11 +456,12 @@ public class NetworkPage extends ParentClass implements Page {
 				utils.log().info("Extended Wifi toggle button is disabled(OFF)");
 			else
 				utils.log().info("Extended Wifi toggle button is enabled(ON)");
-			click(extendedWifiExpandIcon);
+			
+			click(extendedWifiExpandIcon); //2
 
 			if (networkSettingsExpandIcon.isDisplayed()) {
 				utils.log().info("Network Settings expand button is displayed");
-				click(networkSettingsExpandIcon);
+				click(networkSettingsExpandIcon);	//1
 				new SwipeActions().swipeScreen(Direction.UP);}
 			else
 				utils.log().info("Network Settings expand button is not displayed");
@@ -468,9 +511,10 @@ public class NetworkPage extends ParentClass implements Page {
 			else
 				utils.log().info("Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is not displayed");
 
+			click(networkSettingsExpandIcon); //2
+			
 			if (testMyConnectionSpeedButton.isDisplayed()) {
 				utils.log().info(testMyConnectionSpeedButton.getText() + " button is displayed");
-				click(networkSettingsExpandIcon);
 			} else
 				utils.log().info("Test My Connection Speed button is not displayed");
 			return true;

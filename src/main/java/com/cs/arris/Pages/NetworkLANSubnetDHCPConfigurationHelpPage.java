@@ -15,17 +15,17 @@ import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class NetworkDevicePrioritySettingsAddDeviceHelpPage extends ParentClass implements Page {
+public class NetworkLANSubnetDHCPConfigurationHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivDialogClose")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Amazon AFFS settings']") 
-	public MobileElement addDevicetitle;
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='LAN Subnet and DHCP Range Configuration']") 
+	public MobileElement lanRangetitle;
 	
 
-	public NetworkDevicePrioritySettingsAddDeviceHelpPage() {
+	public NetworkLANSubnetDHCPConfigurationHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
@@ -80,11 +80,11 @@ public class NetworkDevicePrioritySettingsAddDeviceHelpPage extends ParentClass 
 
 	@Override
 	public boolean isAt() {
-		if (addDevicetitle.isDisplayed()) {
-			utils.log().info("On Amazon AFFS Settings Help Page");
+		if (lanRangetitle.isDisplayed()) {
+			utils.log().info("On LAN Subnet and DHCP Range Configuration Help Page");
 			return true;
 		} else {
-			utils.log().info("Not on Amazon AFFS Settings Help Page");
+			utils.log().info("Not on LAN Subnet and DHCP Range Configuration Help Page");
 			return false;
 		}
 	}

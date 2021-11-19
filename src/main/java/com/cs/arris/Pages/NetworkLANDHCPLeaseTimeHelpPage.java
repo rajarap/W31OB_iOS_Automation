@@ -15,26 +15,26 @@ import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class NetworkDevicePrioritySettingsAddDeviceHelpPage extends ParentClass implements Page {
+public class NetworkLANDHCPLeaseTimeHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivDialogClose")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Amazon AFFS settings']") 
-	public MobileElement addDevicetitle;
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='LAN DHCP Lease Time']") 
+	public MobileElement lanLeaseTimetitle;
 	
 
-	public NetworkDevicePrioritySettingsAddDeviceHelpPage() {
+	public NetworkLANDHCPLeaseTimeHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
 	public boolean clickCloseButton() {
 		if (closeButton.isDisplayed()) {
-			new SwipeActions().swipeScreen(Direction.UP);
-			click(closeButton);
-			utils.log().info("Clicked on Close Button");
-			return true;
+				new SwipeActions().swipeScreen(Direction.UP);
+				click(closeButton);
+				utils.log().info("Clicked on Close Button");
+				return true;
 		} else {
 			utils.log().info("Close button is not displayed");
 			return false;
@@ -80,11 +80,11 @@ public class NetworkDevicePrioritySettingsAddDeviceHelpPage extends ParentClass 
 
 	@Override
 	public boolean isAt() {
-		if (addDevicetitle.isDisplayed()) {
-			utils.log().info("On Amazon AFFS Settings Help Page");
+		if (lanLeaseTimetitle.isDisplayed()) {
+			utils.log().info("On LAN DHCP Lease Time Help Page");
 			return true;
 		} else {
-			utils.log().info("Not on Amazon AFFS Settings Help Page");
+			utils.log().info("Not on LAN DHCP Lease Time Help Page");
 			return false;
 		}
 	}
