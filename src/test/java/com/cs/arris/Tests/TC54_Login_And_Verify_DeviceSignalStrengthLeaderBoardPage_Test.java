@@ -1,6 +1,7 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,9 +13,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.cs.arris.Base.ParentClass;
+import com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage;
+import com.cs.arris.Pages.DevicesPage;
 import com.cs.arris.Pages.HomePage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
+import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 import com.cs.arris.Workflows.TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Workflow;
 
 public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test extends ParentClass {
@@ -60,11 +64,11 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 
 	@BeforeMethod
 	public void beforeMethod(Method m) {
-		utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
+		utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
 	}
 
 	@Test(priority = 1)
-	public void Verify_DevicesPage() {
+	public void Login_And_Onboard() {
 		TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Workflow.getStartedPage(getStarted -> {
 			getStarted.clickGetStartedButton();
 		}).grantPermissionsPage(grantPermission -> {
@@ -98,53 +102,48 @@ public class TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Test exte
 					codeVerified.clickContinueOnboardingButton();
 				}
 			} catch (Exception e) {
-				e.getMessage();
-			}
+				e.getMessage();	}
 		}).setupWifi(setupwifi -> {
 			setupwifi.clickskipTutorialButton();
 			super.pause(3);
 		}).homePage(home -> {
-			try {
-				if (home.okButton.isDisplayed()) {
-					home.clickOkButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-			if (home.isAt()) {
-				super.pause(5);
-				home.clickDeviceSignalStrengthImage();
-			}
-		}).deviceSignalStrengthPage(deviceSignalStrength -> {
-			if (deviceSignalStrength.isAt()) {
-				deviceSignalStrength.verifyUIOnDeviceSignalStrengthPage();
-				deviceSignalStrength.verifySignalStrengthForDevices();
-				deviceSignalStrength.sortWeakToStrong();
-				deviceSignalStrength.sortStrongToWeak();
-				deviceSignalStrength.getFooterIconsPageObject().clickHomeButton();		
-//				if (deviceSignalStrength.getHomePageObject().isAt()) {
-//					super.pause(5);
-//					deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthImage();
-			}
-		});
+			  try {
+				  if(home.okButton.isDisplayed())
+					  home.clickOkButton();
+			  }catch(Exception e) {
+				  e.getMessage();  }
+			  home.clickDeviceSignalStrengthImage();
+		  });
+	}
+	
+	@Test(priority = 2)
+	public void Verify_UI_On_Devices_Signal_Strength_Page() {
+		SoftAssert softsignal2 = new SoftAssert();
+		new HomePage().clickDeviceSignalStrengthImage();
+		if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
+			softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
+		softsignal2.assertAll();
+	}
+	
+	@Test(priority = 3)
+	public void Verify_Signal_Strength_For_Devices() {
+		SoftAssert softsignal3 = new SoftAssert();
+		softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
+		softsignal3.assertAll();
+	}
+	
+	@Test(priority = 4)
+	public void Verify_Sorting_Devices_From_Strong_To_Weak() {
+		SoftAssert softsignal4= new SoftAssert();
+		softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
+		softsignal4.assertAll();
+	}
+	
+	@Test(priority = 5)
+	public void Verify_Sorting_Devices_From_Weak_To_Strong() {
+		SoftAssert softsignal5= new SoftAssert();
+		softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
+		softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
+		softsignal5.assertAll();
 	}
 }
-
-//if (deviceSignalStrength.isAt()) {
-//	deviceSignalStrength.getFooterIconsPageObject().clickNetworkButton();
-//	if (deviceSignalStrength.getNetworkPageObject().isAt()) {
-//		deviceSignalStrength.getNetworkPageObject().clickBackButton();
-//	}
-//}
-//if (deviceSignalStrength.getHomePageObject().isAt()) {
-//	deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthImage();
-//}
-//if (deviceSignalStrength.isAt()) {
-//	deviceSignalStrength.getFooterIconsPageObject().clickParentalButton();
-//	if (deviceSignalStrength.getParentalControlPageObject().isAt()) {
-//		deviceSignalStrength.getParentalControlPageObject().clickBackButton();
-//	}
-//}
-//if (deviceSignalStrength.getHomePageObject().isAt()) {
-//	deviceSignalStrength.getHomePageObject().clickDeviceSignalStrengthImage();
-//}

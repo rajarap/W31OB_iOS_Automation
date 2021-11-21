@@ -40,13 +40,19 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/enter_ip_tv")
 	public MobileElement enterIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ip_address_dialog")
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_edit_view")
 	public MobileElement enterIPAddressTextBox;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_prefix")
+	public MobileElement enterIPAddressPrefixTextBox;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ip_address_dialog")
+	public MobileElement enterIPAddressSuffixTextBox;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/mac_address_view")
 	public MobileElement selectDeviceLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/mac_address_dialog")
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/connect_device_id")
 	public MobileElement selectDeviceListBox;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_save_dialog")
@@ -102,9 +108,9 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 	}
 
 	public boolean enterIPAddress() {
-		if (enterIPAddressTextBox.isDisplayed()) {
+		if (enterIPAddressSuffixTextBox.isDisplayed()) {
 			super.generateRandomIPNumber();
-			super.sendKeys(enterIPAddressTextBox, String.valueOf(super.ipNumber));
+			super.sendKeys(enterIPAddressSuffixTextBox, String.valueOf(super.ipNumber));
 			return true;
 		} else {
 			utils.log().info("IP Address is not enterned");
@@ -114,9 +120,8 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 
 	public boolean selectADevice() {
 		if (selectDeviceListBox.isDisplayed()) {
-			// Select select = new
-			// Select(getDriver().findElement(By.id("com.arris.sbcBeta:id/connect_device_id")));
-			Select select = new Select(selectDeviceListBox);
+			Select select = new Select(getDriver().findElement(By.id("com.arris.sbcBeta:id/connect_device_id")));
+			//Select select = new Select(selectDeviceListBox);
 			select.selectByIndex(1);
 			return true;
 		} else {
@@ -170,6 +175,11 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 				utils.log().info("Text box to enter IP address is displayed");
 			else
 				utils.log().info("Text box to enter IP Address is not displayed");
+			
+			if (enterIPAddressPrefixTextBox.isDisplayed())
+				utils.log().info("Prfix IP Address : " + enterIPAddressPrefixTextBox.getText());
+			else
+				utils.log().info("Prefix IP Address is not displayed");
 
 			if (selectDeviceLabel.isDisplayed())
 				utils.log().info(selectDeviceLabel.getText() + " label is displayed");

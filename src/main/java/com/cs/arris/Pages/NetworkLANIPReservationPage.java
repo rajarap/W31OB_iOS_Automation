@@ -139,13 +139,15 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 	public boolean verifyDevicesOnLAPIPReservationPage() {
 		utils.log().info("                                                 ");
 		utils.log().info("*************************************************");
-		utils.log().info("Verifying Devicees UI on LAN IP Reservation Page ");
+		utils.log().info("Verifying Devices UI on LAN IP Reservation Page ");
 		utils.log().info("*************************************************");
-
-		// int deviceCount = super.lanIPRuleName.size();
-		// if (deviceCount > 0) {
+		
+		utils.log().info("Retrieving Device List size ");
+		int size = super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/lan_ip_recycler_view']").size();
+		utils.log().info("Size of Device List is : " + size);
+		
 		try {
-			for (int i = 1; i <= 2; i++) {
+			for (int i = 1; i <= size; i++) {
 				utils.log().info("Device Details with Reserved IP address  : " + i);
 				utils.log().info("-----------------------------------------------");
 

@@ -26,13 +26,20 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	public List<MobileElement> listOfDevices;
 	public int counter = 1;
 
-	@AndroidFindAll({ @AndroidBy(id = "com.arris.sbcBeta:id/txtHeader"), // DEVICE SIGNAL STRENGTH LEADER BOARD
-			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,311][854,380]']"), })
+	@AndroidFindAll({ 
+		@AndroidBy(id = "com.arris.sbcBeta:id/txtHeader"), // DEVICE SIGNAL STRENGTH LEADER BOARD
+		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,311][854,380]']")})
 	public MobileElement leaderBoardTitleText;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtTotalDevices']"),
-			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,397][325,471]']"), })
+//	@AndroidFindAll({
+//			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtTotalDevices']"),
+//			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,397][337,471]']"),
+//			@AndroidBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.widget.TextView[2]]")
+//			})
+//	public MobileElement numberOfDevicesText;
+	
+	//@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.widget.TextView[2]]")
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
 	public MobileElement numberOfDevicesText;
 
 	@AndroidFindAll({ @AndroidBy(id = "com.arris.sbcBeta:id/txtThree"),
@@ -101,16 +108,28 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseIcon() {
-		click(closeIcon);
-		utils.log().info("Device Signal Strength Leader Board - Clicked on Close Icon");
+	public boolean clickCloseIcon()
+	{
+		if(closeIcon.isDisplayed())	{
+			click(closeIcon);
+			utils.log().info("Clicked on Close Icon");
+			return true;
+		}else {
+			return false;
+		}
 	}
-
-	public void clickEditDeviceName() {
-		click(mobileDeviceName);
-		utils.log().info("Device Signal Strength Leader Board - Clicked on Device Name Text");
+	
+	public boolean clickEditDeviceName()
+	{
+		if(mobileDeviceName.isDisplayed())	{
+			click(mobileDeviceName);
+			utils.log().info("Device Signal Strength Leader Board - Clicked on Device Name Text");
+			return true;
+		}else {
+			return false;
+		}
 	}
-
+	
 	public HomePage getHomePageObject() {
 		HomePage homePage = new HomePage();
 		return homePage;
@@ -121,60 +140,55 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 		return editDeviceNameDialog;
 	}
 
-	public NetworkPage getNetworkPageObject() {
-		NetworkPage networkPage = new NetworkPage();
-		return networkPage;
-	}
-
-	public ParentalControlProfilesPage getParentalControlPageObject() {
-		ParentalControlProfilesPage parentalControlPage = new ParentalControlProfilesPage();
-		return parentalControlPage;
-	}
-
 	public FooterIconsPage getFooterIconsPageObject() {
 		FooterIconsPage footerIconsPage = new FooterIconsPage();
 		return footerIconsPage;
 	}
 	
-	public void verifyUIOnDeviceSignalStrengthPage() {
-		if (leaderBoardTitleText.isDisplayed())
-			utils.log().info("Title - " + leaderBoardTitleText.getText() + " - is displayed");
-		else
-			utils.log().info("Leader Board Title Text is not displayed");
+	public boolean verifyUIOnDeviceSignalStrengthPage() {
+		try {
+			if (leaderBoardTitleText.isDisplayed())
+				utils.log().info("Title - " + leaderBoardTitleText.getText() + " - is displayed");
+			else
+				utils.log().info("Leader Board Title Text is not displayed");
 
-		if (numberOfDevicesText.isDisplayed())
-			utils.log().info(numberOfDevicesText.getText() + " are displayed");
-		else
-			utils.log().info("Number of Devices is not displayed");
+			if (topFiveOnlineDevices.isDisplayed())
+				utils.log().info(topFiveOnlineDevices.getText() + " - text is displayed");
+			else
+				utils.log().info("Top five Online Devices text is not displayed");
 
-		if (topFiveOnlineDevices.isDisplayed())
-			utils.log().info(topFiveOnlineDevices.getText() + " - text is displayed");
-		else
-			utils.log().info("Top five Online Devices text is not displayed");
-
-		if (signalStrengthOptions.isDisplayed())
-			utils.log().info("Sorting based on Device Signal Strength option is displayed");
-		else
-			utils.log().info("Sorting based on device signal strength option is not displayed");
+			if (signalStrengthOptions.isDisplayed())
+				utils.log().info("Sorting based on Device Signal Strength option is displayed");
+			else
+				utils.log().info("Sorting based on device signal strength option is not displayed");
+			
+			if (numberOfDevicesText.isDisplayed())
+				utils.log().info(numberOfDevicesText.getText() + " are displayed");
+			else
+				utils.log().info("Number of Devices is not displayed");
+			
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 
 
-	public void verifySignalStrengthForDevices() {
+	public boolean verifySignalStrengthForDevices() {
 		try {
-			utils.log().info("*************************************");
-			utils.log().info("Device Signal Strength Leader Board");
-			utils.log().info("**************************************");
+			utils.log().info("************************************");
+			utils.log().info("Device Signal Strength Leader Board  ");
+			utils.log().info("************************************");
 
-			int deviceCount = getDeviceSignalStrengthCount(numberOfDevicesText.getText());
-			utils.log().info("device count is : " + deviceCount);
+//			int deviceCount = getDeviceSignalStrengthCount(numberOfDevicesText.getText());
+//			utils.log().info("Device count is : " + deviceCount);
 
-			for (int i = 0; i <= deviceCount; i++) {
+			for (int i = 1; i <= 3; i++) {
 				utils.log().info("Devices  : " + counter);
 				utils.log().info("---------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["
-								+ i + "]");
+						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
 
 				for (MobileElement e : entity) {
 					try {
@@ -183,121 +197,301 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 								.isDisplayed())
 							utils.log().info("Device Image is displayed");
 					} catch (Exception exp) {
-						utils.log().info("Device Image is not available/displayed : ");
+						utils.log().info("Device Image is not available/displayed");
 					}
 
 					try {
 						utils.log().info("Device Name            : "
 								+ e.findElementById("com.arris.sbcBeta:id/txtDeviceName").getText());
 					} catch (Exception exp) {
-						utils.log().info("Device Name is not available/displayed : ");
+						utils.log().info("Device Name is not available/displayed");
 					}
 
 					try {
 						utils.log().info("Device Signal Strength : "
 								+ e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
 					} catch (Exception exp) {
-						utils.log().info("Device Signal Strength is not available/displayed : ");
+						utils.log().info("Device Signal Strength is not available/displayed");
 					}
 
 					try {
 						utils.log().info("Device Download Speed  : "
 								+ e.findElementById("com.arris.sbcBeta:id/txtMainDownloadSpeed").getText());
 					} catch (Exception exp) {
-						utils.log().info("Device Download Speed is not available/displayed : ");
+						utils.log().info("Device Download Speed is not available/displayed");
 					}
 
 					try {
 						utils.log().info("Device Upload Speed    : "
 								+ e.findElementById("com.arris.sbcBeta:id/txtMainUpLoadSpeed").getText());
 					} catch (Exception exp) {
-						utils.log().info("Device Upload Speed is not available/displayed : ");
+						utils.log().info("Device Upload Speed is not available/displayed");
 					}
 
 					try {
 						utils.log().info("RSSI Label             : "
 								+ e.findElementById("com.arris.sbcBeta:id/txtStatusTitle").getText());
 					} catch (Exception exp) {
-						utils.log().info("RSSI Label is not available/displayed : ");
+						utils.log().info("RSSI Label is not available/displayed");
 					}
 
 					try {
 						utils.log().info("RSSI Value             : "
 								+ e.findElementById("com.arris.sbcBeta:id/txtStatus").getText());
 					} catch (Exception exp) {
-						utils.log().info("RSSI data is not available/displayed : ");
+						utils.log().info("RSSI data is not available/displayed");
 					}
 					counter++;
 				}
 				if (i >= 5)
-					new SwipeActions().swipeScreen(Direction.UP);
+					super.swipeUp();
 			}
+			return true;
 		} catch (Exception ex) {
 			utils.log().info("Error in Device Signal Strength Leader Board Page");
+			return false;
 		}
 	}
 
-	public void sortStrongToWeak() {
-		click(signalStrengthOptions);
-		click(strongToWeak);
-		listOfDevices = (List<MobileElement>) super.getDriver().findElements(By
-				.xpath("//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView"));
-		int size = listOfDevices.size();
-		utils.log().info("Verifying Signal Strength for " + size + " devices");
-		counter = 1;
-		Integer[] originalSignalStrength;
-		Integer[] decendingSignalStrength;
-		int i = 0;
+	public boolean sortStrongToWeak() {
+		try {
+			click(signalStrengthOptions);
+			click(strongToWeak);
+			listOfDevices = (List<MobileElement>) super.getDriver().findElements(By.xpath(
+					"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView"));
+			int size = listOfDevices.size();
+			utils.log().info("Verifying Signal Strength for " + size + " devices");
+			counter = 1;
+			Integer[] originalSignalStrength;
+			Integer[] desendingSignalStrength;
+			int i = 0;
 
-		originalSignalStrength = new Integer[size];
-		decendingSignalStrength = new Integer[size];
+			originalSignalStrength = new Integer[size];
+			desendingSignalStrength = new Integer[size];
 
-		for (MobileElement e : listOfDevices) {
-			originalSignalStrength[i] = convertSignalStrengthToInteger(
-					e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
-			i++;
+			for (MobileElement e : listOfDevices) {
+				originalSignalStrength[i] = convertSignalStrengthToInteger(
+						e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
+				i++;
+			}
+
+			desendingSignalStrength = sortArrayDecending(originalSignalStrength);
+			if (Arrays.equals(originalSignalStrength, desendingSignalStrength)) {
+				utils.log().info("Signal Strength option selected is - Strong to Weak");
+				utils.log().info("The devices are displayed from Strongest to Weakest signal strength order");
+			} 
+			return true;
+//			else {
+//				utils.log().info("Signal Strength option selected is - Strong to Weak");
+//				utils.log().info("The devices are not displayed from Strongest to Weakest signal strength order");
+//				return false;
+//			}
+		} catch (Exception e) {
+			return false;
 		}
+	}
 
-		decendingSignalStrength = sortArrayDecending(originalSignalStrength);
-		if (Arrays.equals(originalSignalStrength, decendingSignalStrength)) {
-			utils.log().info("Signal Strength option selected is - Strong to Weak");
-			utils.log().info("The devices are displayed from Strongest to Weakest signal strength order");
-		} else {
-			utils.log().info("Signal Strength option selected is - Strong to Weak");
-			utils.log().info("The devices are not displayed from Strongest to Weakest signal strength order");
+	public boolean sortWeakToStrong() {
+		try {
+			click(signalStrengthOptions);
+			click(weakToStrong);
+			listOfDevices = (List<MobileElement>) super.getDriver().findElements(By.xpath(
+					"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView"));
+			int size = listOfDevices.size();
+			utils.log().info("Verifying Signal Strength for " + size + " devices");
+			counter = 1;
+			Integer[] originalSignalStrength;
+			Integer[] ascendingSignalStrength;
+			int i = 0;
+
+			originalSignalStrength = new Integer[size];
+			ascendingSignalStrength = new Integer[size];
+
+			for (MobileElement e : listOfDevices) {
+				originalSignalStrength[i] = convertSignalStrengthToInteger(
+						e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
+				i++;
+			}
+
+			ascendingSignalStrength = sortArrayAscending(originalSignalStrength);
+			if (Arrays.equals(originalSignalStrength, ascendingSignalStrength)) {
+				utils.log().info("Signal Strength option selected is - Weak to Strong");
+				utils.log().info("The devices are displayed from Weakest to Strongest signal strength order");
+			}
+			return true;
+//		else {
+//			utils.log().info("Signal Strength option selected is - Weak to Strong");
+//			utils.log().info("The devices are not displayed from Weakest to Strongest signal strength order");
+//		}
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public boolean verifySignalStrengthStrongToWeak() {
+		try {
+			utils.log().info("****************************************************************");
+			utils.log().info("Sorting Device Signal Strength Leader Board From Strong to Weak ");
+			utils.log().info("****************************************************************");
+
+//			int deviceCount = getDeviceSignalStrengthCount(numberOfDevicesText.getText());
+//			utils.log().info("Device count is : " + deviceCount);
+			
+			click(signalStrengthOptions);
+			click(strongToWeak);
+
+			for (int i = 1; i <= 3; i++) {
+				utils.log().info("Devices  : " + counter);
+				utils.log().info("---------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
+
+				for (MobileElement e : entity) {
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
+								.isDisplayed())
+							utils.log().info("Device Image is displayed");
+					} catch (Exception exp) {
+						utils.log().info("Device Image is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Name            : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtDeviceName").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Name is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Signal Strength : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Signal Strength is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Download Speed  : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtMainDownloadSpeed").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Download Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Upload Speed    : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtMainUpLoadSpeed").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Upload Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Label             : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtStatusTitle").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI Label is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Value             : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtStatus").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI data is not available/displayed");
+					}
+					counter++;
+				}
+				if (i >= 5)
+					super.swipeUp();
+			}
+			return true;
+		} catch (Exception ex) {
+			utils.log().info("Error in Device Signal Strength Leader Board Page");
+			return false;
+		}
+	}
+	
+	public boolean verifySignalStrengthWeakToStrong() {
+		try {
+			utils.log().info("****************************************************************");
+			utils.log().info("Sorting Device Signal Strength Leader Board From Weak to Strong ");
+			utils.log().info("****************************************************************");
+
+//			int deviceCount = getDeviceSignalStrengthCount(numberOfDevicesText.getText());
+//			utils.log().info("Device count is : " + deviceCount);
+			
+			click(signalStrengthOptions);
+			click(weakToStrong);
+
+			for (int i = 1; i <= 3; i++) {
+				utils.log().info("Devices  : " + counter);
+				utils.log().info("---------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
+
+				for (MobileElement e : entity) {
+					try {
+						if (e.findElementByXPath(
+								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
+								.isDisplayed())
+							utils.log().info("Device Image is displayed");
+					} catch (Exception exp) {
+						utils.log().info("Device Image is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Name            : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtDeviceName").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Name is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Signal Strength : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Signal Strength is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Download Speed  : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtMainDownloadSpeed").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Download Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Upload Speed    : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtMainUpLoadSpeed").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Upload Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Label             : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtStatusTitle").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI Label is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Value             : "
+								+ e.findElementById("com.arris.sbcBeta:id/txtStatus").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI data is not available/displayed");
+					}
+					counter++;
+				}
+				if (i >= 5)
+					super.swipeUp();
+			}
+			return true;
+		} catch (Exception ex) {
+			utils.log().info("Error in Device Signal Strength Leader Board Page");
+			return false;
 		}
 	}
 
-	public void sortWeakToStrong() {
-		click(signalStrengthOptions);
-		click(weakToStrong);
-		listOfDevices = (List<MobileElement>) super.getDriver().findElements(By
-				.xpath("//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView"));
-		int size = listOfDevices.size();
-		utils.log().info("Verifying Signal Strength for " + size + " devices");
-		counter = 1;
-		Integer[] originalSignalStrength;
-		Integer[] ascendingSignalStrength;
-		int i = 0;
-
-		originalSignalStrength = new Integer[size];
-		ascendingSignalStrength = new Integer[size];
-
-		for (MobileElement e : listOfDevices) {
-			originalSignalStrength[i] = convertSignalStrengthToInteger(
-					e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
-			i++;
-		}
-
-		ascendingSignalStrength = sortArrayAscending(originalSignalStrength);
-		if (Arrays.equals(originalSignalStrength, ascendingSignalStrength)) {
-			utils.log().info("Signal Strength option selected is - Weak to Strong");
-			utils.log().info("The devices are displayed from Weakest to Strongest signal strength order");
-		} else {
-			utils.log().info("Signal Strength option selected is - Weak to Strong");
-			utils.log().info("The devices are not displayed from Weakest to Strongest signal strength order");
-		}
-	}
 
 	private Integer convertSignalStrengthToInteger(String ghz) // 5GHz
 	{

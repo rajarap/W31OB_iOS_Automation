@@ -161,10 +161,10 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 		if (automaticRadioButtonChecked.isDisplayed()) {
 			utils.log().info("Automatic Radion button is already selected");
 			return true;
-		} else if (automaticRadioButtonUnChecked.isDisplayed()) {
-			click(automaticRadioButtonUnChecked);
-			utils.log().info("Automatic Radion button is selected");
-			return true;
+//		} else if (automaticRadioButtonUnChecked.isDisplayed()) {
+//			click(automaticRadioButtonUnChecked);
+//			utils.log().info("Automatic Radion button is selected");
+//			return true;
 		} else {
 			utils.log().info("Automatic Radio button is not displayed");
 			return false;
@@ -269,7 +269,7 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 			else
 				utils.log().info("Help Icon is not displayed ");
 
-			if(dnsIPv4Tab.isDisplayed())
+			if(dnsIPv4Tab.isDisplayed() && dnsIPv4Tab.isSelected())
 				utils.log().info("IPv4 Tab is displayed and is currently selected");
 			else
 				utils.log().info("IPV4 Tab is not displayed ");
@@ -294,7 +294,7 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 			else
 				utils.log().info("Secondary DNS is not displayed ");
 
-			if (static_saveChangesButton.isDisplayed() && static_saveChangesButton.isEnabled())
+			if (static_saveChangesButton.isDisplayed())
 				utils.log().info(static_saveChangesButton.getText() + " button is displayed");
 			else
 				utils.log().info("Save Changes Button is not displayed ");

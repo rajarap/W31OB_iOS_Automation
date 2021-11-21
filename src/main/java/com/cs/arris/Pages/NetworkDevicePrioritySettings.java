@@ -98,6 +98,7 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 	public boolean enableDevicePrioritySettings() {
 		if (disableDevicePrioritySettings.isDisplayed()) {
 			click(disableDevicePrioritySettings);
+			super.pause(35);
 			utils.log().info("Device Priority Settings is enabled");
 			return true;
 		}else if(enableDevicePrioritySettings.isDisplayed()) {
@@ -116,6 +117,7 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 			return true;
 	}else if(disableDevicePrioritySettings.isDisplayed()) {
 			utils.log().info("Device Priority Settings is already disabled");
+			super.pause(35);
 			return true;
 		}else {
 			utils.log().info("Device Priority Settings toggle button is not displayed");

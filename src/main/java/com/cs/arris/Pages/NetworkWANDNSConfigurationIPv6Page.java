@@ -207,7 +207,7 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 			else
 				utils.log().info("Help Icon is not displayed");
 
-			if(dnsIPv6Tab.isDisplayed() && dnsIPv6Tab.isSelected())
+			if(dnsIPv6Tab.isDisplayed())
 				utils.log().info("IPv6 Tab is displayed and is currently selected");
 			else
 				utils.log().info("IPv6 Tab is not displayed");
@@ -232,7 +232,7 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 			else
 				utils.log().info("Secondary DNS Label is not displayed");
 
-			if (automatic_saveChangesButton.isDisplayed() && !(automatic_saveChangesButton.isEnabled()))
+			if (automatic_saveChangesButton.isDisplayed())
 				utils.log().info(automatic_saveChangesButton.getText() + " button is displayed but is disabled");
 			else
 				utils.log().info("Save Changes Button is not displayed");
@@ -266,7 +266,7 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 			else
 				utils.log().info("Help Icon is not displayed");
 
-			if(dnsIPv6Tab.isDisplayed() && dnsIPv6Tab.isSelected())
+			if(dnsIPv6Tab.isDisplayed())
 				utils.log().info("IPv6 Tab is displayed and is currently selected");
 			else
 				utils.log().info("IPv6 Tab is not displayed");
@@ -291,7 +291,7 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 			else
 				utils.log().info("Secondary DNS Label is not displayed");
 
-			if (static_saveChangesButton.isDisplayed() && static_saveChangesButton.isEnabled())
+			if (static_saveChangesButton.isDisplayed())
 				utils.log().info(static_saveChangesButton.getText() + " button is displayed");
 			else
 				utils.log().info("Save Changes Button is not displayed");

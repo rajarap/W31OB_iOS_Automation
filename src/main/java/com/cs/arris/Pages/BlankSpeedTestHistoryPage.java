@@ -27,10 +27,15 @@ public class BlankSpeedTestHistoryPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickCloseIcon()
+	public boolean clickCloseIcon()
 	{
-		click(closeIcon);
-		utils.log().info("Blank Speed Test History Page - Clicked on Close Icon");
+		if(closeIcon.isDisplayed())	{
+			click(closeIcon);
+			utils.log().info("Clicked on Close Icon");
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 	@Override

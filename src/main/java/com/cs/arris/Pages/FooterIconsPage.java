@@ -85,100 +85,92 @@ public class FooterIconsPage extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	//Verify if all the required UI elements are displayed on the Home Page
-	public void verifyUIOnFooterIconsPage()
+	public boolean verifyUIOnFooterIconsPage()
 	{
 		try {
 			if(homeButton.isDisplayed())
 				utils.log().info("Footer Icons Page - Home Button is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Home Button is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Footer Icons Page - Home Button is not displayed");
+
 			if(homeButtonText.isDisplayed())
 				utils.log().info("Footer Icons Page - Home Button Text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Home Button Text is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Footer Icons Page - Home Button Text is not displayed");
+
 			if(homeButtonImage.isDisplayed())
 				utils.log().info("Footer Icons Page - Home Button Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Home Button Image is not displayed");
-		}
+			else
+				utils.log().info("Footer Icons Page - Home Button Image is not displayed");
 
-		try {
 			if(networkButton.isDisplayed())
 				utils.log().info("Footer Icons Page - Network Button is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Network Button is not displayed");
-		}
+			else
+				utils.log().info("Footer Icons Page - Network Button is not displayed");
 
-		try {
 			if(networkButtonText.isDisplayed())
 				utils.log().info("Footer Icons Page - Network Button Text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Network Button Text is displayed");
-		}
-			
-		try {
+			else
+				utils.log().info("Footer Icons Page - Network Button Text is displayed");
+
 			if(networkButtonImage.isDisplayed())
 				utils.log().info("Footer Icons Page - Network Button Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Network Button Image is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Footer Icons Page - Network Button Image is not displayed");
+
 			if(parentalButton.isDisplayed())
 				utils.log().info("Footer Icons Page - Partental Button is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Parental Button is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Footer Icons Page - Parental Button is not displayed");
+
 			if(parentalButtonText.isDisplayed())
 				utils.log().info("Footer Icons Page - Partental Button Text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Parental Button Text is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Footer Icons Page - Parental Button Text is not displayed");
+
 			if(parentalButtonImage.isDisplayed())
 				utils.log().info("Footer Icons Page - Footer Icons Page - Parental Button Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Footer Icons Page - Parental Button Image is not displayed");
+			else
+				utils.log().info("Footer Icons Page - Parental Button Image is not displayed");
+			return true;
+		}catch(Exception e) {
+			return false;
 		}
 	}
 
-	public void clickHomeButton()
+	public boolean clickHomeButton()
 	{
 		try {
 			click(homeButton);
 			utils.log().info("Footer Icons Page - Clicked on Home Button");
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Footer Icons Page - Home Button is not displayed");
+			return false;
 		}
 	}
 	
-	public void clickNetworkButton()
+	public boolean clickNetworkButton()
 	{
 		try {
 			click(networkButton);
 			utils.log().info("Footer Icons Page - Clicked on Network Button");
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Footer Icons Page - Network Button is not displayed");
+			return false;
 		}
 	}
 	
-	public void clickParentalButton()
+	public boolean clickParentalButton()
 	{
 		try {
 			click(parentalButton);
 			utils.log().info("Footer Icons Page - Clicked on Parental Button");
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Footer Icons Page - Parental Button is not displayed");
+			return false;
 		}
 	}
 	

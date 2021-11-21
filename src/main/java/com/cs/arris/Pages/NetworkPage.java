@@ -351,9 +351,10 @@ public class NetworkPage extends ParentClass implements Page {
 	}
 
 	public boolean clickDevicePrioritySettings() {
-		new SwipeActions().swipeScreen(Direction.UP);
+		super.swipeUp();
 		if (devicePrioritySettings.isDisplayed()) {
 			click(devicePrioritySettings);
+			super.pause(35);
 			utils.log().info("Clicked on Device Priority Settings");
 			return true;
 		} else {

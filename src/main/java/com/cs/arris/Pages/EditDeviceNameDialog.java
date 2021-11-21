@@ -126,14 +126,11 @@ public class EditDeviceNameDialog extends ParentClass implements Page
 		}
 	}
 	
-	public void clickCloseButton()
+	public void clickCloseIcon()
 	{
-		try
-		{
+		if(closeButton.isDisplayed())	{
 			click(closeButton);
-			utils.log().info("Clicked on Close Icon");
-		}catch (Exception e) {
-			utils.log().info("Close Icon is not displayed");
+			utils.log().info("Clicked on Close Button");
 		}
 	}
 	
@@ -156,9 +153,7 @@ public class EditDeviceNameDialog extends ParentClass implements Page
 	@Override
 	public boolean isAt() {
 			if (editDeviceNameTitle.isDisplayed()) {
-				utils.log().info("                          ");
 				utils.log().info("On Edit Device Name Dialog");
-				utils.log().info("--------------------------");
 				return true;
 			} else {
 				utils.log().info("Not on Edit Device Name Dialog");

@@ -143,17 +143,17 @@ public class SpeedTestPage extends ParentClass implements Page
 		 SpeedTestHistoryPage speedTestHistoryPage = new SpeedTestHistoryPage();
 	     return speedTestHistoryPage;
 	  }
-	
-	 public NetworkPage getNetworkPageObject() {
-		 NetworkPage networkPage = new NetworkPage();
-	     return networkPage;
+	 
+	 public SpeedTestHelpPage getSpeedTestHelpPageObject() {
+		 SpeedTestHelpPage speedTestHelpPage = new SpeedTestHelpPage();
+	     return speedTestHelpPage;
 	  }
 	 
-	 public ParentalControlProfilesPage getParentalControlPageObject() {
-		 ParentalControlProfilesPage parentalControlPage = new ParentalControlProfilesPage();
-	     return parentalControlPage;
+	 public HomeSpeedTestHistoryPage getHomeSpeedTestHistoryPageObject() {
+		 HomeSpeedTestHistoryPage homeSpeedTestHistoryPage = new HomeSpeedTestHistoryPage();
+	     return homeSpeedTestHistoryPage;
 	  }
-	
+		
 	 public FooterIconsPage getFooterIconsPageObject() {
 		 FooterIconsPage footerIconsPage = new FooterIconsPage();
 	     return footerIconsPage;

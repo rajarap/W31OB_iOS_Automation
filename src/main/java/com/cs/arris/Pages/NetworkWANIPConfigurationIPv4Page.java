@@ -225,7 +225,7 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 			else
 				utils.log().info("Help Icon is not displayed");
 
-			if (wanIPv4Tab.isDisplayed() && wanIPv4Tab.isSelected())
+			if (wanIPv4Tab.isDisplayed())
 				utils.log().info("IPv4 Tab is displayed and is currently selected");
 			else
 				utils.log().info("IPv4 Tab is not displayed");

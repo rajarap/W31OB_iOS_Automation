@@ -40,8 +40,14 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/enter_ip_tv")
 	public MobileElement enterIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ip_address_dialog")
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_edit_view")
 	public MobileElement enterIPAddressTextBox;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_prefix")
+	public MobileElement enterIPAddressPrefixTextBox;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ip_address_dialog")
+	public MobileElement enterIPAddressSuffixTextBox;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_save_dialog")
 	public MobileElement saveButton;
@@ -95,9 +101,10 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 	}
 
 	public boolean editIPAddress() {
-		if (enterIPAddressTextBox.isDisplayed()) {
+		if (enterIPAddressSuffixTextBox.isDisplayed()) {
 			super.generateRandomIPNumber();
-			super.sendKeys(enterIPAddressTextBox, String.valueOf(super.ipNumber));
+			super.sendKeys(enterIPAddressSuffixTextBox, String.valueOf(super.ipNumber));
+			utils.log().info("Entered IP Address : " + enterIPAddressSuffixTextBox.getText());
 			return true;
 		} else {
 			utils.log().info("IP Address is not enterned");
@@ -151,6 +158,11 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 				utils.log().info("Text box to enter IP address is displayed");
 			else
 				utils.log().info("Text box to enter IP Address is not displayed");
+			
+			if (enterIPAddressPrefixTextBox.isDisplayed())
+				utils.log().info("Prefix IP Address : " + enterIPAddressPrefixTextBox.getText());
+			else
+				utils.log().info("Prefix IP Address is not displayed");
 
 			if (saveButton.isDisplayed())
 				utils.log().info(saveButton.getText() + " Save Button is displayed");

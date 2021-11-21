@@ -475,12 +475,14 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		}
 	}
 
-	public void clickBackButton() {
-		try {
+	public boolean clickBackButton() {
+		if(backIcon.isDisplayed()) {
 			click(backIcon);
 			utils.log().info("Clicked on Back button ");
-		} catch (Exception exp) {
+			return true;
+		} else {
 			utils.log().info("Back Button is not displayed ");
+			return false;
 		}
 	}
 
@@ -968,7 +970,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public boolean isAt() {
 		if (mainTitle.isDisplayed()) {
 			utils.log().info("On MAIN Router Page ");
-			utils.log().info("********************");
 			return true;
 		} else {
 			utils.log().info("Not on MAIN Page");

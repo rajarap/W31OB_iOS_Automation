@@ -9,9 +9,9 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	<test name="Login_And_Verify_Network_Page_Test">
+	<test name="Login_And_Verify_Home_Page_Speed_Test_History_Page_Test">
 		<classes>
-			<class name="com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test" />
+			<class name="com.cs.arris.Tests.TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test" />
 		</classes>
 	</test>
 </suite>
@@ -83,6 +83,12 @@
 	<test name="Login_And_Verify_Parental_Control_Page_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC61_Login_And_Verify_ParentalControlPage_Test" />
+		</classes>
+	</test>
+	
+	<test name="Login_And_Verify_Network_Page_Test">
+		<classes>
+			<class name="com.cs.arris.Tests.TC57_Login_And_Verify_NetworkPage_Test" />
 		</classes>
 	</test>
 		

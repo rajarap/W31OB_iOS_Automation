@@ -166,12 +166,12 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean enableUPnP() {
-		if (disableUPNPToggleButton.isDisplayed()) {
+		if (enableUPNPToggleButton.isDisplayed()) {
+			utils.log().info("UPnP is already enabled");
+			return true;
+		} else if (disableUPNPToggleButton.isDisplayed()) {
 			click(disableUPNPToggleButton);
 			utils.log().info("UPnP is turned ON");
-			return true;
-		} else if (enableUPNPToggleButton.isDisplayed()) {
-			utils.log().info("UPnP is already enabled");
 			return true;
 		} else {
 			utils.log().info("UPnP toggle switch button is not displayed");
@@ -180,12 +180,12 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean disableUPnP() {
-		if (enableUPNPToggleButton.isDisplayed()) {
+		if (disableUPNPToggleButton.isDisplayed()) {
+			utils.log().info("UPnP is already disabled");
+			return true;
+		} else if (enableUPNPToggleButton.isDisplayed()) {
 			click(enableUPNPToggleButton);
 			utils.log().info("UPnP is turned OFF");
-			return true;
-		} else if (disableUPNPToggleButton.isDisplayed()) {
-			utils.log().info("UPnP is already disabled");
 			return true;
 		} else {
 			utils.log().info("UPnP toggle switch button is not displayed");
@@ -194,12 +194,12 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean enableBridgeMode() {
-		if (disableBridgeModeToggleButton.isDisplayed()) {
+		if (enableBridgeModeToggleButton.isDisplayed()) {
+			utils.log().info("Bridge Mode is already enabled");
+			return true;
+		} else if (disableBridgeModeToggleButton.isDisplayed()) {
 			click(disableBridgeModeToggleButton);
 			utils.log().info("Bridge Mode is turned ON");
-			return true;
-		} else if (enableBridgeModeToggleButton.isDisplayed()) {
-			utils.log().info("Bridge Mode is already enabled");
 			return true;
 		} else {
 			utils.log().info("Bridge Mode toggle switch button is not displayed");
@@ -208,12 +208,12 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean disableBridgeMode() {
-		if (enableBridgeModeToggleButton.isDisplayed()) {
+		if (disableBridgeModeToggleButton.isDisplayed()) {
+			utils.log().info("Bridge Mode is already disabled");
+			return true;
+		} else if (enableBridgeModeToggleButton.isDisplayed()) {
 			click(enableBridgeModeToggleButton);
 			utils.log().info("Bridge Mode is turned OFF");
-			return true;
-		} else if (disableBridgeModeToggleButton.isDisplayed()) {
-			utils.log().info("Bridge Mode is already disabled");
 			return true;
 		} else {
 			utils.log().info("Bridge Mode toggle switch button is not displayed");
@@ -222,12 +222,12 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean enableIPV6Enable() {
-		if (disableIPv6ToggleButton.isDisplayed()) {
+		if (enableIPv6ToggleButton.isDisplayed()) {
+			utils.log().info("IPv6 Enableis already enabled");
+			return true;
+		} else if (disableIPv6ToggleButton.isDisplayed()) {
 			click(disableIPv6ToggleButton);
 			utils.log().info("IPv6 Enable is turned ON");
-			return true;
-		} else if (enableIPv6ToggleButton.isDisplayed()) {
-			utils.log().info("IPv6 Enableis already enabled");
 			return true;
 		} else {
 			utils.log().info("IPv6 Enable toggle switch button is not displayed");
@@ -236,12 +236,12 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean disableIPv6Enable() {
-		if (enableIPv6ToggleButton.isDisplayed()) {
+		if(disableIPv6ToggleButton.isDisplayed()) {
+			utils.log().info("IPv6 Enable is already disabled");
+			return true;
+		} else if (enableIPv6ToggleButton.isDisplayed()) {
 			click(enableIPv6ToggleButton);
 			utils.log().info("IPv6 Enable is turned OFF");
-			return true;
-		} else if(disableIPv6ToggleButton.isDisplayed()) {
-			utils.log().info("IPv6 Enable is already disabled");
 			return true;
 		} else {
 			utils.log().info("IPv6 Enable toggle switch button is not displayed");

@@ -1,6 +1,7 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.cs.arris.Base.ParentClass;
+import com.cs.arris.Pages.DevicesPage;
 import com.cs.arris.Pages.HomePage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
@@ -19,7 +21,8 @@ import com.cs.arris.Workflows.HomePage_Workflow;
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
 
-public class TC53_Login_And_Verify_DevicesPage_Test extends ParentClass {
+public class TC53_Login_And_Verify_DevicesPage_Test extends ParentClass 
+{
 	TestUtils utils = new TestUtils();
 	String firstName;
 	String lastName;
@@ -62,11 +65,11 @@ public class TC53_Login_And_Verify_DevicesPage_Test extends ParentClass {
 
 	@BeforeMethod
 	public void beforeMethod(Method m) {
-		utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
+		utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
 	}
 
 	@Test(priority = 1)
-	public void Verify_Devices_Page() {
+	public void Login_And_Onboard() {
 		TC53_Login_And_Verify_DevicesPage_Workflow.getStartedPage(getStarted -> {
 			getStarted.clickGetStartedButton();
 		}).grantPermissionsPage(grantPermission -> {
@@ -105,62 +108,63 @@ public class TC53_Login_And_Verify_DevicesPage_Test extends ParentClass {
 		}).setupWifi(setupwifi -> {
 			setupwifi.clickskipTutorialButton();
 			super.pause(3);
-		}).homePage(home -> {
-			try {
-				if (home.okButton.isDisplayed()) {
-					home.clickOkButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-			if (home.isAt()) {
-				home.clickDevicesImage();
-			}
-		}).devicesPage(devices -> {
-			if (devices.isAt()) {
-				devices.verifyUIOnDevicesPage();
-				devices.clickBackButton();
-				if (devices.getHomePageObject().isAt()) {
-					devices.getHomePageObject().clickDevicesImage();
-				}
-			}
-			if (devices.isAt()) {
-				devices.clickHelpButton();
-				super.pause(5);
-				if (devices.getDevicesHelpPageObject().isAt()) {
-					devices.clickCloseButton();
-				}
-			}
-			if (devices.isAt()) {
-				if (devices.getOnlineDeviceCount() > 0) {
-					devices.verifyOnlineDeviceDetails();
-				}
-				if (devices.getOfflineDeviceCount() > 0) {
-					devices.verifyOfflineDeviceDetails();
-				}
-			}
-			if (devices.isAt()) {
-				devices.getFooterIconsPageObject().clickHomeButton();
-				if (devices.getHomePageObject().isAt()) {
-					devices.getHomePageObject().clickDevicesImage();
-				}
-			}
-			if (devices.isAt()) {
-				devices.getFooterIconsPageObject().clickNetworkButton();
-				if (devices.getNetworkPageObject().isAt()) {
-					devices.getNetworkPageObject().clickBackButton();
-				}
-			}
-			if (devices.getHomePageObject().isAt()) {
-				devices.getHomePageObject().clickDevicesImage();
-			}
-			if (devices.isAt()) {
-				devices.getFooterIconsPageObject().clickParentalButton();
-				if (devices.getParentalControlPageObject().isAt()) {
-					devices.getParentalControlPageObject().clickBackButton();
-					devices.getHomePageObject().isAt();
-				}
-			}
-		});
+		 }).homePage(home -> {
+			  try
+			  {
+				  if(home.okButton.isDisplayed())
+				  {
+					  home.clickOkButton();
+				  }
+			  }catch(Exception e)
+			  {
+				  e.getMessage();
+			  }
+			  home.clickDevicesImage();
+		  });
 	}
+		
+		@Test(priority = 2)
+		public void Verify_Devices_UI_Page() {
+			SoftAssert softdevices2 = new SoftAssert();
+			if(new DevicesPage().isAt()) 
+				softdevices2.assertTrue(new DevicesPage().verifyUIOnDevicesPage());
+			softdevices2.assertAll();
+		}
+			
+		@Test(priority = 3)
+		public void Verify_Online_Devices_Details() 
+		{
+			SoftAssert softdevices3 = new SoftAssert();
+			softdevices3.assertTrue(new DevicesPage().verifyOnlineDeviceDetails());
+			softdevices3.assertAll();
+		}
+		
+		@Test(priority = 4)
+		public void Verify_Edit_Device_Name() 
+		{
+			SoftAssert softdevices4 = new SoftAssert();
+			softdevices4.assertTrue(new DevicesPage().verifyEditDeviceName());
+			softdevices4.assertAll();
+		}
+		
+		@Test(priority = 5)
+		public void Verify_Offline_Devices_Details() 
+		{
+			SoftAssert softdevices5 = new SoftAssert();
+			softdevices5.assertTrue(new DevicesPage().verifyOfflineDeviceDetails());
+			softdevices5.assertAll();
+		}
+		
+		
+		@Test(priority = 6)
+		public void Verify_Devices_Help_Page() 
+		{
+			SoftAssert softdevices6 = new SoftAssert();
+			softdevices6.assertTrue(new DevicesPage().clickHelpButton());
+			if(new DevicesPage().getDevicesHelpPageObject().isAt())
+				softdevices6.assertTrue(new DevicesPage().getDevicesHelpPageObject().clickCloseButton());
+			softdevices6.assertTrue(new DevicesPage().clickBackButton());
+			softdevices6.assertAll();
+		}
 }
+

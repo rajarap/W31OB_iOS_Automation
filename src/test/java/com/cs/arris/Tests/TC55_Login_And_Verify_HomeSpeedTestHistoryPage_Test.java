@@ -1,6 +1,7 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -13,8 +14,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.cs.arris.Base.ParentClass;
+import com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage;
 import com.cs.arris.Pages.HomePage;
+import com.cs.arris.Pages.HomeSpeedTestHistoryPage;
 import com.cs.arris.Pages.SiginPage;
+import com.cs.arris.Pages.SpeedTestPage;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Workflows.HomePage_Workflow;
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
@@ -71,12 +75,12 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 	  @BeforeMethod
 	  public void beforeMethod(Method m) 
 	  {
-		   utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
+		  utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
 	  }
 	  
 	  
 	  @Test(priority = 1)
-	  public void Verify_Home_Speed_Test_History_Page()
+	  public void Verify_Login_And_Onboard()
 	  {
 		  TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.getStartedPage(getStarted -> {
 			  getStarted.clickGetStartedButton();
@@ -116,67 +120,58 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 				  }
 			  }).setupWifi(setupwifi ->{
 				  setupwifi.clickskipTutorialButton();
-	  		}).homePage(home -> {
-			  try
-			  {
-				  if(home.okButton.isDisplayed())
-				  {
-					  home.clickOkButton();
-				  }
-			  }catch(Exception e)
-			  {
-				  e.getMessage();
-			  }
-			 if(home.isAt())
-			 {
-				 super.pause(2);
-				 home.clickNavigationButton();
-				 if(home.getHamburgerMenuPageObject().isAt())
-				 {
-					 if(home.getHamburgerMenuPageObject().speedTest.isDisplayed())
-					{
-						home.getHamburgerMenuPageObject().clickSpeedTestButton();
-					}else {utils.log().info("Speed Test Option is not available on Hamburger Menu");}
-				 }
-			 }
-			 }).speedTestPage(speedTest -> {
-				 if(speedTest.isAt())
-				 {
-					 speedTest.verifyUIOnSpeedTestPage();
-					 
-					 for (int i = 0; i < 3; i++)
-					 {
-						 speedTest.performSpeedTest();
-					 }
-					 speedTest.clickBackButton();
-				 }
-			 }).homePage(home -> {
-				 if(home.isAt())
-				 {
-					 home.clickSpeedTestHistoryImage();
-				 }
-	  		}).homeSpeedTestHistoryPage(speedTestHistory -> {
-	  			if(speedTestHistory.isAt())
-	  			{
-	  				speedTestHistory.verifyHomeSpeedTestHistory();
-	  				speedTestHistory.getFooterIconsPageObject().clickNetworkButton();
-	  				if (speedTestHistory.getNetworkPageObject().isAt())
-	  				{
-	  					speedTestHistory.getNetworkPageObject().clickBackButton(); 
-	  				}
-	  			}
-	  			if(speedTestHistory.getHomePageObject().isAt())
-	  			{
-	  				speedTestHistory.getHomePageObject().clickSpeedTestHistoryImage();
-	  			}
-	  			if(speedTestHistory.isAt())
-	  			{
-	  				speedTestHistory.getFooterIconsPageObject().clickParentalButton();
-	  				if (speedTestHistory.getParentalControlPageObject().isAt())
-	  					{
-	  						speedTestHistory.getParentalControlPageObject().clickBackButton();
-	  					}
-	  			}
-		  });
+				}).homePage(home -> {
+					  try {
+						  if(home.okButton.isDisplayed())
+							  home.clickOkButton();
+					  }catch(Exception e) {
+						  e.getMessage();  }
+				  });
+			}
+	  
+	  @Test(priority = 2)
+		public void Verify_Speed_Test_Page() {
+			SoftAssert softspeedtest2 = new SoftAssert();
+			softspeedtest2.assertTrue(new HomePage().clickNavigationButton());
+			if(new HomePage().getHamburgerMenuPageObject().isAt()) 
+			{
+				if(new HomePage().getHamburgerMenuPageObject().speedTest.isDisplayed())
+					softspeedtest2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSpeedTestButton());
+			}
+			if(new SpeedTestPage().isAt())
+			{
+				softspeedtest2.assertTrue(new SpeedTestPage().verifyUIOnSpeedTestPage());
+			}
 	  }
+	  
+	  @Test(priority = 3)
+		public void Verify_Perform_Speed_Test() {
+			SoftAssert softspeedtest3 = new SoftAssert();
+			for (int i = 0; i < 3; i++)
+			{
+				softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
+			}
+		}
+	  
+	  @Test(priority = 4)
+		public void Verify_Speed_Test_Help_page() {
+			SoftAssert softspeedtest4 = new SoftAssert();
+			softspeedtest4.assertTrue(new SpeedTestPage().clickHelpButton());
+			softspeedtest4.assertTrue(new SpeedTestPage().getSpeedTestHelpPageObject().clickCloseButton());
+			softspeedtest4.assertTrue(new SpeedTestPage().clickBackButton());
+			softspeedtest4.assertAll();
+		}
+	  
+	  @Test(priority = 5)
+		public void Verify_Home_Speed_Test_History_Page() {
+			SoftAssert softspeedtest5 = new SoftAssert();
+			if(new HomePage().isAt()) 
+				softspeedtest5.assertTrue(new HomePage().clickSpeedTestHistoryImage());
+			
+			if(new HomeSpeedTestHistoryPage().isAt())
+				softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
+			
+			softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
+		}
 }
+

@@ -31,11 +31,16 @@ public class BlankBlockedDevicesPage extends ParentClass implements Page
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
-	
-	public void clickCloseIcon()
+		
+	public boolean clickCloseIcon()
 	{
-		click(closeIcon);
-		utils.log().info("Blank Currently Blocked Devices Page - Clicked on Close Icon");
+		if(closeIcon.isDisplayed())	{
+			click(closeIcon);
+			utils.log().info("Clicked on Close Icon");
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 	public void getDeviceBlockedCountText()
@@ -55,8 +60,8 @@ public class BlankBlockedDevicesPage extends ParentClass implements Page
 		if(curentlyBlockedDevicesTitle.isDisplayed())
 		{
 			utils.log().info("On Blank Currently Blocked Devices Page");
-			return true;}
-		else {
+			return true;
+	}else {
 			utils.log().info("Not on Blank Currently Blocked Devices Page");
 		return false;}
 	}
