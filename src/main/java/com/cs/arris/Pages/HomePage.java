@@ -386,6 +386,7 @@ public class HomePage extends ParentClass implements Page {
 				utils.log().info("Navigate Icon is displayed");
 			else
 				utils.log().info("Navigate Icon is displayed");
+			
 			try {
 			if (cloudIcon.isDisplayed())
 				utils.log().info("Cloud Icon is displayed");

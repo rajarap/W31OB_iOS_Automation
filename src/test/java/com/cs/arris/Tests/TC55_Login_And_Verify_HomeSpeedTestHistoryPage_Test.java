@@ -120,7 +120,7 @@ public class TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test extends ParentC
 				  }
 			  }).setupWifi(setupwifi ->{
 				  setupwifi.clickskipTutorialButton();
-				}).homePage(home -> {
+			  }).homePage(home -> {
 					  try {
 						  if(home.okButton.isDisplayed())
 							  home.clickOkButton();

@@ -23,6 +23,7 @@ com/cs/arris/Tests/TC61_Login_And_Verify_ParentalControlPage_Test.class
 com/cs/arris/Workflows/TC57_Login_And_Verify_NetworkPage_Workflow.class
 com/cs/arris/Tests/TC53_Login_And_Verify_DevicesPage_Test.class
 com/cs/arris/Tests/SigninAsInvalidUserTest.class
+com/cs/arris/Tests/TC59_Login_And_Verify_AmazonFeatures_Test.class
 com/cs/arris/Tests/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Test.class
 com/cs/arris/Tests/TC52_Login_And_Verify_HomePage_Test.class
 com/cs/arris/Tests/TestBluetooth.class
@@ -40,6 +41,7 @@ com/cs/arris/Tests/SignUpTest.class
 com/cs/arris/Tests/TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Test.class
 com/cs/arris/Workflows/TC04_EC_0002_1304_Internet_Connection_Not_Available_On_Router_Workflow.class
 com/cs/arris/Workflows/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.class
+com/cs/arris/Workflows/TC59_Login_And_Verify_AmazonFeatures_Workflow.class
 com/cs/arris/Tests/SampleTest.class
 com/cs/arris/Workflows/TC53_Login_And_Verify_DevicesPage_Workflow.class
 com/cs/arris/Tests/TC57_Login_And_Verify_NetworkPage_Test.class

@@ -111,6 +111,7 @@ public class ParentClass
 	public String profileName;
 	public String ruleName;
 	public String editedDeviceName;
+	public String editedMainDeviceName;
 	public int randNumber;
 	public int ipNumber;
 	public List<String> profileNames = new ArrayList<String>();

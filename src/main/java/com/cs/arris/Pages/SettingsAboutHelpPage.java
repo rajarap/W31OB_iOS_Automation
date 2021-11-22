@@ -27,17 +27,15 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public WebDriver driver;
 
-	// ****************************Settings*****************************************
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") // Settings
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") 
 	public MobileElement settingsTitle;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"), // back button
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
 	public MobileElement backButton;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), // help Icon
-			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[980,153][1046,219]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/helpIcon") })
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_header") // Account Settings
@@ -169,324 +167,330 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		FAQHelpPage faqHelpPage = new FAQHelpPage();
 		return faqHelpPage;
 	}
-
-	public void clickHelpIcon() {
-		click(helpIcon);
-		utils.log().info("Clicked on Help Button");
+	
+	public boolean clickHelpIcon() {
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
+			utils.log().info("Clicked on Help Button");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean clickBackButton() {
+		if (backButton.isDisplayed()) {
+			click(backButton);
+			utils.log().info("Clicked on Back Button");
+			return true;
+		} else {
+			return false;
+		}
 	}
 
-	public void clickBackButton() {
-		click(backButton);
-		utils.log().info("Clicked on Back Button");
+	public boolean clickLicenseButton() {
+		if (viewLicensesButton.isDisplayed()) {
+			click(viewLicensesButton);
+			utils.log().info("About Page - Clicked on View License Button");
+			return true;
+		} else {
+			return false;
+		}
 	}
 
-	public void clickLicenseButton() {
-		click(viewLicensesButton);
-		utils.log().info("About Page - Clicked on View License Button");
+	public boolean clickFAQButton() {
+		if (faqButton.isDisplayed()) {
+			click(faqButton);
+			utils.log().info("Help Page - Clicked on FAQ Button");
+			return true;
+		} else {
+			return false;
+		}
 	}
 
-	public void clickFAQButton() {
-		click(faqButton);
-		utils.log().info("Help Page - Clicked on FAQ Button");
+	public boolean clickSignOutButton() {
+		if (signoutButton.isDisplayed()) {
+			click(signoutButton);
+			utils.log().info("Settings Page - Clicked on Sign Out button");
+			return true;
+		} else {
+			return false;
+		}
 	}
 
-	public void clickSignOutButton() {
-		click(signoutButton);
-		utils.log().info("Settings Page - Clicked on Sign Out button");
-	}
-
-	public void verifyUIOnSettingsPage() {
+	public boolean verifyUIOnSettingsPage() {
 		try {
 			if (settingsTitle.isDisplayed())
 				utils.log().info("Title " + settingsTitle.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Settings page title is not displayed");
-		}
+			else
+				utils.log().info("Settings page title is not displayed");
 
-		try {
 			if (accountSettingsTitle.isDisplayed())
 				utils.log().info(accountSettingsTitle.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Account Settings Text is not displayed");
-		}
+			else
+				utils.log().info("Account Settings Text is not displayed");
 
-		try {
 			if (nameLabel.isDisplayed())
 				utils.log().info(nameLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Name Label is not displayed");
-		}
+			else
+				utils.log().info("Name Label is not displayed");
 
-		try {
 			if (accountName.isDisplayed())
 				utils.log().info("Users account firstname and lastname is displayed : " + accountName.getText());
-		} catch (Exception e) {
-			utils.log().info("Users account firstname and lastname is not displayed");
-		}
+			else
+				utils.log().info("Users account firstname and lastname is not displayed");
 
-		try {
 			if (userImage.isDisplayed())
 				utils.log().info("User Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("User Image Label is not displayed");
-		}
+			else
+				utils.log().info("User Image Label is not displayed");
 
-		try {
 			if (emailImage.isDisplayed())
 				utils.log().info("Email Address image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Email Address image is not displayed");
-		}
+			else
+				utils.log().info("Email Address image is not displayed");
 
-		try {
 			if (emailAddress.isDisplayed())
 				utils.log().info("Email Address " + emailAddress.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Email Address is not displayed");
-		}
+			else
+				utils.log().info("Email Address is not displayed");
 
-		try {
 			if (emailLabel.isDisplayed())
 				utils.log().info(emailLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Email Label is not displayed");
-		}
+			else
+				utils.log().info("Email Label is not displayed");
 
-		try {
 			if (signoutButton.isDisplayed())
 				utils.log().info("Sign Out button is displayed");
+			else
+				utils.log().info("Sign Out button is not displayed");
+
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Sign Out button is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyUIOnAboutPage() {
+	public boolean verifyUIOnAboutPage() {
 		try {
 			if (aboutTitle.isDisplayed())
 				utils.log().info("Title " + aboutTitle.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("About page title is not displayed");
-		}
+			else
+				utils.log().info("About page title is not displayed");
 
-		try {
 			if (routerImage.isDisplayed())
 				utils.log().info("Router Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Router Image is not displayed");
-		}
+			else
+				utils.log().info("Router Image is not displayed");
 
-		try {
 			if (surfboardImage.isDisplayed())
 				utils.log().info("Surfboard Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Surfboard Image is not displayed");
-		}
+			else
+				utils.log().info("Surfboard Image is not displayed");
 
-		try {
 			if (firmwareVersionText.isDisplayed())
 				utils.log().info("Firmware Version Label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Firmware Version Label is not displayed");
-		}
+			else
+				utils.log().info("Firmware Version Label is not displayed");
 
-		try {
 			if (firmwareNumber.isDisplayed())
 				utils.log().info("Firmware Number : " + firmwareNumber.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Firmware Number is not displayed");
-		}
+			else
+				utils.log().info("Firmware Number is not displayed");
 
-		try {
 			if (appVersionText.isDisplayed())
 				utils.log().info("App Version is displayed");
-		} catch (Exception e) {
-			utils.log().info("App Version is not displayed");
-		}
+			else
+				utils.log().info("App Version is not displayed");
 
-		try {
 			if (appNumber.isDisplayed())
 				utils.log().info("App Number : " + appNumber.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("App Number is not displayed");
-		}
+			else
+				utils.log().info("App Number is not displayed");
 
-		try {
 			if (modelNameText.isDisplayed())
 				utils.log().info("Model Name is displayed");
-		} catch (Exception e) {
-			utils.log().info("Model Name is not displayed");
-		}
+			else
+				utils.log().info("Model Name is not displayed");
 
-		try {
 			if (modelNumber.isDisplayed())
 				utils.log().info("Model Number : " + modelNumber.getText() + " is displayed");
+			else
+				utils.log().info("Surfboard Image is not displayed");
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Surfboard Image is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyUIOnHelpPage() {
+	public boolean verifyUIOnHelpPage() {
 		try {
 			if (helpTitle.isDisplayed())
 				utils.log().info("Title " + helpTitle.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help page title is not displayed");
-		}
+			else
+				utils.log().info("Help page title is not displayed");
 
-		try {
 			if (surfboardLogoImage.isDisplayed())
 				utils.log().info("Surfboard Logo Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Surfboard Logo Image is not displayed");
-		}
+			else
+				utils.log().info("Surfboard Logo Image is not displayed");
 
-		try {
 			if (additionalHelpText.isDisplayed())
 				utils.log().info("Additional Help Text " + additionalHelpText.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Additional Help Text is not displayed");
-		}
+			else
+				utils.log().info("Additional Help Text is not displayed");
 
-		try {
 			if (helpMessage.isDisplayed())
 				utils.log().info(helpMessage.getText() + " message is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help Message Text is not displayed");
-		}
+			else
+				utils.log().info("Help Message Text is not displayed");
 
-		try {
 			if (faqButton.isDisplayed())
 				utils.log().info("Button " + faqButton.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("FAQ Button is not displayed");
-		}
+			else
+				utils.log().info("FAQ Button is not displayed");
 
-		try {
 			if (selfHelpButton.isDisplayed())
 				utils.log().info(selfHelpButton.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("SelfHelp URL is not displayed");
-		}
+			else
+				utils.log().info("SelfHelp URL is not displayed");
 
-		try {
 			if (liveChatButton.isDisplayed())
 				utils.log().info(liveChatButton.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Chat With Us button is not displayed");
-		}
-	}
-
-	public void clickGetAnotherMaxRouterButton() {
-		click(getAnotherMaxRouterButton);
-		super.pause(5);
-		utils.log().info("About Page - Clicked on Get Another Max Router button");
-
-		Set<String> allContext = super.getDriver().getContextHandles();
-		for (String context : allContext) {
-			if (context.contains("WEBVIEW"))
-				super.getDriver().context(context);
-		}
-		utils.log().info("Switched to WEBVIEW");
-
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		String webURL = driver.getCurrentUrl();// http://shop.surfboard.com
-		if (webURL.equalsIgnoreCase("http://shop.surfboard.com")) {
-			driver.getPageSource();
-			if (driver.findElement(By.xpath("//android.view.View[@content-desc='Vertical Categories']"))
-					.isDisplayed()
-					&& driver
-							.findElement(By.xpath(
-									"//android.view.View[@content-desc=' SIGN IN']/android.widget.TextView[2]]"))
-							.isDisplayed())
-				utils.log().info("On shop.surfboard.com web page");
 			else
-				utils.log().info("shop.surfboard.com web page is not displayed");
+				utils.log().info("Chat With Us button is not displayed");
+			return true;
+		} catch (Exception e) {
+			return false;
 		}
-		super.getDriver().context("NATIVE_APP");
-		utils.log().info("Switched to NATIVE_APP View");
-		((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
-		if (driver != null) {
-            driver.quit();
-        }
 	}
 
-	public void clickSelfHelp() {
-		click(selfHelpButton);
-		super.pause(5);
-		utils.log().info("Help Page - Clicked on Self Help button");
-
-		Set<String> allContext = super.getDriver().getContextHandles();
-		for (String context : allContext) {
-			if (context.contains("WEBVIEW"))
-				super.getDriver().context(context);
-		}
-		utils.log().info("Switched to WEBVIEW");
-
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		String webURL = driver.getCurrentUrl(); // arris.secure.force.com/consumers
+	public boolean clickGetAnotherMaxRouterButton() {
 		try {
-			if (webURL.contains("arris.secure.force.com/consumers/")) {
-				driver.getPageSource();
-				driver.findElement(By.id("onetrust-close-btn-container")).click();
-				driver.findElement(By.id("closeButton")).click();
-				if (driver
-						.findElement(By.xpath(
-								"//android.view.View[@content-desc='ARRIS Horizontal Logo']/android.widget.Image"))
-						.isDisplayed())
-					utils.log().info("On arris.secure.force.com/consumers web page");
-				else
-					utils.log().info("arris.secure.force.com/consumers web page is not displayed");
+			click(getAnotherMaxRouterButton);
+			super.pause(5);
+			utils.log().info("About Page - Clicked on Get Another Max Router button");
+
+			Set<String> allContext = super.getDriver().getContextHandles();
+			for (String context : allContext) {
+				if (context.contains("WEBVIEW"))
+					super.getDriver().context(context);
 			}
+			utils.log().info("Switched to WEBVIEW");
+
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			String webURL = driver.getCurrentUrl();// http://shop.surfboard.com
+			try {
+				if (webURL.equalsIgnoreCase("http://shop.surfboard.com")) {
+					driver.getPageSource();
+					if (driver.findElement(By.xpath("//android.view.View[@content-desc='Vertical Categories']")).isDisplayed() && driver.findElement(By.xpath(
+											"//android.view.View[@content-desc=' SIGN IN']/android.widget.TextView[2]]")).isDisplayed())
+						utils.log().info("On shop.surfboard.com web page");
+					else
+						utils.log().info("shop.surfboard.com web page is not displayed");
+				}
+			} catch (Exception e) {
+				utils.log().info("Unable to fetch Self Help Web Page objects");
+			}
+			super.getDriver().context("NATIVE_APP");
+			utils.log().info("Switched to NATIVE_APP View");
+			((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+			
+			if (driver != null)
+				driver.quit();
+			
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Unable to fetch Self Help Web Page objects");
+			return false;
 		}
-		super.getDriver().context("NATIVE_APP");
-		utils.log().info("Switched to NATIVE_APP View");
-		((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
-		if (driver != null) {
-            driver.quit();
-        }
 	}
 
-	public void clickLiveChatHelp() {
-		click(selfHelpButton);
-		super.pause(5);
-		utils.log().info("Help Page - Clicked on Chat With Us button");
+	public boolean clickSelfHelp() {
+		try {
+			click(selfHelpButton);
+			super.pause(5);
+			utils.log().info("Help Page - Clicked on Self Help button");
 
-		Set<String> allContext = super.getDriver().getContextHandles();
-		for (String context : allContext) {
-			if (context.contains("WEBVIEW"))
-				super.getDriver().context(context);
+			Set<String> allContext = super.getDriver().getContextHandles();
+			for (String context : allContext) {
+				if (context.contains("WEBVIEW"))
+					super.getDriver().context(context);
+			}
+			utils.log().info("Switched to WEBVIEW");
+
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			String webURL = driver.getCurrentUrl(); // arris.secure.force.com/consumers
+			try {
+				if (webURL.contains("arris.secure.force.com/consumers/")) {
+					driver.getPageSource();
+					driver.findElement(By.id("onetrust-close-btn-container")).click();
+					driver.findElement(By.id("closeButton")).click();
+					if (driver.findElement(By.xpath("//android.view.View[@content-desc='ARRIS Horizontal Logo']/android.widget.Image")).isDisplayed())
+						utils.log().info("On arris.secure.force.com/consumers web page");
+					else
+						utils.log().info("arris.secure.force.com/consumers web page is not displayed");
+				}
+			} catch (Exception e) {
+				utils.log().info("Unable to fetch Self Help Web Page objects");
+			}
+			super.getDriver().context("NATIVE_APP");
+			utils.log().info("Switched to NATIVE_APP View");
+			((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+
+			if (driver != null)
+				driver.quit();
+
+			return true;
+		} catch (Exception e) {
+			return false;
 		}
-		utils.log().info("Switched to WEBVIEW");
-		
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		String webURL = driver.getCurrentUrl();
-		// www5.nohold.net/Arris/ukp.aspx?pid=15&login=1&alt1=app&alt2=mAX+Pro+W31&model=mAX+Pro+W31&donelr=1
-		if (webURL.contains(
-				"www5.nohold.net/Arris/ukp.aspx?pid=15&login=1&alt1=app&alt2=mAX+Pro+W31&model=mAX+Pro+W31&donelr=1")) {
-			driver.getPageSource();
-			if (driver
-					.findElement(
-							By.xpath("//android.view.View[@content-desc='Change Product']/android.widget.TextView"))
-					.isDisplayed()
-					&& driver
-							.findElement(
-									By.xpath("//android.view.View[@content-desc='Feedback']/android.widget.TextView"))
-							.isDisplayed())
-				utils.log().info("On www5.nohold.net/Arris/ukp.aspx web page");
-			else
-				utils.log().info("www5.nohold.net/Arris/ukp.aspx web page is not displayed");
+	}
+
+	public boolean clickLiveChatHelp() {
+		try {
+			click(selfHelpButton);
+			super.pause(5);
+			utils.log().info("Help Page - Clicked on Chat With Us button");
+
+			Set<String> allContext = super.getDriver().getContextHandles();
+			for (String context : allContext) {
+				if (context.contains("WEBVIEW"))
+					super.getDriver().context(context);
+			}
+			utils.log().info("Switched to WEBVIEW");
+
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			String webURL = driver.getCurrentUrl();
+			// www5.nohold.net/Arris/ukp.aspx?pid=15&login=1&alt1=app&alt2=mAX+Pro+W31&model=mAX+Pro+W31&donelr=1
+			if (webURL.contains(
+					"www5.nohold.net/Arris/ukp.aspx?pid=15&login=1&alt1=app&alt2=mAX+Pro+W31&model=mAX+Pro+W31&donelr=1")) {
+				driver.getPageSource();
+				if (driver
+						.findElement(
+								By.xpath("//android.view.View[@content-desc='Change Product']/android.widget.TextView"))
+						.isDisplayed()
+						&& driver
+								.findElement(By
+										.xpath("//android.view.View[@content-desc='Feedback']/android.widget.TextView"))
+								.isDisplayed())
+					utils.log().info("On www5.nohold.net/Arris/ukp.aspx web page");
+				else
+					utils.log().info("www5.nohold.net/Arris/ukp.aspx web page is not displayed");
+			}
+			super.getDriver().context("NATIVE_APP");
+			utils.log().info("Switched to NATIVE_APP View");
+			((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+
+			if (driver != null)
+				driver.quit();
+
+			return true;
+		} catch (Exception e) {
+			return false;
 		}
-		super.getDriver().context("NATIVE_APP");
-		utils.log().info("Switched to NATIVE_APP View");
-		((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
-		if (driver != null) {
-            driver.quit();
-        }
 	}
 
 	public String getUserAccountName() {

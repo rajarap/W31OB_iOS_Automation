@@ -48,49 +48,7 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 	public HamburgerMenuPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
-
-	public void verifyUIOnHamburgerMenuPage() {
-		if (addDevice.isDisplayed())
-			utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is not displayed");
-
-		if (removeDevice.isDisplayed())
-			utils.log().info("Hamburger Menu - " + removeDevice.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + removeDevice.getText() + " - is not displayed");
-
-		if (speedTest.isDisplayed())
-			utils.log().info("Hamburger Menu - " + speedTest.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + speedTest.getText() + " - is not displayed");
-
-		if (addNewSatellite.isDisplayed())
-			utils.log().info("Hamburger Menu - " + addNewSatellite.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + addNewSatellite.getText() + " - is not displayed");
-
-		if (amazonFeatures.isDisplayed())
-			utils.log().info("Hamburger Menu - " + amazonFeatures.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + amazonFeatures.getText() + " - is not displayed");
-
-		if (helpMenu.isDisplayed())
-			utils.log().info("Hamburger Menu - " + helpMenu.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + helpMenu.getText() + " - is not displayed");
-
-		if (aboutApp.isDisplayed())
-			utils.log().info("Hamburger Menu - " + aboutApp.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + aboutApp.getText() + " - is not displayed");
-
-		if (appSettings.isDisplayed())
-			utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is displayed");
-		else
-			utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is not displayed");
-	}
-
+	
 	public HomePage getHomePageObject() {
 		HomePage homePage = new HomePage();
 		return homePage;
@@ -100,6 +58,17 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 		SpeedTestPage speedTestPage = new SpeedTestPage();
 		return speedTestPage;
 	}
+	
+	public SettingsAboutHelpPage getSettingAboutHelpPageObject() {
+		SettingsAboutHelpPage speedTestPage = new SettingsAboutHelpPage();
+		return speedTestPage;
+	}
+	
+	public AmazonFeaturesPage getAmazonFeaturesPageObject() {
+		AmazonFeaturesPage amazonFeaturesPage = new AmazonFeaturesPage();
+		return amazonFeaturesPage;
+	}
+
 
 	public boolean clickCloseButton() {
 		if (closeHamburgerMenu.isDisplayed()) {
@@ -195,6 +164,53 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 			return true;
 		}else {
 			utils.log().info("Settings Menu Button is not displayed");
+			return false;
+		}
+	}
+
+	public boolean verifyUIOnHamburgerMenuPage() {
+		try {
+			if (addDevice.isDisplayed())
+				utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is not displayed");
+
+			if (removeDevice.isDisplayed())
+				utils.log().info("Hamburger Menu - " + removeDevice.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + removeDevice.getText() + " - is not displayed");
+
+			if (speedTest.isDisplayed())
+				utils.log().info("Hamburger Menu - " + speedTest.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + speedTest.getText() + " - is not displayed");
+
+			if (addNewSatellite.isDisplayed())
+				utils.log().info("Hamburger Menu - " + addNewSatellite.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + addNewSatellite.getText() + " - is not displayed");
+
+			if (amazonFeatures.isDisplayed())
+				utils.log().info("Hamburger Menu - " + amazonFeatures.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + amazonFeatures.getText() + " - is not displayed");
+
+			if (helpMenu.isDisplayed())
+				utils.log().info("Hamburger Menu - " + helpMenu.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + helpMenu.getText() + " - is not displayed");
+
+			if (aboutApp.isDisplayed())
+				utils.log().info("Hamburger Menu - " + aboutApp.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + aboutApp.getText() + " - is not displayed");
+
+			if (appSettings.isDisplayed())
+				utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is displayed");
+			else
+				utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is not displayed");
+			return true;
+		} catch (Exception e) {
 			return false;
 		}
 	}

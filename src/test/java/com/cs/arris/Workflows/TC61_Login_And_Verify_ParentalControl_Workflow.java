@@ -164,19 +164,6 @@ TestUtils utils = new TestUtils();
         return this;
     }
     
-    //Devices Page - Till here
-    public TC61_Login_And_Verify_ParentalControl_Workflow devicesPage(Consumer<DevicesPage> c){
-    	DevicesPage p = new DevicesPage();
-        c.accept(p);
-        return this;
-    }
-    
-    //Device Signal Strength Leader Board Page
-    public TC61_Login_And_Verify_ParentalControl_Workflow deviceSignalStrengthPage(Consumer<DeviceSignalStrengthLeaderBoardPage> c){
-    	DeviceSignalStrengthLeaderBoardPage p = new DeviceSignalStrengthLeaderBoardPage();
-        c.accept(p);
-        return this;
-    }
        
     //Speed Test History Page
     public TC61_Login_And_Verify_ParentalControl_Workflow speedTestHistoryPage(Consumer<SpeedTestHistoryPage> c){
@@ -192,12 +179,6 @@ TestUtils utils = new TestUtils();
         return this;
     }
     
-    //Network Page
-    public TC61_Login_And_Verify_ParentalControl_Workflow networkPage(Consumer<NetworkPage> c){
-    	NetworkPage p = new NetworkPage();
-        c.accept(p);
-        return this;
-    }
     
     //Parental Control Page
     public TC61_Login_And_Verify_ParentalControl_Workflow parentalControlPage(Consumer<ParentalControlProfilesPage> c){

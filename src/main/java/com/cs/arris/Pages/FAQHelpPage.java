@@ -38,57 +38,60 @@ public class FAQHelpPage extends ParentClass implements Page
 	@AndroidFindBy (xpath = "//android.view.View[@content-desc='GENERAL mAX']/android.widget.TextView")
 	public MobileElement generalMaxLink;
 	
-	
-
-	public FAQHelpPage()
+		public FAQHelpPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void clickBackButton()
-	{
-		click(backButton);
-		utils.log().info("FAQ Help Page - Clicked on Back Button");
+	public boolean clickBackButton() {
+		if (backButton.isDisplayed()) {
+			click(backButton);
+			utils.log().info("Clicked on Back Button");
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
-	public void verifyUIOnFAQHelpPage()
-	{
-		if (helpTitle.isDisplayed())
-			utils.log().info("Title : "+ helpTitle.getText() +" is displayed");
-		else
-			utils.log().info("Help Title is not displayed");
-		
-		if (titleText.isDisplayed())
-			utils.log().info(titleText.getText() + " text is displayed");
-		else
-			utils.log().info("FAQ Help Message is not displayed");
-		
-		if (searchText.isDisplayed())
-			utils.log().info("Search Text : " + searchText.getText()+ " is displayed");
-		else
-			utils.log().info("Search Text is not displayed");
-		
-		if (searchButton.isDisplayed())
-			utils.log().info("Search Button is displayed");
-		else
-			utils.log().info("Search Button is not displayed");
-		
-		if (generalMaxLink.isDisplayed())
-			utils.log().info("Link : " + generalMaxLink.getText() + " is displayed");
-		else
-			utils.log().info("General Max Link is not displayed");
+	public boolean verifyUIOnFAQHelpPage() {
+		try {
+			if (helpTitle.isDisplayed())
+				utils.log().info("Title : " + helpTitle.getText() + " is displayed");
+			else
+				utils.log().info("Help Title is not displayed");
+
+			if (titleText.isDisplayed())
+				utils.log().info(titleText.getText() + " text is displayed");
+			else
+				utils.log().info("FAQ Help Message is not displayed");
+
+			if (searchText.isDisplayed())
+				utils.log().info("Search Text : " + searchText.getText() + " is displayed");
+			else
+				utils.log().info("Search Text is not displayed");
+
+			if (searchButton.isDisplayed())
+				utils.log().info("Search Button is displayed");
+			else
+				utils.log().info("Search Button is not displayed");
+
+			if (generalMaxLink.isDisplayed())
+				utils.log().info("Link : " + generalMaxLink.getText() + " is displayed");
+			else
+				utils.log().info("General Max Link is not displayed");
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 	
 	@Override
 	public boolean isAt() {
-		if(helpTitle.isDisplayed())
-		{
+		if(helpTitle.isDisplayed())	{
 			utils.log().info("On FAQ Help Page");
-			return true;}
-		else {
+			return true;
+		}else {
 			utils.log().info("Not on FAQ Help Page");
 		return false;}
-		
 	}
-
 }

@@ -27,17 +27,18 @@ public class AboutHelpPage extends ParentClass implements Page {
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,731][1029,968]']")
 	public MobileElement aboutHelpText;
-
+	
 	public AboutHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
-		try {
-			click(closeButton);
-			utils.log().info("About Help Page - Clicked on Close Button");
-		} catch (Exception e) {
-			utils.log().info("Close button is not displayed");
+	public boolean clickCloseButton() {
+		if (closeButton.isDisplayed()) {
+			click(closeButton); 
+			utils.log().info("Clicked Close Button");
+			return true;
+		} else {
+			return false;
 		}
 	}
 

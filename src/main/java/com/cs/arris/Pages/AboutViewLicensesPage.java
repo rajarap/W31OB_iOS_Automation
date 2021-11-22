@@ -104,181 +104,145 @@ public class AboutViewLicensesPage extends ParentClass implements Page {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
-		click(closeButton);
-		utils.log().info("Surfboard Licenses Page - Clicked on Close Button");
+	public boolean clickCloseButton() {
+		if (closeButton.isDisplayed()) {
+			click(closeButton); 
+			utils.log().info("Clicked Close Button");
+			return true;
+		} else {
+			return false;
+		}
 	}
 
-	public void verifyUIOnLicensesPage() {
+	public boolean verifyUIOnLicensesPage() {
 		try {
 			if (deviceImage.isDisplayed())
 				utils.log().info("mAX Router Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("mAX Router Image is not displayed");
-		}
+			else
+				utils.log().info("mAX Router Image is not displayed");
 
-		try {
 			if (surfboardWarranty.isDisplayed())
 				utils.log().info("Surfboard Warranty Text : " + surfboardWarranty.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Surfboard Warranty Text is not displayed");
-		}
+			else
+				utils.log().info("Surfboard Warranty Text is not displayed");
 
-		try {
 			if (surfboardimage.isDisplayed())
 				utils.log().info("Surfboard Image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Surfboard Image is not displayed");
-		}
+			else
+				utils.log().info("Surfboard Image is not displayed");
 
-		try {
 			if (copyright.isDisplayed())
 				utils.log().info("Copyright Text : " + copyright.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("Copyright Text is not displayed");
-		}
+			else
+				utils.log().info("Copyright Text is not displayed");
 
-		try {
 			if (arrisWarranty.isDisplayed())
 				utils.log().info("ARRIS warranty Text : " + arrisWarranty.getText() + " is displayed");
-		} catch (Exception e) {
-			utils.log().info("ARRIS warranty Text is not displayed");
-		}
+			else
+				utils.log().info("ARRIS warranty Text is not displayed");
 
-		try {
 			if (contents.isDisplayed())
 				utils.log().info(contents.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Contents Text is not displayed");
-		}
+			else
+				utils.log().info("Contents Text is not displayed");
 
-		try {
 			if (safetyAndRegulationLink.isDisplayed())
 				utils.log().info(safetyAndRegulationLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Safety and regulatory information Link is not displayed");
-		}
+			else
+				utils.log().info("Safety and regulatory information Link is not displayed");
 
-		try {
 			if (caringForEnvironmentLink.isDisplayed())
 				utils.log().info(caringForEnvironmentLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Caring for the environment by recycling your ARRIS equipment Link is not displayed");
-		}
+			else
+				utils.log().info("Caring for the environment by recycling your ARRIS equipment Link is not displayed");
 
-		try {
 			if (fccStatementsLink.isDisplayed())
 				utils.log().info(fccStatementsLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("FCC statements Link is not displayed");
-		}
+			else
+				utils.log().info("FCC statements Link is not displayed");
 
-		try {
 			if (fccInterferenceLink.isDisplayed())
 				utils.log().info(fccInterferenceLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("FCC Interference Statement Link is not displayed");
-		}
+			else
+				utils.log().info("FCC Interference Statement Link is not displayed");
 
-		try {
 			if (fccDeclarationLink.isDisplayed())
 				utils.log().info(fccDeclarationLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("FCC Declaration of Conformity Link is not displayed");
-		}
+			else
+				utils.log().info("FCC Declaration of Conformity Link is not displayed");
 
-		try {
 			if (fccRadiationLink.isDisplayed())
 				utils.log().info(fccRadiationLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("FCC Radiation Exposure Statement Link is not displayed");
-		}
-		
-		new SwipeActions().swipeScreen(Direction.UP);
-		super.pause(3);
+			else
+				utils.log().info("FCC Radiation Exposure Statement Link is not displayed");
 
-		try {
+			super.swipeUp();
+			super.pause(3);
+
 			if (industryCanadaLink.isDisplayed())
 				utils.log().info(industryCanadaLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Industry Canada (IC) Statement Link is not displayed");
-		}
+			else
+				utils.log().info("Industry Canada (IC) Statement Link is not displayed");
 
-		try {
 			if (icRadiationLink.isDisplayed())
 				utils.log().info(icRadiationLink.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("IC Radiation Exposure Statement Link is not displayed");
-		}
+			else
+				utils.log().info("IC Radiation Exposure Statement Link is not displayed");
 
-		try {
 			if (canadaIndustries.isDisplayed())
 				utils.log().info(canadaIndustries.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Avis D'Industrie Canada (IC) Link is not displayed");
-		}
+			else
+				utils.log().info("Avis D'Industrie Canada (IC) Link is not displayed");
 
-		try {
 			if (declarationAndExposition.isDisplayed())
 				utils.log().info(declarationAndExposition.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Déclaration de IC Sur L'Exposition Aux Rayonnements Link is not displayed");
-		}
+			else
+				utils.log().info("Déclaration de IC Sur L'Exposition Aux Rayonnements Link is not displayed");
 
-		try {
 			if (wirelessLAN.isDisplayed())
 				utils.log().info(wirelessLAN.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Wireless LAN information Link is not displayed");
-		}
+			else
+				utils.log().info("Wireless LAN information Link is not displayed");
 
-		try {
 			if (wirelessRestrictions.isDisplayed())
 				utils.log().info(wirelessRestrictions.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Restrictions on the use of wireless devices Link is not displayed");
-		}
+			else
+				utils.log().info("Restrictions on the use of wireless devices Link is not displayed");
 
-		try {
 			if (openSourceInformation.isDisplayed())
 				utils.log().info(openSourceInformation.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Open Source software information Link is not displayed");
-		}
+			else
+				utils.log().info("Open Source software information Link is not displayed");
 
-		try {
 			if (softwareLicense.isDisplayed())
 				utils.log().info(softwareLicense.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Software license Link is not displayed");
-		}
+			else
+				utils.log().info("Software license Link is not displayed");
 
-		try {
 			if (privacyNotice.isDisplayed())
 				utils.log().info(privacyNotice.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Privacy notice. Link is not displayed");
-		}
+			else
+				utils.log().info("Privacy notice. Link is not displayed");
 
-		try {
 			if (warrantyInformation.isDisplayed())
 				utils.log().info(warrantyInformation.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Warranty information Link is not displayed");
-		}
+			else
+				utils.log().info("Warranty information Link is not displayed");
 
-		try {
 			if (retailPurchase.isDisplayed())
 				utils.log().info(retailPurchase.getText() + " Link is displayed");
-		} catch (Exception e) {
-			utils.log().info("Retail purchasers – Retail devices Link is not displayed");
-		}
+			else
+				utils.log().info("Retail purchasers – Retail devices Link is not displayed");
 
-		try {
 			if (retailDevices.isDisplayed())
 				utils.log().info(retailDevices.getText() + " Link is displayed");
+			else
+				utils.log().info("Retail purchasers – refurbished retail devices Link is not displayed");
+
+			return true;
+
 		} catch (Exception e) {
-			utils.log().info("Retail purchasers – refurbished retail devices Link is not displayed");
+			return false;
 		}
 	}
 
@@ -291,7 +255,5 @@ public class AboutViewLicensesPage extends ParentClass implements Page {
 			utils.log().info("Not on View Licenses Help Page");
 			return false;
 		}
-
 	}
-
 }
