@@ -40,87 +40,83 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void verifyUIOnEditUserProfileDialog() {
+	public boolean verifyUIOnEditUserProfileDialog() {
 		try {
 			if (editProfileNameTitle.isDisplayed())
 				utils.log().info("Title - " + editProfileNameTitle.getText() + " - is displayed");
-		} catch (Exception e) {
-			utils.log().info("Edit Profile Name Title is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Edit Profile Name Title is not displayed");
+
 			if (editProfileNameMessage.isDisplayed())
 				utils.log().info(editProfileNameMessage.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Please provide a name for the profile text is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Please provide a name for the profile text is not displayed");
+
 			if (editProfileNameLabel.isDisplayed())
 				utils.log().info(editProfileNameLabel.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Profile Name Label is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Profile Name Label is not displayed");
+
 			if (enterProfileName.isDisplayed())
 				utils.log().info(enterProfileName.getText() + " label is displayed");
-		} catch (Exception e) {
-			utils.log().info("Enter User Profile Name text is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Enter User Profile Name text is not displayed");
+
 			if (saveButton.isDisplayed())
 				utils.log().info(saveButton.getText() + " button is displayed");
-		} catch (Exception e) {
-			utils.log().info("Save Changes button is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Save Changes button is not displayed");
+
 			if (closeButton.isDisplayed())
 				utils.log().info("Close Icon is displayed");
+			else
+				utils.log().info("Close Icon is not displayed");
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Close Icon is not displayed");
+			return false;
 		}
 	}
 	
-	public void clickSaveButton()
-	{
-		try {
+	public boolean clickSaveButton() {
+		if (saveButton.isDisplayed()) {
 			click(saveButton);
 			utils.log().info("Clicked on Save Changes Button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Save Changes button is not displayed");
+			return false;
 		}
 	}
 	
-	public void clickCloseButton()
-	{
-		try {
+	public boolean clickCloseIcon() {
+		if (closeButton.isDisplayed()) {
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
-		} catch (Exception e) {
-			utils.log().info("Close button is not displayed");
+			return true;
+		} else {
+			return false;
 		}
 	}
 	
-	public void enterUserProfileName()
-	{
-		super.generateProfileName();
-		super.sendKeys(enterProfileName, super.profileName);
-		utils.log().info("Changed User Profle Name");
+	public boolean enterUserProfileName() {
+		if (enterProfileName.isDisplayed()) {
+			super.generateProfileName();
+			super.sendKeys(enterProfileName, super.profileName);
+			utils.log().info("Changed User Profle Name");
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
 	@Override
 	public boolean isAt() {
-		if(editProfileNameTitle.isDisplayed())
-		{
+		if (editProfileNameTitle.isDisplayed()) {
 			utils.log().info("On Edit User Profile Dialog");
-			return true;}
-		else {
+			return true;
+		} else {
 			utils.log().info("Not on Edit User Profile Dialog");
-		return false;}
-
+			return false;
+		}
 	}
-
 }

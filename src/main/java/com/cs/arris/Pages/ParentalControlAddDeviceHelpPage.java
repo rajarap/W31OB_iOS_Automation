@@ -34,31 +34,36 @@ public class ParentalControlAddDeviceHelpPage extends ParentClass implements Pag
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
-		try {
+	public boolean clickCloseButton() {
+		if(closeButton.isDisplayed()) {
 			new SwipeActions().swipeScreen(Direction.UP);
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Close button is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyUIOnAddDeviceHelpPage() {
+	public boolean verifyUIOnAddDeviceHelpPage() {
 		try {
 			if (helptitle.isDisplayed())
 				utils.log().info(helptitle.getText() + " title is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Parental Control Profile title is not displayed");
-		}
-		
-		try {
+			else
+				utils.log().info("Parental Control Profile title is not displayed");
+
 			if (deviceText.isDisplayed())
 				utils.log().info("Parent Control Devices Help text is displayed ");
+			else
+				utils.log().info("Parental Control Devices Help Text is not displayed");
+
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Parental Control Devices Help Text is not displayed");
+			return false;
 		}
 	}
+
 
 	@Override
 	public boolean isAt() {

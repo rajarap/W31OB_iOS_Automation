@@ -37,36 +37,37 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
-		try {
+	public boolean clickCloseButton() {
+		if (closeButton.isDisplayed()) {
 			new SwipeActions().swipeScreen(Direction.UP);
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Close button is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyUIOnUserProfilePage() {
+	public boolean verifyUIOnUserProfilePage() {
 		try {
 			if (helptitle.isDisplayed())
 				utils.log().info(helptitle.getText() + " title is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Parental Control Profile title is not displayed");
-		}
+			else
+				utils.log().info("Parental Control Profile title is not displayed");
 
-		try {
 			if (profileView.isDisplayed())
 				utils.log().info(profileView.getText() + " text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Profile View Text is not displayed");
-		}
+			else
+				utils.log().info("Profile View Text is not displayed");
 
-		try {
 			if (profileText.isDisplayed())
 				utils.log().info("Profile Help Text is displayed ");
+			else
+				utils.log().info("Profile Help Text is not displayed");
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Profile Help Text is not displayed");
+			return false;
 		}
 	}
 

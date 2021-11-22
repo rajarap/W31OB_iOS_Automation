@@ -37,36 +37,38 @@ public class ParentalControlHelpPage extends ParentClass implements Page {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
-		try {
+	public boolean clickCloseButton() {
+		if(closeButton.isDisplayed()) {
 			new SwipeActions().swipeScreen(Direction.UP);
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Close button is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyUIOnParentalControlOverviewHelpPage() {
+	public boolean verifyUIOnParentalControlOverviewHelpPage() {
 		try {
 			if (helptitle.isDisplayed())
 				utils.log().info(helptitle.getText() + " title is displayed ");
-		} catch (Exception e) {
-			utils.log().info("Parental Control Overview title is not displayed");
-		}
+			else
+				utils.log().info("Parental Control Overview title is not displayed");
 
-		try {
 			if (overView.isDisplayed())
 				utils.log().info("OverView Text is displayed ");
-		} catch (Exception e) {
-			utils.log().info("OverView Text is not displayed");
-		}
+			else
+				utils.log().info("OverView Text is not displayed");
 
-		try {
 			if (parentalHelpText.isDisplayed())
 				utils.log().info("Parental Help Text is displayed");
+			else
+				utils.log().info("Parental Help Text is not displayed");
+
+			return true;
 		} catch (Exception e) {
-			utils.log().info("Parental Help Text is not displayed");
+			return false;
 		}
 	}
 

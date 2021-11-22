@@ -125,8 +125,6 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		return footerIconsPage;
 	}
 
-	// On-click of Enable parent control toggle button sometime ratings page comes
-	// up
 	public AppRatingDialog getAppRatingDialogObject() {
 		AppRatingDialog ratingDialog = new AppRatingDialog();
 		return ratingDialog;
@@ -152,274 +150,251 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		return helpPage;
 	}
 
-	public void verifyUIOnUserProfilePage() {
+	public boolean verifyUIOnUserProfilePage() {
 		utils.log().info("*************************************************");
 		utils.log().info(" Parental Control  - User Profile Page           ");
 		utils.log().info("*************************************************");
 		try {
 			if (userProfileTitle.isDisplayed())
 				utils.log().info("Title - " + userProfileTitle.getText() + " - is displayed");
-		} catch (Exception e) {
-			utils.log().info("User Profile Name is not displayed");
-		}
+			else
+				utils.log().info("User Profile Name is not displayed");
 
-		try {
 			if (backButton.isDisplayed())
 				utils.log().info("Back Button is displayed");
-		} catch (Exception e) {
-			utils.log().info("Back Button is not displayed");
-		}
+			else
+				utils.log().info("Back Button is not displayed");
 
-		try {
 			if (cloudIcon.isDisplayed())
 				utils.log().info("Cloud Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("Cloud Icon is not displayed");
-		}
+			else
+				utils.log().info("Cloud Icon is not displayed");
 
-		try {
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("Help Icon is not displayed");
-		}
+			else
+				utils.log().info("Help Icon is not displayed");
 
-		try {
 			if (userProfileEditIcon.isDisplayed())
 				utils.log().info("User Profile Edit Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("User Profile Edit Icon is not displayed");
-		}
+			else
+				utils.log().info("User Profile Edit Icon is not displayed");
 
-		try {
 			if (userProfilePic.isDisplayed())
 				utils.log().info("User Profile Pic is displayed");
-		} catch (Exception e) {
-			utils.log().info("User Profile Pic is not displayed");
-		}
+			else
+				utils.log().info("User Profile Pic is not displayed");
 
-		try {
 			if (userProfilePicEditIcon.isDisplayed())
 				utils.log().info("User Profile Edit pic Icon is displayed");
-		} catch (Exception e) {
-			utils.log().info("User Profile Edit pic Icon is not displayed");
-		}
+			else
+				utils.log().info("User Profile Edit pic Icon is not displayed");
 
-		try {
 			if (pauseProfileText.isDisplayed())
 				utils.log().info(pauseProfileText.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Pause Profile text is not displayed");
-		}
+			else
+				utils.log().info("Pause Profile text is not displayed");
 
-		try {
 			if (pauseInternetForCurrentProfileText.isDisplayed())
 				utils.log().info(pauseInternetForCurrentProfileText.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Pause Internet Access for Current Profile text is not displayed");
-		}
+			else
+				utils.log().info("Pause Internet Access for Current Profile text is not displayed");
 
-		try {
 			if (enablePauseInternetToggleButton.isDisplayed())
 				utils.log().info("Pause Internet for Current Profile toggle button is ON");
-		} catch (Exception e) {
-			utils.log().info("Pause Internet for Current Profile toggle button is OFF");
-		}
+			else
+				utils.log().info("Pause Internet for Current Profile toggle button is OFF");
 
-		try {
 			if (deviceCountPausedForProfile.isDisplayed())
 				utils.log().info(deviceCountPausedForProfile.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Device Count for user profie is not displayed");
-		}
+			else
+				utils.log().info("Device Count for user profie is not displayed");
 
-		try {
 			if (addDeviceLink.isDisplayed())
 				utils.log().info(addDeviceLink.getText() + " link is displayed");
-		} catch (Exception e) {
-			utils.log().info("ADD DEVICE link is not displayed");
-		}
+			else
+				utils.log().info("ADD DEVICE link is not displayed");
 
-		try {
 			if (associatedDevicesText.isDisplayed())
 				utils.log().info(associatedDevicesText.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Associated Devices text is not displayed");
-		}
+			else
+				utils.log().info("Associated Devices text is not displayed");
 
-		try {
 			if (totalDevicesAdded.isDisplayed())
 				utils.log().info(totalDevicesAdded.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Total Devices Added text is not displayed");
-		}
+			else
+				utils.log().info("Total Devices Added text is not displayed");
 
-		try {
 			if (expandDeviceListButton.isDisplayed())
 				utils.log().info("Expand button image is displayed");
-		} catch (Exception e) {
-			utils.log().info("Expand button image is not displayed");
-		}
+			else
+				utils.log().info("Expand button image is not displayed");
 
-		try {
 			if (ruleCountForProfile.isDisplayed())
 				utils.log().info(ruleCountForProfile.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Rules Count for user profile is not displayed");
-		}
+			else
+				utils.log().info("Rules Count for user profile is not displayed");
 
-		try {
 			if (addRuleLink.isDisplayed())
 				utils.log().info(addRuleLink.getText() + " link is displayed");
-		} catch (Exception e) {
-			utils.log().info("ADD RULE link is not displayed");
-		}
+			else
+				utils.log().info("ADD RULE link is not displayed");
 
-		try {
 			if (associatedRulesText.isDisplayed())
 				utils.log().info(associatedRulesText.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Associated Rules text is not displayed");
-		}
+			else
+				utils.log().info("Associated Rules text is not displayed");
 
-		try {
 			if (totalTimeActiveRule.isDisplayed())
 				utils.log().info(totalTimeActiveRule.getText() + " text is displayed");
-		} catch (Exception e) {
-			utils.log().info("Total Devices and Active Rules text is not displayed");
-		}
+			else
+				utils.log().info("Total Devices and Active Rules text is not displayed");
 
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 
-	public void clickBackButton() {
-		try {
-			if (backButton.isDisplayed())
-				click(backButton);
+	public boolean clickBackButton() {
+		if (backButton.isDisplayed()) {
+			click(backButton);
 			utils.log().info("Clicked on Back Button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Back Button is not displayed");
+			return false;
 		}
-
 	}
 
-	public void clickHelpIcon() {
-		try {
-			if (helpIcon.isDisplayed())
-				click(helpIcon);
+	public boolean clickHelpIcon() {
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
 			utils.log().info("Clicked on Help Icon");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Help Icon is not displayed");
+			return false;
 		}
 	}
 
-	public void clickAddDeviceLink() {
-		try {
-			if (addDeviceLink.isDisplayed())
-				click(addDeviceLink);
+	public boolean clickAddDeviceLink() {
+		if (addDeviceLink.isDisplayed()) {
+			click(addDeviceLink);
 			utils.log().info("Clicked on ADD DEVICE Link");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("ADD DEVICE link is not displayed");
+			return false;
 		}
 	}
 
-	public void clickAddRuleLink() {
-		try {
-			if (addRuleLink.isDisplayed())
-				click(addRuleLink);
+	public boolean clickAddRuleLink() {
+		if (addRuleLink.isDisplayed()) {
+			click(addRuleLink);
 			utils.log().info("Clicked on ADD RULE Link");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("ADD RULE link is not displayed");
+			return false;
 		}
 	}
 
-	public void clickDeviceListExpandButton() {
-		try {
-			if (expandDeviceListButton.isDisplayed())
-				click(expandDeviceListButton);
+	public boolean clickDeviceListExpandButton() {
+		if (expandDeviceListButton.isDisplayed()) {
+			click(expandDeviceListButton);
 			utils.log().info("Clicked on Device List Expand button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Device List Expand button is not displayed");
+			return false;
 		}
 	}
 	
-	public void clickRuleListExpandButton() {
-		try {
-			if (expandRuleListButton.isDisplayed())
-				click(expandRuleListButton);
+	public boolean clickRuleListExpandButton() {
+		if (expandRuleListButton.isDisplayed()) {
+			click(expandRuleListButton);
 			utils.log().info("Clicked on Rules List expand button");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("Rules List Expand button is not displayed");
+			return false;
 		}
 	}
-	
-	public void getExistingUserName() {
-		try {
-			if (userProfileTitle.isDisplayed())
-				username = userProfileTitle.getText();
+
+	public boolean getExistingUserName() {
+		if (userProfileTitle.isDisplayed()) {
+			username = userProfileTitle.getText();
 			utils.log().info("Saved Existing User Name");
-		} catch (Exception e) {
+			return true;
+		} else {
 			utils.log().info("User Profile Name is not displayed");
+			return false;
 		}
 	}
 
-	public void clickUserProfileNameEditButton() {
-		try {
-			if (userProfileEditIcon.isDisplayed())
-				click(userProfileEditIcon);
+	public boolean clickUserProfileNameEditButton() {
+		if (userProfileEditIcon.isDisplayed()) {
+			click(userProfileEditIcon);
 			utils.log().info("Clicked on User Profile Name Edit button");
-		} catch (Exception e) {
+			return true;
+		}else {
 			utils.log().info("User Profile Name Edit button is not displayed");
+			return false;
 		}
 	}
 
-	public void validateUserProfileEditedName() {
-		try {
-			if (!userProfileTitle.getText().equals(this.username))
-				utils.log().info("User Profile Name is changed to " + userProfileTitle.getText());
-		} catch (Exception e) {
+	public boolean validateUserProfileEditedName() {
+		if (!userProfileTitle.getText().equals(this.username)) {
+			utils.log().info("User Profile Name is changed to " + userProfileTitle.getText());
+			return true;
+		} else {
 			utils.log().info("User Profile Name has not changed to the newly edited name");
+			return false;
 		}
 	}
 
-	public void enablePauseInternetAccessForCurentProfiles() {
+	public boolean enablePauseInternetAccessForCurentProfiles() {
 		try {
 			if (disablePauseInternetToggleButton.isDisplayed()) {
 				click(disablePauseInternetToggleButton);
-				
+
 				if (this.getAppRatingDialogObject().isAt()) {
 					this.getAppRatingDialogObject().clickRemindMeLaterLink();
 					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
 				} else {
 					utils.log().info("App Rating Dialog is not displayed");
 				}
-			}
-			else if(enablePauseInternetToggleButton.isDisplayed())
+			} else
 				utils.log().info("Pause Internet Access for current user profile is already enabled.");
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Pause Internet Access for current user profile is not displayed");
+			return false;
 		}
 	}
 	
-	public void disablePauseInternetAccessForAllProfiles() {
+	public boolean disablePauseInternetAccessForAllProfiles() {
 		try {
 			if (enablePauseInternetToggleButton.isDisplayed()) {
 				click(enablePauseInternetToggleButton);
-				
+
 				if (getAppRatingDialogObject().isAt()) {
 					getAppRatingDialogObject().clickRemindMeLaterLink();
 					utils.log().info("App Rating Dialog - Clicked on Remind me Later Text");
 				} else {
 					utils.log().info("Internet Access is allowed for the Current User Profiles.");
 				}
-			}
-			else if(disablePauseInternetToggleButton.isDisplayed())
+			} else
 				utils.log().info("Pause Internet Access for current user profile is already disabled.");
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Pause Internet Access for Current User Profile is not displayed");
+			return false;
 		}
 	}
 
-	public void verifyAssociatedDeviceList() {
+	public boolean verifyAssociatedDeviceList() {
 		utils.log().info("*******************************************************************");
 		utils.log().info("Parental Control - List of Devices Associated with User Profile    ");
 		utils.log().info("*******************************************************************");
@@ -461,13 +436,14 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 					super.pause(3);
 				}
 			}
+			return true;
 		} catch (Exception e) {
-			utils.log()
-					.info("No devices from the Device List are associated with user : " + userProfileTitle.getText());
+			utils.log().info("No devices from the Device List are associated with user : " + userProfileTitle.getText());
+			return false;
 		}
 	}
 	
-	public void verifyAssociatedRulesList() {
+	public boolean verifyAssociatedRulesList() {
 		utils.log().info("**************************************************************");
 		utils.log().info("Parental Control - List of Rules Associated with User Profile ");
 		utils.log().info("**************************************************************");
@@ -581,9 +557,10 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 						new SwipeActions().swipeScreen(Direction.UP);
 				}
 			}
+			return true;
 		} catch (Exception e) {
-			utils.log()
-					.info("No Rules are associated with user : " + userProfileTitle.getText());
+			utils.log().info("No Rules are associated with user : " + userProfileTitle.getText());
+			return false;
 		}
 	}
 

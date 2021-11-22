@@ -40,59 +40,75 @@ public class ParentalControlAddProfileDialog extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void verifyUIOnProfilesPage()
-	{
-		if(profileName.isDisplayed())
-			utils.log().info(profileName.getText() + " text is displayed");
-		else
-			utils.log().info(profileName.getText() + " text is not displayed");
-		
-		if(profileMessage1.isDisplayed())
-			utils.log().info(profileMessage1.getText() + " text is displayed");
-		else
-			utils.log().info(profileMessage1.getText() + " text is not displayed");
-		
-		if(profileTitle.isDisplayed())
-			utils.log().info(profileTitle.getText() + " text is displayed");
-		else
-			utils.log().info(profileTitle.getText() + " text is not displayed");
-		
-		if(enterProfileName.isDisplayed())
-			utils.log().info(enterProfileName.getText() + " text is displayed");
-		else
-			utils.log().info(enterProfileName.getText() + " text is not displayed");
-		
-		if(closeIcon.isDisplayed())
-			utils.log().info("Close Icon is displayed");
-		else
-			utils.log().info("Close Icon is not displayed");
-		
-		if(createProfileButton.isDisplayed())
-			utils.log().info("Create Profile Button is displayed");
-		else
-			utils.log().info("Create Profile Button is not displayed");
-	}
-	
-	public void enterProfileName()
-	{
-		super.generateProfileName();
-		super.sendKeys(enterProfileName, super.profileName);
-		utils.log().info("Entered new Profle Name");
-	}
-	
-	public void clickCloseIcon()
-	{
-		click(closeIcon);
-		utils.log().info("Clicked on Close Icon");
-	}
-	
-	public void clickCreateProfileButton()
-	{
-		click(createProfileButton);
-		utils.log().info("Clicked on Create Profile Button Icon");
-	}
-	
+	public boolean verifyUIOnProfilesPage() {
+		try {
+			if (profileName.isDisplayed())
+				utils.log().info(profileName.getText() + " text is displayed");
+			else
+				utils.log().info(profileName.getText() + " text is not displayed");
 
+			if (profileMessage1.isDisplayed())
+				utils.log().info(profileMessage1.getText() + " text is displayed");
+			else
+				utils.log().info(profileMessage1.getText() + " text is not displayed");
+
+			if (profileTitle.isDisplayed())
+				utils.log().info(profileTitle.getText() + " text is displayed");
+			else
+				utils.log().info(profileTitle.getText() + " text is not displayed");
+
+			if (enterProfileName.isDisplayed())
+				utils.log().info(enterProfileName.getText() + " text is displayed");
+			else
+				utils.log().info(enterProfileName.getText() + " text is not displayed");
+
+			if (closeIcon.isDisplayed())
+				utils.log().info("Close Icon is displayed");
+			else
+				utils.log().info("Close Icon is not displayed");
+
+			if (createProfileButton.isDisplayed())
+				utils.log().info("Create Profile Button is displayed");
+			else
+				utils.log().info("Create Profile Button is not displayed");
+
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public boolean enterProfileName() {
+		if (enterProfileName.isDisplayed()) {
+			super.generateProfileName();
+			super.sendKeys(enterProfileName, super.profileName);
+			utils.log().info("Entered new Profle Name");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean clickCloseIcon() {
+		if (closeIcon.isDisplayed()) {
+			click(closeIcon);
+			utils.log().info("Clicked on Close Icon");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean clickCreateProfileButton() {
+		if (createProfileButton.isDisplayed()) {
+			click(createProfileButton);
+			utils.log().info("Clicked on Create Profile Button Icon");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
 	@Override
 	public boolean isAt() {
 		if(profileName.isDisplayed())
