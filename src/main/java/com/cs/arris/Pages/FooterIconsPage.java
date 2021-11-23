@@ -183,7 +183,5 @@ public class FooterIconsPage extends ParentClass implements Page
 		else {
 			utils.log().info("Not on Footer Icons Page");
 		return false;}
-		
 	}
-
 }

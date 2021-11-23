@@ -53,14 +53,10 @@ public class NetworkGeneralSettings extends ParentClass implements Page {
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/bridge_mode_info_icon")
 	public MobileElement bridgeModeInfoIcon;
-	
-	
-	
+		
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_frwd_text")
 	public MobileElement portForwardingLabel;
-	
-	
-	
+		
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_txt")
 	public MobileElement ipv6EnableLabel;
 	

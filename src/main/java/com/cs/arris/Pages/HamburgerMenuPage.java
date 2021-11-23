@@ -68,6 +68,16 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 		AmazonFeaturesPage amazonFeaturesPage = new AmazonFeaturesPage();
 		return amazonFeaturesPage;
 	}
+	
+	public AddDeviceSelectDevice1Page getAddDevicePageObject() {
+		AddDeviceSelectDevice1Page addDevicePage = new AddDeviceSelectDevice1Page();
+		return addDevicePage;
+	}
+	
+	public RemoveDevicePage getRemoveDevicePageObject() {
+		RemoveDevicePage removeDevicePage = new RemoveDevicePage();
+		return removeDevicePage;
+	}
 
 
 	public boolean clickCloseButton() {

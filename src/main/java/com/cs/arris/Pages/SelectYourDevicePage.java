@@ -66,7 +66,6 @@ public class SelectYourDevicePage  extends ParentClass implements Page
 	
 	public void clickNextButton()
 	{
-		
 		if(selectYourDeviceNextButton.isEnabled())
 		{
 			click(selectYourDeviceNextButton);
