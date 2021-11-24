@@ -41,6 +41,7 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 	String downloadSpeed;
 	String uploadSpeed;
 	int totalCountOfDevices;
+	int countOfDevices;
 
 	@BeforeClass
 	public void beforeClass() throws Exception {
@@ -114,7 +115,6 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 			}
 		}).setupWifi(setupwifi -> {
 			setupwifi.clickskipTutorialButton();
-			super.pause(3);
 		}).homePage(home -> {
 			try {
 				if (home.okButton.isDisplayed()) {
@@ -123,9 +123,9 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 			} catch (Exception e) {
 				e.getMessage();
 			}
-			if (home.isAt()) {
-				home.getFooterIconsPageObject().clickParentalButton();
-			}
+			//home.verifyUIOnHomePage();
+			//countOfDevices= home.getTotalCountOfDevices();
+			home.getFooterIconsPageObject().clickParentalButton();
 		});
 	}
 		
@@ -144,11 +144,13 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().enableParentalControl());
 		super.pause(5);
 		
-		if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
-			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
+		try {
+			if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
+				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
+		}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
 		
 		if(new ParentalControlWithProfilesPage().isAt()) {
-			for(int i = 1; i <= 5; i++)	{
+			for(int i = 1; i <= 3; i++)	{
 				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
 				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
 				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
@@ -209,9 +211,16 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 		softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
 		
 		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
-			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyandSelectDevice());
+			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevices());
+			
 			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
-			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed())
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
+			
+			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
+			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+			//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
 		}
 		
 		softcontrol7.assertAll();
@@ -223,7 +232,7 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 		softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon());
 		
 		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().isAt()) {
-			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().verifyUIOnAddDeviceHelpPage());
+			//softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().verifyUIOnAddDeviceHelpPage());
 			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton());
 		}
 		softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickBackButton());
@@ -254,43 +263,52 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 	@Test(priority = 11)
 	public void Verify_Add_EveryDay_Schedule_To_Rule() {
 		SoftAssert softcontrol11 = new SoftAssert();
-		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) {
+		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) 
 			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnAddInternetBlockingScheduleDialog());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickEveryDayButton());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-		}
+
+		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+		
+		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescription.isDisplayed())
+			
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickAlertOKButton());
+		
+		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCloseButton());
+
 		softcontrol11.assertAll();
 	}
 	
 	@Test(priority = 12)
 	public void Verify_Select_Start_Time_For_EveryDay_Schedule() {
 		SoftAssert softcontrol12 = new SoftAssert();
-		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) {
-			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().verifyUIOnDatePickerDialog());
-			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickHour());
-			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMinute());
-			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMedian());
-			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickYourTime());
+		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
+			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+		
+		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) {
+			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickEveryDayButton());
+			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());}
+		
+		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
 			softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-		}
+
 		softcontrol12.assertAll();
 	}
 	
 	@Test(priority = 13)
 	public void Verify_Select_Stop_Time_For_EveryDay_Schedule() {
 		SoftAssert softcontrol13 = new SoftAssert();
+		super.pause(65);
 		softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
 		
-		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) {
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().verifyUIOnDatePickerDialog());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickHour());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMinute());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMedian());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickYourTime());
+		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
 			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-			super.pause(3);
-		}
+			
+		softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+		super.pause(3);
+
 		softcontrol13.assertAll();
 	}
 	
@@ -319,40 +337,32 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 	public void Verify_Add_Custom_Schedule_Select_Start_Time() {
 		SoftAssert softcontrol16 = new SoftAssert();
 		softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) {
-			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().verifyUIOnDatePickerDialog());
-			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickHour());
-			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMinute());
-			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMedian());
-			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickYourTime());
+		
+		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt())
 			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-		}
-
+		
 		softcontrol16.assertAll();
 		}
 	
 	@Test(priority = 17)
 	public void Verify_Add_Custom_Schedule_Select_Stop_Time() {
 		SoftAssert softcontrol17 = new SoftAssert();
+		super.pause(65);
 		softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
 		
-		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) {
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().verifyUIOnDatePickerDialog());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickHour());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMinute());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickMedian());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().pickYourTime());
+		if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
 			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-			super.pause(3);
-		}
+		
+		softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+		super.pause(3);
+		
 		softcontrol17.assertAll();
 	}
 	
 	@Test(priority = 18)
 	public void Verify_Enable_Schedule_Time_UI_Page() {
 		SoftAssert softcontrol18 = new SoftAssert();
-		softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonAddRuleEnableScheduleTimePage());
+		softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonEnableScheduleTimePage());
 		softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickBackButton());
 		
 		softcontrol18.assertAll();
@@ -422,153 +432,12 @@ public class TC61_Login_And_Verify_ParentalControlPage_Test extends ParentClass 
 		super.pause(3);
 			
 		if(new ParentalControlWithProfilesPage().getParentalHelpPageObject().isAt()) {
-			softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().verifyUIOnParentalControlOverviewHelpPage());
+		//	softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().verifyUIOnParentalControlOverviewHelpPage());
 			softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().clickCloseButton());
 			super.pause(3);
 		}
 		softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickBackButton());
 
 		softcontrol24.assertAll();
-	}
-		
+	}		
 }
-
-
-
-//
-//
-//
-//			if(profiles.isAt())
-//			{
-//				profiles.enablePauseInternetAccessForAllUserProfiles();
-//				profiles.verifyPauseInternetAccessForAllUserProfile();
-//				super.pause(3);
-//				profiles.clickCurrentlyBlockedTab();
-//				if(profiles.getParentalControlCurrentlyBlockedTabPageObject().isAt())
-//				{
-//					profiles.getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles();
-//					profiles.getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab();
-//				}
-//				profiles.disablePauseInternetAccessForAllProfiles();
-//				profiles.verifyResumeInternetAccessForAllUserProfile();
-//				super.pause(3);
-//				profiles.clickCurrentlyBlockedTab();
-//				if(profiles.getParentalControlCurrentlyBlockedTabPageObject().isAt())
-//				{
-//					profiles.getParentalControlCurrentlyBlockedTabPageObject().verifyNoBlockedProfileMessages();
-//					profiles.getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab();
-//				}
-//				profiles.clickBackButton();	
-//				//Pause internet for all the profiles.  switch should be ON.
-//				//click Currently blocked tab and check if all the blocked user profiles are listed 
-//				//switch off for child 1
-//				//come back to proflies tab and verify is the pause all profiles switch is OFF.
-//			}
-//		});
-//	}
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//}).parentalControlWithProfilesPage(profiles -> {
-//	profiles.disableParentalControl();
-//	try {
-//		if (profiles.getAppRatingDialogObject().isAt())
-//			profiles.getAppRatingDialogObject().clickRemindMeLaterLink();
-//	} catch (Exception e) {
-//		utils.log().info("App Rating Dialog is not displayed");
-//	}
-//	profiles.clickBackButton();
-//	super.pause(3);
-//}).homePage(home -> {
-//	home.clickCurrentlyBlockedDevicesImage();
-//}).blankBlockedDevicesPage(blankBlockedDevices -> {
-//	if (blankBlockedDevices.isAt()) {
-//		blankBlockedDevices.getDeviceBlockedCountText();
-//		blankBlockedDevices.clickCloseIcon();
-//	}
-//}).homePage(home -> {
-//	home.getFooterIconsPageObject().clickParentalButton();
-//}).parentalControlWithProfilesPage(profiles -> {
-//	if (profiles.isAt()) {
-//		profiles.clickHelpIcon();
-//		super.pause(3);
-//		if (profiles.getParentalHelpPageObject().isAt()) {
-//			profiles.getParentalHelpPageObject().verifyUIOnParentalControlOverviewHelpPage();
-//			profiles.getParentalHelpPageObject().clickCloseButton();
-//			super.pause(2);
-//			profiles.clickBackButton();
-//			super.pause(3);
-//		}
-//	}
-//}).homePage(home -> {
-//	home.getFooterIconsPageObject().clickParentalButton();
-//}).parentalControlWithProfilesPage(profiles -> {
-//	if (profiles.isAt()) {
-//		profiles.verifyUIOnParentalControlProfilesPage();
-//		profiles.enableParentalControl();
-//		super.pause(5);
-//		if (profiles.getAppRatingDialogObject().isAt())
-//			profiles.getAppRatingDialogObject().clickRemindMeLaterLink();
-////		for (int i = 1; i <= 5; i++) {
-////			profiles.clickAddProfilesLink();
-////			profiles.getAddProfileDialogObject().enterProfileName();
-////			profiles.getAddProfileDialogObject().clickCreateProfileButton();
-////		}
-//		profiles.verifyUserProfile();
-//		profiles.clickOnUserProfile();
-//
-//		if (profiles.getUserProfilePageObject().isAt()) {
-//			profiles.getUserProfilePageObject().verifyUIOnUserProfilePage();
-//			profiles.getUserProfilePageObject().clickHelpIcon();
-//			super.pause(3);
-//			if (profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt()) {
-//				profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject()
-//						.verifyUIOnUserProfilePage();
-//				profiles.getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton();
-//			}
-//			profiles.getUserProfilePageObject().getExistingUserName();
-//			profiles.getUserProfilePageObject().clickUserProfileNameEditButton();
-//			if (profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()) {
-//				profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog();
-//				profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName();
-//				profiles.getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton();
-//				super.pause(3);
-//			}
-//			profiles.getUserProfilePageObject().validateUserProfileEditedName();
-//
-//			// Add Device
-//			profiles.getUserProfilePageObject().clickAddDeviceLink();
-//			if (profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
-//				profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon();
-//				if (profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
-//						.getParentalAddDeviceHelpPageObject().isAt()) {
-//					profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
-//							.getParentalAddDeviceHelpPageObject().verifyUIOnAddDeviceHelpPage();
-//					profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
-//							.getParentalAddDeviceHelpPageObject().clickCloseButton();
-//				}
-//				profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
-//						.verifyandSelectDevice(this.phoneToPause);
-//				profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
-//						.clickAddDeviceButton();
-//				profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
-//						.verifyDeviceCountAfterAssociatingToUser();
-//				profiles.getUserProfilePageObject().getParentalUserProfileAddDevicePageObject()
-//						.clickBackButton();
-//				profiles.getUserProfilePageObject().verifyAssociatedDeviceList();
-//				profiles.getUserProfilePageObject().clickDeviceListExpandButton();
-//			}

@@ -70,6 +70,7 @@ public class AddDeviceScanBarCodePage extends ParentClass implements Page {
 	public boolean clickScanButton() {
 		if (scanButton.isDisplayed()) {
 			click(scanButton);
+			super.pause(3);
 			utils.log().info("Clicked on SCAN Button");
 			return true;
 		} else {

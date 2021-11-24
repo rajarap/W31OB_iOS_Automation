@@ -19,7 +19,9 @@ public class AddDeviceHomePage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
 	public MobileElement homeTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@AndroidFindAll({ 
+		@AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),
+		@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
 	public MobileElement navigateButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_notification")
@@ -71,7 +73,7 @@ public class AddDeviceHomePage extends ParentClass implements Page {
 		 return hamburgerMenu;
 	 }
 	 	 
-	 public AddDeviceMaximumTwoDevicesDialog getMaxTwoDevicesPageObject() {
+	 public AddDeviceMaximumTwoDevicesDialog getMaxTwoDevicesDialogObject() {
 		 AddDeviceMaximumTwoDevicesDialog maxTwoDevices = new AddDeviceMaximumTwoDevicesDialog();
 		 return maxTwoDevices;
 	 }

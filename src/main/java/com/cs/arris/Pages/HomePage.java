@@ -32,7 +32,7 @@ public class HomePage extends ParentClass implements Page {
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),
-		@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']"), })
+		@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
 	public MobileElement navigateButton;
 
 	@AndroidFindAll({
@@ -610,7 +610,8 @@ public class HomePage extends ParentClass implements Page {
 	public int getTotalCountOfDevices() {
 		String noOfDevices = totalNoOfDevices.getText(); // Devices (2)
 		count = getCountOfDevicesWithSpace(noOfDevices);
-		return count;
+		super.devicesConnectedToRouter = count;
+		return super.devicesConnectedToRouter;
 	}
 
 	@Override

@@ -63,7 +63,7 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbWednesday")
 	public MobileElement wednesday;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbThrusday")
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbThursday")
 	public MobileElement thrusday;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbFriday")
@@ -71,7 +71,20 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbSaturday")
 	public MobileElement saturday;
-
+	
+	//When start date and end date are same
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
+	public MobileElement alertCloseButton;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description")
+	public MobileElement errorDescription;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
+	public MobileElement alertOKButton;
+	
+	
+	
 	public ParentalControlUserProfileAddRuleDatePickerDialog getDatePickerDialogObject() {
 		ParentalControlUserProfileAddRuleDatePickerDialog datePickerDialog = new ParentalControlUserProfileAddRuleDatePickerDialog();
 		return datePickerDialog;
@@ -142,6 +155,28 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 			return true;
 		} else {
 			utils.log().info("Close button is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickAlertCloseButton() {
+		if (alertCloseButton.isDisplayed()) {
+			click(alertCloseButton);
+			utils.log().info("Clicked on Alert Close Button");
+			return true;
+		} else {
+			utils.log().info("Alert Close button is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickAlertOKButton() {
+		if (alertOKButton.isDisplayed()) {
+			click(alertOKButton);
+			utils.log().info("Clicked on Alert OK Button");
+			return true;
+		} else {
+			utils.log().info("Alert OK button is not displayed");
 			return false;
 		}
 	}

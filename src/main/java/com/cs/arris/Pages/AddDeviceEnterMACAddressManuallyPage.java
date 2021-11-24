@@ -101,7 +101,8 @@ public class AddDeviceEnterMACAddressManuallyPage extends ParentClass implements
 	public boolean clickNextButton() {
 		if (nextButton.isDisplayed()) {
 			click(nextButton);
-			utils.log().info("Clicked on Next Button");
+			super.pause(20);
+			utils.log().info("Clicked Next Button on Enter S/N and MAC Address Manually");
 			return true;
 		} else {
 			utils.log().info("Next Button is not displayed");

@@ -97,7 +97,7 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 			utils.log().info("Details of User Profiles For Whom Internet is Currently Paused/Blocked");
 			utils.log().info("*********************************************************************");
 
-			for (int i = 1; i < 5; i++) 
+			for (int i = 1; i < 3; i++) 
 			{
 				utils.log().info("Blocked User Profile : " + counter);
 				utils.log().info("--------------------------------");
@@ -105,39 +105,30 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
 				
 				for (MobileElement e : entity) {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']").isDisplayed()) {
+						if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']").isDisplayed()) {
 							utils.log().info("Profile Image is displayed");
 					} else {
 						utils.log().info("Profile Image is not displayed ");}
 
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed()) {
-							utils.log().info("Profile user Name is : " + e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
+						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed()) {
+							utils.log().info("Profile user Name is : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
 					} else {
 						utils.log().info("User Profile Name is not displayed ");}
 	
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").isDisplayed()) {
+						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").isDisplayed()) {
 							utils.log().info("Number of Devices Paused for Internet Connection is : " + (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").getText()));
 					} else {
 						utils.log().info("Number of Devices Paused for Internet Connection is not displayed ");	}
 	
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").isDisplayed()) {
+						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").isDisplayed()) {
 							utils.log().info("Internet Paused Label is displayed : " + (e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").getText()));
 					} else {
 						utils.log().info("Internet Paused Label is not displayed ");}
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
-					counter++;
 					}
-				if (i >= 7)
-					new SwipeActions().swipeScreen(Direction.UP);
-				super.pause(3);
 			}
 			return true;
 		} catch (Exception exp) {

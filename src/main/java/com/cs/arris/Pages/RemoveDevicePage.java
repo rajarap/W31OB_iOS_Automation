@@ -89,9 +89,10 @@ public class RemoveDevicePage extends ParentClass implements Page
 	{
 //		if(deviceName1.getText() == "Cable Modem") {
 //			click(getDriver().findElement(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView[2]")));
-			
-		if(deviceName2.getText() == "Cable Modem") {
-			click(getDriver().findElement(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.ImageView[2]")));
+		utils.log().info("Device Name : " + deviceName2.getText());
+		if(deviceName2.getText().contains("Cable Modem")){
+			utils.log().info("Device Name : " + deviceName2.getText());
+			click(radioButton2);
 			return true;
 		}else {
 				return false;

@@ -71,7 +71,7 @@ public class AddDeviceLetsStartWithDeviceConnectionPage extends ParentClass impl
 	public boolean clickNextButton() {
 		if (nextButton.isDisplayed()) {
 			click(nextButton);
-			utils.log().info("Clicked on Next Button");
+			utils.log().info("Clicked Next Button on Let's Start With Device Connection");
 			return true;
 		} else {
 			utils.log().info("Next Button is not displayed");

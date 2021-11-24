@@ -104,7 +104,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test" class="method navigator-link" hash-for-method="Verify_DevicesPage">Verify_DevicesPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.cs.arris.Tests.TC62_Login_And_Verify_Add_Device_Test" class="method navigator-link" hash-for-method="Login_And_Onboard">Login_And_Onboard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -122,17 +122,17 @@
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test</span>
+              <span class="class-name">com.cs.arris.Tests.TC62_Login_And_Verify_Add_Device_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_DevicesPage">
-                  </a> <!-- Verify_DevicesPage -->
-                  <span class="method-name">Verify_DevicesPage</span>
+                  <a name="Login_And_Onboard">
+                  </a> <!-- Login_And_Onboard -->
+                  <span class="method-name">Login_And_Onboard</span>
                   <div class="stack-trace">org.testng.TestNGException: 
 Parameter &apos;platform&apos; is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
-in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse--1699792452/testng-customsuite.xml
+in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse--1550014354/testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:270)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
@@ -158,7 +158,7 @@ in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse--1699
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse--1699792452/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse--1550014354/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -167,7 +167,11 @@ in /private/var/folders/0n/gztfs3315sqflgmf8691xcwr0000gp/T/testng-eclipse--1699
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test&quot;/&gt;
+      &lt;class name=&quot;com.cs.arris.Tests.TC62_Login_And_Verify_Add_Device_Test&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Login_And_Onboard&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.cs.arris.Tests.TC62_Login_And_Verify_Add_Device_Test --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -209,8 +213,8 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify_DevicesPage')
-data.setCell(0, 2, 'com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test')
+data.setCell(0, 1, 'Login_And_Onboard')
+data.setCell(0, 2, 'com.cs.arris.Tests.TC62_Login_And_Verify_Add_Device_Test')
 data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
@@ -231,9 +235,34 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cs.arris.Tests.TC62_Login_And_Verify_Add_Device_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Verify_Remove_Device_Page</span>
+                <br/>
+                <span class="ignored-method-name">Verify_User_Guide_Page</span>
+                <br/>
+                <span class="ignored-method-name">Verify_FAQ_Page</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Add_Additional_Device</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Device_Details_Page</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Cable_Modem_TabI</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Specifications_Page</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Notifications_Page</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Notifcations_Page</span>
+                <br/>
+                <span class="ignored-method-name">Verify_Max_Router_Tab</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -242,38 +271,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.cs.arris.Tests.TC53_Login_And_Verify_DevicesPage_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.cs.arris.Tests.TC62_Login_And_Verify_Add_Device_Test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">36 ms</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Verify_DevicesPage</span>
-                <span class="method-start">39 ms</span>
+                <span class="method-name">Login_And_Onboard</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">48 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">5183 ms</span>
+                <span class="method-start">5194 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

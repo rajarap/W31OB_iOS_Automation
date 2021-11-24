@@ -27,7 +27,7 @@ import com.cs.arris.Workflows.TC60_Login_And_Verify_HamburgerMenuAndSettingsAbou
 import com.cs.arris.Workflows.TC61_Login_And_Verify_ParentalControl_Workflow;
 import com.cs.arris.Workflows.TC62_Login_And_Verify_Add_Device_Workflow;
 
-public class TC62_Login_And_Verify_Add_Device_Test extends ParentClass {
+public class TC62_Login_And_Verify_Add_And_Remove_Device_Test extends ParentClass {
 	TestUtils utils = new TestUtils();
 	String firstName;
 	String lastName;
@@ -135,7 +135,6 @@ public class TC62_Login_And_Verify_Add_Device_Test extends ParentClass {
 				modem.selectISPCableRadioButton();
 				modem.clickNextButton();
 			}).selectDevice(device -> {
-				super.swipeUp();
 				device.selectT25RadioButton();
 				device.clickNextButton();
 			}).deviceActivation(activation -> {
@@ -211,10 +210,13 @@ public class TC62_Login_And_Verify_Add_Device_Test extends ParentClass {
 	public void Verify_Add_Additional_Device() {
 		SoftAssert softhome6 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
+			softhome6.assertTrue(new AddDeviceHomePage().clickNavigationButton());
+			
+		if(new AddDeviceHomePage().getHamburgerMenuObject().isAt())
 			softhome6.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickAddDeviceButton());
 			
-		if(new AddDeviceHomePage().getMaxTwoDevicesPageObject().isAt())
-			softhome6.assertTrue(new AddDeviceHomePage().getMaxTwoDevicesPageObject().clickOkButton());
+		if(new AddDeviceHomePage().getMaxTwoDevicesDialogObject().isAt())
+			softhome6.assertTrue(new AddDeviceHomePage().getMaxTwoDevicesDialogObject().clickOkButton());
 		
 		softhome6.assertAll();
 	}
@@ -260,29 +262,20 @@ public class TC62_Login_And_Verify_Add_Device_Test extends ParentClass {
 	}
 	
 	@Test(priority = 10)
-	public void Verify_Notifcations_Page() {
+	public void Verify_Remove_Device_Page() {
 		SoftAssert softhome10 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome10.assertTrue(new AddDeviceHomePage().clickNotificationsIcon());
-		
-		if(new AddDeviceHomePage().getNotificationsPageObject().isAt())
-			softhome10.assertTrue(new AddDeviceHomePage().getNotificationsPageObject().clickBackButton());
-		
-		softhome10.assertAll();
-	}
-	
-	@Test(priority = 11)
-	public void Verify_Remove_Device_Page() {
-		SoftAssert softhome11 = new SoftAssert();
-		if(new AddDeviceHomePage().isAt())
-			softhome11.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickRemoveDeviceeButton());
+			softhome10.assertTrue(new AddDeviceHomePage().clickNavigationButton());
+			
+		if(new AddDeviceHomePage().getHamburgerMenuObject().isAt())
+			softhome10.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickRemoveDeviceeButton());
 		
 		if(new AddDeviceHomePage().getRemoveDevicePageObject().isAt()) {
-			softhome11.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().selectDeviceToRemove());
-			softhome11.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().clickNextButton());
+			softhome10.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().selectDeviceToRemove());
+			softhome10.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().clickNextButton());
 			super.pause(3);}
 			
-		softhome11.assertAll();
+		softhome10.assertAll();
 	}
 }
 	

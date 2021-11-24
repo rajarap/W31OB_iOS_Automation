@@ -49,8 +49,25 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	})
 	public MobileElement cloudIcon;
 	
-	@AndroidBy (id = "com.arris.sbcBeta:id/add_connected_devices") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/add_connected_devices") 
 	public MobileElement addDeviceButton;
+	
+	
+	//Click Add Device Button without selecting any devices
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_header_dialog")
+	public MobileElement alertTitle;
+
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description")
+	public MobileElement description;
+
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
+	public MobileElement closeIcon;
+
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
+	public MobileElement okButton;
+
+	//Click Add Device Button without selecting any devices
 	
 	public ParentalControlAddDeviceHelpPage getParentalAddDeviceHelpPageObject(){
 		ParentalControlAddDeviceHelpPage addDeviceHelpPage = new ParentalControlAddDeviceHelpPage();
@@ -96,78 +113,78 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 		}
 	}
 	
-	// Add device page should not list the device already associated to the user
-	public boolean verifyDeviceCountAfterAssociatingToUser() {
-		try {
-			int deviceListSizeBeforeAssociation = deviceListSize;
-			int deviceListSizeAfterAssociation = super.deviceNames.size();
-			int result = deviceListSizeBeforeAssociation - deviceListSizeAfterAssociation;
+	public boolean clickOKButtonOnAlertDialog()	{
+		if(okButton.isDisplayed()) {
+			click(okButton); 
+			utils.log().info("Clicked OK button on Alert Dialog");
 			return true;
-		} catch (Exception e) {
+		} else {
+			utils.log().info("Alert dialog did not appear");
 			return false;
 		}
-		// utils.log().info("Number of Devices associated to the user is " + result);
 	}
 	
+	public boolean clickCloseButtonOnAlertDialog()	{
+		if(closeIcon.isDisplayed()) {
+			click(closeIcon); 
+			utils.log().info("Clicked Close button on Alert Dialog");
+			return true;
+		} else {
+			utils.log().info("Alert dialog did not appear");
+			return false;
+		}
+	}
+	
+	// Add device page should not list the device already associated to the user
+//	public boolean verifyDeviceCountAfterAssociatingToUser() {
+//		try {
+//			int deviceListSizeBeforeAssociation = deviceListSize;
+//			int deviceListSizeAfterAssociation = super.deviceNames.size();
+//			int result = deviceListSizeBeforeAssociation - deviceListSizeAfterAssociation;
+//			return true;
+//		} catch (Exception e) {
+//			return false;
+//		}
+//		// utils.log().info("Number of Devices associated to the user is " + result);
+//	}
+	
 	// To verify the devices listed in Add Device Page
-	public boolean verifyandSelectDevice() {
-		int counter = 1;
-		String devName;
+	public boolean verifyDevices() {
+
 		utils.log().info("************************************************");
 		utils.log().info("Details of Devices Listed in the Add Device Page");
 		utils.log().info("************************************************");
 
-		deviceListSize = super.deviceNames.size();
+		utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
 
 		try {
-			for (int i = 1; i <= 2; i++) {
-				utils.log().info("Device : " + counter);
+			for (int i = 1; i <= 4; i++) {
+				utils.log().info("Device : " + i);
 				utils.log().info("--------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-								+ "]");
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
 
 				for (MobileElement e : entity) {
 					if (e.findElementByXPath(
-							"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']")
-							.isDisplayed())
+							"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
 						utils.log().info("Device Image is displayed");
 					else
 						utils.log().info("Device Image is not available : ");
 
 					if (e.findElementByXPath(
 							"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
-						utils.log()
-								.info("Device name " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']")
-										.getText());
-//						devName = e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText();
-//						if(!devName.contains("(me)"))
-//						{
-//							utils.log().info("Device Name: " + devName);
-//							deviceList.add(devName);
-//						}else {
-//							utils.log().info("Current device name " + devName + " is listed in the Add Device screen ");
-//						}
+						utils.log().info("Device name : " + e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText());
 					else
 						utils.log().info("Device Name is not available ");
 
-					if (e.findElementByXPath(
-							"//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']")
-							.isDisplayed())
+					if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
 						utils.log().info("Check box is displayed ");
-//					if(deviceList.get(i).equals(dname))
-//					{
-//						click(e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']"));
-//						utils.log().info("Selected device " + deviceList.get(i) + "for which the internet will be paused");
-//					else 
-					// utils.log().info("Device Name did not match the device name in the list ");
 					else
 						utils.log().info("Check box is not available ");
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
-					counter++;
 				}
 				if (i >= 8)
 					new SwipeActions().swipeScreen(Direction.UP);
@@ -177,6 +194,54 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 			return false;
 		}
 	}
+	
+	public boolean selectADeviceForUserProfile() {
+
+		utils.log().info("********************************************");
+		utils.log().info("Devices Added to the Selected User Profiles ");
+		utils.log().info("********************************************");
+
+		utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
+
+			try {
+				for (int i = 2; i <= 2; i++) {
+					utils.log().info("Device : " + i);
+					utils.log().info("--------------------");
+
+					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
+							+ "]");
+
+					for (MobileElement e : entity) {
+						if (e.findElementByXPath(
+								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']")
+								.isDisplayed())
+							utils.log().info("Device Image is displayed");
+						else
+							utils.log().info("Device Image is not available : ");
+
+						if (e.findElementByXPath(
+								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
+							utils.log()
+								.info("Device name : " + e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText());
+						else
+							utils.log().info("Device Name is not available ");
+
+						if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed()) {
+							click(e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']"));
+							utils.log().info("Clicked the check box to select the device for the user ");}
+						else
+							utils.log().info("Check box is not available ");
+						utils.log().info("****************************************************");
+						utils.log().info("                                                    ");
+					}
+				}
+				return true;
+			} catch (Exception e) {
+				return false;}
+	}
+
 	 
 //	//Verify if the current device name is listed. current device should not be listed.    
 //	public void verifyCurrentDeviceIsNotListed()
@@ -205,6 +270,7 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 		utils.log().info("***************************************");
 		utils.log().info(" Parental Control  -  Add Device Page  ");
 		utils.log().info("***************************************");
+		
 		try {
 			if (addDeviceTitle.isDisplayed())
 				utils.log().info("Title - " + addDeviceTitle.getText() + " - is displayed");
@@ -239,11 +305,10 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	
 	@Override
 	public boolean isAt() {
-		if(addDeviceTitle.isDisplayed())
-		{
+		if(addDeviceTitle.isDisplayed()){
 			utils.log().info("On Add Device Page");
-			return true;}
-		else {
+			return true;
+		}else {
 			utils.log().info("Not on Add Device Page");
 		return false;}
 	}

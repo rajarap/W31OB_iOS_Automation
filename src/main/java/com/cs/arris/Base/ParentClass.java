@@ -95,6 +95,7 @@ public class ParentClass
 	public InputStream stringsis = null;
 	public InputStream errorCode = null;
 	public InputStream testData = null;
+	
 	public String pltName;
 	public String dvcName;
 	public File ssFile;
@@ -102,7 +103,6 @@ public class ParentClass
 	public String mainDevice;
 	public String device1;
 	public String device2;
-	public int noOfDevices;
 	public String deviceStatus;
 	public String ssidNumber;
 	public String ssidName;
@@ -112,8 +112,10 @@ public class ParentClass
 	public String ruleName;
 	public String editedDeviceName;
 	public String editedMainDeviceName;
+	public int noOfDevices;
 	public int randNumber;
 	public int ipNumber;
+	public int devicesConnectedToRouter;
 	public List<String> profileNames = new ArrayList<String>();
 	public List<String> selectedProfileNames = new ArrayList<String>();
 	public List<String> deviceNames = new ArrayList<String>();

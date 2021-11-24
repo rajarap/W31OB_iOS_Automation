@@ -40,7 +40,15 @@ public class AddDeviceActivateYourDeviceWithServiceProviderPage extends ParentCl
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/btnSelfActivated")
 	public MobileElement selfActivateButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_skip")
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_skip")
+//	public MobileElement skipButton;
+	
+	@AndroidFindAll({
+		@AndroidBy (id = "com.arris.sbcBeta:id/btn_skip"),
+		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_skip']"),
+		@AndroidBy (xpath = "//android.widget.Button[@text='SKIP"),
+		@AndroidBy (xpath = "//android.widget.Button[@bounds='[102,1844][978,1981]']"),
+	})
 	public MobileElement skipButton;
 
 	public AddDeviceActivateYourDeviceWithServiceProviderPage() {
@@ -81,6 +89,7 @@ public class AddDeviceActivateYourDeviceWithServiceProviderPage extends ParentCl
 	public boolean clickSkipButton() {
 		if (skipButton.isDisplayed()) {
 			click(skipButton);
+			super.pause(3);
 			utils.log().info("Clicked on Skip Button");
 			return true;
 		} else {

@@ -19,13 +19,13 @@ public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_product_selection")
 	public MobileElement selectDeviceTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@rsource-id='com.arris.sbcBeta:id/ic_back_icon']")
+	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ic_back_icon']")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca")
 	public MobileElement cloudIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@rsource-id='com.arris.sbcBeta:id/need_help']")
+	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/need_help']")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(xpath = "//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup[1]/android.widget.GridView/android.view.ViewGroup[5]/android.widget.RelativeLayout/android.widget.ImageView[1]")
@@ -34,7 +34,9 @@ public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 	@AndroidFindBy(xpath = "//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup[1]/android.widget.GridView/android.view.ViewGroup[5]/android.widget.RelativeLayout/android.widget.ImageView[2]")
 	public MobileElement t25RadioButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_product_next")
+	//@AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_product_next']")
+	//@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_product_next")
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_product_selection_next")
 	public MobileElement nextButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/product_selection_description")
@@ -70,7 +72,9 @@ public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 
 	public boolean selectT25RadioButton() {
 		super.swipeUp();
-		if (t25RoutersImage.isDisplayed() && t25RadioButton.isDisplayed()) {
+		super.pause(3);
+		
+		if (t25RadioButton.isDisplayed()) {
 			click(t25RadioButton);
 			utils.log().info("Clicked on T25 Radio Button");
 			return true;
@@ -81,12 +85,13 @@ public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 	}
 
 	public boolean clickNextButton() {
-		if (nextButton.isDisplayed()) {
+		if (nextButton.isEnabled()) {
 			click(nextButton);
 			utils.log().info("Clicked on Next Button");
 			return true;
 		} else {
 			utils.log().info("Next Button is not displayed");
+			this.selectT25RadioButton();
 			return false;
 		}
 	}

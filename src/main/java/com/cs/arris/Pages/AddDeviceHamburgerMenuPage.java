@@ -33,11 +33,6 @@ public class AddDeviceHamburgerMenuPage extends ParentClass implements Page
 	     return homePage;
 	  }
 	 
-	 public AddDeviceMaximumTwoDevicesDialog getMaxTwoDevicesPageObject() {
-		 AddDeviceMaximumTwoDevicesDialog maxTwoDevices = new AddDeviceMaximumTwoDevicesDialog();
-		 return maxTwoDevices;
-	 }
-	 
 	 public boolean clickAddDeviceButton() {
 			if (addDevice.isDisplayed()) {
 				click(addDevice);

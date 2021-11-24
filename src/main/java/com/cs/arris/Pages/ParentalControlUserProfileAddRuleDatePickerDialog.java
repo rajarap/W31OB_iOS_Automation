@@ -25,6 +25,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
+	String dateStr;
 	String hh;
 	String mm;
 	String med;
@@ -76,12 +77,12 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 	public boolean verifyUIOnDatePickerDialog() {
 		try {
 			if (okButton.isDisplayed())
-				utils.log().info(okButton.getText() + " title is displayed ");
+				utils.log().info(okButton.getText() + " button is displayed ");
 			else
 				utils.log().info("Ok button is not displayed");
 
 			if (cancelButton.isDisplayed())
-				utils.log().info(cancelButton.getText() + " text is displayed ");
+				utils.log().info(cancelButton.getText() + " button is displayed ");
 			else
 				utils.log().info("Cancel button is not displayed");
 			return true;
@@ -96,8 +97,8 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 			// utils.log().info("Local Time is" + localTime); //19:12:55.514827
 
 			DateFormat dateFormat = new SimpleDateFormat("hh.mm aa");
-			String dateStr = dateFormat.format(new Date()).toString();
-			utils.log().info("Current Time is" + dateStr); // 07.16 PM
+			dateStr = dateFormat.format(new Date()).toString();
+		//	utils.log().info("Current Time is  : " + dateStr); // 07.16 PM
 			String strPattern = "^0+";
 			String dateString = dateStr.replaceAll(strPattern, ""); // 7.16 PM
 
@@ -119,6 +120,7 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 	public boolean pickHour() {
 		try {
 			this.pickTime();
+			utils.log().info("Current Time is  : " + dateStr); // 07.16 PM
 			Integer hrInt = Integer.valueOf(hh);
 			Integer hr = hrInt++;
 			if (hr == 12) {
@@ -129,11 +131,11 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 					med = "PM";
 
 				String hrs = Integer.toString(hr);
-				System.out.println("hrs : " + hrs);
+				utils.log().info("Picked hour is  : " +  hrs);
 				sendKeys(hour, hrs);
 			} else {
 				String hrs = Integer.toString(hr);
-				System.out.println("hrs : " + hrs);
+				utils.log().info("Picked hour is  : " +  hrs);
 				sendKeys(hour, hrs);
 			}
 			return true;
@@ -150,11 +152,11 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 			if (mint == 59) {
 				mint = mint -= 55;
 				String mins = Integer.toString(mint);
-				System.out.println("mins : " + mins);
+				utils.log().info("Picked minute is  : " +  mins);
 				sendKeys(min, mins);
 			} else {
 				String mins = Integer.toString(mint);
-				System.out.println("mins : " + mins);
+				utils.log().info("Picked minute is  : " +  mins);
 				sendKeys(min, mins);
 			}
 			return true;
@@ -165,7 +167,7 @@ public class ParentalControlUserProfileAddRuleDatePickerDialog extends ParentCla
 
 	public boolean pickMedian() {
 		try {
-			System.out.println("median : " + med);
+			utils.log().info("Picked median is  : " + med);
 			sendKeys(median, med);
 			return true;
 		} catch (Exception e) {

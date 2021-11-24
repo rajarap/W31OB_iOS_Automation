@@ -68,6 +68,7 @@ public class AddDeviceEstablishingConnectionPage extends ParentClass implements 
 		public boolean clickOnlineButton() {
 			if (onlineButton.isDisplayed()) {
 				click(onlineButton);
+				super.pause(3);
 				utils.log().info("Clicked on Online Button");
 				return true;
 			} else {

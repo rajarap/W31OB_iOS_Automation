@@ -58,7 +58,7 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 				utils.log().info("Profile Name Label is not displayed");
 
 			if (enterProfileName.isDisplayed())
-				utils.log().info(enterProfileName.getText() + " label is displayed");
+				utils.log().info("Profile Name: " + enterProfileName.getText() + " is displayed");
 			else
 				utils.log().info("Enter User Profile Name text is not displayed");
 
@@ -102,7 +102,6 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 		if (enterProfileName.isDisplayed()) {
 			super.generateProfileName();
 			super.sendKeys(enterProfileName, super.profileName);
-			utils.log().info("Changed User Profle Name");
 			return true;
 		} else {
 			return false;

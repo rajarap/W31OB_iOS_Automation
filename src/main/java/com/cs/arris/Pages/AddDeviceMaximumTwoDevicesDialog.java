@@ -32,16 +32,6 @@ public class AddDeviceMaximumTwoDevicesDialog extends ParentClass implements Pag
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public HomePage getHomePageObject() {
-		HomePage homePage = new HomePage();
-		return homePage;
-	}
-
-	public FooterIconsPage getFooterIconsPageObject() {
-		FooterIconsPage footerIconsPage = new FooterIconsPage();
-		return footerIconsPage;
-	}
-
 	public boolean clickOkButton() {
 		if (okButton.isDisplayed()) {
 			click(okButton);

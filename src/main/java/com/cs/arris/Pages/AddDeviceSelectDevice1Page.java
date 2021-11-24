@@ -105,6 +105,7 @@ public class AddDeviceSelectDevice1Page extends ParentClass implements Page {
 	public boolean clickNextButton() {
 		if (nextButton.isDisplayed()) {
 			click(nextButton);
+			super.pause(3);
 			utils.log().info("Clicked on Next Button");
 			return true;
 		} else {

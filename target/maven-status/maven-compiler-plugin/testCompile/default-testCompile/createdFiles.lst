@@ -12,9 +12,11 @@ com/cs/arris/Workflows/TC61_Login_And_Verify_ParentalControl_Workflow.class
 com/cs/arris/Tests/TC66_Verify_Hamburger_SettingsPage_Test.class
 com/cs/arris/COR/COR_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device.class
 com/cs/arris/Workflows/HomePage_Workflow.class
+com/cs/arris/Tests/TC62_Login_And_Verify_Add_And_Remove_Device_Test.class
 com/cs/arris/Tests/TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Test.class
 com/cs/arris/Workflows/TC03_Verify_Invalid_OTP_Workflow.class
 com/cs/arris/Workflows/TC52_Login_And_Verify_HomePage_Workflow.class
+com/cs/arris/Workflows/TC62_Login_And_Verify_Add_Device_Workflow.class
 com/cs/arris/Workflows/TC50_SignUp_And_Onboard_Workflow.class
 com/cs/arris/Workflows/TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Workflow.class
 com/cs/arris/Tests/TC50_SignUp_And_Onboard_Test.class
