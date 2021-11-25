@@ -48,6 +48,17 @@ public class Network5GHzWidebandModeAlertDialog extends ParentClass implements P
 			return false;
 		}
 	}
+	
+	public boolean clickOKButton() {
+		if (okButton.isDisplayed()) {
+			click(okButton);
+			utils.log().info("Clicked on OK Button");
+			return true;
+		} else {
+			utils.log().info("OK button is not displayed");
+			return false;
+		}
+	}
 
 	@Override
 	public boolean isAt() {

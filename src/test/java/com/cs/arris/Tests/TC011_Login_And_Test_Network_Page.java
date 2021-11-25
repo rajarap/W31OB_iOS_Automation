@@ -317,17 +317,17 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().verifyUIOnReserveLANIP());
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterRuleName());
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterIPAddress());
-			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().selectADevice());
+			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().selectADevice(2));
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().clickSaveButton());
 			softnet20.assertAll();
 		}
 	}
 	
 	@Test(priority = 21)
-	public void Verify_LAN_Settings_LAN_IP_Reservation_For_Devices_Page() 
+	public void Verify_LAN_Settings_LAN_IP_Reservation_Rules() 
 	{
 		SoftAssert softnet21 = new SoftAssert();
-		softnet21.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().verifyDevicesOnLAPIPReservationPage());
+		softnet21.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().verifyRulesOnLAPIPReservationPage());
 		softnet21.assertAll();
 	}
 	
@@ -363,259 +363,390 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 	{
 		SoftAssert softnet24 = new SoftAssert();
 		softnet24.assertTrue(new NetworkPage().getLANSettingsPageObject().clickLANSubnetLink());
-		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().isAt())
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().isAt()) {
 			softnet24.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyUIOnLANSubnetConfigurationPage());
+			softnet24.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyDHCPIPAddressRangeForSelectedSubnet());
+		}
 		softnet24.assertAll();
 	}
 	
 	@Test(priority = 25)
-	public void Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Help_Page() 
+	public void Verify_Edit_LAN_Subnet_DHCP_Range_Configuration_Page() 
 	{
 		SoftAssert softnet25 = new SoftAssert();
-		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickHelpButton());
-			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANSubnetRangeHelpPageObject().isAt()) {
-				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANSubnetRangeHelpPageObject().clickCloseButton());
-				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickBackButton());
-			softnet25.assertAll();
-		}
+		
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().EditDHCPIPAddressRangeForFirstSubnet());
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+		
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().EditDHCPIPAddressRangeForSecondSubnet());
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+		
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().EditDHCPIPAddressRangeForThirdSubnet());
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+		
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyLANDHCPRangeBetween1And255());
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().isAt())
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().clickCloseButton());
+		
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyLANDHCPRangeWithEmptySuffix());
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().isAt())
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().clickCloseButton());
+		
+		softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickResetToDefaultButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+
+		softnet25.assertAll();
 	}
 	
 	@Test(priority = 26)
-	public void Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page() 
+	public void Edit_LAN_Subnet_Configuration_Octets() 
 	{
 		SoftAssert softnet26 = new SoftAssert();
-			if(new NetworkPage().getLANSettingsPageObject().isAt())
-				softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().clickDHCPLeaseTimeLink());
-			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().isAt())
-				softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyUIOnLANLeaseTimePage());
-			softnet26.assertAll();
+		
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyFirstLANSubnetConfigurationWithInvalidOctet());
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressText1.getText() + " is displayed");
+		
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifySecondLANSubnetConfigurationWithInvalidOctet());
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressText2.getText() + " is displayed");
+
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyThirdLANSubnetConfigurationWithInvalidOctet());
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressText3.getText() + " is displayed");
+		
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyThirdLANSubnetConfigurationWithSecondInvalidOctet());
+		softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+		utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressTex16_31.getText() + " is displayed");
+		
+		softnet26.assertAll();
 	}
 	
 	@Test(priority = 27)
-	public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Page() 
+	public void Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Help_Page() 
 	{
 		SoftAssert softnet27 = new SoftAssert();
-		softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().enterLeaseTime());
-			new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton();
-			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
-			{
-				softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().verifyUIOnLANEditLeaseTimePage());
-				softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickDaysRadioButton());
-			}
-			softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
-			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
-				softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickMinutesRadioButton());
+		softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickHelpButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANSubnetRangeHelpPageObject().isAt()) {
+				softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANSubnetRangeHelpPageObject().clickCloseButton());
+				softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickBackButton());
 			softnet27.assertAll();
+		}
 	}
 	
 	@Test(priority = 28)
-	public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Help_Page() 
+	public void Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page() 
 	{
 		SoftAssert softnet28 = new SoftAssert();
-		softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickHelpButton());
-		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().isAt())
-			softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().clickCloseButton());
-			softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickBackButton());
-			softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().clickBackButton());
-		softnet28.assertAll();
+			if(new NetworkPage().getLANSettingsPageObject().isAt())
+				softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().clickDHCPLeaseTimeLink());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().isAt())
+				softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyUIOnLANLeaseTimePage());
+			softnet28.assertAll();
 	}
 	
 	@Test(priority = 29)
-	public void Verify_Device_Priority_Settings_UI_Page() 
+	public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Page() 
 	{
 		SoftAssert softnet29 = new SoftAssert();
-		softnet29.assertTrue(new NetworkPage().clickDevicePrioritySettings());
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt())
-		{
-			softnet29.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnDevicePrioritySettingsPage());
-			softnet29.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().enableDevicePrioritySettings());
-			softnet29.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
-		}
+		
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt()){
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().verifyUIOnLANEditLeaseTimePage());
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickMinutesRadioButton());}
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithMinutesTimeUnit());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+		
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickHourlyRadioButton());
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithHourlyTimeUnit());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+		
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickDaysRadioButton());
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithDaysTimeUnit());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+		
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickWeeklyRadioButton());
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithWeeklyTimeUnit());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+		
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickForeverRadioButton());
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithForeverTimeUnit());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+		
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickMinutesRadioButton());
+		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifySameLeaseTimeForAnyUnit());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedSameChangesDialogObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedSameChangesDialogObject().clickOKButton());
+		
 		softnet29.assertAll();
 	}
 	
 	@Test(priority = 30)
-	public void Verify_Device_Priority_Settings_Add_Device_UI_Page() 
+	public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Help_Page() 
 	{
 		SoftAssert softnet30 = new SoftAssert();
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().isAt()) {
-			softnet30.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyUIOnAddDevicePage());
+		softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickHelpButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().isAt())
+			softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().clickCloseButton());
+			softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickBackButton());
+			softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().clickBackButton());
 			softnet30.assertAll();
-		}
 	}
 	
 	@Test(priority = 31)
-	public void Verify_Device_Priority_Settings_Add_Device_Page() 
+	public void Verify_Device_Priority_Settings_UI_Page() 
 	{
 		SoftAssert softnet31 = new SoftAssert();
-		softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyAndSelectADevice());
-		softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
-		softnet31.assertAll();
-
-	}
-	
-	@Test(priority = 33)
-	public void Verify_Device_Priority_Settings_Added_Device_Page() 
-	{
-		SoftAssert softnet33 = new SoftAssert();
+		softnet31.assertTrue(new NetworkPage().clickDevicePrioritySettings());
 		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt())
-			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnNetworkPrioritizedDevices());
-		softnet33.assertAll();
+		{
+			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().enableDevicePrioritySettings());
+			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnDevicePrioritySettingsPage());
+			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
+		}
+		softnet31.assertAll();
 	}
 	
 	@Test(priority = 32)
-	public void Verify_Device_Priority_Settings_Added_Device_Help_Page() 
+	public void Verify_Device_Priority_Settings_Add_Device_UI_Page() 
 	{
 		SoftAssert softnet32 = new SoftAssert();
-		softnet32.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickHelpButton());
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().isAt())
-			softnet32.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().clickCloseButton());
-			softnet32.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickBackButton());
-		softnet32.assertAll();
+		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().isAt()) {
+			softnet32.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyUIOnAddDevicePage());
+			softnet32.assertAll();
+		}
+	}
+	
+	@Test(priority = 33)
+	public void Verify_Device_Priority_Settings_Add_Device_Page() 
+	{
+		SoftAssert softnet33 = new SoftAssert();
+		softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyDeviceListForPrioritization());
+		softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
+		softnet33.assertAll();
+
 	}
 	
 	@Test(priority = 34)
-	public void Verify_Device_Priority_Settings_Help_Page() 
+	public void Verify_Device_Priority_Settings_Added_Device_Page() 
 	{
 		SoftAssert softnet34 = new SoftAssert();
-		softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickHelpButton());
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().isAt())
-			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().clickCloseButton());
-			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickBackButton());
+		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt()) {
+			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnNetworkPrioritizedDevices());
+			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyTwoDevicesWithHighestPriority());}
 		softnet34.assertAll();
 	}
 	
 	@Test(priority = 35)
-	public void Verify_Time_Zone_Settings_UI_Page() 
+	public void Verify_Device_Priority_Settings_Add_Device_Help_Page() 
 	{
 		SoftAssert softnet35 = new SoftAssert();
-		super.swipeUp();
-		softnet35.assertTrue(new NetworkPage().clickTimeZone());
-		if(new NetworkPage().getTimeZoneSettingsPageObject().isAt())
-			softnet35.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().verifyUIOnTimeZonePage());
+		softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickHelpButton());
+		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().isAt())
+			softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().clickCloseButton());
+		softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickBackButton());
 		softnet35.assertAll();
 	}
 	
 	@Test(priority = 36)
-	public void Verify_Time_Zone_Settings_Help_Page() 
+	public void Verify_Device_Priority_Settings_Help_Page() 
 	{
 		SoftAssert softnet36 = new SoftAssert();
-		softnet36.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickHelpButton());
-		if (new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().isAt())
-			softnet36.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().clickCloseButton());
-			softnet36.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickBackButton());
+		softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickHelpButton());
+		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().isAt())
+			softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().clickCloseButton());
+		softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickBackButton());
 		softnet36.assertAll();
 	}
 	
 	@Test(priority = 37)
-	public void Verify_General_Settings_UI_Page() 
+	public void Verify_Time_Zone_Settings_UI_Page() 
 	{
 		SoftAssert softnet37 = new SoftAssert();
-		softnet37.assertTrue(new NetworkPage().clickGeneralSettings());
-		if(new NetworkPage().getGeneralSettingsPageObject().isAt())
-			softnet37.assertTrue(new NetworkPage().getGeneralSettingsPageObject().verifyUIOnGeneralSettingsPage());
+		super.swipeUp();
+		softnet37.assertTrue(new NetworkPage().clickTimeZone());
+		if(new NetworkPage().getTimeZoneSettingsPageObject().isAt())
+			softnet37.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().verifyUIOnTimeZonePage());
 		softnet37.assertAll();
 	}
 	
 	@Test(priority = 38)
-	public void Verify_General_Settings_UPnP_Settings() 
+	public void Verify_Time_Zone_Settings_Help_Page() 
 	{
 		SoftAssert softnet38 = new SoftAssert();
-		softnet38.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableUPnP());
-		softnet38.assertTrue(new NetworkPage().getGeneralSettingsPageObject().disableUPnP());
-		softnet38.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableUPnP());
-		softnet38.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickUPNPInfoIcon());
-		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().isAt())
-			softnet38.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().clickCloseButton());
-		softnet38.assertAll();
+		softnet38 .assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickHelpButton());
+		if (new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().isAt())
+			softnet38 .assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().clickCloseButton());
+		softnet38 .assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickBackButton());
+		softnet38 .assertAll();
 	}
 	
 	@Test(priority = 39)
+	public void Verify_General_Settings_UI_Page() 
+	{
+		SoftAssert softnet39 = new SoftAssert();
+		softnet39.assertTrue(new NetworkPage().clickGeneralSettings());
+		if(new NetworkPage().getGeneralSettingsPageObject().isAt())
+			softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().verifyUIOnGeneralSettingsPage());
+		softnet39.assertAll();
+	}
+	
+	@Test(priority = 40)
+	public void Verify_General_Settings_UPnP_Settings() 
+	{
+		SoftAssert softnet40 = new SoftAssert();
+		softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().disableUPnP());
+		softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableUPnP());
+		softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickUPNPInfoIcon());
+		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().isAt())
+			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().clickCloseButton());
+		softnet40.assertAll();
+	}
+	
+	@Test(priority = 41)
 	public void Verify_General_Settings_IPv6_Enable_Settings() 
 	{
 		SoftAssert softnet39 = new SoftAssert();
-		softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableIPV6Enable());
-		softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().disableIPv6Enable());
-		softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableIPV6Enable());
 		softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickIPv6InfoIcon());
 		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().isAt())
 			softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().clickCloseButton());
 		softnet39.assertAll();
 	}
 	
-	@Test(priority = 40)
+	@Test(priority = 42)
 	public void Verify_General_Settings_Bridge_Mode_Settings() 
 	{
-		SoftAssert softnet40 = new SoftAssert();
-		softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBridgeModeInfoIcon());
-		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().isAt())
-			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().clickCloseButton());
-		softnet40.assertAll();
-	}
-	
-	@Test(priority = 41)
-	public void Verify_General_Settings_Port_Forwarding_Settings() 
-	{
-		SoftAssert softnet41 = new SoftAssert();
-		new NetworkPage().getGeneralSettingsPageObject().clickPortForwardingink();
-		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt())
-			softnet41.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().verifyUIOnPortForwardingPage());
-		softnet41.assertAll();
-	}
-	
-	@Test(priority = 42)
-	public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page() 
-	{
 		SoftAssert softnet42 = new SoftAssert();
-		new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
-		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHAddRulePageObject().isAt())
-		{
-			super.getDriver().hideKeyboard();
-			softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHAddRulePageObject().verifyUIOnPortForwardingAddRulePage());
-			softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHAddRulePageObject().clickCloseButton());
-		}
+		softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBridgeModeInfoIcon());
+		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().isAt())
+			softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().clickCloseButton());
 		softnet42.assertAll();
 	}
 	
 	@Test(priority = 43)
-	public void Verify_General_Settings_Port_Forwarding_Help_Page() 
+	public void Verify_General_Settings_Port_Forwarding_Settings() 
 	{
 		SoftAssert softnet43 = new SoftAssert();
-		softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickHelpButton());
-		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().isAt())
-			softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().clickCloseButton());
-			softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickBackButton());
-			softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBackButton());
-			softnet43.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
+		new NetworkPage().getGeneralSettingsPageObject().clickPortForwardingink();
+		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt())
+			softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().verifyUIOnPortForwardingPage());
 		softnet43.assertAll();
 	}
 	
 	@Test(priority = 44)
-	public void Verify_Guest_WiFi_Network_Page() 
+	public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page() 
 	{
 		SoftAssert softnet44 = new SoftAssert();
-		softnet44.assertTrue(new NetworkPage().enableGuestWifiNetwork());
-		if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt())
+		new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
+		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().isAt())
+		{
 			super.getDriver().hideKeyboard();
-			softnet44.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
-			softnet44.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickCloseButton());
+			softnet44.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyUIOnPortForwardingAddRulePage());
+		}
 		softnet44.assertAll();
 	}
 	
 	@Test(priority = 45)
-	public void Verify_Extended_WiFi_Settings_Page() 
+	public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations() 
 	{
 		SoftAssert softnet45 = new SoftAssert();
-		softnet45.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-		softnet45.assertTrue(new NetworkPage().enable5GHzWidebandMode());
-		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
-			softnet45.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickCloseButton());
-			softnet45.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
-		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
-			softnet45.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickCloseButton());
-			softnet45.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-			softnet45.assertTrue(new NetworkPage().clickBackButton());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterPortForwardingRuleName());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortStart());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortEnd());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyInternalPortStartLessThenPortEnd());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortStart());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortEnd());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterValidIPAddress());
+		softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInValidIPAddress());
+		
 		softnet45.assertAll();
+	}
+	
+	@Test(priority = 46)
+	public void Verify_General_Settings_Port_Forwarding_Help_Page() 
+	{
+		SoftAssert softnet46 = new SoftAssert();
+		softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickHelpButton());
+		if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().isAt())
+			softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().clickCloseButton());
+		
+		softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickBackButton());
+		softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBackButton());
+		softnet46.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
+		softnet46.assertAll();
+	}
+	
+	@Test(priority = 47)
+	public void Verify_Guest_WiFi_Network_Page() 
+	{
+		SoftAssert softnet47 = new SoftAssert();
+		softnet47.assertTrue(new NetworkPage().enableGuestWifiNetwork());
+		
+		try {
+			if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+				softnet47.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOKButton());
+			super.pause(20);
+		}catch(Exception e) {}
+		
+		try {
+			if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt())
+			super.getDriver().hideKeyboard();
+			softnet47.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
+			softnet47.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickCloseButton());
+			}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
+		
+		try {
+			softnet47.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
+			softnet47.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
+			if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
+				softnet47.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
+				softnet47.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); }
+			softnet47.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
+		}catch(Exception e) {utils.log().info("Guest Network is not Created");}
+		
+		softnet47.assertAll();
+	}
+	
+	@Test(priority = 48)
+	public void Verify_Extended_WiFi_Settings_Page() 
+	{
+		SoftAssert softnet48 = new SoftAssert();
+		softnet48.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+		softnet48.assertTrue(new NetworkPage().enable5GHzWidebandMode());
+		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+			softnet48.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
+		softnet48.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
+		
+		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+			softnet48.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickCloseButton());
+		
+		softnet48.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+		softnet48.assertTrue(new NetworkPage().clickBackButton());
+		softnet48.assertAll();
 	}
 }
 

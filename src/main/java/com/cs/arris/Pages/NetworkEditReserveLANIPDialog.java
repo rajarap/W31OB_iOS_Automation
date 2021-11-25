@@ -153,16 +153,16 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 				utils.log().info(enterIPAddressLabel.getText() + " label is displayed");
 			else
 				utils.log().info("Enter IP Address Label is not displayed");
-
-			if (enterIPAddressTextBox.isDisplayed())
-				utils.log().info("Text box to enter IP address is displayed");
-			else
-				utils.log().info("Text box to enter IP Address is not displayed");
 			
 			if (enterIPAddressPrefixTextBox.isDisplayed())
 				utils.log().info("Prefix IP Address : " + enterIPAddressPrefixTextBox.getText());
 			else
 				utils.log().info("Prefix IP Address is not displayed");
+			
+			if (enterIPAddressSuffixTextBox.isDisplayed())
+				utils.log().info("Suffix IP Address : " + enterIPAddressSuffixTextBox.getText());
+			else
+				utils.log().info("Suffix IP Address is not displayed");
 
 			if (saveButton.isDisplayed())
 				utils.log().info(saveButton.getText() + " Save Button is displayed");

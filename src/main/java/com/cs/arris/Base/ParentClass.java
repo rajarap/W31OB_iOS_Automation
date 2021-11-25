@@ -748,6 +748,18 @@ public class ParentClass
 			 lanIPRuleName.add(ruleName);
 		}
 		
+		//For Network - LAN IP Reservation
+		public String generateGuestNetworkName()
+		{
+			Random r = new Random();
+			int low = 1;
+			int high = 10;
+			int result = r.nextInt(high-low) + low;
+			 randNum = String.valueOf(result);
+			 String guestName = "GuestNet"+ randNum;
+			 return guestName;
+		}
+		
 		//generate IP between device id between 2 and 254.
 		public void generateRandomIPNumber()
 		{

@@ -309,7 +309,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		
 	}
 	
-	public boolean verifyEditDHCPIPAddressRangeForFirstSubnet() {
+	public boolean EditDHCPIPAddressRangeForFirstSubnet() {
 		utils.log().info("                                               ");
 		utils.log().info("************************************************");
 		utils.log().info("Changing DHCP IP Address Range For First Subnet ");
@@ -328,7 +328,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		
 	}
 	
-	public boolean verifyEditDHCPIPAddressRangeForSecondSubnet() {
+	public boolean EditDHCPIPAddressRangeForSecondSubnet() {
 		utils.log().info("                                                ");
 		utils.log().info("*************************************************");
 		utils.log().info("Changing DHCP IP Address Range For Second Subnet ");
@@ -346,7 +346,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		// click save. Alert dialog "NetworkLANSubnetDHCPChangeIPRangeConfigurationAlertDialog" should appear.  Click close/cancel button
 	}
 	
-	public boolean verifyEditDHCPIPAddressRangeForThirdSubnet() {
+	public boolean EditDHCPIPAddressRangeForThirdSubnet() {
 		utils.log().info("                                               ");
 		utils.log().info("************************************************");
 		utils.log().info("Changing DHCP IP Address Range For Third Subnet ");

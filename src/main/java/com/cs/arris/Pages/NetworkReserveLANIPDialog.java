@@ -111,6 +111,7 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 		if (enterIPAddressSuffixTextBox.isDisplayed()) {
 			super.generateRandomIPNumber();
 			super.sendKeys(enterIPAddressSuffixTextBox, String.valueOf(super.ipNumber));
+			utils.log().info("Entered IP Address : " + enterIPAddressSuffixTextBox.getText());
 			return true;
 		} else {
 			utils.log().info("IP Address is not enterned");
@@ -118,11 +119,10 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 		}
 	}
 
-	public boolean selectADevice() {
+	public boolean selectADevice(int index) {
 		if (selectDeviceListBox.isDisplayed()) {
-			Select select = new Select(getDriver().findElement(By.id("com.arris.sbcBeta:id/connect_device_id")));
-			//Select select = new Select(selectDeviceListBox);
-			select.selectByIndex(1);
+			Select select = new Select(super.getDriver().findElement(By.xpath("//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/connect_device_id']")));
+			select.selectByIndex(index);
 			return true;
 		} else {
 			utils.log().info("No Option to select from list box");

@@ -15,14 +15,14 @@ import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page {
+public class NetworkEditGuestNetworkDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_cancel_dialog")
 	public MobileElement closeButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_header_dialog")
-	public MobileElement enableGuestNetworkTitle;
+	public MobileElement editGuestNetworkTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_message")
 	public MobileElement enableGuestNetworkDescription;
@@ -51,7 +51,7 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_save_dialog")
 	public MobileElement saveChangesButton;
 
-	public NetworkEnableGuestNetworkDialog() {
+	public NetworkEditGuestNetworkDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
@@ -88,8 +88,18 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 		}
 	}
 	
+	public boolean createGuestNetwork() {
+		try {
+			super.getDriver().hideKeyboard();
+			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkName());
+			sendKeys(enterPasswordTextBox,"1234567890");		
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
 	
-	public boolean verifyUIOnGuestNetworkPage() {
+	public boolean verifyUIOnEditGuestNetworkPage() {
 		utils.log().info("                                                     ");
 		utils.log().info("*****************************************************");
 		utils.log().info("Verifying UI Elements on Enable Guest Network Dialog ");
@@ -97,8 +107,8 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 		try {
 			super.getDriver().hideKeyboard();
 
-			if (enableGuestNetworkTitle.isDisplayed())
-				utils.log().info(enableGuestNetworkTitle.getText() + " title text is displayed ");
+			if (editGuestNetworkTitle.isDisplayed())
+				utils.log().info(editGuestNetworkTitle.getText() + " title text is displayed ");
 
 			if (closeButton.isDisplayed())
 				utils.log().info("Close Icon is displayed ");
@@ -132,25 +142,14 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 			return false;
 		}
 	}
-	
-	public boolean CreateNewGuestNetwork() {
-		try {
-			super.getDriver().hideKeyboard();
-			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkName());
-			sendKeys(enterPasswordTextBox,"1234567890");		
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
-	}
 
 	@Override
 	public boolean isAt() {
-		if (enableGuestNetworkTitle.isDisplayed()) {
-			utils.log().info("On Enable Guest Network Dialog");
+		if (editGuestNetworkTitle.isDisplayed()) {
+			utils.log().info("On Edit Guest Network Dialog");
 			return true;
 		} else {
-			utils.log().info("Not on Enable Guest Network Dialog");
+			utils.log().info("Not on Edit Guest Network Dialog");
 			return false;
 		}
 	}
