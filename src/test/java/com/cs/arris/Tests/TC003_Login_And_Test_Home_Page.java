@@ -22,7 +22,7 @@ import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
  
 
 
-public class TC52_Login_And_Verify_HomePage_Test extends ParentClass
+public class TC003_Login_And_Test_Home_Page extends ParentClass
 {
 	TestUtils utils = new TestUtils();
 	String firstName;

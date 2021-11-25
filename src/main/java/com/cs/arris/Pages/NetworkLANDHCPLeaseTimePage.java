@@ -17,8 +17,6 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	// ====================Network SSID Password
-	// ===========================================
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
 	public MobileElement lanDHCPLeaseTimeTitle;
 
@@ -42,7 +40,55 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/save_lease_time")
 	public MobileElement saveLeaseTimeButton;
-
+	
+	// Minute
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement zeroLeaseTimeError;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement maximumLeaseTimeError;
+	
+	// Minute
+	
+	//Hourly
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement zeroHourlyLeaseTimeError;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement maximumHourlyLeaseTimeError;
+	
+	//Hourly
+	
+	//Days
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement zeroDaysLeaseTimeError;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement maximumDaysLeaseTimeError;
+	
+	//Days
+	
+	//Weekly
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement zeroWeeklyLeaseTimeError;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	public MobileElement maximumWeeklyLeaseTimeError;
+	
+	//Weekly
+	
+	//Forever
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_lease_time")
+	public MobileElement disabledLeaseTimeTextBox;
+	
+	//forever
+	
+	
 	public NetworkLANDHCPLeaseTimePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
@@ -61,7 +107,17 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		NetworkLANDHCPLeaseTimeEditTimeUnitDialog timeUnitPage = new NetworkLANDHCPLeaseTimeEditTimeUnitDialog();
 		return timeUnitPage;
 	}
-
+	
+	public NetworkLANDHCPLeaseTimeAppliedChangesDialog getLeaseTimeAppliedChangesDialogObject() {
+		NetworkLANDHCPLeaseTimeAppliedChangesDialog appliedChanges = new NetworkLANDHCPLeaseTimeAppliedChangesDialog();
+		return appliedChanges;
+	}
+	
+	public NetworkLANDHCPLeaseTimeAppliedSameChangesDialog getLeaseTimeAppliedSameChangesDialogObject() {
+		NetworkLANDHCPLeaseTimeAppliedSameChangesDialog appliedSameChanges = new NetworkLANDHCPLeaseTimeAppliedSameChangesDialog();
+		return appliedSameChanges;
+	}
+	
 	public boolean clickBackButton() {
 		try {
 			if (backIcon.isDisplayed()) {
@@ -103,9 +159,14 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 
 	public boolean clickSaveLeaseTimeButton() {
 		try {
-			if (saveLeaseTimeButton.isDisplayed()) {
-				click(saveLeaseTimeButton);
-				utils.log().info("Clicked on Save Lease Time Button");
+			super.getDriver().hideKeyboard();
+		}catch (Exception e) {}
+
+		try {
+				super.getDriver().hideKeyboard();
+				if (saveLeaseTimeButton.isDisplayed()) {
+					click(saveLeaseTimeButton);
+					utils.log().info("Clicked on Save Lease Time Button");
 			}
 			return true;
 		} catch (Exception e) {
@@ -114,12 +175,12 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		}
 	}
 
-	public boolean enterLeaseTime() {
+	public boolean enterLeaseTime(String leaseTime) {
 		try {
 			if (enterLeaseTimeTextBox.isDisplayed()) {
 				clear(enterLeaseTimeTextBox);
-				sendKeys(enterLeaseTimeTextBox, "1440");
-				utils.log().info("Entered Lease time of 1440");
+				sendKeys(enterLeaseTimeTextBox, leaseTime);
+				utils.log().info("Entered Lease time : " + leaseTime);
 			}
 			return true;
 		} catch (Exception e) {
@@ -170,6 +231,11 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 			else
 				utils.log().info("Button to select the time unit is not displayed");
 			
+			if (selectTimeUnitButton.isDisplayed())
+				utils.log().info("By Default " + selectTimeUnitButton.getText() + " is selected");
+			else
+				utils.log().info("Button to select the time unit is not displayed");
+			
 			if (saveLeaseTimeButton.isDisplayed())
 				utils.log().info("Save Lease Time Button is displayed");
 			else
@@ -181,6 +247,137 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		}
 	}
 
+	public boolean verifyLeaseTimeWithMinutesTimeUnit() {
+		utils.log().info("                                           ");
+		utils.log().info("*******************************************");
+		utils.log().info("Verifying Lease Time with Minutes Time Unit");
+		utils.log().info("*******************************************");
+		
+		// First select the Minute option in the Test
+		
+		this.enterLeaseTime("0");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time as 0. An error Message : " + zeroLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("35791395");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time greater than 35791394. An error Message : " + maximumLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("25791395");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Enter Lease Time between 1 and 35791395 and applied the changes successfully");
+		
+		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
+		return true;
+	}
+	
+	public boolean verifyLeaseTimeWithHourlyTimeUnit() {
+		utils.log().info("                                           ");
+		utils.log().info("*******************************************");
+		utils.log().info("Verifying Lease Time with Hourly Time Unit ");
+		utils.log().info("*******************************************");
+		
+		// First select the Hourly option in the Test
+		
+		this.enterLeaseTime("0");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time as 0. An error Message : " + zeroHourlyLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("3579139");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time greater than 596523. An error Message : " + maximumHourlyLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("2335");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Enter Lease Time between 1 and 596523 and applied the changes successfully");
+		
+		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
+		return true;
+	}
+	
+	public boolean verifyLeaseTimeWithDaysTimeUnit() {
+		utils.log().info("                                           ");
+		utils.log().info("*******************************************");
+		utils.log().info("Verifying Lease Time with Days Time Unit   ");
+		utils.log().info("*******************************************");
+		
+		// First select the Days option in the Test
+		
+		this.enterLeaseTime("0");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time as 0. An error Message : " + zeroDaysLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("24888");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time greater than 24855. An error Message : " + maximumDaysLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("22215");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Enter Lease Time between 1 and 24855 and applied the changes successfully");
+		
+		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
+		return true;
+	}
+	
+	public boolean verifyLeaseTimeWithWeeklyTimeUnit() {
+		utils.log().info("                                           ");
+		utils.log().info("*******************************************");
+		utils.log().info("Verifying Lease Time with Weekly Time Unit ");
+		utils.log().info("*******************************************");
+		
+		// First select the Weekly option in the Test
+		
+		this.enterLeaseTime("0");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time as 0. An error Message : " + zeroWeeklyLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("34523");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Entered Lease Time greater than 3550. An error Message : " + maximumWeeklyLeaseTimeError.getText() + " is displayed");
+		
+		this.enterLeaseTime("2773");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Enter Lease Time between 1 and 3550 and applied the changes successfully");
+		
+		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
+		return true;
+	}
+	
+	public boolean verifyLeaseTimeWithForeverTimeUnit() {
+		utils.log().info("                                            ");
+		utils.log().info("********************************************");
+		utils.log().info("Verifying Lease Time with Forever Time Unit ");
+		utils.log().info("********************************************");
+		
+		// First select the Forever option in the Test
+		if(disabledLeaseTimeTextBox.isDisplayed() && !(disabledLeaseTimeTextBox.isEnabled()))
+			utils.log().info("Lease Time Text Box is disabled for this TimeUnit. Default Lease Time set for Forever TimeUnit is : " + disabledLeaseTimeTextBox.getText());
+
+		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
+		return true;
+	}
+	
+	public boolean verifySameLeaseTimeForAnyUnit() {
+		utils.log().info("                                            ");
+		utils.log().info("********************************************");
+		utils.log().info("Verifying Same Lease Time for Any Time Unit ");
+		utils.log().info("********************************************");
+		
+		// First select the Minutes option in the Test
+
+		this.enterLeaseTime("2000");
+		this.clickSaveLeaseTimeButton();
+		utils.log().info("Enter Lease Time between 1 and 35791395 and applied the changes successfully");
+		utils.log().info("Entered Same Lease Time and clicked Save Button");
+		this.enterLeaseTime("2000");
+		this.clickSaveLeaseTimeButton();
+		
+		//NetworkLANDHCPLeaseTimeAppliedSameChangesDialog - Click OK button
+		
+		return true;
+	}
+	
+	
 	@Override
 	public boolean isAt() {
 		if (lanDHCPLeaseTimeTitle.isDisplayed()) {

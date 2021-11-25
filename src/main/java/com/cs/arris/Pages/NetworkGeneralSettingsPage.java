@@ -127,7 +127,7 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 			click(portForwardingLabel);
 			return true;
 		} else {
-			utils.log().info("WAN IP Configuration Link is not displayed");
+			utils.log().info("Port Forwarding Link is not displayed");
 			return false;
 		}
 	}
@@ -138,7 +138,7 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 			utils.log().info("Clicked on UPnP Info Icon");
 			return true;
 		} else {
-			utils.log().info("LAC Link is not displayed");
+			utils.log().info("UPnP Info Icon is not displayed");
 			return false;
 		}
 	}
@@ -149,7 +149,7 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 			utils.log().info("Clicked on Bridge Mode Info Icon");
 			return true;
 		} else {
-			utils.log().info("LAC Link is not displayed");
+			utils.log().info("Bridge Mode Info Icon is not displayed");
 			return false;
 		}
 	}
@@ -160,7 +160,7 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 			utils.log().info("Clicked on IPv6 Info Icon");
 			return true;
 		} else {
-			utils.log().info("LAC Link is not displayed");
+			utils.log().info("IPv6 Info Icon is not displayed");
 			return false;
 		}
 	}
@@ -169,13 +169,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 		if (enableUPNPToggleButton.isDisplayed()) {
 			utils.log().info("UPnP is already enabled");
 			return true;
-		} else if (disableUPNPToggleButton.isDisplayed()) {
-			click(disableUPNPToggleButton);
-			utils.log().info("UPnP is turned ON");
-			return true;
 		} else {
-			utils.log().info("UPnP toggle switch button is not displayed");
-			return false;
+			click(disableUPNPToggleButton);
+			utils.log().info("UPnP is now enabled");
+			return true;
 		}
 	}
 
@@ -183,13 +180,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 		if (disableUPNPToggleButton.isDisplayed()) {
 			utils.log().info("UPnP is already disabled");
 			return true;
-		} else if (enableUPNPToggleButton.isDisplayed()) {
-			click(enableUPNPToggleButton);
-			utils.log().info("UPnP is turned OFF");
-			return true;
 		} else {
-			utils.log().info("UPnP toggle switch button is not displayed");
-			return false;
+			click(enableUPNPToggleButton);
+			utils.log().info("UPnP is now disabled");
+			return true;
 		}
 	}
 
@@ -197,13 +191,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 		if (enableBridgeModeToggleButton.isDisplayed()) {
 			utils.log().info("Bridge Mode is already enabled");
 			return true;
-		} else if (disableBridgeModeToggleButton.isDisplayed()) {
-			click(disableBridgeModeToggleButton);
-			utils.log().info("Bridge Mode is turned ON");
-			return true;
 		} else {
-			utils.log().info("Bridge Mode toggle switch button is not displayed");
-			return false;
+			click(disableBridgeModeToggleButton);
+			utils.log().info("Bridge Mode is now enabled");
+			return true;
 		}
 	}
 
@@ -211,13 +202,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 		if (disableBridgeModeToggleButton.isDisplayed()) {
 			utils.log().info("Bridge Mode is already disabled");
 			return true;
-		} else if (enableBridgeModeToggleButton.isDisplayed()) {
-			click(enableBridgeModeToggleButton);
-			utils.log().info("Bridge Mode is turned OFF");
-			return true;
 		} else {
-			utils.log().info("Bridge Mode toggle switch button is not displayed");
-			return false;
+			click(enableBridgeModeToggleButton);
+			utils.log().info("Bridge Mode is now disabled");
+			return true;
 		}
 	}
 
@@ -225,35 +213,29 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 		if (enableIPv6ToggleButton.isDisplayed()) {
 			utils.log().info("IPv6 Enableis already enabled");
 			return true;
-		} else if (disableIPv6ToggleButton.isDisplayed()) {
-			click(disableIPv6ToggleButton);
-			utils.log().info("IPv6 Enable is turned ON");
-			return true;
 		} else {
-			utils.log().info("IPv6 Enable toggle switch button is not displayed");
-			return false;
-		}
+			click(disableIPv6ToggleButton);
+			utils.log().info("IPv6 Enable is now enabled");
+			return true;
+		} 
 	}
 
 	public boolean disableIPv6Enable() {
 		if(disableIPv6ToggleButton.isDisplayed()) {
 			utils.log().info("IPv6 Enable is already disabled");
 			return true;
-		} else if (enableIPv6ToggleButton.isDisplayed()) {
-			click(enableIPv6ToggleButton);
-			utils.log().info("IPv6 Enable is turned OFF");
-			return true;
 		} else {
-			utils.log().info("IPv6 Enable toggle switch button is not displayed");
-			return false;
-		}
+			click(enableIPv6ToggleButton);
+			utils.log().info("IPv6 Enable is now disabled");
+			return true;
+		} 
 	}
 
 	public boolean verifyUIOnGeneralSettingsPage() {
-		utils.log().info("                                                         ");
-		utils.log().info("*********************************************************");
-		utils.log().info("Verifying UI Elements on Network - General Settings Page ");
-		utils.log().info("*********************************************************");
+		utils.log().info("                                               ");
+		utils.log().info("***********************************************");
+		utils.log().info("Verifying UI Elements on General Settings Page ");
+		utils.log().info("***********************************************");
 
 		try {
 			if (generalSettingsTitle.isDisplayed())
@@ -267,22 +249,29 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 
 			if (upnpLabel.isDisplayed())
 				utils.log().info("UPnP Link is displayed");
-
-			if (disableUPNPToggleButton.isDisplayed() && !(disableUPNPToggleButton.isEnabled()))
-				utils.log().info("UPnp toggle button is displayed but is disabled(OFF)");
-			else
-				utils.log().info("UPnp toggle button is displayed and is enabled(ON)");
+			
+			try {
+				if (disableUPNPToggleButton.isDisplayed() && !(disableUPNPToggleButton.isEnabled()))
+					utils.log().info("UPnp toggle button is displayed but is disabled");
+				
+				if (disableUPNPToggleButton.isDisplayed() && disableUPNPToggleButton.isEnabled())
+					utils.log().info("UPnp toggle button is displayed and is enabled");
+			}catch(Exception e) {}
 
 			if (upnpInfoIcon.isDisplayed())
 				utils.log().info("UPnP Info Icon is displayed");
 
 			if (bridgeModeLabel.isDisplayed())
 				utils.log().info("Bridge Mode Link is displayed");
+			
+			try {
+				if (disableBridgeModeToggleButton.isDisplayed() && !(disableBridgeModeToggleButton.isEnabled()))
+					utils.log().info("Bridge Mode toggle button is displayed but is disabled");
+				
+				if (disableBridgeModeToggleButton.isDisplayed() && disableBridgeModeToggleButton.isEnabled())
+					utils.log().info("Bridge Mode toggle button is displayed and is enabled");
+			}catch(Exception e) {}
 
-			if (disableBridgeModeToggleButton.isDisplayed() && !(disableBridgeModeToggleButton.isEnabled()))
-				utils.log().info("Bridge Mode toggle button is displayed but is disabled(OFF)");
-			else
-				utils.log().info("Bridge Mode toggle button is displayed and is enabled(ON)");
 
 			if (bridgeModeInfoIcon.isDisplayed())
 				utils.log().info("Bridge Mode Info Icon is displayed");
@@ -292,11 +281,14 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 
 			if (ipv6EnableLabel.isDisplayed())
 				utils.log().info("IPv6 Enable is displayed");
-
-			if (disableIPv6ToggleButton.isDisplayed() && !(disableIPv6ToggleButton.isEnabled()))
-				utils.log().info("IPv6 Enable toggle button is displayed but is disabled(OFF)");
-			else
-				utils.log().info("IPv6 Enable toggle button is displayed and is enabled(ON)");
+			
+			try {
+				if (disableIPv6ToggleButton.isDisplayed() && !(disableIPv6ToggleButton.isEnabled()))
+					utils.log().info("IPv6 Enable toggle button is displayed but is disabled");
+				
+				if (disableIPv6ToggleButton.isDisplayed() && disableIPv6ToggleButton.isEnabled())
+					utils.log().info("IPv6 Enable toggle button is displayed and is enabled");
+			}catch(Exception e) {}
 
 			if (ipv6InfoIcon.isDisplayed())
 				utils.log().info("IPv6 Enable Info Icon is displayed");

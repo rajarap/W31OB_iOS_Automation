@@ -305,7 +305,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	public boolean clickDeviceListExpandButton() {
 		if (expandDeviceListButton.isDisplayed()) {
 			click(expandDeviceListButton);
-			utils.log().info("Clicked on Device List Expand button");
+			//utils.log().info("Clicked on Device List Expand button");
 			return true;
 		} else {
 			utils.log().info("Device List Expand button is not displayed");

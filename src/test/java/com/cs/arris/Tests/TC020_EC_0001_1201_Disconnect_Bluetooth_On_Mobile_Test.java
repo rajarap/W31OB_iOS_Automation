@@ -21,7 +21,7 @@ import com.cs.arris.Workflows.TC51_Signin_And_Onboard_Workflow;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test extends ParentClass
+public class TC020_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Test extends ParentClass
 {
 	TestUtils utils = new TestUtils();
 	BlueToothPage blueTooth;

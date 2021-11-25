@@ -151,11 +151,11 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	// To verify the devices listed in Add Device Page
 	public boolean verifyDevices() {
 
-		utils.log().info("************************************************");
-		utils.log().info("Details of Devices Listed in the Add Device Page");
-		utils.log().info("************************************************");
+		utils.log().info("*************************************");
+		utils.log().info("Devices Listed in the Add Device Page");
+		utils.log().info("*************************************");
 
-		utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
+		//utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
 
 		try {
 			for (int i = 1; i <= 4; i++) {
@@ -197,11 +197,11 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	
 	public boolean selectADeviceForUserProfile() {
 
-		utils.log().info("********************************************");
-		utils.log().info("Devices Added to the Selected User Profiles ");
-		utils.log().info("********************************************");
+		utils.log().info("*******************************************");
+		utils.log().info("Devices Added to the Selected User Profile ");
+		utils.log().info("*******************************************");
 
-		utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
+		//utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
 
 			try {
 				for (int i = 2; i <= 2; i++) {

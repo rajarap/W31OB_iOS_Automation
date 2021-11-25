@@ -27,7 +27,7 @@ import com.cs.arris.Workflows.TC60_Login_And_Verify_HamburgerMenuAndSettingsAbou
 import com.cs.arris.Workflows.TC61_Login_And_Verify_ParentalControl_Workflow;
 import com.cs.arris.Workflows.TC62_Login_And_Verify_Add_Device_Workflow;
 
-public class TC62_Login_And_Verify_Add_And_Remove_Device_Test extends ParentClass {
+public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	TestUtils utils = new TestUtils();
 	String firstName;
 	String lastName;

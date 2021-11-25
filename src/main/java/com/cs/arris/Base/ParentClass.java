@@ -677,6 +677,57 @@ public class ParentClass
 			profileNames.add(profileName);
 		}
 		
+		public String generatePortRuleName()
+		{
+			Random r = new Random();
+			int low = 10;
+			int high = 100;
+			int result = r.nextInt(high-low) + low;
+			randNum = String.valueOf(result);
+			String portRuleName = "PortRule"+ randNum;
+			return portRuleName;
+		}
+		
+		public String generateInternalPortStart()
+		{
+			Random r = new Random();
+			int low = 1001;
+			int high = 1050;
+			int result = r.nextInt(high-low) + low;
+			return String.valueOf(result);
+		}
+		
+		public String generateInternalPortEnd()
+		{
+			Random r = new Random();
+			int low = 1051;
+			int high = 1100;
+			int result = r.nextInt(high-low) + low;
+			return String.valueOf(result);
+		}
+		
+		public String generateExternalPortStart()
+		{
+			Random r = new Random();
+			int low = 1101;
+			int high = 1150;
+			int result = r.nextInt(high-low) + low;
+			return String.valueOf(result);
+		}
+		
+		public String generateExternalPortEnd()
+		{
+			Random r = new Random();
+			int low = 1151;
+			int high = 1200;
+			int result = r.nextInt(high-low) + low;
+			return String.valueOf(result);
+		}
+		
+		
+		
+		
+		
 		public void generateRandomNumber13()
 		{
 			int min = 1;

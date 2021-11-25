@@ -162,7 +162,7 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 	public boolean clickAlertCloseButton() {
 		if (alertCloseButton.isDisplayed()) {
 			click(alertCloseButton);
-			utils.log().info("Clicked on Alert Close Button");
+			utils.log().info("Clicked Close buton on Alert Dialog");
 			return true;
 		} else {
 			utils.log().info("Alert Close button is not displayed");
@@ -173,7 +173,7 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 	public boolean clickAlertOKButton() {
 		if (alertOKButton.isDisplayed()) {
 			click(alertOKButton);
-			utils.log().info("Clicked on Alert OK Button");
+			utils.log().info("Clicked OK button on Alert Dialog");
 			return true;
 		} else {
 			utils.log().info("Alert OK button is not displayed");

@@ -22,7 +22,7 @@ import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
 import com.cs.arris.Workflows.TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Workflow;
 
-public class TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Test extends ParentClass {
+public class TC008_Login_And_Test_Hamburger_Menu_And_Settings_About_Help_Page extends ParentClass {
 	TestUtils utils = new TestUtils();
 	String firstName;
 	String lastName;

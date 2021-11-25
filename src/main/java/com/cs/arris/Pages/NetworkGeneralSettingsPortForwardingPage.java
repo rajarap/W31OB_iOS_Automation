@@ -1,5 +1,7 @@
 package com.cs.arris.Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
@@ -40,9 +42,14 @@ public class NetworkGeneralSettingsPortForwardingPage extends ParentClass implem
 		return portForwardingHelpPage;
 	}
 
-	public NetworkGeneralSettingsPortFowardingAddRulePage getPortForwardingHAddRulePageObject() {
+	public NetworkGeneralSettingsPortFowardingAddRulePage getPortForwardingAddRulePageObject() {
 		NetworkGeneralSettingsPortFowardingAddRulePage portForwardingHAddRulePage = new NetworkGeneralSettingsPortFowardingAddRulePage();
 		return portForwardingHAddRulePage;
+	}
+	
+	public NetworkEditPortForwardingRulePage getEditPortForwardingRulePageObject() {
+		NetworkEditPortForwardingRulePage editPortForwardingRulePage = new NetworkEditPortForwardingRulePage();
+		return editPortForwardingRulePage;
 	}
 
 	public FooterIconsPage getFooterIconsPageObject() {
@@ -103,6 +110,108 @@ public class NetworkGeneralSettingsPortForwardingPage extends ParentClass implem
 					utils.log().info("Add Rule button is displayed");
 				return true;
 		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	
+	public boolean verifyPortFowardingRules() {
+		utils.log().info("                                         ");
+		utils.log().info("*****************************************");
+		utils.log().info(" Verifying List of Port Forwarding Rules ");
+		utils.log().info("*****************************************");
+	
+		try {
+			for (int i = 1; i <= 5; i++) {
+			utils.log().info("Port Forwarding Rule  : " + i);
+			utils.log().info("----------------------------");
+
+			List<MobileElement> entity = (List<MobileElement>) super.getDriver()
+				.findElementsByXPath("androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout");
+
+			for (MobileElement e : entity) {
+				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/description_name']").isDisplayed())
+					utils.log().info("Port Forwardig Rule Name is displayed");
+				else
+					utils.log().info("Port Forwardig Rule Name is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']").isDisplayed())
+					utils.log().info("Port Forwardig Edit Rule Name Icon is displayed");
+				else
+					utils.log().info("Port Forwardig Edit Rule Name Icon is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@text='Protocol']").isDisplayed())
+					utils.log().info("Protocol Label is displayed");
+				else
+					utils.log().info("Protocol Label is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/protocol_name']").isDisplayed())
+					utils.log().info(e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/protocol_name']").getText() + " Protocol is displayed");
+				else
+					utils.log().info("Selected Protocol is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@text='IP Address']").isDisplayed())
+					utils.log().info("IP Address Label is displayed");
+				else
+					utils.log().info("IP Address Label is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/portforwarding_ip_address']").isDisplayed())
+					utils.log().info("IP Address : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/portforwarding_ip_address']").getText() + " is displayed");
+				else
+					utils.log().info("IP Address is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@text='Internal Port Range']").isDisplayed())
+					utils.log().info("Internal Port Range Label is displayed");
+				else
+					utils.log().info("Internal Port Range Label is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internal_port_range']").isDisplayed())
+					utils.log().info("Internal Port Range : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internal_port_range']").getText() + " is displayed");
+				else
+					utils.log().info("Internal Port Range is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@text='External Port Range']").isDisplayed())
+					utils.log().info("External Port Range Label is displayed");
+				else
+					utils.log().info("External Port Range Label is not displayed");
+				
+				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/external_port_range']").isDisplayed())
+					utils.log().info("External Port Range : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internal_port_range']").getText() + " is displayed");	
+				else
+					utils.log().info("External Port Range is not displayed");
+			}
+		}
+			return true;
+		}catch(Exception e){
+			utils.log().info("No Device found to prioritize");
+			return false;
+		}
+	}
+
+	public boolean clickEditPortFowardingRuleIcon(int count) {
+		utils.log().info("                            ");
+		utils.log().info("****************************");
+		utils.log().info(" Edit Port Forwarding Rules ");
+		utils.log().info("****************************");
+	
+		try {
+			for (int i = count; i <= count; i++) {
+			utils.log().info("Editing Port Forwarding Rule  : " + i);
+			utils.log().info("-------------------------------------");
+
+			List<MobileElement> entity = (List<MobileElement>) super.getDriver()
+				.findElementsByXPath("androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout");
+
+			for (MobileElement e : entity) {		
+				if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']").isDisplayed())
+					click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']"));
+				else
+					utils.log().info("Port Forwardig Edit Rule Name Icon is not displayed");
+			}
+		}
+			return true;
+		}catch(Exception e){
+			utils.log().info("No Device found to prioritize");
 			return false;
 		}
 	}

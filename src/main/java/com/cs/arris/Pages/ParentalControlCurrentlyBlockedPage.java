@@ -99,7 +99,7 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 
 			for (int i = 1; i < 3; i++) 
 			{
-				utils.log().info("Blocked User Profile : " + counter);
+				utils.log().info("Blocked User Profile : " + i);
 				utils.log().info("--------------------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");

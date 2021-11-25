@@ -23,7 +23,7 @@ import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
 import com.cs.arris.Workflows.TC59_Login_And_Verify_AmazonFeatures_Workflow;
 import com.cs.arris.Workflows.TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Workflow;
 
-public class TC59_Login_And_Verify_AmazonFeatures_Test extends ParentClass {
+public class TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature extends ParentClass {
 	TestUtils utils = new TestUtils();
 	String firstName;
 	String lastName;

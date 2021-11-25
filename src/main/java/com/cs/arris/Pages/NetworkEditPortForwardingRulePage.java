@@ -15,15 +15,15 @@ import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass implements Page {
+public class NetworkEditPortForwardingRulePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
-	String[] ipAddress = {"192.168.7.101", "192.168.7.102" , "192.168.7.103", "192.168.7.104" , "192.168.7.105"};
+	String[] ipAddress = {"192.168.7.106", "192.168.7.107" , "192.168.7.108", "192.168.7.109" , "192.168.7.110"};
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_cancel_dialog")
 	public MobileElement closeButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_forwarding_header_dialog")
-	public MobileElement portRuletitle;
+	public MobileElement editPortRuletitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_forwarding_name_dialog")
 	public MobileElement portRuleNameLabel;
@@ -110,7 +110,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_ip_address_dialog_error")
 	public MobileElement enterInvalidIPAddress;
 	
-	public NetworkGeneralSettingsPortFowardingAddRulePage() {
+	public NetworkEditPortForwardingRulePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
@@ -136,20 +136,20 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		}
 	}
 
-	public boolean verifyUIOnPortForwardingAddRulePage() {
-		utils.log().info("                                                                                  ");
-		utils.log().info("**********************************************************************************");
-		utils.log().info("Verifying UI Elements on Network - General Settings Port Forwarding Add Rule Page ");
-		utils.log().info("**********************************************************************************");
+	public boolean verifyUIOnEditPortForwardingRulePage() {
+		utils.log().info("                                                                                   ");
+		utils.log().info("***********************************************************************************");
+		utils.log().info("Verifying UI Elements on Network - General Settings Edit Port Forwarding Rule Page ");
+		utils.log().info("***********************************************************************************");
 		try {
-			if (portRuletitle.isDisplayed())
-				utils.log().info(portRuletitle.getText() + " title text is displayed ");
+			if (editPortRuletitle.isDisplayed())
+				utils.log().info(editPortRuletitle.getText() + " title text is displayed ");
 
 			if (portRuleNameLabel.isDisplayed())
 				utils.log().info(portRuleNameLabel.getText() + " label is displayed ");
 
 			if (enterPortRuleNameTextBox.isDisplayed())
-				utils.log().info("Port Forwarding Rule Name text box is displayed ");
+				utils.log().info("Port Forwarding Rule Name " + enterPortRuleNameTextBox.getText() + " is displayed ");
 
 			if (protocolLabel.isDisplayed())
 				utils.log().info(protocolLabel.getText() + " label is displayed ");
@@ -167,31 +167,31 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 				utils.log().info(enterInternalPortStartTextBox.getText() + " label is displayed ");
 
 			if (enterInternalPortStartTextBox.isDisplayed())
-				utils.log().info("Enter Internal Port Start text box is displayed ");
+				utils.log().info("Internal Port Start " + enterInternalPortStartTextBox.getText() + " is displayed ");
 
 			if (enterInternalPortEndLabel.isDisplayed())
 				utils.log().info(enterInternalPortEndLabel.getText() + " label is displayed ");
 
 			if (enterInternalPortEndTextBox.isDisplayed())
-				utils.log().info("Enter Internal Port End text box is displayed ");
+				utils.log().info("Internal Port End " +  enterInternalPortEndTextBox.getText() +" is displayed ");
 
 			if (enterExternalPortStartLabel.isDisplayed())
 				utils.log().info(enterExternalPortStartLabel.getText() + " label is displayed ");
 
 			if (enterExternalPortStartTextBox.isDisplayed())
-				utils.log().info("Enter External Port Start text box is displayed ");
+				utils.log().info("External Port Start " + enterExternalPortStartTextBox.getText() + " is displayed ");
 
 			if (enterExternalPortEndLabel.isDisplayed())
 				utils.log().info(enterExternalPortEndLabel.getText() + " label is displayed ");
 
 			if (enterExternalPortEndTextBox.isDisplayed())
-				utils.log().info("Enter Internal Port End text box is displayed ");
+				utils.log().info("Internal Port End " +  enterExternalPortEndTextBox.getText() + " is displayed ");
 
 			if (enterInternalIPAddressLabel.isDisplayed())
 				utils.log().info(enterInternalIPAddressLabel.getText() + " label is displayed ");
 
 			if (enterInternalIPAddressTextBox.isDisplayed())
-				utils.log().info("Enter Internal IP Address text box is displayed ");
+				utils.log().info("Internal IP Address " +  enterInternalIPAddressTextBox.getText() + " is displayed ");
 
 			if (saveChangesButton.isDisplayed())
 				utils.log().info("Save button is displayed");
@@ -208,7 +208,6 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("Verifying Enter Port Forwarding Rule Name   ");
 		utils.log().info("********************************************");
 		
-		this.clickSaveButton();
 		if(portNameDialogError.isDisplayed())
 			utils.log().info(portNameDialogError.getText() + " is displayed");
 		sendKeys(enterPortRuleNameTextBox, "PortRule1");
@@ -229,92 +228,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		return true;
 	}
 	
-	//Click Save Changes without entering any data
-	public boolean verifyEnterInternalPortEnd() {
-		utils.log().info("                                            ");
-		utils.log().info("********************************************");
-		utils.log().info("Verifying Enter Internal Port End Error   ");
-		utils.log().info("********************************************");
 		
-		this.clickSaveButton();
-		if(internalStartPortLessThanEndPort.isDisplayed())
-			utils.log().info(internalStartPortLessThanEndPort.getText() + " is displayed");
-		sendKeys(enterInternalPortEndTextBox, "8070");
-		return true;
-	}
-	
-	//Click Save Changes without entering any data
-	public boolean verifyInternalPortStartLessThenPortEnd() {
-		utils.log().info("                                                                 ");
-		utils.log().info("*****************************************************************");
-		utils.log().info("Verifying Internal Port Start Should Be Less Than Port End Error ");
-		utils.log().info("*****************************************************************");
-		
-		this.clickSaveButton();
-		if(internalStartPortLessThanEndPort.isDisplayed())
-			utils.log().info(internalStartPortLessThanEndPort.getText() + " is displayed");
-		sendKeys(enterInternalPortEndTextBox, "9000");
-		return true;
-	}
-	
-	//Click Save Changes without entering any data
-	public boolean verifyEnterExternalPortStart() {
-		utils.log().info("                                            ");
-		utils.log().info("********************************************");
-		utils.log().info("Verifying Enter External Port Start Error   ");
-		utils.log().info("********************************************");
-		
-		this.clickSaveButton();
-		if(externalPortStartError.isDisplayed())
-			utils.log().info(externalPortStartError.getText() + " is displayed");
-		sendKeys(enterExternalPortStartTextBox, "9010");
-		return true;
-	}
-	
-	//Click Save Changes without entering any data
-	public boolean verifyEnterExternalPortEnd() {
-		utils.log().info("                                            ");
-		utils.log().info("********************************************");
-		utils.log().info("Verifying Enter External Port End Error   ");
-		utils.log().info("********************************************");
-		
-		this.clickSaveButton();
-		if(externalPortEndError.isDisplayed())
-			utils.log().info(externalPortEndError.getText() + " is displayed");
-		sendKeys(enterExternalPortEndTextBox, "9030");
-		return true;
-	}
-	
-	//Click Save Changes without entering any data
-	public boolean verifyEnterValidIPAddress() {
-		utils.log().info("                                        ");
-		utils.log().info("****************************************");
-		utils.log().info("Verifying Enter Valid IP Address Error  ");
-		utils.log().info("****************************************");
-		
-		this.clickSaveButton();
-		if(enterValidIPAddress.isDisplayed())
-			utils.log().info(enterValidIPAddress.getText() + " is displayed");
-		//enter invalid IP address
-		sendKeys(enterInternalIPAddressTextBox, "127.0.0.1");
-		return true;
-	}
-	
-	//Click Save Changes without entering any data
-	public boolean verifyEnterInValidIPAddress() {
-		utils.log().info("                                          ");
-		utils.log().info("******************************************");
-		utils.log().info("Verifying Enter InValid IP Address Error  ");
-		utils.log().info("******************************************");
-		
-		this.clickSaveButton();
-		if(enterInvalidIPAddress.isDisplayed())
-			utils.log().info(enterInvalidIPAddress.getText() + " is displayed");
-		sendKeys(enterInternalIPAddressTextBox, "192.168.7.150");
-		this.clickSaveButton();
-		return true;
-	}
-	
 	public boolean createPortRuleName() {
 		getDriver().hideKeyboard();
 		if(enterPortRuleNameTextBox.isDisplayed())
@@ -379,11 +293,11 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 	
 	@Override
 	public boolean isAt() {
-		if (portRuletitle.isDisplayed()) {
-			utils.log().info("On Port Forwarding Add Rule Page");
+		if (editPortRuletitle.isDisplayed()) {
+			utils.log().info("On Edit Port Forwarding Rule Page");
 			return true;
 		} else {
-			utils.log().info("Not on Port Forwarding Add Rule Page");
+			utils.log().info("Not on Edit Port Forwarding Rule Page");
 			return false;
 		}
 	}

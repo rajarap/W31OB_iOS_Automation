@@ -23,7 +23,7 @@ import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
 import com.cs.arris.Workflows.TC56_Login_And_Verify_MainDevicesPage_Workflow;
 
-public class TC56_Login_And_Verify_MainDevicesPage_Test extends ParentClass {
+public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 	TestUtils utils = new TestUtils();
 	String firstName;
 	String lastName;

@@ -228,12 +228,12 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 			try {
 				if (disableParentalControlToggleButton.isDisplayed())
 				utils.log().info("Parental Control Switch button is OFF");
-			}catch(Exception exp) {utils.log().info("Parental Control is already enabled");}
+			}catch(Exception exp) {utils.log().info("Parental Control is enabled");}
 			
 			try {
 				if (enableParentalControlToggleButton.isDisplayed())
 					utils.log().info("Parental Control Switch button is ON");
-				}catch(Exception exp) {utils.log().info("Parental Control is already disabled");}
+				}catch(Exception exp) {utils.log().info("Parental Control is disabled");}
 
 			if (userProfilesText.isDisplayed())
 				utils.log().info(userProfilesText.getText() + " text is displayed");
@@ -257,8 +257,13 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 			try {	
 				if (disablePauseAllProfilesToggleButton.isDisplayed())
-					utils.log().info("Pause All Profiles Switch button is disabled(OFF)");
+					utils.log().info("Pause All Profiles Switch button is OFF");
 			}catch(Exception exp) {utils.log().info("Pause All Profiles Switch button enabled");}
+			
+			try {	
+				if (enablePauseAllProfilesToggleButton.isDisplayed())
+					utils.log().info("Pause All Profiles Switch button is ON");
+			}catch(Exception exp) {utils.log().info("Pause All Profiles Switch button disabled");}
 			
 			try {	
 				if (noProfilesText1.isDisplayed())
@@ -586,7 +591,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		utils.log().info("Internet Is Paused For The Following User Profiles ");
 		utils.log().info("***************************************************");
 		try {
-			for (int i = 1; i < 5; i++) {
+			for (int i = 1; i < 3 ; i++) {
 				utils.log().info("User Profile : " + counter);
 				utils.log().info("----------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
@@ -660,7 +665,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		utils.log().info("****************************************************");
 		
 		try {
-			for (int i = 1; i < 5; i++) {
+			for (int i = 1; i < 3 ; i++) {
 				utils.log().info("User Profile : " + counter);
 				utils.log().info("----------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(

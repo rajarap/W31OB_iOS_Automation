@@ -19,11 +19,11 @@ public class ParentalControlAddDeviceHelpPage extends ParentClass implements Pag
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose]"), // CONTINUE
+			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']"), 
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
 	public MobileElement closeButton;
-
+	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Parental Control Devices']") 
 	public MobileElement helptitle;
 	
@@ -36,7 +36,6 @@ public class ParentalControlAddDeviceHelpPage extends ParentClass implements Pag
 
 	public boolean clickCloseButton() {
 		if(closeButton.isDisplayed()) {
-			new SwipeActions().swipeScreen(Direction.UP);
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
 			return true;
@@ -46,23 +45,23 @@ public class ParentalControlAddDeviceHelpPage extends ParentClass implements Pag
 		}
 	}
 
-	public boolean verifyUIOnAddDeviceHelpPage() {
-		try {
-			if (helptitle.isDisplayed())
-				utils.log().info(helptitle.getText() + " title is displayed ");
-			else
-				utils.log().info("Parental Control Profile title is not displayed");
-
-			if (deviceText.isDisplayed())
-				utils.log().info("Parent Control Devices Help text is displayed ");
-			else
-				utils.log().info("Parental Control Devices Help Text is not displayed");
-
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
-	}
+//	public boolean verifyUIOnAddDeviceHelpPage() {
+//		try {
+//			if (helptitle.isDisplayed())
+//				utils.log().info(helptitle.getText() + " title is displayed ");
+//			else
+//				utils.log().info("Parental Control Profile title is not displayed");
+//
+//			if (deviceText.isDisplayed())
+//				utils.log().info("Parent Control Devices Help text is displayed ");
+//			else
+//				utils.log().info("Parental Control Devices Help Text is not displayed");
+//
+//			return true;
+//		} catch (Exception e) {
+//			return false;
+//		}
+//	}
 
 
 	@Override
