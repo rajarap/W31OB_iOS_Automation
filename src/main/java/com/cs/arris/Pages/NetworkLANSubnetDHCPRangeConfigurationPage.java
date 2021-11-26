@@ -167,6 +167,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 	}
 
 	public boolean clickSaveButton() {
+		super.getDriver().hideKeyboard();
 		if (saveButton.isDisplayed()) {
 			click(saveButton);
 			utils.log().info("Clicked on Save Changes button");
@@ -293,14 +294,17 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Verifying DHCP IP Address Range For Selected Subnet ");
 		utils.log().info("****************************************************");
 		
+		//192.168.0.1 (192.168.0.100/192.168.0.254)
 		click(firstRadiodButtonFirstDigit);
 		utils.log().info("First Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		utils.log().info("First Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		
+		//10.0.0.1 (10.0.0.100/10.0.0.254)
 		click(secondRadioFirstDigit);
 		utils.log().info("Second Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		utils.log().info("Second Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		
+		//172.16.0.1 (172.16.0.100/172.16.0.254)
 		click(thirdRadioFirstDigit);
 		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
@@ -319,9 +323,8 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("First Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		utils.log().info("First Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		super.sendKeys(startingIPSuffix, "10");
-		utils.log().info("First Subnet - Starting DHCP IP Address Range is Changed to : " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		super.sendKeys(startingIPSuffix, "150");
-		utils.log().info("First Subnet - Ending DHCP IP Address Range is Changed to : " + endingIPPrefix.getText() + endingIPSuffix.getText());
+
 		return true;
 		
 		// click save. Alert dialog "NetworkLANSubnetDHCPChangeIPRangeConfigurationAlertDialog" should appear.  Click close/cancel button
@@ -338,9 +341,8 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Second Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		utils.log().info("Second Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		super.sendKeys(startingIPSuffix, "150");
-		utils.log().info("Second Subnet - Starting DHCP IP Address Range is Changed to : " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		super.sendKeys(endingIPSuffix, "220");
-		utils.log().info("Second Subnet - Ending DHCP IP Address Range is Changed to : " + endingIPPrefix.getText() + endingIPSuffix.getText());
+
 		return true;
 		
 		// click save. Alert dialog "NetworkLANSubnetDHCPChangeIPRangeConfigurationAlertDialog" should appear.  Click close/cancel button
@@ -356,9 +358,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		super.sendKeys(startingIPSuffix, "10");
-		utils.log().info("Third Subnet - Starting DHCP IP Address Range is Changed to : " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		super.sendKeys(endingIPSuffix, "150");
-		utils.log().info("Third Subnet - Ending DHCP IP Address Range is Changed to : " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		return true;
 		
 		// click save. Alert dialog "NetworkLANSubnetDHCPChangeIPRangeConfigurationAlertDialog" should appear.  Click close/cancel button
@@ -375,9 +375,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		super.sendKeys(startingIPSuffix, "1");
-		utils.log().info("Third Subnet - Starting DHCP IP Address Range is Changed to : " + startingIPPrefix.getText() + startingIPSuffix.getText());
 		super.sendKeys(endingIPSuffix, "255");
-		utils.log().info("Third Subnet - Ending DHCP IP Address Range is Changed to : " + endingIPPrefix.getText() + endingIPSuffix.getText());
 		return true;
 		
 		// click save. Alert dialog "NetworkLANDHCPIPRangeBetween1And255AlertDialog" should appear.  Click close/cancel button
@@ -392,6 +390,8 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		click(firstRadiodButtonFirstDigit);
 		utils.log().info("Selected First Subnet IP address Radion button option : " + firstRadiodButtonFirstDigit.getText() + "." + firstRadioButtonSecondDigit.getText()
 		+ "." + firstRadioButtonThridDigit.getText() + "." + firstRadioButtonFourthDigit.getText());
+		utils.log().info("Changing 3rd Octet value to 999");
+		clear(firstRadioButtonThridDigit);
 		super.sendKeys(firstRadioButtonThridDigit, "999");
 		return true;
 		
@@ -407,7 +407,11 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		click(secondRadioFirstDigit);
 		utils.log().info("Selected Second Subnet IP address Radion button option : " + secondRadioFirstDigit.getText() + "." + secondRadioButtonSecondDigit.getText()
 		+ "." + secondRadioButtonThridDigit.getText() + "." + secondRadioButtonFourthDigit.getText());
+		utils.log().info("Changing 2nd Octet value to 555");
+		clear(secondRadioButtonSecondDigit);
 		super.sendKeys(secondRadioButtonSecondDigit, "555");
+		utils.log().info("Changing 3rd Octet value to 888");
+		clear(secondRadioButtonThridDigit);
 		super.sendKeys(secondRadioButtonThridDigit, "888");
 		return true;
 		
@@ -423,8 +427,12 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		click(thirdRadioFirstDigit);
 		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + "." + thirdRadioButtonSecondDigit.getText()
 		+ "." + thirdRadioButtonThridDigit.getText() + "." + thirdRadioButtonFourthDigit.getText());
-		super.sendKeys(secondRadioButtonSecondDigit, "666");
-		super.sendKeys(secondRadioButtonThridDigit, "000");
+		utils.log().info("Changing 2nd Octet value to 666");
+		clear(thirdRadioButtonSecondDigit);
+		super.sendKeys(thirdRadioButtonSecondDigit, "666");
+		utils.log().info("Changing 3rd Octet value to 000");
+		clear(thirdRadioButtonThridDigit);
+		super.sendKeys(thirdRadioButtonThridDigit, "000");
 		return true;
 		
 		//click save.  enterValidIPAddressText3 text should be displayed
@@ -439,7 +447,9 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		click(thirdRadioFirstDigit);
 		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + "." + thirdRadioButtonSecondDigit.getText()
 		+ "." + thirdRadioButtonThridDigit.getText() + "." + thirdRadioButtonFourthDigit.getText());
+		clear(secondRadioButtonSecondDigit);
 		super.sendKeys(secondRadioButtonSecondDigit, "10");
+		utils.log().info("Changing 2nd Octet value to 10");
 		return true;
 		
 		//click save. enterValidIPAddressTex16_31 text should be displayed
@@ -455,6 +465,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + "." + thirdRadioButtonSecondDigit.getText()
 		+ "." + thirdRadioButtonThridDigit.getText() + "." + thirdRadioButtonFourthDigit.getText());
 		super.sendKeys(startingIPSuffix, " ");
+		utils.log().info("Changing 3rd Octet value to blank");
 		return true;
 		
 		//click save. Alert dialog "NetworkLANDHCPIPRangeBetween1And255AlertDialog" should appear.  Click close/cancel button

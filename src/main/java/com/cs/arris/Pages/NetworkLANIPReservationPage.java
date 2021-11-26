@@ -158,7 +158,7 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 					if (e.findElementByXPath(
 							"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']").isDisplayed())
 						utils.log()
-								.info("Device Name: " + e.findElementByXPath(
+								.info("Rule Name: " + e.findElementByXPath(
 										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']")
 										.getText());
 

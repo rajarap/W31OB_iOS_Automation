@@ -266,6 +266,8 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		this.enterLeaseTime("25791395");
 		this.clickSaveLeaseTimeButton();
 		utils.log().info("Enter Lease Time between 1 and 35791395 and applied the changes successfully");
+		utils.log().info("                                           ");
+		utils.log().info("                                           ");
 		
 		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
 		return true;
@@ -291,6 +293,9 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		this.clickSaveLeaseTimeButton();
 		utils.log().info("Enter Lease Time between 1 and 596523 and applied the changes successfully");
 		
+		utils.log().info("                                           ");
+		utils.log().info("                                           ");
+		
 		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
 		return true;
 	}
@@ -314,6 +319,8 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		this.enterLeaseTime("22215");
 		this.clickSaveLeaseTimeButton();
 		utils.log().info("Enter Lease Time between 1 and 24855 and applied the changes successfully");
+		utils.log().info("                                           ");
+		utils.log().info("                                           ");
 		
 		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
 		return true;
@@ -338,6 +345,8 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		this.enterLeaseTime("2773");
 		this.clickSaveLeaseTimeButton();
 		utils.log().info("Enter Lease Time between 1 and 3550 and applied the changes successfully");
+		utils.log().info("                                           ");
+		utils.log().info("                                           ");
 		
 		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
 		return true;
@@ -352,7 +361,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		// First select the Forever option in the Test
 		if(disabledLeaseTimeTextBox.isDisplayed() && !(disabledLeaseTimeTextBox.isEnabled()))
 			utils.log().info("Lease Time Text Box is disabled for this TimeUnit. Default Lease Time set for Forever TimeUnit is : " + disabledLeaseTimeTextBox.getText());
-
+		this.clickSaveLeaseTimeButton();
 		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
 		return true;
 	}

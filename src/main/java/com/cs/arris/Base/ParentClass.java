@@ -105,8 +105,8 @@ public class ParentClass
 	public String device2;
 	public String deviceStatus;
 	public String ssidNumber;
-	public String ssidName;
-	public String ssidpwd;
+//	public String ssidName;
+//	public String ssidpwd;
 	public String randNum;
 	public String profileName;
 	public String ruleName;
@@ -657,13 +657,13 @@ public class ParentClass
 			}
 		}
 		
-		public void generateSSIDNameAndPassword()
-		{
-			 Integer randomNumber = (int)(Math.random()*9000)+1000;
-			 ssidNumber = String.valueOf(randomNumber);
-			 ssidName = "arris"+ssidNumber;
-			 ssidpwd = "1234567890";
-		}
+//		public void generateSSIDNameAndPassword()
+//		{
+//			 Integer randomNumber = (int)(Math.random()*900)+100;
+//			 ssidNumber = String.valueOf(randomNumber);
+//			 ssidName = "arrisw31-"+ssidNumber;
+//			 ssidpwd = "1234567890";
+//		}
 		
 		public void generateProfileName()
 		{
@@ -675,6 +675,18 @@ public class ParentClass
 			randNum = String.valueOf(result);
 			profileName = "profile"+ randNum;
 			profileNames.add(profileName);
+		}
+		
+		public String generateRouterSSID()
+		{
+			Random r = new Random();
+			int low = 100;
+			int high = 999;
+			int result = r.nextInt(high-low) + low;
+			randNum = String.valueOf(result);
+			String routerName = "arrisW31-"+ randNum;
+			utils.log().info("Name generated : " + routerName);
+			return routerName;
 		}
 		
 		public String generatePortRuleName()
@@ -723,11 +735,7 @@ public class ParentClass
 			int result = r.nextInt(high-low) + low;
 			return String.valueOf(result);
 		}
-		
-		
-		
-		
-		
+			
 		public void generateRandomNumber13()
 		{
 			int min = 1;

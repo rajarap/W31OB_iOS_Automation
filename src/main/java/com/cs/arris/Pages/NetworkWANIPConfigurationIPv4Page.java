@@ -318,7 +318,7 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 				utils.log().info("IPV6 Tab is not displayed");
 
 			if (staticRadioButtonChecked.isDisplayed())
-				utils.log().info("Satic Radio button is displayed and is selected");
+				utils.log().info("Static Radio button is displayed and is selected");
 			else
 				utils.log().info("Static Radio button is not displayed");
 

@@ -23,7 +23,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 	String lastName;
 	String email;
 	String passCode;
-	String ssid;
+	String ssidName;
 	String ssidpass;
 	String udid;
 	
@@ -33,7 +33,8 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		 try 
 	   	  	{
 			  String dataFileName = "testdata/signup";
-			  utils.log().info("Loading...Sign Up Test Data");
+			  //utils.log().info("Loading...Sign Up Test Data");
+			  
 			  super.loadTestData(dataFileName);
 			  
 			  this.firstName = properties.getProperty("firstname");
@@ -45,8 +46,8 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  this.email = properties.getProperty("email");
 			  utils.log().info("Email address : " + this.email);
 			  
-			  this.ssid = properties.getProperty("ssidname");
-			  utils.log().info("SSID Name : " + this.ssid);
+			  this.ssidName = super.generateRouterSSID();
+			  utils.log().info("SSID Name : " + this.ssidName);
 			  
 			  this.ssidpass = properties.getProperty("ssidpwd");
 			  utils.log().info("SSID Password : " + this.ssidpass);
@@ -54,7 +55,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  this.udid = properties.getProperty("udid");
 			  utils.log().info("UDID : " + this.udid);
 			  
-			  utils.log().info("Retrieved...Sign Up Test Data");
+			  //utils.log().info("Retrieved...Sign Up Test Data");
 			} catch(Exception e) {
 			 e.printStackTrace();
 		} 
@@ -62,9 +63,8 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 	
 	
 	  @BeforeMethod
-	  public void beforeMethod(Method m) 
-	  {
-		   utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
+	  public void beforeMethod(Method m) {
+		  utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
 	  }
 	  
 	  @Test(priority = 1)
@@ -125,17 +125,17 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  super.pause(40);
 		  }).systemFirmwareUpdatePage(firmwareUpdate -> {
 			  firmwareUpdate.clickNextButton();
-			  super.pause(15);
+			  super.pause(30);
 		  }).warrantyAndSupportPage(warrantyAndSupport -> {
 			  warrantyAndSupport.clickContinueButton();
 		  }).nameYourNetworkPage(nameYourNetwork -> {
-			  nameYourNetwork.enterSSIDName();
-			  nameYourNetwork.enterSSIDPassword();
+			  nameYourNetwork.enterSSIDName(this.ssidName);
+			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
 			  nameYourNetwork.clickNextButton();
 			  super.pause(25);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
 			  super.pause(15);
-			  connectionRequired.turnOnRouterWifi(this.ssid, this.ssidpass, this.udid);
+			  connectionRequired.turnOnRouterWifi(this.ssidName, this.ssidpass, this.udid);
 			  super.pause(15);
 			  connectionRequired.clickContinue();
 			  super.pause(15);
@@ -153,21 +153,6 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  super.pause(25);
 	  	  }).homePage(homepage -> {		//Network optimization dialog2 is included inside homepage
 	  		  homepage.clickOkButton();
-//	  		  super.pause(5);
-			  //Successfully onboarded mAX router 
-//			  homepage.verifyUIOnHomePage();
-//			  homepage.clickDeviceSignalStrengthButton();
-//	  	  }).deviceSignalStrengthPage(deviceSignalStrength -> {
-//	  		deviceSignalStrength.verifyUIOnDeviceSignalStrengthPage();
-//	  		deviceSignalStrength.clickHomeButton();
-//	  	  }).homePage(homepage -> {		
-//	  		  homepage.clickSpeedTestHistoryButton();
-//	  	  }).speedTestHistoryPage(speedTest -> {
-//	  		speedTest.clickHomeButton();
-//	  	  }).homePage(homepage -> {		
-//	  		  homepage.clickCurrentlyBlockedDevicesButton();
-//	  	  }).currentlyBlockedDevicesPage(blockedDevices -> {
-//	  		blockedDevices.clickHomeButton();
 		  });
 	  }
 }

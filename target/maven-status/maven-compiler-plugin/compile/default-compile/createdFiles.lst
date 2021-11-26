@@ -129,6 +129,7 @@ com/cs/arris/Pages/AddDeviceFooterIconsPage.class
 com/cs/arris/Pages/ConnectMaxRouterToInternetPage.class
 com/cs/arris/Pages/NetworkTimeZoneSettingsHelpPage.class
 com/cs/arris/Pages/ConnectMaxRouterToMobileDevicePage.class
+com/cs/arris/Pages/NetworkLANDHCPLeaseNoChangesUpdatedDialog.class
 com/cs/arris/Pages/EditDeviceNameDialog.class
 com/cs/arris/Pages/NetworkWANIPConfigurationIPv4Page.class
 com/cs/arris/Pages/AddDeviceHomePageSpecificationDetailsPage.class

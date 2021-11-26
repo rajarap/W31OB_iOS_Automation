@@ -1,7 +1,6 @@
 package com.cs.arris.Pages;
 
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
@@ -15,42 +14,52 @@ import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class NetworkWANIPConfigurationHelpPage extends ParentClass implements Page {
+public class NetworkLANDHCPLeaseNoChangesUpdatedDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivDialogClose")
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/webView") 
-	public MobileElement wanIPConfigurationTitle;
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description")
+	public MobileElement description;
+
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
+	public MobileElement okButton;
+
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,731][1029,968]']")
-	public MobileElement controlAndConfigure;
-		
-	public NetworkWANIPConfigurationHelpPage() {
+	public NetworkLANDHCPLeaseNoChangesUpdatedDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
+	public boolean clickOKButton() {
+		if (okButton.isDisplayed()) {
+			click(okButton);
+			utils.log().info("Clicked on OK Button");
+			return true;
+		} else {
+			utils.log().info("OK Button is not displayed");
+			return false;
+		}
+	}
+	
 	public boolean clickCloseButton() {
 		if (closeButton.isDisplayed()) {
-			new SwipeActions().swipeScreen(Direction.UP);
-			new SwipeActions().swipeScreen(Direction.UP);
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
 			return true;
 		} else {
-			utils.log().info("Close button is not displayed");
+			utils.log().info("Close Button is not displayed");
 			return false;
 		}
 	}
 
 	@Override
 	public boolean isAt() {
-		if (wanIPConfigurationTitle.isDisplayed()) {
-			utils.log().info("On WAN IP Configuration Help Page");
+		if (description.isDisplayed()) {
+			utils.log().info("On No Changes are updated Dialog");
 			return true;
 		} else {
-			utils.log().info("Not on WAN IP Configuration Help Page");
+			utils.log().info("Not on No Changes are updated Dialog");
 			return false;
 		}
 	}

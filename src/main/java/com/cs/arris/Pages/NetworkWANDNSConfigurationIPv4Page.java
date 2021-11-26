@@ -32,40 +32,46 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_btn_dns")
 	public MobileElement dnsIPv6Tab;
 	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_automatic_radio_btn' and @checked='true']")
-	public MobileElement automaticRadioButtonChecked;
+//	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_automatic_radio_btn' and @checked='true']")
+//	public MobileElement automaticRadioButtonChecked;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_automatic_radio_btn' and @checked='false']")
+//	public MobileElement automaticRadioButtonUnChecked;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_static_radio_btn' and @checked='true']")
+//	public MobileElement staticRadioButtonChecked;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_static_radio_btn' and @checked='false']")
+//	public MobileElement staticRadioButtonUnChecked;
 	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_automatic_radio_btn' and @checked='false']")
-	public MobileElement automaticRadioButtonUnChecked;
+	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_automatic_radio_btn']")
+	public MobileElement automaticRadioButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_static_radio_btn' and @checked='true']")
-	public MobileElement staticRadioButtonChecked;
-	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_static_radio_btn' and @checked='false']")
-	public MobileElement staticRadioButtonUnChecked;
+	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv4_static_radio_btn']")
+	public MobileElement staticRadioButton;
 	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Primary DNS']")
 	public MobileElement primaryDNSLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_primary_dns_et' and @enabled='false']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_primary_dns_et']")
 	public MobileElement automatic_primaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_primary_dns_et' and @enabled='true']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_primary_dns_et']")
 	public MobileElement static_primaryDNS;
 	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Secondary DNS']")
 	public MobileElement secondayDNSLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_secondary_dns_et' and @enabled='false']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_secondary_dns_et']")
 	public MobileElement automatic_secondaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_secondary_dns_et' and @enabled='true']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv4_secondary_dns_et']")
 	public MobileElement static_secondaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure' and @enabled='false']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure']")
 	public MobileElement automatic_saveChangesButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure' and @enabled='true']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure']")
 	public MobileElement static_saveChangesButton;
 
 
@@ -158,30 +164,27 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 //	
 
 	public boolean clickAutomaticRadioButton() {
-		if (automaticRadioButtonChecked.isDisplayed()) {
+		if (automaticRadioButton.isSelected()) {
 			utils.log().info("Automatic Radion button is already selected");
 			return true;
-//		} else if (automaticRadioButtonUnChecked.isDisplayed()) {
-//			click(automaticRadioButtonUnChecked);
-//			utils.log().info("Automatic Radion button is selected");
-//			return true;
-		} else {
-			utils.log().info("Automatic Radio button is not displayed");
-			return false;
+		}else {
+				click(automaticRadioButton);
+				utils.log().info("Automatic Radion button is selected");
+				return true;
 		}
 	}
 	
 	public boolean clickStaticRadioButton() {
-		if (staticRadioButtonUnChecked.isDisplayed()) {
-			click(staticRadioButtonUnChecked);
+		if (staticRadioButton.isEnabled()) {
+			utils.log().info("Static Radion button is already selected");
+			return true;
+		} else {
+			click(staticRadioButton);
 			if (this.getDNSStaticAlertDialogObject().alertTitle.isDisplayed()) {
 				this.getDNSStaticAlertDialogObject().clickOKButton();
 			}
-			utils.log().info("Static Radion button is selected");
+			utils.log().info("Static Radio button is selected");
 			return true;
-		} else {
-			utils.log().info("Static Radio button is not displayed");
-			return false;
 		}
 	}
 	
@@ -208,7 +211,7 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 			else
 				utils.log().info("Help Icon is not displayed ");
 
-			if(dnsIPv4Tab.isDisplayed() && dnsIPv4Tab.isSelected())
+			if(dnsIPv4Tab.isDisplayed())
 				utils.log().info("IPv4 Tab is displayed and is currently selected");
 			else
 				utils.log().info("IPv4 Tab is not displayed ");
@@ -217,11 +220,6 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 				utils.log().info("IPV6 Tab is displayed but is not selected");
 			else
 				utils.log().info("IPV6 Tab is not displayed ");
-
-			if (automaticRadioButtonChecked.isDisplayed())
-				utils.log().info("Automatic Radio button is displayed and is selected");
-			else
-				utils.log().info("Automatic Radio button is not displayed ");
 
 			if (primaryDNSLabel.isDisplayed() && automatic_primaryDNS.isDisplayed() && !(automatic_primaryDNS.isEnabled()))
 				utils.log().info(primaryDNSLabel.getText() + " : " + automatic_primaryDNS.getText());
@@ -233,7 +231,7 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 			else
 				utils.log().info("Secondary DNS is not displayed ");
 
-			if (automatic_saveChangesButton.isDisplayed() && !(automatic_saveChangesButton.isEnabled()))
+			if (automatic_saveChangesButton.isDisplayed())
 				utils.log().info(automatic_saveChangesButton.getText() + " button is displayed but is disabled");
 			else
 				utils.log().info("Save Changes Button is not displayed ");
@@ -243,14 +241,13 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 		}catch(Exception e) {
 			return false;
 		}
-
 	}
 	
 	public boolean verifyUIOnDNSIPv4Static() {
-		utils.log().info("                                                ");
-		utils.log().info("************************************************");
+		utils.log().info("                                             ");
+		utils.log().info("*********************************************");
 		utils.log().info("Verifying Static DNS Configuration for IPv4  ");
-		utils.log().info("************************************************");
+		utils.log().info("*********************************************");
 		
 		this.clickStaticRadioButton();
 		try {
@@ -278,24 +275,19 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 				utils.log().info("IPV6 Tab is displayed but is not selected");
 			else
 				utils.log().info("IPV6 Tab is not displayed ");
-
-			if (staticRadioButtonChecked.isDisplayed())
-				utils.log().info("Static Radio button is displayed and is selected");
-			else
-				utils.log().info("Static Radio button is not displayed ");
 			
-			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed() && static_primaryDNS.isEnabled())
+			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed())
 				utils.log().info(primaryDNSLabel.getText() + " : " + static_primaryDNS.getText());
 			else
 				utils.log().info("Primary DNS is not displayed ");
 
-			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed() && static_secondaryDNS.isEnabled())
+			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed())
 				utils.log().info(secondayDNSLabel.getText() + " : " + static_secondaryDNS.getText());
 			else
 				utils.log().info("Secondary DNS is not displayed ");
 
 			if (static_saveChangesButton.isDisplayed())
-				utils.log().info(static_saveChangesButton.getText() + " button is displayed");
+				utils.log().info("Save Changes button is displayed");
 			else
 				utils.log().info("Save Changes Button is not displayed ");
 			return true;

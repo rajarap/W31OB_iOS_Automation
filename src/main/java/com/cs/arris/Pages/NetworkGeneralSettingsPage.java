@@ -31,11 +31,14 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/upnp_text")
 	public MobileElement upnpLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable' and @checked='false']")
-	public MobileElement disableUPNPToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable' and @checked='true']")
-	public MobileElement enableUPNPToggleButton;
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable' and @checked='false']")
+//	public MobileElement disableUPNPToggleButton;
+//
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable' and @checked='true']")
+//	public MobileElement enableUPNPToggleButton;
+	
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable']")
+	public MobileElement UPNPToggleButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/upnp_info_icon")
 	public MobileElement upnpInfoIcon;
@@ -43,11 +46,15 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Bridge Mode']")
 	public MobileElement bridgeModeLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable' and @checked='false']")
-	public MobileElement disableBridgeModeToggleButton;
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable' and @checked='false']")
+//	public MobileElement disableBridgeModeToggleButton;
+//
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable' and @checked='true']")
+//	public MobileElement enableBridgeModeToggleButton;
+	
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable']")
+	public MobileElement bridgeModeToggleButton;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable' and @checked='true']")
-	public MobileElement enableBridgeModeToggleButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/bridge_mode_info_icon")
 	public MobileElement bridgeModeInfoIcon;
@@ -58,11 +65,14 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_txt")
 	public MobileElement ipv6EnableLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable' and @checked='false']")
-	public MobileElement disableIPv6ToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable' and @checked='true']")
-	public MobileElement enableIPv6ToggleButton;
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable' and @checked='false']")
+//	public MobileElement disableIPv6ToggleButton;
+//
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable' and @checked='true']")
+//	public MobileElement enableIPv6ToggleButton;
+//	
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable']")
+	public MobileElement IPv6ToggleButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_enable_info_icon")
 	public MobileElement ipv6InfoIcon;
@@ -166,66 +176,66 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean enableUPnP() {
-		if (enableUPNPToggleButton.isDisplayed()) {
+		if (UPNPToggleButton.isSelected()) {
 			utils.log().info("UPnP is already enabled");
 			return true;
 		} else {
-			click(disableUPNPToggleButton);
+			click(UPNPToggleButton);
 			utils.log().info("UPnP is now enabled");
 			return true;
 		}
 	}
 
 	public boolean disableUPnP() {
-		if (disableUPNPToggleButton.isDisplayed()) {
+		if (!(UPNPToggleButton.isSelected())) {
 			utils.log().info("UPnP is already disabled");
 			return true;
 		} else {
-			click(enableUPNPToggleButton);
+			click(UPNPToggleButton);
 			utils.log().info("UPnP is now disabled");
 			return true;
 		}
 	}
 
 	public boolean enableBridgeMode() {
-		if (enableBridgeModeToggleButton.isDisplayed()) {
+		if (bridgeModeToggleButton.isSelected()) {
 			utils.log().info("Bridge Mode is already enabled");
 			return true;
 		} else {
-			click(disableBridgeModeToggleButton);
+			click(bridgeModeToggleButton);
 			utils.log().info("Bridge Mode is now enabled");
 			return true;
 		}
 	}
 
 	public boolean disableBridgeMode() {
-		if (disableBridgeModeToggleButton.isDisplayed()) {
+		if (!(bridgeModeToggleButton.isSelected())) {
 			utils.log().info("Bridge Mode is already disabled");
 			return true;
 		} else {
-			click(enableBridgeModeToggleButton);
+			click(bridgeModeToggleButton);
 			utils.log().info("Bridge Mode is now disabled");
 			return true;
 		}
 	}
 
 	public boolean enableIPV6Enable() {
-		if (enableIPv6ToggleButton.isDisplayed()) {
+		if (IPv6ToggleButton.isSelected()) {
 			utils.log().info("IPv6 Enableis already enabled");
 			return true;
 		} else {
-			click(disableIPv6ToggleButton);
+			click(IPv6ToggleButton);
 			utils.log().info("IPv6 Enable is now enabled");
 			return true;
 		} 
 	}
 
 	public boolean disableIPv6Enable() {
-		if(disableIPv6ToggleButton.isDisplayed()) {
+		if (!(IPv6ToggleButton.isSelected())) {
 			utils.log().info("IPv6 Enable is already disabled");
 			return true;
 		} else {
-			click(enableIPv6ToggleButton);
+			click(IPv6ToggleButton);
 			utils.log().info("IPv6 Enable is now disabled");
 			return true;
 		} 
@@ -251,12 +261,15 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("UPnP Link is displayed");
 			
 			try {
-				if (disableUPNPToggleButton.isDisplayed() && !(disableUPNPToggleButton.isEnabled()))
+				if (UPNPToggleButton.isDisplayed() && !(UPNPToggleButton.isSelected()))
 					utils.log().info("UPnp toggle button is displayed but is disabled");
-				
-				if (disableUPNPToggleButton.isDisplayed() && disableUPNPToggleButton.isEnabled())
+			}catch(Exception e) {}
+			
+			try {
+				if (UPNPToggleButton.isDisplayed() && UPNPToggleButton.isSelected())
 					utils.log().info("UPnp toggle button is displayed and is enabled");
 			}catch(Exception e) {}
+			
 
 			if (upnpInfoIcon.isDisplayed())
 				utils.log().info("UPnP Info Icon is displayed");
@@ -265,13 +278,14 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("Bridge Mode Link is displayed");
 			
 			try {
-				if (disableBridgeModeToggleButton.isDisplayed() && !(disableBridgeModeToggleButton.isEnabled()))
+				if (bridgeModeToggleButton.isDisplayed() && !(bridgeModeToggleButton.isSelected()))
 					utils.log().info("Bridge Mode toggle button is displayed but is disabled");
-				
-				if (disableBridgeModeToggleButton.isDisplayed() && disableBridgeModeToggleButton.isEnabled())
+			}catch(Exception e) {}
+			
+			try {
+				if (bridgeModeToggleButton.isDisplayed() && bridgeModeToggleButton.isSelected())
 					utils.log().info("Bridge Mode toggle button is displayed and is enabled");
 			}catch(Exception e) {}
-
 
 			if (bridgeModeInfoIcon.isDisplayed())
 				utils.log().info("Bridge Mode Info Icon is displayed");
@@ -283,10 +297,12 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("IPv6 Enable is displayed");
 			
 			try {
-				if (disableIPv6ToggleButton.isDisplayed() && !(disableIPv6ToggleButton.isEnabled()))
+				if (IPv6ToggleButton.isDisplayed() && !(IPv6ToggleButton.isSelected()))
 					utils.log().info("IPv6 Enable toggle button is displayed but is disabled");
-				
-				if (disableIPv6ToggleButton.isDisplayed() && disableIPv6ToggleButton.isEnabled())
+			}catch(Exception e) {}
+			
+			try {
+				if (IPv6ToggleButton.isDisplayed() && IPv6ToggleButton.isSelected())
 					utils.log().info("IPv6 Enable toggle button is displayed and is enabled");
 			}catch(Exception e) {}
 

@@ -9,7 +9,7 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	<test name="Network_Page_Test">
+	<test name="Network_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC011_Login_And_Test_Network_Page" />
 		</classes>
@@ -39,55 +39,55 @@
 		</classes>
 	</test>
 	
-	<test name="Devices_Page_Test">
+	<test name="Devices_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC004_Login_And_Test_Devices_Page" />
 		</classes>
 	</test>
 	
-	<test name="Device_Signal_Strength_Leader_Board_Page_Test">
+	<test name="Device_Signal_Strength_Leader_Board_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC005_Login_And_Test_Device_Signal_Strength_Leader_Board_Page" />
 		</classes>
 	</test>
 	
-	<test name="Speed_Test_History_Page_Test">
+	<test name="Speed_Test_History_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC006_Login_And_Test_Home_Speed_Test_History_Page" />
 		</classes>
 	</test>
 	
-	<test name="Main_Device_Page_Test">
+	<test name="Main_Device_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC007_Login_And_Test_Main_Device_Page" />
 		</classes>
 	</test>
 	
-	<test name="Hamburger_Menu_Settings_About_Help_Page_Test">
+	<test name="Hamburger_Menu_Settings_About_Help_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC008_Login_And_Test_Hamburger_Menu_And_Settings_About_Help_Page" />
 		</classes>
 	</test>
 	
-	<test name="Hamburger_Menu_Amazaon_Features_Page_Test">
+	<test name="Hamburger_Menu_Amazaon_Features_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature" />
 		</classes>
 	</test>
 	
-	<test name="Parental_Control_Page_Test">
+	<test name="Parental_Control_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC010_Login_And_Test_Parental_Control_Page" />
 		</classes>
 	</test>
 	
-	<test name="Network_Page_Test">
+	<test name="Network_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC011_Login_And_Test_Network_Page" />
 		</classes>
 	</test>
 	
-	<test name="Hamburger_Add_And_Remove_Device_Page_Test">
+	<test name="Hamburger_Add_And_Remove_Device_Test">
 		<classes>
 			<class name="com.cs.arris.Tests.TC013_Login_And_Test_Add_And_Remove_Device" />
 		</classes>

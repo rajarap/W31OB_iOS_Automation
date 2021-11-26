@@ -121,8 +121,8 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 
 	public boolean selectADevice(int index) {
 		if (selectDeviceListBox.isDisplayed()) {
-			Select select = new Select(super.getDriver().findElement(By.xpath("//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/connect_device_id']")));
-			select.selectByIndex(index);
+			click(selectDeviceListBox);
+			click(super.getDriver().findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.view.ViewGroup["+index+"]"));
 			return true;
 		} else {
 			utils.log().info("No Option to select from list box");
@@ -177,7 +177,7 @@ public class NetworkReserveLANIPDialog extends ParentClass implements Page {
 				utils.log().info("Text box to enter IP Address is not displayed");
 			
 			if (enterIPAddressPrefixTextBox.isDisplayed())
-				utils.log().info("Prfix IP Address : " + enterIPAddressPrefixTextBox.getText());
+				utils.log().info("Prefix IP Address : " + enterIPAddressPrefixTextBox.getText());
 			else
 				utils.log().info("Prefix IP Address is not displayed");
 

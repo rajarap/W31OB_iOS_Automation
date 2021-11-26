@@ -43,11 +43,8 @@ public class AppRatingDialog extends ParentClass implements Page
 		if (remindMeLaterText.isDisplayed()) {
 			click(remindMeLaterText);
 			utils.log().info("App Rating Dialog - Clicked on Remind Me Later");
-			return true;
-		} else {
-			utils.log().info("App Rating Dialog - Remind Me Later link is not displayd");
-			return false;
 		}
+			return true;
 	}
 
 	public boolean clickCloseDialog() {

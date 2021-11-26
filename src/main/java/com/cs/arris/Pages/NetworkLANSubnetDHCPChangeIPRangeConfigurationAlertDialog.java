@@ -58,7 +58,7 @@ public class NetworkLANSubnetDHCPChangeIPRangeConfigurationAlertDialog extends P
 
 	@Override
 	public boolean isAt() {
-		if (alertTitle.isDisplayed()) {
+		if (alertDescription.isDisplayed()) {
 			utils.log().info("On Changing LAN DHCP Subnet IP Configuration Alert Dialog");
 			return true;
 		} else {

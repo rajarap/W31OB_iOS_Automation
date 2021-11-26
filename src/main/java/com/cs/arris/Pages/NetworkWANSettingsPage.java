@@ -210,10 +210,10 @@ public class NetworkWANSettingsPage extends ParentClass implements Page {
 			else
 				utils.log().info("LAC Info Link is not displayed ");
 
-			if (disableLACToggleButton.isDisplayed() && !(disableLACToggleButton.isEnabled()))
-				utils.log().info("LAC toggle button is displayed but is disabled(OFF)");
+			if (disableLACToggleButton.isDisplayed())
+				utils.log().info("LAC toggle button is displayed but is disabled");
 			else
-				utils.log().info("LAC toggle button is displayed and is enabled(ON)");
+				utils.log().info("LAC toggle button is displayed and is enabled");
 			
 			if (dnsConfigurationLabel.isDisplayed())
 				utils.log().info("DNS Configuration Link is displayed ");

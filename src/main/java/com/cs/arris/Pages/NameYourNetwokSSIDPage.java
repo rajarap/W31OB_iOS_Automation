@@ -48,16 +48,15 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	public NameYourNetwokSSIDPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
-		generateSSIDNameAndPassword();
 	}
 	
-	public void enterSSIDName()
+	public void enterSSIDName(String ssidName)
 	{
 		sendKeys(ssIDName, ssidName);
 		utils.log().info("Name Your Network Page - Entered SSID Name");
 	}
 	
-	public void enterSSIDPassword()
+	public void enterSSIDPassword(String ssidpwd)
 	{
 		sendKeys(ssidPassword, ssidpwd);
 		utils.log().info("Name Your Network Page - Entered SSID Password");

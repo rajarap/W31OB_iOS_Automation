@@ -55,11 +55,14 @@ public class NetworkPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/enable_guest_wifi_text")
 	public MobileElement enableDisableGuestNetwork;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='false']")
-	public MobileElement disableGuestNetworkToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='true']")
-	public MobileElement enableGuestNetworkToggleButton;
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='false']")
+//	public MobileElement disableGuestNetworkToggleButton;
+//
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='true']")
+//	public MobileElement enableGuestNetworkToggleButton;
+	
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable']")
+	public MobileElement guestNetworkToggleButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_plus_icon")
 	public MobileElement guestNetworkExpandIcon;
@@ -98,11 +101,14 @@ public class NetworkPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/wideband_info_icon")
 	public MobileElement fiveGHzWidebandInfoIcon;
 	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='false']")
-	public MobileElement disableWidebandModeToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='true']")
-	public MobileElement enableWidebandModeToggleButton;
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='false']")
+//	public MobileElement disableWidebandModeToggleButton;
+//
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='true']")
+//	public MobileElement enableWidebandModeToggleButton;
+	
+	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable']")
+	public MobileElement widebandModeToggleButton;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enables DFS (up to) 160MHz channels']")
 	public MobileElement enableDFSLabel;
@@ -324,45 +330,45 @@ public class NetworkPage extends ParentClass implements Page {
 	}
 	
 	public boolean enable5GHzWidebandMode() {
-		if (disableWidebandModeToggleButton.isDisplayed()) {
-			click(disableWidebandModeToggleButton);
-			utils.log().info("5GHz Wideband Mode is enabled(ON)");
+		if (widebandModeToggleButton.isSelected()) {
+			utils.log().info("5GHz Wideband Mode is already enabled");
 			return true;
 		} else {
-			utils.log().info("5GHz Wideband Mode is already enabled");
+			click(widebandModeToggleButton);
+			utils.log().info("5GHz Wideband Mode is now enabled");
 			return true;
 		}
 	}
 
 	public boolean disable5GHzWidebandMode() {
-		if (enableWidebandModeToggleButton.isDisplayed()) {
-			click(enableWidebandModeToggleButton);
-			utils.log().info("5GHz Wideband Mode is disabled(OFF)");
+		if (!(widebandModeToggleButton.isSelected())) {
+			utils.log().info("5GHz Wideband Mode is already disabled");
 			return true;
 		} else {
-			utils.log().info("5GHz Wideband Mode is already disabled");
+			click(widebandModeToggleButton);
+			utils.log().info("5GHz Wideband Mode is now disabled");
 			return true;
 		}
 	}
 	
 	public boolean enableGuestWifiNetwork() {
-		if (disableGuestNetworkToggleButton.isDisplayed()) {
-			click(disableGuestNetworkToggleButton);
-			utils.log().info("Enable/Disable Guest Network is enabled");
+		if (guestNetworkToggleButton.isSelected()) {
+			utils.log().info("Enable/Disable Guest Network is already enabled");
 			return true;
 		}else {
-			utils.log().info("Enable/Disable Guest Network is already enabled");
+			click(guestNetworkToggleButton);
+			utils.log().info("Enable/Disable Guest Network is now enabled");
 			return true;
 		}
 	}
 
 	public boolean disableGuestWifiNetwork() {
-		if (enableGuestNetworkToggleButton.isDisplayed()) {
-			click(enableGuestNetworkToggleButton);
-			utils.log().info("Enable/Disable Guest Network is disabled");
+		if (!(guestNetworkToggleButton.isSelected())) {
+			utils.log().info("Enable/Disable Guest Network is already disabled");
 			return true;
 		} else {
-			utils.log().info("Enable/Disable Guest Network is already disabled");
+			click(guestNetworkToggleButton);
+			utils.log().info("Enable/Disable Guest Network is now disabled");
 			return true;
 		}
 	}
@@ -478,59 +484,55 @@ public class NetworkPage extends ParentClass implements Page {
 				utils.log().info("Enable/disable Guest Network label is not displayed");
 			
 			try {
-				if (disableGuestNetworkToggleButton.isDisplayed())
+				if (!(guestNetworkToggleButton.isSelected()))
 					utils.log().info("Guest Newtork toggle button is disabled");
 			}catch(Exception e) {utils.log().info("Guest Newtork toggle button is enabled");}
 			
-			try {		
-				if (enableGuestNetworkToggleButton.isDisplayed())
-					utils.log().info("Guest Newtork toggle button is enabled");
-			}catch(Exception e) {utils.log().info("Guest Newtork toggle button is not enabled");}
-			
-			if (guestNetworkExpandIcon.isDisplayed()) {
-				utils.log().info("Guest Newtork expand button is displayed");
-				click(guestNetworkExpandIcon);}  
-			else
-				utils.log().info("Guest Newtork Settings expand button is not displayed");
-			
-			if (guestNetworkSIDLabel.isDisplayed())
-				utils.log().info(guestNetworkSIDLabel.getText() + " label is displayed");
-			else
-				utils.log().info("Network Name (SSID) label is not displayed");
+			try {
+				if (guestNetworkExpandIcon.isDisplayed()) 
+				{
+					utils.log().info("Guest Newtork expand button is displayed");
+					click(guestNetworkExpandIcon);
+					if (guestNetworkSIDLabel.isDisplayed())
+						utils.log().info(guestNetworkSIDLabel.getText() + " label is displayed");
+					else
+						utils.log().info("Network Name (SSID) label is not displayed");
 
-			try {		
-				if (guestNetworkSSIDName.isDisplayed())
-					utils.log().info("Guest Newtork SSID Name is : " + guestNetworkSSIDName.getText());
-			}catch(Exception e) {}
-			
-			if (guestNetworkPasswordLabel.isDisplayed())
-				utils.log().info(guestNetworkPasswordLabel.getText() + " label is displayed");
-			else
-				utils.log().info("PAssword label is not displayed");
+					if (guestNetworkSSIDName.isDisplayed())
+						utils.log().info("Guest Newtork SSID Name is : " + guestNetworkSSIDName.getText());
+					else
+						utils.log().info("uest Newtork SSID Name is not displayed");
+					
+					if (guestNetworkPasswordLabel.isDisplayed())
+						utils.log().info(guestNetworkPasswordLabel.getText() + " label is displayed");
+					else
+						utils.log().info("PAssword label is not displayed");
+	
+					if (guestNetworkPassword.isDisplayed())
+						utils.log().info("Guest Newtork SSID Password is : " + guestNetworkPassword.getText());
+					else
+						utils.log().info("uest Newtork SSID Name is not displayed");
 
-			try {		
-				if (guestNetworkPassword.isDisplayed())
-					utils.log().info("Guest Newtork SSID Password is : " + guestNetworkPassword.getText());
-			}catch(Exception e) {}
-			
-			if (guestNetworkShowPasswordIcon.isDisplayed()) {
-				utils.log().info("Show Password Icon is displayed");
-				click(guestNetworkShowPasswordIcon);
-				click(guestNetworkShowPasswordIcon);}  //1
-			else
-				utils.log().info("Show Password Icon is not displayed");
-			
-			if (guestNetworkEditIcon.isDisplayed())
-				utils.log().info("Edit Icon is displayed");
-			else
-				utils.log().info("Edit Icon is not displayed");
-			
-			if (guestNetworkShareCredentialsButton.isDisplayed())
-				utils.log().info("SHARE CREDENTIALS button is displayed");
-			else
-				utils.log().info("SHARE CREDENTIALS button is not displayed");
-			
-				click(guestNetworkExpandIcon);
+					if (guestNetworkShowPasswordIcon.isDisplayed()) {
+						utils.log().info("Show Password Icon is displayed");
+						click(guestNetworkShowPasswordIcon);
+						click(guestNetworkShowPasswordIcon);}  //1
+					else
+						utils.log().info("Show Password Icon is not displayed");
+					
+					if (guestNetworkEditIcon.isDisplayed())
+						utils.log().info("Edit Icon is displayed");
+					else
+						utils.log().info("Edit Icon is not displayed");
+					
+					if (guestNetworkShareCredentialsButton.isDisplayed())
+						utils.log().info("SHARE CREDENTIALS button is displayed");
+					else
+						utils.log().info("SHARE CREDENTIALS button is not displayed");		
+					
+						click(guestNetworkExpandIcon);
+					}  
+				}catch(Exception e) {utils.log().info("Guest Newtork Settings expand button is not displayed");}
 			
 
 			if (extendedWifiExpandIcon.isDisplayed()) {
@@ -553,18 +555,18 @@ public class NetworkPage extends ParentClass implements Page {
 				utils.log().info(enableDFSLabel.getText() + " label is displayed");
 			else
 				utils.log().info("Enables DFS (up to) 160MHz channels label is not displayed");
-
-			if (disableWidebandModeToggleButton.isDisplayed())
-				utils.log().info("Extended Wifi toggle button is disabled(OFF)");
-			else
-				utils.log().info("Extended Wifi toggle button is enabled(ON)");
+			
+			try {
+				if (!(widebandModeToggleButton.isDisplayed()))
+					utils.log().info("Extended Wifi toggle button is disabled");
+			}catch(Exception e) {utils.log().info("Extended Wifi toggle button is enabled");}
 			
 			click(extendedWifiExpandIcon); //2
 
 			if (networkSettingsExpandIcon.isDisplayed()) {
 				utils.log().info("Network Settings expand button is displayed");
 				click(networkSettingsExpandIcon);	//1
-				new SwipeActions().swipeScreen(Direction.UP);}
+				super.swipeUp();}
 			else
 				utils.log().info("Network Settings expand button is not displayed");
 

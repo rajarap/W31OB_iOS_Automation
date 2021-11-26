@@ -157,16 +157,20 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 		softnet5.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
 		super.swipeUp();
 		softnet5.assertTrue(new NetworkPage().clickWANSettings());
-		if (new NetworkPage().getAppRatingPageObject().isAt()) {
-			softnet5.assertTrue(new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink());
+		try {
+			if (new NetworkPage().getAppRatingPageObject().isAt()) {
+				softnet5.assertTrue(new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink());
+			}
+		}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
 			softnet5.assertTrue(new NetworkPage().getWANSettingsPageObject().verifyUIOnWANSettingsPage());
-		}
-		softnet5.assertAll();
+
+			softnet5.assertAll();
 	}
 
 	@Test(priority = 6)
 	public void Verify_WAN_Settings_Help_Page() {
 		SoftAssert softnet6 = new SoftAssert();
+		softnet6.assertTrue(new NetworkPage().getWANSettingsPageObject().clickHelpButton());
 		if (new NetworkPage().getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject().isAt())
 			softnet6.assertTrue(new NetworkPage().getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject().clickCloseButton());
 		softnet6.assertAll();
@@ -317,7 +321,7 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().verifyUIOnReserveLANIP());
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterRuleName());
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterIPAddress());
-			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().selectADevice(2));
+			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().selectADevice(1));
 			softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().clickSaveButton());
 			softnet20.assertAll();
 		}
@@ -499,8 +503,8 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
 			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickMinutesRadioButton());
 		softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifySameLeaseTimeForAnyUnit());
-		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedSameChangesDialogObject().isAt())
-			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedSameChangesDialogObject().clickOKButton());
+		if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
 		
 		softnet29.assertAll();
 	}
@@ -517,71 +521,71 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 			softnet30.assertAll();
 	}
 	
-	@Test(priority = 31)
-	public void Verify_Device_Priority_Settings_UI_Page() 
-	{
-		SoftAssert softnet31 = new SoftAssert();
-		softnet31.assertTrue(new NetworkPage().clickDevicePrioritySettings());
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt())
-		{
-			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().enableDevicePrioritySettings());
-			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnDevicePrioritySettingsPage());
-			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
-		}
-		softnet31.assertAll();
-	}
-	
-	@Test(priority = 32)
-	public void Verify_Device_Priority_Settings_Add_Device_UI_Page() 
-	{
-		SoftAssert softnet32 = new SoftAssert();
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().isAt()) {
-			softnet32.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyUIOnAddDevicePage());
-			softnet32.assertAll();
-		}
-	}
-	
-	@Test(priority = 33)
-	public void Verify_Device_Priority_Settings_Add_Device_Page() 
-	{
-		SoftAssert softnet33 = new SoftAssert();
-		softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyDeviceListForPrioritization());
-		softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
-		softnet33.assertAll();
-
-	}
-	
-	@Test(priority = 34)
-	public void Verify_Device_Priority_Settings_Added_Device_Page() 
-	{
-		SoftAssert softnet34 = new SoftAssert();
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt()) {
-			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnNetworkPrioritizedDevices());
-			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyTwoDevicesWithHighestPriority());}
-		softnet34.assertAll();
-	}
-	
-	@Test(priority = 35)
-	public void Verify_Device_Priority_Settings_Add_Device_Help_Page() 
-	{
-		SoftAssert softnet35 = new SoftAssert();
-		softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickHelpButton());
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().isAt())
-			softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().clickCloseButton());
-		softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickBackButton());
-		softnet35.assertAll();
-	}
-	
-	@Test(priority = 36)
-	public void Verify_Device_Priority_Settings_Help_Page() 
-	{
-		SoftAssert softnet36 = new SoftAssert();
-		softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickHelpButton());
-		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().isAt())
-			softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().clickCloseButton());
-		softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickBackButton());
-		softnet36.assertAll();
-	}
+//	@Test(priority = 31)
+//	public void Verify_Device_Priority_Settings_UI_Page() 
+//	{
+//		SoftAssert softnet31 = new SoftAssert();
+//		softnet31.assertTrue(new NetworkPage().clickDevicePrioritySettings());
+//		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt())
+//		{
+//			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().enableDevicePrioritySettings());
+//			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnDevicePrioritySettingsPage());
+//			softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
+//		}
+//		softnet31.assertAll();
+//	}
+//	
+//	@Test(priority = 32)
+//	public void Verify_Device_Priority_Settings_Add_Device_UI_Page() 
+//	{
+//		SoftAssert softnet32 = new SoftAssert();
+//		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().isAt()) {
+//			softnet32.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyUIOnAddDevicePage());
+//			softnet32.assertAll();
+//		}
+//	}
+//	
+//	@Test(priority = 33)
+//	public void Verify_Device_Priority_Settings_Add_Device_Page() 
+//	{
+//		SoftAssert softnet33 = new SoftAssert();
+//		softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyDeviceListForPrioritization());
+//		softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
+//		softnet33.assertAll();
+//
+//	}
+//	
+//	@Test(priority = 34)
+//	public void Verify_Device_Priority_Settings_Added_Device_Page() 
+//	{
+//		SoftAssert softnet34 = new SoftAssert();
+//		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt()) {
+//			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnNetworkPrioritizedDevices());
+//			softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyTwoDevicesWithHighestPriority());}
+//		softnet34.assertAll();
+//	}
+//	
+//	@Test(priority = 35)
+//	public void Verify_Device_Priority_Settings_Add_Device_Help_Page() 
+//	{
+//		SoftAssert softnet35 = new SoftAssert();
+//		softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickHelpButton());
+//		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().isAt())
+//			softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().clickCloseButton());
+//		softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickBackButton());
+//		softnet35.assertAll();
+//	}
+//	
+//	@Test(priority = 36)
+//	public void Verify_Device_Priority_Settings_Help_Page() 
+//	{
+//		SoftAssert softnet36 = new SoftAssert();
+//		softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickHelpButton());
+//		if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().isAt())
+//			softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().clickCloseButton());
+//		softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickBackButton());
+//		softnet36.assertAll();
+//	}
 	
 	@Test(priority = 37)
 	public void Verify_Time_Zone_Settings_UI_Page() 

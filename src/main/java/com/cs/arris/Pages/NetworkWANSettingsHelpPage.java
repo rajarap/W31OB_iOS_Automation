@@ -18,11 +18,10 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class NetworkWANSettingsHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']"), 
-		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[915,146][1046,241]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/ivDialogClose")
-	})
+//	@AndroidFindAll({
+//		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']"), 
+//		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[915,146][1046,241]']"),
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/ivDialogClose")
 	public MobileElement closeButton;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='WAN Settings']") 

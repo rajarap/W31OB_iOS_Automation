@@ -25,7 +25,7 @@ public class TC001_Test_SignUp_And_Onboard extends ParentClass
 	String lastName;
 	String email;
 	String passCode;
-	String ssid;
+	String ssidName;
 	String ssidpass;
 	String udid;
 	
@@ -46,6 +46,12 @@ public class TC001_Test_SignUp_And_Onboard extends ParentClass
 			  
 			  this.email = properties.getProperty("email");
 			  utils.log().info("Email address : " + this.email);
+			  
+			  this.ssidName = super.generateRouterSSID();
+			  utils.log().info("SSID Name : " + this.ssidName);
+			  
+			  this.ssidpass = properties.getProperty("ssidpwd");
+			  utils.log().info("SSID Password : " + this.ssidpass);
 			  	  
 			  this.udid = properties.getProperty("udid");
 			  utils.log().info("UDID : " + this.udid);
@@ -127,13 +133,13 @@ public class TC001_Test_SignUp_And_Onboard extends ParentClass
 		  }).warrantyAndSupportPage(warrantyAndSupport -> {
 			  warrantyAndSupport.clickContinueButton();
 		  }).nameYourNetworkPage(nameYourNetwork -> {
-			  nameYourNetwork.enterSSIDName();
-			  nameYourNetwork.enterSSIDPassword();
+			  nameYourNetwork.enterSSIDName(this.ssidName);
+			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
 			  nameYourNetwork.clickNextButton();
 			  super.pause(25);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
 			  super.pause(15);
-			  connectionRequired.turnOnRouterWifi(super.ssidName, super.ssidpwd, this.udid);
+			  connectionRequired.turnOnRouterWifi(this.ssidName, this.ssidpass, this.udid);
 			  super.pause(15);
 			  connectionRequired.clickContinue();
 			  super.pause(20);

@@ -36,6 +36,10 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 
 	@AndroidFindBy(id = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable' and @text='ON']")
 	public MobileElement enableDevicePrioritySettings;
+	
+	@AndroidFindBy(id = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable']")
+	public MobileElement devicePrioritySettingToggleButton;
+
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/add_device_configure")
 	public MobileElement addDeviceButton;
@@ -96,25 +100,25 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 	}
 	
 	public boolean enableDevicePrioritySettings() {
-		if (disableDevicePrioritySettings.isDisplayed()) {
-			click(disableDevicePrioritySettings);
-			super.pause(32);
+		if (devicePrioritySettingToggleButton.isSelected()) {
 			utils.log().info("Device Priority Settings is enabled");
 			return true;
 		}else{
-			utils.log().info("Device Priority Settings is already enabled");
+			click(devicePrioritySettingToggleButton);
+			super.pause(35);
+			utils.log().info("Device Priority Settings is selected");
 			return true;
 		}
 	}
 	
 	public boolean disableDevicePrioritySettings() {
-		if (enableDevicePrioritySettings.isDisplayed()) {
-			click(enableDevicePrioritySettings);
-			super.pause(32);
+		if (devicePrioritySettingToggleButton.isSelected()) {
+			click(devicePrioritySettingToggleButton);
+			super.pause(35);
 			utils.log().info("Device Priority Settings is disabled");
 			return true;
 		}else{
-			utils.log().info("Device Priority Settings is already disabled");
+			utils.log().info("Device Priority Settings is disabled");
 			return false;
 		}
 	}
@@ -141,20 +145,15 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 			else
 				utils.log().info("Help Icon is not displayed");
 			
-			try {
-				if (disableDevicePrioritySettings.isDisplayed()) 
-					utils.log().info("Device Level Prioritization toggle button is disabled");
-			}catch(Exception e) {}
-			
-			try {
-				if (enableDevicePrioritySettings.isDisplayed()) 
-					utils.log().info("Device Level Prioritization toggle button is enabled");
-			}catch(Exception e) {}
-				
 			if (deviceLevelPrioritizationLabel.isDisplayed()) 
 				utils.log().info("Device Level Prioritization Label is displayed");
 			else
 				utils.log().info("Device Level Prioritization Label is not displayed");
+			
+			if (devicePrioritySettingToggleButton.isDisplayed()) 
+				utils.log().info("Device Level Prioritization toggle button is displayed");
+			else
+				utils.log().info("Device Level Prioritization toggle button is not displayed");
 
 			if (addDeviceButton.isDisplayed()) 
 				utils.log().info("Add Device button is displayed");
@@ -233,10 +232,10 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 	}
 	
 	public boolean verifyTwoDevicesWithHighestPriority() {
-		utils.log().info("                                           ");
-		utils.log().info("*******************************************");
-		utils.log().info(" Two Devices Are Assigned Highest Priority ");
-		utils.log().info("*******************************************");
+		utils.log().info("                                   ");
+		utils.log().info("***********************************");
+		utils.log().info(" Devices Assigned Highest Priority ");
+		utils.log().info("***********************************");
 	
 		try {
 			for (int i = 1; i <= 2; i++) {
