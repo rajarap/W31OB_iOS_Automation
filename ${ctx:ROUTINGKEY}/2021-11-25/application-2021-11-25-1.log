@@ -1,0 +1,12 @@
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 00:05:59.507 ParentClass:307 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 00:05:59.539 ParentClass:315 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 00:05:59.539 ParentClass:338 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 00:05:59.547 ParentClass:352 - loading... error_codes/error_codes.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 01:09:08.981 ParentClass:307 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 01:09:09.010 ParentClass:315 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 01:09:09.011 ParentClass:338 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 01:09:09.017 ParentClass:352 - loading... error_codes/error_codes.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 11:52:57.934 ParentClass:307 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 11:52:57.958 ParentClass:315 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 11:52:57.959 ParentClass:338 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-11-25 11:52:57.966 ParentClass:352 - loading... error_codes/error_codes.xml

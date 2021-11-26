@@ -13,6 +13,7 @@ public class TestingDeviceCount
 	static String hh;
 	static String mm;
 	static String med;
+	static ValidOTP otp;
 	
 	public static void main(String args[])
 	{
@@ -20,8 +21,8 @@ public class TestingDeviceCount
 //		Integer count = pc.getCountOfDevicesWithSpace("Devices (2)");
 //		System.out.println(count.toString());
 		
-		ParentClass pc = new ParentClass();
-		System.out.println(pc.getDeviceSignalStrengthCount("03 Devices"));
+//		ParentClass pc = new ParentClass();
+//		System.out.println(pc.getDeviceSignalStrengthCount("03 Devices"));
 //		System.out.println(pc.getDeviceSignalStrengthCount("03 Devices"));
 //		System.out.println(pc.get5GHzCountOfDevices("2 Devices ( 5 GHz)"));
 //		System.out.println(pc.get24GHzCountOfDevices("2 Devices ( 2.4 GHz)"));
@@ -30,8 +31,19 @@ public class TestingDeviceCount
 //    	pickHour();
 //    	pickMinute();
 //    	pickMedian();
+		
+		verifyOTP();
     	
 		
+	}
+	
+	public static void verifyOTP()
+	{
+//		otp = new ValidOTP();
+//		String code = otp.getValidOTP();
+//		System.out.println("OTP CODE IS: " + code);
+			otp = new ValidOTP();
+			otp.getValidOTP();
 	}
 	
 	public static void pickTime()

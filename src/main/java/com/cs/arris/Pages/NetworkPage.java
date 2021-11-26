@@ -480,12 +480,12 @@ public class NetworkPage extends ParentClass implements Page {
 			try {
 				if (disableGuestNetworkToggleButton.isDisplayed())
 					utils.log().info("Guest Newtork toggle button is disabled");
-			}catch(Exception e) {}
+			}catch(Exception e) {utils.log().info("Guest Newtork toggle button is enabled");}
 			
 			try {		
 				if (enableGuestNetworkToggleButton.isDisplayed())
 					utils.log().info("Guest Newtork toggle button is enabled");
-			}catch(Exception e) {}
+			}catch(Exception e) {utils.log().info("Guest Newtork toggle button is not enabled");}
 			
 			if (guestNetworkExpandIcon.isDisplayed()) {
 				utils.log().info("Guest Newtork expand button is displayed");

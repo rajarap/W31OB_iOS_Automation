@@ -1,8 +1,11 @@
 package com.cs.arris.Utilities;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.mail.Flags;
 import javax.mail.Flags.Flag;
@@ -14,6 +17,8 @@ import javax.mail.Part;
 import javax.mail.Session;
 import javax.mail.Store;
 import javax.mail.search.FlagTerm;
+
+import org.apache.commons.io.FileUtils;
 
 public class ValidOTP 
 {
@@ -52,7 +57,7 @@ public class ValidOTP
 	        newMessageCount = emailInbox.getNewMessageCount();    
 	        emailSubject = emailMessage.getSubject();
 	        String body = getText(emailMessage);
-	        OTP = getOTPCode(body); //Your verification code is 511855.
+	        OTP = getOTPCode(body);
 	        emailMessage.setFlag(Flags.Flag.SEEN, true);
 	        emailInbox.close(true);
 	        store.close();
@@ -79,8 +84,9 @@ public class ValidOTP
 	        emailInbox.open(Folder.READ_WRITE);
 	        messageCount = emailInbox.getMessageCount();
 	        emailMessage = emailInbox.getMessage(messageCount);
-	        newMessageCount = emailInbox.getNewMessageCount();    
+	        newMessageCount = emailInbox.getNewMessageCount();  
 	        emailSubject = emailMessage.getSubject();
+	        
 	        String body = getText(emailMessage);
 	        OTP = getInvalidOTPCode(body); //Your verification code is 511855.
 	        
@@ -96,9 +102,13 @@ public class ValidOTP
 	}
 
 	private static String getOTPCode(String content) {
-		String[] contents = content.split(" ");
-		String code = contents[contents.length-1];
-		return code.substring(0, 6);
+        String otpCodePattern = "[^a-zA-Z:!.\"<>\\/=\\-;,\\s*]\\d\\d\\d\\d\\d";
+        Pattern p = Pattern.compile(otpCodePattern);
+        Matcher m = p.matcher(content); 
+        if(m.find())
+        	return m.group(0);
+        else
+        	return "No Matcher";
 	}
 	
 	private static String getInvalidOTPCode(String content) {
@@ -122,6 +132,32 @@ public class ValidOTP
 				e.printStackTrace();
 			}
 	  }
+	
+	public static void isValidEmailId(String content) {
+	        String emailPattern = "[^a-zA-Z:!.,\\s*]\\d*$";
+	        Pattern p = Pattern.compile(emailPattern);
+	        Matcher m = p.matcher(content);
+	        if (m.find( )) {
+	            System.out.println("Found value: " + m.group(0));
+	         }else{
+	            System.out.println("NO MATCH");
+	         }
+
+	}
+	
+
+    	   public void main(String args[]){
+    	      String sample = "krishna64";
+    	      char[] chars = sample.toCharArray();
+    	      StringBuilder sb = new StringBuilder();
+    	      for(char c : chars){
+    	         if(Character.isDigit(c)){
+    	            sb.append(c);
+    	         }
+    	      }
+    	      System.out.println(sb);
+    	   }
+
 	
 //	public static void getPassCode()
 //	{
