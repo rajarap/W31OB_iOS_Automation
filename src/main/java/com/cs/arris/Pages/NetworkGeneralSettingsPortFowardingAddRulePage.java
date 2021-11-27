@@ -102,7 +102,11 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/external_port_end_dialog_error")
 	public MobileElement externalPortEndError;
 	
-	//Please enter a valid IP Address
+	//Start port should be lesser than End port
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/external_port_start_dialog_error")
+	public MobileElement externalStartPortLessThanEndPort;
+	
+		//Please enter a valid IP Address
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_ip_address_dialog_error")
 	public MobileElement enterValidIPAddress;
 	
@@ -114,6 +118,12 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
+	public NetworkPortRuleEditFaliedAlertDialog getPortRuleEditFailedDialogObject() {
+		NetworkPortRuleEditFaliedAlertDialog  portRuleEditFailed = new NetworkPortRuleEditFaliedAlertDialog();
+		return portRuleEditFailed;
+	}
+	
+	
 	public boolean clickCloseButton() {
 		if (closeButton.isDisplayed()) {
 			click(closeButton);
@@ -127,7 +137,6 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 	public boolean clickSaveButton() {
 		if (saveChangesButton.isDisplayed()) {
 			click(saveChangesButton);
-			super.pause(15);
 			utils.log().info("Clicked on Save Changes Button");
 			return true;
 		} else {
@@ -164,7 +173,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 				utils.log().info("TCP/UDP button is displayed ");
 
 			if (enterInternalPortStartLabel.isDisplayed())
-				utils.log().info(enterInternalPortStartTextBox.getText() + " label is displayed ");
+				utils.log().info(enterInternalPortStartLabel.getText() + " label is displayed ");
 
 			if (enterInternalPortStartTextBox.isDisplayed())
 				utils.log().info("Enter Internal Port Start text box is displayed ");
@@ -212,9 +221,10 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		super.pause(2);
 		if(portNameDialogError.isDisplayed())
 			utils.log().info("Validation Message : " + portNameDialogError.getText() + " is displayed");
+		
 		String ruleName = super.generatePortRuleName();
 		sendKeys(enterPortRuleNameTextBox, ruleName);
-		utils.log().info("Entered Rule Name: " + ruleName);
+		utils.log().info("Entered Rule Name : " + ruleName);
 		return true;
 	}
 	
@@ -227,11 +237,13 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		super.getDriver().hideKeyboard();
 		this.clickSaveButton();
 		super.pause(2);
+		
 		if(internalPortStartError.isDisplayed())
 			utils.log().info("Validation Message : " + internalPortStartError.getText() + " is displayed");
+		
 		String internalPortStart = super.generateInternalPortStart();
 		sendKeys(enterInternalPortStartTextBox, internalPortStart);
-		utils.log().info("Entered Internal Port Start" + internalPortStart);
+		utils.log().info("Entered Internal Port Start : " + internalPortStart);
 		return true;
 	}
 	
@@ -244,11 +256,15 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		super.getDriver().hideKeyboard();
 		this.clickSaveButton();
 		super.pause(2);
-		if(internalStartPortLessThanEndPort.isDisplayed())
-			utils.log().info("Validation Message : " + internalStartPortLessThanEndPort.getText() + " is displayed");
-		String internalPortEnd = super.generateInternalPortStart();
+		
+		if(internalPortEndError.isDisplayed())
+			utils.log().info("Validation Message : " + internalPortEndError.getText() + " is displayed");
+		
+		int startPort1 = Integer.valueOf(enterInternalPortStartTextBox.getText());
+		String internalPortEnd = String.valueOf(startPort1 -= 5);
+		clear(enterInternalPortEndTextBox);
 		sendKeys(enterInternalPortEndTextBox, internalPortEnd);
-		utils.log().info("Entered Internal Port End" + internalPortEnd);
+		utils.log().info("Entered Internal Port End : " + internalPortEnd);
 		return true;
 	}
 	
@@ -261,12 +277,13 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		super.getDriver().hideKeyboard();
 		this.clickSaveButton();
 		super.pause(2);
+		
 		if(internalStartPortLessThanEndPort.isDisplayed())
 			utils.log().info("Validation Message : " + internalStartPortLessThanEndPort.getText() + " is displayed");
-		int startPort1 = Integer.valueOf(enterInternalPortStartTextBox.getText());
-		String internalPortEnd = String.valueOf(startPort1--);
+		String internalPortEnd = super.generateInternalPortEnd();
+		clear(enterInternalPortEndTextBox);
 		sendKeys(enterInternalPortEndTextBox, internalPortEnd);
-		utils.log().info("Entered Port Start less than Port End" + internalPortEnd);
+		utils.log().info("Entered Internal Port End greater than Internal Port Start : " + internalPortEnd);
 		return true;
 	}
 	
@@ -279,11 +296,13 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		super.getDriver().hideKeyboard();
 		this.clickSaveButton();
 		super.pause(2);
+		
 		if(externalPortStartError.isDisplayed())
 			utils.log().info("Validation Message : " + externalPortStartError.getText() + " is displayed");
-		String externalPortEnd = super.generateExternalPortStart();
-		sendKeys(enterExternalPortStartTextBox, externalPortEnd);
-		utils.log().info("Entered External Port Start"+ externalPortEnd);
+		
+		String externalPortStart = super.generateExternalPortStart();
+		sendKeys(enterExternalPortStartTextBox, externalPortStart);
+		utils.log().info("Entered External Port Start : "+ externalPortStart);
 		return true;
 	}
 	
@@ -291,17 +310,41 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 	public boolean verifyEnterExternalPortEnd() {
 		utils.log().info("                                            ");
 		utils.log().info("********************************************");
-		utils.log().info("Verifying Enter External Port End Error   ");
+		utils.log().info("Verifying Enter External Port End Error     ");
 		utils.log().info("********************************************");
 		super.getDriver().hideKeyboard();
 		this.clickSaveButton();
 		super.pause(2);
+		
 		if(externalPortEndError.isDisplayed())
 			utils.log().info("Validation Message : " + externalPortEndError.getText() + " is displayed");
+		
 		String externalPortEnd = super.generateExternalPortEnd();
-		sendKeys(enterExternalPortStartTextBox, externalPortEnd);
+		
+		int startPort1 = Integer.valueOf(enterExternalPortStartTextBox.getText());
+		String externalPortEnd1 = String.valueOf(startPort1 -= 5);
+		clear(enterExternalPortEndTextBox);
+		sendKeys(enterExternalPortEndTextBox, externalPortEnd1);
+		utils.log().info("Entered External Port End : " + externalPortEnd1);
+		return true;
+	}
+	
+	//Click Save Changes without entering any data
+	public boolean verifyExternalPortStartLessThenPortEnd() {
+		utils.log().info("                                                                 ");
+		utils.log().info("*****************************************************************");
+		utils.log().info("Verifying External Port Start Should Be Less Than Port End Error ");
+		utils.log().info("*****************************************************************");
+		super.getDriver().hideKeyboard();
+		this.clickSaveButton();
+		super.pause(2);
+		
+		if(externalStartPortLessThanEndPort.isDisplayed())
+			utils.log().info("Validation Message : " + externalStartPortLessThanEndPort.getText() + " is displayed");
+		String externalPortEnd = super.generateExternalPortEnd();
+		clear(enterExternalPortEndTextBox);
 		sendKeys(enterExternalPortEndTextBox, externalPortEnd);
-		utils.log().info("Entered External Port End");
+		utils.log().info("Entered External Port End greater than External Port Start" + externalPortEnd);
 		return true;
 	}
 	
@@ -313,6 +356,8 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("****************************************");
 		super.getDriver().hideKeyboard();
 		this.clickSaveButton();
+		super.pause(2);
+		
 		if(enterValidIPAddress.isDisplayed())
 			utils.log().info("Validation Message : " + enterValidIPAddress.getText() + " is displayed");
 		//enter invalid IP address
@@ -321,27 +366,28 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 	
 	//Click Save Changes without entering any data
 	public boolean verifyEnterInValidIPAddress() {
-		utils.log().info("                                          ");
-		utils.log().info("******************************************");
-		utils.log().info("Verifying Enter InValid IP Address Error  ");
-		utils.log().info("******************************************");
+		utils.log().info("                                                            ");
+		utils.log().info("************************************************************");
+		utils.log().info("Verifying Enter Valid IP Address Within Subnet Range Error  ");
+		utils.log().info("************************************************************");
+		
 		super.getDriver().hideKeyboard();
 		sendKeys(enterInternalIPAddressTextBox, "127.0.0.1");
-		utils.log().info("Entered Invalid IP Address");
-		this.clickSaveButton();
-		if(enterInvalidIPAddress.isDisplayed())
-			utils.log().info("Validation Message : " + enterInvalidIPAddress.getText() + " is displayed");
-		sendKeys(enterInternalIPAddressTextBox, "192.168.7.150");
-		utils.log().info("Entered valid IP Address");
+		utils.log().info("Entered Invalid IP Address : 127.0.0.1");
 		super.getDriver().hideKeyboard();
 		this.clickSaveButton();
-		return true;
-	}
-	
-	public boolean createPortRuleName() {
-		getDriver().hideKeyboard();
-		if(enterPortRuleNameTextBox.isDisplayed())
-			sendKeys(enterPortRuleNameTextBox, super.generatePortRuleName());
+		
+		if(enterInvalidIPAddress.isDisplayed())
+			utils.log().info("Validation Message : " + enterInvalidIPAddress.getText() + " is displayed");
+		
+		super.getDriver().hideKeyboard();
+		clear(enterInternalIPAddressTextBox);
+		sendKeys(enterInternalIPAddressTextBox, super.generateIPAdress());
+		utils.log().info("Entered valid IP Address");
+		
+		super.getDriver().hideKeyboard();
+		this.clickSaveButton();
+		super.pause(10);
 		return true;
 	}
 	
@@ -351,50 +397,69 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		return true;
 	}
 	
-	public boolean selectUdp() {
+	public boolean selectUDP() {
 		if(udpButton.isDisplayed())
 			click(udpButton);
 		return true;
 	}
 	
-	public boolean selectTcpUdp() {
+	public boolean selectTCPUDP() {
 		if(tcpUdpButton.isDisplayed())
 			click(tcpUdpButton);
 		return true;
 	}
 	
-	public boolean createInternalPortStart() {
+	public boolean enterPortRuleName() {
 		getDriver().hideKeyboard();
+		clear(enterPortRuleNameTextBox);
+		if(enterPortRuleNameTextBox.isDisplayed())
+			sendKeys(enterPortRuleNameTextBox, super.generatePortRuleName());
+		utils.log().info("Enterted Port Rule Name : " + enterPortRuleNameTextBox.getText());
+		return true;
+	}
+	
+	public boolean enterInternalPortStart() {
+		getDriver().hideKeyboard();
+		clear(enterInternalPortStartTextBox);
 		if(enterInternalPortStartTextBox.isDisplayed())
 			sendKeys(enterInternalPortStartTextBox, super.generateInternalPortStart());
+		utils.log().info("Enterted Internal Port Start : " + enterInternalPortStartTextBox.getText());
 		return true;
 	}
 	
-	public boolean createInternalPortEnd() {
+	public boolean enterInternalPortEnd() {
 		getDriver().hideKeyboard();
+		clear(enterInternalPortEndTextBox);
 		if(enterInternalPortEndTextBox.isDisplayed())
 			sendKeys(enterInternalPortEndTextBox, super.generateInternalPortEnd());
+		utils.log().info("Enterted Internal Port End : " + enterInternalPortEndTextBox.getText());
 		return true;
 	}
 	
-	public boolean createExternalPortStart() {
+	public boolean enterExternalPortStart() {
 		getDriver().hideKeyboard();
+		clear(enterExternalPortStartTextBox);
 		if(enterExternalPortStartTextBox.isDisplayed())
 			sendKeys(enterExternalPortStartTextBox, super.generateExternalPortStart());
+		utils.log().info("Enterted External Port Start : " + enterExternalPortStartTextBox.getText());
 		return true;
 	}
 	
-	public boolean createExternalPortEnd() {
+	public boolean enterExternalPortEnd() {
 		getDriver().hideKeyboard();
+		clear(enterExternalPortEndTextBox);
 		if(enterExternalPortEndTextBox.isDisplayed())
 			sendKeys(enterExternalPortEndTextBox, super.generateExternalPortEnd());
+		utils.log().info("Enterted External Port Stop : " + enterExternalPortEndTextBox.getText());
 		return true;
 	}
 	
-	public boolean createIPAddress(String ipAdd) {
+	public boolean enterIPAddress() {
 		getDriver().hideKeyboard();
+		clear(enterInternalIPAddressTextBox);
 		if(enterInternalIPAddressTextBox.isDisplayed())
-			sendKeys(enterInternalIPAddressTextBox, ipAdd);
+			sendKeys(enterInternalIPAddressTextBox, super.generateIPAdress());
+		utils.log().info("Enterted IP Address : " + enterInternalIPAddressTextBox.getText());
 		return true;
 	}
 	

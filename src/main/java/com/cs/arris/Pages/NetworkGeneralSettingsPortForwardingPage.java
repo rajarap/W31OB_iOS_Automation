@@ -122,7 +122,7 @@ public class NetworkGeneralSettingsPortForwardingPage extends ParentClass implem
 		utils.log().info("*****************************************");
 	
 		try {
-			for (int i = 1; i <= 5; i++) {
+			for (int i = 1; i <= 3; i++) {
 			utils.log().info("Port Forwarding Rule  : " + i);
 			utils.log().info("----------------------------");
 
@@ -188,19 +188,19 @@ public class NetworkGeneralSettingsPortForwardingPage extends ParentClass implem
 		}
 	}
 
-	public boolean clickEditPortFowardingRuleIcon(int count) {
+	public boolean clickEditPortFowardingRuleIcon() {
 		utils.log().info("                            ");
 		utils.log().info("****************************");
 		utils.log().info(" Edit Port Forwarding Rules ");
 		utils.log().info("****************************");
 	
 		try {
-			for (int i = count; i <= count; i++) {
+			for (int i = 1; i <= 1; i++) {
 			utils.log().info("Editing Port Forwarding Rule  : " + i);
 			utils.log().info("-------------------------------------");
 
 			List<MobileElement> entity = (List<MobileElement>) super.getDriver()
-				.findElementsByXPath("androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout");
+				.findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout");
 
 			for (MobileElement e : entity) {		
 				if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']").isDisplayed())
@@ -211,7 +211,7 @@ public class NetworkGeneralSettingsPortForwardingPage extends ParentClass implem
 		}
 			return true;
 		}catch(Exception e){
-			utils.log().info("No Device found to prioritize");
+			utils.log().info("No Rule found to edit");
 			return false;
 		}
 	}

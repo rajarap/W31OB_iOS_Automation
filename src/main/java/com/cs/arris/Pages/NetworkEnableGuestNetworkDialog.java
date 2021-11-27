@@ -50,6 +50,12 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_save_dialog")
 	public MobileElement saveChangesButton;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_error_tv")
+	public MobileElement ssidErrorMessage;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_password_error_tv")
+	public MobileElement passwordErrorMessage;
 
 	public NetworkEnableGuestNetworkDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -67,6 +73,7 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 	}
 
 	public boolean clickSaveChangesButton() {
+		super.getDriver().hideKeyboard();
 		if (saveChangesButton.isDisplayed()) {
 			click(saveChangesButton);
 			utils.log().info("Clicked on Save Changes Button");
@@ -84,6 +91,30 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 			return true;
 		} else {
 			utils.log().info("Show Password Icon is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean enterGuestNetworkName() {
+		if (enterNetworkSSIDNameTextBox.isDisplayed()) {
+			super.getDriver().hideKeyboard();
+			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkeName());
+			utils.log().info("Entered Guest Network Name");
+			return true;
+		} else {
+			utils.log().info("Guest Network Name Text Box is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean enterGuestNetworkPassword() {
+		if (enterPasswordTextBox.isDisplayed()) {
+			super.getDriver().hideKeyboard();
+			sendKeys(enterPasswordTextBox, "1234567890");
+			utils.log().info("Entered Guest Network Password");
+			return true;
+		} else {
+			utils.log().info("Guest Network Password Text Box is not displayed");
 			return false;
 		}
 	}
@@ -133,17 +164,35 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 		}
 	}
 	
-	public boolean CreateNewGuestNetwork() {
+	public boolean validateGuestNetworkPage() {
+		utils.log().info("                                          ");
+		utils.log().info("******************************************");
+		utils.log().info("Enable Guest Network Dialog Validations   ");
+		utils.log().info("******************************************");
 		try {
 			super.getDriver().hideKeyboard();
-			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkName());
-			sendKeys(enterPasswordTextBox,"1234567890");		
+			this.clickSaveChangesButton();
+			utils.log().info("Clicked on Save Changes Button without entering SSID Name ");
+			
+			if(ssidErrorMessage.isDisplayed())
+				utils.log().info("Validation Message : " + ssidErrorMessage.getText() + " is displayed ");
+			
+			super.getDriver().hideKeyboard();
+			sendKeys(enterNetworkSSIDNameTextBox, "guestnet");
+			this.clickSaveChangesButton();
+			utils.log().info("Clicked on Save Changes Button without entering Password");
+			
+			if(passwordErrorMessage.isDisplayed())
+				utils.log().info("Validation Message : " + passwordErrorMessage.getText() + " is displayed ");
+			
+			clear(enterNetworkSSIDNameTextBox);
+			clear(enterPasswordTextBox);
 			return true;
 		} catch (Exception e) {
 			return false;
 		}
 	}
-
+	
 	@Override
 	public boolean isAt() {
 		if (enableGuestNetworkTitle.isDisplayed()) {

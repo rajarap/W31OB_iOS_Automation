@@ -139,6 +139,7 @@ com/cs/arris/Pages/Network5GHzWidebandModeAlertDialog.class
 com/cs/arris/Pages/AddDeviceAccessCameraDialog.class
 com/cs/arris/Pages/ParentalControlUserProfileAddRuleDatePickerDialog.class
 com/cs/arris/Pages/SetupHomeNetworkPage.class
+com/cs/arris/Pages/NetworkPortRuleEditFaliedAlertDialog.class
 com/cs/arris/Pages/ErrorCode_0000_1603_Failure_To_Configure_Your_Router_Page.class
 com/cs/arris/Pages/AddDeviceSelectDevice1Page.class
 com/cs/arris/Pages/SettingsHelpPage.class

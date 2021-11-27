@@ -693,18 +693,29 @@ public class ParentClass
 		{
 			Random r = new Random();
 			int low = 10;
-			int high = 100;
+			int high = 3000;
 			int result = r.nextInt(high-low) + low;
 			randNum = String.valueOf(result);
-			String portRuleName = "PortRule"+ randNum;
+			String portRuleName = "PR"+ randNum;
 			return portRuleName;
+		}
+		
+		public String generateGuestNetworkeName()
+		{
+			Random r = new Random();
+			int low = 10;
+			int high = 999;
+			int result = r.nextInt(high-low) + low;
+			randNum = String.valueOf(result);
+			String guestNet = "guestNet"+ randNum;
+			return guestNet;
 		}
 		
 		public String generateInternalPortStart()
 		{
 			Random r = new Random();
 			int low = 1001;
-			int high = 1050;
+			int high = 15000;
 			int result = r.nextInt(high-low) + low;
 			return String.valueOf(result);
 		}
@@ -712,8 +723,8 @@ public class ParentClass
 		public String generateInternalPortEnd()
 		{
 			Random r = new Random();
-			int low = 1051;
-			int high = 1100;
+			int low = 15001;
+			int high = 30000;
 			int result = r.nextInt(high-low) + low;
 			return String.valueOf(result);
 		}
@@ -721,8 +732,8 @@ public class ParentClass
 		public String generateExternalPortStart()
 		{
 			Random r = new Random();
-			int low = 1101;
-			int high = 1150;
+			int low = 30001;
+			int high = 45000;
 			int result = r.nextInt(high-low) + low;
 			return String.valueOf(result);
 		}
@@ -730,10 +741,21 @@ public class ParentClass
 		public String generateExternalPortEnd()
 		{
 			Random r = new Random();
-			int low = 1151;
-			int high = 1200;
+			int low = 46000;
+			int high = 64000;
 			int result = r.nextInt(high-low) + low;
 			return String.valueOf(result);
+		}
+		
+		public String generateIPAdress()
+		{
+			Random r = new Random();
+			int low = 101;
+			int high = 253;
+			int result = r.nextInt(high-low) + low;
+			randNum = String.valueOf(result);
+			String ipAdd = "192.168.7."+ randNum;
+			 return ipAdd;
 		}
 			
 		public void generateRandomNumber13()
@@ -749,24 +771,24 @@ public class ParentClass
 		{
 			Random r = new Random();
 			int low = 10;
-			int high = 100;
+			int high = 999;
 			int result = r.nextInt(high-low) + low;
 			 randNum = String.valueOf(result);
 			 ruleName = "rule"+ randNum;
 			 lanIPRuleName.add(ruleName);
 		}
 		
-		//For Network - LAN IP Reservation
-		public String generateGuestNetworkName()
-		{
-			Random r = new Random();
-			int low = 1;
-			int high = 10;
-			int result = r.nextInt(high-low) + low;
-			 randNum = String.valueOf(result);
-			 String guestName = "GuestNet"+ randNum;
-			 return guestName;
-		}
+//		//For Network - LAN IP Reservation
+//		public String generateGuestNetworkName()
+//		{
+//			Random r = new Random();
+//			int low = 1;
+//			int high = 10;
+//			int result = r.nextInt(high-low) + low;
+//			 randNum = String.valueOf(result);
+//			 String guestName = "GuestNet"+ randNum;
+//			 return guestName;
+//		}
 		
 		//generate IP between device id between 2 and 254.
 		public void generateRandomIPNumber()

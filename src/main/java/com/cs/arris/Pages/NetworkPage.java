@@ -357,6 +357,7 @@ public class NetworkPage extends ParentClass implements Page {
 			return true;
 		}else {
 			click(guestNetworkToggleButton);
+			super.pause(20);
 			utils.log().info("Enable/Disable Guest Network is now enabled");
 			return true;
 		}
@@ -368,6 +369,7 @@ public class NetworkPage extends ParentClass implements Page {
 			return true;
 		} else {
 			click(guestNetworkToggleButton);
+			super.pause(20);
 			utils.log().info("Enable/Disable Guest Network is now disabled");
 			return true;
 		}

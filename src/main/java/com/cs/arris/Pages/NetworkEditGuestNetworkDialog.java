@@ -91,8 +91,11 @@ public class NetworkEditGuestNetworkDialog extends ParentClass implements Page {
 	public boolean createGuestNetwork() {
 		try {
 			super.getDriver().hideKeyboard();
-			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkName());
-			sendKeys(enterPasswordTextBox,"1234567890");		
+			clear(enterNetworkSSIDNameTextBox);
+			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkeName());
+			super.getDriver().hideKeyboard();
+			clear(enterNetworkSSIDNameTextBox);
+			sendKeys(enterPasswordTextBox, "1234567890");		
 			return true;
 		} catch (Exception e) {
 			return false;
