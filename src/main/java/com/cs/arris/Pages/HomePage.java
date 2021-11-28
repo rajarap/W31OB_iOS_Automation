@@ -613,6 +613,12 @@ public class HomePage extends ParentClass implements Page {
 		super.devicesConnectedToRouter = count;
 		return super.devicesConnectedToRouter;
 	}
+	
+	public Integer getBitRateDevicesCount()
+	{
+		String count = bitRateDevices.getText();
+		return(Integer.valueOf(count.replaceFirst("^0+(?!$)", "")));
+	}
 
 	@Override
 	public boolean isAt() {

@@ -158,17 +158,17 @@ public class TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature extends ParentCl
 		if(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickCopyPasswordOKButton());
 	}
 	
-	@Test(priority = 7)
-	public void Verify_Amazon_Alexa_Skills_link() {
-		SoftAssert softfeatures7 = new SoftAssert();
-		softfeatures7.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickAlexaSkillsLink());
-	}
-	
-	@Test(priority = 8)
-	public void Verify_Please_Tap_Here_Link() {
-		SoftAssert softfeatures6 = new SoftAssert();
-		softfeatures6.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickPleaseTapHereLink());
-	}
+//	@Test(priority = 7)
+//	public void Verify_Amazon_Alexa_Skills_link() {
+//		SoftAssert softfeatures7 = new SoftAssert();
+//		softfeatures7.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickAlexaSkillsLink());
+//	}
+//	
+//	@Test(priority = 8)
+//	public void Verify_Please_Tap_Here_Link() {
+//		SoftAssert softfeatures6 = new SoftAssert();
+//		softfeatures6.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickPleaseTapHereLink());
+//	}
 
 	@Test(priority = 9)
 	public void Verify_Enable_AFFS_Feature() {

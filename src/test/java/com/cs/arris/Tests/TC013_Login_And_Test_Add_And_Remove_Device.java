@@ -130,18 +130,19 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 
 			if(home.getHamburgerMenuPageObject().isAt())
 				home.getHamburgerMenuPageObject().clickAddDeviceButton();
-			
 			}).selectModem(modem -> {
 				modem.selectISPCableRadioButton();
 				modem.clickNextButton();
 			}).selectDevice(device -> {
 				device.selectT25RadioButton();
 				device.clickNextButton();
+				super.pause(5);
 			}).deviceActivation(activation -> {
 				activation.clickStartButton();
 			}).deviceConnection(connection -> {
 				connection.clickNextButton();
 			}).internetServiceProvider(provider -> {
+				provider.verifyChoosingInternetProviderUI();
 				provider.clickNextButton();
 			}).activateDevice(activate -> {
 				activate.clickSkipButton();

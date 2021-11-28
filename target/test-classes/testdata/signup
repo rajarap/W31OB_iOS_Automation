@@ -9,10 +9,10 @@
 email=demouser2652@gmail.com
 firstname=demouser
 lastname=demouser
-ssidname=arrisw3140
-ssidpwd=1234567890
 udid=RZ8M3002DGL
-phoneToPauseInternet=M2006C3LII-Redmi9i
+//ssidname=arrisw3140
+//ssidpwd=1234567890
+//phoneToPauseInternet=M2006C3LII-Redmi9i
 
 
 //email=arrisuser2652@gmail.com
@@ -20,4 +20,4 @@ phoneToPauseInternet=M2006C3LII-Redmi9i
 //lastname=user 
 //ssidname=arrisw31
 //ssidpwd=1234567890
-//udid=RZ8M3002DGL
+//uddid=RZ8M3002DGL

@@ -30,22 +30,22 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Device Level Prioritization")
 	public MobileElement deviceLevelPrioritizationLabel;
-
-	@AndroidFindBy(id = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable' and @text='OFF']")
-	public MobileElement disableDevicePrioritySettings;
-
-	@AndroidFindBy(id = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable' and @text='ON']")
-	public MobileElement enableDevicePrioritySettings;
 	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Device Priority")
+	public MobileElement networkDevicePriorityLabel;
+
 	@AndroidFindBy(id = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable']")
 	public MobileElement devicePrioritySettingToggleButton;
-
+	
+	@AndroidFindBy(id = "//android.widget.Switch[@text='ON']")
+	public MobileElement enabledDevicePrioritySettingToggleButton;
+	
+	@AndroidFindBy(id = "//android.widget.Switch[@text='OFF']")
+	public MobileElement disabledDevicePrioritySettingToggleButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/add_device_configure")
 	public MobileElement addDeviceButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Device Priority")
-	public MobileElement networkDevicePriorityLabel;
 
 	public NetworkDevicePrioritySettings() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -99,28 +99,42 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 		}
 	}
 	
+//	public boolean enableDevicePrioritySettings() {
+//		if (enabledDevicePrioritySettingToggleButton.isDisplayed()) {
+//			utils.log().info("Device Priority Settings is enabled");
+//			return true;
+//		}else{
+//			click(devicePrioritySettingToggleButton);
+//			super.pause(35);
+//			utils.log().info("Device Priority Settings is selected");
+//			return true;
+//		}
+//	}
+	
 	public boolean enableDevicePrioritySettings() {
-		if (devicePrioritySettingToggleButton.isSelected()) {
+			click(devicePrioritySettingToggleButton);
+			super.pause(35);
 			utils.log().info("Device Priority Settings is enabled");
 			return true;
-		}else{
-			click(devicePrioritySettingToggleButton);
-			super.pause(35);
-			utils.log().info("Device Priority Settings is selected");
-			return true;
-		}
 	}
 	
+//	public boolean disableDevicePrioritySettings() {
+//		if (disabledDevicePrioritySettingToggleButton.isSelected()) {
+//			utils.log().info("Device Priority Settings is disabled");
+//			return true;
+//		}else{
+//			click(devicePrioritySettingToggleButton);
+//			super.pause(35);
+//			utils.log().info("Device Priority Settings is disabled");
+//			return false;
+//		}
+//	}
+	
 	public boolean disableDevicePrioritySettings() {
-		if (devicePrioritySettingToggleButton.isSelected()) {
 			click(devicePrioritySettingToggleButton);
 			super.pause(35);
 			utils.log().info("Device Priority Settings is disabled");
-			return true;
-		}else{
-			utils.log().info("Device Priority Settings is disabled");
 			return false;
-		}
 	}
 	
 

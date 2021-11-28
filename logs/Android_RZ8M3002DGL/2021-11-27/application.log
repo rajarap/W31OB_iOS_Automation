@@ -8533,3 +8533,455 @@ Driver info: driver.version: AndroidDriver
 
 ****** starting test :  Verify_General_Settings_UPnP_Settings  ******
 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:30:51.388 ParentClass:300 - log path: logs/Android_RZ8M3002DGL/2021-11-27
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:30:51.399 ParentClass:241 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:00.742 ParentClass:251 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:00.744 ParentClass:252 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.874 ParentClass:324 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.882 TC002_Test_Signin_And_Onboard:41 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.884 TC002_Test_Signin_And_Onboard:44 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.884 TC002_Test_Signin_And_Onboard:47 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.886 ParentClass:688 - Name generated : arrisW31-729
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.886 TC002_Test_Signin_And_Onboard:50 - SSID Name : arrisW31-729
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.886 TC002_Test_Signin_And_Onboard:53 - SSID Password : 1234567890
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:03.887 TC002_Test_Signin_And_Onboard:56 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:04.504 TC002_Test_Signin_And_Onboard:67 - 
+
+****** starting test : Verify_Signin_And_Onboard ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:05.666 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:06.025 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:22.708 DeviceLocationPage:110 - Device Location - Clicked Allow
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:23.534 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:24.980 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:25.960 SelectYourDevicePage:72 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:27.209 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:28.206 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:31.621 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:32.575 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:44.614 ValidOTP:128 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:48.960 EnterValidOTPPage:61 - Entering valid OTP...721419
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:50.500 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:58.884 SetupHomeNetworkPage:41 - Setup Home Network Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:31:59.758 UnPackYourBoxPage:42 - UnPack your Box Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:32:00.621 PlugInMaxRouterPage:41 - Plugin Max Router Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:32:25.384 ConnectMaxRouterToMobileDevicePage:42 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:32:40.396 ConnectMaxRouterToInternetPage:41 - Successfully Connected to Internet Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:33:20.702 SystemFirmwareUpdatePage:41 - System Firmware Update Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:33:51.031 ErrorCode_0000_1506_Warranty_Support_Page:46 - Warranty and Support Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:33:52.719 NameYourNetwokSSIDPage:56 - Name Your Network Page - Entered SSID Name
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:33:54.131 NameYourNetwokSSIDPage:62 - Name Your Network Page - Entered SSID Password
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:33:54.827 NameYourNetwokSSIDPage:69 - Name Your Network Page  - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:34:37.852 ConnectionToWifiNeededPage:56 - Running App in the Background
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:34:49.344 ConnectionToWifiNeededPage:60 - Running adb shell to login to mAX arrisW31-729 network
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:34:52.378 ConnectionToWifiNeededPage:70 - Activating App running in Background
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:35:11.986 ConnectionToWifiNeededPage:83 - Connection Needed Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:35:27.952 CongratulationsPage:42 - Congratulations Page - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:35:44.211 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:36:11.065 InstallAdditionalSatellitePage:70 - Install Additonal Satellite Dialog - Clicked on Install Later Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:36:16.297 NetworkOptimizationDialog:42 - Network Optimization Dialog - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:36:41.686 HomePage:364 - Network Optimization Dialog2 - Clicked on OK Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:36:49.413 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-30-51/TC002_Test_Signin_And_Onboard/Verify_Signin_And_Onboard.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:36:55.210 ParentClass:185 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:36:55.347 ParentClass:187 - Quitting Driver
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:18.756 ParentClass:300 - log path: logs/Android_RZ8M3002DGL/2021-11-27
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:18.766 ParentClass:241 - Setting Android driver capabilities
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:27.812 ParentClass:251 - Android Driver is set to the Thread Local context android
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:27.813 ParentClass:252 - Android driver initialized: 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:30.958 TC011_Login_And_Test_Network_Page:48 - Loading...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:30.961 ParentClass:324 - loading...testdata/signup
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:30.967 TC011_Login_And_Test_Network_Page:52 - First Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:30.969 TC011_Login_And_Test_Network_Page:55 - Last Name : demouser
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:30.973 TC011_Login_And_Test_Network_Page:58 - Email address : demouser2652@gmail.com
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:30.978 TC011_Login_And_Test_Network_Page:61 - UDID : RZ8M3002DGL
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:30.979 TC011_Login_And_Test_Network_Page:63 - Retrieved...Sign Up Test Data
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:31.675 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Login_And_Onboard  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:32.209 GetStartedPage:44 - Get Started - Clicked on Get Started Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:32.975 GrantPermissionsPage:183 - Grant Permissions - Clicked on Continue Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:39.578 DeviceLocationPage:112 - Device Location - Only This Time Link is not displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:42.918 AccessResourcesOnDevicePage:49 - Access Resources On Device - Clicked on Allow Link
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:44.388 SelectYourDevicePage:64 - Select your Device 1 - Selected SURFboard mAX option
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:45.325 SelectYourDevicePage:72 - Select your Device 1 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:46.378 SelectYourDevicePage2:73 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:47.313 SelectYourDevicePage2:82 - Select your Device 2 - Clicked Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:50.638 SiginPage:52 - Sigin Page - Entered user email address
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:44:51.547 SiginPage:60 - Sigin Page - Clicked on Signin Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:45:03.580 ValidOTP:128 - loading...emailDetails
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:45:08.035 EnterValidOTPPage:61 - Entering valid OTP...379572
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:45:09.607 CodeVerifiedPage:74 - OTP Code Verified Page - Clicked on Next Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:45:33.971 SetUpYourWiFiManagementPage:49 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:45:56.150 HomePage:620 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:45:56.652 FooterIconsPage:157 - Footer Icons Page - Clicked on Network Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:45:57.419 NetworkPage:635 - On Network Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:00.964 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Login_And_Onboard.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:01.682 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_UI_Page  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:03.051 NetworkPage:381 - Clicked on General Settings
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:03.794 AppRatingDialog:64 - On App Rating Dialog Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.042 AppRatingDialog:45 - App Rating Dialog - Clicked on Remind Me Later
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.596 NetworkGeneralSettingsPage:321 - On General Settings Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.610 NetworkGeneralSettingsPage:245 -                                                
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.616 NetworkGeneralSettingsPage:246 - ***********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.617 NetworkGeneralSettingsPage:247 - Verifying UI Elements on General Settings Page 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.618 NetworkGeneralSettingsPage:248 - ***********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.737 NetworkGeneralSettingsPage:252 - General Settings title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.824 NetworkGeneralSettingsPage:255 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.880 NetworkGeneralSettingsPage:258 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:04.941 NetworkGeneralSettingsPage:261 - UPnP Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:05.112 NetworkGeneralSettingsPage:265 - UPnp toggle button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:05.332 NetworkGeneralSettingsPage:275 - UPnP Info Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:05.440 NetworkGeneralSettingsPage:278 - Bridge Mode Link is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:05.601 NetworkGeneralSettingsPage:282 - Bridge Mode toggle button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:05.822 NetworkGeneralSettingsPage:291 - Bridge Mode Info Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:05.881 NetworkGeneralSettingsPage:294 - Port Forwarding Link is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:05.939 NetworkGeneralSettingsPage:297 - IPv6 Enable is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:06.109 NetworkGeneralSettingsPage:301 - IPv6 Enable toggle button is displayed but is disabled
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:06.362 NetworkGeneralSettingsPage:310 - IPv6 Enable Info Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:07.544 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_UI_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:08.179 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_UPnP_Settings  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:08.312 NetworkGeneralSettingsPage:191 - UPnP is already disabled
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:09.203 NetworkGeneralSettingsPage:184 - UPnP is now enabled
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:09.559 NetworkGeneralSettingsPage:148 - Clicked on UPnP Info Icon
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:10.440 NetworkGeneralSettingsUPnPInfoDialog:52 - On UPnP Info Dialog
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:10.666 NetworkGeneralSettingsUPnPInfoDialog:41 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:11.906 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_UPnP_Settings.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:12.568 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_IPv6_Enable_Settings  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:12.871 NetworkGeneralSettingsPage:170 - Clicked on IPv6 Info Icon
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:13.471 NetworkGeneralSettingsIPv6EnableInfoDialog:53 - On IPv6 Enable Info Dialog
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:13.641 NetworkGeneralSettingsIPv6EnableInfoDialog:41 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:14.753 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_IPv6_Enable_Settings.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:15.441 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_Bridge_Mode_Settings  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:15.679 NetworkGeneralSettingsPage:159 - Clicked on Bridge Mode Info Icon
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:16.296 NetworkGeneralSettingsBridgeModeInfoDialog:53 - On Bridge Mode Info Dialog
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:16.466 NetworkGeneralSettingsBridgeModeInfoDialog:41 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:17.612 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_Bridge_Mode_Settings.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:18.209 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_Port_Forwarding_Settings  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.034 NetworkGeneralSettingsPortForwardingPage:222 - On General Settings Port Fowarding Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.037 NetworkGeneralSettingsPortForwardingPage:94 -                                                                          
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.038 NetworkGeneralSettingsPortForwardingPage:95 - *************************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.038 NetworkGeneralSettingsPortForwardingPage:96 - Verifying UI Elements on Network - General Settings Port Forwarding Page 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.039 NetworkGeneralSettingsPortForwardingPage:97 - *************************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.188 NetworkGeneralSettingsPortForwardingPage:101 - Port Forwarding title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.270 NetworkGeneralSettingsPortForwardingPage:104 - Back Icon is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.317 NetworkGeneralSettingsPortForwardingPage:107 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:19.364 NetworkGeneralSettingsPortForwardingPage:110 - Add Rule button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:20.411 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_Port_Forwarding_Settings.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:21.034 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:21.275 NetworkGeneralSettingsPortForwardingPage:85 - Clicked on Add Rule Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:22.360 NetworkGeneralSettingsPortFowardingAddRulePage:471 - On Port Forwarding Add Rule Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.022 NetworkGeneralSettingsPortFowardingAddRulePage:149 -                                                                                   
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.023 NetworkGeneralSettingsPortFowardingAddRulePage:150 - **********************************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.023 NetworkGeneralSettingsPortFowardingAddRulePage:151 - Verifying UI Elements on Network - General Settings Port Forwarding Add Rule Page 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.024 NetworkGeneralSettingsPortFowardingAddRulePage:152 - **********************************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.130 NetworkGeneralSettingsPortFowardingAddRulePage:155 - ADD PORT FORWARDING RULE title text is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.257 NetworkGeneralSettingsPortFowardingAddRulePage:158 - Port Forwarding Rule name label is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.309 NetworkGeneralSettingsPortFowardingAddRulePage:161 - Port Forwarding Rule Name text box is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.394 NetworkGeneralSettingsPortFowardingAddRulePage:164 - Protocol label is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.440 NetworkGeneralSettingsPortFowardingAddRulePage:167 - TCP button is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.485 NetworkGeneralSettingsPortFowardingAddRulePage:170 - UDP button is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.539 NetworkGeneralSettingsPortFowardingAddRulePage:173 - TCP/UDP button is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.671 NetworkGeneralSettingsPortFowardingAddRulePage:176 - Enter Internal port start label is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.716 NetworkGeneralSettingsPortFowardingAddRulePage:179 - Enter Internal Port Start text box is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.826 NetworkGeneralSettingsPortFowardingAddRulePage:182 - Enter Internal port end label is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:26.877 NetworkGeneralSettingsPortFowardingAddRulePage:185 - Enter Internal Port End text box is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.000 NetworkGeneralSettingsPortFowardingAddRulePage:188 - Enter External port start label is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.064 NetworkGeneralSettingsPortFowardingAddRulePage:191 - Enter External Port Start text box is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.195 NetworkGeneralSettingsPortFowardingAddRulePage:194 - Enter External port end label is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.238 NetworkGeneralSettingsPortFowardingAddRulePage:197 - Enter Internal Port End text box is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.383 NetworkGeneralSettingsPortFowardingAddRulePage:200 - Enter Internal IP Address label is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.439 NetworkGeneralSettingsPortFowardingAddRulePage:203 - Enter Internal IP Address text box is displayed 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.473 NetworkGeneralSettingsPortFowardingAddRulePage:206 - Save button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:27.622 NetworkGeneralSettingsPortFowardingAddRulePage:130 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:29.026 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:29.745 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_Port_Forwarding_Add_Rules  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:29.966 NetworkGeneralSettingsPortForwardingPage:85 - Clicked on Add Rule Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:35.133 NetworkGeneralSettingsPortFowardingAddRulePage:417 - Enterted Port Rule Name : PR2027
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:37.428 NetworkGeneralSettingsPortFowardingAddRulePage:426 - Enterted Internal Port Start : 8581
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:39.057 NetworkGeneralSettingsPortFowardingAddRulePage:435 - Enterted Internal Port End : 28206
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:41.049 NetworkGeneralSettingsPortFowardingAddRulePage:444 - Enterted External Port Start : 33126
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:42.634 NetworkGeneralSettingsPortFowardingAddRulePage:453 - Enterted External Port Stop : 46415
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:44.237 NetworkGeneralSettingsPortFowardingAddRulePage:462 - Enterted IP Address : 192.168.7.153
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:46:44.483 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:05.240 NetworkPortRuleEditFaliedAlertDialog:59 - On Failed To Update Port Forwarding Details Dialog
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:05.401 NetworkPortRuleEditFaliedAlertDialog:48 - Clicked on OK Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:06.065 NetworkGeneralSettingsPortForwardingPage:85 - Clicked on Add Rule Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:11.549 NetworkGeneralSettingsPortFowardingAddRulePage:417 - Enterted Port Rule Name : PR1347
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:13.899 NetworkGeneralSettingsPortFowardingAddRulePage:426 - Enterted Internal Port Start : 13034
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:15.465 NetworkGeneralSettingsPortFowardingAddRulePage:435 - Enterted Internal Port End : 27818
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:16.981 NetworkGeneralSettingsPortFowardingAddRulePage:444 - Enterted External Port Start : 37797
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:18.627 NetworkGeneralSettingsPortFowardingAddRulePage:453 - Enterted External Port Stop : 57254
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:20.191 NetworkGeneralSettingsPortFowardingAddRulePage:462 - Enterted IP Address : 192.168.7.137
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:20.464 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:41.217 NetworkPortRuleEditFaliedAlertDialog:59 - On Failed To Update Port Forwarding Details Dialog
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:41.375 NetworkPortRuleEditFaliedAlertDialog:48 - Clicked on OK Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:42.295 NetworkGeneralSettingsPortForwardingPage:85 - Clicked on Add Rule Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:47.314 NetworkGeneralSettingsPortFowardingAddRulePage:417 - Enterted Port Rule Name : PR1262
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:49.584 NetworkGeneralSettingsPortFowardingAddRulePage:426 - Enterted Internal Port Start : 1015
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:51.145 NetworkGeneralSettingsPortFowardingAddRulePage:435 - Enterted Internal Port End : 21054
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:53.001 NetworkGeneralSettingsPortFowardingAddRulePage:444 - Enterted External Port Start : 34613
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:54.523 NetworkGeneralSettingsPortFowardingAddRulePage:453 - Enterted External Port Stop : 50016
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:56.138 NetworkGeneralSettingsPortFowardingAddRulePage:462 - Enterted IP Address : 192.168.7.140
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:47:56.346 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:17.108 NetworkPortRuleEditFaliedAlertDialog:59 - On Failed To Update Port Forwarding Details Dialog
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:17.277 NetworkPortRuleEditFaliedAlertDialog:48 - Clicked on OK Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:21.689 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_Port_Forwarding_Add_Rules.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.523 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_Port_Forwarding_Edit_Rules  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.849 NetworkGeneralSettingsPortForwardingPage:222 - On General Settings Port Fowarding Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.859 NetworkGeneralSettingsPortForwardingPage:192 -                             
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.860 NetworkGeneralSettingsPortForwardingPage:193 - ****************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.860 NetworkGeneralSettingsPortForwardingPage:194 -  Edit Port Forwarding Rules 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.860 NetworkGeneralSettingsPortForwardingPage:195 - ****************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.866 NetworkGeneralSettingsPortForwardingPage:199 - Editing Port Forwarding Rule  : 1
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:22.866 NetworkGeneralSettingsPortForwardingPage:200 - -------------------------------------
+[logs/Android_RZ8M3002DGL/2021-11-27 ERROR] 2021-11-27 22:48:40.091 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.id: com.arris.sbcBeta:id/port_name_dialog}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:439)
+	at com.cs.arris.Base.ParentClass.clear(ParentClass.java:452)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPortFowardingAddRulePage.enterPortRuleName(NetworkGeneralSettingsPortFowardingAddRulePage.java:414)
+	at com.cs.arris.Tests.TC011_Login_And_Test_Network_Page.Verify_General_Settings_Port_Forwarding_Edit_Rules(TC011_Login_And_Test_Network_Page.java:740)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.arris.sbcBeta:id/port_name_dialog})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@406ad6d5 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.arris.sbcBeta:id/port_name_dialog})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 45 more
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:41.171 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_Port_Forwarding_Edit_Rules.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:41.858 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:42.094 NetworkGeneralSettingsPortForwardingPage:85 - Clicked on Add Rule Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:43.167 NetworkGeneralSettingsPortFowardingAddRulePage:471 - On Port Forwarding Add Rule Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:43.169 NetworkGeneralSettingsPortFowardingAddRulePage:215 -                                                  
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:43.169 NetworkGeneralSettingsPortFowardingAddRulePage:216 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:43.169 NetworkGeneralSettingsPortFowardingAddRulePage:217 - Verifying Enter Port Forwarding Rule Name Error  
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:43.169 NetworkGeneralSettingsPortFowardingAddRulePage:218 - *************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:47.643 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:49.851 NetworkGeneralSettingsPortFowardingAddRulePage:223 - Validation Message : Please enter Port Forwarding Rule Name. is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:50.042 NetworkGeneralSettingsPortFowardingAddRulePage:227 - Entered Rule Name : PR554
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:50.045 NetworkGeneralSettingsPortFowardingAddRulePage:233 -                                             
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:50.046 NetworkGeneralSettingsPortFowardingAddRulePage:234 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:50.046 NetworkGeneralSettingsPortFowardingAddRulePage:235 - Verifying Enter Internal Port Start Error   
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:50.047 NetworkGeneralSettingsPortFowardingAddRulePage:236 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:51.335 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:53.512 NetworkGeneralSettingsPortFowardingAddRulePage:242 - Validation Message : Port should be in between 1 to 65536 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:53.656 NetworkGeneralSettingsPortFowardingAddRulePage:246 - Entered Internal Port Start : 5700
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:53.659 NetworkGeneralSettingsPortFowardingAddRulePage:252 -                                             
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:53.664 NetworkGeneralSettingsPortFowardingAddRulePage:253 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:53.665 NetworkGeneralSettingsPortFowardingAddRulePage:254 - Verifying Enter Internal Port End Error   
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:53.665 NetworkGeneralSettingsPortFowardingAddRulePage:255 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:54.904 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:57.079 NetworkGeneralSettingsPortFowardingAddRulePage:261 - Validation Message : Port should be in between 1 to 65536 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:57.856 NetworkGeneralSettingsPortFowardingAddRulePage:267 - Entered Internal Port End : 5695
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:57.860 NetworkGeneralSettingsPortFowardingAddRulePage:273 -                                                                  
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:57.860 NetworkGeneralSettingsPortFowardingAddRulePage:274 - *****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:57.860 NetworkGeneralSettingsPortFowardingAddRulePage:275 - Verifying Internal Port Start Should Be Less Than Port End Error 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:57.860 NetworkGeneralSettingsPortFowardingAddRulePage:276 - *****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:48:59.128 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:01.337 NetworkGeneralSettingsPortFowardingAddRulePage:282 - Validation Message : Start port should be lesser than End port. is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:02.091 NetworkGeneralSettingsPortFowardingAddRulePage:286 - Entered Internal Port End greater than Internal Port Start : 20792
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:02.094 NetworkGeneralSettingsPortFowardingAddRulePage:292 -                                             
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:02.095 NetworkGeneralSettingsPortFowardingAddRulePage:293 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:02.095 NetworkGeneralSettingsPortFowardingAddRulePage:294 - Verifying Enter External Port Start Error   
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:02.095 NetworkGeneralSettingsPortFowardingAddRulePage:295 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:03.511 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:05.654 NetworkGeneralSettingsPortFowardingAddRulePage:301 - Validation Message : Port should be in between 1 to 65536 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:05.819 NetworkGeneralSettingsPortFowardingAddRulePage:305 - Entered External Port Start : 37544
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:05.823 NetworkGeneralSettingsPortFowardingAddRulePage:311 -                                             
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:05.825 NetworkGeneralSettingsPortFowardingAddRulePage:312 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:05.826 NetworkGeneralSettingsPortFowardingAddRulePage:313 - Verifying Enter External Port End Error     
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:05.826 NetworkGeneralSettingsPortFowardingAddRulePage:314 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:07.073 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:09.245 NetworkGeneralSettingsPortFowardingAddRulePage:320 - Validation Message : Port should be in between 1 to 65536 is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:10.024 NetworkGeneralSettingsPortFowardingAddRulePage:328 - Entered External Port End : 37539
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:10.025 NetworkGeneralSettingsPortFowardingAddRulePage:334 -                                                                  
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:10.025 NetworkGeneralSettingsPortFowardingAddRulePage:335 - *****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:10.026 NetworkGeneralSettingsPortFowardingAddRulePage:336 - Verifying External Port Start Should Be Less Than Port End Error 
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:10.026 NetworkGeneralSettingsPortFowardingAddRulePage:337 - *****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:11.288 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:13.765 NetworkGeneralSettingsPortFowardingAddRulePage:343 - Validation Message : Start port should be lesser than End port. is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:14.460 NetworkGeneralSettingsPortFowardingAddRulePage:347 - Entered External Port End greater than External Port Start55903
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:14.472 NetworkGeneralSettingsPortFowardingAddRulePage:353 -                                         
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:14.473 NetworkGeneralSettingsPortFowardingAddRulePage:354 - ****************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:14.473 NetworkGeneralSettingsPortFowardingAddRulePage:355 - Verifying Enter Valid IP Address Error  
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:14.474 NetworkGeneralSettingsPortFowardingAddRulePage:356 - ****************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:15.721 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:17.872 NetworkGeneralSettingsPortFowardingAddRulePage:362 - Validation Message : Please enter a valid IP Address is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:17.881 NetworkGeneralSettingsPortFowardingAddRulePage:369 -                                                             
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:17.881 NetworkGeneralSettingsPortFowardingAddRulePage:370 - ************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:17.882 NetworkGeneralSettingsPortFowardingAddRulePage:371 - Verifying Enter Valid IP Address Within Subnet Range Error  
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:17.882 NetworkGeneralSettingsPortFowardingAddRulePage:372 - ************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:18.233 NetworkGeneralSettingsPortFowardingAddRulePage:376 - Entered Invalid IP Address : 127.0.0.1
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:19.400 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:19.561 NetworkGeneralSettingsPortFowardingAddRulePage:381 - Validation Message : IP Address must be within the subnet range. is displayed
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:20.533 NetworkGeneralSettingsPortFowardingAddRulePage:386 - Entered valid IP Address
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:21.188 NetworkGeneralSettingsPortFowardingAddRulePage:140 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-27 ERROR] 2021-11-27 22:49:37.042 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.arris.sbcBeta:id/port_save_dialog})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPortFowardingAddRulePage.clickSaveButton(NetworkGeneralSettingsPortFowardingAddRulePage.java:138)
+	at com.cs.arris.Tests.TC011_Login_And_Test_Network_Page.Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations(TC011_Login_And_Test_Network_Page.java:774)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1fa98a22 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.arris.sbcBeta:id/port_save_dialog})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:39.034 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:39.834 TC011_Login_And_Test_Network_Page:71 - 
+
+****** starting test :  Verify_General_Settings_Port_Forwarding_Help_Page  ******
+
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:45.013 NetworkGeneralSettingsPortForwardingPage:74 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:47.213 NetworkGeneralSettingsPortFowardingHelpPage:46 - On Port Forwarding Help Page
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:47.434 NetworkGeneralSettingsPortFowardingHelpPage:35 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:48.808 NetworkGeneralSettingsPortForwardingPage:63 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:54.587 TC011_Login_And_Test_Network_Page:798 - App Rating Dialog did not appear
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:54.865 NetworkGeneralSettingsPage:117 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:49:57.909 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-27-22-44-18/TC011_Login_And_Test_Network_Page/Verify_General_Settings_Port_Forwarding_Help_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:50:03.765 ParentClass:185 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-27 INFO ] 2021-11-27 22:50:03.926 ParentClass:187 - Quitting Driver

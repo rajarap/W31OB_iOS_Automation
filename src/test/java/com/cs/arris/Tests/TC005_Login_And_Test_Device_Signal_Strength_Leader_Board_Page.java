@@ -16,6 +16,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Pages.DeviceSignalStrengthLeaderBoardPage;
 import com.cs.arris.Pages.DevicesPage;
 import com.cs.arris.Pages.HomePage;
+import com.cs.arris.Pages.MainDeviceAllTabPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
@@ -143,7 +144,16 @@ public class TC005_Login_And_Test_Device_Signal_Strength_Leader_Board_Page exten
 	public void Verify_Sorting_Devices_From_Weak_To_Strong() {
 		SoftAssert softsignal5= new SoftAssert();
 		softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
-		softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
 		softsignal5.assertAll();
+	}
+	
+	@Test(priority = 6)
+	public void Verify_Editing_Device_Name() {
+		SoftAssert softsignal6= new SoftAssert();
+		softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickDeviceName(2));
+		softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
+		softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
+		softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
+		softsignal6.assertAll();
 	}
 }

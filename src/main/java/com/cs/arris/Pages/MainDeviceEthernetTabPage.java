@@ -27,6 +27,11 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public String fiveGhzDevice;
 	public String twoFourGhzDevice;
+	public String txtDevices;
+	public String execDevices;
+	public String medDevices;
+	public String prDevices;
+	public String connDevices;
 	public int allDevicesCount;
 	public int fiveGHzDevicesCount;
 	public int twoFourGHzDevicesCount;
@@ -201,6 +206,25 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/restartRouter")
 	public MobileElement restartRouterButton;
 
+	//======================  Device Counts ====================
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
+	public MobileElement totalDevices;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtExcellentDevices")
+	public MobileElement excellentDevices;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtMediumDevices")
+	public MobileElement mediumDevices;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtPoorDevices")
+	public MobileElement poorDevices;
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/devicesNumbers")
+	public MobileElement connectedDevices;
+	
+	//======================  Device Counts ====================
+	
 	public MainDeviceEthernetTabPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
@@ -848,24 +872,76 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 			return false;
 		}
 	}
+	public boolean clickDeviceName(int i) {
+		try {
+				utils.log().info("Editing Device Name  : " + i);
+				utils.log().info("-----------------------------");
 
+						List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+								"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+ i + "]");
 
-	public boolean validations() {
-		if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText())) {
-			utils.log().info("Count of Ethernet devices displayed on the main device image is equal to the Connected Devices count");
+						for (MobileElement e : entity) {
+							try {
+								if (e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
+										.isDisplayed())
+									click(e.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']"));
+							} catch (Exception exp) {
+								utils.log().info("Device Name is not available ");
+							}
+						}
+				return true;
+			} catch (Exception ex) {
+				utils.log().info("Unable to retrieve Device Name");
+			return false;
+			}
+	}
+
+	public boolean ethernetTabvalidations() {
+		try {
+			
+			 txtDevices = totalDevices.getText();
+			 execDevices = excellentDevices.getText();
+			 medDevices = mediumDevices.getText();
+			 prDevices = poorDevices.getText();
+			 connDevices = String.valueOf(getAllCountOfDevices(connectedDevices.getText()));
+			
+			try {
+				if(txtDevices.equals(connDevices)) {
+					utils.log().info("Total Count of devices displayed to the main Router Image are : " + txtDevices);
+					utils.log().info("Total Count of Ethernet devices connected to the main Router are : " + connDevices);
+					utils.log().info("Count of devices displayed on the main Router Image is equal to the count of Ethernet devices connected to the main Router");
+				}else {
+					utils.log().info("Count of devices displayed on the main Router Image is not equal to the count of Ethernet devices connected to the main Router");
+				}
+			}catch(Exception e) {}
+			
+			try {
+				String sumOfDevices = String.valueOf(Integer.valueOf(execDevices) + Integer.valueOf(medDevices) + Integer.valueOf(prDevices));
+				if(sumOfDevices.equals(txtDevices)) {
+					utils.log().info("Total Count of execellent devices connected to the main Router are : " + execDevices);
+					utils.log().info("Total Count of medium devices connected to the main Router are : " + medDevices);
+					utils.log().info("Total Count of poor devices connected to the main Router are : " + prDevices);
+					utils.log().info("Total Count of execellent, medium and poor devices are equal the count of devices displayed on the main Router Image");
+				}else {
+					utils.log().info("Total Count of execellent, medium and poor devices are not equal the count of devices displayed on the main Router Image");
+				}
+			}catch(Exception e) {}
 			return true;
-		}else {
-			utils.log().info("Device Count displayed on the main device image is not equal to the Connected Devices count");
-		return false;}
+		} catch (Exception e) {
+			utils.log().info("Issue in validating count of devices");
+			return false;
+		}
 	}
 
 	@Override
 	public boolean isAt() {
 		if (ethernetTab.isDisplayed() && ethernetTab.getText().equals("Ethernet")) {
-			utils.log().info("On MAIN Router - 2.4 GHz Tab  Page ");
+			utils.log().info("On MAIN Router - Ethernet Tab Page ");
 			return true;
 		} else {
-			utils.log().info("Not on MAIN Page");
+			utils.log().info("Not on MAIN Router - Ethernet Tab Page");
 			return false;
 		}
 	}

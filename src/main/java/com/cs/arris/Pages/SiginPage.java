@@ -46,19 +46,21 @@ public class SiginPage  extends ParentClass implements Page
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 	
-	public void enterEmailAddress(String email)
+	public boolean enterEmailAddress(String email)
 	{
 		sendKeys(emailAddress, email);
 		utils.log().info("Sigin Page - Entered user email address");
+		return true;
 	}
 	
-	public void clickSigninButton()
+	public boolean clickSigninButton()
 	{
 		if(signinButton.isEnabled())
 		{
 			click(signinButton);
 			utils.log().info("Sigin Page - Clicked on Signin Button");
 		}
+		return true;
 	}
 	
 	public void clickSignUpButton()

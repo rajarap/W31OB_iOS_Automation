@@ -39,8 +39,9 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 //	public MobileElement numberOfDevicesText;
 	
 	//@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.widget.TextView[2]]")
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
-	public MobileElement numberOfDevicesText;
+	//@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtTotalDevices']")
+	public MobileElement countOfDevices;
 
 	@AndroidFindAll({ @AndroidBy(id = "com.arris.sbcBeta:id/txtThree"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,514][451,567]']") })
@@ -65,8 +66,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	public MobileElement weakToStrong;
 
 	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']"), // Galaxy-S10-Android
-																												// (me)
+			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']"), 
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtDeviceName") })
 	public MobileElement mobileDeviceName;
 
@@ -119,7 +119,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 		}
 	}
 	
-	public boolean clickEditDeviceName()
+	public boolean clickEditDeviceName(int deviceNumber)
 	{
 		if(mobileDeviceName.isDisplayed())	{
 			click(mobileDeviceName);
@@ -147,6 +147,10 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	
 	public boolean verifyUIOnDeviceSignalStrengthPage() {
 		try {
+			
+			utils.log().info("**************************************************************");
+			utils.log().info("Verifying UI Elements on Device Signal Strength Leader Board  ");
+			utils.log().info("**************************************************************");
 			if (leaderBoardTitleText.isDisplayed())
 				utils.log().info("Title - " + leaderBoardTitleText.getText() + " - is displayed");
 			else
@@ -162,8 +166,8 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			else
 				utils.log().info("Sorting based on device signal strength option is not displayed");
 			
-			if (numberOfDevicesText.isDisplayed())
-				utils.log().info(numberOfDevicesText.getText() + " are displayed");
+			if (countOfDevices.isDisplayed())
+				utils.log().info(countOfDevices.getText() + " are displayed");
 			else
 				utils.log().info("Number of Devices is not displayed");
 			
@@ -176,15 +180,15 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 	public boolean verifySignalStrengthForDevices() {
 		try {
-			utils.log().info("************************************");
-			utils.log().info("Device Signal Strength Leader Board  ");
-			utils.log().info("************************************");
+			utils.log().info("*********************************************");
+			utils.log().info("List of Devices Signal Strength Leader Board ");
+			utils.log().info("*********************************************");
 
-//			int deviceCount = getDeviceSignalStrengthCount(numberOfDevicesText.getText());
-//			utils.log().info("Device count is : " + deviceCount);
+			int size = new HomePage().getBitRateDevicesCount();
+			utils.log().info("Bit Rate Device count is : " + size);
 
-			for (int i = 1; i <= 3; i++) {
-				utils.log().info("Devices  : " + counter);
+			for (int i = 1; i <= size; i++) {
+				utils.log().info("Devices  : " + i);
 				utils.log().info("---------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
@@ -241,7 +245,6 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 					} catch (Exception exp) {
 						utils.log().info("RSSI data is not available/displayed");
 					}
-					counter++;
 				}
 				if (i >= 5)
 					super.swipeUp();
@@ -334,13 +337,13 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			utils.log().info("Sorting Device Signal Strength Leader Board From Strong to Weak ");
 			utils.log().info("****************************************************************");
 
-//			int deviceCount = getDeviceSignalStrengthCount(numberOfDevicesText.getText());
-//			utils.log().info("Device count is : " + deviceCount);
+			int size = new HomePage().getBitRateDevicesCount();
+			utils.log().info("Bit Rate Device count is : " + size);
 			
 			click(signalStrengthOptions);
 			click(strongToWeak);
 
-			for (int i = 1; i <= 3; i++) {
+			for (int i = 1; i <= size ; i++) {
 				utils.log().info("Devices  : " + counter);
 				utils.log().info("---------------------");
 
@@ -416,13 +419,13 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			utils.log().info("Sorting Device Signal Strength Leader Board From Weak to Strong ");
 			utils.log().info("****************************************************************");
 
-//			int deviceCount = getDeviceSignalStrengthCount(numberOfDevicesText.getText());
-//			utils.log().info("Device count is : " + deviceCount);
+			int size = new HomePage().getBitRateDevicesCount();
+			utils.log().info("Bit Rate Device count is : " + size);
 			
 			click(signalStrengthOptions);
 			click(weakToStrong);
 
-			for (int i = 1; i <= 3; i++) {
+			for (int i = 1; i <= size; i++) {
 				utils.log().info("Devices  : " + counter);
 				utils.log().info("---------------------");
 
@@ -491,7 +494,27 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			return false;
 		}
 	}
+	
+	public boolean clickDeviceName(int i) {
+		try {
+				utils.log().info("Editing Device Name  : " + i);
+				utils.log().info("-----------------------------");
 
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
+
+				for (MobileElement e : entity) 
+					try {
+							click(e.findElementById("com.arris.sbcBeta:id/txtDeviceName"));
+					} catch (Exception exp) {
+						utils.log().info("Device Name is not available/displayed");
+					}
+				return true;
+			} catch (Exception ex) {
+				utils.log().info("Error in Device Signal Strength Leader Board Page");
+			return false;
+			}
+	}
 
 	private Integer convertSignalStrengthToInteger(String ghz) // 5GHz
 	{
