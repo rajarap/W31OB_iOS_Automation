@@ -72,200 +72,166 @@ public class TC003_Login_And_Test_Home_Page extends ParentClass
 		   utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
 	  }
 	  
-	  	  @Test(priority = 1)
-	  public void Login_And_Onboard()
-	  {
-		  TC52_Login_And_Verify_HomePage_Workflow.getStartedPage(getStarted -> {
-			  getStarted.clickGetStartedButton();
-		  }).grantPermissionsPage(grantPermission -> {
-			  grantPermission.clickContinueButton();
-		  }).deviceLocationPage(deviceLocation -> {
-			  deviceLocation.clickOnlyThisTimeLink();
-		  }).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			  super.pause(3);
-			  accessResoucesOnDevice.clickAllowLink();
-		  }).selectYourDevicePage(selectDevice -> {
-			  selectDevice.selectSurfboardMaxOption();
-			  selectDevice.clickNextButton();
-		  }).selectYourDevicePage2(selectDevice2 -> {
-			  selectDevice2.selectMaxProAX11000RadioButton();
-			  selectDevice2.clickNextButton();
-			  super.pause(3);
-		  }).welcomeSigninPage(signin -> {
-			  signin.enterEmailAddress(email);
-			  signin.clickSigninButton();
-			  super.pause(12);
-		  }).getOTPCode(getOTP -> {
-			  passCode = getOTP.getValidOTP();
-	  		}).enterOTPPage(otpverify -> {
-			  otpverify.enterValidPassCode(passCode);
-	  		 }).codeVerifiedPage(codeVerified -> {
-				  codeVerified.getCodeVerifiedText();
-				  codeVerified.clickNextButton();
-				  super.pause(3);
-				  try
-				  {
-					  if(codeVerified.continueOnBoardingButton.isDisplayed())
-					  {
-						  codeVerified.clickContinueOnboardingButton();
-					  }
-				  }catch(Exception e)
-				  {
-					  e.getMessage();
-				  }
-			  }).setupWifi(setupwifi ->{
-				  setupwifi.clickskipTutorialButton();
-				  super.pause(3);
-		  }).homePage(home -> {
-			  try
-			  {
-				  if(home.okButton.isDisplayed())
-				  {
-					  home.clickOkButton();
-				  }
-			  }catch(Exception e)
-			  {
-				  e.getMessage();
-			  }
-		  });
-	  }
-	  
-		@Test(priority = 2)
-		public void Verify_Home_UI_Page() {
-			SoftAssert softhome2 = new SoftAssert();
-			softhome2.assertTrue(new HomePage().verifyUIOnHomePage());
-			softhome2.assertAll();
-		}
-		
-		@Test(priority = 3)
-		public void Verify_Home_Device_Signal_Strength_Navigation() {
-			SoftAssert softhome3 = new SoftAssert();
-			softhome3.assertTrue(new HomePage().clickDeviceSignalStrengthImage());
-			if(new HomePage().getDeviceSignalStrengthPageObject().isAt())
-				softhome3.assertTrue(new HomePage().getDeviceSignalStrengthPageObject().clickCloseIcon());
-			softhome3.assertAll();
-		}
-		
-		@Test(priority = 4)
-		public void Verify_Home_Speed_Test_History_Navigation() {
-			SoftAssert softhome4 = new SoftAssert();
-			softhome4.assertTrue(new HomePage().clickSpeedTestHistoryImage());
-			if(new HomePage().getBlankSpeedTestHistoryPageObject().isAt())
-				softhome4.assertTrue(new HomePage().getBlankSpeedTestHistoryPageObject().clickCloseIcon());
-			softhome4.assertAll();
-		}
-		
-		@Test(priority = 5)
-		public void Verify_Home_Currently_Blocked_Devices__Navigation() {
-			SoftAssert softhome5 = new SoftAssert();
-			softhome5.assertTrue(new HomePage().clickCurrentlyBlockedDevicesImage());
-			if(new HomePage().getBlankBlockedDevicesPageObject().isAt())
-				softhome5.assertTrue(new HomePage().getBlankBlockedDevicesPageObject().clickCloseIcon());
-			softhome5.assertAll();
-		}
-		
-		@Test(priority = 6)
-		public void Verify_Home_Main_Devices_Navigation() {
-			SoftAssert softhome6 = new SoftAssert();
-			softhome6.assertTrue(new HomePage().clickMainDeviceImage());
-			if(new HomePage().getMainDeviceAllTabPageObject().isAt())
-				softhome6.assertTrue(new HomePage().getMainDeviceAllTabPageObject().clickBackButton());
-			softhome6.assertAll();
-		}
-		
-		@Test(priority = 7)
-		public void Verify_Home_Total_Devices_Navigation() {
-			SoftAssert softhome7 = new SoftAssert();
-			softhome7.assertTrue(new HomePage().clickDevicesImage());
-			if(new HomePage().getDevicesPageObject().isAt())
-				softhome7.assertTrue(new HomePage().getDevicesPageObject().clickBackButton());
-			softhome7.assertAll();
-		}
-		
-		@Test(priority = 8)
-		public void Verify_Home_Hamburger_Navigation() {
-			SoftAssert softhome8 = new SoftAssert();
-			softhome8.assertTrue(new HomePage().clickNavigationButton());
-			if(new HomePage().getHamburgerMenuPageObject().isAt())
-				softhome8.assertTrue(new HomePage().getHamburgerMenuPageObject().clickCloseButton());
-			softhome8.assertAll();
-		}
-		
-		@Test(priority = 9)
-		public void Verify_Home_Notifications_Navigation() {
-			SoftAssert softhome9= new SoftAssert();
-			softhome9.assertTrue(new HomePage().clickNotificationsIcon());
-			if(new HomePage().getNotificationPageObject().isAt())
-				softhome9.assertTrue(new HomePage().getNotificationPageObject().clickBackButton());
-			softhome9.assertAll();
-		}
-}
-//			  if(home.isAt())
+//	  	  @Test(priority = 1)
+//	  public void Login_And_Onboard()
+//	  {
+//		  TC52_Login_And_Verify_HomePage_Workflow.getStartedPage(getStarted -> {
+//			  getStarted.clickGetStartedButton();
+//		  }).grantPermissionsPage(grantPermission -> {
+//			  grantPermission.clickContinueButton();
+//		  }).deviceLocationPage(deviceLocation -> {
+//			  deviceLocation.clickOnlyThisTimeLink();
+//		  }).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
+//			  super.pause(3);
+//			  accessResoucesOnDevice.clickAllowLink();
+//		  }).selectYourDevicePage(selectDevice -> {
+//			  selectDevice.selectSurfboardMaxOption();
+//			  selectDevice.clickNextButton();
+//		  }).selectYourDevicePage2(selectDevice2 -> {
+//			  selectDevice2.selectMaxProAX11000RadioButton();
+//			  selectDevice2.clickNextButton();
+//			  super.pause(3);
+//		  }).welcomeSigninPage(signin -> {
+//			  signin.enterEmailAddress(email);
+//			  signin.clickSigninButton();
+//			  super.pause(12);
+//		  }).getOTPCode(getOTP -> {
+//			  passCode = getOTP.getValidOTP();
+//	  		}).enterOTPPage(otpverify -> {
+//			  otpverify.enterValidPassCode(passCode);
+//	  		 }).codeVerifiedPage(codeVerified -> {
+//				  codeVerified.getCodeVerifiedText();
+//				  codeVerified.clickNextButton();
+//				  super.pause(3);
+//				  try
+//				  {
+//					  if(codeVerified.continueOnBoardingButton.isDisplayed())
+//					  {
+//						  codeVerified.clickContinueOnboardingButton();
+//					  }
+//				  }catch(Exception e)
+//				  {
+//					  e.getMessage();
+//				  }
+//			  }).setupWifi(setupwifi ->{
+//				  setupwifi.clickskipTutorialButton();
+//				  super.pause(3);
+//		  }).homePage(home -> {
+//			  try
 //			  {
-//			  	home.verifyUIOnHomePage();
-//			  	
-//			  	home.clickDeviceSignalStrengthImage();
-//			  	if(home.getDeviceSignalStrengthPageObject().isAt())
-//			  	{
-//			  		home.getDeviceSignalStrengthPageObject().clickCloseIcon();
-//			  	}
-//			  	home.clickSpeedTestHistoryImage();
-//			    if(home.getBlankSpeedTestHistoryPageObject().isAt())
-//			    {
-//				   home.getBlankSpeedTestHistoryPageObject().clickCloseIcon();
-//			    }
-//			  	home.clickCurrentlyBlockedDevicesImage();
-//			  	if(home.getBlankBlockedDevicesPageObject().isAt())
-//			  	{
-//			  		home.getBlankBlockedDevicesPageObject().clickCloseIcon();
-//			  	}
+//				  if(home.okButton.isDisplayed())
+//				  {
+//					  home.clickOkButton();
+//				  }
+//			  }catch(Exception e)
+//			  {
+//				  e.getMessage();
 //			  }
 //		  });
 //	  }
-//}
-				 
-				 
-				 
-
-//				 totalCountOfDevices = home.getTotalCountOfDevices();
-//				 utils.log().info("Total Number of Devices connected are : " + totalCountOfDevices);
-//				 
-//				 countOfDeviceSignalStrength = home.getBitRateDevices();
-//				 utils.log().info("Count of Devices Signal Strength : " + countOfDeviceSignalStrength);
-//				 
-//				 countOfDevicesSpeedHistory = home.getSpeedTestDevices();
-//				 utils.log().info("Count of Devices Speed Test History : " + countOfDevicesSpeedHistory);
-//				 //add count of blocked devices here.  Deferred
-				 
-//				 Assert.assertEquals(home.getHomeTitleText(), getStrings().get("home_page_title"));
-//				 utils.log().info("Verified Home Page Title Text : " + home.getHomeTitleText());
-//				 
-//				 Assert.assertEquals(home.getNetworkSpeedText(), getStrings().get("home_page_text"));
-//				 utils.log().info("Verified Home Page Network Speed Text : " + home.getNetworkSpeedText());
-//				 
-//				 Assert.assertEquals(home.getDownloadText(), getStrings().get("home_page_download"));
-//				 utils.log().info("Verified Home Page Download Text : " + home.getDownloadText());
-//				 
-//				 Assert.assertEquals(home.getUploadText(), getStrings().get("home_page_upload"));
-//				 utils.log().info("Verified Home Page Upload Text : " + home.getUploadText());
-//				 
-//				 Assert.assertEquals(home.getMainDeviceName(), getStrings().get("home_page_main"));	
-//				 utils.log().info("Verified Home Page Main Device Name : " + home.getMainDeviceName());
-//				 
-//				 Assert.assertEquals(home.getDeviceSignalStrengthLeaderBoardText(), getStrings().get("home_page_leader_board"));
-//				 utils.log().info("Verified Home Page Device Signal Strength Leader Board Text : " + home.getDeviceSignalStrengthLeaderBoardText());
-//				 
-//				 Assert.assertEquals(home.getSpeedTestHistoryText(), getStrings().get("home_page_speed_test_history"));
-//				 utils.log().info("Verified Home Page Speed Test History Text : " + home.getSpeedTestHistoryText());
-//				 
-////				 Assert.assertEquals(home.getCurrentlyBlockedDevicesText(), getStrings().get("home_page_blocked_devices"));
-//				 Assert.assertEquals(home.getHomeButtonText(), getStrings().get("home_page_home_button"));
-//				 utils.log().info("Verified Home Page Home Button Text : " + home.getHomeButtonText());
-//				 
-//				 Assert.assertEquals(home.getNetworkButtonText(), getStrings().get("home_page_network_button"));
-//				 utils.log().info("Verified Home Page Network Button Text : " + home.getNetworkButtonText());
-//				 
-//				 Assert.assertEquals(home.getParentalButtonText(), getStrings().get("home_page_parental"));
-//				 utils.log().info("Verified Home Page Parental Button Text : " + home.getParentalButtonText());
-
-
+	  
+//	  	@Test(priority = 2)
+//		public void Verify_Home_Page() {
+//			try {
+//				this.Verify_Home_UI_Page();
+//			}catch(Exception e) {utils.log().info("Issue in Home Page UI on All Tab");}
+//			
+//			try {
+//				this.Verify_Home_Device_Signal_Strength_Navigation();
+//			}catch(Exception e) {utils.log().info("Issue in Home Device Signal Strength Navigation");}
+//			
+//			try {
+//				this.Verify_Home_Speed_Test_History_Navigation();
+//			}catch(Exception e) {utils.log().info("Issue in Home Speed Test History Navigation");}
+//			
+//			try {
+//				this.Verify_Home_Currently_Blocked_Devices_Navigation();
+//			}catch(Exception e) {utils.log().info("Issue in Home Currently Blocked Devices Navigation");}
+//			
+//			try {
+//				this.Verify_Home_Main_Devices_Navigation();
+//			}catch(Exception e) {utils.log().info("Issue in Home Main Devices Navigation");}
+//			
+//			try {
+//				this.Verify_Home_Total_Devices_Navigation();
+//			}catch(Exception e) {utils.log().info("Issue in Home Total Devices Navigation");}
+//			
+//			try {
+//				this.Verify_Home_Hamburger_Navigation();
+//			}catch(Exception e) {utils.log().info("Issue in Home Hamburger Navigation");}
+//			
+//			try {
+//				this.Verify_Home_Notifications_Navigation();
+//			}catch(Exception e) {utils.log().info("Issue in Home Notifications Navigation");}
+//		}
+		  
+			@Test(priority = 3)
+			public void Verify_Home_UI_Page() {
+				SoftAssert softhome2 = new SoftAssert();
+				softhome2.assertTrue(new HomePage().verifyUIOnHomePage());
+				softhome2.assertAll();
+			}
+			
+			@Test(priority = 4)
+			public void Verify_Home_Device_Signal_Strength_Navigation() {
+				SoftAssert softhome3 = new SoftAssert();
+				softhome3.assertTrue(new HomePage().clickDeviceSignalStrengthImage());
+				if(new HomePage().getDeviceSignalStrengthPageObject().isAt())
+					softhome3.assertTrue(new HomePage().getDeviceSignalStrengthPageObject().clickCloseIcon());
+				softhome3.assertAll();
+			}
+			
+			@Test(priority = 5)
+			public void Verify_Home_Speed_Test_History_Navigation() {
+				SoftAssert softhome4 = new SoftAssert();
+				softhome4.assertTrue(new HomePage().clickSpeedTestHistoryImage());
+				if(new HomePage().getBlankSpeedTestHistoryPageObject().isAt())
+					softhome4.assertTrue(new HomePage().getBlankSpeedTestHistoryPageObject().clickCloseIcon());
+				softhome4.assertAll();
+			}
+			
+			@Test(priority = 6)
+			public void Verify_Home_Currently_Blocked_Devices_Navigation() {
+				SoftAssert softhome5 = new SoftAssert();
+				softhome5.assertTrue(new HomePage().clickCurrentlyBlockedDevicesImage());
+				if(new HomePage().getBlankBlockedDevicesPageObject().isAt())
+					softhome5.assertTrue(new HomePage().getBlankBlockedDevicesPageObject().clickCloseIcon());
+				softhome5.assertAll();
+			}
+			
+			@Test(priority = 7)
+			public void Verify_Home_Main_Devices_Navigation() {
+				SoftAssert softhome6 = new SoftAssert();
+				softhome6.assertTrue(new HomePage().clickMainDeviceImage());
+				if(new HomePage().getMainDeviceAllTabPageObject().isAt())
+					softhome6.assertTrue(new HomePage().getMainDeviceAllTabPageObject().clickBackButton());
+				softhome6.assertAll();
+			}
+			
+			@Test(priority = 8)
+			public void Verify_Home_Total_Devices_Navigation() {
+				SoftAssert softhome7 = new SoftAssert();
+				softhome7.assertTrue(new HomePage().clickDevicesImage());
+				if(new HomePage().getDevicesPageObject().isAt())
+					softhome7.assertTrue(new HomePage().getDevicesPageObject().clickBackButton());
+				softhome7.assertAll();
+			}
+			
+			@Test(priority = 9)
+			public void Verify_Home_Hamburger_Navigation() {
+				SoftAssert softhome8 = new SoftAssert();
+				softhome8.assertTrue(new HomePage().clickNavigationButton());
+				if(new HomePage().getHamburgerMenuPageObject().isAt())
+					softhome8.assertTrue(new HomePage().getHamburgerMenuPageObject().clickCloseButton());
+				softhome8.assertAll();
+			}
+			
+			@Test(priority = 10)
+			public void Verify_Home_Notifications_Navigation() {
+				SoftAssert softhome9= new SoftAssert();
+				softhome9.assertTrue(new HomePage().clickNotificationsIcon());
+				if(new HomePage().getNotificationPageObject().isAt())
+					softhome9.assertTrue(new HomePage().getNotificationPageObject().clickBackButton());
+				softhome9.assertAll();
+			}
+}

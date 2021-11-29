@@ -510,9 +510,9 @@ public class DevicesPage extends ParentClass implements Page {
 	}
 
 	public boolean verifyUIOnDevicesPage() {
-		utils.log().info("*****************************************");
+		utils.log().info("********************************************");
 		utils.log().info("Details of UI Elements on the Devices Page  ");
-		utils.log().info("*****************************************");
+		utils.log().info("********************************************");
 
 		try {
 			if (onlineDeviceTitle.isDisplayed())

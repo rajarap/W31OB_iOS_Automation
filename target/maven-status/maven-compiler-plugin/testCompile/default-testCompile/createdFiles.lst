@@ -16,6 +16,7 @@ com/cs/arris/Tests/TC66_Verify_Hamburger_SettingsPage_Test.class
 com/cs/arris/COR/COR_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device.class
 com/cs/arris/Tests/TC002_Test_Signin_And_Onboard.class
 com/cs/arris/Workflows/HomePage_Workflow.class
+com/cs/arris/Tests/TC03_Complex_Test.class
 com/cs/arris/Workflows/TC03_Verify_Invalid_OTP_Workflow.class
 com/cs/arris/Workflows/TC52_Login_And_Verify_HomePage_Workflow.class
 com/cs/arris/Workflows/TC62_Login_And_Verify_Add_Device_Workflow.class
@@ -36,6 +37,7 @@ com/cs/arris/Workflows/UserSuccessfulSigninWorkflow.class
 com/cs/arris/Tests/GrantPermissionPageTest.class
 com/cs/arris/Tests/SigninAsValidUserTest.class
 com/cs/arris/Tests/TC02_EC_0002_1002_Disconnect_Wifi_On_Mobile_Test.class
+com/cs/arris/Tests/TC01_Simple_Test.class
 com/cs/arris/Tests/DeviceLocationPageTest.class
 com/cs/arris/Tests/TC03_Verify_Invalid_OTP_Test.class
 com/cs/arris/Tests/SignUpTest.class
@@ -47,5 +49,6 @@ com/cs/arris/Tests/TC005_Login_And_Test_Device_Signal_Strength_Leader_Board_Page
 com/cs/arris/Tests/TC011_Login_And_Test_Network_Page.class
 com/cs/arris/Workflows/TC59_Login_And_Verify_AmazonFeatures_Workflow.class
 com/cs/arris/Tests/SampleTest.class
+com/cs/arris/Tests/TC02_Medium_Test.class
 com/cs/arris/Workflows/TC53_Login_And_Verify_DevicesPage_Workflow.class
 com/cs/arris/Tests/TC04_EC_0002_1304_Internet_Connection_Not_Available_On_Router_Test.class

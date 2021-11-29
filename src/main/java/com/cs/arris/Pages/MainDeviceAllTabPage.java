@@ -927,6 +927,10 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	}
 
 	public boolean allTabvalidations() {
+		utils.log().info("                                     ");
+		utils.log().info("*************************************");
+		utils.log().info("Device Count Validations on All Tab  ");
+		utils.log().info("*************************************");
 		try {
 			
 			 txtDevices = totalDevices.getText();

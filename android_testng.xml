@@ -9,37 +9,36 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-
 	
-	<test name="Main_Device_Test">
+	<test name="Medium_Tests">
 		<classes>
-			<class name="com.cs.arris.Tests.TC007_Login_And_Test_Main_Device_Page" />
+			<class name="com.cs.arris.Tests.TC02_Medium_Test" />
 		</classes>
 	</test>
-	
-	<test name="Hamburger_Menu_Amazaon_Features_Test">
-		<classes>
-			<class name="com.cs.arris.Tests.TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature" />
-		</classes>
-	</test>
-	
-	<test name="Parental_Control_Test">
-		<classes>
-			<class name="com.cs.arris.Tests.TC010_Login_And_Test_Parental_Control_Page" />
-		</classes>
-	</test>
-	
-	<test name="Network_Test">
-		<classes>
-			<class name="com.cs.arris.Tests.TC011_Login_And_Test_Network_Page" />
-		</classes>
-	</test>
-	
+		
 </suite>
 
 
 
 <!--  Flow for demo
+
+	<test name="Simple_Tests">
+		<classes>
+			<class name="com.cs.arris.Tests.TC01_Simple_Test" />
+		</classes>
+	</test>
+
+	<test name="Medium_Tests">
+		<classes>
+			<class name="com.cs.arris.Tests.TC02_Medium_Test" />
+		</classes>
+	</test>
+	
+		<test name="Complex_Tests">
+		<classes>
+			<class name="com.cs.arris.Tests.TC03_Complex_Test" />
+		</classes>
+	</test>
 
 	<test name="SignUp_And_Onboard_Test">
 		<classes>

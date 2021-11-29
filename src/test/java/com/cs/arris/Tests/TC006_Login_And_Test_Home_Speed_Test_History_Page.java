@@ -79,55 +79,75 @@ public class TC006_Login_And_Test_Home_Speed_Test_History_Page extends ParentCla
 	  }
 	  
 	  
+//	  @Test(priority = 1)
+//	  public void Verify_Login_And_Onboard()
+//	  {
+//		  TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.getStartedPage(getStarted -> {
+//			  getStarted.clickGetStartedButton();
+//		  }).grantPermissionsPage(grantPermission -> {
+//			  grantPermission.clickContinueButton();
+//		  }).deviceLocationPage(deviceLocation -> {
+//			  deviceLocation.clickOnlyThisTimeLink();
+//		  }).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
+//			  accessResoucesOnDevice.clickAllowLink();
+//		  }).selectYourDevicePage(selectDevice -> {
+//			  selectDevice.selectSurfboardMaxOption();
+//			  selectDevice.clickNextButton();
+//		  }).selectYourDevicePage2(selectDevice2 -> {
+//			  selectDevice2.selectMaxProAX11000RadioButton();
+//			  selectDevice2.clickNextButton();
+//		  }).welcomeSigninPage(signin -> {
+//			  signin.enterEmailAddress(email);
+//			  signin.clickSigninButton();
+//			  super.pause(12);
+//		  }).getOTPCode(getOTP -> {
+//			  passCode = getOTP.getValidOTP();
+//	  		}).enterOTPPage(otpverify -> {
+//			  otpverify.enterValidPassCode(passCode);
+//	  		 }).codeVerifiedPage(codeVerified -> {
+//				  codeVerified.getCodeVerifiedText();
+//				  codeVerified.clickNextButton();
+//				  super.pause(3);
+//				  try
+//				  {
+//					  if(codeVerified.continueOnBoardingButton.isDisplayed())
+//					  {
+//						  codeVerified.clickContinueOnboardingButton();
+//					  }
+//				  }catch(Exception e)
+//				  {
+//					  e.getMessage();
+//				  }
+//			  }).setupWifi(setupwifi ->{
+//				  setupwifi.clickskipTutorialButton();
+//			  }).homePage(home -> {
+//					  try {
+//						  if(home.okButton.isDisplayed())
+//							  home.clickOkButton();
+//					  }catch(Exception e) {
+//						  e.getMessage();  }
+//				  });
+//			}
+	  
 	  @Test(priority = 1)
-	  public void Verify_Login_And_Onboard()
-	  {
-		  TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.getStartedPage(getStarted -> {
-			  getStarted.clickGetStartedButton();
-		  }).grantPermissionsPage(grantPermission -> {
-			  grantPermission.clickContinueButton();
-		  }).deviceLocationPage(deviceLocation -> {
-			  deviceLocation.clickOnlyThisTimeLink();
-		  }).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			  accessResoucesOnDevice.clickAllowLink();
-		  }).selectYourDevicePage(selectDevice -> {
-			  selectDevice.selectSurfboardMaxOption();
-			  selectDevice.clickNextButton();
-		  }).selectYourDevicePage2(selectDevice2 -> {
-			  selectDevice2.selectMaxProAX11000RadioButton();
-			  selectDevice2.clickNextButton();
-		  }).welcomeSigninPage(signin -> {
-			  signin.enterEmailAddress(email);
-			  signin.clickSigninButton();
-			  super.pause(12);
-		  }).getOTPCode(getOTP -> {
-			  passCode = getOTP.getValidOTP();
-	  		}).enterOTPPage(otpverify -> {
-			  otpverify.enterValidPassCode(passCode);
-	  		 }).codeVerifiedPage(codeVerified -> {
-				  codeVerified.getCodeVerifiedText();
-				  codeVerified.clickNextButton();
-				  super.pause(3);
-				  try
-				  {
-					  if(codeVerified.continueOnBoardingButton.isDisplayed())
-					  {
-						  codeVerified.clickContinueOnboardingButton();
-					  }
-				  }catch(Exception e)
-				  {
-					  e.getMessage();
-				  }
-			  }).setupWifi(setupwifi ->{
-				  setupwifi.clickskipTutorialButton();
-			  }).homePage(home -> {
-					  try {
-						  if(home.okButton.isDisplayed())
-							  home.clickOkButton();
-					  }catch(Exception e) {
-						  e.getMessage();  }
-				  });
-			}
+		public void Verify_Speed_Test_And_History_Page() {
+			try {
+				this.Verify_Speed_Test_Page();
+			}catch(Exception e) {utils.log().info("Issue in Speed Test Page");}
+			
+			try {
+				this.Verify_Perform_Speed_Test();
+			}catch(Exception e) {utils.log().info("Issue in Perform Speed Test Page");}
+		
+			try {
+				this.Verify_Speed_Test_Help_page();
+			}catch(Exception e) {utils.log().info("Issue in Speed Test Help Page");}
+			
+			try {
+				this.Verify_Home_Speed_Test_History_Page();
+			}catch(Exception e) {utils.log().info("Issue in Speed Test History Page");}
+
+	  }
 	  
 	  @Test(priority = 2)
 		public void Verify_Speed_Test_Page() {

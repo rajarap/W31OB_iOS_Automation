@@ -1,0 +1,334 @@
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:17.020 DevicesPage:218 - Clicked on Online Tab
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:17.180 DevicesPage:274 - Number of online devices connected to the main mAX Router are : 3
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:17.181 DevicesPage:292 - ***************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:17.182 DevicesPage:293 - Details of Online Devices Connected to Main Device 
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:17.182 DevicesPage:294 - ***************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:17.184 DevicesPage:298 - Online Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:17.184 DevicesPage:299 - --------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.034 DevicesPage:311 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.111 DevicesPage:317 - Expand Button Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.279 DevicesPage:323 - Device Name: Xiaomi-Mobile-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.395 DevicesPage:331 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.488 DevicesPage:340 - Device Download Speed : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.580 DevicesPage:349 - Device Upload Speed : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.676 DevicesPage:358 - Label : IP Address
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.778 DevicesPage:367 - Device IP Address : 192.168.7.107
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.865 DevicesPage:376 - Label : MAC Address
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:18.939 DevicesPage:385 - Device MAC Address : 4c:02:20:1d:ef:97
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:19.018 DevicesPage:394 - Label : Channel
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:19.101 DevicesPage:403 - Device Channel Number : 44
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:19.174 DevicesPage:412 - Label	: Status
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:19.262 DevicesPage:422 - Device Status : Online
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:19.345 DevicesPage:432 - Label : RSSI
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:19.415 DevicesPage:441 - RSSI Value : 0 dBm
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:20.092 DevicesPage:450 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:20.092 DevicesPage:451 -                                                     
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:20.092 DevicesPage:298 - Online Device : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:20.093 DevicesPage:299 - --------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:20.954 DevicesPage:311 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.023 DevicesPage:317 - Expand Button Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.132 DevicesPage:323 - Device Name: Galaxy-S10(me)
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.212 DevicesPage:331 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.303 DevicesPage:340 - Device Download Speed : 0.02 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.378 DevicesPage:349 - Device Upload Speed : 0.01 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.458 DevicesPage:358 - Label : IP Address
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.547 DevicesPage:367 - Device IP Address : 192.168.7.121
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.624 DevicesPage:376 - Label : MAC Address
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.701 DevicesPage:385 - Device MAC Address : 9a:be:ad:6d:56:b8
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.764 DevicesPage:394 - Label : Channel
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.832 DevicesPage:403 - Device Channel Number : 149
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.905 DevicesPage:412 - Label	: Status
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:21.983 DevicesPage:422 - Device Status : Online
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:22.066 DevicesPage:432 - Label : RSSI
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:22.147 DevicesPage:441 - RSSI Value : -55 dBm
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:22.837 DevicesPage:450 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:22.838 DevicesPage:451 -                                                     
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:24.068 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Online_Devices_Details.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:24.766 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Edit_Device_Name ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:25.027 DevicesPage:569 - Device Name: Xiaomi-Mobile-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:25.951 EditDeviceNameDialog:143 - On Edit Device Name Dialog
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:26.793 EditDeviceNameDialog:131 - Changed device name from Xiaomi-Mobile-1-1 to Xiaomi-Mobile-1-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:28.510 EditDeviceNameDialog:104 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:32.932 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Edit_Device_Name.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:00:33.615 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Offline_Devices_Details ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:06.486 DevicesPage:229 - Clicked on Offile Tab
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.176 DevicesPage:283 - Offline Device Page Title : Devices(1)
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.284 DevicesPage:285 - Number of offline devices connected to the main mAX Router are : 1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.285 DevicesPage:468 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.286 DevicesPage:469 - Details of Offline Devices Connected to Main Device 
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.286 DevicesPage:470 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.287 DevicesPage:474 - Offline Device : 1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.288 DevicesPage:475 - ----------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.388 DevicesPage:482 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.446 DevicesPage:487 - Device Name: M2006C3LII-Redmi9i-1-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.509 DevicesPage:492 - Last Online: 1 hour ago
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.510 DevicesPage:496 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:07.510 DevicesPage:497 -                                                     
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:08.652 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Offline_Devices_Details.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:09.361 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Devices_Help_Page ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:09.585 DevicesPage:251 - Clicked on Help Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:11.300 DevicesHelpPage:59 - On Device List Help Page
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:13.199 DevicesHelpPage:48 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:13.888 DevicesPage:240 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:15.438 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Devices_Help_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:16.214 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Devices_Signal_Strength_UI_Page ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:16.217 TC02_Medium_Test:573 -                                             
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:16.217 TC02_Medium_Test:574 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:16.218 TC02_Medium_Test:575 - Test: Device Signal Strength Leader Board   
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:16.218 TC02_Medium_Test:576 - ********************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:16.543 FooterIconsPage:145 - Footer Icons Page - Clicked on Home Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:17.783 HomePage:534 - Home Page - Clicked on Device Signal Strength Leader Board Image
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.050 DeviceSignalStrengthLeaderBoardPage:538 - On Device Signal Strength Leader Board Page
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.053 DeviceSignalStrengthLeaderBoardPage:151 - **************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.053 DeviceSignalStrengthLeaderBoardPage:152 - Verifying UI Elements on Device Signal Strength Leader Board  
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.054 DeviceSignalStrengthLeaderBoardPage:153 - **************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.217 DeviceSignalStrengthLeaderBoardPage:155 - Title - Device Signal Strength Leader Board - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.351 DeviceSignalStrengthLeaderBoardPage:160 - Top five online devices - text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.452 DeviceSignalStrengthLeaderBoardPage:165 - Sorting based on Device Signal Strength option is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:19.674 DeviceSignalStrengthLeaderBoardPage:170 - Devices (3) are displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:20.793 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Devices_Signal_Strength_UI_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:21.516 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Signal_Strength_For_Devices ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:21.519 DeviceSignalStrengthLeaderBoardPage:183 - *********************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:21.520 DeviceSignalStrengthLeaderBoardPage:184 - List of Devices Signal Strength Leader Board 
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:21.520 DeviceSignalStrengthLeaderBoardPage:185 - *********************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:27.673 DeviceSignalStrengthLeaderBoardPage:188 - Bit Rate Device count is : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:27.674 DeviceSignalStrengthLeaderBoardPage:191 - Devices  : 1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:27.674 DeviceSignalStrengthLeaderBoardPage:192 - ---------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:27.845 DeviceSignalStrengthLeaderBoardPage:202 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:27.891 DeviceSignalStrengthLeaderBoardPage:208 - Device Name            : Xiaomi-Mobile-1-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:27.932 DeviceSignalStrengthLeaderBoardPage:215 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:27.965 DeviceSignalStrengthLeaderBoardPage:222 - Device Download Speed  : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.006 DeviceSignalStrengthLeaderBoardPage:229 - Device Upload Speed    : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.035 DeviceSignalStrengthLeaderBoardPage:236 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.064 DeviceSignalStrengthLeaderBoardPage:243 - RSSI Value             : 0 dBm
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.065 DeviceSignalStrengthLeaderBoardPage:191 - Devices  : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.065 DeviceSignalStrengthLeaderBoardPage:192 - ---------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.206 DeviceSignalStrengthLeaderBoardPage:202 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.233 DeviceSignalStrengthLeaderBoardPage:208 - Device Name            : Galaxy-S10 (me)
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.258 DeviceSignalStrengthLeaderBoardPage:215 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.294 DeviceSignalStrengthLeaderBoardPage:222 - Device Download Speed  : 0.02 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.323 DeviceSignalStrengthLeaderBoardPage:229 - Device Upload Speed    : 0.01 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.349 DeviceSignalStrengthLeaderBoardPage:236 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:28.380 DeviceSignalStrengthLeaderBoardPage:243 - RSSI Value             : -55 dBm
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:29.449 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Signal_Strength_For_Devices.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:30.168 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Sorting_Devices_From_Strong_To_Weak ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:30.171 DeviceSignalStrengthLeaderBoardPage:336 - ****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:30.172 DeviceSignalStrengthLeaderBoardPage:337 - Sorting Device Signal Strength Leader Board From Strong to Weak 
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:30.172 DeviceSignalStrengthLeaderBoardPage:338 - ****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:35.940 DeviceSignalStrengthLeaderBoardPage:341 - Bit Rate Device count is : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.402 DeviceSignalStrengthLeaderBoardPage:347 - Devices  : 1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.403 DeviceSignalStrengthLeaderBoardPage:348 - ---------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.562 DeviceSignalStrengthLeaderBoardPage:358 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.595 DeviceSignalStrengthLeaderBoardPage:364 - Device Name            : Xiaomi-Mobile-1-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.629 DeviceSignalStrengthLeaderBoardPage:371 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.661 DeviceSignalStrengthLeaderBoardPage:378 - Device Download Speed  : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.690 DeviceSignalStrengthLeaderBoardPage:385 - Device Upload Speed    : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.720 DeviceSignalStrengthLeaderBoardPage:392 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.745 DeviceSignalStrengthLeaderBoardPage:399 - RSSI Value             : 0 dBm
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.746 DeviceSignalStrengthLeaderBoardPage:347 - Devices  : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.746 DeviceSignalStrengthLeaderBoardPage:348 - ---------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:38.886 DeviceSignalStrengthLeaderBoardPage:358 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:39.496 DeviceSignalStrengthLeaderBoardPage:364 - Device Name            : Galaxy-S10 (me)
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:40.061 DeviceSignalStrengthLeaderBoardPage:371 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:40.097 DeviceSignalStrengthLeaderBoardPage:378 - Device Download Speed  : 0.02 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:40.127 DeviceSignalStrengthLeaderBoardPage:385 - Device Upload Speed    : 0.01 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:40.164 DeviceSignalStrengthLeaderBoardPage:392 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:41.179 DeviceSignalStrengthLeaderBoardPage:402 - RSSI data is not available/displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:42.375 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Sorting_Devices_From_Strong_To_Weak.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:43.042 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Sorting_Devices_From_Weak_To_Strong ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:43.046 DeviceSignalStrengthLeaderBoardPage:418 - ****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:43.047 DeviceSignalStrengthLeaderBoardPage:419 - Sorting Device Signal Strength Leader Board From Weak to Strong 
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:43.047 DeviceSignalStrengthLeaderBoardPage:420 - ****************************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:50.339 DeviceSignalStrengthLeaderBoardPage:423 - Bit Rate Device count is : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.088 DeviceSignalStrengthLeaderBoardPage:429 - Devices  : 1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.089 DeviceSignalStrengthLeaderBoardPage:430 - ---------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.235 DeviceSignalStrengthLeaderBoardPage:440 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.271 DeviceSignalStrengthLeaderBoardPage:446 - Device Name            : Galaxy-S10 (me)
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.297 DeviceSignalStrengthLeaderBoardPage:453 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.324 DeviceSignalStrengthLeaderBoardPage:460 - Device Download Speed  : 0.06 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.348 DeviceSignalStrengthLeaderBoardPage:467 - Device Upload Speed    : 0.02 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.375 DeviceSignalStrengthLeaderBoardPage:474 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.401 DeviceSignalStrengthLeaderBoardPage:481 - RSSI Value             : -55 dBm
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.403 DeviceSignalStrengthLeaderBoardPage:429 - Devices  : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.403 DeviceSignalStrengthLeaderBoardPage:430 - ---------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.548 DeviceSignalStrengthLeaderBoardPage:440 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.574 DeviceSignalStrengthLeaderBoardPage:446 - Device Name            : Xiaomi-Mobile-1-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.598 DeviceSignalStrengthLeaderBoardPage:453 - Device Signal Strength : 5GHz
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.628 DeviceSignalStrengthLeaderBoardPage:460 - Device Download Speed  : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.660 DeviceSignalStrengthLeaderBoardPage:467 - Device Upload Speed    : 0.00 Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.695 DeviceSignalStrengthLeaderBoardPage:474 - RSSI Label             : RSSI:
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:54.725 DeviceSignalStrengthLeaderBoardPage:481 - RSSI Value             : 0 dBm
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:55.944 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Sorting_Devices_From_Weak_To_Strong.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:56.635 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Editing_Device_Name ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:56.639 DeviceSignalStrengthLeaderBoardPage:500 - Editing Device Name  : 2
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:56.639 DeviceSignalStrengthLeaderBoardPage:501 - -----------------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:58.603 EditMainDeviceNameDialog:118 - Changed Main Router name from Xiaomi-Mobile-1-1-1 to Xiaomi-Mobile-1-1-1-1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:01:59.883 EditMainDeviceNameDialog:91 - Clicked on Save Changes Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:05.765 FooterIconsPage:145 - Footer Icons Page - Clicked on Home Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:07.263 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Editing_Device_Name.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:08.056 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Speed_Test_Page ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:08.056 TC02_Medium_Test:618 -                                 
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:08.056 TC02_Medium_Test:619 - ********************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:08.057 TC02_Medium_Test:620 - Test: Home Speed Test History   
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:08.057 TC02_Medium_Test:621 - ********************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:08.362 HomePage:523 - Home Page - Clicked on Navigation Icon to display the Hamburger Menu
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:09.332 HamburgerMenuPage:234 - On Hamburger Menu Page
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:10.138 HamburgerMenuPage:118 - Clicked on Speed Test Menu Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.185 SpeedTestPage:402 - At Speed Test Page
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.186 SpeedTestPage:185 -                                          
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.187 SpeedTestPage:186 - *****************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.187 SpeedTestPage:187 - Verifying UI Elements on Speed Test Page 
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.187 SpeedTestPage:188 - *****************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.432 SpeedTestPage:192 - Title - Speed Test - is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.493 SpeedTestPage:197 - Back Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.566 SpeedTestPage:207 - Help Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.609 SpeedTestPage:212 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.646 SpeedTestPage:217 - Device Name is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.690 SpeedTestPage:222 - Router Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.739 SpeedTestPage:227 - SSID Name is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.785 SpeedTestPage:232 - Interet Icon is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.866 SpeedTestPage:237 - Internet Text is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.917 SpeedTestPage:242 - Speed Test Meter is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.958 SpeedTestPage:247 - Start Speed Test Button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:11.999 SpeedTestPage:252 - View History Button is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:13.305 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Speed_Test_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:14.062 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Perform_Speed_Test ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:14.168 SpeedTestPage:297 - Label on button before speed Test: START TEST
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:14.365 SpeedTestPage:264 - Clicked Start Speed Test Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:02:15.022 SpeedTestPage:299 - Label on button during speed Test: STOP TEST
+[logs/Android_RZ8M3002DGL/2021-11-29 ERROR] 2021-11-30 00:04:00.918 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.arris.sbcBeta:id/stop_speed_test})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(<generated>)
+	at com.cs.arris.Pages.SpeedTestPage.performSpeedTest(SpeedTestPage.java:302)
+	at com.cs.arris.Tests.TC02_Medium_Test.Verify_Perform_Speed_Test(TC02_Medium_Test.java:640)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5ab7e997 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.arris.sbcBeta:id/stop_speed_test})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:04.934 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Perform_Speed_Test.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:05.814 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Speed_Test_Help_page ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:12.229 SpeedTestHelpPage:36 - Clicked on Close Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:13.014 SpeedTestPage:165 - Clicked on Back Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:14.399 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Speed_Test_Help_page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:15.136 TC02_Medium_Test:100 - 
+
+****** starting test : Verify_Home_Speed_Test_History_Page ******
+
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:20.265 HomePage:626 - On Home Page
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:21.498 HomePage:546 - Home Page - Clicked on Speed Test History Image
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:21.727 HomeSpeedTestHistoryPage:188 - On Speed Test History Page
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:21.727 HomeSpeedTestHistoryPage:107 - *************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:21.727 HomeSpeedTestHistoryPage:108 - Details of Speed Test History Details
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:21.727 HomeSpeedTestHistoryPage:109 - *************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.458 HomeSpeedTestHistoryPage:111 - Title : Speed Test History
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.688 HomeSpeedTestHistoryPage:120 - Speed Test History : 1
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.688 HomeSpeedTestHistoryPage:121 - ------------------------------
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.725 HomeSpeedTestHistoryPage:125 - Device Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.762 HomeSpeedTestHistoryPage:130 - Router Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.798 HomeSpeedTestHistoryPage:135 - Internet Image is displayed
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.837 HomeSpeedTestHistoryPage:138 - Date and Time: Nov 30, 2021 at 12:03 am
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.873 HomeSpeedTestHistoryPage:143 - Device Name : Galaxy-S10
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.909 HomeSpeedTestHistoryPage:147 - Router Name : arrisW31-729
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.947 HomeSpeedTestHistoryPage:150 - Internet Name : Internet
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:22.995 HomeSpeedTestHistoryPage:152 - Wifi Download Text : Download
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.037 HomeSpeedTestHistoryPage:154 - Wifi Download Speed: 762.48  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.080 HomeSpeedTestHistoryPage:157 - Wifi Upload Text : Upload
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.122 HomeSpeedTestHistoryPage:159 - Wifi Upload Speed: 759.52  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.168 HomeSpeedTestHistoryPage:162 - Internet Download Text : Download
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.211 HomeSpeedTestHistoryPage:164 - Internet Download Speed: 292.3  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.252 HomeSpeedTestHistoryPage:167 - Internet Upload Text	: Upload
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.305 HomeSpeedTestHistoryPage:169 - Internet Upload Speed : 293.2  Mbps
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:23.305 HomeSpeedTestHistoryPage:172 - ****************************************************
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:36.437 FooterIconsPage:145 - Footer Icons Page - Clicked on Home Button
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:37.626 ParentClass:427 - video path: videos/Android_RZ8M3002DGL/2021-11-29-23-52-00/TC02_Medium_Test/Verify_Home_Speed_Test_History_Page.mp4
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:43.589 ParentClass:185 - Closing App
+[logs/Android_RZ8M3002DGL/2021-11-29 INFO ] 2021-11-30 00:04:43.794 ParentClass:187 - Quitting Driver

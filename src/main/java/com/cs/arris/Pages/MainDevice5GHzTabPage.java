@@ -598,9 +598,10 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 	// To verify the details of all connected devices
 	public boolean verifyConnectedDeviceDetails() {
 		try {
-			utils.log().info("***************************************************");
-			utils.log().info("Details of 5.0 GHz Devices Connected to Main Router");
-			utils.log().info("***************************************************");
+			utils.log().info("                                        ");
+			utils.log().info("****************************************");
+			utils.log().info("Device Count Validations on 5.0GHz Tab  ");
+			utils.log().info("****************************************");
 
 			this.getAllDevicesCount();
 			if (connectedDevicesExpandImage.isDisplayed()) {
@@ -609,10 +610,12 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
 			
-			if (allDevicesCount > 0) {
-				for (int i = 1; i <= allDevicesCount; i++) {
-					utils.log().info("Connected Device  : " + i);
-					utils.log().info("--------------------------");
+			if(allDevicesCount == 0)
+				utils.log().info("There are no 5.0GHz devices connected to the Main Router ");
+			else if (allDevicesCount > 0) {
+					for (int i = 1; i <= allDevicesCount; i++) {
+						utils.log().info("Connected Device  : " + i);
+						utils.log().info("--------------------------");
 
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 							"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
@@ -782,9 +785,9 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 			super.waitForVisibility(mainRouterExpandImage);
 			click(mainRouterExpandImage);
 			super.swipeUp();
-			utils.log().info("***************************************************");
-			utils.log().info("Details of MAIN Router Device                      ");
-			utils.log().info("***************************************************");
+			utils.log().info("*******************************");
+			utils.log().info("Details of MAIN Router Device  ");
+			utils.log().info("*******************************");
 
 			if (detailsText.isDisplayed())
 				utils.log().info("Details Text is displayed");
@@ -940,7 +943,12 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 //	}
 	
 	public boolean GHz5Tabvalidations() {
+
 		try {
+			utils.log().info("                                        ");
+			utils.log().info("****************************************");
+			utils.log().info("Device Count Validations on 5.0GHz Tab  ");
+			utils.log().info("****************************************");
 			
 			 txtDevices = totalDevices.getText();
 			 execDevices = excellentDevices.getText();

@@ -74,65 +74,266 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 		utils.log().info("\n" + "\n" + "****** starting test :  " + m.getName() + "  ******" + "\n");
 	}
 
+//	@Test(priority = 1)
+//	public void Login_And_Onboard() {
+//		SoftAssert softnet1 = new SoftAssert();
+//		TC57_Login_And_Verify_NetworkPage_Workflow.getStartedPage(getStarted -> {
+//			getStarted.clickGetStartedButton();
+//		}).grantPermissionsPage(grantPermission -> {
+//			grantPermission.clickContinueButton();
+//		}).deviceLocationPage(deviceLocation -> {
+//			deviceLocation.clickOnlyThisTimeLink();
+//		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
+//			super.pause(3);
+//			accessResoucesOnDevice.clickAllowLink();
+//		}).selectYourDevicePage(selectDevice -> {
+//			selectDevice.selectSurfboardMaxOption();
+//			selectDevice.clickNextButton();
+//		}).selectYourDevicePage2(selectDevice2 -> {
+//			selectDevice2.selectMaxProAX11000RadioButton();
+//			selectDevice2.clickNextButton();
+//			super.pause(3);
+//		}).welcomeSigninPage(signin -> {
+//			signin.enterEmailAddress(email);
+//			signin.clickSigninButton();
+//			super.pause(12);
+//		}).getOTPCode(getOTP -> {
+//			passCode = getOTP.getValidOTP();
+//		}).enterOTPPage(otpverify -> {
+//			otpverify.enterValidPassCode(passCode);
+//		}).codeVerifiedPage(codeVerified -> {
+//			codeVerified.getCodeVerifiedText();
+//			codeVerified.clickNextButton();
+//			super.pause(3);
+//			try {
+//				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
+//					codeVerified.clickContinueOnboardingButton();
+//				}
+//			} catch (Exception e) {
+//				e.getMessage();
+//			}
+//		}).setupWifi(setupwifi -> {
+//			setupwifi.clickskipTutorialButton();
+//		}).homePage(home -> {
+//			try {
+//				if (home.okButton.isDisplayed()) {
+//					home.clickOkButton();
+//				}
+//			} catch (Exception e) {
+//				e.getMessage();
+//			}
+//			if (home.isAt()) {
+//				home.getFooterIconsPageObject().clickNetworkButton();
+//			}
+//		}).networkPage(network -> {
+//			network.isAt();
+//		});
+//	}
+	
 	@Test(priority = 1)
-	public void Login_And_Onboard() {
-		SoftAssert softnet1 = new SoftAssert();
-		TC57_Login_And_Verify_NetworkPage_Workflow.getStartedPage(getStarted -> {
-			getStarted.clickGetStartedButton();
-		}).grantPermissionsPage(grantPermission -> {
-			grantPermission.clickContinueButton();
-		}).deviceLocationPage(deviceLocation -> {
-			deviceLocation.clickOnlyThisTimeLink();
-		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			super.pause(3);
-			accessResoucesOnDevice.clickAllowLink();
-		}).selectYourDevicePage(selectDevice -> {
-			selectDevice.selectSurfboardMaxOption();
-			selectDevice.clickNextButton();
-		}).selectYourDevicePage2(selectDevice2 -> {
-			selectDevice2.selectMaxProAX11000RadioButton();
-			selectDevice2.clickNextButton();
-			super.pause(3);
-		}).welcomeSigninPage(signin -> {
-			signin.enterEmailAddress(email);
-			signin.clickSigninButton();
-			super.pause(12);
-		}).getOTPCode(getOTP -> {
-			passCode = getOTP.getValidOTP();
-		}).enterOTPPage(otpverify -> {
-			otpverify.enterValidPassCode(passCode);
-		}).codeVerifiedPage(codeVerified -> {
-			codeVerified.getCodeVerifiedText();
-			codeVerified.clickNextButton();
-			super.pause(3);
-			try {
-				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
-					codeVerified.clickContinueOnboardingButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-		}).setupWifi(setupwifi -> {
-			setupwifi.clickskipTutorialButton();
-		}).homePage(home -> {
-			try {
-				if (home.okButton.isDisplayed()) {
-					home.clickOkButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-			if (home.isAt()) {
-				home.getFooterIconsPageObject().clickNetworkButton();
-			}
-		}).networkPage(network -> {
-			network.isAt();
-		});
+	public void Verify_Network_Page() {
+		try {
+			this.Verify_Newtork_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in Network UI Page");}
+		
+		try {
+			this.Verify_Newtork_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in Network Help Page");}
+		
+		try {
+			this.Verify_Newtork_Test_Connection_Speed_Page();
+		}catch(Exception e) {utils.log().info("Issue in Test Connection Speed Page");}
+		
+		try {
+			this.Verify_WAN_Settings_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN Setting UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN Settings Help Page");}
+		
+		try {
+			this.Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN IP Configuration IPv4 DHCP UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_WAN_IP_Configuration_IPv4_Static_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN IP Configuration IPv4 Statoc UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN IP Configuration IPv6 Stateful UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateless_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN IP Configuration IPv4 Stateless UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_WAN_IP_Configuration_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN IP Configuration Help Page");}
+		
+		try {
+			this.Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN Settings DNS Configuration IPv4 Automatic UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN Settings DNS Configuration IPv4 Static UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN Settings DNS Configuration IPv6 Automatic UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN Settings DNS Configuration IPv4 Static UI Page");}
+		
+		try {
+			this.Verify_WAN_Settings_DNS_Configuration_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in WAN Settings DNS Configuration Help Page");}
+		
+		try {
+			this.Verify_WAN_Settings_LAC_Alert_Dialog();
+		}catch(Exception e) {utils.log().info("Issue in WAN Settings LAC ALert Dialog");}
+	
+		try {
+			this.Verify_LAN_Settings_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN Settings UI Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_IP_Reservation_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN IP Reservation Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_IP_Reservation_Add_Reservation_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN IP Reservation Add Reservation Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_IP_Reservation_Rules();
+		}catch(Exception e) {utils.log().info("Issue in LAN IP Reservation Rules Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_IP_Reservation_Edit_Devices_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN IP Reservation Page Edit Devices Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_IP_Reservation_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN IP Reservation Help Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN Subnet DHCP Range Configuration Page");}
+		
+		try {
+			this.Verify_Edit_LAN_Subnet_DHCP_Range_Configuration_Page();
+		}catch(Exception e) {utils.log().info("Issue in Edit LAN Subnet DHCP Range Configuration Page");}
+		
+		try {
+			this.Edit_LAN_Subnet_Configuration_Octets();
+		}catch(Exception e) {utils.log().info("Issue in LAN Subnet Configuration Octets");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN Subnet DHCP Range Configuration Help Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN DHCP Lease Time UI Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN DHCP Lease Time Page");}
+		
+		try {
+			this.Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in LAN DHCP Lease Time Help Page");}
+		
+		
+//		try {
+//			this.Verify_Device_Priority_Settings_UI_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Device Priority Settings UI Page");}
+//		
+//		try {
+//			this.Verify_Device_Priority_Settings_Add_Device_UI_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Device Priority Settings Add Device UI Page");}
+//		
+//		try {
+//			this.Verify_Device_Priority_Settings_Add_Device_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Device Priority Settings Add Devices Page");}
+//		
+//		try {
+//			this.Verify_Device_Priority_Settings_Added_Device_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Device Priority Settings Added Devices Page");}
+//		
+//		try {
+//			this.Verify_Device_Priority_Settings_Add_Device_Help_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Device Priority Settings Add Device Help Page");}
+//		
+//		try {
+//			this.Verify_Device_Priority_Settings_Help_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Device Priority Settings Help Page");}
+		
+		try {
+			this.Verify_Time_Zone_Settings_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in Time Zone Settings UI Page");}
+		
+		try {
+			this.Verify_Time_Zone_Settings_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in Time Zone Settings Help Page");}
+		
+		try {
+			this.Verify_General_Settings_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in General Settings UI Page");}
+		
+		try {
+			this.Verify_General_Settings_UPnP_Settings();
+		}catch(Exception e) {utils.log().info("Issue in General Settings UPnP Page");}
+		
+		try {
+			this.Verify_General_Settings_IPv6_Enable_Settings() ;
+		}catch(Exception e) {utils.log().info("Issue in General Settings IPv6 Enable Settings Page");}
+		
+		try {
+			this.Verify_General_Settings_Bridge_Mode_Settings();
+		}catch(Exception e) {utils.log().info("Issue in General Settings Bridge Mode Page");}
+	
+		try {
+			this.Verify_General_Settings_Port_Forwarding_Settings();
+		}catch(Exception e) {utils.log().info("Issue in General Settings Port Forwaring Settings Page");}
+		
+		try {
+			this.Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page();
+		}catch(Exception e) {utils.log().info("Issue in General Settings Port Forwarding Add Rule Settings Page");}
+		
+		try {
+			this.Verify_General_Settings_Port_Forwarding_Add_Rules();
+		}catch(Exception e) {utils.log().info("Issue in General Settings Port Forwarding Add Rules Page");}
+		
+		try {
+			this.Verify_General_Settings_Port_Forwarding_Edit_Rules();
+		}catch(Exception e) {utils.log().info("Issue in General Settings Port Forwardind Edit Rules Page");}
+		
+		try {
+			this.Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations();
+		}catch(Exception e) {utils.log().info("Issue in General Settings Add Rule Settings Validations Page");}
+		
+		try {
+			this.Verify_General_Settings_Port_Forwarding_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in General Settings Port Forwarding Help Page");}
+		
+		try {
+			this.Verify_Guest_WiFi_Network_Page();
+		}catch(Exception e) {utils.log().info("Issue in Guest WiFi Newtork Page");}
+		
+		try {
+			this.Verify_Extended_WiFi_Settings_Page();
+		}catch(Exception e) {utils.log().info("Issue in Extended WiFi Settings Page");}
 	}
 
 	@Test(priority = 2)
 	public void Verify_Newtork_UI_Page() {
 		SoftAssert softnet2 = new SoftAssert();
+		softnet2.assertTrue(new HomePage().getFooterIconsPageObject().clickNetworkButton());
 		softnet2.assertTrue(new NetworkPage().verifyUIOnNetworkPage());
 		softnet2.assertAll();
 	}

@@ -610,8 +610,9 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 			} else {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
-			
-			if (allDevicesCount > 0) {
+			if(allDevicesCount == 0)
+				utils.log().info("There are no 2.4GHZ devices connected to the Main Router ");
+			else if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
@@ -939,6 +940,11 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 	
 	public boolean GHz24Tabvalidations() {
 		try {
+			
+			utils.log().info("                                        ");
+			utils.log().info("****************************************");
+			utils.log().info("Device Count Validations on 2.4GHz Tab  ");
+			utils.log().info("****************************************");
 			
 			 txtDevices = totalDevices.getText();
 			 execDevices = excellentDevices.getText();

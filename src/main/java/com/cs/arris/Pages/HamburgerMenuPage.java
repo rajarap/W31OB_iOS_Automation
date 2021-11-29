@@ -179,6 +179,9 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 	}
 
 	public boolean verifyUIOnHamburgerMenuPage() {
+		utils.log().info("**********************************************");
+		utils.log().info("Details of UI Elements on the Hamburger Page  ");
+		utils.log().info("**********************************************");
 		try {
 			if (addDevice.isDisplayed())
 				utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is displayed");

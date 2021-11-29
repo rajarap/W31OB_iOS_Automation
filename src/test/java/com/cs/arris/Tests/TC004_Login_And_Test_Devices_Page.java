@@ -68,64 +68,89 @@ public class TC004_Login_And_Test_Devices_Page extends ParentClass
 		utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
 	}
 
+//	@Test(priority = 1)
+//	public void Login_And_Onboard() {
+//		TC53_Login_And_Verify_DevicesPage_Workflow.getStartedPage(getStarted -> {
+//			getStarted.clickGetStartedButton();
+//		}).grantPermissionsPage(grantPermission -> {
+//			grantPermission.clickContinueButton();
+//		}).deviceLocationPage(deviceLocation -> {
+//			deviceLocation.clickOnlyThisTimeLink();
+//		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
+//			super.pause(3);
+//			accessResoucesOnDevice.clickAllowLink();
+//		}).selectYourDevicePage(selectDevice -> {
+//			selectDevice.selectSurfboardMaxOption();
+//			selectDevice.clickNextButton();
+//		}).selectYourDevicePage2(selectDevice2 -> {
+//			selectDevice2.selectMaxProAX11000RadioButton();
+//			selectDevice2.clickNextButton();
+//			super.pause(3);
+//		}).welcomeSigninPage(signin -> {
+//			signin.enterEmailAddress(email);
+//			signin.clickSigninButton();
+//			super.pause(12);
+//		}).getOTPCode(getOTP -> {
+//			passCode = getOTP.getValidOTP();
+//		}).enterOTPPage(otpverify -> {
+//			otpverify.enterValidPassCode(passCode);
+//		}).codeVerifiedPage(codeVerified -> {
+//			codeVerified.getCodeVerifiedText();
+//			codeVerified.clickNextButton();
+//			super.pause(3);
+//			try {
+//				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
+//					codeVerified.clickContinueOnboardingButton();
+//				}
+//			} catch (Exception e) {
+//				e.getMessage();
+//			}
+//		}).setupWifi(setupwifi -> {
+//			setupwifi.clickskipTutorialButton();
+//			super.pause(3);
+//		 }).homePage(home -> {
+//			  try
+//			  {
+//				  if(home.okButton.isDisplayed())
+//				  {
+//					  home.clickOkButton();
+//				  }
+//			  }catch(Exception e)
+//			  {
+//				  e.getMessage();
+//			  }
+//			  home.clickDevicesImage();
+//		  });
+//	}
+	
 	@Test(priority = 1)
-	public void Login_And_Onboard() {
-		TC53_Login_And_Verify_DevicesPage_Workflow.getStartedPage(getStarted -> {
-			getStarted.clickGetStartedButton();
-		}).grantPermissionsPage(grantPermission -> {
-			grantPermission.clickContinueButton();
-		}).deviceLocationPage(deviceLocation -> {
-			deviceLocation.clickOnlyThisTimeLink();
-		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			super.pause(3);
-			accessResoucesOnDevice.clickAllowLink();
-		}).selectYourDevicePage(selectDevice -> {
-			selectDevice.selectSurfboardMaxOption();
-			selectDevice.clickNextButton();
-		}).selectYourDevicePage2(selectDevice2 -> {
-			selectDevice2.selectMaxProAX11000RadioButton();
-			selectDevice2.clickNextButton();
-			super.pause(3);
-		}).welcomeSigninPage(signin -> {
-			signin.enterEmailAddress(email);
-			signin.clickSigninButton();
-			super.pause(12);
-		}).getOTPCode(getOTP -> {
-			passCode = getOTP.getValidOTP();
-		}).enterOTPPage(otpverify -> {
-			otpverify.enterValidPassCode(passCode);
-		}).codeVerifiedPage(codeVerified -> {
-			codeVerified.getCodeVerifiedText();
-			codeVerified.clickNextButton();
-			super.pause(3);
-			try {
-				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
-					codeVerified.clickContinueOnboardingButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-		}).setupWifi(setupwifi -> {
-			setupwifi.clickskipTutorialButton();
-			super.pause(3);
-		 }).homePage(home -> {
-			  try
-			  {
-				  if(home.okButton.isDisplayed())
-				  {
-					  home.clickOkButton();
-				  }
-			  }catch(Exception e)
-			  {
-				  e.getMessage();
-			  }
-			  home.clickDevicesImage();
-		  });
+	public void Verify_Devices_Page() {
+		try {
+			this.Verify_Devices_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in Device Page");}
+		
+		try {
+			this.Verify_Online_Devices_Details();
+		}catch(Exception e) {utils.log().info("Issue in Online Devices Page");}
+	
+		try {
+			this.Verify_Edit_Device_Name();
+		}catch(Exception e) {utils.log().info("Issue in Edit Device Name Dialog");}
+		
+		try {
+			this.Verify_Offline_Devices_Details();
+		}catch(Exception e) {utils.log().info("Issue in Offline Devices Page");}
+		
+		try {
+			this.Verify_Devices_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in Devices Help Page");}
 	}
 		
 		@Test(priority = 2)
 		public void Verify_Devices_UI_Page() {
 			SoftAssert softdevices2 = new SoftAssert();
+			if(new HomePage().isAt())
+				softdevices2.assertTrue(new HomePage().clickDevicesImage());
 			if(new DevicesPage().isAt()) 
 				softdevices2.assertTrue(new DevicesPage().verifyUIOnDevicesPage());
 			softdevices2.assertAll();

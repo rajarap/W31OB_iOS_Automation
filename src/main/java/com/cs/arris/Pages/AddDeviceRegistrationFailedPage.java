@@ -62,7 +62,7 @@ public class AddDeviceRegistrationFailedPage extends ParentClass implements Page
 	public boolean clickContinueButton() {
 		if (continueButton.isDisplayed()) {
 			click(continueButton);
-			super.pause(3);
+			super.pause(10);
 			utils.log().info("Clicked Continue Button on Device Registration Failed Page");
 			return true;
 		} else {

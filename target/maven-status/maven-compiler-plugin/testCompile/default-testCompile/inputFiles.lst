@@ -17,6 +17,8 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC55_Login_And_Verify_HomeSpeedTestHistoryPage_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC002_Test_Signin_And_Onboard.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC05_EC_0000_1303_Router_Failed_To_Connect_To_Internet_Workflow.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC03_Complex_Test.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC01_Simple_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TestOTP.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/SigninAsInvalidUserTest.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/UserSuccessfulSigninWorkflow.java
@@ -33,6 +35,7 @@
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC54_Login_And_Verify_DeviceSignalStrengthLeaderBoardPage_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/COR_TC01_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow.java
+/Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC02_Medium_Test.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Workflows/TC61_Login_And_Verify_ParentalControl_Workflow.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature.java
 /Users/prabhu/eclipse-workspace/W31-Onboarding-BOBA/src/test/java/com/cs/arris/Tests/TC013_Login_And_Test_Add_And_Remove_Device.java

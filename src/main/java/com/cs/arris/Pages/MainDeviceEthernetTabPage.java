@@ -608,7 +608,9 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
 			
-			if (allDevicesCount > 0) {
+			if(allDevicesCount == 0)
+				utils.log().info("There are no Ethernet devices connected to the Main Router ");
+			else if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
@@ -900,6 +902,10 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 
 	public boolean ethernetTabvalidations() {
 		try {
+			utils.log().info("                                          ");
+			utils.log().info("******************************************");
+			utils.log().info("Device Count Validations on Ethernet Tab  ");
+			utils.log().info("******************************************");
 			
 			 txtDevices = totalDevices.getText();
 			 execDevices = excellentDevices.getText();

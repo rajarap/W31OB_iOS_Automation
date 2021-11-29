@@ -69,55 +69,135 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
 	}
 
-	@Test(priority = 1)
-	public void Login_And_Onboard() {
-		TC56_Login_And_Verify_MainDevicesPage_Workflow.getStartedPage(getStarted -> {
-			getStarted.clickGetStartedButton();
-		}).grantPermissionsPage(grantPermission -> {
-			grantPermission.clickContinueButton();
-		}).deviceLocationPage(deviceLocation -> {
-			deviceLocation.clickOnlyThisTimeLink();
-		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			super.pause(3);
-			accessResoucesOnDevice.clickAllowLink();
-		}).selectYourDevicePage(selectDevice -> {
-			selectDevice.selectSurfboardMaxOption();
-			selectDevice.clickNextButton();
-		}).selectYourDevicePage2(selectDevice2 -> {
-			selectDevice2.selectMaxProAX11000RadioButton();
-			selectDevice2.clickNextButton();
-			super.pause(3);
-		}).welcomeSigninPage(signin -> {
-			signin.enterEmailAddress(email);
-			signin.clickSigninButton();
-			super.pause(12);
-		}).getOTPCode(getOTP -> {
-			passCode = getOTP.getValidOTP();
-		}).enterOTPPage(otpverify -> {
-			otpverify.enterValidPassCode(passCode);
-		}).codeVerifiedPage(codeVerified -> {
-			codeVerified.getCodeVerifiedText();
-			codeVerified.clickNextButton();
-			super.pause(3);
-			try {
-				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
-					codeVerified.clickContinueOnboardingButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-		}).setupWifi(setupwifi -> {
-			setupwifi.clickskipTutorialButton();
-			super.pause(3);
-		}).homePage(home -> {
-			  try {
-				  if(home.okButton.isDisplayed())
-					  home.clickOkButton();
-			  }catch(Exception e) {
-				  e.getMessage();  }
-		  });
-	}
+//	@Test(priority = 1)
+//	public void Login_And_Onboard() {
+//		TC56_Login_And_Verify_MainDevicesPage_Workflow.getStartedPage(getStarted -> {
+//			getStarted.clickGetStartedButton();
+//		}).grantPermissionsPage(grantPermission -> {
+//			grantPermission.clickContinueButton();
+//		}).deviceLocationPage(deviceLocation -> {
+//			deviceLocation.clickOnlyThisTimeLink();
+//		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
+//			super.pause(3);
+//			accessResoucesOnDevice.clickAllowLink();
+//		}).selectYourDevicePage(selectDevice -> {
+//			selectDevice.selectSurfboardMaxOption();
+//			selectDevice.clickNextButton();
+//		}).selectYourDevicePage2(selectDevice2 -> {
+//			selectDevice2.selectMaxProAX11000RadioButton();
+//			selectDevice2.clickNextButton();
+//			super.pause(3);
+//		}).welcomeSigninPage(signin -> {
+//			signin.enterEmailAddress(email);
+//			signin.clickSigninButton();
+//			super.pause(12);
+//		}).getOTPCode(getOTP -> {
+//			passCode = getOTP.getValidOTP();
+//		}).enterOTPPage(otpverify -> {
+//			otpverify.enterValidPassCode(passCode);
+//		}).codeVerifiedPage(codeVerified -> {
+//			codeVerified.getCodeVerifiedText();
+//			codeVerified.clickNextButton();
+//			super.pause(3);
+//			try {
+//				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
+//					codeVerified.clickContinueOnboardingButton();
+//				}
+//			} catch (Exception e) {
+//				e.getMessage();
+//			}
+//		}).setupWifi(setupwifi -> {
+//			setupwifi.clickskipTutorialButton();
+//			super.pause(3);
+//		}).homePage(home -> {
+//			  try {
+//				  if(home.okButton.isDisplayed())
+//					  home.clickOkButton();
+//			  }catch(Exception e) {
+//				  e.getMessage();  }
+//		  });
+//	}
 
+	@Test(priority = 1)
+	public void Verify_Main_Device_Page() {
+		try {
+			this.Verify_Main_Device_UI_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Main Device UI on All Tab");}
+		
+		try {
+			this.Verify_LED_Settings_UI_On_All_Tab();
+		}catch(Exception e) {utils.log().info("Issue in LED Settings UI on All Tab");}
+	
+		try {
+			this.Verify_Decrease_LED_Settings_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Decrease LED Settings UI on All Tab");}
+		
+		try {
+			this.Verify_Increase_LED_Settings_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Increase LED Settings UI on All Tab");}
+		
+		try {
+			this.Verify_Devices_Count_Validation_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Device Count Validations on All Tab");}
+		
+		try {
+			this.Verify_Connected_Devices_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Connected Devices on All Tab");}
+		
+		try {
+			this.Verify_Main_Router_Details_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Main Router Details on All Tab");}
+		
+		try {
+			this.Verify_Edit_Main_Router_Name_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Editing Main Router Name on All Tab");}
+		
+		try {
+			this.Verify_Edit_Connected_Device_Name_On_All_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Editing Connected Device Name on All Tab");}
+		
+		try {
+			this.Verify_Main_Device_UI_On_5GHz_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Main Device UI on 5GHz Tab");}
+		
+		try {
+			this.Verify_Devices_Count_Validation_On_5GHz_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Device Count Validations on 5GHz Tab");}
+		
+		try {
+			this.Verify_Connected_Devices_On_5GHz_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Connected Devices on 5GHz Tab");}
+		
+		try {
+			this.Verify_Main_Device_UI_On_24GHz_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Main Device UI on 2.4GHz Tab");}
+		
+		try {
+			this.Verify_Devices_Count_Validation_On_24GHz_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Device Count Validations on 2.4GHz Tab");}
+		
+		try {
+			this.Verify_Connected_Devices_On_24GHz_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Connected Devices on 2.4GHz Tab");}
+		
+		try {
+			this.Verify_Main_Device_UI_On_Ethernet_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Main Device UI on Ethernet Tab");}
+		
+		try {
+			this.Verify_Devices_Count_Validation_On_Ethernet_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Device Count Validations on Ethernet Tab");}
+		
+		try {
+			this.Verify_Connected_Devices_On_Ethernet_Tab_Page();
+		}catch(Exception e) {utils.log().info("Issue in Connected Devices on Ethernet Tab");}
+		
+		try {
+			this.Verify_Main_Device_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in Main Device Help Page");}
+	}
+	
+	
 	@Test(priority = 2)
 	public void Verify_Main_Device_UI_On_All_Tab_Page() {
 		SoftAssert softmain2 = new SoftAssert();

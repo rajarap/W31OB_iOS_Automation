@@ -76,62 +76,157 @@ public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 		utils.log().info("\n" + "\n" + "****** starting test :  " + m.getName() + "  ******" + "\n");
 	}
 
+//	@Test(priority = 1)
+//	public void Login_And_Onboard() {
+//		TC61_Login_And_Verify_ParentalControl_Workflow.getStartedPage(getStarted -> {
+//			getStarted.clickGetStartedButton();
+//		}).grantPermissionsPage(grantPermission -> {
+//			grantPermission.clickContinueButton();
+//		}).deviceLocationPage(deviceLocation -> {
+//			deviceLocation.clickOnlyThisTimeLink();
+//		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
+//			super.pause(3);
+//			accessResoucesOnDevice.clickAllowLink();
+//		}).selectYourDevicePage(selectDevice -> {
+//			selectDevice.selectSurfboardMaxOption();
+//			selectDevice.clickNextButton();
+//		}).selectYourDevicePage2(selectDevice2 -> {
+//			selectDevice2.selectMaxProAX11000RadioButton();
+//			selectDevice2.clickNextButton();
+//			super.pause(3);
+//		}).welcomeSigninPage(signin -> {
+//			signin.enterEmailAddress(email);
+//			signin.clickSigninButton();
+//			super.pause(12);
+//		}).getOTPCode(getOTP -> {
+//			passCode = getOTP.getValidOTP();
+//		}).enterOTPPage(otpverify -> {
+//			otpverify.enterValidPassCode(passCode);
+//		}).codeVerifiedPage(codeVerified -> {
+//			codeVerified.getCodeVerifiedText();
+//			codeVerified.clickNextButton();
+//			super.pause(3);
+//			try {
+//				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
+//					codeVerified.clickContinueOnboardingButton();
+//				}
+//			} catch (Exception e) {
+//				e.getMessage();
+//			}
+//		}).setupWifi(setupwifi -> {
+//			setupwifi.clickskipTutorialButton();
+//		}).homePage(home -> {
+//			try {
+//				if (home.okButton.isDisplayed()) {
+//					home.clickOkButton();
+//				}
+//			} catch (Exception e) {
+//				e.getMessage();
+//			}
+//			//home.verifyUIOnHomePage();
+//			//countOfDevices= home.getTotalCountOfDevices();
+//			home.getFooterIconsPageObject().clickParentalButton();
+//		});
+//	}
 	@Test(priority = 1)
-	public void Login_And_Onboard() {
-		TC61_Login_And_Verify_ParentalControl_Workflow.getStartedPage(getStarted -> {
-			getStarted.clickGetStartedButton();
-		}).grantPermissionsPage(grantPermission -> {
-			grantPermission.clickContinueButton();
-		}).deviceLocationPage(deviceLocation -> {
-			deviceLocation.clickOnlyThisTimeLink();
-		}).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			super.pause(3);
-			accessResoucesOnDevice.clickAllowLink();
-		}).selectYourDevicePage(selectDevice -> {
-			selectDevice.selectSurfboardMaxOption();
-			selectDevice.clickNextButton();
-		}).selectYourDevicePage2(selectDevice2 -> {
-			selectDevice2.selectMaxProAX11000RadioButton();
-			selectDevice2.clickNextButton();
-			super.pause(3);
-		}).welcomeSigninPage(signin -> {
-			signin.enterEmailAddress(email);
-			signin.clickSigninButton();
-			super.pause(12);
-		}).getOTPCode(getOTP -> {
-			passCode = getOTP.getValidOTP();
-		}).enterOTPPage(otpverify -> {
-			otpverify.enterValidPassCode(passCode);
-		}).codeVerifiedPage(codeVerified -> {
-			codeVerified.getCodeVerifiedText();
-			codeVerified.clickNextButton();
-			super.pause(3);
-			try {
-				if (codeVerified.continueOnBoardingButton.isDisplayed()) {
-					codeVerified.clickContinueOnboardingButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-		}).setupWifi(setupwifi -> {
-			setupwifi.clickskipTutorialButton();
-		}).homePage(home -> {
-			try {
-				if (home.okButton.isDisplayed()) {
-					home.clickOkButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
-			//home.verifyUIOnHomePage();
-			//countOfDevices= home.getTotalCountOfDevices();
-			home.getFooterIconsPageObject().clickParentalButton();
-		});
+	public void Verify_Parental_Control() {
+		try {
+			this.Verify_Parental_Control_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in Parental Control UI Page");}
+		
+		try {
+			this.Verify_Add_Profile_Page();
+		}catch(Exception e) {utils.log().info("Issue in Add Profile Page");}
+		
+		try {
+			this.Verify_User_Profile_Page();
+		}catch(Exception e) {utils.log().info("Issue in User Profile Page");}
+		
+		try {
+			this.Verify_User_Profile_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in User Profile Help Page");}
+		
+		try {
+			this.Verify_Parental_Control_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in Parental Control UI Page");}
+		
+		try {
+			this.Verify_Add_Profile_Page();
+		}catch(Exception e) {utils.log().info("Issue in Add Profile Page");}
+		
+		try {
+			this.Verify_User_Profile_Page();
+		}catch(Exception e) {utils.log().info("Issue in User Profile Page");}
+		
+		try {
+			this.Verify_Devices_Associated_With_User_Profile();
+		}catch(Exception e) {utils.log().info("Issue in Devices Associated With User Profile");}
+		
+		try {
+			this.Verify_Add_Rule_To_User_Profile();
+		}catch(Exception e) {utils.log().info("Issue in Add Rule To User Profile");}
+		
+		try {
+			this.Verify_Add_EveryDay_Schedule_To_Rule();
+		}catch(Exception e) {utils.log().info("Issue in Add EveryDay Schedule To Rule");}
+		
+		try {
+			this.Verify_Select_Start_Time_For_EveryDay_Schedule();
+		}catch(Exception e) {utils.log().info("Issue in Select Start Time For EveryDay Schedule");}
+
+		try {
+			this.Verify_Select_Stop_Time_For_EveryDay_Schedule();
+		}catch(Exception e) {utils.log().info("Issue in Select Stop Time For EveryDay Schedule");}
+		
+		try {
+			this.Verify_Add_Custom_Schedule_To_Rule();
+		}catch(Exception e) {utils.log().info("Issue in Add Custom Schedule To Rule");}
+		
+		try {
+			this.Verify_Add_Custom_Schedule_Select_DOW();
+		}catch(Exception e) {utils.log().info("Issue in Add Custom Schedule Select DOW");}
+		
+		try {
+			this.Verify_Add_Custom_Schedule_Select_Start_Time();
+		}catch(Exception e) {utils.log().info("Issue in Custom Schedule Select Start Time");}
+		
+		try {
+			this.Verify_Add_Custom_Schedule_Select_Stop_Time();
+		}catch(Exception e) {utils.log().info("Issue in Add Custom Schedule Select Stop Time");}
+		
+		try {
+			this.Verify_Enable_Schedule_Time_UI_Page();
+		}catch(Exception e) {utils.log().info("Issue in Enable Schedule Time UI Page");}
+		
+		try {
+			this.Verify_Rules_Associated_With_User();
+		}catch(Exception e) {utils.log().info("Issue in Verify Rules Associated With User");}
+		
+		try {
+			this.Verify_Pause_Internet_For_All_Users();
+		}catch(Exception e) {utils.log().info("Issue in Pause Internet For All Users");}
+		
+		try {
+			this.Verify_Currently_Blocked_Profiles();
+		}catch(Exception e) {utils.log().info("Issue in Currently Blocked Profiles");}
+		
+		try {
+			this.Verify_Resume_Internet_For_All_Users();
+		}catch(Exception e) {utils.log().info("Issue in Resume Internet For All Users");}
+		
+		try {
+			this.Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users();
+		}catch(Exception e) {utils.log().info("Issue in Currently Blocked Users After Resuming Internet For All Users");}
+		
+		try {
+			this.Verify_Parental_Control_Help_Page();
+		}catch(Exception e) {utils.log().info("Issue in Parental Control Help Page");}
 	}
 		
 	@Test(priority = 2)
 	public void Verify_Parental_Control_UI_Page() {
 		SoftAssert softcontrol2 = new SoftAssert();
+		softcontrol2.assertTrue(new HomePage().getFooterIconsPageObject().clickParentalButton());
 		if(new ParentalControlWithProfilesPage().isAt())
 			softcontrol2.assertTrue(new ParentalControlWithProfilesPage().verifyUIOnParentalControlProfilesPage());
 		softcontrol2.assertAll();

@@ -14,7 +14,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.cs.arris.Base.ParentClass;
+import com.cs.arris.Pages.AddDeviceAccessCameraDialog;
+import com.cs.arris.Pages.AddDeviceActivateYourDeviceWithServiceProviderPage;
+import com.cs.arris.Pages.AddDeviceChooseInternetServiceProviderPage;
+import com.cs.arris.Pages.AddDeviceCongratulationsPage;
+import com.cs.arris.Pages.AddDeviceEnterMACAddressManuallyPage;
+import com.cs.arris.Pages.AddDeviceEstablishingConnectionPage;
 import com.cs.arris.Pages.AddDeviceHomePage;
+import com.cs.arris.Pages.AddDeviceLetsStartWithDeviceConnectionPage;
+import com.cs.arris.Pages.AddDeviceRegistrationFailedPage;
+import com.cs.arris.Pages.AddDeviceScanBarCodePage;
+import com.cs.arris.Pages.AddDeviceSelectDevice1Page;
+import com.cs.arris.Pages.AddDeviceSelectDevice2Page;
+import com.cs.arris.Pages.AddDeviceStepsForActivationPage;
+import com.cs.arris.Pages.AddDeviceSuccessPage;
 import com.cs.arris.Pages.HomePage;
 import com.cs.arris.Pages.NetworkPage;
 import com.cs.arris.Pages.ParentalControlWithProfilesPage;
@@ -125,53 +138,152 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 			} catch (Exception e) {
 				e.getMessage();
 			}
-			if (home.isAt()) 
-				home.clickNavigationButton();
-
-			if(home.getHamburgerMenuPageObject().isAt())
-				home.getHamburgerMenuPageObject().clickAddDeviceButton();
-			}).selectModem(modem -> {
-				modem.selectISPCableRadioButton();
-				modem.clickNextButton();
-			}).selectDevice(device -> {
-				device.selectT25RadioButton();
-				device.clickNextButton();
-				super.pause(5);
-			}).deviceActivation(activation -> {
-				activation.clickStartButton();
-			}).deviceConnection(connection -> {
-				connection.clickNextButton();
-			}).internetServiceProvider(provider -> {
-				provider.verifyChoosingInternetProviderUI();
-				provider.clickNextButton();
-			}).activateDevice(activate -> {
-				activate.clickSkipButton();
-			}).establishConnection(connection -> {
-				connection.clickOnlineButton();
-			}).deviceSuccess(success -> {
-				success.clickNextButton();
-			}).scanBarCode(scan -> {
-				scan.clickScanButton();
-			}).accessCamera(camera -> {
-				camera.clickEnterManuallyButton();
-			}).macAddress(macaddress -> {
-				macaddress.enterSerialNumber();
-				macaddress.enterMACAddress();
-				macaddress.clickNextButton();
-			}).registrationFailed(registration -> {
-				registration.clickContinueButton();
-			}).congratulatios(congrats -> {
-				congrats.clickContinueButton();
+//			if (home.isAt()) 
+//				home.clickNavigationButton();
+//
+//			if(home.getHamburgerMenuPageObject().isAt())
+//				home.getHamburgerMenuPageObject().clickAddDeviceButton();
+//			}).selectModem(modem -> {
+//				modem.selectISPCableRadioButton();
+//				modem.clickNextButton();
+//			}).selectDevice(device -> {
+//				device.selectT25RadioButton();
+//				device.clickNextButton();
+//				super.pause(5);
+//			}).deviceActivation(activation -> {
+//				activation.clickStartButton();
+//			}).deviceConnection(connection -> {
+//				connection.clickNextButton();
+//			}).internetServiceProvider(provider -> {
+//				provider.verifyChoosingInternetProviderUI();
+//				provider.clickNextButton();
+//			}).activateDevice(activate -> {
+//				activate.clickSkipButton();
+//			}).establishConnection(connection -> {
+//				connection.clickOnlineButton();
+//			}).deviceSuccess(success -> {
+//				success.clickNextButton();
+//			}).scanBarCode(scan -> {
+//				scan.clickScanButton();
+//			}).accessCamera(camera -> {
+//				camera.clickEnterManuallyButton();
+//			}).macAddress(macaddress -> {
+//				macaddress.enterSerialNumber();
+//				macaddress.enterMACAddress();
+//				macaddress.clickNextButton();
+//			}).registrationFailed(registration -> {
+//				registration.clickContinueButton();
+//			}).congratulatios(congrats -> {
+//				congrats.clickContinueButton();
 			});
+	}
+	
+	@Test(priority = 1)
+	public void Verify_Hamburger_Menu_Add_Remove_Device_Page() {
+		try {
+			this.Verify_Add_Device_Menu();
+		}catch(Exception e) {utils.log().info("Issue in Add Device Page");}
+		
+		try {
+			this.Verify_Cable_Modem_Tab();
+		}catch(Exception e) {utils.log().info("Issue in Cable Modem Tab");}
+		
+		try {
+			this.Verify_Max_Router_Tab();
+		}catch(Exception e) {utils.log().info("Issue in Max Router Tab");}
+		
+		try {
+			this.Verify_Device_Details_Page();
+		}catch(Exception e) {utils.log().info("Issue in Device Details Page");}
+		
+		try {
+			this.Verify_Specifications_Page();
+		}catch(Exception e) {utils.log().info("Issue in Specifications Page");}
+		
+		try {
+			this.Verify_Add_Additional_Device();
+		}catch(Exception e) {utils.log().info("Issue in Add Additional Device");}
+		
+		try {
+			this.Verify_Notifications_Page();
+		}catch(Exception e) {utils.log().info("Issue in Notifications Page");}
+		
+		try {
+			this.Verify_User_Guide_Page();
+		}catch(Exception e) {utils.log().info("Issue in User Guide Page");}
+		
+		try {
+			this.Verify_FAQ_Page();
+		}catch(Exception e) {utils.log().info("Issue in FAQ Page");}
+		
+		try {
+			this.Verify_Remove_Device_Page();
+		}catch(Exception e) {utils.log().info("Issue in Remove Device Page");}
+	}
+	
+	@Test(priority = 2)
+	public void Verify_Add_Device_Menu() {
+		SoftAssert softhome2 = new SoftAssert();
+		if(new HomePage().isAt())
+			softhome2.assertTrue(new HomePage().clickNavigationButton());
+		
+		if(new HomePage().getHamburgerMenuPageObject().isAt())
+			softhome2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAddDeviceButton());
+		
+		if(new AddDeviceSelectDevice1Page().isAt()) {
+			softhome2.assertTrue(new AddDeviceSelectDevice1Page().selectISPCableRadioButton());
+			softhome2.assertTrue(new AddDeviceSelectDevice1Page().clickNextButton());}
+		
+		if(new AddDeviceSelectDevice2Page().isAt()) {
+			softhome2.assertTrue(new AddDeviceSelectDevice2Page().selectT25RadioButton());
+			softhome2.assertTrue(new AddDeviceSelectDevice2Page().clickNextButton());
+			super.pause(5);}
+		
+		if(new AddDeviceStepsForActivationPage().isAt())
+			softhome2.assertTrue(new AddDeviceStepsForActivationPage().clickStartButton());
+		
+		if(new AddDeviceLetsStartWithDeviceConnectionPage().isAt())
+			softhome2.assertTrue(new AddDeviceLetsStartWithDeviceConnectionPage().clickNextButton());
+		
+		if(new AddDeviceChooseInternetServiceProviderPage().isAt())
+			softhome2.assertTrue(new AddDeviceChooseInternetServiceProviderPage().clickNextButton());
+		
+		if(new AddDeviceActivateYourDeviceWithServiceProviderPage().isAt())
+			softhome2.assertTrue(new AddDeviceActivateYourDeviceWithServiceProviderPage().clickSkipButton());
+		
+		if(new AddDeviceEstablishingConnectionPage().isAt())
+			softhome2.assertTrue(new AddDeviceEstablishingConnectionPage().clickOnlineButton());
+		
+		if(new AddDeviceSuccessPage().isAt())
+			softhome2.assertTrue(new AddDeviceSuccessPage().clickNextButton());
+		
+		if(new AddDeviceScanBarCodePage().isAt())
+			softhome2.assertTrue(new AddDeviceScanBarCodePage().clickScanButton());
+		
+		if(new AddDeviceAccessCameraDialog().isAt())
+			softhome2.assertTrue(new AddDeviceAccessCameraDialog().clickEnterManuallyButton());
+		
+		if(new AddDeviceEnterMACAddressManuallyPage().isAt()) {
+			softhome2.assertTrue(new AddDeviceEnterMACAddressManuallyPage().enterSerialNumber());
+			softhome2.assertTrue(new AddDeviceEnterMACAddressManuallyPage().enterMACAddress());
+			softhome2.assertTrue(new AddDeviceEnterMACAddressManuallyPage().clickNextButton());}
+		
+		if(new AddDeviceRegistrationFailedPage().isAt())
+			softhome2.assertTrue(new AddDeviceRegistrationFailedPage().clickContinueButton());
+		
+		if(new AddDeviceCongratulationsPage().isAt())
+			softhome2.assertTrue(new AddDeviceCongratulationsPage().clickContinueButton());
+		
+		softhome2.assertAll();
 	}
 		
 	@Test(priority = 2)
-	public void Verify_Cable_Modem_TabI() {
-		SoftAssert softhome2 = new SoftAssert();
+	public void Verify_Cable_Modem_Tab() {
+		SoftAssert softhome0 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome2.assertTrue(new AddDeviceHomePage().verifyUIOnHomePage());
+			softhome0.assertTrue(new AddDeviceHomePage().verifyUIOnHomePage());
 		
-		softhome2.assertAll();
+		softhome0.assertAll();
 	}
 	
 	@Test(priority = 3)

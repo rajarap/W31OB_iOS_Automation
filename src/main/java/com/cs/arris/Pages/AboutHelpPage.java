@@ -19,7 +19,8 @@ public class AboutHelpPage extends ParentClass implements Page {
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']"), 
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
+			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") 
+		})
 	public MobileElement closeButton;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,513][1029,671]']") // About

@@ -219,6 +219,9 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 	}
 
 	public boolean verifyUIOnSettingsPage() {
+		utils.log().info("*********************************************************");
+		utils.log().info("Details of UI Elements on the Hamburger - Settings Page  ");
+		utils.log().info("*********************************************************");
 		try {
 			if (settingsTitle.isDisplayed())
 				utils.log().info("Title " + settingsTitle.getText() + " is displayed");
@@ -272,6 +275,9 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 	}
 
 	public boolean verifyUIOnAboutPage() {
+		utils.log().info("******************************************************");
+		utils.log().info("Details of UI Elements on the Hamburger - About Page  ");
+		utils.log().info("******************************************************");
 		try {
 			if (aboutTitle.isDisplayed())
 				utils.log().info("Title " + aboutTitle.getText() + " is displayed");
