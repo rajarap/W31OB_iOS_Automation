@@ -300,16 +300,15 @@ public class SpeedTestPage extends ParentClass implements Page
 	public boolean performSpeedTest()
 	{
 			utils.log().info("Label on button before speed Test: " + startSpeedTestButton.getText());
-			clickStartSpeedTestButton();
 			try {
-				if(this.getAppRatingDialogObject().isAt())
+				clickStartSpeedTestButton();
+				if(this.getAppRatingDialogObject().remindMeLaterText.isDisplayed())
 					this.getAppRatingDialogObject().clickRemindMeLaterLink();
+				utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
+				super.pause(100);
+				utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
 			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
 
-			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
-			super.pause(100);
-			//verifySpeedTestResultsUI();
-			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
 			return true;
 	}
 	

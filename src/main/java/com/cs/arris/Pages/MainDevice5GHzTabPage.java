@@ -609,10 +609,7 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 			} else {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
-			
-			if (allDevicesCount == 0)
-				utils.log().info("There are no 5.0GhZ devices currently connected to the Main Router ");
-			
+				
 			if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 						utils.log().info("Connected Device  : " + i);
@@ -770,7 +767,8 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 				}
 			} else {
 				utils.log().info("Currently there are no devices connected to the main Router ");
-				return true;}
+				return true;
+				}
 			super.swipeDown();
 			click(connectedDevicesExpandImage);
 			return true;

@@ -627,9 +627,6 @@ public class TC02_Medium_Test extends ParentClass
 			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickDeviceName(2));
 			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName1());
 			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickDeviceName(2));
-			softsignal6.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().editDeviceName2());
-			softsignal6.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().clickSaveButton());
 			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
 			softsignal6.assertAll();
 		}
@@ -664,7 +661,7 @@ public class TC02_Medium_Test extends ParentClass
 			{
 				try {
 					softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
-					if(new SpeedTestPage().getAppRatingDialogObject().isAt())
+					if(new SpeedTestPage().getAppRatingDialogObject().remindMeLaterText.isDisplayed())
 						softspeedtest3.assertTrue(new SpeedTestPage().getAppRatingDialogObject().clickRemindMeLaterLink());
 				}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
 			}

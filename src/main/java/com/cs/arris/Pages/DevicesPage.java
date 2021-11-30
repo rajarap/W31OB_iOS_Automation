@@ -293,10 +293,7 @@ public class DevicesPage extends ParentClass implements Page {
 			utils.log().info("Details of Online Devices Connected to Main Device ");
 			utils.log().info("***************************************************");
 			
-			
-			if(this.onlineDeviceCount == 0) 
-				utils.log().info("There are no online devices currently connected to the Main Router ");
-			else if (this.onlineDeviceCount > 0) {
+			if (this.onlineDeviceCount > 0) {
 				for (int i = 1; i <= onlineDeviceCount-1; i++) {
 					utils.log().info("Online Device : " + i);
 					utils.log().info("--------------------");
@@ -456,6 +453,7 @@ public class DevicesPage extends ParentClass implements Page {
 					if (i >= 5)
 						super.swipeUp();
 				}
+				return true;
 			}else {utils.log().info("Either there are no devices connected to the main mAX router or all devices are currently offline");}
 			return true;
 		} catch (Exception ex) {
@@ -472,9 +470,7 @@ public class DevicesPage extends ParentClass implements Page {
 			utils.log().info("Details of Offline Devices Connected to Main Device ");
 			utils.log().info("****************************************************");
 			
-			if(offlineDeviceCount == 0)
-				utils.log().info("There are no offline devices currently connected to the Main Router ");
-			else if (offlineDeviceCount > 0) {
+			if (offlineDeviceCount > 0) {
 				for (int i = 1; i <= offlineDeviceCount; i++) {
 					utils.log().info("Offline Device : " + i);
 					utils.log().info("----------------------");

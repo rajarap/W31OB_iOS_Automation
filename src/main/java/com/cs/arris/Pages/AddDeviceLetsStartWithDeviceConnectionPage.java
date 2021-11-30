@@ -40,7 +40,7 @@ public class AddDeviceLetsStartWithDeviceConnectionPage extends ParentClass impl
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
 	public MobileElement descriptionText4;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/description_text4")
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_next")
 	public MobileElement nextButton;
 
 	public AddDeviceLetsStartWithDeviceConnectionPage() {
