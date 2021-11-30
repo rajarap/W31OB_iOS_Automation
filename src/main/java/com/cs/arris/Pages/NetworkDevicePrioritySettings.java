@@ -65,6 +65,11 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 		NetworkDevicePrioritySettingsAddDevicePage addDevice = new NetworkDevicePrioritySettingsAddDevicePage();
 		return addDevice;
 	}
+	
+	public NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog getAddedTwoHighestPriorityDevicesDialogObject() {
+		NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog twoDeviceWithHighestPriority = new NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog();
+		return twoDeviceWithHighestPriority;
+	}
 
 	public boolean clickBackButton() {
 		if (backIcon.isDisplayed()) {
@@ -113,7 +118,6 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 	
 	public boolean enableDevicePrioritySettings() {
 			click(devicePrioritySettingToggleButton);
-			super.pause(35);
 			utils.log().info("Device Priority Settings is enabled");
 			return true;
 	}

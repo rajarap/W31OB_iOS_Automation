@@ -610,10 +610,11 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
 			
-			if(allDevicesCount == 0)
-				utils.log().info("There are no 5.0GHz devices connected to the Main Router ");
-			else if (allDevicesCount > 0) {
-					for (int i = 1; i <= allDevicesCount; i++) {
+			if (allDevicesCount == 0)
+				utils.log().info("There are no 5.0GhZ devices currently connected to the Main Router ");
+			
+			if (allDevicesCount > 0) {
+				for (int i = 1; i <= allDevicesCount; i++) {
 						utils.log().info("Connected Device  : " + i);
 						utils.log().info("--------------------------");
 
@@ -769,12 +770,13 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 				}
 			} else {
 				utils.log().info("Currently there are no devices connected to the main Router ");
-				return false;}
+				return true;}
 			super.swipeDown();
 			click(connectedDevicesExpandImage);
 			return true;
 		} catch (Exception ex) {
 			utils.log().info("Error found when verifying Connected Device Details on Main Device Page All Tab ");
+			click(connectedDevicesExpandImage);
 			return false;
 		}
 	}
@@ -807,7 +809,6 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 
 			if (channelLabel.isDisplayed()) {
 				if (twoFourGhzDeviceCount.isDisplayed()) {
-//						utils.log().info("Channel : " + twoFourGhzDeviceCount.getText());
 					this.twoFourGhzDevice = twoFourGhzDeviceCount.getText();
 					utils.log().info("Channel 2 : " + this.twoFourGhzDevice);
 				} else {

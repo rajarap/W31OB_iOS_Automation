@@ -19,9 +19,6 @@ import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Pages.SpeedTestPage;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Workflows.HomePage_Workflow;
-import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
-import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
-import com.cs.arris.Workflows.TC56_Login_And_Verify_MainDevicesPage_Workflow;
 
 public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 	TestUtils utils = new TestUtils();
@@ -263,7 +260,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().isAt())
 		{
 			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
+			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName1());
 			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
 		}
 		
@@ -277,7 +274,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
 		{
 			softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName());
+			softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName1());
 			softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
 		}
 		
@@ -352,7 +349,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
 		{
 			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
+			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName1());
 			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
 		}
 		softmain18.assertAll();
@@ -365,7 +362,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
 		{
 			softmain19.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain19.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditDeviceNameDialogObject().editDeviceName());
+			softmain19.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditDeviceNameDialogObject().editDeviceName1());
 			softmain19.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditDeviceNameDialogObject().clickSaveButton());
 		}
 		softmain19.assertAll();
@@ -436,7 +433,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
 		{
 			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
+			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName1());
 			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
 		}
 		
@@ -450,7 +447,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
 		{
 			softmain28.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain28.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditDeviceNameDialogObject().editDeviceName());
+			softmain28.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditDeviceNameDialogObject().editDeviceName1());
 			softmain28.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditDeviceNameDialogObject().clickSaveButton());
 		}
 		
@@ -521,7 +518,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().isAt())
 		{
 			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
+			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName1());
 			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
 		}
 		
@@ -535,7 +532,7 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 		if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
 		{
 			softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().editDeviceName());
+			softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().editDeviceName1());
 			softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().clickSaveButton());
 		}
 		

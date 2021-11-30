@@ -158,6 +158,11 @@ public class SpeedTestPage extends ParentClass implements Page
 		 FooterIconsPage footerIconsPage = new FooterIconsPage();
 	     return footerIconsPage;
 	  }	
+	 
+		public AppRatingDialog getAppRatingDialogObject() {
+			AppRatingDialog ratingDialog = new AppRatingDialog();
+			return ratingDialog;
+		}
 	
 		public boolean clickBackButton() {
 			if (backIcon.isDisplayed()) {
@@ -296,6 +301,11 @@ public class SpeedTestPage extends ParentClass implements Page
 	{
 			utils.log().info("Label on button before speed Test: " + startSpeedTestButton.getText());
 			clickStartSpeedTestButton();
+			try {
+				if(this.getAppRatingDialogObject().isAt())
+					this.getAppRatingDialogObject().clickRemindMeLaterLink();
+			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
+
 			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
 			super.pause(100);
 			//verifySpeedTestResultsUI();

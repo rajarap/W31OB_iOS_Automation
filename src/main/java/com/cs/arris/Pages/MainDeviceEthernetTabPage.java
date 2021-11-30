@@ -608,9 +608,11 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 				utils.log().info("Connected Devices Expand button is not available");
 			}
 			
-			if(allDevicesCount == 0)
-				utils.log().info("There are no Ethernet devices connected to the Main Router ");
-			else if (allDevicesCount > 0) {
+			
+			if (allDevicesCount == 0)
+				utils.log().info("There are no Ethernet devices currently connected to the Main Router ");
+			
+			if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
@@ -757,12 +759,14 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 				}
 			} else {
 				utils.log().info("Currently there are no devices connected to the main Router ");
-				return false;}
+				return true;
+				}
 			super.swipeDown();
 			click(connectedDevicesExpandImage);
 			return true;
 		} catch (Exception ex) {
-			utils.log().info("Error found when verifying Connected Device Details on Main Device Page All Tab ");
+			utils.log().info("Error found when verifying Connected Device Details on Main Device Page Ethernet Tab ");
+			click(connectedDevicesExpandImage);
 			return false;
 		}
 	}

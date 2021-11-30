@@ -292,8 +292,11 @@ public class DevicesPage extends ParentClass implements Page {
 			utils.log().info("***************************************************");
 			utils.log().info("Details of Online Devices Connected to Main Device ");
 			utils.log().info("***************************************************");
-
-			if (this.onlineDeviceCount > 0) {
+			
+			
+			if(this.onlineDeviceCount == 0) 
+				utils.log().info("There are no online devices currently connected to the Main Router ");
+			else if (this.onlineDeviceCount > 0) {
 				for (int i = 1; i <= onlineDeviceCount-1; i++) {
 					utils.log().info("Online Device : " + i);
 					utils.log().info("--------------------");
@@ -469,7 +472,9 @@ public class DevicesPage extends ParentClass implements Page {
 			utils.log().info("Details of Offline Devices Connected to Main Device ");
 			utils.log().info("****************************************************");
 			
-			if (offlineDeviceCount > 0) {
+			if(offlineDeviceCount == 0)
+				utils.log().info("There are no offline devices currently connected to the Main Router ");
+			else if (offlineDeviceCount > 0) {
 				for (int i = 1; i <= offlineDeviceCount; i++) {
 					utils.log().info("Offline Device : " + i);
 					utils.log().info("----------------------");
@@ -500,8 +505,8 @@ public class DevicesPage extends ParentClass implements Page {
 						super.swipeUp();
 				}
 			} else {
-				utils.log().info(
-						"Either there are no devices connected to the main mAX router or all devices are currently online");
+				utils.log().info("Either there are no devices connected to the main mAX router or all devices are currently online");
+				return true;
 			}
 			return true;
 		} catch (Exception e) {
@@ -576,7 +581,7 @@ public class DevicesPage extends ParentClass implements Page {
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']"));
 							if (this.getEditDeviceNameDialogObject().isAt())
 							{
-								this.getEditDeviceNameDialogObject().editDeviceName();
+								this.getEditDeviceNameDialogObject().editDeviceName1();
 								this.getEditDeviceNameDialogObject().clickSaveButton();
 							}
 						}

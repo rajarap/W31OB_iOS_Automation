@@ -402,10 +402,6 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		utils.log().info("*******************************************************************");
 		
 		try {
-//			if (this.getTotalDevicesAdded() > 0) {
-				//utils.log().info("Total devices associated with user : " + getTotalDevicesAdded());
-				this.clickDeviceListExpandButton();
-
 				for (int i = 1; i <= 1 ; i++) 
 				{
 					utils.log().info("Associated Device : " + i);
@@ -438,164 +434,165 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		}
 	}
 	
-	public boolean verifyAssociatedRulesList() 
-	{
+	public boolean verifyAssociatedRulesList() {
 		super.swipeUp();
-			utils.log().info("******************************************************************");
-			utils.log().info("Add Rule - Details of Devices Listed in Enabled Schedule Time Page");
-			utils.log().info("******************************************************************");
-			
-			try {
-				for (int i = 1; i <= 2; i++) 
+		utils.log().info("*********************************************************************");
+		utils.log().info("Add Rule - Details of Schedules Listed in Enabled Schedule Time Page ");
+		utils.log().info("*********************************************************************");
+		
+		try {
+			for (int i = 1; i <= 1; i++) 
+			{
+				utils.log().info("Enable Schedule Time - Rule : " + i);
+				utils.log().info("---------------------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]/android.widget.FrameLayout/android.widget.LinearLayout");
+
+				for (MobileElement e : entity) 
 				{
-					utils.log().info("Enable Schedule Time - Rule : " + i);
-					utils.log().info("---------------------------------");
+					try {
+						if (e.findElementById("com.arris.sbcBeta:id/time_block_every_day").isDisplayed()) 
+						{
+							try {
+								if (e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']")
+										.isDisplayed())
+									utils.log().info("Schedule Time : " + e.findElementByXPath(
+											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']")
+											.getText());
+							} catch (Exception exp) {
+								utils.log().info("Schedule Time is not displayed ");
+							}
+		
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/time_block_every_day").isDisplayed())
+									utils.log().info(e.findElementById("com.arris.sbcBeta:id/time_block_every_day").getText()
+											+ " button is displayed ");
+							} catch (Exception exp) {
+								utils.log().info("EVERY DAY button is not displayed ");
+							}
+							
+							try {
+								if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently disabled");
+								else if(e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently enabled");
+								else utils.log().info("Time Block Toggle Button not displayed");
+							} catch (Exception exp) {}
+									
+							utils.log().info("****************************************************");
+							utils.log().info("                                                    ");
+						}
+					}catch(Exception exp) {	}
+				}
+			}
+			return true;
+		} catch (Exception p) {
+			return false;
+		}
+	}
+	
+	public boolean verifyUIonEnableScheduleTimeForCustomPage() {
 
-					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+		utils.log().info("****************************************************************************");
+		utils.log().info("Add Rule - Details of Schedules Listed in Enabled Schedule Time Custom Page ");
+		utils.log().info("****************************************************************************");
+		
+		try {
+			for (int i = 1; i <= 1; i++) 
+			{
+				utils.log().info("Enable Schedule Time - Rule : " + i);
+				utils.log().info("---------------------------------");
 
-					for (MobileElement e : entity) 
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]/android.widget.FrameLayout/android.widget.LinearLayout");
+
+			for (MobileElement e : entity) 
+			{
+				try {
+					if (e.findElementById("com.arris.sbcBeta:id/cbMonday").isDisplayed())
 					{
 						try {
-							if (e.findElementById("com.arris.sbcBeta:id/time_block_every_day").isDisplayed()) 
-							{
-								try {
-									if (e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']")
-											.isDisplayed())
-										utils.log().info("Schedule Time : " + e.findElementByXPath(
-												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']")
-												.getText());
-								} catch (Exception exp) {
-									utils.log().info("Schedule Time is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/time_block_every_day").isDisplayed())
-										utils.log().info(e.findElementById("com.arris.sbcBeta:id/time_block_every_day").getText()
-												+ " button is displayed ");
-								} catch (Exception exp) {
-									utils.log().info("EVERY DAY button is not displayed ");
-								}
-			
-								try {
-									if (e.findElementByXPath(
-											"//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']")
-											.isDisplayed())
-										utils.log().info("Time Block Toggle Button is currently disabled");
-								} catch (Exception exp) {
-									utils.log().info("Time Block Toggle Button not displayed");
-								}
-								
-								try {
-									if (e.findElementByXPath(
-										"//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']")
-										.isDisplayed())
-									utils.log().info("Time Block Toggle Button is currently enabled");
-								} catch (Exception exp) {
-									utils.log().info("Time Block Toggle Button not displayed");
-								}
-								
-								utils.log().info("****************************************************");
-								utils.log().info("                                                    ");
-							}
-						}catch(Exception exp) {	}
-						
+							if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']").isDisplayed())
+								utils.log().info("Schedule Time : " + e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']").getText());
+						} catch (Exception exp) {
+							utils.log().info("Schedule Time is not displayed ");
+						}
+	
 						try {
 							if (e.findElementById("com.arris.sbcBeta:id/cbSunday").isDisplayed())
-							{
-								try {
-									if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']").isDisplayed())
-										utils.log().info("Schedule Time : " + e.findElementByXPath(
-												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']").getText());
-								} catch (Exception exp) {
-									utils.log().info("Schedule Time is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/cbSunday").isDisplayed())
-										utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSunday").getText());
-								} catch (Exception exp) {
-									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSunday").getText() + " is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/cbMonday").isDisplayed())
-										utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbMonday").getText());
-								} catch (Exception exp) {
-									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbMonday").getText() + " is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/cbTuesday").isDisplayed())
-										utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbTuesday").getText());
-								} catch (Exception exp) {
-									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbTuesday").getText()
-											+ " is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/cbWednesday").isDisplayed())
-										utils.log()
-												.info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbWednesday").getText());
-								} catch (Exception exp) {
-									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbWednesday").getText()
-											+ " is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/cbThrusday").isDisplayed())
-										utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbThrusday").getText());
-								} catch (Exception exp) {
-									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbThrusday").getText()
-											+ " is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/cbFriday").isDisplayed())
-										utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbFriday").getText());
-								} catch (Exception exp) {
-									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbFriday").getText()
-											+ " is not displayed ");
-								}
-			
-								try {
-									if (e.findElementById("com.arris.sbcBeta:id/cbSaturday").isDisplayed())
-										utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSaturday").getText());
-								} catch (Exception exp) {
-									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSaturday").getText()
-											+ " is not displayed ");
-								}
-			
-								try {
-									if (e.findElementByXPath(
-											"//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']")
-											.isDisplayed())
-										utils.log().info("Time Block Toggle Button is currently disabled");
-								} catch (Exception exp) {
-									utils.log().info("Time Block Toggle Button not displayed");
-								}
-			
-								try {
-									if (e.findElementByXPath(
-											"//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']")
-											.isDisplayed())
-										utils.log().info("Time Block Toggle Button is currently enabled");
-								} catch (Exception exp) {
-									utils.log().info("Time Block Toggle Button not displayed");
-								}
-			
-								utils.log().info("****************************************************");
-								utils.log().info("                                                    ");
-							}
-
-						}catch(Exception exp) {}
-					}	
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSunday").getText());
+						} catch (Exception exp) {
+							utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSunday").getText() + " is not displayed ");
+						}
+	
+						try {
+							if (e.findElementById("com.arris.sbcBeta:id/cbMonday").isDisplayed())
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbMonday").getText());
+						} catch (Exception exp) {
+							utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbMonday").getText() + " is not displayed ");
+						}
+	
+						try {
+							if (e.findElementById("com.arris.sbcBeta:id/cbTuesday").isDisplayed())
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbTuesday").getText());
+						} catch (Exception exp) {
+							utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbTuesday").getText()
+									+ " is not displayed ");
+						}
+	
+						try {
+							if (e.findElementById("com.arris.sbcBeta:id/cbWednesday").isDisplayed())
+								utils.log()
+										.info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbWednesday").getText());
+						} catch (Exception exp) {
+							utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbWednesday").getText()
+									+ " is not displayed ");
+						}
+	
+						try {
+							if (e.findElementById("com.arris.sbcBeta:id/cbThrusday").isDisplayed())
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbThrusday").getText());
+						} catch (Exception exp) {
+							utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbThrusday").getText()
+									+ " is not displayed ");
+						}
+	
+						try {
+							if (e.findElementById("com.arris.sbcBeta:id/cbFriday").isDisplayed())
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbFriday").getText());
+						} catch (Exception exp) {
+							utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbFriday").getText()
+									+ " is not displayed ");
+						}
+	
+						try {
+							if (e.findElementById("com.arris.sbcBeta:id/cbSaturday").isDisplayed())
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSaturday").getText());
+						} catch (Exception exp) {
+							utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSaturday").getText()
+									+ " is not displayed ");
+						}
+						
+						try {
+							if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
+								utils.log().info("Time Block Toggle Button is currently disabled");
+							else if(e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+								utils.log().info("Time Block Toggle Button is currently enabled");
+							else utils.log().info("Time Block Toggle Button not displayed");
+						} catch (Exception exp) {}
+		
+						utils.log().info("****************************************************");
+						utils.log().info("                                                    ");
+					}
+					}catch(Exception exp) {}
 				}
-				return true;
-			} catch (Exception p) {
-				return false;
 			}
+			return true;
+		} catch (Exception p) {
+			return false;
 		}
+	}
 
 	public int getCountOfDevicesPaused() {
 		int pausedDeviceCount = super.getCountOfDevicesWithSpace(deviceCountPausedForProfile.getText());

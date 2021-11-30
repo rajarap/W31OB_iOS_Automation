@@ -62,7 +62,6 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 		utils.log().info("Name Your Network Page - Entered SSID Password");
 	}
 
-	
 	public void clickNextButton()
 	{
 		click(nextButton);

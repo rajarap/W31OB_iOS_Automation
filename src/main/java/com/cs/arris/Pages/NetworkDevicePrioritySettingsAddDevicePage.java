@@ -76,7 +76,6 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 	public boolean clickAddDeviceButton() {
 		if (addDeviceButton.isDisplayed()) {
 			click(addDeviceButton);
-			super.pause(20);
 			return true;
 		} else {
 			utils.log().info("Add Device button is not displayed");
@@ -142,6 +141,40 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 
 					if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
 						utils.log().info("Checkbox is displayed");
+
+				}
+			}
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public boolean verifySelectDeviceFromList() {
+		utils.log().info("                                               ");
+		utils.log().info("***********************************************");
+		utils.log().info("Verifying Selecting Devices on Add Device Page ");
+		utils.log().info("******************************************((***");
+		
+		int size = super.getDriver().findElements(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/add_device_rv']")).size();
+		if(size > 0) {
+		try {
+			for (int i = 1; i <= size ; i++) {
+				utils.log().info("Selecting Device : " + i);
+				utils.log().info("------------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) 
+						super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+
+				for (MobileElement e : entity) {
+					if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
+						utils.log().info("Device Image is displayed");
+
+					if ((e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed()))
+						utils.log().info("Device Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText() + " is displayed");
+
+					if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
+						utils.log().info("Checkbox is displayed");
 					
 					try {
 						if(i==2) {
@@ -155,6 +188,8 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 		} catch (Exception e) {
 			return false;
 		}
+	}else {utils.log().info("There are no devices listed in the Device Priority Add Device Page");}
+		return true;
 	}
 
 	@Override

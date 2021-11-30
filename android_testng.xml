@@ -9,7 +9,6 @@
 	<parameter name="platform" value="Android" />
 	<parameter name="device" value="Android" />
 	
-	
 	<test name="Medium_Tests">
 		<classes>
 			<class name="com.cs.arris.Tests.TC02_Medium_Test" />

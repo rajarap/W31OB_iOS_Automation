@@ -33,8 +33,6 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		 try 
 	   	  	{
 			  String dataFileName = "testdata/signup";
-			  //utils.log().info("Loading...Sign Up Test Data");
-			  
 			  super.loadTestData(dataFileName);
 			  
 			  this.firstName = properties.getProperty("firstname");
@@ -54,8 +52,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  
 			  this.udid = properties.getProperty("udid");
 			  utils.log().info("UDID : " + this.udid);
-			  
-			  //utils.log().info("Retrieved...Sign Up Test Data");
+
 			} catch(Exception e) {
 			 e.printStackTrace();
 		} 

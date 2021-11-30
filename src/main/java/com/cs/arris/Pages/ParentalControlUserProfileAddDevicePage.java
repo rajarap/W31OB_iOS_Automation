@@ -233,8 +233,8 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 							utils.log().info("Clicked the check box to select the device for the user ");}
 						else
 							utils.log().info("Check box is not available ");
-						utils.log().info("****************************************************");
-						utils.log().info("                                                    ");
+							utils.log().info("****************************************************");
+							utils.log().info("                                                    ");
 					}
 				}
 				return true;

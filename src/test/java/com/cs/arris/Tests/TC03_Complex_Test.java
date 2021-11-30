@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Pages.HomePage;
 import com.cs.arris.Pages.NetworkPage;
+import com.cs.arris.Pages.ParentalControlWithProfilesPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Workflows.HomePage_Workflow;
@@ -142,15 +143,1183 @@ public class TC03_Complex_Test extends ParentClass
 		  });
 	  }
 	  
-	  @Test(priority = 2)
-	  public void Test_Main_Device_Page()
-	  {
-		  this.getParentalControlPageTestObject().Verify_Parental_Control();
-	  }
+//	  @Test(priority = 2)
+//		public void Verify_Parental_Control_UI_Page() {
+//			SoftAssert softcontrol2 = new SoftAssert();
+//			softcontrol2.assertTrue(new HomePage().getFooterIconsPageObject().clickParentalButton());
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol2.assertTrue(new ParentalControlWithProfilesPage().verifyUIOnParentalControlProfilesPage());
+//			softcontrol2.assertAll();
+//		}
+//		
+//		@Test(priority = 3)
+//		public void Verify_Add_Profile_Page() {
+//			SoftAssert softcontrol3 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().enableParentalControl());
+//			super.pause(5);
+//			
+//			try {
+//				if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
+//			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
+//			
+//			if(new ParentalControlWithProfilesPage().isAt()) {
+//				for(int i = 1; i <= 3; i++)	{
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
+//				}
+//			}
+//			if(new ParentalControlWithProfilesPage().isAt()) 
+//				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
+//			softcontrol3.assertAll();
+//		}
+//		
+//		@Test(priority = 4)
+//		public void Verify_User_Profile_Page() {
+//			SoftAssert softcontrol4 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().clickOnUserProfile());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().isAt())
+//				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyUIOnUserProfilePage());
+//			
+//			super.pause(5);
+//			
+//			softcontrol4.assertAll();
+//		}
+//		
+//		@Test(priority = 5)
+//		public void Verify_User_Profile_Help_Page() {
+//			SoftAssert softcontrol5 = new SoftAssert();
+//			softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickHelpIcon());
+//			super.pause(3);
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt()){
+//				softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().verifyUIOnUserProfilePage());
+//				softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton());
+//			}
+//			
+//			softcontrol5.assertAll();
+//		}
+//		
+//		@Test(priority = 6)
+//		public void Verify_Edit_User_Profile_Name() {
+//			SoftAssert softcontrol6 = new SoftAssert();
+//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getExistingUserName());
+//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickUserProfileNameEditButton());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()){
+//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog());
+//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName());
+//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton());
+//				super.pause(3);
+//			}
+//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().validateUserProfileEditedName());
+//			softcontrol6.assertAll();
+//		}
+//		
+//		@Test(priority = 7)
+//		public void Verify_Add_Device_To_User_Profile() {
+//			SoftAssert softcontrol7 = new SoftAssert();
+//			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevices());
+//				utils.log().info("Clicking on Add Device button without selecting any device");
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+//				
+//				if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed()) {
+//					utils.log().info("Alert dialog box with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().description.getText()+ " - is displayed");
+//					softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
+//				}
+//					
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+//				//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
+//			}
+//			
+//			softcontrol7.assertAll();
+//		}
+//		
+//		@Test(priority = 8)
+//		public void Verify_Add_Device_Help_Page() {
+//			SoftAssert softcontrol8 = new SoftAssert();
+//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) 
+//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon());
+//			
+//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().isAt()) 
+//				softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton());
+//			
+//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickBackButton());
+//			
+//			softcontrol8.assertAll();
+//		}
+//		
+//		@Test(priority = 9)
+//		public void Verify_Devices_Associated_With_User_Profile() {
+//			SoftAssert softcontrol9 = new SoftAssert();
+//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
+//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedDeviceList());
+//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
+//			
+//			softcontrol9.assertAll();
+//		}
+//		
+//		@Test(priority = 10)
+//		public void Verify_Add_Rule_To_User_Profile() {
+//			SoftAssert softcontrol10 = new SoftAssert();
+//			softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddRuleLink());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
+//				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+//			
+//			softcontrol10.assertAll();
+//		}
+//		
+//		@Test(priority = 11)
+//		public void Verify_Add_EveryDay_Schedule_To_Rule() {
+//			SoftAssert softcontrol11 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) 
+//				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnAddInternetBlockingScheduleDialog());
+//			utils.log().info("                                                          ");
+//			utils.log().info("Selecting same start and stop time");
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescription.isDisplayed()) {
+//				utils.log().info("Alert dialog with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescription.getText() + " - is displayed");
+//				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickAlertOKButton());}
+//			
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCloseButton());
+//
+//			softcontrol11.assertAll();
+//		}
+//		
+//		@Test(priority = 12)
+//		public void Verify_Select_Start_Time_For_EveryDay_Schedule() {
+//			SoftAssert softcontrol12 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) {
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickEveryDayButton());
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());}
+//			
+//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+//
+//			softcontrol12.assertAll();
+//		}
+//		
+//		@Test(priority = 13)
+//		public void Verify_Select_Stop_Time_For_EveryDay_Schedule() {
+//			SoftAssert softcontrol13 = new SoftAssert();
+//			super.pause(65);
+//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+//			
+//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
+//				softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+//				
+//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+//			super.pause(3);
+//
+//			softcontrol13.assertAll();
+//		}
+//		
+//		@Test(priority = 14)
+//		public void Verify_Add_Custom_Schedule_To_Rule() {
+//			SoftAssert softcontrol14 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
+//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCustomButton());
+//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnCustomClick());
+//			}
+//			softcontrol14.assertAll();
+//		}
+//		
+//		@Test(priority = 15)
+//		public void Verify_Add_Custom_Schedule_Select_DOW() {
+//			SoftAssert softcontrol15 = new SoftAssert();
+//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSunday());
+//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickTuesday());
+//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickThrusday());
+//
+//			softcontrol15.assertAll();
+//			}
+//		
+//		@Test(priority = 16)
+//		public void Verify_Add_Custom_Schedule_Select_Start_Time() {
+//			SoftAssert softcontrol16 = new SoftAssert();
+//			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+//			
+//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt())
+//				softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+//			
+//			softcontrol16.assertAll();
+//			}
+//		
+//		@Test(priority = 17)
+//		public void Verify_Add_Custom_Schedule_Select_Stop_Time() {
+//			SoftAssert softcontrol17 = new SoftAssert();
+//			super.pause(65);
+//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+//			
+//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
+//				softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+//			
+//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+//			super.pause(3);
+//			
+//			softcontrol17.assertAll();
+//		}
+//		
+//		@Test(priority = 18)
+//		public void Verify_Enable_Schedule_Time_UI_Page() {
+//			SoftAssert softcontrol18 = new SoftAssert();
+//			
+//		try {
+//			new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonEnableScheduleTimePage();
+//		}catch(Exception e) {}
+//		
+//		try {
+//			new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonEnableScheduleTimeForCustomPage();
+//		}catch(Exception e) {}
+//		
+//			softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickBackButton());
+//			
+//			softcontrol18.assertAll();
+//		}
+//		
+//		@Test(priority = 19)
+//		public void Verify_Rules_Associated_With_User() {
+//			SoftAssert softcontrol19 = new SoftAssert();
+//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
+//			try {
+//				new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedRulesList();
+//			}catch(Exception e) {}
+//			
+//			try {
+//				new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyUIonEnableScheduleTimeForCustomPage();
+//			}catch(Exception e) {}
+//			
+//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
+//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickBackButton());
+//			
+//			softcontrol19.assertAll();
+//		}
+//		
+//		@Test(priority = 20)
+//		public void Verify_Pause_Internet_For_All_Users() {
+//			SoftAssert softcontrol20 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt()) {
+//				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().enablePauseInternetAccessForAllUserProfiles());
+//				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().verifyPauseInternetAccessForAllUserProfile());
+//			}
+//			softcontrol20.assertAll();
+//		}
+//		
+//		@Test(priority = 21)
+//		public void Verify_Currently_Blocked_Profiles() {
+//			SoftAssert softcontrol21 = new SoftAssert();
+//			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+//
+//			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+//				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+//				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+//			}
+//			softcontrol21.assertAll();
+//		}
+//		
+//		@Test(priority = 22)
+//		public void Verify_Resume_Internet_For_All_Users() {
+//			SoftAssert softcontrol22 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt()) {
+//				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().disablePauseInternetAccessForAllProfiles());
+//				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().verifyResumeInternetAccessForAllUserProfile());
+//			}
+//			softcontrol22.assertAll();
+//		}
+//		
+//		@Test(priority = 23)
+//		public void Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users() {
+//			SoftAssert softcontrol23 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+//			
+//			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyNoBlockedProfileMessages());
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+//			}
+//			softcontrol23.assertAll();
+//		}
+//		
+//		@Test(priority = 24)
+//		public void Verify_Parental_Control_Help_Page() {
+//			SoftAssert softcontrol24 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickHelpIcon());
+//			super.pause(3);
+//				
+//			if(new ParentalControlWithProfilesPage().getParentalHelpPageObject().isAt()) {
+//			//	softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().verifyUIOnParentalControlOverviewHelpPage());
+//				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().clickCloseButton());
+//				super.pause(3);
+//			}
+//			softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickBackButton());
+//
+//			softcontrol24.assertAll();
+//		}	
+		
+		
+		
+		
+		
+		
+		
 	  
-	  @Test(priority = 3)
-	  public void Test_Connected_Devices_Page()
-	  {
-		  this.getNetworkTestObject().Verify_Network_Page();
-	  }
+		@Test(priority = 25)
+		public void Verify_Newtork_UI_Page() {
+			utils.log().info("                     ");
+			utils.log().info("*********************");
+			utils.log().info("Test: Network Page   ");
+			utils.log().info("*********************");
+			SoftAssert softnet2 = new SoftAssert();
+			softnet2.assertTrue(new HomePage().getFooterIconsPageObject().clickNetworkButton());
+			softnet2.assertTrue(new NetworkPage().verifyUIOnNetworkPage());
+			softnet2.assertAll();
+		}
+
+		@Test(priority = 26)
+		public void Verify_Newtork_Help_Page() {
+			SoftAssert softnet3 = new SoftAssert();
+			softnet3.assertTrue(new NetworkPage().clickHelpButton());
+			softnet3.assertTrue(new NetworkPage().getNetworkHelpPageObject().clickCloseButton());
+			softnet3.assertAll();
+		}
+
+		@Test(priority = 27)
+		public void Verify_Newtork_Test_Connection_Speed_Page() {
+			SoftAssert softnet4 = new SoftAssert();
+			softnet4.assertTrue(new NetworkPage().clickTestConnectionSpeedButton());
+			softnet4.assertTrue(new NetworkPage().getSpeedTestPageObject().performSpeedTest());
+			softnet4.assertTrue(new NetworkPage().getSpeedTestPageObject().clickBackButton());
+			softnet4.assertAll();
+		}
+
+		@Test(priority = 28)
+		public void Verify_WAN_Settings_UI_Page() {
+			SoftAssert softnet5 = new SoftAssert();
+			softnet5.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
+			super.swipeUp();
+			softnet5.assertTrue(new NetworkPage().clickWANSettings());
+			try {
+				if (new NetworkPage().getAppRatingPageObject().isAt()) {
+					softnet5.assertTrue(new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink());
+				}
+			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
+				softnet5.assertTrue(new NetworkPage().getWANSettingsPageObject().verifyUIOnWANSettingsPage());
+
+				softnet5.assertAll();
+		}
+
+		@Test(priority = 29)
+		public void Verify_WAN_Settings_Help_Page() {
+			SoftAssert softnet6 = new SoftAssert();
+			softnet6.assertTrue(new NetworkPage().getWANSettingsPageObject().clickHelpButton());
+			if (new NetworkPage().getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject().isAt())
+				softnet6.assertTrue(new NetworkPage().getWANSettingsPageObject().getNetworkWanSettingsHelpPageObject().clickCloseButton());
+			softnet6.assertAll();
+		}
+
+		@Test(priority = 30)
+		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page() {
+			SoftAssert softnet7 = new SoftAssert();
+			new NetworkPage().getWANSettingsPageObject().clickWANIPConfigurationLink();
+			if (new NetworkPage().getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().isAt())
+				softnet7.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().verifyUIOnWANIPv4DHCP());
+			softnet7.assertAll();
+		}
+
+		@Test(priority = 31)
+		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv4_Static_UI_Page() {
+			SoftAssert softnet8 = new SoftAssert();
+			softnet8.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().verifyUIOnWANIPv4Static());
+			softnet8.assertAll();
+		}
+
+		@Test(priority = 32)
+		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page() {
+			SoftAssert softnet9 = new SoftAssert();
+			softnet9.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().clickWANIPv6Tab());
+			if (new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().isAt())
+				softnet9.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().verifyUIOnWANIPv6Stateful());
+			softnet9.assertAll();
+		}
+
+		@Test(priority = 33)
+		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateless_UI_Page() {
+			SoftAssert softnet10 = new SoftAssert();
+			softnet10.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().verifyUIOnWANIPv6Stateless());
+			softnet10.assertAll();
+		}
+
+		@Test(priority = 34)
+		public void Verify_WAN_Settings_WAN_IP_Configuration_Help_Page() {
+			SoftAssert softnet11 = new SoftAssert();
+			new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickHelpButton();
+			if (new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().isAt()) {
+				softnet11.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().clickCloseButton());
+				softnet11.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickBackButton());
+			}
+			softnet11.assertAll();
+		}
+		
+		@Test(priority = 35)
+		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page() 
+		{
+			SoftAssert softnet12 = new SoftAssert();
+			softnet12.assertTrue(new NetworkPage().getWANSettingsPageObject().clickDNSConfigurationLink());
+			if (new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().isAt()) 
+				softnet12.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Automatic());
+			softnet12.assertAll();
+		}
+		
+		@Test(priority = 36)
+		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page() 
+		{
+			SoftAssert softnet13 = new SoftAssert();
+			softnet13.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Static());
+			softnet13.assertAll();
+		}
+		
+		@Test(priority = 37)
+		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page() 
+		{
+			SoftAssert softnet14 = new SoftAssert();
+			softnet14.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().clickDNSIPv6Tab());
+			if (new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().isAt()) 
+				softnet14.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Automatic());
+			softnet14.assertAll();
+		}
+		
+		@Test(priority = 38)
+		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page() 
+		{
+			SoftAssert softnet15 = new SoftAssert();
+			softnet15.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Static());
+			softnet15.assertAll();
+		}
+		
+		@Test(priority = 39)
+		public void Verify_WAN_Settings_DNS_Configuration_Help_Page() 
+		{
+			SoftAssert softnet16 = new SoftAssert();
+			softnet16.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickHelpButton());
+			if (new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().isAt())
+				softnet16.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().clickCloseButton());
+				softnet16.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickBackButton());
+				try{
+					if(new NetworkPage().getAppRatingPageObject().isAt())
+						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+				}catch(Exception e) {
+					utils.log().info("App Rating Dialog did not appear");
+				}
+				softnet16.assertAll();
+		}
+		
+		@Test(priority = 40)
+		public void Verify_WAN_Settings_LAC_Alert_Dialog() 
+		{
+			SoftAssert softnet17 = new SoftAssert();
+			if (new NetworkPage().getWANSettingsPageObject().isAt()) 
+				softnet17.assertTrue(new NetworkPage().getWANSettingsPageObject().clickLacAlertIcon());
+				if(new NetworkPage().getWANSettingsPageObject().getLACAlertDialogObject().isAt())
+					softnet17.assertTrue(new NetworkPage().getWANSettingsPageObject().getLACAlertDialogObject().clickCloseDialog());
+					softnet17.assertTrue(new NetworkPage().getWANSettingsPageObject().clickBackButton());
+			softnet17.assertAll();
+		}
+		
+		@Test(priority = 41)
+		public void Verify_LAN_Settings_UI_Page() 
+		{
+			SoftAssert softnet18 = new SoftAssert();
+			if (new NetworkPage().isAt()) {
+				softnet18.assertTrue(new NetworkPage().clickLANSettings());
+				try{
+					if(new NetworkPage().getAppRatingPageObject().isAt())
+						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+				}catch(Exception e) {
+					utils.log().info("App Rating Dialog did not appear");
+				}
+				softnet18.assertTrue(new NetworkPage().getLANSettingsPageObject().verifyUIOnLANSettingsPage());
+			}
+			softnet18.assertAll();
+		}
+		
+		@Test(priority = 42)
+		public void Verify_LAN_Settings_LAN_IP_Reservation_Page() 
+		{
+			SoftAssert softnet19 = new SoftAssert();
+			softnet19.assertTrue(new NetworkPage().getLANSettingsPageObject().clickLANIPResevationLink());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().isAt())
+				softnet19.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().verifyUIOnNetworkLANIPReservationPage());
+			softnet19.assertAll();
+		}
+		
+		@Test(priority = 43)
+		public void Verify_LAN_Settings_LAN_IP_Reservation_Add_Reservation_Page() 
+		{
+			SoftAssert softnet20 = new SoftAssert();
+			new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickAddReservationButton();
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().isAt())
+			{
+				softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().verifyUIOnReserveLANIP());
+				softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterRuleName());
+				softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().enterIPAddress());
+				softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().selectADevice(1));
+				softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().clickSaveButton());
+				softnet20.assertAll();
+			}
+		}
+		
+		@Test(priority = 44)
+		public void Verify_LAN_Settings_LAN_IP_Reservation_Rules() 
+		{
+			SoftAssert softnet21 = new SoftAssert();
+			softnet21.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().verifyRulesOnLAPIPReservationPage());
+			softnet21.assertAll();
+		}
+		
+		@Test(priority = 45)
+		public void Verify_LAN_Settings_LAN_IP_Reservation_Edit_Devices_Page() 
+		{
+			SoftAssert softnet22 = new SoftAssert();
+			softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickEditLAPIPReservation());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().isAt())
+			{
+				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().verifyUIOnEditReserveLANIP());
+				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editRuleName());
+				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editIPAddress());
+				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().clickSaveButton());
+			}
+			softnet22.assertAll();
+
+		}
+
+		@Test(priority = 46)
+		public void Verify_LAN_Settings_LAN_IP_Reservation_Help_Page() {
+			SoftAssert softnet23 = new SoftAssert();
+			softnet23.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickHelpButton());
+			if (new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLanIPReservationHelpPageObject().isAt()) {
+				softnet23.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLanIPReservationHelpPageObject().clickCloseButton());
+				softnet23.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickBackButton());
+			}
+			softnet23.assertAll();
+		}
+		
+		@Test(priority = 47)
+		public void Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page() 
+		{
+			SoftAssert softnet24 = new SoftAssert();
+			softnet24.assertTrue(new NetworkPage().getLANSettingsPageObject().clickLANSubnetLink());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().isAt()) {
+				softnet24.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyUIOnLANSubnetConfigurationPage());
+				softnet24.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyDHCPIPAddressRangeForSelectedSubnet());
+			}
+			softnet24.assertAll();
+		}
+		
+		@Test(priority = 48)
+		public void Verify_Edit_LAN_Subnet_DHCP_Range_Configuration_Page() 
+		{
+			SoftAssert softnet25 = new SoftAssert();
+			
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().EditDHCPIPAddressRangeForFirstSubnet());
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+			
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().EditDHCPIPAddressRangeForSecondSubnet());
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+			
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().EditDHCPIPAddressRangeForThirdSubnet());
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+			
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyLANDHCPRangeBetween1And255());
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().isAt())
+				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().clickCloseButton());
+			
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyLANDHCPRangeWithEmptySuffix());
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().isAt())
+				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPBetween1And255DialogObject().clickCloseButton());
+			
+			softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickResetToDefaultButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().isAt())
+				softnet25.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANDHCPChangeRangeIPDialogObject().clickCloseButton());
+
+			softnet25.assertAll();
+		}
+		
+		@Test(priority = 49)
+		public void Edit_LAN_Subnet_Configuration_Octets() 
+		{
+			SoftAssert softnet26 = new SoftAssert();
+			
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyFirstLANSubnetConfigurationWithInvalidOctet());
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressText1.getText() + " is displayed");
+			
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifySecondLANSubnetConfigurationWithInvalidOctet());
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressText2.getText() + " is displayed");
+
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyThirdLANSubnetConfigurationWithInvalidOctet());
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressText3.getText() + " is displayed");
+			
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().verifyThirdLANSubnetConfigurationWithSecondInvalidOctet());
+			softnet26.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickSaveButton());
+			utils.log().info("Validation Message : " + new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().enterValidIPAddressTex16_31.getText() + " is displayed");
+			
+			softnet26.assertAll();
+		}
+		
+		@Test(priority = 50)
+		public void Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Help_Page() 
+		{
+			SoftAssert softnet27 = new SoftAssert();
+			softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickHelpButton());
+				if(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANSubnetRangeHelpPageObject().isAt()) {
+					softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().getLANSubnetRangeHelpPageObject().clickCloseButton());
+					softnet27.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANSubnetDHCPLRangePageObject().clickBackButton());
+				softnet27.assertAll();
+			}
+		}
+		
+		@Test(priority = 51)
+		public void Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page() 
+		{
+			SoftAssert softnet28 = new SoftAssert();
+//			//remove this if above test are uncommented
+//				new NetworkPage().clickNetworkSettingsExpandButton();
+//				new NetworkPage().clickLANSettings();
+//				try{
+//					if(new NetworkPage().getAppRatingPageObject().isAt())
+//						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//				}catch(Exception e) {
+//					utils.log().info("App Rating Dialog did not appear");
+//				}
+//			//remove this if above test are uncommented
+			
+				if(new NetworkPage().getLANSettingsPageObject().isAt())
+					softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().clickDHCPLeaseTimeLink());
+				if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().isAt())
+					softnet28.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyUIOnLANLeaseTimePage());
+				softnet28.assertAll();
+		}
+		
+		@Test(priority = 52)
+		public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Page() 
+		{
+			SoftAssert softnet29 = new SoftAssert();
+			
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt()){
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().verifyUIOnLANEditLeaseTimePage());
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickMinutesRadioButton());}
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithMinutesTimeUnit());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+			
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickHourlyRadioButton());
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithHourlyTimeUnit());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+			
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickDaysRadioButton());
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithDaysTimeUnit());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+			
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickWeeklyRadioButton());
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithWeeklyTimeUnit());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+			
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickForeverRadioButton());
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifyLeaseTimeWithForeverTimeUnit());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+			
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickTimeUnitButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getEditTimeUnitPageObject().clickMinutesRadioButton());
+			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().verifySameLeaseTimeForAnyUnit());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
+				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
+			
+			softnet29.assertAll();
+		}
+		
+		@Test(priority = 53)
+		public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Help_Page() 
+		{
+			SoftAssert softnet30 = new SoftAssert();
+			softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickHelpButton());
+			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().isAt())
+				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().clickCloseButton());
+				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickBackButton());
+				try{
+					if(new NetworkPage().getAppRatingPageObject().isAt())
+						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+				}catch(Exception e) {
+					utils.log().info("App Rating Dialog did not appear");
+				}
+				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().clickBackButton());
+				softnet30.assertAll();
+		}
+		
+//		@Test(priority = 54)
+//		public void Verify_Device_Priority_Settings_UI_Page() 
+//		{
+//			SoftAssert softnet31 = new SoftAssert();
+////			//remove this if above test are uncommented
+////			new NetworkPage().clickNetworkSettingsExpandButton();
+////			super.swipeUp();
+////			softnet31.assertTrue(new NetworkPage().clickDevicePrioritySettings());
+////			super.pause(25);
+////			super.pause(25);
+////			try{
+////				if(new NetworkPage().getAppRatingPageObject().isAt())
+////					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+////			}catch(Exception e) {
+////				utils.log().info("App Rating Dialog did not appear");
+////			}
+//////			remove this if above test are uncommented
+//			super.swipeUp();
+//			softnet31.assertTrue(new NetworkPage().clickDevicePrioritySettings());
+//			super.pause(35);
+//			try{
+//				if(new NetworkPage().getAppRatingPageObject().isAt())
+//					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//			}catch(Exception e) {
+//				utils.log().info("App Rating Dialog did not appear");
+//			}
+//			super.pause(20);
+//			if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt())
+//			{
+//				softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().enableDevicePrioritySettings());
+//
+//				try{
+//					if(new NetworkPage().getAppRatingPageObject().isAt())
+//						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//				}catch(Exception e) {
+//					utils.log().info("App Rating Dialog did not appear");
+//				}
+//				super.pause(35);
+//				softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnDevicePrioritySettingsPage());
+//				softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
+//			}
+//			softnet31.assertAll();
+//		}
+//		
+//		@Test(priority = 55)
+//		public void Verify_Device_Priority_Settings_Add_Device_UI_Page() 
+//		{
+//			SoftAssert softnet32 = new SoftAssert();
+//			if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().isAt()) {
+//				softnet32.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyUIOnAddDevicePage());
+//				softnet32.assertAll();
+//			}
+//		}
+//		
+//		@Test(priority = 56)
+//		public void Verify_Device_Priority_Settings_Add_Device_Page() 
+//		{
+//			SoftAssert softnet33 = new SoftAssert();
+//			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifyDeviceListForPrioritization());
+//			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
+//			if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getSelectDeviceAlertDialogObject().isAt())
+//				softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getSelectDeviceAlertDialogObject().clickOKButton());
+//			
+//			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifySelectDeviceFromList());
+//			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
+//			super.pause(30);
+//			
+//			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
+//			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().verifySelectDeviceFromList());
+//			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
+//			super.pause(30);
+//			
+//			
+//			softnet33.assertAll();
+//	
+//		}
+//		
+//		@Test(priority = 57)
+//		public void Verify_Device_Priority_Settings_Added_Device_Page() 
+//		{
+//			SoftAssert softnet34 = new SoftAssert();
+//			if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt()) {
+//				softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnNetworkPrioritizedDevices());
+//				softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyTwoDevicesWithHighestPriority());
+//				if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddedTwoHighestPriorityDevicesDialogObject().isAt())
+//					softnet34.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddedTwoHighestPriorityDevicesDialogObject().clickOkButton());
+//				
+//				}
+//			softnet34.assertAll();
+//		}
+//		
+//		@Test(priority = 58)
+//		public void Verify_Device_Priority_Settings_Add_Device_Help_Page() 
+//		{
+//			SoftAssert softnet35 = new SoftAssert();
+//			softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
+//			softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickHelpButton());
+//			if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().isAt())
+//				softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().getAddDevicePriorityHelpPageObject().clickCloseButton());
+//			softnet35.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickBackButton());
+//			softnet35.assertAll();
+//		}
+//		
+//		@Test(priority = 59)
+//		public void Verify_Device_Priority_Settings_Help_Page() 
+//		{
+//			SoftAssert softnet36 = new SoftAssert();
+//			softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickHelpButton());
+//			if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().isAt())
+//				softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getDevicePriorityHelpPageObject().clickCloseButton());
+//			softnet36.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickBackButton());
+//			softnet36.assertAll();
+//		}
+		
+		@Test(priority = 60)
+		public void Verify_Time_Zone_Settings_UI_Page() 
+		{
+			SoftAssert softnet37 = new SoftAssert();
+			super.swipeUp();
+			softnet37.assertTrue(new NetworkPage().clickTimeZone());
+			if(new NetworkPage().getTimeZoneSettingsPageObject().isAt())
+				softnet37.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().verifyUIOnTimeZonePage());
+			softnet37.assertAll();
+		}
+		
+		@Test(priority = 61)
+		public void Verify_Time_Zone_Settings_Help_Page() 
+		{
+			SoftAssert softnet38 = new SoftAssert();
+			softnet38 .assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickHelpButton());
+			if (new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().isAt())
+				softnet38 .assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().clickCloseButton());
+			softnet38 .assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickBackButton());
+			softnet38 .assertAll();
+		}
+		
+		@Test(priority = 62)
+		public void Verify_General_Settings_UI_Page() 
+		{
+			SoftAssert softnet39 = new SoftAssert();
+			new NetworkPage().clickGeneralSettings();
+			if(new NetworkPage().getGeneralSettingsPageObject().isAt())
+				softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().verifyUIOnGeneralSettingsPage());
+			softnet39.assertAll();
+		}
+		
+		@Test(priority = 63)
+		public void Verify_General_Settings_UPnP_Settings() 
+		{
+			SoftAssert softnet40 = new SoftAssert();
+			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().disableUPnP());
+			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableUPnP());
+			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickUPNPInfoIcon());
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().isAt())
+				softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().clickCloseButton());
+			softnet40.assertAll();
+		}
+		
+		@Test(priority = 64)
+		public void Verify_General_Settings_IPv6_Enable_Settings() 
+		{
+			SoftAssert softnet39 = new SoftAssert();
+			softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickIPv6InfoIcon());
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().isAt())
+				softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().clickCloseButton());
+			softnet39.assertAll();
+		}
+		
+		@Test(priority = 65)
+		public void Verify_General_Settings_Bridge_Mode_Settings() 
+		{
+			SoftAssert softnet42 = new SoftAssert();
+			softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBridgeModeInfoIcon());
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().isAt())
+				softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().clickCloseButton());
+			softnet42.assertAll();
+		}
+		
+		@Test(priority = 66)
+		public void Verify_General_Settings_Port_Forwarding_Settings() 
+		{
+			SoftAssert softnet43 = new SoftAssert();
+			new NetworkPage().getGeneralSettingsPageObject().clickPortForwardingink();
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt())
+				softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().verifyUIOnPortForwardingPage());
+			softnet43.assertAll();
+		}
+		
+		@Test(priority = 67)
+		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page() 
+		{
+			SoftAssert softnet44 = new SoftAssert();
+			new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().isAt())
+			{
+				super.getDriver().hideKeyboard();
+				softnet44.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyUIOnPortForwardingAddRulePage());
+				softnet44.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickCloseButton());
+			}
+			softnet44.assertAll();
+		}
+		
+		@Test(priority = 68)
+		public void Verify_General_Settings_Port_Forwarding_Add_Rules() 
+		{
+			SoftAssert softnet45 = new SoftAssert();
+//			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt()) 
+//			{
+			for(int i = 1 ; i <=3 ; i++)
+			{
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().selectTCP());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
+				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+				
+				try {
+					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().portNameDialogError.isDisplayed())
+						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
+						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
+						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
+						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
+						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+					else
+						utils.log().info("All Port details are valid");
+					softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+				}catch(Exception e) {utils.log().info("All Port details are valid");}
+				super.pause(15);
+				try {
+					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
+						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
+								.getPortRuleEditFailedDialogObject().clickOKButton());
+						}catch(Exception e) {utils.log().info("Port Rule Edit Failed Dialog did not appear");}
+			}
+			softnet45.assertAll();
+		}
+			
+
+		@Test(priority = 69)
+
+		public void Verify_General_Settings_Port_Forwarding_Edit_Rules() 
+		{
+			SoftAssert softnet46 = new SoftAssert();
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt()) 
+			{
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickEditPortFowardingRuleIcon());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().selectUDP());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
+				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+				try {
+					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().portNameDialogError.isDisplayed())
+						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
+						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
+						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
+						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
+						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+					else
+						utils.log().info("All Port details are valid");
+					softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+				}catch(Exception e) {utils.log().info("All Port details are valid");}
+				
+				super.pause(15);
+				try {
+				if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
+					softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
+							.getPortRuleEditFailedDialogObject().clickOKButton());
+					}catch(Exception e) {utils.log().info("Port Rule Edit Failed Dialog did not appear");}
+			}
+			softnet46.assertAll();
+		}
+
+		@Test(priority = 70)
+		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations() 
+		{
+			SoftAssert softnet47 = new SoftAssert();
+			new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().isAt())
+			{
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterPortForwardingRuleName());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortStart());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortEnd());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyInternalPortStartLessThenPortEnd());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortStart());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortEnd());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyExternalPortStartLessThenPortEnd());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterValidIPAddress());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInValidIPAddress());
+				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+				try {
+					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().portNameDialogError.isDisplayed())
+						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
+						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
+						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
+						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
+						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+					else
+						utils.log().info("All Port details are valid");
+					softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+				}catch(Exception e) {utils.log().info("All Port details are valid");}
+				
+				super.pause(20);
+				try {
+				if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
+					softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
+							.getPortRuleEditFailedDialogObject().clickOKButton());
+					}catch(Exception e) {utils.log().info("Port Rule Edit Failed Dialog did not appear");}
+			}
+			softnet47.assertAll();
+		}
+		
+		@Test(priority = 71)
+		public void Verify_General_Settings_Port_Forwarding_Help_Page() 
+		{
+			SoftAssert softnet48 = new SoftAssert();
+			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickHelpButton());
+			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().isAt())
+				softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().clickCloseButton());
+			
+			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickBackButton());
+			try{
+				if(new NetworkPage().getAppRatingPageObject().isAt())
+					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+			}catch(Exception e) {
+				utils.log().info("App Rating Dialog did not appear");
+			}
+			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBackButton());
+			softnet48.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
+			softnet48.assertAll();
+		}
+		
+		@Test(priority = 72)
+		public void Verify_Guest_WiFi_Network_Page() 
+		{
+			SoftAssert softnet49 = new SoftAssert();
+			try {
+				if (new NetworkPage().guestNetworkToggleButton.isSelected()) 
+					new NetworkPage().disableGuestWifiNetwork();
+				
+				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickCloseButton());
+				super.pause(20);
+			}catch(Exception e) {}
+			
+			softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
+			try {
+				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickCloseButton());
+				super.pause(20);
+			}catch(Exception e) {}
+			
+			try {
+				if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
+					super.getDriver().hideKeyboard();
+					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
+					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().validateGuestNetworkPage());
+					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
+					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
+					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
+					super.pause(30);
+					if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+					}
+				}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
+			
+			try {
+				if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
+					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
+					softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
+						if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
+							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
+							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
+							super.pause(30);
+							try {
+								if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+									softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+							}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
+						}
+						
+					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
+			}catch(Exception e) {utils.log().info("Guest Network is not Created");}
+			
+			softnet49.assertAll();
+		}
+		
+		@Test(priority = 73)
+		public void Verify_Extended_WiFi_Settings_Page() 
+		{
+			SoftAssert softnet50 = new SoftAssert();
+			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+			softnet50.assertTrue(new NetworkPage().enable5GHzWidebandMode());
+			if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
+			softnet50.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
+			
+			if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickCloseButton());
+			
+			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+			softnet50.assertTrue(new NetworkPage().clickBackButton());
+			softnet50.assertAll();
+		}
 }

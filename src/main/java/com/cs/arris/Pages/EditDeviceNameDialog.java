@@ -15,6 +15,9 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class EditDeviceNameDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
+	String deviceOrgName;
+	String deviceOrgName1;
+	String editedName;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogBoxTitle") //EDIT DEVICE NAME
 	public MobileElement editDeviceNameTitle; 
@@ -121,14 +124,27 @@ public class EditDeviceNameDialog extends ParentClass implements Page
 			}
 		}
 	
-		public boolean editDeviceName() {
+		public boolean editDeviceName1() {
 			try {
 				String device = enterDeviceName.getText();
-				String editedName = device + "-1";
+				deviceOrgName = device;
+				deviceOrgName1 = deviceOrgName;
+				editedName = device + "-1";
 				super.editedDeviceName = editedName;
 				super.clear(enterDeviceName);
 				super.sendKeys(enterDeviceName, editedName);
-				utils.log().info("Changed device name from " + device + " to " + editedName);
+				utils.log().info("Changed device name from " + deviceOrgName + " to " + editedName);
+				return true;
+			} catch (Exception e) {
+				utils.log().info("Edit Device name text box is not displayed");
+				return false;
+			}
+		}
+		public boolean editDeviceName2() {
+			try {
+				super.clear(enterDeviceName);
+				super.sendKeys(enterDeviceName, deviceOrgName);
+				utils.log().info("Changed device name from " + editedName + " to " + deviceOrgName1);
 				return true;
 			} catch (Exception e) {
 				utils.log().info("Edit Device name text box is not displayed");
