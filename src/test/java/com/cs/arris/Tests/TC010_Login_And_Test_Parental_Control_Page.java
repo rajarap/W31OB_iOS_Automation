@@ -306,7 +306,7 @@ public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 		softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
 		
 		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
-			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevices());
+			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevicesInAddDevicePage());
 			utils.log().info("Clicking on Add Device button without selecting any device");
 			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
 			
@@ -469,7 +469,7 @@ public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 	public void Verify_Rules_Associated_With_User() {
 		SoftAssert softcontrol19 = new SoftAssert();
 		softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
-		softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedRulesList());
+		softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyRulesAssociatedWithUser());
 		softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
 		softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickBackButton());
 		

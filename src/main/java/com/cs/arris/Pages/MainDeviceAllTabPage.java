@@ -273,6 +273,11 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		return ethernetDevice;
 	}
 	
+	public MainDeviceRestartRouterDialog getRestartRouterDialogeObject() {
+		MainDeviceRestartRouterDialog restartRouter = new MainDeviceRestartRouterDialog();
+		return restartRouter;
+	}
+	
 	public void getAllDevicesCount() {
 		allDevicesCount = super.getAllCountOfDevices(connectedDevicesCountText.getText());
 		utils.log().info("Number of online devices connected to the main mAX Router is : " + allDevicesCount);

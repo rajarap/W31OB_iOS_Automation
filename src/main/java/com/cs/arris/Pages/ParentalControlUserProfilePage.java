@@ -10,6 +10,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
+import com.cs.arris.Utilities.SwipeOnElement;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
@@ -20,11 +21,14 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class ParentalControlUserProfilePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
-	public SwipeActions swipe = new SwipeActions();
+//	public SwipeOnElement swipe = new SwipeOnElement();
+//	public SwipeActions swipe = new SwipeActions();
 	public String username;
 	public MobileElement me;
 	public int counter = 1;
 	int size;
+	public int elementX;
+	public int elementY;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
 	public MobileElement userProfileTitle;
@@ -110,6 +114,34 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 
 	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']")
 	public MobileElement disableTimeBlockToggleButton;
+	
+	
+	//Delete Associated Devices
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/delete")
+	public MobileElement deleteDeviceIcon;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Delete']")
+	public MobileElement deleteDeviceLabel;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Are you sure you want delete this device from Profile? This action cannot be undone.']")
+	public MobileElement deleteDeviceConfirmationText;
+	
+	//Delete Associated Devices
+	
+	
+	//Delete Associated Rules
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/delete")
+	public MobileElement deleteRuleIcon;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Delete']")
+	public MobileElement deleteRuleLabel;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Are you sure you want delete this time rule from Profile? This action can not be undone.']")
+	public MobileElement deleteRuleConfirmationText;
+	
+	//Delete Associated Rules
 	
 	public ParentalControlUserProfilePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -397,17 +429,20 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	}
 
 	public boolean verifyAssociatedDeviceList() {
-		utils.log().info("*******************************************************************");
-		utils.log().info("Parental Control - List of Devices Associated with User Profile    ");
-		utils.log().info("*******************************************************************");
+		utils.log().info("*******************************************************");
+		utils.log().info("List of Devices Associated with Selected User Profile  ");
+		utils.log().info("*******************************************************");
 		
+		int size = super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView").size();
+		utils.log().info("Count of Devices associated with User is : " + size);
 		try {
-				for (int i = 1; i <= 1 ; i++) 
+				for (int i = 1; i <= size ; i++) 
 				{
 					utils.log().info("Associated Device : " + i);
 					utils.log().info("-------------------------");
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+ i +"]");
+							"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout");
+					
 					for (MobileElement e : entity) {
 						try {
 							if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_type_icon']").isDisplayed())
@@ -434,19 +469,171 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		}
 	}
 	
-	public boolean verifyAssociatedRulesList() {
+	public boolean deleteAssociatedDevice() {
+		utils.log().info("*****************************************************");
+		utils.log().info("Delete Devices Associated with Selected User Profile ");
+		utils.log().info("*****************************************************");
+		
+		try {
+				for (int i = 1; i <= 1 ; i++) 
+				{
+					utils.log().info("Deleting Associated Device : " + i);
+					utils.log().info("---------------------------------");
+					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+							"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout");
+					
+					for (MobileElement e : entity) {
+						try {
+							if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
+								utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']")
+										.getText() + " is associated with the user : " + userProfileTitle.getText());
+						} catch (Exception exp) {
+							utils.log().info("Device name associated with the user is not available in the list ");
+						}
+						
+						try {
+							if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
+								elementX = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getLocation().getX();
+								elementY = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getLocation().getY();
+								new SwipeOnElement().swipeAction(elementX, elementY, "Left");
+								if(deleteDeviceIcon.isDisplayed())
+									click(deleteDeviceIcon);
+						} catch (Exception exp) {
+							utils.log().info("Unable to Delete the device associated with user");
+						}
+						
+						utils.log().info("****************************************************");
+						utils.log().info("                                                    ");
+					}
+				}
+			return true;
+		} catch (Exception e) {
+			utils.log().info("No devices from the Device List are associated with this user : " + userProfileTitle.getText());
+			return false;
+		}
+	}
+	
+	public boolean verifyRulesAssociatedWithUser() {
 		super.swipeUp();
-		utils.log().info("*********************************************************************");
-		utils.log().info("Add Rule - Details of Schedules Listed in Enabled Schedule Time Page ");
-		utils.log().info("*********************************************************************");
+		utils.log().info("**********************************************************");
+		utils.log().info("Details of Rules Associated to the Selected User Profile  ");
+		utils.log().info("**********************************************************");
+		super.swipeUp();
+		
+		int size = super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView").size();
+		utils.log().info("Count of Rules associated with User is : " + size);
+		try {
+			for (int i = 1; i <= size ; i++) 
+			{
+				utils.log().info("Enable Schedule Time Associated With User - Rule : " + i);
+				utils.log().info("-------------------------------------------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout");
+
+				for (MobileElement e : entity) 
+				{
+					try {
+							try {
+								if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']").isDisplayed())
+									utils.log().info("Schedule Time : " + e.findElementByXPath(
+												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']").getText());
+							} catch (Exception exp) {
+									utils.log().info("Schedule Time is not displayed ");
+							}
+							
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/time_block_every_day").isDisplayed()) 
+									utils.log().info("EveryDay Schedule Time : " + e.findElementById("com.arris.sbcBeta:id/time_block_every_day").getText());
+							} catch (Exception exp) {
+									utils.log().info("EveryDay Schedule Time is not displayed ");
+							}
+						
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/cbSunday").isDisplayed())
+									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSunday").getText());
+							} catch (Exception exp) {
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSunday").getText() + " is not displayed ");
+							}
+		
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/cbMonday").isDisplayed())
+									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbMonday").getText());
+							} catch (Exception exp) {
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbMonday").getText() + " is not displayed ");
+							}
+		
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/cbTuesday").isDisplayed())
+									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbTuesday").getText());
+							} catch (Exception exp) {
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbTuesday").getText()
+										+ " is not displayed ");
+							}
+		
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/cbWednesday").isDisplayed())
+									utils.log()
+											.info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbWednesday").getText());
+							} catch (Exception exp) {
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbWednesday").getText()
+										+ " is not displayed ");
+							}
+		
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/cbThrusday").isDisplayed())
+									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbThrusday").getText());
+							} catch (Exception exp) {
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbThrusday").getText()
+										+ " is not displayed ");
+							}
+		
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/cbFriday").isDisplayed())
+									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbFriday").getText());
+							} catch (Exception exp) {
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbFriday").getText()
+										+ " is not displayed ");
+							}
+		
+							try {
+								if (e.findElementById("com.arris.sbcBeta:id/cbSaturday").isDisplayed())
+									utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSaturday").getText());
+							} catch (Exception exp) {
+								utils.log().info("DOW : " + e.findElementById("com.arris.sbcBeta:id/cbSaturday").getText()
+										+ " is not displayed ");
+							}
+							
+							try {
+								if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently disabled");
+								else if(e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
+									utils.log().info("Time Block Toggle Button is currently enabled");
+								else utils.log().info("Time Block Toggle Button not displayed");
+							} catch (Exception exp) {}
+			
+							utils.log().info("****************************************************");
+							utils.log().info("                                                    ");
+					}catch(Exception exp) {}
+				}
+			}
+			return true;
+		} catch (Exception p) {
+			return false;
+		}
+	}
+	
+	public boolean deleteAssociatedRulesList() {
+		utils.log().info("*****************************************************");
+		utils.log().info("Delete Rules Associated with Selected User Profile   ");
+		utils.log().info("*****************************************************");
 		
 		try {
 			for (int i = 1; i <= 1; i++) 
 			{
-				utils.log().info("Enable Schedule Time - Rule : " + i);
+				utils.log().info("Delete Schedule Time - Rule : " + i);
 				utils.log().info("---------------------------------");
 
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]/android.widget.FrameLayout/android.widget.LinearLayout");
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout");
 
 				for (MobileElement e : entity) 
 				{
@@ -465,21 +652,16 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 							}
 		
 							try {
-								if (e.findElementById("com.arris.sbcBeta:id/time_block_every_day").isDisplayed())
-									utils.log().info(e.findElementById("com.arris.sbcBeta:id/time_block_every_day").getText()
-											+ " button is displayed ");
+								if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_block_start_end_time']").isDisplayed())
+									elementX = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getLocation().getX();
+									elementY = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getLocation().getY();
+									new SwipeOnElement().swipeAction(elementX, elementY, "Left");
+									if(deleteRuleIcon.isDisplayed())
+										click(deleteRuleIcon);
 							} catch (Exception exp) {
-								utils.log().info("EVERY DAY button is not displayed ");
+								utils.log().info("Unable to Delete the rule associated with user");
 							}
-							
-							try {
-								if (e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']").isDisplayed())
-									utils.log().info("Time Block Toggle Button is currently disabled");
-								else if(e.findElementByXPath("//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']").isDisplayed())
-									utils.log().info("Time Block Toggle Button is currently enabled");
-								else utils.log().info("Time Block Toggle Button not displayed");
-							} catch (Exception exp) {}
-									
+
 							utils.log().info("****************************************************");
 							utils.log().info("                                                    ");
 						}

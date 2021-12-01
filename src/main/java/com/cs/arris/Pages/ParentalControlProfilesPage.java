@@ -54,6 +54,19 @@ public class ParentalControlProfilesPage extends ParentClass implements Page {
 			@AndroidBy(id = "com.arris.sbcBeta:id/parental_enable_disable") })
 	public MobileElement parentalControlToggleIcon;
 	
+	//Delete User Profiles
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/delete")
+	public MobileElement deleteIcon;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Delete']")
+	public MobileElement deleteLabel;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Are you sure you want delete this Profile? This action cannot be undone.']")
+	public MobileElement deleteConfirmationText;
+	
+	//Delete User Profiles
+	
 	public HomePage getHomePageObject() {
 		HomePage homePage = new HomePage();
 		return homePage;

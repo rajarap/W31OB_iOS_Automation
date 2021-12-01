@@ -149,21 +149,21 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 //	}
 	
 	// To verify the devices listed in Add Device Page
-	public boolean verifyDevices() {
+	public boolean verifyDevicesInAddDevicePage() {
 
 		utils.log().info("*************************************");
 		utils.log().info("Devices Listed in the Add Device Page");
 		utils.log().info("*************************************");
 
-		//utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
-
+		int size = super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/connected_device_list_view']").size();
+		utils.log().info("Count of Devices Listed in the Add Device Page is : " + size);
 		try {
-			for (int i = 1; i <= 4; i++) {
+			for (int i = 1; i <= size ; i++) {
 				utils.log().info("Device : " + i);
 				utils.log().info("--------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+						"//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
 
 				for (MobileElement e : entity) {
 					if (e.findElementByXPath(
@@ -243,29 +243,6 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	}
 
 	 
-//	//Verify if the current device name is listed. current device should not be listed.    
-//	public void verifyCurrentDeviceIsNotListed()
-//	{
-//		String me;
-//		try
-//		{
-//			for (int i = 0 ; i < deviceList.size(); i++)
-//			{
-//				if(deviceList.get(i).contains("(me)"))
-//				{
-//					me = deviceList.get(i);
-//					utils.log().info("Current device name "+ me +" is listed in the Add Device screen ");
-//				}else
-//				{
-//					utils.log().info("Devices displayed in the Add Device screen does not contain the current device *(me)");
-//				}
-//			}
-//		}catch (Exception e)
-//		{
-//			e.printStackTrace();
-//		}
-//	}
-	
 	public boolean verifyUIOnAddDevicePage() {
 		utils.log().info("***************************************");
 		utils.log().info(" Parental Control  -  Add Device Page  ");

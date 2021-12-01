@@ -117,22 +117,28 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 	}
 
 	public boolean verifyDeviceListForPrioritization() {
-		utils.log().info("                                             ");
-		utils.log().info("*********************************************");
-		utils.log().info("Verifying List of Devices on Add Device Page ");
-		utils.log().info("*********************************************");
+		utils.log().info("                                   ");
+		utils.log().info("***********************************");
+		utils.log().info("List of Devices on Add Device Page ");
+		utils.log().info("***********************************");
 		
-		int size = super.getDriver().findElements(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/add_device_rv']")).size();
+		int size = super.getDriver().findElements(By.xpath(
+		"//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView")).size();
+		
+		//int size = super.getDriver().findElements(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/add_device_rv']")).size();
+		utils.log().info("Count of device : " + size);
 		
 		try {
-			for (int i = 1; i <= size ; i++) {
+			for (int i = 1; i <= 2 ; i++) 
+			{
 				utils.log().info("Device Details  : " + i);
 				utils.log().info("--------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) 
 						super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
 
-				for (MobileElement e : entity) {
+				for (MobileElement e : entity) 
+				{
 					if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
 						utils.log().info("Device Image is displayed");
 
@@ -141,7 +147,6 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 
 					if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
 						utils.log().info("Checkbox is displayed");
-
 				}
 			}
 			return true;
@@ -150,47 +155,45 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 		}
 	}
 	
-	public boolean verifySelectDeviceFromList() {
-		utils.log().info("                                               ");
-		utils.log().info("***********************************************");
-		utils.log().info("Verifying Selecting Devices on Add Device Page ");
-		utils.log().info("******************************************((***");
+	public boolean selectDeviceFromList() {
+		utils.log().info("                                     ");
+		utils.log().info("*************************************");
+		utils.log().info("Selecting Devices on Add Device Page ");
+		utils.log().info("*************************************");
 		
-		int size = super.getDriver().findElements(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/add_device_rv']")).size();
-		if(size > 0) {
+//		int size = super.getDriver().findElements(By.xpath(
+//		"//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView")).size();
+		
 		try {
-			for (int i = 1; i <= size ; i++) {
+			for (int i = 1; i <= 1 ; i++) 
+			{
 				utils.log().info("Selecting Device : " + i);
 				utils.log().info("------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) 
 						super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
 
-				for (MobileElement e : entity) {
-					if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
-						utils.log().info("Device Image is displayed");
+					for (MobileElement e : entity) 
+					{
+						if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
+							utils.log().info("Device Image is displayed");
 
-					if ((e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed()))
-						utils.log().info("Device Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText() + " is displayed");
+						if ((e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed()))
+							utils.log().info("Device Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText() + " is displayed");
 
-					if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
-						utils.log().info("Checkbox is displayed");
-					
-					try {
-						if(i==2) {
-							if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select' and @checked='false']").isDisplayed())
-								click(e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select' and @checked='false']"));
-						}
-					}catch (Exception exp) {}
-				}
+						if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
+							utils.log().info("Checkbox is displayed");
+						
+						if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
+							click(e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']"));
+							utils.log().info("Clicked on checkbox");
+					}
 			}
 			return true;
 		} catch (Exception e) {
-			return false;
-		}
-	}else {utils.log().info("There are no devices listed in the Device Priority Add Device Page");}
-		return true;
+			return false;}
 	}
+
 
 	@Override
 	public boolean isAt() {

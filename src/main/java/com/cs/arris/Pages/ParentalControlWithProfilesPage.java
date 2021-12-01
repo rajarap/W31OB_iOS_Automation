@@ -9,6 +9,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
+import com.cs.arris.Utilities.SwipeOnElement;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
@@ -22,6 +23,8 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	public SwipeActions swipe = new SwipeActions();
 	public MobileElement me;
 	public int counter = 1;
+	public int elementX;
+	public int elementY;
 	int size;
 
 	@AndroidFindAll({
@@ -121,7 +124,18 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/heading_error_message_1")
 	public MobileElement noProfilesText2;
 	
-
+	//Delete Associated Rules
+	
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/delete")
+	public MobileElement deleteProfileIcon;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Delete']")
+	public MobileElement deleteProfileLabel;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Are you sure you want delete this Profile? This action cannot be undone']")
+	public MobileElement deleteProfileConfirmationText;
+	
+	//Delete Associated Rules
 
 	
 	public ParentalControlWithProfilesPage() {
@@ -481,7 +495,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					counter++;
 				}
 				if (i >= 3)
-					new SwipeActions().swipeScreen(Direction.UP);
+					super.swipeUp();
 				super.pause(3);
 			}
 			return true;
@@ -564,17 +578,50 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 				for (MobileElement e : entity) {
 					try {
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
-								.isDisplayed()) {
-							utils.log().info("Clicking on User profile Name : " + e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
+						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed()) {
+							utils.log().info("Clicking on User profile Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
 									.getText());
-							click(e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']"));
+							click(e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']"));
 						}
 					} catch (Exception exp) {
 						utils.log().info("User Profile Name is not displayed ");
+					}
+				}
+			}
+			return true;
+		} catch (Exception exp) {
+			utils.log().info("User Profile does not exits. Please create one");
+			return false;
+		}
+	}
+	
+	public boolean deleteUserProfile() {
+		//utils.log().info("****************************************");
+		utils.log().info("Deleting a User Profile from the list  ");
+		//utils.log().info("****************************************");
+		super.generateRandomNumber13();
+
+		try {
+			for (int i = 3; i <= 3; i++) {
+//				utils.log().info("User Profile : " + i);
+//				utils.log().info("------------------");
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
+								+ "]");
+
+				for (MobileElement e : entity) {
+					
+					try {
+						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed())
+							utils.log().info("Deleting on User profile Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
+							.getText());
+							elementX = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getLocation().getX();
+							elementY = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getLocation().getY();
+							new SwipeOnElement().swipeAction(elementX, elementY, "Left");
+							if(deleteProfileIcon.isDisplayed())
+								click(deleteProfileIcon);
+					} catch (Exception exp) {
+						utils.log().info("Unable to Delete the selected user profile");
 					}
 				}
 			}

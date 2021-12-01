@@ -78,7 +78,7 @@ public class TC02_Medium_Test extends ParentClass
 		} 
      }
 	
-		  @BeforeMethod
+	  @BeforeMethod
 	  public void beforeMethod(Method m) 
 	  {
 		   utils.log().info("\n" + "\n" + "****** starting test : " + m.getName() + " ******" + "\n");
@@ -659,8 +659,8 @@ public class TC02_Medium_Test extends ParentClass
 			SoftAssert softspeedtest3 = new SoftAssert();
 			for (int i = 0; i < 3; i++)
 			{
+				softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
 				try {
-					softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
 					if(new SpeedTestPage().getAppRatingDialogObject().remindMeLaterText.isDisplayed())
 						softspeedtest3.assertTrue(new SpeedTestPage().getAppRatingDialogObject().clickRemindMeLaterLink());
 				}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}

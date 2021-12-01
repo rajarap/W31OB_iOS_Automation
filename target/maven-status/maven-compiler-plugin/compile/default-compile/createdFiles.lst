@@ -94,6 +94,7 @@ com/cs/arris/Pages/SystemFirmwareUpdatePage.class
 com/cs/arris/Pages/TurnOnBluetoothDialog.class
 com/cs/arris/Pages/NetworkGeneralSettingsHelpPage.class
 com/cs/arris/Listeners/TestListener.class
+com/cs/arris/Utilities/SwipeOnElement.class
 com/cs/arris/Pages/MainDevice24GHzTabPage.class
 com/cs/arris/Pages/AddDeviceCongratulationsPage.class
 com/cs/arris/Pages/MainDeviceEthernetTabPage.class
@@ -121,6 +122,7 @@ com/cs/arris/Pages/EnterValidOTPPage.class
 com/cs/arris/Pages/ConnectionToWifiNeededPage.class
 com/cs/arris/Pages/ServiceNotAvailablePage.class
 com/cs/arris/Pages/ParentalControlAddProfileDialog.class
+com/cs/arris/Pages/MainDeviceRestartRouterDialog.class
 com/cs/arris/Pages/GetStartedPage.class
 com/cs/arris/Pages/RetrieveOTPPage.class
 com/cs/arris/Pages/HamburgerMenuPage.class
