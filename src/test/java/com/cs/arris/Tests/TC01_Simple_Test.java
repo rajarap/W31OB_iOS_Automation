@@ -159,26 +159,14 @@ public class TC01_Simple_Test extends ParentClass
 				  e.getMessage(); }
 		  });
 	  }
-		@Test(priority = 2)
+		@Test(priority = 2 , dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Home_UI_Page() {
 			SoftAssert softhome2 = new SoftAssert();
-			new HomePage().getFooterIconsPageObject().clickNetworkButton();
-			if(new NetworkPage().isAt())
-			{
-				new NetworkPage().clickNetworkSettingsExpandButton();
-				new NetworkPage().clickGeneralSettings();
-				if(new SpeedTestPage().getAppRatingDialogObject().remindMeLaterText.isDisplayed()) {
-					new SpeedTestPage().getAppRatingDialogObject().clickThreeStar();
-					new SpeedTestPage().getAppRatingDialogObject().enterFeedback();
-					new SpeedTestPage().getAppRatingDialogObject().clickSendFeebackButton();
-				}
-			}
-			new HomePage().getFooterIconsPageObject().clickHomeButton();
 			softhome2.assertTrue(new HomePage().verifyUIOnHomePage());
 			softhome2.assertAll();
 		}
 		
-		@Test(priority = 3)
+		@Test(priority = 3, dependsOnMethods = { "Login_And_Onboard", "Verify_Home_UI_Page" })
 		public void Verify_Home_Device_Signal_Strength_Navigation() {
 			SoftAssert softhome3 = new SoftAssert();
 			softhome3.assertTrue(new HomePage().clickDeviceSignalStrengthImage());
@@ -187,7 +175,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome3.assertAll();
 		}
 		
-		@Test(priority = 4)
+		@Test(priority = 4, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Home_Speed_Test_History_Navigation() {
 			SoftAssert softhome4 = new SoftAssert();
 			softhome4.assertTrue(new HomePage().clickSpeedTestHistoryImage());
@@ -196,7 +184,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome4.assertAll();
 		}
 		
-		@Test(priority = 5)
+		@Test(priority = 5, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Home_Currently_Blocked_Devices_Navigation() {
 			SoftAssert softhome5 = new SoftAssert();
 			softhome5.assertTrue(new HomePage().clickCurrentlyBlockedDevicesImage());
@@ -205,7 +193,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome5.assertAll();
 		}
 		
-		@Test(priority = 6)
+		@Test(priority = 6, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Home_Main_Devices_Navigation() {
 			SoftAssert softhome6 = new SoftAssert();
 			softhome6.assertTrue(new HomePage().clickMainDeviceImage());
@@ -214,7 +202,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome6.assertAll();
 		}
 		
-		@Test(priority = 7)
+		@Test(priority = 7, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Home_Total_Devices_Navigation() {
 			SoftAssert softhome7 = new SoftAssert();
 			softhome7.assertTrue(new HomePage().clickDevicesImage());
@@ -223,7 +211,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome7.assertAll();
 		}
 		
-		@Test(priority = 8)
+		@Test(priority = 8, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Home_Hamburger_Navigation() {
 			SoftAssert softhome8 = new SoftAssert();
 			softhome8.assertTrue(new HomePage().clickNavigationButton());
@@ -232,7 +220,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome8.assertAll();
 		}
 		
-		@Test(priority = 9)
+		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Home_Notifications_Navigation() {
 			SoftAssert softhome9= new SoftAssert();
 			softhome9.assertTrue(new HomePage().clickNotificationsIcon());
@@ -243,7 +231,7 @@ public class TC01_Simple_Test extends ParentClass
  
 		
 		//TC008_Login_And_Test_Hamburger_Menu_And_Settings_About_Help_Page
-		@Test(priority = 10)
+		@Test(priority = 10, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Menu_Page() {
 			utils.log().info("                                                             ");
 			utils.log().info("*************************************************************");
@@ -258,7 +246,7 @@ public class TC01_Simple_Test extends ParentClass
 			softburger2.assertAll();
 		}
 		
-		@Test(priority = 11)
+		@Test(priority = 11, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Menu_Settings_UI_Page() {
 			SoftAssert softburger3 = new SoftAssert();
 			softburger3.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSettingsButton());
@@ -282,7 +270,7 @@ public class TC01_Simple_Test extends ParentClass
 //			softburger4.assertAll();
 //		}
 		
-		@Test(priority = 13)
+		@Test(priority = 13, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Menu_Settings_Help_Page() {
 			SoftAssert softburger5 = new SoftAssert();
 //			softburger5.assertTrue(new HomePage().clickNavigationButton());
@@ -295,7 +283,7 @@ public class TC01_Simple_Test extends ParentClass
 		}
 		
 
-		@Test(priority = 14)
+		@Test(priority = 14, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Menu_About_UI_Page() {
 			SoftAssert softburger6 = new SoftAssert();
 			softburger6.assertTrue(new HomePage().clickNavigationButton());
@@ -308,7 +296,7 @@ public class TC01_Simple_Test extends ParentClass
 			softburger6.assertAll();
 		}
 		
-		@Test(priority = 15)
+		@Test(priority = 15, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Menu_About_License_Page() {
 			SoftAssert softburger7 = new SoftAssert();
 			softburger7.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickLicenseButton());
@@ -321,7 +309,7 @@ public class TC01_Simple_Test extends ParentClass
 			softburger7.assertAll();
 		}
 		
-		@Test(priority = 16)
+		@Test(priority = 16, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Get_Another_Max_Page() {
 			SoftAssert softburger8 = new SoftAssert();
 //			if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAtAboutPage())
@@ -331,7 +319,7 @@ public class TC01_Simple_Test extends ParentClass
 			softburger8.assertAll();
 		}
 		
-		@Test(priority = 17)
+		@Test(priority = 17, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_About_Help_Page() {
 			SoftAssert softburger9 = new SoftAssert();
 			softburger9.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickHelpIcon());
@@ -354,7 +342,7 @@ public class TC01_Simple_Test extends ParentClass
 			softburger10.assertAll();
 		}
 			
-		@Test(priority = 19)
+		@Test(priority = 19, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Surfboard_FAQ_Help_Page() {
 			SoftAssert softburger11 = new SoftAssert();
 			softburger11.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickFAQButton());
@@ -366,7 +354,7 @@ public class TC01_Simple_Test extends ParentClass
 			softburger11.assertAll();
 		}
 		
-		@Test(priority = 20)
+		@Test(priority = 20, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Surfboard_Self_Help_Page() {
 			SoftAssert softburger12 = new SoftAssert();
 			softburger12.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickSelfHelp());
@@ -374,7 +362,7 @@ public class TC01_Simple_Test extends ParentClass
 			softburger12.assertAll();
 		}
 		
-		@Test(priority = 21)
+		@Test(priority = 21, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Hamburger_Surfboard_Chat_With_US_Page() {
 			SoftAssert softburger13 = new SoftAssert();
 			softburger13.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickLiveChatHelp());
@@ -385,7 +373,7 @@ public class TC01_Simple_Test extends ParentClass
 		
 		
 		//TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature
-		@Test(priority = 22)
+		@Test(priority = 22, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Amazon_Features_UI_Page() {
 			SoftAssert softfeatures3 = new SoftAssert();
 			new HomePage().getFooterIconsPageObject().clickHomeButton();
@@ -395,7 +383,7 @@ public class TC01_Simple_Test extends ParentClass
 				softfeatures3.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().verifyUIOnAFFSPage());
 		}
 		
-		@Test(priority = 23)
+		@Test(priority = 23, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Get_Alexa_Skills_Drop_Down_Box() {
 			SoftAssert softfeatures4 = new SoftAssert();
 			softfeatures4.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickGetAlexaSkillsButton());
@@ -403,7 +391,7 @@ public class TC01_Simple_Test extends ParentClass
 			softfeatures4.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickAlexaSkillsButtonAgain());
 		}
 		
-		@Test(priority = 24)
+		@Test(priority = 24, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Show_Password_Button() {
 			SoftAssert softfeatures5 = new SoftAssert();
 			softfeatures5.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickShowPasswordButton());
@@ -412,7 +400,7 @@ public class TC01_Simple_Test extends ParentClass
 			softfeatures5.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getPasswordText());
 		}
 		
-		@Test(priority = 25)
+		@Test(priority = 25, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Copy_Password() {
 			SoftAssert softfeatures6 = new SoftAssert();
 			softfeatures6.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickCopyPasswordButton());
@@ -431,7 +419,7 @@ public class TC01_Simple_Test extends ParentClass
 //			softfeatures6.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickPleaseTapHereLink());
 //		}
 
-		@Test(priority = 28)
+		@Test(priority = 28, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Enable_AFFS_Feature() {
 			SoftAssert softfeatures9 = new SoftAssert();
 			softfeatures9.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().enableAFFS());
@@ -445,7 +433,7 @@ public class TC01_Simple_Test extends ParentClass
 //			softfeatures10.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().disableAFFS());
 //		}
 			
-		@Test(priority = 30)
+		@Test(priority = 30, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Amazon_Feature_Help_Page() {
 			SoftAssert softfeatures11 = new SoftAssert();
 			softfeatures11.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickHelpIcon());
@@ -457,7 +445,7 @@ public class TC01_Simple_Test extends ParentClass
 		}
 
 	  //TC013_Login_And_Test_Add_And_Remove_Device
-		@Test(priority = 31)
+		@Test(priority = 31, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Add_Device_Menu() {
 			utils.log().info("                                             ");
 			utils.log().info("*********************************************");
@@ -521,7 +509,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome2.assertAll();
 		}
 			
-		@Test(priority = 32)
+		@Test(priority = 32, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Cable_Modem_Tab() {
 			SoftAssert softhome0 = new SoftAssert();
 			if(new AddDeviceHomePage().isAt())
@@ -530,7 +518,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome0.assertAll();
 		}
 		
-		@Test(priority = 33)
+		@Test(priority = 33, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Max_Router_Tab() {
 			SoftAssert softhome3 = new SoftAssert();
 			softhome3.assertTrue(new AddDeviceHomePage().clickMaxRouterTab());
@@ -540,7 +528,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome3.assertAll();
 		}
 		
-		@Test(priority = 34)
+		@Test(priority = 34, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Device_Details_Page() {
 			SoftAssert softhome4 = new SoftAssert();
 			softhome4.assertTrue(new AddDeviceHomePage().clickDeviceDetailsText());
@@ -552,7 +540,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome4.assertAll();
 		}
 		
-		@Test(priority = 35)
+		@Test(priority = 35, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Specifications_Page() {
 			SoftAssert softhome5 = new SoftAssert();
 			softhome5.assertTrue(new AddDeviceHomePage().clickSpecificationsImage());
@@ -563,7 +551,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome5.assertAll();
 		}
 		
-		@Test(priority = 36)
+		@Test(priority = 36, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Add_Additional_Device() {
 			SoftAssert softhome6 = new SoftAssert();
 			if(new AddDeviceHomePage().isAt())
@@ -578,7 +566,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome6.assertAll();
 		}
 		
-		@Test(priority = 37)
+		@Test(priority = 37, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Notifications_Page() {
 			SoftAssert softhome7 = new SoftAssert();
 			if(new AddDeviceHomePage().isAt())
@@ -590,7 +578,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome7.assertAll();
 		}
 		
-		@Test(priority = 38)
+		@Test(priority = 38, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_User_Guide_Page() {
 			SoftAssert softhome8 = new SoftAssert();
 			if(new AddDeviceHomePage().isAt())
@@ -604,7 +592,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome8.assertAll();
 		}
 		
-		@Test(priority = 39)
+		@Test(priority = 39, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_FAQ_Page() {
 			SoftAssert softhome9 = new SoftAssert();
 			if(new AddDeviceHomePage().isAt())
@@ -618,7 +606,7 @@ public class TC01_Simple_Test extends ParentClass
 			softhome9.assertAll();
 		}
 		
-		@Test(priority = 40)
+		@Test(priority = 40, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Remove_Device_Page() {
 			SoftAssert softhome10 = new SoftAssert();
 			if(new AddDeviceHomePage().isAt())
@@ -634,5 +622,18 @@ public class TC01_Simple_Test extends ParentClass
 				
 			softhome10.assertAll();
 		}
-
 }
+
+
+
+//new HomePage().getFooterIconsPageObject().clickNetworkButton();
+//if(new NetworkPage().isAt())
+//{
+//	new NetworkPage().clickNetworkSettingsExpandButton();
+//	new NetworkPage().clickGeneralSettings();
+//	if(new SpeedTestPage().getAppRatingDialogObject().remindMeLaterText.isDisplayed()) {
+//		new SpeedTestPage().getAppRatingDialogObject().clickThreeStar();
+//		new SpeedTestPage().getAppRatingDialogObject().enterFeedback();
+//		new SpeedTestPage().getAppRatingDialogObject().clickSendFeebackButton();
+//	}
+//}

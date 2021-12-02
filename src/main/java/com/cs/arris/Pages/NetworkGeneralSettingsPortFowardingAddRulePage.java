@@ -135,6 +135,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		}
 	}
 	public boolean clickSaveButton() {
+		getDriver().hideKeyboard();
 		if (saveChangesButton.isDisplayed()) {
 			click(saveChangesButton);
 			utils.log().info("Clicked on Save Changes Button");

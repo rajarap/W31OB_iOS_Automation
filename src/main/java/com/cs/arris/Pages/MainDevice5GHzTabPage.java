@@ -597,19 +597,15 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 
 	// To verify the details of all connected devices
 	public boolean verifyConnectedDeviceDetails() {
-		try {
-			utils.log().info("                                        ");
-			utils.log().info("****************************************");
-			utils.log().info("Device Count Validations on 5.0GHz Tab  ");
-			utils.log().info("****************************************");
+		utils.log().info("                                        ");
+		utils.log().info("****************************************");
+		utils.log().info("Device Count Validations on 5.0GHz Tab  ");
+		utils.log().info("****************************************");
 
-			this.getAllDevicesCount();
-			if (connectedDevicesExpandImage.isDisplayed()) {
-				click(connectedDevicesExpandImage);
-			} else {
-				utils.log().info("Connected Devices Expand button is not available");
-			}
-				
+		this.getAllDevicesCount();
+		click(connectedDevicesExpandImage);
+
+		try {
 			if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 						utils.log().info("Connected Device  : " + i);
@@ -767,15 +763,16 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 				}
 			} else {
 				utils.log().info("Currently there are no devices connected to the main Router ");
+				click(connectedDevicesExpandImage);
 				return true;
 				}
 			super.swipeDown();
 			click(connectedDevicesExpandImage);
 			return true;
 		} catch (Exception ex) {
-			utils.log().info("Error found when verifying Connected Device Details on Main Device Page All Tab ");
+			utils.log().info("Currently there are no devices connected to the main Router");
 			click(connectedDevicesExpandImage);
-			return false;
+			return true;
 		}
 	}
 

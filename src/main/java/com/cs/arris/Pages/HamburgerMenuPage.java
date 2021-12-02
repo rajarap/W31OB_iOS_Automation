@@ -170,6 +170,7 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 	public boolean clickSettingsButton() {
 		if(appSettings.isDisplayed()) {
 			click(appSettings);
+			super.pause(10);
 			utils.log().info("Clicked on Settings Menu Button");
 			return true;
 		}else {

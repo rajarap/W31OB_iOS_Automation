@@ -302,12 +302,17 @@ public class SpeedTestPage extends ParentClass implements Page
 			utils.log().info("Label on button before speed Test: " + startSpeedTestButton.getText());
 			try {
 				clickStartSpeedTestButton();
-				if(this.getAppRatingDialogObject().remindMeLaterText.isDisplayed())
-					this.getAppRatingDialogObject().clickRemindMeLaterLink();
-				utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
-				super.pause(100);
-				utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
-			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
+//				if(this.getAppRatingDialogObject().remindMeLaterText.isDisplayed())
+//					this.getAppRatingDialogObject().clickRemindMeLaterLink();
+				if(super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt").isDisplayed())
+					super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt").click();
+			}catch(Exception e) {
+	//			utils.log().info("App Rating Dialog did not appear");
+				}
+			
+			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
+			super.pause(100);
+			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
 
 			return true;
 	}

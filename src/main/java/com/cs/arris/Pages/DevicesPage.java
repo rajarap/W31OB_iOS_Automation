@@ -296,11 +296,10 @@ public class DevicesPage extends ParentClass implements Page {
 			if (this.onlineDeviceCount > 0) {
 				for (int i = 1; i <= onlineDeviceCount-1; i++) {
 					utils.log().info("Online Device : " + i);
-					utils.log().info("--------------------");
+					utils.log().info("----------------------");
 
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
-									+ i + "]");
+							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
 
 					for (MobileElement e : entity) {
 						click(e.findElementByXPath(
@@ -476,8 +475,7 @@ public class DevicesPage extends ParentClass implements Page {
 					utils.log().info("----------------------");
 
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
-									+ i + "]");
+							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
 					for (MobileElement e : entity) {
 						if (e.findElementById("com.arris.sbcBeta:id/imgDevice").isDisplayed())
 							utils.log().info("Device Image is displayed");
@@ -577,7 +575,7 @@ public class DevicesPage extends ParentClass implements Page {
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']"));
 							if (this.getEditDeviceNameDialogObject().isAt())
 							{
-								this.getEditDeviceNameDialogObject().editDeviceName1();
+								this.getEditDeviceNameDialogObject().editDeviceName();
 								this.getEditDeviceNameDialogObject().clickSaveButton();
 							}
 						}

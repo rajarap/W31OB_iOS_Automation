@@ -264,10 +264,10 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 		utils.log().info("Number of 2.4GHz devices connected to the main mAX Router is : " + allDevicesCount);
 	}
 
-	public void get24GHzDevicesCount() {
-		twoFourGHzDevicesCount = super.get24GHzCountOfDevices(this.twoFourGhzDevice);
-		utils.log().info("Number of 2.4GHz devices connected to the main mAX Router is : " + twoFourGHzDevicesCount);
-	}
+//	public void get24GHzDevicesCount() {
+//		twoFourGHzDevicesCount = super.get24GHzCountOfDevices(this.twoFourGhzDevice);
+//		utils.log().info("Number of 2.4GHz devices connected to the main mAX Router is : " + twoFourGHzDevicesCount);
+//	}
 
 	public boolean increaseLedBrightnessSettings() {
 		utils.log().info("-----------------------------");
@@ -598,21 +598,21 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 	
 	
 	// To verify the details of all connected devices
-	public boolean verifyConnectedDeviceDetails() {
-		try {
-			utils.log().info("***************************************************");
-			utils.log().info("Details of 2.4 GHz Devices Connected to Main Router");
-			utils.log().info("***************************************************");
+	public boolean verifyConnectedDeviceDetails() 
+	{
+		utils.log().info("***************************************************");
+		utils.log().info("Details of 2.4 GHz Devices Connected to Main Router");
+		utils.log().info("***************************************************");
 
-			this.getAllDevicesCount();
-			if (connectedDevicesExpandImage.isDisplayed()) {
-				click(connectedDevicesExpandImage);
-			} else {
-				utils.log().info("Connected Devices Expand button is not available");
-			}
-			
-			if (allDevicesCount > 0) {
-				for (int i = 1; i <= allDevicesCount; i++) {
+		this.getAllDevicesCount();
+		
+		click(connectedDevicesExpandImage);
+		
+		try {
+			if (allDevicesCount > 0) 
+			{
+				for (int i = 1; i <= allDevicesCount; i++) 
+				{
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
 
@@ -620,7 +620,8 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 							"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
 									+ i + "]");
 
-					for (MobileElement e : entity) {
+					for (MobileElement e : entity)
+					{
 						try {
 							if (e.findElementByXPath(
 									"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
@@ -758,21 +759,21 @@ public class MainDevice24GHzTabPage extends ParentClass implements Page {
 
 						utils.log().info("****************************************************");
 					}
-					if (i >= 1)
 						super.swipeUp();
-						super.pause(3);
+						super.pause(2);
 				}
 			} else {
 				utils.log().info("Currently there are no devices connected to the main Router ");
+				click(connectedDevicesExpandImage);
 				return true;
 				}
 			super.swipeDown();
 			click(connectedDevicesExpandImage);
 			return true;
 		} catch (Exception ex) {
-			utils.log().info("Error found when verifying Connected Device Details on Main Device Page 2.4GHz Tab ");
+			utils.log().info("Currently there are no devices connected to the main Router ");
 			click(connectedDevicesExpandImage);
-			return false;
+			return true;
 		}
 	}
 

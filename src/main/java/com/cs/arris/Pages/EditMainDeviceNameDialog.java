@@ -112,7 +112,7 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 			}
 		}
 	
-	public boolean editMainDeviceName1() {
+	public boolean editMainDeviceName() {
 		try {
 			String device = enterDeviceName.getText();
 			deviceOrgName1 = device; 

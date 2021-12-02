@@ -648,19 +648,15 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 
 	// To verify the details of all connected devices
 	public boolean verifyConnectedDeviceDetails() {
+		utils.log().info("                                               ");
+		utils.log().info("***********************************************");
+		utils.log().info("Details of All Devices Connected to Main Router");
+		utils.log().info("***********************************************");
+
+		this.getAllDevicesCount();
+		click(connectedDevicesExpandImage);
+
 		try {
-			utils.log().info("                                               ");
-			utils.log().info("***********************************************");
-			utils.log().info("Details of All Devices Connected to Main Router");
-			utils.log().info("***********************************************");
-
-			this.getAllDevicesCount();
-			if (connectedDevicesExpandImage.isDisplayed()) {
-				click(connectedDevicesExpandImage);
-			} else {
-				utils.log().info("Connected Devices Expand button is not available");
-			}
-
 			if (allDevicesCount > 0) {
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
@@ -807,7 +803,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 						}
 
 						utils.log().info("****************************************************");
-//						utils.log().info("                                                    ");
 					}
 					if (i >= 1)
 						super.swipeUp();
@@ -816,13 +811,14 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			} else {
 				utils.log().info("Currently there are no devices connected to the main Router ");
 				click(connectedDevicesExpandImage);
-				return false;}
+				return true;}
 			super.swipeDown();
 			click(connectedDevicesExpandImage);
 			return true;
 		} catch (Exception ex) {
-			utils.log().info("Error found when verifying Connected Device Details on Main Device Page All Tab ");
-			return false;
+			click(connectedDevicesExpandImage);
+			utils.log().info("Currently there are no devices connected to the main Router");
+			return true;
 		}
 	}
 

@@ -147,7 +147,7 @@ public class TC02_Medium_Test extends ParentClass
 		  });
 	  }
 	  
-	  @Test(priority = 2)
+	  @Test(priority = 2, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Main_Device_UI_On_All_Tab_Page() {
 			SoftAssert softmain2 = new SoftAssert();
 			softmain2.assertTrue(new HomePage().clickMainDeviceImage());
@@ -157,7 +157,7 @@ public class TC02_Medium_Test extends ParentClass
 			softmain2.assertAll();
 		}
 		
-		@Test(priority = 3)
+		@Test(priority = 3, dependsOnMethods    = { "Login_And_Onboard", "Verify_Main_Device_UI_On_All_Tab_Page" })
 		public void Verify_LED_Settings_UI_On_All_Tab() {
 			SoftAssert softmain3 = new SoftAssert();
 			softmain3.assertTrue(new MainDeviceAllTabPage().verifyUIOnLedSettings());
@@ -165,7 +165,7 @@ public class TC02_Medium_Test extends ParentClass
 			softmain3.assertAll();
 		}
 		
-		@Test(priority = 4)
+		@Test(priority = 4, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
 		public void Verify_Decrease_LED_Settings_On_All_Tab_Page() {
 			SoftAssert softmain4 = new SoftAssert();
 			softmain4.assertTrue(new MainDeviceAllTabPage().decreaseLedBrightnessSettings());
@@ -173,15 +173,15 @@ public class TC02_Medium_Test extends ParentClass
 			softmain4.assertAll();
 		}
 		
-		@Test(priority = 5)
-		public void Verify_Increase_LED_Settings_On_All_Tab_Page() {
+		@Test(priority = 5, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
+  		public void Verify_Increase_LED_Settings_On_All_Tab_Page() {
 			SoftAssert softmain5 = new SoftAssert();
 			softmain5.assertTrue(new MainDeviceAllTabPage().increaseLedBrightnessSettings());
 			
 			softmain5.assertAll();
 		}
 		
-		@Test(priority = 6)
+		@Test(priority = 6, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 		public void Verify_Devices_Count_Validation_On_All_Tab_Page() {
 			SoftAssert softmain6 = new SoftAssert();
 			softmain6.assertTrue(new MainDeviceAllTabPage().allTabvalidations());
@@ -189,7 +189,7 @@ public class TC02_Medium_Test extends ParentClass
 			softmain6.assertAll();
 		}
 		
-		@Test(priority = 7)
+		@Test(priority = 7, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 		public void Verify_Connected_Devices_On_All_Tab_Page() {
 			SoftAssert softmain7 = new SoftAssert();
 			softmain7.assertTrue(new MainDeviceAllTabPage().verifyConnectedDeviceDetails());
@@ -197,7 +197,7 @@ public class TC02_Medium_Test extends ParentClass
 			softmain7.assertAll();
 		}
 		
-		@Test(priority = 8)
+		@Test(priority = 8, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 		public void Verify_Main_Router_Details_On_All_Tab_Page() {
 			SoftAssert softmain8 = new SoftAssert();
 			softmain8.assertTrue(new MainDeviceAllTabPage().verifyMainRouterDetails());
@@ -205,24 +205,21 @@ public class TC02_Medium_Test extends ParentClass
 			softmain8.assertAll();
 		}
 		
-		@Test(priority = 9)
+		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 		public void Verify_Edit_Main_Router_Name_On_All_Tab_Page() {
 			SoftAssert softmain9 = new SoftAssert();
 			softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
 			if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().isAt())
 			{
 				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName1());
-				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-				softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
-				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName1());
+				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
 				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
 			}
 			
 			softmain9.assertAll();
 		}
 		
-		@Test(priority = 10)
+		@Test(priority = 10, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 		public void Verify_Edit_Connected_Device_Name_On_All_Tab_Page() {
 			SoftAssert softmain10 = new SoftAssert();
 			if (new MainDeviceAllTabPage().allDevicesCount > 0) {
@@ -230,10 +227,7 @@ public class TC02_Medium_Test extends ParentClass
 				if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
 				{
 					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName1());
-					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
-					softmain10.assertTrue(new MainDeviceAllTabPage().clickDeviceName(1));
-					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName2());
+					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName());
 					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
 				}
 			}else {
@@ -243,7 +237,7 @@ public class TC02_Medium_Test extends ParentClass
 		}
 		
 		
-		@Test(priority = 11)
+		@Test(priority = 11, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Main_Device_UI_On_5GHz_Tab_Page() {
 			SoftAssert softmain11 = new SoftAssert();
 			softmain11.assertTrue(new MainDeviceAllTabPage().click5GhzTab());
@@ -274,7 +268,7 @@ public class TC02_Medium_Test extends ParentClass
 //			softmain14.assertAll();
 //		}
 		
-		@Test(priority = 15)
+		@Test(priority = 15, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_5GHz_Tab_Page"})
 		public void Verify_Devices_Count_Validation_On_5GHz_Tab_Page() {
 			SoftAssert softmain15 = new SoftAssert();
 			softmain15.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().GHz5Tabvalidations());
@@ -282,7 +276,7 @@ public class TC02_Medium_Test extends ParentClass
 			
 		}
 		
-		@Test(priority = 16)
+		@Test(priority = 16, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_5GHz_Tab_Page"})
 		public void Verify_Connected_Devices_On_5GHz_Tab_Page() {
 			SoftAssert softmain16 = new SoftAssert();
 			softmain16.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyConnectedDeviceDetails());
@@ -335,7 +329,7 @@ public class TC02_Medium_Test extends ParentClass
 //		}
 		
 		
-		@Test(priority = 20)
+		@Test(priority = 20, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Main_Device_UI_On_24GHz_Tab_Page() {
 			SoftAssert softmain20 = new SoftAssert();
 			softmain20.assertTrue(new MainDeviceAllTabPage().click24GhzTab());
@@ -369,14 +363,14 @@ public class TC02_Medium_Test extends ParentClass
 //			softmain23.assertAll();
 //		}
 		
-		@Test(priority = 24)
+		@Test(priority = 24, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_24GHz_Tab_Page"})
 		public void Verify_Devices_Count_Validation_On_24GHz_Tab_Page() {
 			SoftAssert softmain24 = new SoftAssert();
 			softmain24.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().GHz24Tabvalidations());
 			softmain24.assertAll();
 		}
 		
-		@Test(priority = 25)
+		@Test(priority = 25, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_24GHz_Tab_Page"})
 		public void Verify_Connected_Devices_On_24GHz_Tab_Page() {
 			SoftAssert softmain25 = new SoftAssert();
 			softmain25.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyConnectedDeviceDetails());
@@ -430,7 +424,7 @@ public class TC02_Medium_Test extends ParentClass
 //			softmain28.assertAll();
 //		}
 		
-		@Test(priority = 29)
+		@Test(priority = 29, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Main_Device_UI_On_Ethernet_Tab_Page() {
 			SoftAssert softmain29 = new SoftAssert();
 			softmain29.assertTrue(new MainDeviceAllTabPage().clickEthernetTab());
@@ -463,7 +457,7 @@ public class TC02_Medium_Test extends ParentClass
 //			softmain32.assertAll();
 //		}
 		
-		@Test(priority = 33)
+		@Test(priority = 33, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_Ethernet_Tab_Page"})
 		public void Verify_Devices_Count_Validation_On_Ethernet_Tab_Page() {
 			SoftAssert softmain33 = new SoftAssert();
 			softmain33.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().ethernetTabvalidations());
@@ -471,7 +465,7 @@ public class TC02_Medium_Test extends ParentClass
 			softmain33.assertAll();
 		}
 		
-		@Test(priority = 34)
+		@Test(priority = 34, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_Ethernet_Tab_Page"})
 		public void Verify_Connected_Devices_On_Ethernet_Tab_Page() {
 			SoftAssert softmain34 = new SoftAssert();
 			softmain34.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyConnectedDeviceDetails());
@@ -524,7 +518,7 @@ public class TC02_Medium_Test extends ParentClass
 //			softmain37.assertAll();
 //		}
 
-		@Test(priority = 38)
+		@Test(priority = 38, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Main_Device_Help_Page() {
 			SoftAssert softmain38 = new SoftAssert();
 			softmain38.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickHelpButton());
@@ -535,7 +529,7 @@ public class TC02_Medium_Test extends ParentClass
 			softmain38.assertAll();
 		}
 	  
-		@Test(priority = 39)
+		@Test(priority = 39, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Devices_UI_Page() {
 			utils.log().info("                                            ");
 			utils.log().info("********************************************");
@@ -550,7 +544,7 @@ public class TC02_Medium_Test extends ParentClass
 			softdevices2.assertAll();
 		}
 			
-		@Test(priority = 40)
+		@Test(priority = 40, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
 		public void Verify_Online_Devices_Details() 
 		{
 			SoftAssert softdevices3 = new SoftAssert();
@@ -558,7 +552,7 @@ public class TC02_Medium_Test extends ParentClass
 			softdevices3.assertAll();
 		}
 		
-		@Test(priority = 41)
+		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
 		public void Verify_Edit_Device_Name() 
 		{
 			SoftAssert softdevices4 = new SoftAssert();
@@ -566,7 +560,7 @@ public class TC02_Medium_Test extends ParentClass
 			softdevices4.assertAll();
 		}
 		
-		@Test(priority = 42)
+		@Test(priority = 42, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
 		public void Verify_Offline_Devices_Details() 
 		{
 			SoftAssert softdevices5 = new SoftAssert();
@@ -575,7 +569,7 @@ public class TC02_Medium_Test extends ParentClass
 		}
 		
 		
-		@Test(priority = 43)
+		@Test(priority = 43, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
 		public void Verify_Devices_Help_Page() 
 		{
 			SoftAssert softdevices6 = new SoftAssert();
@@ -586,7 +580,7 @@ public class TC02_Medium_Test extends ParentClass
 			softdevices6.assertAll();
 		}
 	  
-		@Test(priority = 44)
+		@Test(priority = 44, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Devices_Signal_Strength_UI_Page() {
 			utils.log().info("                                            ");
 			utils.log().info("********************************************");
@@ -600,38 +594,38 @@ public class TC02_Medium_Test extends ParentClass
 			softsignal2.assertAll();
 		}
 		
-		@Test(priority = 45)
+		@Test(priority = 45, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
 		public void Verify_Signal_Strength_For_Devices() {
 			SoftAssert softsignal3 = new SoftAssert();
 			softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
 			softsignal3.assertAll();
 		}
 		
-		@Test(priority = 46)
+		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
 		public void Verify_Sorting_Devices_From_Strong_To_Weak() {
 			SoftAssert softsignal4= new SoftAssert();
 			softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
 			softsignal4.assertAll();
 		}
 		
-		@Test(priority = 47)
+		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
 		public void Verify_Sorting_Devices_From_Weak_To_Strong() {
 			SoftAssert softsignal5= new SoftAssert();
 			softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
 			softsignal5.assertAll();
 		}
 		
-		@Test(priority = 48)
+		@Test(priority = 48, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
 		public void Verify_Editing_Device_Name() {
 			SoftAssert softsignal6= new SoftAssert();
 			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickDeviceName(2));
-			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName1());
+			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
 			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
 			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
 			softsignal6.assertAll();
 		}
 	  
-	  @Test(priority = 49)
+	  @Test(priority = 49, dependsOnMethods = { "Login_And_Onboard"})
 		public void Verify_Speed_Test_Page() {
 			utils.log().info("                                ");
 			utils.log().info("********************************");
@@ -654,20 +648,16 @@ public class TC02_Medium_Test extends ParentClass
 			}
 	  }
 	  
-	  @Test(priority = 50)
+	  @Test(priority = 50, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
 		public void Verify_Perform_Speed_Test() {
 			SoftAssert softspeedtest3 = new SoftAssert();
 			for (int i = 0; i < 3; i++)
 			{
 				softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
-				try {
-					if(new SpeedTestPage().getAppRatingDialogObject().remindMeLaterText.isDisplayed())
-						softspeedtest3.assertTrue(new SpeedTestPage().getAppRatingDialogObject().clickRemindMeLaterLink());
-				}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
 			}
 		}
 	  
-	  @Test(priority = 51)
+	  @Test(priority = 51, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
 		public void Verify_Speed_Test_Help_page() {
 			SoftAssert softspeedtest4 = new SoftAssert();
 			softspeedtest4.assertTrue(new SpeedTestPage().clickHelpButton());
@@ -676,7 +666,7 @@ public class TC02_Medium_Test extends ParentClass
 			softspeedtest4.assertAll();
 		}
 	  
-	  @Test(priority = 52)
+	  @Test(priority = 52, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
 		public void Verify_Home_Speed_Test_History_Page() {
 			SoftAssert softspeedtest5 = new SoftAssert();
 			if(new HomePage().isAt()) 

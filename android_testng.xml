@@ -14,17 +14,19 @@
 			<class name="com.cs.arris.Tests.TC01_Simple_Test" />
 		</classes>
 	</test>
-
+	
 	<test name="Medium_Tests">
 		<classes>
 			<class name="com.cs.arris.Tests.TC02_Medium_Test" />
 		</classes>
 	</test>
+	
 	<test name="Complex_Tests">
 		<classes>
 			<class name="com.cs.arris.Tests.TC03_Complex_Test" />
 		</classes>
 	</test>
+	
 </suite>
 
 
@@ -43,7 +45,7 @@
 		</classes>
 	</test>
 	
-		<test name="Complex_Tests">
+	<test name="Complex_Tests">
 		<classes>
 			<class name="com.cs.arris.Tests.TC03_Complex_Test" />
 		</classes>
