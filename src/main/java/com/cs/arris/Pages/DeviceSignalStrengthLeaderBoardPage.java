@@ -20,6 +20,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
@@ -29,6 +30,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	@AndroidFindAll({ 
 		@AndroidBy(id = "com.arris.sbcBeta:id/txtHeader"), // DEVICE SIGNAL STRENGTH LEADER BOARD
 		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,311][854,380]']")})
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_TitleLabel\"]")
 	public MobileElement leaderBoardTitleText;
 
 //	@AndroidFindAll({
@@ -41,10 +43,12 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	//@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.widget.TextView[2]]")
 	//@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
 	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtTotalDevices']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
 	public MobileElement countOfDevices;
 
 	@AndroidFindAll({ @AndroidBy(id = "com.arris.sbcBeta:id/txtThree"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,514][451,567]']") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label\"]")
 	public MobileElement topFiveOnlineDevices;
 
 	// @AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc='SBC
@@ -53,55 +57,66 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.view.ViewGroup/android.widget.Spinner/android.widget.TextView"),
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='android:id/text1']") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Button\"]")
 	public MobileElement signalStrengthOptions;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[526,579][979,647]']") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
 	public MobileElement strongToWeak;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[526,647][979,715]']") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther")
 	public MobileElement weakToStrong;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']"), 
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtDeviceName") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)\"]")
 	public MobileElement mobileDeviceName;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainSignalStrength']"), // 5GHz
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtMainSignalStrength") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)Speed\"]")
 	public MobileElement signalStrength;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainDownloadSpeed']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtMainDownloadSpeed") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)Download\"]")
 	public MobileElement downloadSpeed;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainUpLoadSpeed']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtMainUpLoadSpeed") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)Upload\"]")
 	public MobileElement uploadSpeed;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/imgDevice") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
 	public MobileElement mobileDeviceImage;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/rcyclrDevices']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/rcyclrDevices") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
 	public MobileElement recyclerView;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgCloseIcon']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/imgCloseIcon") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
 	public MobileElement closeIcon;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/setBackgroundForFreezingList']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/setBackgroundForFreezingList") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
 	public MobileElement deviceEntry1;
 
 	public DeviceSignalStrengthLeaderBoardPage() {

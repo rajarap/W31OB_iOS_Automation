@@ -21,7 +21,9 @@ import com.cs.arris.Pages.NameYourNetwokSSIDPage;
 import com.cs.arris.Pages.NetworkOptimizationDialog;
 import com.cs.arris.Pages.NetworkPage;
 import com.cs.arris.Pages.ConnectMaxRouterToMobileDevicePage;
+import com.cs.arris.Pages.ConnectToBlueToothDialog;
 import com.cs.arris.Pages.EnterValidOTPPage;
+import com.cs.arris.Pages.ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet;
 import com.cs.arris.Pages.ErrorCode_0000_1506_Warranty_Support_Page;
 import com.cs.arris.Pages.ErrorCode_0015_1805_Something_Went_Wrong_Page;
 import com.cs.arris.Pages.OptimizeYourNetworkPage;
@@ -155,10 +157,24 @@ TestUtils utils = new TestUtils();
         c.accept(p);
         return this;
     }
+   
+    //Blue Tooth connection dialog
+    public TC51_Signin_And_Onboard_Workflow connectBlueToothDialog(Consumer<ConnectToBlueToothDialog> c){
+    	ConnectToBlueToothDialog p = new ConnectToBlueToothDialog();
+        c.accept(p);
+        return this;
+    }
     
     //Max Router successfully connected to mobile
     public TC51_Signin_And_Onboard_Workflow maxRouterConnectedToMobilePage(Consumer<ConnectMaxRouterToMobileDevicePage> c){
     	ConnectMaxRouterToMobileDevicePage p = new ConnectMaxRouterToMobileDevicePage();
+        c.accept(p);
+        return this;
+    }
+    
+    //Manually Connect the Max Router to the internet
+    public TC51_Signin_And_Onboard_Workflow routerUnableToConnectToInternet(Consumer<ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet> c){
+    	ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet p = new ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet();
         c.accept(p);
         return this;
     }

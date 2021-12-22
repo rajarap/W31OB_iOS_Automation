@@ -287,133 +287,152 @@ public class DevicesPage extends ParentClass implements Page {
 
 	// To verify the details of online devices
 	public boolean verifyOnlineDeviceDetails() {
-		try {
-			this.getOnlineDevicesCount();
-			utils.log().info("***************************************************");
-			utils.log().info("Details of Online Devices Connected to Main Device ");
-			utils.log().info("***************************************************");
+		this.getOnlineDevicesCount();
+		utils.log().info("***************************************************");
+		utils.log().info("Details of Online Devices Connected to Main Device ");
+		utils.log().info("***************************************************");
+
+		if (this.onlineDeviceCount > 0) {
 			
-			if (this.onlineDeviceCount > 0) {
-				for (int i = 1; i <= onlineDeviceCount-1; i++) {
-					utils.log().info("Online Device : " + i);
-					utils.log().info("----------------------");
+			for (int i = 1; i <= onlineDeviceCount; i++) {
+				utils.log().info("Online Device : " + i);
+				utils.log().info("----------------------");
 
-					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
 
-					for (MobileElement e : entity) {
-						click(e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']"));
-
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']").isDisplayed())
+				for (MobileElement e : entity) 
+				{
+					click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']"));
+					
+					try {
+						if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']").isDisplayed())
 							utils.log().info("Device Image is displayed");
-						else
-							utils.log().info("Device Image is not displayed");
+					} catch (Exception exp) {
+						utils.log().info("Device Image is not displayed");
+					}
 
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']").isDisplayed())
+					try {
+						if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']").isDisplayed())
 							utils.log().info("Expand Button Image is displayed");
-						else
-							utils.log().info("Expand button is not available : ");
+					} catch (Exception exp) {
+						utils.log().info("Expand button is not available : ");
+					}
 
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']").isDisplayed())
-							utils.log().info("Device Name: " + e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']").getText());
-						else
-							utils.log().info("Device Name is not available ");
+					try {
+						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']").isDisplayed())
+							utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Name is not available ");
+					}
 
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainSignalStrength']")
-								.isDisplayed())
-							utils.log().info("Device Signal Strength : " + e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainSignalStrength']")
-									.getText());
-						else
-							utils.log().info("Device Signal Strength is not available ");
+					try {
+						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainSignalStrength']").isDisplayed())
+							utils.log().info("Device Signal Strength : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainSignalStrength']").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Signal Strength is not available ");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainDownloadSpeed']")
 								.isDisplayed())
 							utils.log().info("Device Download Speed : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainDownloadSpeed']")
 									.getText());
-						else
-							utils.log().info("Device Download Speed data is not available ");
+					} catch (Exception exp) {
+						utils.log().info("Device Download Speed data is not available ");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainUpLoadSpeed']")
 								.isDisplayed())
 							utils.log().info("Device Upload Speed : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainUpLoadSpeed']")
 									.getText());
-						else
-							utils.log().info("Device Upload Speed data is not available ");
+					} catch (Exception exp) {
+						utils.log().info("Device Upload Speed data is not available ");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
 								.isDisplayed())
 							utils.log().info("Label : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
 									.getText());
-						else
-							utils.log().info("IP Address Label is not displayed ");
+					} catch (Exception exp) {
+						utils.log().info("IP Address Label is not displayed ");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtIpAddress']")
 								.isDisplayed())
 							utils.log().info("Device IP Address : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtIpAddress']")
 									.getText());
-						else
-							utils.log().info("Device IP Address is not available ");
+					} catch (Exception exp) {
+						utils.log().info("Device IP Address is not available ");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/macAddressTitle']")
 								.isDisplayed())
 							utils.log().info("Label : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/macAddressTitle']")
 									.getText());
-						else
-							utils.log().info("MAC Address Label is not displayed");
+					} catch (Exception exp) {
+						utils.log().info("MAC Address Label is not displayed");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMacAddress']")
 								.isDisplayed())
 							utils.log().info("Device MAC Address : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMacAddress']")
 									.getText());
-						else
-							utils.log().info("Device MAC Address is not available");
+					} catch (Exception exp) {
+						utils.log().info("Device MAC Address is not available");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
 								.isDisplayed())
 							utils.log().info("Label : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
 									.getText());
-						else
-							utils.log().info("Channel Label is not displayed");
+					} catch (Exception exp) {
+						utils.log().info("Channel Label is not displayed");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtChannelValue']")
 								.isDisplayed())
 							utils.log().info("Device Channel Number : " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtChannelValue']")
 									.getText());
-						else
-							utils.log().info("Device Channel Number is not available");
+					} catch (Exception exp) {
+						utils.log().info("Device Channel Number is not available");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/statusTitle']")
 								.isDisplayed())
 							utils.log().info("Label	: " + e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/statusTitle']")
 									.getText());
-						else
-							utils.log().info("Status Label is not displayed");
+					} catch (Exception exp) {
+						utils.log().info("Status Label is not displayed");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtStatus']")
 								.isDisplayed())
@@ -421,9 +440,11 @@ public class DevicesPage extends ParentClass implements Page {
 									.info("Device Status : " + e.findElementByXPath(
 											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtStatus']")
 											.getText());
-						else
-							utils.log().info("Device Status is not available");
+					} catch (Exception exp) {
+						utils.log().info("Device Status is not available");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssiTitle']")
 								.isDisplayed())
@@ -431,33 +452,33 @@ public class DevicesPage extends ParentClass implements Page {
 									.info("Label : " + e.findElementByXPath(
 											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssiTitle']")
 											.getText());
-						else
-							utils.log().info("RSSI Label is not displayed");
+					} catch (Exception exp) {
+						utils.log().info("RSSI Label is not displayed");
+					}
 
+					try {
 						if (e.findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']").isDisplayed())
 							utils.log()
 									.info("RSSI Value : " + e.findElementByXPath(
 											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']")
 											.getText());
-						else
-							utils.log().info("RSSI data is not available ");
-
-						click(e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']"));
-
-						utils.log().info("****************************************************");
-						utils.log().info("                                                    ");
+					} catch (Exception exp) {
+						utils.log().info("RSSI data is not available ");
 					}
-					if (i >= 5)
-						super.swipeUp();
+
+					click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']"));
+
+					utils.log().info("****************************************************");
+					utils.log().info("                                                    ");
 				}
-				return true;
-			}else {utils.log().info("Either there are no devices connected to the main mAX router or all devices are currently offline");}
+				if (i >= 5)
+					super.swipeUp();
+			}
 			return true;
-		} catch (Exception ex) {
-			utils.log().info("Error in Online Devices Page ");
-			return false;
+		} else {
+			utils.log().info("Either there are no devices connected to the main mAX router or all devices are currently offline");
+			return true;
 		}
 	}
 
@@ -475,7 +496,8 @@ public class DevicesPage extends ParentClass implements Page {
 					utils.log().info("----------------------");
 
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
+							"//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
+					
 					for (MobileElement e : entity) {
 						if (e.findElementById("com.arris.sbcBeta:id/imgDevice").isDisplayed())
 							utils.log().info("Device Image is displayed");
@@ -561,17 +583,17 @@ public class DevicesPage extends ParentClass implements Page {
 
 					for (MobileElement e : entity) 
 					{
-						if (e.findElementByXPath(
+						if (super.getDriver().findElementByXPath(
 								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
 								.isDisplayed()) 
 						{
-							utils.log().info("Device Name: " + e.findElementByXPath(
+							utils.log().info("Device Name: " + super.getDriver().findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
 									.getText());
-							this.connectedDeviceName = e.findElementByXPath(
+							this.connectedDeviceName = super.getDriver().findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
 									.getText();
-							click(e.findElementByXPath(
+							click(super.getDriver().findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']"));
 							if (this.getEditDeviceNameDialogObject().isAt())
 							{

@@ -12,15 +12,18 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceHamburgerMenuPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_add_device")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add Device\"]")
 	public MobileElement addDevice;  //must be disabled. Onclick of add device, Add device dialog box should be displayed
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_remove_device")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove Device\"]")
 	public MobileElement removeDevice;
 
 	public AddDeviceHamburgerMenuPage()
@@ -44,7 +47,7 @@ public class AddDeviceHamburgerMenuPage extends ParentClass implements Page
 			}
 		}
 
-		public boolean clickRemoveDeviceeButton() {
+		public boolean clickRemoveDeviceButton() {
 			if (removeDevice.isDisplayed()) {
 				click(removeDevice);
 				utils.log().info("Clicked on Remove Device Button");

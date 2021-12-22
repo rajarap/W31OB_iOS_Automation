@@ -11,38 +11,49 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class HamburgerMenuPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_add_device")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add Device\"]")
 	public MobileElement addDevice;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_remove_device")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove Device\"]")
 	public MobileElement removeDevice;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_max_speed_test")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed Test\"]")
 	public MobileElement speedTest;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_add_max")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add a New Satellite\"]")
 	public MobileElement addNewSatellite;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_Alexa_Skill")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Amazon Features\"]")
 	public MobileElement amazonFeatures;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_Help")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Help\"]")
 	public MobileElement helpMenu;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_About")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"About\"]")
 	public MobileElement aboutApp;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_Settings")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings\"]")
 	public MobileElement appSettings;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/closeLogoIcon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"LeftMenuCross\"]")
 	public MobileElement closeHamburgerMenu;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/centralLogo")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"LeftMenuFooter\"]")
 	public MobileElement logo;
 
 	public HamburgerMenuPage() {

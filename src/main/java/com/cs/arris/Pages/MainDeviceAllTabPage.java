@@ -540,6 +540,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	
 	public boolean clickDeviceName(int i) {
 		try {
+			if (allDevicesCount > 0) {
 				utils.log().info("Editing Device Name  : " + i);
 				utils.log().info("-----------------------------");
 
@@ -558,6 +559,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 							}
 						}
 				return true;
+			}else {utils.log().info("There are no devices connected to the Main Router ");return true;}
 			} catch (Exception ex) {
 				utils.log().info("Unable to retrieve Device Name");
 			return false;
@@ -654,14 +656,12 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		utils.log().info("***********************************************");
 
 		this.getAllDevicesCount();
-		click(connectedDevicesExpandImage);
-
-		try {
 			if (allDevicesCount > 0) {
+				click(connectedDevicesExpandImage);
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
-
+					
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 							"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
 									+ i + "]");
@@ -803,23 +803,21 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 						}
 
 						utils.log().info("****************************************************");
+//						utils.log().info("                                                    ");
 					}
 					if (i >= 1)
 						super.swipeUp();
 						super.pause(3);
 				}
+				super.swipeDown();
+				super.waitForVisibility(connectedDevicesExpandImage);
+				click(connectedDevicesExpandImage);
+				return true;
 			} else {
 				utils.log().info("Currently there are no devices connected to the main Router ");
 				click(connectedDevicesExpandImage);
-				return true;}
-			super.swipeDown();
-			click(connectedDevicesExpandImage);
-			return true;
-		} catch (Exception ex) {
-			click(connectedDevicesExpandImage);
-			utils.log().info("Currently there are no devices connected to the main Router");
-			return true;
-		}
+				return true;
+			}
 	}
 
 	public boolean verifyMainRouterDetails() {
@@ -920,7 +918,9 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 				utils.log().info("Restart Router Button is not displayed");
 
 			click(mainRouterExpandImage);
+			super.swipeDown();
 			return true;
+			
 		} catch (Exception e) {
 			utils.log().info("Issue when verifying Main Router Details");
 			return false;

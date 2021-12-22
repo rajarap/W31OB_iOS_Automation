@@ -229,7 +229,7 @@ public class ParentClass
 			loadLogs();
 		
 			//Fetch url from config.properties file. setProps already set in BeforeSuite
-			url = new URL(getProps().getProperty("appiumURL"));  //  http://127.0.0.1:4723/wd/hub
+			url = new URL(getProps().getProperty("appiumURL"));       //http://127.0.0.1:4723/wd/hub
 			
 			//set the DesiredCapabilites of the device
 			desiredCapabilities = new DesiredCapabilities();
@@ -260,11 +260,12 @@ public class ParentClass
 				desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, getProps().getProperty("iOSPlatformVersion"));
 				desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("iOSAutomationName"));
 				desiredCapabilities.setCapability(MobileCapabilityType.UDID, getProps().getProperty("iOSUDID"));
-				desiredCapabilities.setCapability(MobileCapabilityType.APP, getProps().getProperty("iOSAppLocation"));
+				//desiredCapabilities.setCapability(MobileCapabilityType.APP, getProps().getProperty("iOSAppLocation"));
 				desiredCapabilities.setCapability(IOSMobileCapabilityType.BUNDLE_ID, getProps().getProperty("iOSBundleId"));
 				desiredCapabilities.setCapability(IOSMobileCapabilityType.XCODE_ORG_ID, getProps().getProperty("xcodeOrgId"));
-				desiredCapabilities.setCapability(IOSMobileCapabilityType.UPDATE_WDA_BUNDLEID, getProps().getProperty("updatedWDABundleId"));
-				desiredCapabilities.setCapability(IOSMobileCapabilityType.XCODE_SIGNING_ID, getProps().getProperty("xcodeSigningId"));	
+				desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, getProps().getProperty("timeout"));
+				//desiredCapabilities.setCapability(IOSMobileCapabilityType.UPDATE_WDA_BUNDLEID, getProps().getProperty("updatedWDABundleId"));
+				//desiredCapabilities.setCapability(IOSMobileCapabilityType.XCODE_SIGNING_ID, getProps().getProperty("xcodeSigningId"));	
 				setDriver(new IOSDriver<MobileElement>(url, desiredCapabilities));
 				getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 				utils.log().info("iOS Driver is set to the Thread Local context " + getDriver().getPlatformName());
@@ -378,7 +379,7 @@ public class ParentClass
 	  
 	public void setPlatformName(String platform2) { platformName.set(platform2); }
 	
-	public String getUDID() { return getProps().getProperty("androidUDID"); }
+	public String getUDID() { return getProps().getProperty("iOSUDID"); }
 	  
 	public String getDateTime() { return dateTime.get(); }
 	  
@@ -452,12 +453,7 @@ public class ParentClass
 		  waitForVisibility(e);
 		  e.clear();
 	  }
-	  
-	  public void click(WebElement w) {
-		  waitForVisibility(w);
-		  w.click();
-	  }
-	  
+	   
 	  public void click(MobileElement e) {
 		  waitForVisibility(e);
 		  e.click();
@@ -486,6 +482,11 @@ public class ParentClass
 		  waitForVisibility(e);
 		  return e.getAttribute(attribute);
 	  }
+	  
+	  public void click(WebElement w) {
+	  waitForVisibility(w);
+	  w.click();
+  }
 	  
 //	  public String getText(MobileElement e, String msg) {
 //		  String txt = null;

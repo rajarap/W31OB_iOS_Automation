@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class DeviceLocationPage  extends ParentClass implements Page
 {
@@ -47,6 +48,25 @@ public class DeviceLocationPage  extends ParentClass implements Page
 			@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.Button[3]")
 		})
 		public MobileElement denyLink;
+		
+		
+		//***********  IOS   *********************
+		@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Allow “SBC Test” to use your location?\"]")
+		public MobileElement allowToUseLocationMessage;
+		
+		@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Please enable the location for country code\"]")
+		public MobileElement enableLocationMessage;
+				
+		@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Allow Once\"]")
+		public MobileElement allowOnce;
+		
+		@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Allow While Using App\"]")
+		public MobileElement whileUsingApp;
+		
+		@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Don’t Allow\"]")
+		public MobileElement dontAllow;
+		
+		//***********  IOS   *********************
 		
 		//######################  DENY  ##############################
 		
@@ -120,6 +140,36 @@ public class DeviceLocationPage  extends ParentClass implements Page
 			utils.log().info("Device Location - Clicked " + denyLink.getText());
 		} catch (Exception e) {
 			utils.log().info("Device Location - Deny Link is not displayed");
+		}
+	}
+	
+	public void clickWhileUsingAppLink() 
+	{
+		try {
+			click(whileUsingApp);
+			utils.log().info("Device Location - Clicked " + whileUsingApp.getText());
+		} catch (Exception e) {
+			//utils.log().info("Device Location - While Using The App Link is not displayed");
+		}
+	}
+	
+	public void clickAllowOnceLink() 
+	{
+		try {
+			click(allowOnce);
+			utils.log().info("Device Location - Clicked " + allowOnce.getText());
+		} catch (Exception e) {
+			utils.log().info("Device Location - Allow Once Link is not displayed");
+		}
+	}
+	
+	public void clickDontAllowLink() 
+	{
+		try {
+			click(dontAllow);
+			utils.log().info("Device Location - Clicked " + dontAllow.getText());
+		} catch (Exception e) {
+			utils.log().info("Device Location - Dont Allow Link is not displayed");
 		}
 	}
 	

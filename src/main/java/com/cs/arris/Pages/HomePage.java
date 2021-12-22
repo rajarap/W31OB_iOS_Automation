@@ -8,31 +8,30 @@ import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class HomePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public Integer count;
 
-	@AndroidFindAll({
-		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle]"), // HOME
-		@AndroidBy(xpath = "//android.widget.Button[@bounds='[474,149][606,223]']"),
-		@AndroidBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") })
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Home\"]")
 	public MobileElement homeTitle;
 
-	@AndroidFindAll({ 
-		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/speedtitle"),
-		@AndroidBy(xpath = "//android.widget.Button[@bounds='[396,259][684,323]']"),
-		@AndroidBy(id = "com.arris.sbcBeta:id/speedtitle") })
+	@AndroidFindBy(id = "com.arris.sbcBeta:id/speedtitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_TitleLabel\"]")
 	public MobileElement networkSpeedTitle;
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),
 		@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Menu\"]")
 	public MobileElement navigateButton;
 
 	@AndroidFindAll({
@@ -45,116 +44,136 @@ public class HomePage extends ParentClass implements Page {
 		@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_toolbar_notification"),
 		@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[996,158][1046,213]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/img_toolbar_notification") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement notificationsIcon;
 
 	@AndroidFindAll({
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView20"),
 		@AndroidBy(xpath = "//android.widget.Button[@bounds='[239,395][424,441]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/textView20") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_DownloadTitle\"]")
 	public MobileElement downloadText;
 
 	@AndroidFindAll({
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDownloadSpeed"),
 		@AndroidBy(xpath = "//android.widget.Button[@bounds='[248,455][416,512]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/txtDownloadSpeed") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Download\"]")
 	public MobileElement downloadSpeedText;
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView8"),
 		@AndroidBy(xpath = "//android.widget.Button[@bounds='[674,395][818,441]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/textView8") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_UploadTitle\"]")
 	public MobileElement uploadText;
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtUploadSpeed"),
 		@AndroidBy(xpath = "//android.widget.Button[@bounds='[661,455][831,512]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/txtUploadSpeed") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Upload\"]")
 	public MobileElement uploadSpeedText;
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/ssidName"),
 		@AndroidBy(xpath = "//android.widget.Button[@bounds='[428,587][653,661]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/ssidName") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_SSID\"]")
 	public MobileElement ssidName;
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainRouter"),
 		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[498,622][589,682]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/txtMainRouter") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_MainAP\"]")
 	public MobileElement mainDeviceName; // MAIN
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgMainRouter"),
 		@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[455,397][609,608]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/imgMainRouter") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_Mesh\"]")
 	public MobileElement mainDeviceImage; // MAIN
 
 	@AndroidFindAll({
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainDeviceCounter"),
 		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[441,1077][639,1156]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/txtMainDeviceCounter") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_MainAPWithDevices\"]")
 	public MobileElement mainDeviceCounter;
 
 	@AndroidFindAll({
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtTotalDevices"),
 		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[416,1017][665,1103]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/txtTotalDevices") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_AllDevicesCount\"]")
 	public MobileElement totalNoOfDevices;
 
 	@AndroidFindAll({
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/imgtotalperipheral"),
 		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[404,904][677,1017]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/imgtotalperipheral") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_AllDevices\"]")
 	public MobileElement totalNoOfDevicesImage;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgNoLeftSatellite"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[217,1008][302,1192]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/imgNoLeftSatellite") })
+	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement leftSatelliteImage;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgNoRightSatellite"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[769,1008][854,1192]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/imgNoRightSatellite") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_AddRight\"]")
 	public MobileElement rightSatelliteImage;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView162"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1569][784,1633]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/textView162") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title_Device\"]")
 	public MobileElement deviceSignalStrengthLeaderBoardText;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_full_screen2"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[924,1596][995,1667]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/img_full_screen2") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandDevice\"]")
 	public MobileElement deviceSignalStrengthLeaderBoardImage;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textBitRateDevices"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1633][118,1693]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/textBitRateDevices") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_DeviceValue\"]")
 	public MobileElement bitRateDevices;
 
 	@AndroidFindBy(xpath = "//android.view.ViewGroup[@bounds='[51,1154][1029,1346]']")
+	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement deviceSignalStrengthButton;
 
 	@AndroidFindAll({ 
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView163"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1838][437,1902]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/textView163") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title_Speed\"]")
 	public MobileElement speedTestHistoryText;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_full_screen3"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[924,1873][995,1944]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/img_full_screen3") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandSpeed\"]")
 	public MobileElement speedTestHistoryImage;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textSpeedHistoryDevices"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1919][129,1979]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/textSpeedHistoryDevices") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_SpeedValue\"]")
 	public MobileElement speedTestHistoryDevices;
 
 	@AndroidFindBy(xpath = "//android.view.ViewGroup[@bounds='[51,1397][1029,1657]']")
@@ -164,50 +183,62 @@ public class HomePage extends ParentClass implements Page {
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView164"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1742][585,1806]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/textView164") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title_Currently\"]")
 	public MobileElement currentlyBlockedDevicesText; // Currently Blocked Devices
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_full_screen5"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[924,1742][995,1813]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/img_full_screen5") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandCurrently\"]")
 	public MobileElement currentlyBlockedDevicesImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgBlockedDevices")
+	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement currentlyBlockedDevicesButton;
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/img_full_screen3"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1806][578,1866]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/img_full_screen3") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_CurrentlyValue\"]")
 	public MobileElement parentalControlIsDisabled; // Parental Control is disabled
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_full_screen5"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[924,1742][995,1813]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/img_full_screen5") })
+	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement parentalControlImage;
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView164"),
 		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1742][585,1806]]']"),
 		@AndroidBy(id = "com.arris.sbcBeta:id/textView164") })
+	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement currentlyBlockedDevicesEnabledText; // Currently Blocked Devices
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textBlockedDevices"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1806][129,1866]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/textBlockedDevices") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement parentalControlBlockedDevices; // 00
 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_full_screen5"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[924,1742][995,1813]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/img_full_screen5") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
 	public MobileElement parentalControlEnabledImage;
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Home_Screen_Button_Close\"]")
+	public MobileElement closeBanner;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.LinearLayout[@resource-id='com.arris.sbcBeta:id/home_view"),
 			@AndroidBy(xpath = "//android.widget.LinearLayout[@bounds='[0,2000][355,2042]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/home_view") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"TabBar_TitleHome\"]")
 	public MobileElement homeButton;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/home_txt"),
@@ -225,6 +256,7 @@ public class HomePage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.LinearLayout[@resource-id='com.arris.sbcBeta:id/network_view"),
 			@AndroidBy(xpath = "//android.widget.LinearLayout[@bounds='[362,2000][717,2042]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/network_view") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"TabBar_TitleNetwork\"]")
 	public MobileElement networkButton;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/network_txt"),
@@ -242,6 +274,7 @@ public class HomePage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.LinearLayout[@resource-id='com.arris.sbcBeta:id/parental_view"),
 			@AndroidBy(xpath = "//android.widget.LinearLayout[@bounds='[724,2000][1080,2042]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/parental_view") })
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"TabBar_TitleParental\"]")
 	public MobileElement parentalButton;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/parental_txt"),
@@ -266,30 +299,27 @@ public class HomePage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.Button[@bounds='[147,1312][933,1449]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/btn_dialog_ok") })
 	public MobileElement okButton;
+	
+	
+	//RAT
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Error\"]")
+	public MobileElement remoteAccessNotAvailableLink; 
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_More\"]")
+	public MobileElement moreLink; 
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Cloud\"]")
+	public MobileElement cloudIcon1;
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeCell[@name=\"Wi-Fi\"]")
+	public MobileElement wifiLink;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgMainRouter")
-	private MobileElement mainDevicePage;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgtotalperipheral")
-	private MobileElement devicesPage;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_full_screen2")
-	private MobileElement devicesSignalStrengthPage;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_full_screen3")
-	private MobileElement speedTestHistoryPage;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_full_screen5")
-	private MobileElement currentlyBlockedDevicePage;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgNoLeftSatellite")
-	private MobileElement installLeftSatellitePage;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgNoRightSatellite")
-	private MobileElement installRightSatellitePage;
-
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
-	private MobileElement hamburgerMenuPage;
+//	@iOSXCUITFindBy (xpath = "//XCUIElementTypeCell[@name=\""+arris65443+", Secure network, Signal strength 3 of 3 bars\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther")
+//	public MobileElement networkName;
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Settings\"]")
+	public MobileElement settings;
 
 	public MainDeviceAllTabPage getMainDeviceAllTabPageObject() {
 		MainDeviceAllTabPage mainDevicePage = new MainDeviceAllTabPage();
@@ -299,6 +329,16 @@ public class HomePage extends ParentClass implements Page {
 	public DevicesPage getDevicesPageObject() {
 		DevicesPage devicesPage = new DevicesPage();
 		return devicesPage;
+	}
+	
+	public AppRatingDialog getAppRatingDialogObject() {
+		AppRatingDialog appRating = new AppRatingDialog();
+		return appRating;
+	}
+	
+	public HomePageRATTroubleShootPage getRATObject() {
+		HomePageRATTroubleShootPage ratPage = new HomePageRATTroubleShootPage();
+		return ratPage;
 	}
 
 	public DeviceSignalStrengthLeaderBoardPage getDeviceSignalStrengthPageObject() {
@@ -364,7 +404,10 @@ public class HomePage extends ParentClass implements Page {
 		utils.log().info("Network Optimization Dialog2 - Clicked on OK Button");
 	}
 	
-	
+	public void clickCloseBanner() {
+		click(closeBanner);
+		utils.log().info("Closed Banner on Home Page");
+	}
 
 	// Verify if all the required UI elements are displayed on the Home Page
 	public boolean verifyUIOnHomePage() {
@@ -606,6 +649,19 @@ public class HomePage extends ParentClass implements Page {
 			return false;
 		}
 	}
+	
+	public boolean ratExists() {
+		if(cloudIcon.isDisplayed()) {
+			utils.log().info("Home Page - Cloud Icon is displayed");
+			if(remoteAccessNotAvailableLink.isDisplayed()) 
+				utils.log().info("Home Page - Remote access to your Network is currently unavailable Link is displayed");
+			utils.log().info("Home Page - Clicked in More... Link");
+			return true;
+		}else {
+			utils.log().info("Home Page - Cloud icon is not displayed");
+			return true;
+		}
+	}
 
 	public int getTotalCountOfDevices() {
 		String noOfDevices = totalNoOfDevices.getText(); // Devices (2)
@@ -619,6 +675,35 @@ public class HomePage extends ParentClass implements Page {
 		String count = bitRateDevices.getText();
 		return(Integer.valueOf(count.replaceFirst("^0+(?!$)", "")));
 	}
+	
+	public void connectToSSID(String ssidentity)
+	{
+		try
+		{
+				super.getDriver().activateApp("com.apple.Preferences");
+				super.swipeDown();
+				
+				if(wifiLink.isDisplayed())
+					click(wifiLink);
+				
+				super.pause(5);
+				
+				String selector = "**/XCUIElementTypeCell[`label == \""+ssidentity+", Secure network, Signal strength 3 of 3 bars\"`]";
+				super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+				super.pause(5);
+				
+				click(settings);
+				
+				String wifiName = "//XCUIElementTypeStaticText[@name=\""+ssidentity+"\"]";
+				
+				if(super.getDriver().findElement(MobileBy.iOSClassChain(wifiName)).isDisplayed())
+					utils.log().info("IPhone Settings Page - mAX Router is now connected to the SSID network");
+				
+				utils.log().info("Activating App running in Background");
+				super.getDriver().activateApp("com.arris.sbcBeta");
+		}catch(Exception e) {}
+	}
+	
 
 	@Override
 	public boolean isAt() {

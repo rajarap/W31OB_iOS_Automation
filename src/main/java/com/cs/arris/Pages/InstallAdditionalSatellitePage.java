@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class InstallAdditionalSatellitePage extends ParentClass implements Page
 {
@@ -21,6 +22,7 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[151,803][929,990]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_title") 
 	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Install_Additional_Satellite_Screen_TitleLabel\"]")
 	public MobileElement installAdditionalSatelliteTitleText; 
 	
 	@AndroidFindAll({
@@ -28,6 +30,7 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[151,1024][929,1159]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_description") 
 	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Install_Additional_Satellite_Screen_SubTitleLabel\"]")
 	public MobileElement installAdditionalSatelliteDescription; 
 	
 	@AndroidFindAll({
@@ -35,6 +38,7 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.Button[@bounds='[151,1179][929,1316]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_install_now") 
 	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Install_Additional_Satellite_Screen_Button_Now\"]")
 	public MobileElement installNowButton; 
 	
 	@AndroidFindAll({
@@ -42,6 +46,7 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.Button[@bounds='[151,1412][929,1549]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_install_later") 
 	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Install_Additional_Satellite_Screen_Image\"]")
 	public MobileElement cancelButton; 
 	
 	@AndroidFindAll({
@@ -49,15 +54,11 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[151,1374][929,1511]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/dialog_install_later") 
 	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Install_Additional_Satellite_Screen_Button_Later\"]")
 	public MobileElement installLaterButton; 
-	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/title_getting_started") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/title_getting_started']") // text = SETUP YOUR Wi-Fi MANAGEMENT
-	public MobileElement setupWifiManagementText;
-	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/description_add_satelite") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/description_add_satelite']") // text = You have successfully configured your router and home network
-	public MobileElement setupWifiManagementMessage;
+
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"I do not have a satellite\"]")
+	public MobileElement dontHaveSatelliteLink;
 	
 	public InstallAdditionalSatellitePage()
 	{

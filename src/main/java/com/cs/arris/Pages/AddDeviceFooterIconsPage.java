@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceFooterIconsPage extends ParentClass implements Page
 {
@@ -18,12 +19,15 @@ public class AddDeviceFooterIconsPage extends ParentClass implements Page
 	public Integer count;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/home_view")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Home\"]")
 	public MobileElement homeButton; 
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_view")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"User Guide\"]")
 	public MobileElement userGuideButton; 
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/parental_view")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"FAQ\"]")
 	public MobileElement faqButton; 
 	
 

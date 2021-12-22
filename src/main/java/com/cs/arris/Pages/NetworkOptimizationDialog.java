@@ -11,17 +11,18 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkOptimizationDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialog_heading") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/dialog_heading']") // text = Network Optimization
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network Optimization\"]")
 	public MobileElement networkOptimizationText;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialog_description") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/dialog_description']") // text = Let's check for available software updates for your system.
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Your network is being optimized. You may be disconnected from your Wi-Fi network during this time. If you are not reconnected please connect to your network through settings.\"]")
 	public MobileElement networkOptimizationMessage;
 	
 	@AndroidFindAll({
@@ -29,6 +30,7 @@ public class NetworkOptimizationDialog extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.Button[@bounds='[147,1283][933,1420]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/btn_dialog_ok") 
 	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OK\"]")
 	public MobileElement okButton;
 	
 	public NetworkOptimizationDialog()

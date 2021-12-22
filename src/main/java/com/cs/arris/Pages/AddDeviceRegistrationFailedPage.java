@@ -12,26 +12,33 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceRegistrationFailedPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"OB_Error_Screen_TitleLabel\"]")
 	public MobileElement registrationFailedTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
-
+	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_description_text")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"OB_Error_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_errorCode")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"OB_Error_Screen_Label\"]")
 	public MobileElement errorCode; // 0000-1506
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_try_again")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"OB_Error_Screen_Button\"]")
 	public MobileElement continueButton;
 
 	public AddDeviceRegistrationFailedPage() {
@@ -78,10 +85,10 @@ public class AddDeviceRegistrationFailedPage extends ParentClass implements Page
 			else
 				utils.log().info("Registration of your device failed Text is not displayed");
 
-			if (backIcon.isDisplayed())
-				utils.log().info("Back button is displayed");
-			else
-				utils.log().info("Back button is not displayed");
+//			if (backIcon.isDisplayed())
+//				utils.log().info("Back button is displayed");
+//			else
+//				utils.log().info("Back button is not displayed");
 
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help icon is displayed");

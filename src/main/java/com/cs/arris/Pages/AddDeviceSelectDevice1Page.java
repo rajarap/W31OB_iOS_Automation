@@ -12,46 +12,59 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceSelectDevice1Page extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Category_Screen_TitleLabel_SelectYourDeviceBelow\"]")
 	public MobileElement selectDeviceTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add Device\"]")
 	public MobileElement cloudIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/product_category_selection_bg")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_Category_Screen_Image_ProductSelection\"]")
 	public MobileElement bgRoutersImage;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='ISP cable connected without Wi-Fi']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Category_Screen_Label_ISP cable connected without Wi-Fi\"]")
 	public MobileElement ispCableWithoutWiFiText;
 
 	@AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_Category_Screen_Image_deselect_SURFboard Modem\"]")
 	public MobileElement ispCableWithoutWiFiRadioButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_product_next")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Select_Your_Device_Category_Screen_Button_Next\"]")
 	public MobileElement nextButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/app_help_selection")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Category_Screen_Label_HelpMeWithTheSelection\"]")
 	public MobileElement helpMeWithSelectionLink;
 
 	// On click of help me with selection link
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_header_dialog")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Category_Screen_Label_InfoHeader\"]")
 	public MobileElement selectProductCategoryTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"closeIcon\"]")
 	public MobileElement cancelIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Select_Your_Device_Category_Screen_Button_Ok\"]")
 	public MobileElement okButton;
 
 	// On click of help me with selection link

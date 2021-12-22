@@ -12,47 +12,60 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceHomePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Home_Screen_NavigationBarTitle\"]")
 	public MobileElement homeTitle;
 
 	@AndroidFindAll({ 
 		@AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),
 		@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Modem_Home_Screen_Button_NavigationBarMenu\"]")
 	public MobileElement navigateButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_notification")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Modem_Home_Screen_Button_NavigationBarNotification\"]")
 	public MobileElement notificationsIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_mesh")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"mAX Router\"]")
 	public MobileElement maxRouterTab;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_modem")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Cable Modem\"]")
 	public MobileElement cableModemTab;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvsubtitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Home_Screen_TitleLabel\"]")
 	public MobileElement cableModemName;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/iv_gob_router_cm")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Modem_Home_Screen_Image\"]")
 	public MobileElement cableModemImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_home_network_cm")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Home_Screen_Label_Home\"]")
 	public MobileElement cableModemProviderName;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_device_details")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Modem_Home_Screen_ViewDeviceDetails\"]")
 	public MobileElement deviceDetailsText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_expand_collapse_device_details")
-	public MobileElement deviceDetailsImage;
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_expand_collapse_device_details")
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Modem_Home_Screen_Button_NavigationBarNotification\"]")
+//	public MobileElement deviceDetailsImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_device_leader_board")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Modem_Home_Screen_ViewSpecifications\"]")
 	public MobileElement specificationsText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_expand_device_specfication")
-	public MobileElement specificationsImage;
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_expand_device_specfication")
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Modem_Home_Screen_Button_NavigationBarNotification\"]")
+//	public MobileElement specificationsImage;
 
 	public AddDeviceHomePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -132,28 +145,28 @@ public class AddDeviceHomePage extends ParentClass implements Page {
 		}
 	}
 
-	public boolean clickDeviceDetailsImage() {
-		if (deviceDetailsImage.isDisplayed()) {
-			click(deviceDetailsImage);
-			utils.log().info("Add Device Home Page - Clicked on Device Details Image");
-			return true;
-		} else {
-			utils.log().info(
-					"Add Device Home Page - Device Details Image is either not visible or is not present on the DOM");
-			return false;
-		}
-	}
+//	public boolean clickDeviceDetailsImage() {
+//		if (deviceDetailsImage.isDisplayed()) {
+//			click(deviceDetailsImage);
+//			utils.log().info("Add Device Home Page - Clicked on Device Details Image");
+//			return true;
+//		} else {
+//			utils.log().info(
+//					"Add Device Home Page - Device Details Image is either not visible or is not present on the DOM");
+//			return false;
+//		}
+//	}
 
-	public boolean clickSpecificationsImage() {
-		if (specificationsImage.isDisplayed()) {
-			click(specificationsImage);
-			utils.log().info("Add Device Home Page - Clicked on Specifications Image");
-			return true;
-		} else {
-			utils.log().info("Add Device Home Page - Specifications Image is either not visible or is not present on the DOM");
-			return false;
-		}
-	}
+//	public boolean clickSpecificationsImage() {
+//		if (specificationsImage.isDisplayed()) {
+//			click(specificationsImage);
+//			utils.log().info("Add Device Home Page - Clicked on Specifications Image");
+//			return true;
+//		} else {
+//			utils.log().info("Add Device Home Page - Specifications Image is either not visible or is not present on the DOM");
+//			return false;
+//		}
+//	}
 
 	public boolean clickDeviceDetailsText() {
 		if (deviceDetailsText.isDisplayed()) {
@@ -166,7 +179,7 @@ public class AddDeviceHomePage extends ParentClass implements Page {
 		}
 	}
 
-	public boolean clickSpecificationsIText() {
+	public boolean clickSpecificationsText() {
 		if (specificationsText.isDisplayed()) {
 			click(specificationsText);
 			utils.log().info("Add Device Home Page - Clicked on Specifications Text");
@@ -244,20 +257,20 @@ public class AddDeviceHomePage extends ParentClass implements Page {
 			else
 				utils.log().info("Device Details is not displayed");
 
-			if (deviceDetailsImage.isDisplayed())
-				utils.log().info("Device Details Image is displayed");
-			else
-				utils.log().info("Device Details Image is not displayed");
+//			if (deviceDetailsImage.isDisplayed())
+//				utils.log().info("Device Details Image is displayed");
+//			else
+//				utils.log().info("Device Details Image is not displayed");
 
 			if (specificationsText.isDisplayed())
 				utils.log().info("Specifications Text is displayed");
 			else
 				utils.log().info("Specifications is not displayed");
 
-			if (specificationsImage.isDisplayed())
-				utils.log().info("Specifications Image is displayed");
-			else
-				utils.log().info("Specifications Image is not displayed");
+//			if (specificationsImage.isDisplayed())
+//				utils.log().info("Specifications Image is displayed");
+//			else
+//				utils.log().info("Specifications Image is not displayed");
 
 			return true;
 		} catch (Exception e) {

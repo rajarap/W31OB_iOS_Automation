@@ -11,18 +11,22 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AppRatingDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView9") //Enjoying our SURFboard Central App?
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Enjoying our SURFboard Central App?\"]")
 	public MobileElement appRatingTitle; 
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView13") //Let us know how we are doing by rating us below. We welcome your feedback to help us improve.
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Enjoying our SURFboard Central App?\"]")
 	public MobileElement appRatingMessage; 
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/feedbackRatingBar") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Enjoying our SURFboard Central App?\"]")
 	public MobileElement appRatingStarBar;
 	
 	@AndroidFindBy (xpath = "//android.widget.RatingBar[@text='1.0']") 
@@ -56,12 +60,15 @@ public class AppRatingDialog extends ParentClass implements Page
 	public MobileElement reviewOnPlayStoreButton;// only for 4.0/5.0 rating
 			
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView10") //Tap the star to rate
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Tap Star to rate\"]")
 	public MobileElement tapTheStarToRate;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/remindMeLaterTxt") //REMIND ME LATER
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement remindMeLaterText;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgCancelDialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"crossClose\"]")
 	public MobileElement cancelDialogIcon; 
 		
 	public AppRatingDialog()

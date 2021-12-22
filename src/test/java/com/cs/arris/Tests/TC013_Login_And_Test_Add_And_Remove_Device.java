@@ -311,7 +311,7 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	@Test(priority = 5)
 	public void Verify_Specifications_Page() {
 		SoftAssert softhome5 = new SoftAssert();
-		softhome5.assertTrue(new AddDeviceHomePage().clickSpecificationsImage());
+		softhome5.assertTrue(new AddDeviceHomePage().clickSpecificationsText());
 		super.pause(5);
 		if(new AddDeviceHomePage().getDeviceSpecificationsPageObject().isAt())
 			softhome5.assertTrue(new AddDeviceHomePage().getDeviceSpecificationsPageObject().clickBackButton());
@@ -355,7 +355,7 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 
 		if(new AddDeviceHomePage().getUserGuidePageObject().isAt())
 			super.swipeUp();
-			softhome8.assertTrue(new AddDeviceHomePage().getUserGuidePageObject().clickBackButton());
+//			softhome8.assertTrue(new AddDeviceHomePage().getUserGuidePageObject().clickBackButton());
 		
 		softhome8.assertAll();
 	}
@@ -369,7 +369,7 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 		
 		if(new AddDeviceHomePage().getFAQPageObject().isAt())
 			super.swipeUp();
-			softhome9.assertTrue(new AddDeviceHomePage().getUserGuidePageObject().clickBackButton());
+//			softhome9.assertTrue(new AddDeviceHomePage().getUserGuidePageObject().clickBackButton());
 		
 		softhome9.assertAll();
 	}
@@ -381,7 +381,7 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 			softhome10.assertTrue(new AddDeviceHomePage().clickNavigationButton());
 			
 		if(new AddDeviceHomePage().getHamburgerMenuObject().isAt())
-			softhome10.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickRemoveDeviceeButton());
+//			softhome10.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickRemoveDeviceeButton());
 		
 		if(new AddDeviceHomePage().getRemoveDevicePageObject().isAt()) {
 			softhome10.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().selectDeviceToRemove());

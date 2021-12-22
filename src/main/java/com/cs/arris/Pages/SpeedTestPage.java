@@ -300,20 +300,15 @@ public class SpeedTestPage extends ParentClass implements Page
 	public boolean performSpeedTest()
 	{
 			utils.log().info("Label on button before speed Test: " + startSpeedTestButton.getText());
-			try {
-				clickStartSpeedTestButton();
-//				if(this.getAppRatingDialogObject().remindMeLaterText.isDisplayed())
-//					this.getAppRatingDialogObject().clickRemindMeLaterLink();
-				if(super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt").isDisplayed())
-					super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt").click();
-			}catch(Exception e) {
-	//			utils.log().info("App Rating Dialog did not appear");
-				}
-			
+			clickStartSpeedTestButton();
 			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
 			super.pause(100);
+			try {
+				if(this.getAppRatingDialogObject().remindMeLaterText.isDisplayed())
+					this.getAppRatingDialogObject().clickRemindMeLaterLink();
+				}catch(Exception e) {
+				utils.log().info("App Rating Dialog did not appear");}
 			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
-
 			return true;
 	}
 	
@@ -421,3 +416,16 @@ public class SpeedTestPage extends ParentClass implements Page
 		}
 	}
 }
+
+
+//try {
+//if(this.getAppRatingDialogObject().remindMeLaterText.isDisplayed())
+//	this.getAppRatingDialogObject().clickRemindMeLaterLink();
+//}catch(Exception e) {
+//utils.log().info("App Rating Dialog did not appear");
+//}
+
+//try {
+//	if(super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt").isDisplayed())
+//		click(super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt"));
+//}catch(Exception ep) {utils.log().info("App Rating Dialog did not appear");}

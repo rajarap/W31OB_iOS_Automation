@@ -601,10 +601,9 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 		utils.log().info("****************************************************");
 
 		this.getAllDevicesCount();
-		click(connectedDevicesExpandImage);
-
-		try {
+	
 			if (allDevicesCount > 0) {
+				click(connectedDevicesExpandImage);
 				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
@@ -661,7 +660,8 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 							if (e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']")
 									.isDisplayed()) {
-								utils.log().info("Device Upload Speed : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']").getText());
+								utils.log().info("Device Upload Speed : " + e.findElementByXPath(
+										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']").getText());
 							}
 						} catch (Exception exp) {
 							utils.log().info("Device Upload Speed data is not available ");
@@ -744,26 +744,21 @@ public class MainDeviceEthernetTabPage extends ParentClass implements Page {
 						}
 
 						utils.log().info("****************************************************");
+//						utils.log().info("                                                    ");
 					}
 					if (i >= 1)
 						super.swipeUp();
 						super.pause(3);
 				}
-			} else {
-				utils.log().info("Currently there are no devices connected to the main Router ");
+				super.swipeDown();
+				super.waitForVisibility(connectedDevicesExpandImage);
 				click(connectedDevicesExpandImage);
 				return true;
-				}
-			super.swipeDown();
-			click(connectedDevicesExpandImage);
-			return true;
-		} catch (Exception ex) {
-			utils.log().info("Currently there are no devices connected to the main Router ");
-			click(connectedDevicesExpandImage);
-			return true;
-		}
+			} else {
+				utils.log().info("Currently there are no devices connected to the main Router ");
+				return true;
+			}
 	}
-
 
 	public boolean verifyMainRouterDetails() {
 		try {

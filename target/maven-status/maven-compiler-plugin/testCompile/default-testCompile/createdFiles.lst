@@ -13,7 +13,6 @@ com/cs/arris/Workflows/TC01_EC_0001_1201_Disconnect_Bluetooth_On_Mobile_Workflow
 com/cs/arris/Workflows/TC61_Login_And_Verify_ParentalControl_Workflow.class
 com/cs/arris/Tests/TC008_Login_And_Test_Hamburger_Menu_And_Settings_About_Help_Page.class
 com/cs/arris/Tests/TC66_Verify_Hamburger_SettingsPage_Test.class
-com/cs/arris/COR/COR_EC_0005_1200_Disconnect_Bluetooth_On_Mobile_Device.class
 com/cs/arris/Tests/TC002_Test_Signin_And_Onboard.class
 com/cs/arris/Workflows/HomePage_Workflow.class
 com/cs/arris/Tests/TC03_Complex_Test.class

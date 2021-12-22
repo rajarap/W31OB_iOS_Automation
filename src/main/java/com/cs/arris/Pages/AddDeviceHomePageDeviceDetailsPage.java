@@ -12,41 +12,53 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceHomePageDeviceDetailsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NavigationBar_Title\"]")
 	public MobileElement deviceDetailsTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/close")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button\"]")
 	public MobileElement closeButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_details")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_TitleLabel\"]")
 	public MobileElement deviceDetailsText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_product")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_ProductModelNo.\"]")
 	public MobileElement productNumber;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_product_details")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_T25\"]")
 	public MobileElement productDetails;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_service")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_ServiceProvider\"]")
 	public MobileElement serviceProviderText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_service_details")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_Xfinity\"]")
 	public MobileElement serviceProviderName;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_hardware_spec")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_HardwareSpec\"]")
 	public MobileElement hardwareSpecText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_hardware_spec_details")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_DOCSIS3.1\"]")
 	public MobileElement hardwareSpecDetails;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_ethernet_ports")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_EthernetPorts\"]")
 	public MobileElement ethernetPortText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_ethernet_ports_details")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Modem_Device_Detail_Screen_Label_Auto\"]")
 	public MobileElement ethernetPortDetails;
 
 	public AddDeviceHomePageDeviceDetailsPage() {

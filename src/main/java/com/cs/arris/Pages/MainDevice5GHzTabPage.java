@@ -597,25 +597,25 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 
 	// To verify the details of all connected devices
 	public boolean verifyConnectedDeviceDetails() {
-		utils.log().info("                                        ");
-		utils.log().info("****************************************");
-		utils.log().info("Device Count Validations on 5.0GHz Tab  ");
-		utils.log().info("****************************************");
+		utils.log().info("                                                       ");
+		utils.log().info("********************************************************");
+		utils.log().info("Details of 5.0GHz Devices Connected to the Main Router  ");
+		utils.log().info("********************************************************");
 
 		this.getAllDevicesCount();
-		click(connectedDevicesExpandImage);
-
-		try {
-			if (allDevicesCount > 0) {
+		
+		if (allDevicesCount > 0) 
+		{
+			click(connectedDevicesExpandImage);
 				for (int i = 1; i <= allDevicesCount; i++) {
 						utils.log().info("Connected Device  : " + i);
 						utils.log().info("--------------------------");
 
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
-									+ i + "]");
+							"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
 
-					for (MobileElement e : entity) {
+					for (MobileElement e : entity) 
+					{
 						try {
 							if (e.findElementByXPath(
 									"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
@@ -632,9 +632,6 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 								utils.log().info("Device Name: " + e.findElementByXPath(
 										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
 										.getText());
-							editedDevName = e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
-									.getText();
 						} catch (Exception exp) {
 							utils.log().info("Device Name is not available ");
 						}
@@ -642,15 +639,11 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 						try {
 							if (e.findElementByXPath(
 									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
-									.isDisplayed()) {
+									.isDisplayed()) 
 								utils.log().info("Device Signal Strength : " + e.findElementByXPath(
 										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
 										.getText());
-								signal.add(e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
-										.getText());
-							}
-						} catch (Exception exp) {
+							} catch (Exception exp) {
 							utils.log().info("Device Signal Strength data is not available ");
 						}
 
@@ -761,20 +754,17 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 						super.swipeUp();
 						super.pause(3);
 				}
-			} else {
-				utils.log().info("Currently there are no devices connected to the main Router ");
+				super.swipeDown();
+				super.waitForVisibility(connectedDevicesExpandImage);
 				click(connectedDevicesExpandImage);
 				return true;
-				}
-			super.swipeDown();
-			click(connectedDevicesExpandImage);
-			return true;
-		} catch (Exception ex) {
-			utils.log().info("Currently there are no devices connected to the main Router");
-			click(connectedDevicesExpandImage);
-			return true;
-		}
+			} else {
+				utils.log().info("Currently there are no devices connected to the main Router ");
+				return true;
+			}
 	}
+
+
 
 	public boolean verifyMainRouterDetails() {
 		try {
@@ -873,8 +863,7 @@ public class MainDevice5GHzTabPage extends ParentClass implements Page {
 				utils.log().info("Restart Router Button is not displayed");
 
 			click(mainRouterExpandImage);
-			super.swipeUp();
-
+			super.swipeDown();
 			return true;
 		} catch (Exception e) {
 			utils.log().info("Issue when verifying Main Router Details");

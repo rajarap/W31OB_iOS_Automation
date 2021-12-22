@@ -72,9 +72,9 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		  }).grantPermissionsPage(grantPermission -> {
 			  grantPermission.clickContinueButton();
 		  }).deviceLocationPage(deviceLocation -> {
-			  deviceLocation.clickOnlyThisTimeLink();
+			  deviceLocation.clickWhileUsingAppLink();
 		  }).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
-			  accessResoucesOnDevice.clickAllowLink();
+			  accessResoucesOnDevice.clickOkButton();
 		  }).selectYourDevicePage(selectDevice -> {
 			  selectDevice.selectSurfboardMaxOption();
 			  selectDevice.clickNextButton();
@@ -83,6 +83,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  selectDevice2.clickNextButton();
 			  super.pause(3);
 		  }).welcomeSigninPage(signin -> {
+			  signin.clearEmailAddress();
 			  signin.enterEmailAddress(email);
 			  signin.clickSigninButton();
 			  super.pause(12);
@@ -90,20 +91,15 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  passCode = getOTP.getValidOTP();
 	  		}).enterOTPPage(otpverify -> {
 			  otpverify.enterValidPassCode(passCode);
+			  super.pause(5);
 	  		 }).codeVerifiedPage(codeVerified -> {
 				  codeVerified.getCodeVerifiedText();
 				  codeVerified.clickNextButton();
-				  super.pause(3);
-				  try
-				  {
-					  if(codeVerified.continueOnBoardingButton.isDisplayed())
-					  {
-						  codeVerified.clickContinueOnboardingButton();
-					  }
-				  }catch(Exception e)
-				  {
-					  e.getMessage();
-				  }
+				  super.pause(35);
+				  try{
+					  if(codeVerified.continueOnBoardingButton.isDisplayed()){
+						  codeVerified.clickContinueOnboardingButton();}
+				  }catch(Exception e){ e.getMessage();}
 		  }).optimizeYourNetworkPage(optimize -> {
 			  optimize.clickSkipOptimizeButton();
 		  }).setUpHomeNetworkPage(homeNetwork -> {
@@ -112,30 +108,44 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  unpackBox.clickNextButton();
 		  }).plugInYourMaxRouterPage(pluginRouter -> {
 			  pluginRouter.clickNextButton();
-			  super.pause(20);
+			  super.pause(5);
+		  }).connectBlueToothDialog(bluetooth -> {
+			  bluetooth.clickOkButton();
+			  super.pause(5);
 		  }).maxRouterConnectedToMobilePage(connectedRouterToMobile -> {
 			  connectedRouterToMobile.clickNextButton();
-			  super.pause(15);
+			  super.pause(150);
+			  if(connectedRouterToMobile.getTryAgainButton()) {
+				  utils.log().info("Connect the mAX Router to Wifi manually");
+				  super.pause(100);
+				  connectedRouterToMobile.clickTryAgainButton();
+				  super.pause(5);
+			  }else {
+				  utils.log().info("Try Again button is not displayed");
+			  }
+//		  }).routerUnableToConnectToInternet(noInternet -> {
+//			  if(noInternet.getTryAgainButton()) {
+//				  utils.log().info("Connect the mAX Router to Wifi manually");
+//				  super.pause(90);
+//				  noInternet.clickTryAgainButton();}
 			//add 0002-1304 - Internet Connection Not available on Router
 		  }).maxRouterConnectedToInternetPage(connecedRouterToInternet -> {
 			  connecedRouterToInternet.clickNextButton();
-			  super.pause(40);
+			  super.pause(20);
 		  }).systemFirmwareUpdatePage(firmwareUpdate -> {
 			  firmwareUpdate.clickNextButton();
 			  super.pause(30);
-		  }).warrantyAndSupportPage(warrantyAndSupport -> {
+		  }).warrantyAndSupportPage(warrantyAndSupport -> { 
 			  warrantyAndSupport.clickContinueButton();
 		  }).nameYourNetworkPage(nameYourNetwork -> {
 			  nameYourNetwork.enterSSIDName(this.ssidName);
 			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
+			  nameYourNetwork.clickDoneLink();
 			  nameYourNetwork.clickNextButton();
-			  super.pause(25);
+			  super.pause(50);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
-			  super.pause(15);
-			  connectionRequired.turnOnRouterWifi(this.ssidName, this.ssidpass, this.udid);
-			  super.pause(15);
-			  connectionRequired.clickContinue();
-			  super.pause(15);
+			  connectionRequired.clickJoinButton();
+			  super.pause(30);
 		  }).congratulations(congrats -> {
 			  congrats.clickContinueButton();
 			  super.pause(5);
@@ -148,8 +158,23 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		  }).networkOptimization(optimization -> {
 			  optimization.clickOkButton();
 			  super.pause(25);
-	  	  }).homePage(homepage -> {		//Network optimization dialog2 is included inside homepage
-	  		  homepage.clickOkButton();
+	  	  }).homePage(homepage -> {	
+	  		super.pause(25);
+	  		try {
+	  			if(homepage.getAppRatingDialogObject().isAt())
+		  			homepage.getAppRatingDialogObject().clickRemindMeLaterLink();
+	  		}catch(Exception e) {};
+	  		try {
+	  			if(homepage.cloudIcon1.isDisplayed() || homepage.remoteAccessNotAvailableLink.isDisplayed())
+		  			homepage.connectToSSID(this.ssidName);
+	  		}catch(Exception e) {};
 		  });
 	  }
 }
+
+
+
+//	try {
+//	if(homepage.getRATObject().isAt())
+//		homepage.getRATObject().clickOkButton();
+//}catch(Exception e) {};

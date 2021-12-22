@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class FooterIconsPage extends ParentClass implements Page
 {
@@ -22,6 +23,7 @@ public class FooterIconsPage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.LinearLayout[@bounds='[0,2000][355,2042]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/home_view") 
 	})
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"TabBar_TitleHome\"]")
 	public MobileElement homeButton; 
 	
 	@AndroidFindAll({
@@ -43,6 +45,7 @@ public class FooterIconsPage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.LinearLayout[@bounds='[362,2000][717,2042]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/network_view") 
 	})
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"TabBar_TitleNetwork\"]")
 	public MobileElement networkButton; 
 	
 	@AndroidFindAll({
@@ -64,6 +67,7 @@ public class FooterIconsPage extends ParentClass implements Page
 		@AndroidBy (xpath = "//android.widget.LinearLayout[@bounds='[724,2000][1080,2042]']"),
 		@AndroidBy (id = "com.arris.sbcBeta:id/parental_view") 
 	})
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"TabBar_TitleParental\"]")
 	public MobileElement parentalButton; 
 	
 	@AndroidFindAll({

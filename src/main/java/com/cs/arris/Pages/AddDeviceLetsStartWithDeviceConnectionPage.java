@@ -12,35 +12,44 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceLetsStartWithDeviceConnectionPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Start_Device_Connection_Screen_TitleLabel_LetsStartWithDeviceConnection\"]")
 	public MobileElement StartDeviceConnectionTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca")
 	public MobileElement cloudIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/description_text1")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Start_Device_Connection_Screen_Label_Step1\"]")
 	public MobileElement descriptionText1;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/description_text2")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"2. Connect the coax cable behind the\"]")
 	public MobileElement descriptionText2;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/description_text3")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"device being installed \"]")
 	public MobileElement descriptionText3;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Start_Device_Connection_Screen_Label_Step3\"]")
 	public MobileElement descriptionText4;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_next")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Start_Device_Connection_Screen_Button_Next\"]")
 	public MobileElement nextButton;
 
 	public AddDeviceLetsStartWithDeviceConnectionPage() {

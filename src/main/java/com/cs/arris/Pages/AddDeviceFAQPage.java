@@ -12,33 +12,36 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceFAQPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvTitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"FAQ_Screen_NavigationBarTitle\"]")
 	public MobileElement FAQTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivBackButton")
-	public MobileElement backIcon;
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivBackButton")
+//	public MobileElement backIcon;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"FAQ_Screen_Button_NavigationBarHelp\"]")
 	public MobileElement helpIcon;
 
 	public AddDeviceFAQPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public boolean clickBackButton() {
-		if (backIcon.isDisplayed()) {
-			click(backIcon);
-			utils.log().info("Clicked on Back Button");
-			return true;
-		} else {
-			utils.log().info("Back Button is not displayed");
-			return false;
-		}
-	}
+//	public boolean clickBackButton() {
+//		if (backIcon.isDisplayed()) {
+//			click(backIcon);
+//			utils.log().info("Clicked on Back Button");
+//			return true;
+//		} else {
+//			utils.log().info("Back Button is not displayed");
+//			return false;
+//		}
+//	}
 
 	public boolean clickHelpButton() {
 		if (helpIcon.isDisplayed()) {

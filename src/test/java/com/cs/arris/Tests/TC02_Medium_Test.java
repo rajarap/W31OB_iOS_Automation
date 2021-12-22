@@ -222,7 +222,6 @@ public class TC02_Medium_Test extends ParentClass
 		@Test(priority = 10, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 		public void Verify_Edit_Connected_Device_Name_On_All_Tab_Page() {
 			SoftAssert softmain10 = new SoftAssert();
-			if (new MainDeviceAllTabPage().allDevicesCount > 0) {
 				softmain10.assertTrue(new MainDeviceAllTabPage().clickDeviceName(1));
 				if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
 				{
@@ -230,9 +229,6 @@ public class TC02_Medium_Test extends ParentClass
 					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName());
 					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
 				}
-			}else {
-				utils.log().info("There are no devices connected to the Main Router ");
-			}
 			softmain10.assertAll();
 		}
 		

@@ -12,37 +12,44 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_product_selection")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Screen_TitleLabel_SelectYourDeviceBelow\"]")
 	public MobileElement selectDeviceTitle;
 
 	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ic_back_icon']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca")
 	public MobileElement cloudIcon;
 
 	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/need_help']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(xpath = "//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup[1]/android.widget.GridView/android.view.ViewGroup[5]/android.widget.RelativeLayout/android.widget.ImageView[1]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_CM_Selection_Screen_Image_t25_image\"]")
 	public MobileElement t25RoutersImage;
 
 	@AndroidFindBy(xpath = "//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup[1]/android.widget.GridView/android.view.ViewGroup[5]/android.widget.RelativeLayout/android.widget.ImageView[2]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_CM_Selection_Screen_Image_deselect_T25\"]")
 	public MobileElement t25RadioButton;
 
-	//@AndroidFindBy(xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_product_next']")
-	//@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_product_next")
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_product_selection_next")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Select_Your_Device_Screen_Button_Next\"]")
 	public MobileElement nextButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/product_selection_description")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Screen_Label_ThisAppSupportsTheProductsListedAbove\"]")
 	public MobileElement productSelectionDescription;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_app_store_link")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"App Store Link\"]")
 	public MobileElement playStoreLink;
 
 	public AddDeviceSelectDevice2Page() {

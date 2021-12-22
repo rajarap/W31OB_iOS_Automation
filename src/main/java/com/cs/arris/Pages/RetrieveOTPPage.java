@@ -22,8 +22,10 @@ public class RetrieveOTPPage  extends ParentClass
 {
 	TestUtils utils = new TestUtils();
 	String hostName = "smtp.gmail.com";
-	String username = "prabhu.rajarathinam@mobileprogramming.com";
-	String password = "RI11**ya"; 
+	String username;
+	String password; 
+//	String username = "";
+//	String password = ""; 
 	int messageCount;
 	int newMessageCount;
 	int unreadMsgCount;

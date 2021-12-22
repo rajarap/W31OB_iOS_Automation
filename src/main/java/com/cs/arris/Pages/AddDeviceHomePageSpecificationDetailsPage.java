@@ -12,15 +12,19 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceHomePageSpecificationDetailsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvTitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Specifications\"]")
 	public MobileElement specificationsTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivBackButton")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backButton;
+	
 
 	public AddDeviceHomePageSpecificationDetailsPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

@@ -12,32 +12,41 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceActivateYourDeviceWithServiceProviderPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_register_device")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activate_Device_Screen_TitleLabel_ActivateYourDevice\"]")
 	public MobileElement activateDeviceTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_description")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activate_Device_Screen_SubTitleLabel_ActivationIsRequired\"]")
 	public MobileElement description1;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_second_description")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activate_Device_Screen_Label_PleaseChooseTheMethodToRegister\"]")
 	public MobileElement description2;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_device_activated")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activate_Device_Screen_Label_PressSkipButtonBelow\"]")
 	public MobileElement description3;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/btnCallService")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Activate_Device_Screen_Button_ContactServiceProvider\"]")
 	public MobileElement contactServiceProviderButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/btnSelfActivated")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Activate_Device_Screen_Button_SelfActivate\"]")
 	public MobileElement selfActivateButton;
 
 //	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_skip")
@@ -49,6 +58,7 @@ public class AddDeviceActivateYourDeviceWithServiceProviderPage extends ParentCl
 		@AndroidBy (xpath = "//android.widget.Button[@text='SKIP"),
 		@AndroidBy (xpath = "//android.widget.Button[@bounds='[102,1844][978,1981]']"),
 	})
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Activate_Device_Screen_Button_Skip\"]")
 	public MobileElement skipButton;
 
 	public AddDeviceActivateYourDeviceWithServiceProviderPage() {
@@ -150,8 +160,7 @@ public class AddDeviceActivateYourDeviceWithServiceProviderPage extends ParentCl
 			if (description3.isDisplayed())
 				utils.log().info(description3.getText() + " text is displayed");
 			else
-				utils.log().info(
-						"If the device has already been activated, press Skip button below Text is not displayed");
+				utils.log().info("If the device has already been activated, press Skip button below Text is not displayed");
 
 			if (contactServiceProviderButton.isDisplayed())
 				utils.log().info(skipButton.getText() + " button is displayed");

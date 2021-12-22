@@ -138,23 +138,22 @@ public class TC001_Test_SignUp_And_Onboard extends ParentClass
 			  nameYourNetwork.clickNextButton();
 			  super.pause(25);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
-			  super.pause(15);
-			  connectionRequired.turnOnRouterWifi(this.ssidName, this.ssidpass, this.udid);
-			  super.pause(15);
-			  connectionRequired.clickContinue();
-			  super.pause(20);
+			  super.pause(5);
+			  connectionRequired.clickJoinButton();
+			  super.pause(30);
 		  }).congratulations(congrats -> {
 			  congrats.clickContinueButton();
 			  super.pause(5);
 		  }).setupWifi(setupwifi ->{
 			  setupwifi.clickskipTutorialButton();
+			  super.pause(5);
 		  }).installSatellite(insatellite -> {
 			  insatellite.clickInstallLaterButton();
 			  super.pause(5);
 		  }).networkOptimization(optimization -> {
 			  optimization.clickOkButton();
-			  super.pause(5);
-	  		}).homePage(homepage -> {
+			  super.pause(25);
+	  	  }).homePage(homepage -> {	
 			  homepage.getSSIDName();			  
 		  });
 	}

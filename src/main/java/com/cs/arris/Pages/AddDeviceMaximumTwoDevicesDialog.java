@@ -12,20 +12,25 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AddDeviceMaximumTwoDevicesDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_title")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Add Device\"])[2]")
 	public MobileElement addDeviceTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_description")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"You have added maximum two devices.\"]")
 	public MobileElement description;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"closeIcon\"]")
 	public MobileElement closeIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/okButton")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"OK\"]")
 	public MobileElement okButton;
 
 	public AddDeviceMaximumTwoDevicesDialog() {

@@ -76,6 +76,7 @@ com/cs/arris/Pages/NetworkLANIPReservationPage.class
 com/cs/arris/Pages/EnableBlueToothPage.class
 com/cs/arris/Pages/MainDeviceAllTabPage.class
 com/cs/arris/Pages/MainRouterDetailsHelpPage.class
+com/cs/arris/Pages/HomePageRATTroubleShootPage.class
 com/cs/arris/Pages/DevicesHelpPage.class
 com/cs/arris/Pages/NetworkDevicePrioritySettingsAddDevicePage.class
 com/cs/arris/Pages/GrantPermissionsPage.class
@@ -90,6 +91,7 @@ com/cs/arris/Pages/AddDeviceSuccessPage.class
 com/cs/arris/Pages/NetworkLANDHCPLeaseTimeHelpPage.class
 com/cs/arris/Pages/ParentalControlUserProfileAddRulePage.class
 com/cs/arris/Pages/NetworkGeneralSettingsBridgeModeInfoDialog.class
+com/cs/arris/Pages/ConnectToBlueToothDialog.class
 com/cs/arris/Pages/SystemFirmwareUpdatePage.class
 com/cs/arris/Pages/TurnOnBluetoothDialog.class
 com/cs/arris/Pages/NetworkGeneralSettingsHelpPage.class
