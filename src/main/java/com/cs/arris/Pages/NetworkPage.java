@@ -13,46 +13,47 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_NavigationBar_TitleLabel\"]")
 	public MobileElement networkTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
-	public MobileElement backIcon;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_plus_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_Expand\"]")
 	public MobileElement expandButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_MainWifi\"]")
+	public MobileElement mainWifiLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Name (SSID)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_SSID\"]")
 	public MobileElement networkNameSSIDLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_ssid")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Screen_TextField_SSID\"]")
 	public MobileElement ssidName;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_ssid")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_SSID\"]")
 	public MobileElement editSSIDName;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Password']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Password\"]")
 	public MobileElement passwordLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_password_show_hide")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EyeIcon\"]")
 	public MobileElement showPasswordIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_password")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Settings_Screen_TextField_Password\"]")
 	public MobileElement showPassword;
 
 
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_wifi_network_text")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_GuestWifi\"]")
 	public MobileElement guestWifiNetworkLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/enable_guest_wifi_text")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_GuestEnable\"]")
 	public MobileElement enableDisableGuestNetwork;
 
 //	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='false']")
@@ -61,44 +62,56 @@ public class NetworkPage extends ParentClass implements Page {
 //	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='true']")
 //	public MobileElement enableGuestNetworkToggleButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable']")
-	public MobileElement guestNetworkToggleButton;
+//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable']")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkToggleButton;
+//
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_plus_icon")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkExpandIcon;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Name (SSID)']")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkSIDLabel;
+//	
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_ssid")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkSSIDName;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Password']")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkPasswordLabel;
+//	
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_password")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkPassword;
+//	
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_password_show_hide")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkShowPasswordIcon;
+//	
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_edit_icon")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkEditIcon;
+//	
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/share_guest_network")
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
+//	public MobileElement guestNetworkShareCredentialsButton;
+	
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_plus_icon")
-	public MobileElement guestNetworkExpandIcon;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Name (SSID)']")
-	public MobileElement guestNetworkSIDLabel;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_ssid")
-	public MobileElement guestNetworkSSIDName;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Password']")
-	public MobileElement guestNetworkPasswordLabel;
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_password")
-	public MobileElement guestNetworkPassword;
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_password_show_hide")
-	public MobileElement guestNetworkShowPasswordIcon;
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_edit_icon")
-	public MobileElement guestNetworkEditIcon;
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/share_guest_network")
-	public MobileElement guestNetworkShareCredentialsButton;
-	
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/extended_wifi_network_text")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Extended\"]")
 	public MobileElement extendedWifiSettingsLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/extended_network_plus_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_ExtendedExpand\"]")
 	public MobileElement extendedWifiExpandIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/enable_wideband_wifi_text")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Extended5g\"]")
 	public MobileElement fiveGHzWidebandModeLabel;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/wideband_info_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_ExtendedBand\"]")
 	public MobileElement fiveGHzWidebandInfoIcon;
 	
 //	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='false']")
@@ -107,51 +120,63 @@ public class NetworkPage extends ParentClass implements Page {
 //	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='true']")
 //	public MobileElement enableWidebandModeToggleButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchExtended\"]")
 	public MobileElement widebandModeToggleButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enables DFS (up to) 160MHz channels']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_ExtendedEnableDFS\"]")
 	public MobileElement enableDFSLabel;
 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_BandTitle\"]")
+	public MobileElement bandSteeringModeLabel;
+
+	public MobileElement bandSteeringModeInfoIcon;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Band\"]")
+	public MobileElement periodicCheckLabel;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchBand\"]")
+	public MobileElement bandSteeringModeToggleButton;
+	
+	
 
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Settings']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_SettingsTitle\"]")
 	public MobileElement networkSettingsLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_setting_plus_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_SettingsExpand\"]")
 	public MobileElement networkSettingsExpandIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='LAN IP Address']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_SettingsLANIPTitle\"]")
 	public MobileElement lanIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_address_close")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_SettingsLANIP\"]")
 	public MobileElement lanIPAddress;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Gateway IP Address']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_SettingsGatewayIPTitle\"]")
 	public MobileElement gatewayIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/geteway_ip_address_close")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_SettingsGatewayIP\"]")
 	public MobileElement gatewayIPAddress;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='General Settings']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_General\"]")
 	public MobileElement generalSettingsLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='WAN Settings']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Wan\"]")
 	public MobileElement wanSettingsLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='LAN Settings']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Lan\"]")
 	public MobileElement lanSettingsLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Device Priority Settings']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Priority\"]")
 	public MobileElement devicePrioritySettings;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Time Zone']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_TimeZoneTitle\"]")
 	public MobileElement timeZone;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/time_zone_data")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Timezone\"]")
 	public MobileElement gmt530;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/speed_test_view")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Test\"]")
 	public MobileElement testMyConnectionSpeedButton;
 
 
@@ -236,17 +261,6 @@ public class NetworkPage extends ParentClass implements Page {
 	}
 	
 	
-	public boolean clickBackButton() {
-		if (backIcon.isDisplayed()) {
-			click(backIcon);
-			utils.log().info("Clicked on Back Button");
-			return true;
-		} else {
-			utils.log().info("Back Button is not displayed");
-			return false;
-		}
-	}
-
 	public boolean clickHelpButton() {
 		if (helpIcon.isDisplayed()) {
 			click(helpIcon);
@@ -288,35 +302,35 @@ public class NetworkPage extends ParentClass implements Page {
 		}
 	}
 	
-	public boolean clickGuestNetworkExpandButton() {
-		if (guestNetworkExpandIcon.isDisplayed()) {
-			click(guestNetworkExpandIcon);
-			return true;
-		}else {
-			utils.log().info("Guest Network Expand Button is not displayed");
-			return false;
-		}
-	}
-	
-	public boolean clickGuestNetworkShowPasswordButton() {
-		if (guestNetworkShowPasswordIcon.isDisplayed()) {
-			click(guestNetworkShowPasswordIcon);
-			return true;
-		}else {
-			utils.log().info("Show Password Icon is not displayed");
-			return false;
-		}
-	}
-	
-	public boolean clickGuestNetworkEditdButton() {
-		if (guestNetworkEditIcon.isDisplayed()) {
-			click(guestNetworkEditIcon);
-			return true;
-		}else {
-			utils.log().info("Edit Icon is not displayed");
-			return false;
-		}
-	}
+//	public boolean clickGuestNetworkExpandButton() {
+//		if (guestNetworkExpandIcon.isDisplayed()) {
+//			click(guestNetworkExpandIcon);
+//			return true;
+//		}else {
+//			utils.log().info("Guest Network Expand Button is not displayed");
+//			return false;
+//		}
+//	}
+//	
+//	public boolean clickGuestNetworkShowPasswordButton() {
+//		if (guestNetworkShowPasswordIcon.isDisplayed()) {
+//			click(guestNetworkShowPasswordIcon);
+//			return true;
+//		}else {
+//			utils.log().info("Show Password Icon is not displayed");
+//			return false;
+//		}
+//	}
+//	
+//	public boolean clickGuestNetworkEditdButton() {
+//		if (guestNetworkEditIcon.isDisplayed()) {
+//			click(guestNetworkEditIcon);
+//			return true;
+//		}else {
+//			utils.log().info("Edit Icon is not displayed");
+//			return false;
+//		}
+//	}
 	
 	public boolean clickfiveGHzWidebandInfoIcon() {
 		if (fiveGHzWidebandInfoIcon.isDisplayed()) {
@@ -351,29 +365,29 @@ public class NetworkPage extends ParentClass implements Page {
 		}
 	}
 	
-	public boolean enableGuestWifiNetwork() {
-		if (guestNetworkToggleButton.isSelected()) {
-			utils.log().info("Enable/Disable Guest Network is already enabled");
-			return true;
-		}else {
-			click(guestNetworkToggleButton);
-			super.pause(20);
-			utils.log().info("Enable/Disable Guest Network is now enabled");
-			return true;
-		}
-	}
-
-	public boolean disableGuestWifiNetwork() {
-		if (!(guestNetworkToggleButton.isSelected())) {
-			utils.log().info("Enable/Disable Guest Network is already disabled");
-			return true;
-		} else {
-			click(guestNetworkToggleButton);
-			super.pause(20);
-			utils.log().info("Enable/Disable Guest Network is now disabled");
-			return true;
-		}
-	}
+//	public boolean enableGuestWifiNetwork() {
+//		if (guestNetworkToggleButton.isSelected()) {
+//			utils.log().info("Enable/Disable Guest Network is already enabled");
+//			return true;
+//		}else {
+//			click(guestNetworkToggleButton);
+//			super.pause(20);
+//			utils.log().info("Enable/Disable Guest Network is now enabled");
+//			return true;
+//		}
+//	}
+//
+//	public boolean disableGuestWifiNetwork() {
+//		if (!(guestNetworkToggleButton.isSelected())) {
+//			utils.log().info("Enable/Disable Guest Network is already disabled");
+//			return true;
+//		} else {
+//			click(guestNetworkToggleButton);
+//			super.pause(20);
+//			utils.log().info("Enable/Disable Guest Network is now disabled");
+//			return true;
+//		}
+//	}
 
 	public boolean clickGeneralSettings() {
 		if (generalSettingsLabel.isDisplayed()) {
@@ -441,11 +455,6 @@ public class NetworkPage extends ParentClass implements Page {
 			else
 				utils.log().info("Network title text is not displayed");
 
-			if (backIcon.isDisplayed())
-				utils.log().info("Back Icon is displayed ");
-			else
-				utils.log().info("Back Icon is not displayed");
-
 			if (helpIcon.isDisplayed())
 				utils.log().info("Help Icon is displayed");
 			else
@@ -456,6 +465,11 @@ public class NetworkPage extends ParentClass implements Page {
 				click(expandButton);} 
 			else
 				utils.log().info("Main WiFi expand button is not displayed");
+			
+			if (mainWifiLabel.isDisplayed())
+				utils.log().info("Main Wi-Fi Network Label is displayed ");
+			else
+				utils.log().info("Main Wi-Fi Network Label is not displayed");
 
 			if (networkNameSSIDLabel.isDisplayed() && ssidName.isDisplayed())
 				utils.log().info(networkNameSSIDLabel.getText() + " : " + ssidName.getText());
@@ -483,56 +497,56 @@ public class NetworkPage extends ParentClass implements Page {
 			else
 				utils.log().info("Enable/disable Guest Network label is not displayed");
 			
-			try {
-				if (!(guestNetworkToggleButton.isSelected()))
-					utils.log().info("Guest Newtork toggle button is disabled");
-			}catch(Exception e) {utils.log().info("Guest Newtork toggle button is enabled");}
-			
-			try {
-				if (guestNetworkExpandIcon.isDisplayed()) 
-				{
-					utils.log().info("Guest Newtork expand button is displayed");
-					click(guestNetworkExpandIcon);
-					if (guestNetworkSIDLabel.isDisplayed())
-						utils.log().info(guestNetworkSIDLabel.getText() + " label is displayed");
-					else
-						utils.log().info("Network Name (SSID) label is not displayed");
-
-					if (guestNetworkSSIDName.isDisplayed())
-						utils.log().info("Guest Newtork SSID Name is : " + guestNetworkSSIDName.getText());
-					else
-						utils.log().info("uest Newtork SSID Name is not displayed");
-					
-					if (guestNetworkPasswordLabel.isDisplayed())
-						utils.log().info(guestNetworkPasswordLabel.getText() + " label is displayed");
-					else
-						utils.log().info("PAssword label is not displayed");
-	
-					if (guestNetworkPassword.isDisplayed())
-						utils.log().info("Guest Newtork SSID Password is : " + guestNetworkPassword.getText());
-					else
-						utils.log().info("uest Newtork SSID Name is not displayed");
-
-					if (guestNetworkShowPasswordIcon.isDisplayed()) {
-						utils.log().info("Show Password Icon is displayed");
-						click(guestNetworkShowPasswordIcon);
-						click(guestNetworkShowPasswordIcon);}  //1
-					else
-						utils.log().info("Show Password Icon is not displayed");
-					
-					if (guestNetworkEditIcon.isDisplayed())
-						utils.log().info("Edit Icon is displayed");
-					else
-						utils.log().info("Edit Icon is not displayed");
-					
-					if (guestNetworkShareCredentialsButton.isDisplayed())
-						utils.log().info("SHARE CREDENTIALS button is displayed");
-					else
-						utils.log().info("SHARE CREDENTIALS button is not displayed");		
-					
-						click(guestNetworkExpandIcon);
-					}  
-				}catch(Exception e) {utils.log().info("Guest Newtork Settings expand button is not displayed");}
+//			try {
+//				if (!(guestNetworkToggleButton.isSelected()))
+//					utils.log().info("Guest Newtork toggle button is disabled");
+//			}catch(Exception e) {utils.log().info("Guest Newtork toggle button is enabled");}
+//			
+//			try {
+//				if (guestNetworkExpandIcon.isDisplayed()) 
+//				{
+//					utils.log().info("Guest Newtork expand button is displayed");
+//					click(guestNetworkExpandIcon);
+//					if (guestNetworkSIDLabel.isDisplayed())
+//						utils.log().info(guestNetworkSIDLabel.getText() + " label is displayed");
+//					else
+//						utils.log().info("Network Name (SSID) label is not displayed");
+//
+//					if (guestNetworkSSIDName.isDisplayed())
+//						utils.log().info("Guest Newtork SSID Name is : " + guestNetworkSSIDName.getText());
+//					else
+//						utils.log().info("uest Newtork SSID Name is not displayed");
+//					
+//					if (guestNetworkPasswordLabel.isDisplayed())
+//						utils.log().info(guestNetworkPasswordLabel.getText() + " label is displayed");
+//					else
+//						utils.log().info("PAssword label is not displayed");
+//	
+//					if (guestNetworkPassword.isDisplayed())
+//						utils.log().info("Guest Newtork SSID Password is : " + guestNetworkPassword.getText());
+//					else
+//						utils.log().info("uest Newtork SSID Name is not displayed");
+//
+//					if (guestNetworkShowPasswordIcon.isDisplayed()) {
+//						utils.log().info("Show Password Icon is displayed");
+//						click(guestNetworkShowPasswordIcon);
+//						click(guestNetworkShowPasswordIcon);}  //1
+//					else
+//						utils.log().info("Show Password Icon is not displayed");
+//					
+//					if (guestNetworkEditIcon.isDisplayed())
+//						utils.log().info("Edit Icon is displayed");
+//					else
+//						utils.log().info("Edit Icon is not displayed");
+//					
+//					if (guestNetworkShareCredentialsButton.isDisplayed())
+//						utils.log().info("SHARE CREDENTIALS button is displayed");
+//					else
+//						utils.log().info("SHARE CREDENTIALS button is not displayed");		
+//					
+//						click(guestNetworkExpandIcon);
+//					}  
+//				}catch(Exception e) {utils.log().info("Guest Newtork Settings expand button is not displayed");}
 			
 
 			if (extendedWifiExpandIcon.isDisplayed()) {
@@ -560,6 +574,16 @@ public class NetworkPage extends ParentClass implements Page {
 				if (!(widebandModeToggleButton.isDisplayed()))
 					utils.log().info("Extended Wifi toggle button is disabled");
 			}catch(Exception e) {utils.log().info("Extended Wifi toggle button is enabled");}
+			
+			if (bandSteeringModeLabel.isDisplayed())
+				utils.log().info(bandSteeringModeLabel.getText() + " label is displayed");
+			else
+				utils.log().info("Band Steering Mode label is not displayed");
+			
+			if (periodicCheckLabel.isDisplayed())
+				utils.log().info(periodicCheckLabel.getText() + " label is displayed");
+			else
+				utils.log().info("Periodically will check devices connected on 2.4GHz bands and steer them to faster available 5GHz bands label is not displayed");
 			
 			click(extendedWifiExpandIcon); //2
 

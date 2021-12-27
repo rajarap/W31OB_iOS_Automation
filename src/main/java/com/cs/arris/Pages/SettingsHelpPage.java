@@ -14,16 +14,22 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class SettingsHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 
 	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
 	@AndroidFindBy(xpath = "//android.webkit.WebView[@resource-id='com.arris.sbcBeta:id/webView']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"This page provides information about your Account.\"]")
 	public MobileElement settingsText;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Settings\"]")
+	public MobileElement settingsTitle;
 
 	public SettingsHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -42,7 +48,7 @@ public class SettingsHelpPage extends ParentClass implements Page {
 
 	@Override
 	public boolean isAt() {
-		if (settingsText.isDisplayed()) {
+		if (settingsTitle.isDisplayed()) {
 			utils.log().info("On Settings Help Page");
 			return true;
 		} else {

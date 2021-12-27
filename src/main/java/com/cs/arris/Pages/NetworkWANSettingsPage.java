@@ -14,39 +14,37 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkWANSettingsPage extends ParentClass implements Page {
 
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_Settings_Screen_NavigationBar_TitleLabel\"]")
 	public MobileElement wanSettingsTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_Settings_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_Settings_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='WAN IP Configuration']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_Settings_Screen_Label_Option[1]\"]")
 	public MobileElement wanIPConfigurationLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='LAC']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_Settings_Screen_Label_Option[2]\"]")
 	public MobileElement lacLabel; // Link Aggregation Control
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lac_info_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_Settings_Screen_Button_Info[2]\"]")
 	public MobileElement lacAlertIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/lac_enable_disable' and @checked='false']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Network_Wan_Settings_Screen_Button_Switch[2]\"]")
 	public MobileElement disableLACToggleButton;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/lac_enable_disable' and @checked='true']")
-	public MobileElement enableLACToggleButton;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='DNS Configuration']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_Settings_Screen_Label_Option[3]\"]")
 	public MobileElement dnsConfigurationLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/renew_wan_dhcp_btn")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_Settings_Screen_Button_Renewal\"]")
 	public MobileElement wanIPRenewButton;
 
 	public NetworkWANSettingsPage() {

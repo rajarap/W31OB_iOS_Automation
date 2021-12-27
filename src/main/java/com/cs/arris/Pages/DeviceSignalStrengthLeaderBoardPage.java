@@ -110,7 +110,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	@AndroidFindAll({
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgCloseIcon']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/imgCloseIcon") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button\"]")
 	public MobileElement closeIcon;
 
 	@AndroidFindAll({

@@ -20,6 +20,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
@@ -47,55 +48,75 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public Integer[] decreaseBrightness = { 90, 60, 30 };
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NavigationBar_Title\"]")
 	public MobileElement mainTitle;
 
 	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Home\"]")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/buttonAll")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"All\"]")
 	public MobileElement allTab;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/button5Ghz")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"5.0 GHz\"]")
 	public MobileElement fiveGhzTab;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/button2.4Ghz")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"2.4 GHz\"]")
 	public MobileElement twentyFourGhzTab;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/buttonEthernet")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Ethernet\"]")
 	public MobileElement ethernetTab;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_dining_room_router")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Main\"]")
 	public MobileElement mainRouterImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_DeviceCount\"]")
 	public MobileElement totalDeviceImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtExcellentDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_GreenCount\"]")
 	public MobileElement excellentDeviceImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtMediumDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_OrangeCount\"]")
 	public MobileElement mediumDeviceImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtPoorDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RedCount\"]")
 	public MobileElement poorDeviceImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtRoutername")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Name\"]")
 	public MobileElement mainRouterName;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Detail_Screen_Button_Edit\"]")
+	public MobileElement mainRouterEditName;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_online")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Status\"]")
 	public MobileElement mainRouterStatus;
 
 	// ====================LED Settings=====================
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtLed")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_LED Settings\"])[1]")
 	public MobileElement ledSettingsText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgLedOpenClose")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_LED Settings\"])[1]")
 	public MobileElement ledExpandImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgLedColor")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Brightness\"]")
 	public MobileElement ledColorImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgMoon")
@@ -146,6 +167,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public MobileElement connectedDevicesCountText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgDeviceInfoOpen")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_Connected Devices (2)\"])[1]")
 	public MobileElement connectedDevicesExpandImage;
 
 	@AndroidFindBy(xpath = "//android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]")
@@ -967,42 +989,11 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			return false;
 		}
 	}
-	
-//	public boolean validations() {
-//		try {
-//			if (String.valueOf(allDevicesCount).equals(totalDeviceImage.getText()))
-//				utils.log().info(
-//						"Count of All devices displayed on the main device image is equal to the Connected Devices count");
-//			else
-//				utils.log().info(
-//						"Device Count displayed on the main device image is not equal to the Connected Devices count");
-//			for (String str : signal) {
-//				if (str.contains("5GHz") || str.contains("5.0GHz"))
-//					counter5 += 1;
-//				else if (str.contains("2.4GHz")) {
-//					counter24 += 1;
-//				} else {
-//					counterEthernet += 1;
-//				}
-//			}
-//			utils.log().info(
-//					"Number of Devices with 5.0 GHz signal Strength conntected to the main router are : " + counter5);
-//			utils.log().info(
-//					"Number of Devices with 2.4 GHz signal Strength conntected to the main router are : " + counter24);
-//			utils.log().info("Number of Ethernet Devices conntected to the main router are : " + counterEthernet);
-//			utils.log().info("                                                                                 ");
-//
-//			return true;
-//		} catch (Exception e) {
-//			utils.log().info("Issue in validating count of devices with different signal strength");
-//			return false;
-//		}
-//	}
 
 	@Override
 	public boolean isAt() {
-		if (allTab.isDisplayed() && allTab.getText().equals("All")) {
-			utils.log().info("On MAIN Router - All Tab  Page ");
+		if (mainTitle.isDisplayed()) {
+			utils.log().info("On MAIN Router - All Tab Page ");
 			return true;
 		} else {
 			utils.log().info("Not on MAIN Page");

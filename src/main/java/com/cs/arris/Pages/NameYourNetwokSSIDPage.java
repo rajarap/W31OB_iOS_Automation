@@ -6,6 +6,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -54,13 +55,13 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Connect_Screen_TextField_Password\"]")
 	public MobileElement ssidPassword;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
 	public MobileElement doneLink;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Previous\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Previous\"]")
 	public MobileElement previousLink;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Next\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Next\"]")
 	public MobileElement nextLink;
 	
 	public NameYourNetwokSSIDPage()
@@ -70,19 +71,23 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	
 	public void enterSSIDName(String ssidName)
 	{
+		//super.getDriver().hideKeyboard();
 		sendKeys(ssIDName, ssidName);
 		utils.log().info("Name Your Network Page - Entered SSID Name");
 	}
 	
 	public void enterSSIDPassword(String ssidpwd)
 	{
+		//super.getDriver().hideKeyboard();
 		sendKeys(ssidPassword, ssidpwd);
 		utils.log().info("Name Your Network Page - Entered SSID Password");
 	}
 	
 	public void clickDoneLink()
 	{
-		click(doneLink);
+		String selector = "**/XCUIElementTypeButton[`label == \"Done\"`]";
+		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+		//click(doneLink);
 		utils.log().info("Name Your Network Page  - Clicked on Done Button");
 	}
 

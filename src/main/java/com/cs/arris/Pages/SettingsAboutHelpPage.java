@@ -17,6 +17,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -29,81 +30,105 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") 
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Settings\"])[2]")
 	public MobileElement settingsTitle;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"), // back button
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_header") // Account Settings
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Account Settings\"]")
 	public MobileElement accountSettingsTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_name_message") // Name
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Name\"]")
 	public MobileElement nameLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_name") // demouser demouser
-	public MobileElement accountName;
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_name") // demouser demouser
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"FAQ_Screen_NavigationBarTitle\"]")
+//	public MobileElement accountName;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/user_iv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"iconUser\"]")
 	public MobileElement userImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_email_message") // Email
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Email\"]")
 	public MobileElement emailLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_email") // Name
-	public MobileElement emailAddress;
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_email") // Name
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"FAQ_Screen_NavigationBarTitle\"]")
+//	public MobileElement emailAddress;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/email_iv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"message\"]")
 	public MobileElement emailImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_sign_out") // Sign Out
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Sign out\"]")
 	public MobileElement signoutButton;
 	// ****************************Settings*****************************************
 
 	// ****************************About*****************************************
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") // About
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"About\"])[2]")
 	public MobileElement aboutTitle;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/setupImageView") // Router Image
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[1]")
 	public MobileElement routerImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_surfboard") // Surfboard Image
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"surfboardIcon\"]")
 	public MobileElement surfboardImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/text_firmware_version") // Firmware Version
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Firmware Version: AXR.0509.210914.13\"]")
 	public MobileElement firmwareVersionText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/text_app_version") // App Version
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"App Version: 3.7.41\"]")
 	public MobileElement appVersionText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/text_app_model") // Model Name
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Model Number: W31\"]")
 	public MobileElement modelNameText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/firmwareVersion") // AXR.0335.201111.12
-	public MobileElement firmwareNumber;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/appVersion") // 3.4.13
-	public MobileElement appNumber;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/appModelName") // W31
-	public MobileElement modelNumber;
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/firmwareVersion") // AXR.0335.201111.12
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"message\"]")
+//	public MobileElement firmwareNumber;
+//
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/appVersion") // 3.4.13
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"message\"]")
+//	public MobileElement appNumber;
+//
+//	@AndroidFindBy(id = "com.arris.sbcBeta:id/appModelName") // W31
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"message\"]")
+//	public MobileElement modelNumber;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/btnViewLicense") // VIEW LICENCES
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"View EULA\"]")
 	public MobileElement viewLicensesButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/newMaxView") // click to purchase new max Router
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton")
 	public MobileElement newMaxRouter;
 	// ****************************About*****************************************
 
 	// ****************************Shop for another mAX
 	// Router*****************************************
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/inner_view_router_iv") // another maz router image
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"View EULA\"]")
 	public MobileElement anotherMaxRouterImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/get_another_tv") // Get another mAX™
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Get another mAX™ \"]")
 	public MobileElement getAnotherMaxRouterText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/just_can_not_tv") // Just can't get enough?
@@ -112,8 +137,8 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/shop_now_tv") // Shop now
 	public MobileElement shopNow;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/newMaxView']") // another maz
-																										// router image
+	@AndroidFindBy(xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/newMaxView']") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton")
 	public MobileElement getAnotherMaxRouterButton;
 	// ****************************Shop for another mAX
 	// Router*****************************************
@@ -121,24 +146,31 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 	// ****************************Help
 	// Screen*****************************************
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") // Help
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Help\"])[2]")
 	public MobileElement helpTitle;
-
+	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_surfboard_logo") // Surfboard Logo
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"surfboardIcon\"]")
 	public MobileElement surfboardLogoImage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text") // NEED ADDITIONAL HELP?
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NEED ADDITIONAL HELP?\"]")
 	public MobileElement additionalHelpText;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/description_text") // Browse help section or contact support
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Browse our help content or start a chat for additional support.\"]")
 	public MobileElement helpMessage;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/faqButton") // Frequently Asked Questions
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]")
 	public MobileElement faqButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/bt_webAddress") // www.arris.com/selfhelp
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]")
 	public MobileElement selfHelpButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/bt_liveChat") // Chat with us
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]")
 	public MobileElement liveChatButton;
 	// www5.nohold.net/Arris/ukp.aspx?pid=15&login=1&alt1=app&alt2=mAX+Pro+W31&model=mAX+Pro+W31&donelr=1
 	// ****************************Help
@@ -238,10 +270,10 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 			else
 				utils.log().info("Name Label is not displayed");
 
-			if (accountName.isDisplayed())
-				utils.log().info("Users account firstname and lastname is displayed : " + accountName.getText());
-			else
-				utils.log().info("Users account firstname and lastname is not displayed");
+//			if (accountName.isDisplayed())
+//				utils.log().info("Users account firstname and lastname is displayed : " + accountName.getText());
+//			else
+//				utils.log().info("Users account firstname and lastname is not displayed");
 
 			if (userImage.isDisplayed())
 				utils.log().info("User Image is displayed");
@@ -253,10 +285,10 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 			else
 				utils.log().info("Email Address image is not displayed");
 
-			if (emailAddress.isDisplayed())
-				utils.log().info("Email Address " + emailAddress.getText() + " is displayed");
-			else
-				utils.log().info("Email Address is not displayed");
+//			if (emailAddress.isDisplayed())
+//				utils.log().info("Email Address " + emailAddress.getText() + " is displayed");
+//			else
+//				utils.log().info("Email Address is not displayed");
 
 			if (emailLabel.isDisplayed())
 				utils.log().info(emailLabel.getText() + " label is displayed");
@@ -299,30 +331,30 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 			else
 				utils.log().info("Firmware Version Label is not displayed");
 
-			if (firmwareNumber.isDisplayed())
-				utils.log().info("Firmware Number : " + firmwareNumber.getText() + " is displayed");
-			else
-				utils.log().info("Firmware Number is not displayed");
+//			if (firmwareNumber.isDisplayed())
+//				utils.log().info("Firmware Number : " + firmwareNumber.getText() + " is displayed");
+//			else
+//				utils.log().info("Firmware Number is not displayed");
 
 			if (appVersionText.isDisplayed())
 				utils.log().info("App Version is displayed");
 			else
 				utils.log().info("App Version is not displayed");
 
-			if (appNumber.isDisplayed())
-				utils.log().info("App Number : " + appNumber.getText() + " is displayed");
-			else
-				utils.log().info("App Number is not displayed");
+//			if (appNumber.isDisplayed())
+//				utils.log().info("App Number : " + appNumber.getText() + " is displayed");
+//			else
+//				utils.log().info("App Number is not displayed");
 
 			if (modelNameText.isDisplayed())
 				utils.log().info("Model Name is displayed");
 			else
 				utils.log().info("Model Name is not displayed");
 
-			if (modelNumber.isDisplayed())
-				utils.log().info("Model Number : " + modelNumber.getText() + " is displayed");
-			else
-				utils.log().info("Surfboard Image is not displayed");
+//			if (modelNumber.isDisplayed())
+//				utils.log().info("Model Number : " + modelNumber.getText() + " is displayed");
+//			else
+//				utils.log().info("Surfboard Image is not displayed");
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -399,13 +431,13 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 			} catch (Exception e) {
 				utils.log().info("Unable to fetch Self Help Web Page objects");
 			}
-			super.getDriver().context("NATIVE_APP");
-			utils.log().info("Switched to NATIVE_APP View");
-			((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
 			
 			if (driver != null)
 				driver.quit();
 			
+			super.getDriver().context("NATIVE_APP");
+			utils.log().info("Switched to NATIVE_APP View");
+			//((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -499,13 +531,13 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 		}
 	}
 
-	public String getUserAccountName() {
-		return accountName.getText();
-	}
-
-	public String getUserEmailAddress() {
-		return emailAddress.getText();
-	}
+//	public String getUserAccountName() {
+//		return accountName.getText();
+//	}
+//
+//	public String getUserEmailAddress() {
+//		return emailAddress.getText();
+//	}
 
 	@Override
 	public boolean isAt() {

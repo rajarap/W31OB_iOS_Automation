@@ -11,15 +11,18 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class BlankSpeedTestHistoryPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgCloseIcon") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button\"]")
 	public MobileElement closeIcon;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/txtHeader") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_TitleLabel\"]")
 	public MobileElement speedTestHistoryTitle;
 	
 	public BlankSpeedTestHistoryPage()

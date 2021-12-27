@@ -17,6 +17,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class DevicesPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
@@ -34,6 +35,7 @@ public class DevicesPage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle']"), // Devices(2)
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[424,149][656,223]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NavigationBar_Title\"]")
 	public MobileElement onlineDeviceTitle;
 
 	@AndroidFindAll({
@@ -50,20 +52,24 @@ public class DevicesPage extends ParentClass implements Page {
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/buttonOnline']"), // Online
 			@AndroidBy(xpath = "//android.widget.Button[@bounds='[79,397][541,484]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/buttonOnline") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Online\"]")
 	public MobileElement onlineButton;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/buttonOffline']"), // Offline
 			@AndroidBy(xpath = "//android.widget.Button[@bounds='[539,397][1001,484]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/buttonOffline") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Offline\"]")
 	public MobileElement offlineButton;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"), // back button
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Home\"]")
 	public MobileElement backButton;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"),
 			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[980,153][1046,219]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/helpIcon") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindAll({
@@ -76,97 +82,8 @@ public class DevicesPage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtAllDeviceTitleOne']"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[55,380][141,437]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/txtAllDeviceTitleOne") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"MAIN\"]")
 	public MobileElement mainDeviceName;
-
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.LinearLayout[@resource-id='com.arris.sbcBeta:id/home_view"),
-			@AndroidBy(xpath = "//android.widget.LinearLayout[@bounds='[0,2000][355,2042]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/home_view") })
-	public MobileElement homeButton;
-
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.LinearLayout[@resource-id='com.arris.sbcBeta:id/network_view"),
-			@AndroidBy(xpath = "//android.widget.LinearLayout[@bounds='[362,2000][717,2042]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/network_view") })
-	public MobileElement networkButton;
-
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.LinearLayout[@resource-id='com.arris.sbcBeta:id/parental_view"),
-			@AndroidBy(xpath = "//android.widget.LinearLayout[@bounds='[724,2000][1080,2042]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/parental_view") })
-	public MobileElement parentalButton;
-
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/setBackgroundForFreezingList']"),
-			@AndroidBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/setBackgroundForFreezingList") })
-	public MobileElement firstFreezingItem;
-
-	@AndroidFindBy(xpath = "//android.view.ViewGroup[@index='1']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/recycleViewDiningRoom']")
-	public List<MobileElement> listOfOnlineDevices;
-
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
-	public List<MobileElement> deviceImage;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']")
-	public List<MobileElement> deviceName;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtMainSignalStrength")
-	public List<MobileElement> deviceSignalStrength;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainDownloadSpeed']")
-	public List<MobileElement> deviceDownloadSpeed;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainUpLoadSpeed']")
-	public List<MobileElement> deviceUploadSpeed;
-
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgAllDeviceExpand']")
-	public List<MobileElement> expandButton;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_ip_address")
-	public List<MobileElement> ipAddressLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtIpAddress")
-	public List<MobileElement> deviceIPAddress;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/macAddressTitle")
-	public List<MobileElement> macAddressLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtMacAddress")
-	public List<MobileElement> deviceMACAddress;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_channel")
-	public List<MobileElement> channelLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtChannelValue")
-	public List<MobileElement> deviceChannelNumber;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/statusTitle")
-	public List<MobileElement> statusLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtStatus")
-	public List<MobileElement> deviceStatus;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rssiTitle")
-	public List<MobileElement> rssiLabel;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtRssi")
-	public List<MobileElement> deviceRSSIText;
-
-	// ************************ Offline Devices ****************************
-
-	@AndroidFindBy(xpath = "//android.view.ViewGroup[@index='1']/androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/recycleViewDiningRoom']")
-	public List<MobileElement> listOfOfflineDevices;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgDevice")
-	public List<MobileElement> offlineDeviceImage;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceName")
-	public List<MobileElement> offlineDeviceName;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtLastOnline")
-	public List<MobileElement> timeSinceLastOnline;
-
-	// ************************ Offline Devices ****************************
 
 	public DevicesPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

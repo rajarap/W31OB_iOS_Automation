@@ -17,6 +17,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -29,56 +30,73 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") 
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Amazon Features\"])[2]")
 	public MobileElement amazonTitle;
 
 	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_surfboard_logo") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeImage[1]")
 	public MobileElement amazonSurfboardImage;
 	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enable/Disable Amazon Frustration Free Setup Feature']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Enable/Disable Amazon Frustration Free Setup Feature\"]")
 	public MobileElement enableDisableAFFSText;
 
 	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/affs_enable_disable' and @checked='false']") 
+	@iOSXCUITFindBy(xpath = "**/XCUIElementTypeSwitch[`value == \"0\"`]")
 	public MobileElement disableAFFSToggleButton;
 	
 	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/affs_enable_disable' and @checked='true']") 
+	@iOSXCUITFindBy(xpath = "**/XCUIElementTypeSwitch[`value == \"1\"`]")
 	public MobileElement enableAFFSToggleButton;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/affs_des_click") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"This is an Amazon feature enabling simpler smart device setup. For more information, please tap here\"]")
 	public MobileElement pleaseTapHere;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Get Alexa Skills\"]")
 	public MobileElement getAlexaSkillsButton;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/item1_text_title") 
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\" (1) Open the Amazon Alexa app.\"])[1]")
 	public MobileElement alexaSkillsContent;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/pas") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Password\"]")
 	public MobileElement passwordLabel;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/password") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeSecureTextField")
 	public MobileElement passwordTextBox;
 	
 	@AndroidFindBy(xpath= "//android.widget.ImageButton[@content-desc='Show password']") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"eyeIcon\"]")
 	public MobileElement showpassword;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/imageButtonCopy") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"copy\"]")
 	public MobileElement passwordCopyButton;
 		
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_bottom") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"www.amazon.com/alexaskills\"]")
 	public MobileElement alexaSkillsLink;
 	
 	
 	//Password Copied Dialog
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Password Copied\"]")
 	public MobileElement passworkCopiedText;
 	
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"OK\"]")
 	public MobileElement okbutton;
 	
 	
@@ -321,13 +339,16 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 			} catch (Exception e) {
 				utils.log().info("Unable to fetch alexa skills Web Page objects");
 			}
-			super.getDriver().context("NATIVE_APP");
-			utils.log().info("Switched to NATIVE_APP View");
-			((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
 			
 			if (driver != null)
 				driver.quit();
 			
+			
+			super.getDriver().context("NATIVE_APP");
+			utils.log().info("Switched to NATIVE_APP View");
+			//((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+			super.getDriver().activateApp("com.arris.sbcBeta");
+   
 			return true;
 		} catch (Exception e) {
 			return false;

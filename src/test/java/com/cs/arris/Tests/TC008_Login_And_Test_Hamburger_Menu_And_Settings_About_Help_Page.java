@@ -191,13 +191,13 @@ public class TC008_Login_And_Test_Hamburger_Menu_And_Settings_About_Help_Page ex
 	@Test(priority = 4)
 	public void Verify_Hamburger_Menu_Settings_Sign_Out() {
 		SoftAssert softburger4 = new SoftAssert();
-		String userEmail = new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getUserEmailAddress();
+//		String userEmail = new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getUserEmailAddress();
 		softburger4.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickSignOutButton());
 		new SiginPage().emailAddress.getText();
 		try {
-			if(userEmail.equals(new SiginPage().emailAddress.getText())) {
-				softburger4.assertTrue(new SiginPage().clickSigninButton());
-				super.pause(5);	}
+//			if(userEmail.equals(new SiginPage().emailAddress.getText())) {
+//				softburger4.assertTrue(new SiginPage().clickSigninButton());
+//				super.pause(5);	}
 		}catch(Exception e) {}
 		softburger4.assertAll();
 	}

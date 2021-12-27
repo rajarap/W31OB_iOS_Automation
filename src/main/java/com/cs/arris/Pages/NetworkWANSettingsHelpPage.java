@@ -14,30 +14,28 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkWANSettingsHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-//	@AndroidFindAll({
-//		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']"), 
-//		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[915,146][1046,241]']"),
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/ivDialogClose")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='WAN Settings']") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"WAN Settings\"]") 
 	public MobileElement wanSettingstitle;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,731][1029,968]']")
-	public MobileElement controlAndConfigure;
-	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1012][1029,1640]']")
-	public MobileElement dhcp;
-	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1637][1029,1952]']")
-	public MobileElement dns;
-	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1640][1015,2042]']")
-	public MobileElement wanIPRenew;
+//	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,731][1029,968]']")
+//	public MobileElement controlAndConfigure;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1012][1029,1640]']")
+//	public MobileElement dhcp;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1637][1029,1952]']")
+//	public MobileElement dns;
+//	
+//	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1640][1015,2042]']")
+//	public MobileElement wanIPRenew;
 	
 	public NetworkWANSettingsHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

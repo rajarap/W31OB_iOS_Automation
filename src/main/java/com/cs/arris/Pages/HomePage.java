@@ -1,5 +1,7 @@
 package com.cs.arris.Pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.support.PageFactory;
 
 import com.cs.arris.Base.ParentClass;
@@ -121,7 +123,7 @@ public class HomePage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgNoLeftSatellite"),
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[217,1008][302,1192]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/imgNoLeftSatellite") })
-	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_AddLeft\"]")
 	public MobileElement leftSatelliteImage;
 
 	@AndroidFindAll({
@@ -130,6 +132,9 @@ public class HomePage extends ParentClass implements Page {
 			@AndroidBy(id = "com.arris.sbcBeta:id/imgNoRightSatellite") })
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_AddRight\"]")
 	public MobileElement rightSatelliteImage;
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Home_Screen_Button_Close\"]")
+	public MobileElement promotionCloseIcon;
 
 	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/textView162"),
 			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[85,1569][784,1633]']"),
@@ -500,6 +505,16 @@ public class HomePage extends ParentClass implements Page {
 				utils.log().info("Right Satellite Image is displayed");
 			else
 				utils.log().info("Right Satellite Image is not displayed");
+			
+			super.swipeUp();
+			
+			if (promotionCloseIcon.isDisplayed()) {
+				utils.log().info("Promotional Image is displayed");
+				click(promotionCloseIcon);
+				utils.log().info("Closed Promotional Image");}
+			else
+				utils.log().info("Promotional Image is not displayed");
+			
 
 			if (deviceSignalStrengthLeaderBoardText.isDisplayed())
 				utils.log().info("Device Signal Strength Leader Board Text is displayed");
@@ -515,8 +530,6 @@ public class HomePage extends ParentClass implements Page {
 				utils.log().info("Device Signal Strength Leader Board is displayed for " + bitRateDevices.getText());
 			else
 				utils.log().info("Device Signal Strength Leader Board Count is not displayed");
-
-			super.swipeUp();
 
 			if (speedTestHistoryText.isDisplayed())
 				utils.log().info("Speed Test History Text is displayed");
@@ -680,27 +693,32 @@ public class HomePage extends ParentClass implements Page {
 	{
 		try
 		{
-				super.getDriver().activateApp("com.apple.Preferences");
-				super.swipeDown();
+//			utils.log().info("Running App in the Background");
+//			super.getDriver().runAppInBackground(Duration.ofSeconds(20));
+			
+			super.getDriver().activateApp("com.apple.Preferences");
+			super.swipeDown();
 				
-				if(wifiLink.isDisplayed())
-					click(wifiLink);
+			if(wifiLink.isDisplayed())
+				click(wifiLink);
 				
-				super.pause(5);
+			super.pause(2);
 				
-				String selector = "**/XCUIElementTypeCell[`label == \""+ssidentity+", Secure network, Signal strength 3 of 3 bars\"`]";
-				super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
-				super.pause(5);
+			String selector = "**/XCUIElementTypeCell[`label == \""+ssidentity+", Secure network, Signal strength 3 of 3 bars\"`]";
+			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+			super.pause(3);
 				
-				click(settings);
+			click(settings);
+			super.getDriver().activateApp("com.arris.sbcBeta");
 				
-				String wifiName = "//XCUIElementTypeStaticText[@name=\""+ssidentity+"\"]";
-				
-				if(super.getDriver().findElement(MobileBy.iOSClassChain(wifiName)).isDisplayed())
-					utils.log().info("IPhone Settings Page - mAX Router is now connected to the SSID network");
-				
-				utils.log().info("Activating App running in Background");
-				super.getDriver().activateApp("com.arris.sbcBeta");
+//			String wifiName = "//XCUIElementTypeStaticText[@name=\""+ssidentity+"\"]";
+//				
+//			if(super.getDriver().findElement(MobileBy.iOSClassChain(wifiName)).isDisplayed())
+//				utils.log().info("IPhone Settings Page - mAX Router is now connected to the SSID network");
+//			//super.getDriver().closeApp();
+//				
+//			utils.log().info("Activating App running in Background");
+
 		}catch(Exception e) {}
 	}
 	

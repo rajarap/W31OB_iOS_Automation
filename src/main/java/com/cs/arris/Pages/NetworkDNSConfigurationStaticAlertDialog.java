@@ -11,21 +11,22 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkDNSConfigurationStaticAlertDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/error_header_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_DNS_Configuration_Screen_Label_Alert\"]")
 	public MobileElement alertTitle; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/error_description") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_DNS_Configuration_Screen_Label_Warning\"]")
 	public MobileElement alertMessage; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/ok_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_AlertOk\"]")
 	public MobileElement okButton;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/cancel_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_AlertClose\"]") 
 	public MobileElement cancelDialogIcon; 
 		
 	public NetworkDNSConfigurationStaticAlertDialog()

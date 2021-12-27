@@ -12,121 +12,118 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class SpeedTestPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle]"),  //Speed Test
-		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[420,149][660,223]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/txtToolBarTitle") 
-	})
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_NavigationBar_TitleLabel\"]")
 	public MobileElement speedTestTitle; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),  //Navigate up
-		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']")
-	})
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Speed_Test_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backIcon; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_toolbar_remote_lca"),  
-		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[909,154][972,217]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/img_toolbar_remote_lca") 
-	})
-	public MobileElement cloudIcon; 
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add Device\"]")
+//	public MobileElement cloudIcon; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"),  //help Icon
-		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[980,153][1046,219]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/helpIcon") 
-	})
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Speed_Test_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon; 
 	
-
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/left_speed_test_icon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_Phone\"]")
 	public MobileElement deviceImage;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/device_name")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_Phone\"]")
 	public MobileElement deviceName;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/center_router")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_Device\"]")
 	public MobileElement routerImage;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/router_name")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_Device\"]")
 	public MobileElement ssidName;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/right_speed_test_icon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_Internet\"]")
 	public MobileElement speedTestIcon;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[870,423][978,469]']")
+	@iOSXCUITFindBy(xpath = "/XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_Internet\"]")
 	public MobileElement speedTestName;  //nternet
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/speed_meter")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"Speed_Test_Screen_SpeedMeterView\"]")
 	public MobileElement speedTestMeter;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/stop_speed_test")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Speed_Test_Screen_Button_Test\"]")
 	public MobileElement startSpeedTestButton;
 
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/stop_speed_test")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Speed_Test_Screen_Button_Stop\"]")
 	public MobileElement stopSpeedTestButton;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/stop_speed_test")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Speed_Test_Screen_Button_Run\"]")
 	public MobileElement runSpeedTestAgainButton;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/view_history")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Speed_Test_Screen_Button_History\"]")
 	public MobileElement viewHistory;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[136,479][328,532]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_DownloadHeader\"]")
 	public MobileElement wifiDownloadView;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/wifi_download_speed")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_Download\"]")
 	public MobileElement wifiDownloadSpeed;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[136,571][281,624]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_UploadHeader\"]")
 	public MobileElement wifiUploadWifiView;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/wifi_download_speed")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_Upload\"]")
 	public MobileElement wifiUploadloadSpeed;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[756,479][948,532]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_WanDownloadHeader\"]")
 	public MobileElement internetDownloadView;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/internet_download_speed")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_WanDownload\"]")
 	public MobileElement internetDownloadSpeed;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[756,571][901,624]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_WanUploadHeader\"]")
 	public MobileElement internetUploadView;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/internet_upload_speed")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_WanUpload\"]")
 	public MobileElement internetUploadSpeed;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/speed_test_message_heading")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_Wifi\"]")
 	public MobileElement wifiSpeedGoodForText;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[156,1039][937,1099]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_Web\"]")
+	public MobileElement webBrowsingImage;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_Web\"]")
 	public MobileElement webBrowsingEmail;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/email_enable_disable")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_SelectWeb\"]")
 	public MobileElement emailEnableIcon;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[159,1150][937,1216]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_SD\"]")
+	public MobileElement casualGamingImage;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_SD\"]")
 	public MobileElement casualGaming;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/sd_video_enable_disable")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_SelectSD\"]")
 	public MobileElement sdVideoEnableIcon;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[153,1267][937,1330]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_HD\"]")
+	public MobileElement hdImage;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_HD\"]")
 	public MobileElement hdVideo;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/hd_video_enable_disable")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_SelectHD\"]")
 	public MobileElement hdVideoEnableIcon;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@bounds='[159,1381][937,1441]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_UHD\"]")
+	public MobileElement vrImage;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed_Test_Screen_Label_UHD\"]")
 	public MobileElement virtualReality;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/k4_video_enable_disable")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Speed_Test_Screen_Image_SelectUHD\"]")
 	public MobileElement virtualEnableIcon;
 	
 	public SpeedTestPage()
@@ -274,6 +271,17 @@ public class SpeedTestPage extends ParentClass implements Page
 		}
 	}
 	
+	public boolean clickRunSpeedTestButton() {
+		if (runSpeedTestAgainButton.isDisplayed()) {
+			click(runSpeedTestAgainButton);
+			utils.log().info("Clicked Run Speed Test Agaibn Button");
+			return true;
+		} else {
+			utils.log().info("Run Speed Test Again Button is not displayed");
+			return false;
+		}
+	}
+	
 	public boolean clickStopSpeedTestButton()
 	{
 		if (stopSpeedTestButton.isDisplayed()) {
@@ -299,8 +307,10 @@ public class SpeedTestPage extends ParentClass implements Page
 	
 	public boolean performSpeedTest()
 	{
-			utils.log().info("Label on button before speed Test: " + startSpeedTestButton.getText());
-			clickStartSpeedTestButton();
+		try {
+			if (startSpeedTestButton.isDisplayed()) {
+				utils.log().info("Label on button before speed Test: " + startSpeedTestButton.getText());
+				clickStartSpeedTestButton();}
 			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
 			super.pause(100);
 			try {
@@ -308,9 +318,34 @@ public class SpeedTestPage extends ParentClass implements Page
 					this.getAppRatingDialogObject().clickRemindMeLaterLink();
 				}catch(Exception e) {
 				utils.log().info("App Rating Dialog did not appear");}
-			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
+			
+		}catch(Exception e) {}
+//			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
 			return true;
 	}
+	
+	public boolean runSpeedTestAgain()
+	{
+		try {
+			if(runSpeedTestAgainButton.isDisplayed()) {
+				utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
+				clickRunSpeedTestButton();
+			}
+			utils.log().info("Label on button during speed Test: " + stopSpeedTestButton.getText());
+			super.pause(100);
+			try {
+				if(this.getAppRatingDialogObject().remindMeLaterText.isDisplayed())
+					this.getAppRatingDialogObject().clickRemindMeLaterLink();
+				}catch(Exception e) {
+				utils.log().info("App Rating Dialog did not appear");}
+			
+		}catch(Exception e) {}
+//			utils.log().info("Label on button after speed Test: " + runSpeedTestAgainButton.getText());
+			return true;
+	}
+	
+	
+
 	
 	public boolean verifySpeedTestResultsUI() {
 		try {
@@ -358,6 +393,11 @@ public class SpeedTestPage extends ParentClass implements Page
 				utils.log().info("" + wifiSpeedGoodForText.getText() + " is displayed");
 			else
 				utils.log().info("This Wi-Fi Speed is good for: text is not displayed");
+			
+			if (webBrowsingImage.isDisplayed())
+				utils.log().info("Web Browsing/Email Image is displayed");
+			else
+				utils.log().info("Web Browsing/Email Image is not displayed");
 
 			if (webBrowsingEmail.isDisplayed())
 				utils.log().info("" + webBrowsingEmail.getText() + " is displayed");
@@ -368,6 +408,11 @@ public class SpeedTestPage extends ParentClass implements Page
 				utils.log().info("Web Browsing/E-mail enable/disable icon is displayed");
 			else
 				utils.log().info("Web Browsing/E-mail enable/disable iconis not displayed");
+			
+			if (casualGamingImage.isDisplayed())
+				utils.log().info("SD video / Music / Casual games Image is displayed");
+			else
+				utils.log().info("SD video / Music / Casual games Image is not displayed");
 
 			if (casualGaming.isDisplayed())
 				utils.log().info("" + casualGaming.getText() + " is displayed");
@@ -379,6 +424,11 @@ public class SpeedTestPage extends ParentClass implements Page
 			else
 				utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is not displayed");
 
+			if (hdImage.isDisplayed())
+				utils.log().info("HD video / Competitive gaming Image is displayed");
+			else
+				utils.log().info("HD video / Competitive gaming Image is not displayed");
+			
 			if (hdVideo.isDisplayed())
 				utils.log().info("" + hdVideo.getText() + " is displayed");
 			else
@@ -389,6 +439,11 @@ public class SpeedTestPage extends ParentClass implements Page
 			else
 				utils.log().info("HD Video and Competitive Gaming enable/disable icon is not displayed");
 
+			if (vrImage.isDisplayed())
+				utils.log().info("UHD / 4K video / VR Image is displayed");
+			else
+				utils.log().info("UHD / 4K video / VR Image is not displayed");
+			
 			if (virtualReality.isDisplayed())
 				utils.log().info("" + virtualReality.getText() + " is displayed");
 			else
@@ -408,7 +463,7 @@ public class SpeedTestPage extends ParentClass implements Page
 	@Override
 	public boolean isAt() {
 		if (speedTestTitle.isDisplayed()) {
-			utils.log().info("At Speed Test Page");
+			utils.log().info("On Speed Test Page");
 			return true;
 		} else {
 			utils.log().info("Speed Test Page is not displayed");

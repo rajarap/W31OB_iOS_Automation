@@ -71,8 +71,10 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  getStarted.clickGetStartedButton();
 		  }).grantPermissionsPage(grantPermission -> {
 			  grantPermission.clickContinueButton();
+			  super.pause(5);
 		  }).deviceLocationPage(deviceLocation -> {
 			  deviceLocation.clickWhileUsingAppLink();
+			  super.pause(5);
 		  }).accessResourcesOnDevicePage(accessResoucesOnDevice -> {
 			  accessResoucesOnDevice.clickOkButton();
 		  }).selectYourDevicePage(selectDevice -> {
@@ -111,37 +113,52 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  super.pause(5);
 		  }).connectBlueToothDialog(bluetooth -> {
 			  bluetooth.clickOkButton();
-			  super.pause(5);
+			  super.pause(15);
 		  }).maxRouterConnectedToMobilePage(connectedRouterToMobile -> {
 			  connectedRouterToMobile.clickNextButton();
-			  super.pause(150);
-			  if(connectedRouterToMobile.getTryAgainButton()) {
-				  utils.log().info("Connect the mAX Router to Wifi manually");
-				  super.pause(100);
-				  connectedRouterToMobile.clickTryAgainButton();
-				  super.pause(5);
-			  }else {
-				  utils.log().info("Try Again button is not displayed");
-			  }
-//		  }).routerUnableToConnectToInternet(noInternet -> {
-//			  if(noInternet.getTryAgainButton()) {
+			  super.pause(20);
+//			  super.pause(150);
+//			  if(connectedRouterToMobile.getTryAgainButton()) {
 //				  utils.log().info("Connect the mAX Router to Wifi manually");
-//				  super.pause(90);
-//				  noInternet.clickTryAgainButton();}
-			//add 0002-1304 - Internet Connection Not available on Router
+//				  super.pause(100);
+//				  connectedRouterToMobile.clickTryAgainButton();
+//				  super.pause(5);
+//			  }else {
+//				  utils.log().info("Try Again button is not displayed");
+//			  }
+////		  }).routerUnableToConnectToInternet(noInternet -> {
+////			  if(noInternet.getTryAgainButton()) {
+////				  utils.log().info("Connect the mAX Router to Wifi manually");
+////				  super.pause(90);
+////				  noInternet.clickTryAgainButton();}
+//			//add 0002-1304 - Internet Connection Not available on Router
 		  }).maxRouterConnectedToInternetPage(connecedRouterToInternet -> {
 			  connecedRouterToInternet.clickNextButton();
-			  super.pause(20);
+			  super.pause(25);
 		  }).systemFirmwareUpdatePage(firmwareUpdate -> {
 			  firmwareUpdate.clickNextButton();
 			  super.pause(30);
-		  }).warrantyAndSupportPage(warrantyAndSupport -> { 
-			  warrantyAndSupport.clickContinueButton();
+			  try{
+				  if(firmwareUpdate.continueButton.isDisplayed()){
+					  firmwareUpdate.clickContinueButton();}
+			  }catch(Exception e){ e.getMessage();}
+//		  }).warrantyAndSupportPage(warrantyAndSupport -> { 
+//			  warrantyAndSupport.clickContinueButton();
+//			  super.pause(15);
 		  }).nameYourNetworkPage(nameYourNetwork -> {
 			  nameYourNetwork.enterSSIDName(this.ssidName);
 			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
+			  super.pause(22);
 			  nameYourNetwork.clickDoneLink();
 			  nameYourNetwork.clickNextButton();
+//			  try{
+//				  if(nameYourNetwork.doneLink.isDisplayed())
+//					  nameYourNetwork.clickDoneLink();
+//			  }catch(Exception e){ e.getMessage();}
+//			  try{
+//				  if(nameYourNetwork.nextButton.isDisplayed() && nameYourNetwork.nextButton.isEnabled())
+//					  nameYourNetwork.clickNextButton();
+//			  }catch(Exception e){ e.getMessage();}
 			  super.pause(50);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
 			  connectionRequired.clickJoinButton();
@@ -159,7 +176,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  optimization.clickOkButton();
 			  super.pause(25);
 	  	  }).homePage(homepage -> {	
-	  		super.pause(25);
+	  		super.pause(12);
 	  		try {
 	  			if(homepage.getAppRatingDialogObject().isAt())
 		  			homepage.getAppRatingDialogObject().clickRemindMeLaterLink();

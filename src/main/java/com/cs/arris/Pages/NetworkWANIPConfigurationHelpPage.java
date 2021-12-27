@@ -14,18 +14,16 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkWANIPConfigurationHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivDialogClose")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/webView") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"WAN IP configuration\"]")
 	public MobileElement wanIPConfigurationTitle;
-	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,731][1029,968]']")
-	public MobileElement controlAndConfigure;
 		
 	public NetworkWANIPConfigurationHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

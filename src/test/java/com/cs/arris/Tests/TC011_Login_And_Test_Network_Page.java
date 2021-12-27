@@ -19,11 +19,11 @@ import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
-import com.cs.arris.Workflows.HomePage_Workflow;
+
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
 import com.cs.arris.Workflows.TC56_Login_And_Verify_MainDevicesPage_Workflow;
-import com.cs.arris.Workflows.TC57_Login_And_Verify_NetworkPage_Workflow;
+
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -321,13 +321,13 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 			this.Verify_General_Settings_Port_Forwarding_Help_Page();
 		}catch(Exception e) {utils.log().info("Issue in General Settings Port Forwarding Help Page");}
 		
-		try {
-			this.Verify_Guest_WiFi_Network_Page();
-		}catch(Exception e) {utils.log().info("Issue in Guest WiFi Newtork Page");}
-		
-		try {
-			this.Verify_Extended_WiFi_Settings_Page();
-		}catch(Exception e) {utils.log().info("Issue in Extended WiFi Settings Page");}
+//		try {
+//			this.Verify_Guest_WiFi_Network_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Guest WiFi Newtork Page");}
+//		
+//		try {
+//			this.Verify_Extended_WiFi_Settings_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Extended WiFi Settings Page");}
 	}
 
 	@Test(priority = 2)
@@ -1055,69 +1055,69 @@ public class TC011_Login_And_Test_Network_Page extends ParentClass {
 		softnet48.assertAll();
 	}
 	
-	@Test(priority = 49)
-	public void Verify_Guest_WiFi_Network_Page() 
-	{
-		SoftAssert softnet49 = new SoftAssert();
-		try {
-			if (new NetworkPage().guestNetworkToggleButton.isSelected()) 
-				new NetworkPage().disableGuestWifiNetwork();
-		}catch(Exception e) {}
-		
-		softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
-		try {
-			if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickCloseButton());
-			super.pause(20);
-		}catch(Exception e) {}
-		
-		try {
-			if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
-				super.getDriver().hideKeyboard();
-				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
-				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().validateGuestNetworkPage());
-				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
-				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
-				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
-				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-				}
-			}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
-		
-		try {
-			if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
-				softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
-				softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
-					if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
-						softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
-						softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
-						try {
-							if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-								softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-						}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
-					}
-				softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
-		}catch(Exception e) {utils.log().info("Guest Network is not Created");}
-		
-		softnet49.assertAll();
-	}
-	
-	@Test(priority = 50)
-	public void Verify_Extended_WiFi_Settings_Page() 
-	{
-		SoftAssert softnet50 = new SoftAssert();
-		softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-		softnet50.assertTrue(new NetworkPage().enable5GHzWidebandMode());
-		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
-			softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
-		softnet50.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
-		
-		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
-			softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickCloseButton());
-		
-		softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-		softnet50.assertTrue(new NetworkPage().clickBackButton());
-		softnet50.assertAll();
-	}
+//	@Test(priority = 49)
+//	public void Verify_Guest_WiFi_Network_Page() 
+//	{
+//		SoftAssert softnet49 = new SoftAssert();
+//		try {
+//			if (new NetworkPage().guestNetworkToggleButton.isSelected()) 
+//				new NetworkPage().disableGuestWifiNetwork();
+//		}catch(Exception e) {}
+//		
+//		softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
+//		try {
+//			if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+//				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickCloseButton());
+//			super.pause(20);
+//		}catch(Exception e) {}
+//		
+//		try {
+//			if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
+//				super.getDriver().hideKeyboard();
+//				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
+//				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().validateGuestNetworkPage());
+//				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
+//				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
+//				softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
+//				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+//				}
+//			}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
+//		
+//		try {
+//			if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
+//				softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
+//				softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
+//					if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
+//						softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
+//						softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
+//						try {
+//							if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+//								softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+//						}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
+//					}
+//				softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
+//		}catch(Exception e) {utils.log().info("Guest Network is not Created");}
+//		
+//		softnet49.assertAll();
+//	}
+//	
+//	@Test(priority = 50)
+//	public void Verify_Extended_WiFi_Settings_Page() 
+//	{
+//		SoftAssert softnet50 = new SoftAssert();
+//		softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+//		softnet50.assertTrue(new NetworkPage().enable5GHzWidebandMode());
+//		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+//			softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
+//		softnet50.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
+//		
+//		if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+//			softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickCloseButton());
+//		
+//		softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+//		softnet50.assertTrue(new NetworkPage().clickBackButton());
+//		softnet50.assertAll();
+//	}
 }
 

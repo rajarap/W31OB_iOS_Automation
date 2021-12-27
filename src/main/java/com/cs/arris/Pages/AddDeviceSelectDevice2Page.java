@@ -7,6 +7,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -79,16 +80,18 @@ public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 
 	public boolean selectT25RadioButton() {
 		super.swipeUp();
-		super.pause(3);
-		
-		if (t25RadioButton.isDisplayed()) {
-			click(t25RadioButton);
-			utils.log().info("Clicked on T25 Radio Button");
-			return true;
-		} else {
-			utils.log().info("T25 Radio Button is not displayed");
-			return false;
-		}
+		String selector = "**/XCUIElementTypeImage[`name == \"Select_Your_Device_CM_Selection_Screen_Image_deselect_T25\"`]";
+		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+		return true;
+	
+//		if (t25RadioButton.isDisplayed()) {
+//			click(t25RadioButton);
+//			utils.log().info("Clicked on T25 Radio Button");
+//			return true;
+//		} else {
+//			utils.log().info("T25 Radio Button is not displayed");
+//			return false;
+//		}
 	}
 
 	public boolean clickNextButton() {

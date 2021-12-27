@@ -8,11 +8,11 @@
 	<parameter name="platform" value="iOS" />
 	<parameter name="device" value="iPhone" />
 	
-	<test name="Signin_And_Onboard_Test">
+	<test name="Complex_Tests">
 		<classes>
-			<class name="com.cs.arris.Tests.TC002_Test_Signin_And_Onboard" />
+			<class name="com.cs.arris.Tests.TC03_Complex_Test" />
 		</classes>
-	</test> 
+	</test>
       
 </suite> 
 

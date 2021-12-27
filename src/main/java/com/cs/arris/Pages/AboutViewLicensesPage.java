@@ -14,6 +14,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AboutViewLicensesPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
@@ -22,6 +23,7 @@ public class AboutViewLicensesPage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose]"), // CONTINUE
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
 	@AndroidFindBy(xpath = "//android.view.View[@bounds='[49,338][1031,1010]']")
@@ -47,6 +49,7 @@ public class AboutViewLicensesPage extends ParentClass implements Page {
 	public MobileElement contents;
 
 	@AndroidFindBy(xpath = "//android.view.View[@content-desc='Safety and regulatory information']/android.widget.TextView")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Safety and regulatory information\"])[1]")
 	public MobileElement safetyAndRegulationLink;
 
 	@AndroidFindBy(xpath = "//android.view.View[@content-desc='Caring for the environment by recycling your ARRIS equipment']/android.widget.TextView")
@@ -105,6 +108,7 @@ public class AboutViewLicensesPage extends ParentClass implements Page {
 	}
 
 	public boolean clickCloseButton() {
+		super.swipeUp();
 		if (closeButton.isDisplayed()) {
 			click(closeButton); 
 			utils.log().info("Clicked Close Button");
@@ -248,7 +252,7 @@ public class AboutViewLicensesPage extends ParentClass implements Page {
 
 	@Override
 	public boolean isAt() {
-		if (surfboardWarranty.isDisplayed()) {
+		if (safetyAndRegulationLink.isDisplayed()) {
 			utils.log().info("On View Licenses Page");
 			return true;
 		} else {

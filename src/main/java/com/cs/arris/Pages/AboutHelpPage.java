@@ -12,6 +12,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AboutHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
@@ -21,12 +22,15 @@ public class AboutHelpPage extends ParentClass implements Page {
 			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
 			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") 
 		})
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,513][1029,671]']") // About
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"About\"])[2]")
 	public MobileElement aboutText;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[52,731][1029,968]']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"This page provides information about your Application and Firmware version.\"]")
 	public MobileElement aboutHelpText;
 	
 	public AboutHelpPage() {
@@ -34,6 +38,7 @@ public class AboutHelpPage extends ParentClass implements Page {
 	}
 
 	public boolean clickCloseButton() {
+		super.swipeUp();
 		if (closeButton.isDisplayed()) {
 			click(closeButton); 
 			utils.log().info("Clicked Close Button");

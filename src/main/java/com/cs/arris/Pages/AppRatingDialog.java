@@ -56,7 +56,7 @@ public class AppRatingDialog extends ParentClass implements Page
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/feedbackDescTxt") 
 	public MobileElement weAreGlabMessage;  // only for 4.0/5.0 rating
 	
-		@AndroidFindBy (id = "com.arris.sbcBeta:id/btnSaveChanges") 
+	@AndroidFindBy (id = "com.arris.sbcBeta:id/btnSaveChanges") 
 	public MobileElement reviewOnPlayStoreButton;// only for 4.0/5.0 rating
 			
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView10") //Tap the star to rate

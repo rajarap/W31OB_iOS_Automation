@@ -19,6 +19,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class HomeSpeedTestHistoryPage extends ParentClass implements Page
 {
@@ -28,64 +29,15 @@ public class HomeSpeedTestHistoryPage extends ParentClass implements Page
 	public int counter = 1;
 	int size;
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtHeader]"),  //Speed Test History
-		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[101,311][482,380]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/txtHeader") 
-	})
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_TitleLabel\"]")
 	public MobileElement speedTestHistoryTitle; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/speed_test_history']"), 
-		@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/speed_test_history") 
-	})
-	public MobileElement speedTestHistoryDinning;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/date']")
-	public List<MobileElement> speedTestHistoryDateTime;
-	
-	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/left_speed_test_icon']")
-	public List<MobileElement>  speedTestHistoryDeviceImage;
-	
-	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/router_image']")
-	public List<MobileElement>  speedTestHistoryRouterImage;
-	
-	@AndroidFindBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/right_speed_test_icon']")
-	public List<MobileElement>  speedTestHistoryInternetImage;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']")
-	public List<MobileElement>  speedTestHistoryDeviceName;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/routerName']")
-	public List<MobileElement>  speedTestHistoryRouterName;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Internet']")
-	public List<MobileElement>  speedTestHistoryInternetName;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Download']")
-	public List<MobileElement>  wifiDownloadText;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Upload']")
-	public List<MobileElement>  wifiUploadText;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Download']")
-	public List<MobileElement>  internetDownloadText;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Upload']")
-	public List<MobileElement>  internetUploadText;
-
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiDownloadSpeed']")
-	public List<MobileElement>  wifiDownloadSpeed;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiUploadSpeed']")
-	public List<MobileElement>  wifiUploadSpeed;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetDownloadSpeed']")
-	public List<MobileElement>  internetDownloadSpeed;
-	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetUploadSpeed']")
-	public List<MobileElement>  internetUploadSpeed;
+//	@AndroidFindAll({
+//		@AndroidBy (xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/speed_test_history']"), 
+//		@AndroidBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView"),
+//		@AndroidBy (id = "com.arris.sbcBeta:id/speed_test_history") 
+//	})
+//	public MobileElement speedTestHistoryDinning;
 	
 	public HomeSpeedTestHistoryPage()
 	{
@@ -109,68 +61,39 @@ public class HomeSpeedTestHistoryPage extends ParentClass implements Page
 				utils.log().info("*************************************");
 
 				utils.log().info("Title : " + speedTestHistoryTitle.getText());
-				MobileElement recycleView = (MobileElement) super.getDriver().findElementByXPath(
-						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView");
+//				MobileElement recycleView = (MobileElement) super.getDriver().findElementByXPath(
+//						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView");
 
 				for (int i = 1; i <= 3; i++) {
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
-									+ i + "]");
+							"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
+					
 					for (MobileElement m : entity) {
-						utils.log().info("Speed Test History : " + counter);
+						utils.log().info("Speed Test History : " + i);
 						utils.log().info("------------------------------");
-						if (m.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/left_speed_test_icon']")
-								.isDisplayed())
-							utils.log().info("Device Image is displayed");
+						
+//						if (m.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/left_speed_test_icon']").isDisplayed())
+//							utils.log().info("Device Image is displayed");
+//
+//						if (m.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/router_image']").isDisplayed())
+//							utils.log().info("Router Image is displayed");
+//
+//						if (m.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/right_speed_test_icon']").isDisplayed())
+//							utils.log().info("Internet Image is displayed");
 
-						if (m.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/router_image']")
-								.isDisplayed())
-							utils.log().info("Router Image is displayed");
-
-						if (m.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/right_speed_test_icon']")
-								.isDisplayed())
-							utils.log().info("Internet Image is displayed");
-
-						utils.log()
-								.info("Date and Time: " + m
-										.findElementByXPath(
-												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/date']")
-										.getText());
-						utils.log()
-								.info("Device Name : " + m.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']")
-										.getText());
-						utils.log()
-								.info("Router Name : " + m.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/routerName']")
-										.getText());
-						utils.log().info("Internet Name : "
-								+ m.findElementByXPath("//android.widget.TextView[@text='Internet']").getText());
-						utils.log().info("Wifi Download Text : "
-								+ m.findElementByXPath("//android.widget.TextView[@text='Download']").getText());
-						utils.log().info("Wifi Download Speed: " + m.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiDownloadSpeed']")
-								.getText());
-						utils.log().info("Wifi Upload Text : "
-								+ m.findElementByXPath("//android.widget.TextView[@text='Upload']").getText());
-						utils.log().info("Wifi Upload Speed: " + m.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/wifiUploadSpeed']")
-								.getText());
-						utils.log().info("Internet Download Text : "
-								+ m.findElementByXPath("//android.widget.TextView[@text='Download']").getText());
-						utils.log().info("Internet Download Speed: " + m.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetDownloadSpeed']")
-								.getText());
-						utils.log().info("Internet Upload Text	: "
-								+ m.findElementByXPath("//android.widget.TextView[@text='Upload']").getText());
-						utils.log().info("Internet Upload Speed : " + m.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/internetUploadSpeed']")
-								.getText());
+						utils.log().info("Date and Time: " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_Date["+i+"]\"]").getText());
+						utils.log().info("Device Name : " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_Phone["+i+"]\"]").getText());
+						utils.log().info("Router Name : " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_Device["+i+"]\"]").getText());
+						utils.log().info("Internet Name : "	+ m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_Internet["+i+"]\"]").getText());
+						utils.log().info("Wifi Download Text : " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_PhoneDownloadTitle["+i+"]\"]").getText());
+						utils.log().info("Wifi Download Speed: " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_PhoneDownload["+i+"]\"]").getText());
+						utils.log().info("Wifi Upload Text : " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_PhoneUploadTitle["+i+"]\"]").getText());
+						utils.log().info("Wifi Upload Speed: " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_PhoneUpload["+i+"]\"]").getText());
+						utils.log().info("Internet Download Text : " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_InternetDownloadTitle["+i+"]\"]").getText());
+						utils.log().info("Internet Download Speed: " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_InternetDownload["+i+"]\"]").getText());
+						utils.log().info("Internet Upload Text	: " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_InternetUploadTitle["+i+"]\"]").getText());
+						utils.log().info("Internet Upload Speed : " + m.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Speed_History_Screen_Label_InternetUpload["+i+"]\"]").getText());
 						utils.log().info("****************************************************");
-						counter++;
 					}
 					if (i == 2)
 						super.swipeUp();

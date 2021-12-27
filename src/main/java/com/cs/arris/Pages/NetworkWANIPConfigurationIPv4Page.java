@@ -13,86 +13,81 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"WAN IP Configuration\"]")
 	public MobileElement wanIPConfigurationTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv4_btn")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"IPv4\"]")
 	public MobileElement wanIPv4Tab;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_btn")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"IPv6\"]")
 	public MobileElement wanIPv6Tab;
 	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/dhcp_btn' and @checked='true']")
-	public MobileElement dhcpRadioButtonChecked;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button_DHCP\"]")
+	public MobileElement dhcpRadioButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/dhcp_btn' and @checked='false']")
-	public MobileElement dhcpRadioButtonUnChecked;
-	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/static_btn' and @checked='true']")
-	public MobileElement staticRadioButtonChecked;
-	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/static_btn' and @checked='false']")
-	public MobileElement staticRadioButtonUnChecked;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button_Static\"]")
+	public MobileElement staticRadioButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='IP Address']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_IP\"]")
 	public MobileElement ipAddressLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/wan_ip_address_et' and @enabled='false']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4\"]")
 	public MobileElement dhcp_ipAddress;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/wan_ip_address_et' and @enabled='true']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4\"]")
 	public MobileElement static_ipAddress;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Subnet Mask']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Mask\"]")
 	public MobileElement subnetMaskLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/subnet_mask_et' and @enabled='false']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Subnet\"]")
 	public MobileElement dhcp_subnetMask;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/subnet_mask_et' and @enabled='true']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Subnet\"]")
 	public MobileElement static_subnetMask;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Gateway']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Gateway\"]")
 	public MobileElement gatewayLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/default_gate_ip_address_et' and @enabled='false']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Gateway\"]")
 	public MobileElement dhcp_gateway;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/default_gate_ip_address_et' and @enabled='true']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Gateway\"]")
 	public MobileElement static_gateway;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Primary DNS']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Primary\"]")
 	public MobileElement primaryDNSLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/dns_primary_ip_et' and @enabled='false']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Primary\"]")
 	public MobileElement dhcp_primaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/dns_primary_ip_et' and @enabled='true']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Primary\"]")
 	public MobileElement static_primaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Secondary DNS']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Secondary\"]")
 	public MobileElement secondayDNSLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/dns_secondary_ip_et' and @enabled='false']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPV4Secondary\"]")
 	public MobileElement dhcp_secondaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/dns_secondary_ip_et' and @enabled='true']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPV4Secondary\"]")
 	public MobileElement static_secondaryDNS;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_wan_ip_configure' and @enabled='false']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button\"]")
 	public MobileElement dhcp_saveChangesButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_wan_ip_configure' and @enabled='true']")
+	@AndroidFindBy(xpath = "//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button\"]")
 	public MobileElement static_saveChangesButton;
 
 
@@ -175,12 +170,9 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 	}
 	
 	public boolean clickDHCPRadioButton() {
-		if (dhcpRadioButtonChecked.isDisplayed()) {
-			utils.log().info("DHCP Radion button is already selected");
-			return true;
-		}else if(dhcpRadioButtonUnChecked.isDisplayed()) {
-			click(dhcpRadioButtonUnChecked);
-			utils.log().info("Clicked on DHCP Radion button");
+		if (dhcpRadioButton.isDisplayed()) {
+			utils.log().info("DHCP Radion button is selected");
+			click(dhcpRadioButton);
 			return true;
 		} else {
 			utils.log().info("DHCP Radio button is not displayed");
@@ -189,18 +181,43 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 	}
 	
 	public boolean clickStaticRadioButton() {
-		if (staticRadioButtonUnChecked.isDisplayed()) {
-			click(staticRadioButtonUnChecked);
+		if (staticRadioButton.isDisplayed()) {
+			click(staticRadioButton);
 			utils.log().info("Static Radio button is selected");
-			return true;
-		}else if(staticRadioButtonChecked.isDisplayed()) {
-			utils.log().info("Static Radio button is already selected");
 			return true;
 		} else {
 			utils.log().info("Static Radio button is not displayed");
 			return false;
 		}
 	}
+	
+//	public boolean clickDHCPRadioButton() {
+//		if (dhcpRadioButtonChecked.isDisplayed()) {
+//			utils.log().info("DHCP Radion button is already selected");
+//			return true;
+//		}else if(dhcpRadioButtonUnChecked.isDisplayed()) {
+//			click(dhcpRadioButtonUnChecked);
+//			utils.log().info("Clicked on DHCP Radion button");
+//			return true;
+//		} else {
+//			utils.log().info("DHCP Radio button is not displayed");
+//			return false;
+//		}
+//	}
+//	
+//	public boolean clickStaticRadioButton() {
+//		if (staticRadioButtonUnChecked.isDisplayed()) {
+//			click(staticRadioButtonUnChecked);
+//			utils.log().info("Static Radio button is selected");
+//			return true;
+//		}else if(staticRadioButtonChecked.isDisplayed()) {
+//			utils.log().info("Static Radio button is already selected");
+//			return true;
+//		} else {
+//			utils.log().info("Static Radio button is not displayed");
+//			return false;
+//		}
+//	}
 	
 	public boolean verifyUIOnWANIPv4DHCP() {
 		utils.log().info("                                                ");
@@ -235,7 +252,7 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 			else
 				utils.log().info("IPV6 Tab is not displayed");
 
-			if (dhcpRadioButtonChecked.isDisplayed())
+			if (dhcpRadioButton.isDisplayed())
 				utils.log().info("DHCP Radio button is displayed and is selected");
 			else
 				utils.log().info("DHCP Radio button is not displayed");
@@ -317,7 +334,7 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 			else
 				utils.log().info("IPV6 Tab is not displayed");
 
-			if (staticRadioButtonChecked.isDisplayed())
+			if (staticRadioButton.isDisplayed())
 				utils.log().info("Static Radio button is displayed and is selected");
 			else
 				utils.log().info("Static Radio button is not displayed");

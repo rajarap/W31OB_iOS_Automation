@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 //Accessed from HomePage
 public class BlankBlockedDevicesPage extends ParentClass implements Page
@@ -18,13 +19,16 @@ public class BlankBlockedDevicesPage extends ParentClass implements Page
 	public TestUtils utils = new TestUtils();
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgCloseIcon") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button\"]")
 	public MobileElement closeIcon;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/txtHeader") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Blocked_Devices_Screen_TitleLabel\"]")
 	public MobileElement curentlyBlockedDevicesTitle;
 	
 	//is either "Parental Control is disabled" or count of devices blocked - 00
 	@AndroidFindBy (xpath = "//android.widget.TextView[resource-id='com.arris.sbcBeta:id/txtTotalDevices']") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Blocked_Devices_Screen_Label_Count\"]")
 	public MobileElement totalDevicesBlocked;
 	
 	public BlankBlockedDevicesPage()

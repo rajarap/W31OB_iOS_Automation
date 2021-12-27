@@ -38,6 +38,9 @@ public class SystemFirmwareUpdatePage extends ParentClass implements Page
 	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/tv_description_text']") // text = Your system has the latest software version AXR.0335.201111.12 . No update is needed at this time.
 	public MobileElement firmwareUpdateMessage;
 	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OB_Error_Screen_Button\"]")
+	public MobileElement continueButton;
+	
 	public SystemFirmwareUpdatePage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -47,6 +50,12 @@ public class SystemFirmwareUpdatePage extends ParentClass implements Page
 	{
 		utils.log().info("System Firmware Update Page - Clicked on Next Button");
 		click(nextButton);
+	}
+	
+	public void clickContinueButton()
+	{
+		utils.log().info("Warranty and Support Page - Clicked on Continue Button");
+		click(continueButton);
 	}
 	
 	@Override

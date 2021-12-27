@@ -6,6 +6,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -53,7 +54,7 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 	public MobileElement closeHamburgerMenu;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/centralLogo")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"LeftMenuFooter\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"LeftMenuHeader\"]")
 	public MobileElement logo;
 
 	public HamburgerMenuPage() {
@@ -92,6 +93,13 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 
 
 	public boolean clickCloseButton() {
+		
+//		String selector = "**/XCUIElementTypeImage[`name == \"LeftMenuCross\"`]";
+//		if(super.getDriver().findElement(MobileBy.iOSClassChain(selector)).isDisplayed())
+//		{
+//			utils.log().info("Close Icon is displayed on Hanburger Manu");
+//			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+		
 		if (closeHamburgerMenu.isDisplayed()) {
 			click(closeHamburgerMenu); // back to home page
 			utils.log().info("Clicked Close Icon on Hanburger Manu");
@@ -242,7 +250,7 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 
 	@Override
 	public boolean isAt() {
-		if (logo.isDisplayed()) {
+		if (addDevice.isDisplayed()) {
 			utils.log().info("On Hamburger Menu Page");
 			return true;
 		} else {
