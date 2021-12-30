@@ -10,109 +10,120 @@ import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.remote.HideKeyboardStrategy;
 
 public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	String[] ipAddress = {"192.168.7.101", "192.168.7.102" , "192.168.7.103", "192.168.7.104" , "192.168.7.105"};
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_cancel_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_Close\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_forwarding_header_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Label_AddPort\"]")
 	public MobileElement portRuletitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_forwarding_name_dialog")
-	public MobileElement portRuleNameLabel;
+//	@iOSXCUITFindBy(xpath="")
+//	public MobileElement portRuleNameLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_name_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Port_Forwarding_Screen_TextField\"]")
 	public MobileElement enterPortRuleNameTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/protocol_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Label_Protocol\"]")
 	public MobileElement protocolLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tcp_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_Tcp\"]")
 	public MobileElement tcpButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/udp_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_Udp\"]")
 	public MobileElement udpButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tcp_udp_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_TcpUdpRule\"]")
 	public MobileElement tcpUdpButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enter Internal port start']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Label_Internal\"]")
 	public MobileElement enterInternalPortStartLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_port_start_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Port_Forwarding_Screen_TextField_Internal\"]")
 	public MobileElement enterInternalPortStartTextBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enter Internal port end']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Label_InternalEnd\"]")
 	public MobileElement enterInternalPortEndLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_port_end_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Port_Forwarding_Screen_TextField_InternalEnd\"]")
 	public MobileElement enterInternalPortEndTextBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enter External port start']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Label_External\"]")
 	public MobileElement enterExternalPortStartLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/external_port_start_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Port_Forwarding_Screen_TextField_External\"]")
 	public MobileElement enterExternalPortStartTextBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enter External port end']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Label_ExternalEnd\"]")
 	public MobileElement enterExternalPortEndLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/external_port_end_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Port_Forwarding_Screen_TextField_ExternalEnd\"]")
 	public MobileElement enterExternalPortEndTextBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enter Internal IP Address']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Label_InternalIP\"]")
 	public MobileElement enterInternalIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_ip_address_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Port_Forwarding_Screen_TextField_InternalIP\"]")
 	public MobileElement enterInternalIPAddressTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_save_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_Save\"]")
 	public MobileElement saveChangesButton;
 	
 	//Error messages
 	
+	//All fields are mandatory
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error0\"]")
+	public MobileElement allFieldsAreMandatoryError;
+	
 	//Please enter Port Forwarding Rule Name.
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_name_dialog_error")
-	public MobileElement portNameDialogError;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_Save\"]")
+//	public MobileElement portNameDialogError;
 	
 	//Port should be in between 1 to 65536
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_port_start_dialog_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error1\"]")
 	public MobileElement internalPortStartError;
 	
 	//Port should be in between 1 to 65536
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_port_end_dialog_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error2\"]")
 	public MobileElement internalPortEndError;
 	
 	//Start port should be lesser than End port
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_port_start_dialog_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error1\"]")
 	public MobileElement internalStartPortLessThanEndPort;
 	
 	//Port should be in between 1 to 65536
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/external_port_start_dialog_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error3\"]")
 	public MobileElement externalPortStartError;
 	
 	//Port should be in between 1 to 65536
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/external_port_end_dialog_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error4\"]")
 	public MobileElement externalPortEndError;
 	
 	//Start port should be lesser than End port
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/external_port_start_dialog_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error3\"]")
 	public MobileElement externalStartPortLessThanEndPort;
 	
-		//Please enter a valid IP Address
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_ip_address_dialog_error")
+	//Please enter a valid IP Address
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error0\"]")
 	public MobileElement enterValidIPAddress;
 	
 	//IP Address must be within the subnet range.
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/internal_ip_address_dialog_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_Button_Label_Error5\"]")
 	public MobileElement enterInvalidIPAddress;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
+	
 	
 	public NetworkGeneralSettingsPortFowardingAddRulePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -135,7 +146,6 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		}
 	}
 	public boolean clickSaveButton() {
-		getDriver().hideKeyboard();
 		if (saveChangesButton.isDisplayed()) {
 			click(saveChangesButton);
 			utils.log().info("Clicked on Save Changes Button");
@@ -155,8 +165,8 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 			if (portRuletitle.isDisplayed())
 				utils.log().info(portRuletitle.getText() + " title text is displayed ");
 
-			if (portRuleNameLabel.isDisplayed())
-				utils.log().info(portRuleNameLabel.getText() + " label is displayed ");
+			if (closeButton.isDisplayed())
+				utils.log().info("Close Icon is displayed ");
 
 			if (enterPortRuleNameTextBox.isDisplayed())
 				utils.log().info("Port Forwarding Rule Name text box is displayed ");
@@ -217,13 +227,14 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("*************************************************");
 		utils.log().info("Verifying Enter Port Forwarding Rule Name Error  ");
 		utils.log().info("*************************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
-		if(portNameDialogError.isDisplayed())
-			utils.log().info("Validation Message : " + portNameDialogError.getText() + " is displayed");
+		if(allFieldsAreMandatoryError.isDisplayed())
+			utils.log().info("Validation Message : " + allFieldsAreMandatoryError.getText() + " is displayed");
 		
 		String ruleName = super.generatePortRuleName();
+		clear(enterPortRuleNameTextBox);
 		sendKeys(enterPortRuleNameTextBox, ruleName);
 		utils.log().info("Entered Rule Name : " + ruleName);
 		return true;
@@ -235,7 +246,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("********************************************");
 		utils.log().info("Verifying Enter Internal Port Start Error   ");
 		utils.log().info("********************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
 		
@@ -243,6 +254,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 			utils.log().info("Validation Message : " + internalPortStartError.getText() + " is displayed");
 		
 		String internalPortStart = super.generateInternalPortStart();
+		clear(enterInternalPortStartTextBox);
 		sendKeys(enterInternalPortStartTextBox, internalPortStart);
 		utils.log().info("Entered Internal Port Start : " + internalPortStart);
 		return true;
@@ -254,7 +266,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("********************************************");
 		utils.log().info("Verifying Enter Internal Port End Error   ");
 		utils.log().info("********************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
 		
@@ -275,7 +287,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("*****************************************************************");
 		utils.log().info("Verifying Internal Port Start Should Be Less Than Port End Error ");
 		utils.log().info("*****************************************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
 		
@@ -294,7 +306,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("********************************************");
 		utils.log().info("Verifying Enter External Port Start Error   ");
 		utils.log().info("********************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
 		
@@ -313,7 +325,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("********************************************");
 		utils.log().info("Verifying Enter External Port End Error     ");
 		utils.log().info("********************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
 		
@@ -336,7 +348,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("*****************************************************************");
 		utils.log().info("Verifying External Port Start Should Be Less Than Port End Error ");
 		utils.log().info("*****************************************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
 		
@@ -355,7 +367,7 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("****************************************");
 		utils.log().info("Verifying Enter Valid IP Address Error  ");
 		utils.log().info("****************************************");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		super.pause(2);
 		
@@ -372,16 +384,16 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 		utils.log().info("Verifying Enter Valid IP Address Within Subnet Range Error  ");
 		utils.log().info("************************************************************");
 		
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		sendKeys(enterInternalIPAddressTextBox, "127.0.0.1");
 		utils.log().info("Entered Invalid IP Address : 127.0.0.1");
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		this.clickSaveButton();
 		
 		if(enterInvalidIPAddress.isDisplayed())
 			utils.log().info("Validation Message : " + enterInvalidIPAddress.getText() + " is displayed");
 		
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		clear(enterInternalIPAddressTextBox);
 		sendKeys(enterInternalIPAddressTextBox, super.generateIPAdress());
 		utils.log().info("Entered valid IP Address");
@@ -411,56 +423,56 @@ public class NetworkGeneralSettingsPortFowardingAddRulePage extends ParentClass 
 	}
 	
 	public boolean enterPortRuleName() {
-		getDriver().hideKeyboard();
 		clear(enterPortRuleNameTextBox);
 		if(enterPortRuleNameTextBox.isDisplayed())
 			sendKeys(enterPortRuleNameTextBox, super.generatePortRuleName());
 		utils.log().info("Enterted Port Rule Name : " + enterPortRuleNameTextBox.getText());
+		click(doneLink);
 		return true;
 	}
 	
 	public boolean enterInternalPortStart() {
-		getDriver().hideKeyboard();
 		clear(enterInternalPortStartTextBox);
 		if(enterInternalPortStartTextBox.isDisplayed())
 			sendKeys(enterInternalPortStartTextBox, super.generateInternalPortStart());
 		utils.log().info("Enterted Internal Port Start : " + enterInternalPortStartTextBox.getText());
+		click(doneLink);
 		return true;
 	}
 	
 	public boolean enterInternalPortEnd() {
-		getDriver().hideKeyboard();
 		clear(enterInternalPortEndTextBox);
 		if(enterInternalPortEndTextBox.isDisplayed())
 			sendKeys(enterInternalPortEndTextBox, super.generateInternalPortEnd());
 		utils.log().info("Enterted Internal Port End : " + enterInternalPortEndTextBox.getText());
+		click(doneLink);
 		return true;
 	}
 	
 	public boolean enterExternalPortStart() {
-		getDriver().hideKeyboard();
 		clear(enterExternalPortStartTextBox);
 		if(enterExternalPortStartTextBox.isDisplayed())
 			sendKeys(enterExternalPortStartTextBox, super.generateExternalPortStart());
 		utils.log().info("Enterted External Port Start : " + enterExternalPortStartTextBox.getText());
+		click(doneLink);
 		return true;
 	}
 	
 	public boolean enterExternalPortEnd() {
-		getDriver().hideKeyboard();
 		clear(enterExternalPortEndTextBox);
 		if(enterExternalPortEndTextBox.isDisplayed())
 			sendKeys(enterExternalPortEndTextBox, super.generateExternalPortEnd());
 		utils.log().info("Enterted External Port Stop : " + enterExternalPortEndTextBox.getText());
+		click(doneLink);
 		return true;
 	}
 	
 	public boolean enterIPAddress() {
-		getDriver().hideKeyboard();
 		clear(enterInternalIPAddressTextBox);
 		if(enterInternalIPAddressTextBox.isDisplayed())
 			sendKeys(enterInternalIPAddressTextBox, super.generateIPAdress());
 		utils.log().info("Enterted IP Address : " + enterInternalIPAddressTextBox.getText());
+		click(doneLink);
 		return true;
 	}
 	

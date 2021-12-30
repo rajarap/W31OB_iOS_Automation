@@ -56,47 +56,32 @@ public class NetworkPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_GuestEnable\"]")
 	public MobileElement enableDisableGuestNetwork;
 
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='false']")
-//	public MobileElement disableGuestNetworkToggleButton;
-//
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable' and @checked='true']")
-//	public MobileElement enableGuestNetworkToggleButton;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchGuest\"]")
+	public MobileElement guestNetworkToggleButton;
+
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_GuestExpand\"]")
+	public MobileElement guestNetworkExpandIcon;
 	
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/guest_network_enable_disable']")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkToggleButton;
-//
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_plus_icon")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkExpandIcon;
-//	
-//	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Name (SSID)']")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkSIDLabel;
-//	
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_ssid")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkSSIDName;
-//	
-//	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Password']")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkPasswordLabel;
-//	
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_password")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkPassword;
-//	
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_password_show_hide")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkShowPasswordIcon;
-//	
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/guest_network_wifi_edit_icon")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkEditIcon;
-//	
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/share_guest_network")
-//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_SubTitleLabel_PleaseEnterYourEmailAddress\"]")
-//	public MobileElement guestNetworkShareCredentialsButton;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_GuestSSID\"]")
+	public MobileElement guestNetworkSIDLabel;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Screen_TextField_GuestSSID\"]")
+	public MobileElement guestNetworkSSIDName;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_GuestPassword\"]")
+	public MobileElement guestNetworkPasswordLabel;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Settings_Screen_TextField_GuestPassword\"]")
+	public MobileElement guestNetworkPassword;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_GuestEye\"]")
+	public MobileElement guestNetworkShowPasswordIcon;
+
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_GuestEdit\"]")
+	public MobileElement guestNetworkEditIcon;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_GuestShare\"]")
+	public MobileElement guestNetworkShareCredentialsButton;
 	
 
 	
@@ -105,7 +90,7 @@ public class NetworkPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Extended\"]")
 	public MobileElement extendedWifiSettingsLabel;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_ExtendedExpand\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_SettingsExpand\"]")
 	public MobileElement extendedWifiExpandIcon;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Extended5g\"]")
@@ -113,12 +98,6 @@ public class NetworkPage extends ParentClass implements Page {
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_ExtendedBand\"]")
 	public MobileElement fiveGHzWidebandInfoIcon;
-	
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='false']")
-//	public MobileElement disableWidebandModeToggleButton;
-//
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/wideband_network_enable_disable' and @checked='true']")
-//	public MobileElement enableWidebandModeToggleButton;
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchExtended\"]")
 	public MobileElement widebandModeToggleButton;
@@ -129,6 +108,7 @@ public class NetworkPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_BandTitle\"]")
 	public MobileElement bandSteeringModeLabel;
 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_Band\"]")
 	public MobileElement bandSteeringModeInfoIcon;
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Band\"]")
@@ -137,9 +117,6 @@ public class NetworkPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchBand\"]")
 	public MobileElement bandSteeringModeToggleButton;
 	
-	
-
-
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_SettingsTitle\"]")
 	public MobileElement networkSettingsLabel;
 
@@ -178,6 +155,13 @@ public class NetworkPage extends ParentClass implements Page {
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Test\"]")
 	public MobileElement testMyConnectionSpeedButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Join\"]")
+	public MobileElement joinButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Cancel\"]")
+	public MobileElement cancelButton;
+	
 
 
 	public NetworkPage() {
@@ -223,10 +207,20 @@ public class NetworkPage extends ParentClass implements Page {
 		Network5GHzWidebandModeInfoDialog widebandMode = new Network5GHzWidebandModeInfoDialog();
 		return widebandMode;
 	}
+
+	public NetworkBandSteeringModeInfoDialog getBandSteeringModeDialogObject() {
+		NetworkBandSteeringModeInfoDialog bandSteeringMode = new NetworkBandSteeringModeInfoDialog();
+		return bandSteeringMode;
+	}
 	
 	public Network5GHzWidebandModeAlertDialog get5GHzWidebandModeAlertDialogObject() {
 		Network5GHzWidebandModeAlertDialog widebandModeAlert = new Network5GHzWidebandModeAlertDialog();
 		return widebandModeAlert;
+	}
+	
+	public NetworkBandSteeringModeAlertDialog getBandSteeringModeAlertDialogObject() {
+		NetworkBandSteeringModeAlertDialog bandSteeringModeAlert = new NetworkBandSteeringModeAlertDialog();
+		return bandSteeringModeAlert;
 	}
 	
 	public NetworkEnableGuestNetworkDialog getEnableGuestNetworkDialogObject() {
@@ -260,6 +254,27 @@ public class NetworkPage extends ParentClass implements Page {
 		return generalSettings;
 	}
 	
+	public boolean clickJoinButton() {
+		if (joinButton.isDisplayed()) {
+			click(joinButton);
+			utils.log().info("Clicked on Join displayed");
+			return true;
+		} else {
+			utils.log().info("Join button is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickCancelButton() {
+		if (cancelButton.isDisplayed()) {
+			click(cancelButton);
+			utils.log().info("Clicked on Cancel displayed");
+			return true;
+		} else {
+			utils.log().info("Cancel button is not displayed");
+			return false;
+		}
+	}
 	
 	public boolean clickHelpButton() {
 		if (helpIcon.isDisplayed()) {
@@ -294,6 +309,7 @@ public class NetworkPage extends ParentClass implements Page {
 
 	public boolean clickNetworkSettingsExpandButton() {
 		if (networkSettingsExpandIcon.isDisplayed()) {
+			utils.log().info("Network Settings Expand Button is displayed");
 			click(networkSettingsExpandIcon);
 			return true;
 		}else {
@@ -302,35 +318,38 @@ public class NetworkPage extends ParentClass implements Page {
 		}
 	}
 	
-//	public boolean clickGuestNetworkExpandButton() {
-//		if (guestNetworkExpandIcon.isDisplayed()) {
-//			click(guestNetworkExpandIcon);
-//			return true;
-//		}else {
-//			utils.log().info("Guest Network Expand Button is not displayed");
-//			return false;
-//		}
-//	}
-//	
-//	public boolean clickGuestNetworkShowPasswordButton() {
-//		if (guestNetworkShowPasswordIcon.isDisplayed()) {
-//			click(guestNetworkShowPasswordIcon);
-//			return true;
-//		}else {
-//			utils.log().info("Show Password Icon is not displayed");
-//			return false;
-//		}
-//	}
-//	
-//	public boolean clickGuestNetworkEditdButton() {
-//		if (guestNetworkEditIcon.isDisplayed()) {
-//			click(guestNetworkEditIcon);
-//			return true;
-//		}else {
-//			utils.log().info("Edit Icon is not displayed");
-//			return false;
-//		}
-//	}
+	public boolean clickGuestNetworkExpandButton() {
+		if (guestNetworkExpandIcon.isDisplayed()) {
+			click(guestNetworkExpandIcon);
+			utils.log().info("Clicked on Guest Network Expand Button");
+			return true;
+		}else {
+			utils.log().info("Guest Network Expand Button is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickGuestNetworkShowPasswordButton() {
+		if (guestNetworkShowPasswordIcon.isDisplayed()) {
+			click(guestNetworkShowPasswordIcon);
+			utils.log().info("Clicked on Show Password Icon");
+			return true;
+		}else {
+			utils.log().info("Show Password Icon is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickGuestNetworkEditdButton() {
+		if (guestNetworkEditIcon.isDisplayed()) {
+			click(guestNetworkEditIcon);
+			utils.log().info("Clicked on Guest Network Edit Icon");
+			return true;
+		}else {
+			utils.log().info("Edit Icon is not displayed");
+			return false;
+		}
+	}
 	
 	public boolean clickfiveGHzWidebandInfoIcon() {
 		if (fiveGHzWidebandInfoIcon.isDisplayed()) {
@@ -365,29 +384,60 @@ public class NetworkPage extends ParentClass implements Page {
 		}
 	}
 	
-//	public boolean enableGuestWifiNetwork() {
-//		if (guestNetworkToggleButton.isSelected()) {
-//			utils.log().info("Enable/Disable Guest Network is already enabled");
-//			return true;
-//		}else {
-//			click(guestNetworkToggleButton);
-//			super.pause(20);
-//			utils.log().info("Enable/Disable Guest Network is now enabled");
-//			return true;
-//		}
-//	}
-//
-//	public boolean disableGuestWifiNetwork() {
-//		if (!(guestNetworkToggleButton.isSelected())) {
-//			utils.log().info("Enable/Disable Guest Network is already disabled");
-//			return true;
-//		} else {
-//			click(guestNetworkToggleButton);
-//			super.pause(20);
-//			utils.log().info("Enable/Disable Guest Network is now disabled");
-//			return true;
-//		}
-//	}
+	public boolean clickBandSteeringInfoIcon() {
+		if (bandSteeringModeInfoIcon.isDisplayed()) {
+			click(bandSteeringModeInfoIcon);
+			utils.log().info("Clicked on Band Steering Mode Info Icon");
+			return true;
+		} else {
+			utils.log().info("Band Steering Mode Info Icon is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean enableBandSteeringMode() {
+		if (bandSteeringModeToggleButton.isSelected()) {
+			utils.log().info("Band Steering Mode is already enabled");
+			return true;
+		} else {
+			click(bandSteeringModeToggleButton);
+			utils.log().info("Band Steering Mode is now enabled");
+			return true;
+		}
+	}
+
+	public boolean disableBandSteeringMode() {
+		if (!(bandSteeringModeToggleButton.isSelected())) {
+			utils.log().info("Band Steering Mode is already disabled");
+			return true;
+		} else {
+			click(bandSteeringModeToggleButton);
+			utils.log().info("Band Steering Mode is now disabled");
+			return true;
+		}
+	}
+	
+	public boolean enableGuestWifiNetwork() {
+		if (guestNetworkToggleButton.isSelected()) {
+			utils.log().info("Enable/Disable Guest Network is already enabled");
+			return true;
+		}else {
+			click(guestNetworkToggleButton);
+			utils.log().info("Enable/Disable Guest Network is now enabled");
+			return true;
+		}
+	}
+
+	public boolean disableGuestWifiNetwork() {
+		if (!(guestNetworkToggleButton.isSelected())) {
+			utils.log().info("Enable/Disable Guest Network is already disabled");
+			return true;
+		} else {
+			click(guestNetworkToggleButton);
+			utils.log().info("Enable/Disable Guest Network is now disabled");
+			return true;
+		}
+	}
 
 	public boolean clickGeneralSettings() {
 		if (generalSettingsLabel.isDisplayed()) {
@@ -461,10 +511,10 @@ public class NetworkPage extends ParentClass implements Page {
 				utils.log().info("Help Icon is not displayed");
 
 			if (expandButton.isDisplayed()) {
-				utils.log().info("Main WiFi expand button is displayed");
+				utils.log().info("Main Wi-Fi expand button is displayed");
 				click(expandButton);} 
 			else
-				utils.log().info("Main WiFi expand button is not displayed");
+				utils.log().info("Main Wi-Fi expand button is not displayed");
 			
 			if (mainWifiLabel.isDisplayed())
 				utils.log().info("Main Wi-Fi Network Label is displayed ");
@@ -587,12 +637,14 @@ public class NetworkPage extends ParentClass implements Page {
 			
 			click(extendedWifiExpandIcon); //2
 
-			if (networkSettingsExpandIcon.isDisplayed()) {
-				utils.log().info("Network Settings expand button is displayed");
-				click(networkSettingsExpandIcon);	//1
-				super.swipeUp();}
-			else
-				utils.log().info("Network Settings expand button is not displayed");
+//			if (networkSettingsExpandIcon.isDisplayed()) {
+//				utils.log().info("Network Settings expand button is displayed");
+//				click(networkSettingsExpandIcon);	//1
+//				super.swipeUp();}
+//			else
+//				utils.log().info("Network Settings expand button is not displayed");
+			click(networkSettingsExpandIcon); //1
+			super.swipeUp();
 
 			if (networkSettingsLabel.isDisplayed())
 				utils.log().info(networkSettingsLabel.getText() + " label is displayed");
@@ -639,7 +691,7 @@ public class NetworkPage extends ParentClass implements Page {
 			else
 				utils.log().info("Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is not displayed");
 
-			click(networkSettingsExpandIcon); //2
+			//click(networkSettingsExpandIcon); //2
 			
 			if (testMyConnectionSpeedButton.isDisplayed()) {
 				utils.log().info(testMyConnectionSpeedButton.getText() + " button is displayed");

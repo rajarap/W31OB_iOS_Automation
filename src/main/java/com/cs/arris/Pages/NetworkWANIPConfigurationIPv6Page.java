@@ -251,18 +251,17 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 			else
 				utils.log().info("Stateful Radio button is not displayed ");
 
-			if (ipv6AddressLabel.isDisplayed() && ipv6Address.isDisplayed() && !(ipv6Address.isEnabled()))
+			if (ipv6AddressLabel.isDisplayed() && ipv6Address.isDisplayed())
 				utils.log().info(ipv6AddressLabel.getText() + " : " + ipv6Address.getText());
 			else
 				utils.log().info("IPv6 Address is not displayed ");
 
-			if (ipv6PrefixLengthLabel.isDisplayed() && ipv6PrefixLength.isDisplayed()
-					&& !(ipv6PrefixLength.isEnabled()))
+			if (ipv6PrefixLengthLabel.isDisplayed() && ipv6PrefixLength.isDisplayed())
 				utils.log().info(ipv6PrefixLengthLabel.getText() + " : " + ipv6PrefixLength.getText());
 			else
 				utils.log().info("IPv6 Prefix Length Label is not displayed ");
 
-			if (ipv6GatewayLabel.isDisplayed() && ipv6Gateway.isDisplayed() && !(ipv6Gateway.isEnabled()))
+			if (ipv6GatewayLabel.isDisplayed() && ipv6Gateway.isDisplayed())
 				utils.log().info(ipv6GatewayLabel.getText() + " : " + ipv6Gateway.getText());
 			else
 				utils.log().info("IPv6 Gateway is not displayed ");
@@ -277,12 +276,12 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 			else
 				utils.log().info("IPv6 Prefix Delegation checkbox is not displayed ");
 
-			if (ipv6PrimaryDNSLabel.isDisplayed() && ipv6PrimaryDNS.isDisplayed() && !(ipv6PrimaryDNS.isEnabled()))
+			if (ipv6PrimaryDNSLabel.isDisplayed() && ipv6PrimaryDNS.isDisplayed())
 				utils.log().info(ipv6PrimaryDNSLabel.getText() + " : " + ipv6PrimaryDNS.getText());
 			else
 				utils.log().info("IPv6 Primary DNS is not displayed ");
 
-			if (ipv6SecondayDNSLabel.isDisplayed() && ipv6SecondaryDNS.isDisplayed() && !(ipv6SecondaryDNS.isEnabled()))
+			if (ipv6SecondayDNSLabel.isDisplayed() && ipv6SecondaryDNS.isDisplayed())
 				utils.log().info(ipv6SecondayDNSLabel.getText() + " : " + ipv6SecondaryDNS.getText());
 			else
 				utils.log().info("IPv6 Secondary DNS is not displayed ");
@@ -342,7 +341,7 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 
 			new SwipeActions().swipeScreen(Direction.UP);
 
-			if (ipv6AddressLabel.isDisplayed() && ipv6Address.isDisplayed() && !(ipv6Address.isEnabled()))
+			if (ipv6AddressLabel.isDisplayed() && ipv6Address.isDisplayed())
 				utils.log().info(ipv6AddressLabel.getText() + " : " + ipv6Address.getText());
 			else
 				utils.log().info("IPv6 Address Label is not displayed ");
@@ -353,7 +352,7 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 			else
 				utils.log().info("IPv6 Prefix Length Label is not displayed ");
 
-			if (ipv6GatewayLabel.isDisplayed() && ipv6Gateway.isDisplayed() && !(ipv6Gateway.isEnabled()))
+			if (ipv6GatewayLabel.isDisplayed() && ipv6Gateway.isDisplayed())
 				utils.log().info(ipv6GatewayLabel.getText() + " : " + ipv6Gateway.getText());
 			else
 				utils.log().info("IPv6 Gateway Label is not displayed ");
@@ -368,12 +367,12 @@ public class NetworkWANIPConfigurationIPv6Page extends ParentClass implements Pa
 			else
 				utils.log().info("IPv6 Prefix Delegation checkbox is not displayed ");
 
-			if (ipv6PrimaryDNSLabel.isDisplayed() && ipv6PrimaryDNS.isDisplayed() && !(ipv6PrimaryDNS.isEnabled()))
+			if (ipv6PrimaryDNSLabel.isDisplayed() && ipv6PrimaryDNS.isDisplayed())
 				utils.log().info(ipv6PrimaryDNSLabel.getText() + " : " + ipv6PrimaryDNS.getText());
 			else
 				utils.log().info("IPv6 Primary DNS Label is not displayed ");
 
-			if (ipv6SecondayDNSLabel.isDisplayed() && ipv6SecondaryDNS.isDisplayed() && !(ipv6SecondaryDNS.isEnabled()))
+			if (ipv6SecondayDNSLabel.isDisplayed() && ipv6SecondaryDNS.isDisplayed())
 				utils.log().info(ipv6SecondayDNSLabel.getText() + " : " + ipv6SecondaryDNS.getText());
 			else
 				utils.log().info("IPv6 Secondary DNS Label is not displayed ");

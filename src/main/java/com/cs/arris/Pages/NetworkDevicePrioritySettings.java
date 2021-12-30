@@ -15,35 +15,36 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Device Priority Settings\"]")
 	public MobileElement devicePriorityTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Device Level Prioritization']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Device_Priority_Screen_Button_Label_Device\"]")
 	public MobileElement deviceLevelPrioritizationLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Network Device Priority']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Device_Priority_Screen_Label_Priority\"]")
 	public MobileElement networkDevicePriorityLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/device_enable_disable']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Device_Priority_Screen_Button_Switch\"]")
 	public MobileElement devicePrioritySettingToggleButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@text='ON']")
-	public MobileElement enabledDevicePrioritySettingToggleButton;
-	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@text='OFF']")
-	public MobileElement disabledDevicePrioritySettingToggleButton;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Device Priority Settings\"]")
+//	public MobileElement enabledDevicePrioritySettingToggleButton;
+//	
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Device Priority Settings\"]")
+//	public MobileElement disabledDevicePrioritySettingToggleButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/add_device_configure")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Device_Priority_Screen_Button\"]")
 	public MobileElement addDeviceButton;
 
 
@@ -104,30 +105,24 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 		}
 	}
 	
-//	public boolean enableDevicePrioritySettings() {
-//		click(disabledDevicePrioritySettingToggleButton);
-//		super.pause(35);
-//		utils.log().info("Device Priority Settings is selected");
-//		return true;
-//		}
-	
 	public boolean enableDevicePrioritySettings() {
-			click(disabledDevicePrioritySettingToggleButton);
-			utils.log().info("Device Priority Settings is enabled");
-			return true;
+		if(devicePrioritySettingToggleButton.isSelected()) {
+			utils.log().info("Device Priority Settings is already selected");
+		return true;
+		}else {
+			click(devicePrioritySettingToggleButton);
+			super.pause(5);
+			utils.log().info("Device Priority Settings is selected");
+		return true;
+		}
 	}
 	
-//	public boolean disableDevicePrioritySettings() {
-//		click(enabledDevicePrioritySettingToggleButton);
-//		super.pause(35);
-//		utils.log().info("Device Priority Settings is disabled");
-//			return true;
-//	}
-//	
 	public boolean disableDevicePrioritySettings() {
-			click(enabledDevicePrioritySettingToggleButton);
-			utils.log().info("Device Priority Settings is disabled");
-			return false;
+		if(devicePrioritySettingToggleButton.isSelected()) {
+			click(devicePrioritySettingToggleButton);
+			super.pause(5);
+			utils.log().info("Device Priority Settings is disabled");}
+		return true;
 	}
 	
 
@@ -186,27 +181,28 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 		 {
 			for (int i = 1; i <= 2; i++)
 			{
+				utils.log().info("                          ");
 				utils.log().info("Prioritized Device  : " + i);
 				utils.log().info("--------------------------");
 
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver()
-					.findElementsByXPath("//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup");
+				List<MobileElement> entity = (List<MobileElement>) 
+				super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) 
 				{
-					if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/deviceTypeImage']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Device_Priority_Screen_Image_Device["+i+"]\"]").isDisplayed())
 						utils.log().info("Device Image is displayed");
 				
-					if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").isDisplayed())
-						utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").getText());
+					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Priority_Screen_Label_Device["+i+"]\"]").isDisplayed())
+						utils.log().info("Device Name: " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Priority_Screen_Label_Device["+i+"]\"]").getText());
 				
-					if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Priority_Screen_Button_Highest["+i+"]\"]").isDisplayed())
 						utils.log().info("Highest Priority Radion Button option is displayed");
 
-					if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_high']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Priority_Screen_Button_High["+i+"]\"]").isDisplayed())
 						utils.log().info("High Priority Radion Button option is displayed");
 
-					if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_normal']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Priority_Screen_Button_Normal["+i+"]\"]").isDisplayed())
 						utils.log().info("Normal Priority Radio Button is displayed");			
 				}
 			}
@@ -227,20 +223,21 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 			utils.log().info("Prioritized Device  : " + i);
 			utils.log().info("--------------------------");
 
-			List<MobileElement> entity = (List<MobileElement>) super.getDriver()
-					.findElementsByXPath("//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup");
+			List<MobileElement> entity = (List<MobileElement>)
+			super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 			for (MobileElement e : entity) {
-				if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/deviceTypeImage']").isDisplayed())
+				if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Device_Priority_Screen_Image_Device["+i+"]\"]").isDisplayed())
 					utils.log().info("Device Image is displayed");
-				
-				if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").isDisplayed())
-					utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/deviceName']").getText());
+			
+				if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Priority_Screen_Label_Device["+i+"]\"]").isDisplayed())
+					utils.log().info("Device Name: " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Priority_Screen_Label_Device["+i+"]\"]").getText());
 				
 				try
 				{
-					if (e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest']").isDisplayed()) {			
-							click(e.findElementByXPath("//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/rb_highest']"));
+					if (e.findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Priority_Screen_Button_Highest["+i+"]\"]").isDisplayed()) {			
+							click(e.findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Priority_Screen_Button_Highest["+i+"]\"]"));
+							super.pause(15);
 							utils.log().info("Highest Priority Radion Button option is selected");
 						}
 				}catch(Exception exp) {

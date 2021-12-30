@@ -1,0 +1,1227 @@
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:29.607 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:29.618 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:34.958 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:34.959 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:39.096 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:39.107 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:39.121 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:39.124 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:39.127 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:39.130 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:39.131 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:40.014 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:40.465 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:40.877 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:40.878 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:40.879 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:40.881 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:40.883 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:43.939 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:43.967 NetworkPage:448 -                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:43.968 NetworkPage:449 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:43.968 NetworkPage:450 - Verifying UI Elements on Network Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:43.969 NetworkPage:451 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:45.920 NetworkPage:454 - Network  title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:46.960 NetworkPage:459 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:47.916 NetworkPage:464 - Main WiFi expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:51.153 NetworkPage:470 - Main Wi-Fi Network Label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:55.059 NetworkPage:475 - Network Name (SSID) : arrisW31-938
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:58.665 NetworkPage:480 - Password : ••••••••••
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:29:59.649 NetworkPage:485 - Show Password Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:03.766 NetworkPage:491 - Guest Wi-Fi Network  label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:05.444 NetworkPage:496 - Enable/Disable Guest Network label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:06.499 NetworkPage:553 - Extended WiFi Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:10.262 NetworkPage:559 - Extended Wi-Fi Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:12.200 NetworkPage:564 - 5GHz Wideband Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:14.005 NetworkPage:569 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:17.358 NetworkPage:579 - Band Steering Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:18.854 NetworkPage:584 - Periodically will check devices connected on 2.4GHz bands and steer them to faster available 5GHz bands label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:21.835 NetworkPage:591 - Network Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:27.376 NetworkPage:598 - Network Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:30.946 NetworkPage:603 - LAN IP Address : 192.168.7.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:34.549 NetworkPage:608 - Gateway IP Address : 10.240.0.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:36.757 NetworkPage:613 - General Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:38.732 NetworkPage:618 - WAN Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:40.360 NetworkPage:623 - LAN Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:42.227 NetworkPage:628 - Device Priority Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:44.222 NetworkPage:633 - Time Zone label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:45.984 NetworkPage:638 - Chennai, Kolkata, Mumbai, New Delhi (GMT +05:30) label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:49.965 NetworkPage:645 - TEST MY CONNECTION SPEED button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:53.325 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:30:53.939 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:31:09.944 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_Newtork_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:31:10.355 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Test_Connection_Speed_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:31:13.987 NetworkPage:277 - Clicked on Test Your Connection Speed button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:31:15.320 SpeedTestPage:312 - Label on button before speed Test: START TEST
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:31:17.030 SpeedTestPage:266 - Clicked Start Speed Test Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:31:18.356 SpeedTestPage:314 - Label on button during speed Test: STOP TEST
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:08.689 SpeedTestPage:320 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:11.541 SpeedTestPage:167 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:16.404 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_Newtork_Test_Connection_Speed_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:17.206 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:24.451 NetworkPage:406 - Clicked on WAN Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:29.952 TC03_Complex_Test:516 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:29.974 NetworkWANSettingsPage:176 -                                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:29.975 NetworkWANSettingsPage:177 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:29.976 NetworkWANSettingsPage:178 - Verifying UI Elements on Network - WAN Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:29.976 NetworkWANSettingsPage:179 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:31.271 NetworkWANSettingsPage:182 - WAN Settings title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:31.918 NetworkWANSettingsPage:187 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:32.580 NetworkWANSettingsPage:192 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:33.295 NetworkWANSettingsPage:197 - WAN IP Configuration Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:33.994 NetworkWANSettingsPage:202 - LAC Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:34.749 NetworkWANSettingsPage:207 - LAC Info Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:35.193 NetworkWANSettingsPage:212 - LAC toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:35.883 NetworkWANSettingsPage:217 - DNS Configuration Link is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:37.261 NetworkWANSettingsPage:222 - WAN IP RENEW button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:37.914 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_WAN_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:38.378 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:40.644 NetworkWANSettingsPage:113 - Clicked on Help Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:43.619 NetworkWANSettingsHelpPage:59 - On WAN Settings Help Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:48.050 NetworkWANSettingsHelpPage:48 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:48.517 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_WAN_Settings_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:49.204 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:51.686 NetworkWANSettingsPage:135 - Clicked on WAN IP Configuration Link
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:52.402 NetworkWANIPConfigurationIPv4Page:387 - On WAN IPv4 Configuration Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:52.415 NetworkWANIPConfigurationIPv4Page:223 -                                                 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:52.415 NetworkWANIPConfigurationIPv4Page:224 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:52.415 NetworkWANIPConfigurationIPv4Page:225 - Verifying WAN IPv4 - DHCP Configuration Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:52.416 NetworkWANIPConfigurationIPv4Page:226 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:52.982 NetworkWANIPConfigurationIPv4Page:174 - DHCP Radion button is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:56.026 NetworkWANIPConfigurationIPv4Page:231 - WAN IP Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:56.587 NetworkWANIPConfigurationIPv4Page:236 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:57.314 NetworkWANIPConfigurationIPv4Page:241 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:58.000 NetworkWANIPConfigurationIPv4Page:246 - IPv4 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:58.693 NetworkWANIPConfigurationIPv4Page:251 - IPV6 Tab is displayed and is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:33:59.427 NetworkWANIPConfigurationIPv4Page:256 - DHCP Radio button is displayed and is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:01.095 NetworkWANIPConfigurationIPv4Page:270 - IP Address details is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 12:34:07.233 TestListener:39 - java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page(TC03_Complex_Test.java:541)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:07.777 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:08.196 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 12:34:13.754 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_Label_Option[3]"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.clickDNSConfigurationLink(NetworkWANSettingsPage.java:166)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page(TC03_Complex_Test.java:586)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@a7cf42f (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_Label_Option[3]"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:14.009 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:14.400 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_LAC_Alert_Dialog ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 12:34:19.740 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_NavigationBar_TitleLabel"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.isAt(NetworkWANSettingsPage.java:234)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_LAC_Alert_Dialog(TC03_Complex_Test.java:638)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@31f295b6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_NavigationBar_TitleLabel"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:19.964 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-29-29/TC03_Complex_Test/Verify_WAN_Settings_LAC_Alert_Dialog.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:26.840 ParentClass:185 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:34:26.885 ParentClass:187 - Quitting Driver
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:28.942 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:28.955 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:34.092 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:34.094 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:37.624 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:37.634 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:37.644 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:37.646 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:37.648 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:37.650 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:37.651 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:38.180 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:38.634 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:39.046 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:39.052 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:39.054 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:39.055 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:39.059 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:41.669 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:41.688 NetworkPage:448 -                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:41.689 NetworkPage:449 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:41.689 NetworkPage:450 - Verifying UI Elements on Network Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:41.690 NetworkPage:451 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:43.784 NetworkPage:454 - Network  title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:44.858 NetworkPage:459 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:45.930 NetworkPage:464 - Main WiFi expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:49.048 NetworkPage:470 - Main Wi-Fi Network Label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:52.589 NetworkPage:475 - Network Name (SSID) : arrisW31-938
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:56.469 NetworkPage:480 - Password : ••••••••••
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:39:57.265 NetworkPage:485 - Show Password Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:01.380 NetworkPage:491 - Guest Wi-Fi Network  label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:03.185 NetworkPage:496 - Enable/Disable Guest Network label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:04.261 NetworkPage:553 - Extended WiFi Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:08.300 NetworkPage:559 - Extended Wi-Fi Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:10.235 NetworkPage:564 - 5GHz Wideband Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:11.770 NetworkPage:569 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:14.875 NetworkPage:579 - Band Steering Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:16.581 NetworkPage:584 - Periodically will check devices connected on 2.4GHz bands and steer them to faster available 5GHz bands label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:19.337 NetworkPage:591 - Network Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:25.328 NetworkPage:598 - Network Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:28.868 NetworkPage:603 - LAN IP Address : 192.168.7.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:32.871 NetworkPage:608 - Gateway IP Address : 10.240.0.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:34.904 NetworkPage:613 - General Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:36.798 NetworkPage:618 - WAN Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:38.456 NetworkPage:623 - LAN Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:40.337 NetworkPage:628 - Device Priority Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:42.556 NetworkPage:633 - Time Zone label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:44.241 NetworkPage:638 - Chennai, Kolkata, Mumbai, New Delhi (GMT +05:30) label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:48.270 NetworkPage:645 - TEST MY CONNECTION SPEED button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:51.172 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:40:51.736 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:41:07.577 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_Newtork_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:41:08.015 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Test_Connection_Speed_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:41:11.653 NetworkPage:277 - Clicked on Test Your Connection Speed button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:41:12.966 SpeedTestPage:312 - Label on button before speed Test: START TEST
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:41:14.540 SpeedTestPage:266 - Clicked Start Speed Test Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:41:15.988 SpeedTestPage:314 - Label on button during speed Test: STOP TEST
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:07.058 SpeedTestPage:320 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:10.171 SpeedTestPage:167 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:14.970 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_Newtork_Test_Connection_Speed_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:15.895 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:23.129 NetworkPage:406 - Clicked on WAN Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:28.385 TC03_Complex_Test:516 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:28.408 NetworkWANSettingsPage:176 -                                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:28.408 NetworkWANSettingsPage:177 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:28.409 NetworkWANSettingsPage:178 - Verifying UI Elements on Network - WAN Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:28.409 NetworkWANSettingsPage:179 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:29.637 NetworkWANSettingsPage:182 - WAN Settings title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:30.277 NetworkWANSettingsPage:187 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:30.935 NetworkWANSettingsPage:192 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:31.485 NetworkWANSettingsPage:197 - WAN IP Configuration Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:32.169 NetworkWANSettingsPage:202 - LAC Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:32.787 NetworkWANSettingsPage:207 - LAC Info Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:33.410 NetworkWANSettingsPage:212 - LAC toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:33.906 NetworkWANSettingsPage:217 - DNS Configuration Link is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:34.958 NetworkWANSettingsPage:222 - WAN IP RENEW button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:35.729 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_WAN_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:36.483 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:38.508 NetworkWANSettingsPage:113 - Clicked on Help Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:40.327 NetworkWANSettingsHelpPage:59 - On WAN Settings Help Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:44.979 NetworkWANSettingsHelpPage:48 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:45.432 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_WAN_Settings_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:45.868 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:48.052 NetworkWANSettingsPage:135 - Clicked on WAN IP Configuration Link
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:48.793 NetworkWANIPConfigurationIPv4Page:387 - On WAN IPv4 Configuration Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:48.814 NetworkWANIPConfigurationIPv4Page:223 -                                                 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:48.815 NetworkWANIPConfigurationIPv4Page:224 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:48.815 NetworkWANIPConfigurationIPv4Page:225 - Verifying WAN IPv4 - DHCP Configuration Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:48.816 NetworkWANIPConfigurationIPv4Page:226 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:49.455 NetworkWANIPConfigurationIPv4Page:174 - DHCP Radion button is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:52.532 NetworkWANIPConfigurationIPv4Page:231 - WAN IP Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:53.285 NetworkWANIPConfigurationIPv4Page:236 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:53.975 NetworkWANIPConfigurationIPv4Page:241 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:54.699 NetworkWANIPConfigurationIPv4Page:246 - IPv4 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:55.407 NetworkWANIPConfigurationIPv4Page:251 - IPV6 Tab is displayed and is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:56.114 NetworkWANIPConfigurationIPv4Page:256 - DHCP Radio button is displayed and is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:43:58.624 NetworkWANIPConfigurationIPv4Page:268 - IP Address : 10.240.217.85
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 12:44:04.657 TestListener:39 - java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page(TC03_Complex_Test.java:541)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:44:05.221 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:44:05.675 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 12:44:11.161 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_Label_Option[3]"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.clickDNSConfigurationLink(NetworkWANSettingsPage.java:166)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page(TC03_Complex_Test.java:586)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@fe09383 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_Label_Option[3]"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:44:11.393 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:44:11.793 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_LAC_Alert_Dialog ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 12:44:17.354 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_NavigationBar_TitleLabel"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.isAt(NetworkWANSettingsPage.java:234)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_LAC_Alert_Dialog(TC03_Complex_Test.java:638)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7a687d8d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_NavigationBar_TitleLabel"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:44:17.543 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-12-39-28/TC03_Complex_Test/Verify_WAN_Settings_LAC_Alert_Dialog.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:44:24.465 ParentClass:185 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 12:44:24.505 ParentClass:187 - Quitting Driver
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:01:57.060 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:01:57.072 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:02.480 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:02.481 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:06.174 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:06.182 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:06.195 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:06.198 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:06.200 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:06.201 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:06.202 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:07.011 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:07.365 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-01-57/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:07.775 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:07.780 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:07.782 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:07.787 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:07.788 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:10.621 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:10.644 NetworkPage:448 -                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:10.644 NetworkPage:449 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:10.645 NetworkPage:450 - Verifying UI Elements on Network Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:10.645 NetworkPage:451 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:12.747 NetworkPage:454 - Network  title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:13.725 NetworkPage:459 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:14.724 NetworkPage:464 - Main WiFi expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:17.926 NetworkPage:470 - Main Wi-Fi Network Label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:22.017 NetworkPage:475 - Network Name (SSID) : arrisW31-938
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:25.742 NetworkPage:480 - Password : ••••••••••
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:26.716 NetworkPage:485 - Show Password Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:30.811 NetworkPage:491 - Guest Wi-Fi Network  label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:32.495 NetworkPage:496 - Enable/Disable Guest Network label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:33.443 NetworkPage:553 - Extended WiFi Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:37.631 NetworkPage:559 - Extended Wi-Fi Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:39.292 NetworkPage:564 - 5GHz Wideband Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:41.258 NetworkPage:569 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:44.136 NetworkPage:579 - Band Steering Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:45.871 NetworkPage:584 - Periodically will check devices connected on 2.4GHz bands and steer them to faster available 5GHz bands label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:02:48.894 NetworkPage:591 - Network Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:01.897 NetworkPage:598 - Network Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:05.833 NetworkPage:603 - LAN IP Address : 192.168.7.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:09.945 NetworkPage:608 - Gateway IP Address : 10.240.0.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:10.836 NetworkPage:615 - General Settings label is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:11.804 NetworkPage:620 - WAN Settings label is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:12.578 NetworkPage:625 - LAN Settings label is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:13.364 NetworkPage:630 - Device Priority Settings label is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:14.230 NetworkPage:635 - Time Zone label is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:15.171 NetworkPage:640 - Chennai, Kolkata, Mumbai, New Delhi (GMT+05:30) label is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:17.863 NetworkPage:647 - Test My Connection Speed button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:20.826 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-01-57/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:21.527 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:38.659 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-01-57/TC03_Complex_Test/Verify_Newtork_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:39.383 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Test_Connection_Speed_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:40.587 NetworkPage:280 - Test Your Connection Speed button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 13:03:56.360 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeButton[@name="Speed_Test_Screen_NavigationBar_Button_Back"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.SpeedTestPage.clickBackButton(SpeedTestPage.java:165)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_Newtork_Test_Connection_Speed_Page(TC03_Complex_Test.java:502)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3c91530d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeButton[@name="Speed_Test_Screen_NavigationBar_Button_Back"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:57.134 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-01-57/TC03_Complex_Test/Verify_Newtork_Test_Connection_Speed_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:03:57.565 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:03.259 NetworkPage:409 - WAN Settings Link is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:08.471 TC03_Complex_Test:516 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:08.486 NetworkWANSettingsPage:176 -                                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:08.487 NetworkWANSettingsPage:177 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:08.487 NetworkWANSettingsPage:178 - Verifying UI Elements on Network - WAN Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:08.488 NetworkWANSettingsPage:179 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 13:04:14.854 TestListener:39 - java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_UI_Page(TC03_Complex_Test.java:523)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:15.563 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-01-57/TC03_Complex_Test/Verify_WAN_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:22.547 ParentClass:185 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:04:22.606 ParentClass:187 - Quitting Driver
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:07.265 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:07.276 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:11.353 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:11.354 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.006 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.014 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.026 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.031 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.033 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.034 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.036 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.541 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:15.873 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:16.266 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:16.271 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:16.273 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:16.276 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:16.278 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:18.814 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:18.836 NetworkPage:448 -                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:18.837 NetworkPage:449 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:18.839 NetworkPage:450 - Verifying UI Elements on Network Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:18.839 NetworkPage:451 - **************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:20.933 NetworkPage:454 - Network  title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:21.960 NetworkPage:459 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:23.052 NetworkPage:464 - Main WiFi expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:26.375 NetworkPage:470 - Main Wi-Fi Network Label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:30.270 NetworkPage:475 - Network Name (SSID) : arrisW31-938
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:34.045 NetworkPage:480 - Password : ••••••••••
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:34.851 NetworkPage:485 - Show Password Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:39.035 NetworkPage:491 - Guest Wi-Fi Network  label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:40.834 NetworkPage:496 - Enable/Disable Guest Network label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:41.662 NetworkPage:553 - Extended WiFi Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:45.555 NetworkPage:559 - Extended Wi-Fi Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:47.424 NetworkPage:564 - 5GHz Wideband Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:48.939 NetworkPage:569 - Enables DFS (up to) 160MHz channels label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:51.947 NetworkPage:579 - Band Steering Mode label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:53.647 NetworkPage:584 - Periodically will check devices connected on 2.4GHz bands and steer them to faster available 5GHz bands label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:10:56.410 NetworkPage:591 - Network Settings expand button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:02.583 NetworkPage:598 - Network Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:06.657 NetworkPage:603 - LAN IP Address : 192.168.7.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:10.449 NetworkPage:608 - Gateway IP Address : 10.240.0.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:12.338 NetworkPage:613 - General Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:14.237 NetworkPage:618 - WAN Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:15.870 NetworkPage:623 - LAN Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:17.900 NetworkPage:628 - Device Priority Settings label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:20.096 NetworkPage:633 - Time Zone label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:21.800 NetworkPage:638 - Chennai, Kolkata, Mumbai, New Delhi (GMT +05:30) label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:25.840 NetworkPage:645 - TEST MY CONNECTION SPEED button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:29.007 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:29.669 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:46.508 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_Newtork_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:46.929 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Newtork_Test_Connection_Speed_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:50.399 NetworkPage:277 - Clicked on Test Your Connection Speed button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:51.723 SpeedTestPage:312 - Label on button before speed Test: START TEST
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:53.231 SpeedTestPage:266 - Clicked Start Speed Test Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:11:54.726 SpeedTestPage:314 - Label on button during speed Test: STOP TEST
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:13:45.879 SpeedTestPage:320 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:13:48.878 SpeedTestPage:167 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:13:53.511 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_Newtork_Test_Connection_Speed_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:13:54.406 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:01.792 NetworkPage:406 - Clicked on WAN Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:07.266 TC03_Complex_Test:516 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:07.284 NetworkWANSettingsPage:176 -                                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:07.284 NetworkWANSettingsPage:177 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:07.284 NetworkWANSettingsPage:178 - Verifying UI Elements on Network - WAN Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:07.284 NetworkWANSettingsPage:179 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:08.538 NetworkWANSettingsPage:182 - WAN Settings title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:09.212 NetworkWANSettingsPage:187 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:09.802 NetworkWANSettingsPage:192 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:10.472 NetworkWANSettingsPage:197 - WAN IP Configuration Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:11.177 NetworkWANSettingsPage:202 - LAC Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:11.775 NetworkWANSettingsPage:207 - LAC Info Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:12.228 NetworkWANSettingsPage:212 - LAC toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:12.823 NetworkWANSettingsPage:217 - DNS Configuration Link is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:14.028 NetworkWANSettingsPage:222 - WAN IP RENEW button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:14.753 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:15.242 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:17.274 NetworkWANSettingsPage:113 - Clicked on Help Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:19.212 NetworkWANSettingsHelpPage:59 - On WAN Settings Help Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:23.715 NetworkWANSettingsHelpPage:48 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:24.173 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:24.558 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:26.929 NetworkWANSettingsPage:135 - Clicked on WAN IP Configuration Link
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:27.653 NetworkWANIPConfigurationIPv4Page:387 - On WAN IPv4 Configuration Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:27.671 NetworkWANIPConfigurationIPv4Page:223 -                                                 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:27.672 NetworkWANIPConfigurationIPv4Page:224 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:27.673 NetworkWANIPConfigurationIPv4Page:225 - Verifying WAN IPv4 - DHCP Configuration Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:27.674 NetworkWANIPConfigurationIPv4Page:226 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:28.372 NetworkWANIPConfigurationIPv4Page:174 - DHCP Radion button is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:31.482 NetworkWANIPConfigurationIPv4Page:231 - WAN IP Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:32.205 NetworkWANIPConfigurationIPv4Page:236 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:32.869 NetworkWANIPConfigurationIPv4Page:241 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:33.458 NetworkWANIPConfigurationIPv4Page:246 - IPv4 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:34.163 NetworkWANIPConfigurationIPv4Page:251 - IPV6 Tab is displayed and is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:34.871 NetworkWANIPConfigurationIPv4Page:256 - DHCP Radio button is displayed and is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:37.558 NetworkWANIPConfigurationIPv4Page:268 - IP Address : 10.240.217.85
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:40.256 NetworkWANIPConfigurationIPv4Page:273 - Subnet Mask : 255.255.0.0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:43.022 NetworkWANIPConfigurationIPv4Page:278 - Gateway : 10.240.0.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:45.593 NetworkWANIPConfigurationIPv4Page:283 - Primary DNS : 49.205.72.130
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:47.990 NetworkWANIPConfigurationIPv4Page:288 - Secondary DNS : 183.82.243.66
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:49.357 NetworkWANIPConfigurationIPv4Page:293 - SAVE CHANGES button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:50.067 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:50.484 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_WAN_IP_Configuration_IPv4_Static_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:50.500 NetworkWANIPConfigurationIPv4Page:304 -                                                   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:50.500 NetworkWANIPConfigurationIPv4Page:305 - **************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:50.500 NetworkWANIPConfigurationIPv4Page:306 - Verifying WAN IPv4 - Static Configuration Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:50.500 NetworkWANIPConfigurationIPv4Page:307 - **************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:53.063 NetworkWANIPConfigurationIPv4Page:186 - Static Radio button is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:54.184 NetworkWANIPConfigurationIPv4Page:313 - WAN IP Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:54.718 NetworkWANIPConfigurationIPv4Page:318 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:55.424 NetworkWANIPConfigurationIPv4Page:323 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:56.147 NetworkWANIPConfigurationIPv4Page:328 - IPv4 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:56.906 NetworkWANIPConfigurationIPv4Page:333 - IPV6 Tab is displayed and is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:14:57.415 NetworkWANIPConfigurationIPv4Page:338 - Static Radio button is displayed and is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:00.153 NetworkWANIPConfigurationIPv4Page:350 - IP Address : 10.240.217.85
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:02.928 NetworkWANIPConfigurationIPv4Page:355 - Subnet Mask : 255.255.0.0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:05.452 NetworkWANIPConfigurationIPv4Page:360 - Gateway : 10.240.0.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:07.892 NetworkWANIPConfigurationIPv4Page:365 - Primary DNS : 49.205.72.130
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:10.605 NetworkWANIPConfigurationIPv4Page:370 - Secondary DNS : 183.82.243.66
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:11.988 NetworkWANIPConfigurationIPv4Page:375 - SAVE CHANGES button is displayed and is Enabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:12.694 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_WAN_IP_Configuration_IPv4_Static_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:13.122 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:16.153 NetworkWANIPConfigurationIPv4Page:142 - Clicked on IPv6 Tab
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:16.742 NetworkWANIPConfigurationIPv6Page:395 - On WAN IPv6 Configuration Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:16.748 NetworkWANIPConfigurationIPv6Page:217 -                                                     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:16.749 NetworkWANIPConfigurationIPv6Page:218 - ****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:16.749 NetworkWANIPConfigurationIPv6Page:219 - Verifying WAN IPv6 - Stateful Configuration Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:16.750 NetworkWANIPConfigurationIPv6Page:220 - ****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:17.412 NetworkWANIPConfigurationIPv6Page:173 - Stateful Radio button is already selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:19.000 NetworkWANIPConfigurationIPv6Page:225 - WAN IP Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:19.819 NetworkWANIPConfigurationIPv6Page:230 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:20.471 NetworkWANIPConfigurationIPv6Page:235 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:21.851 NetworkWANIPConfigurationIPv6Page:240 - IPv6 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:22.473 NetworkWANIPConfigurationIPv6Page:245 - IPv4 Tab is displayed and is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:23.241 NetworkWANIPConfigurationIPv6Page:250 - Stateful Radio button is displayed and is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:25.531 NetworkWANIPConfigurationIPv6Page:257 - IPv6 Address is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:27.671 NetworkWANIPConfigurationIPv6Page:263 - IPv6 Prefix Length Label is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:29.852 NetworkWANIPConfigurationIPv6Page:268 - IPv6 Gateway is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:31.403 NetworkWANIPConfigurationIPv6Page:271 - Prefix Delegation label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:32.252 NetworkWANIPConfigurationIPv6Page:276 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:34.589 NetworkWANIPConfigurationIPv6Page:283 - IPv6 Primary DNS is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:37.445 NetworkWANIPConfigurationIPv6Page:288 - IPv6 Secondary DNS is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:40.421 NetworkWANIPConfigurationIPv6Page:293 - SAVE CHANGES button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:41.270 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:41.675 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateless_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:41.691 NetworkWANIPConfigurationIPv6Page:303 -                                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:41.692 NetworkWANIPConfigurationIPv6Page:304 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:41.693 NetworkWANIPConfigurationIPv6Page:305 - Verifying WAN IPv6 - Stateless Configuration Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:41.693 NetworkWANIPConfigurationIPv6Page:306 - *****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:45.762 NetworkWANIPConfigurationIPv6Page:189 - Clicked on Stateless Radio button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:47.296 NetworkWANIPConfigurationIPv6Page:314 - WAN IP Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:48.023 NetworkWANIPConfigurationIPv6Page:319 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:48.736 NetworkWANIPConfigurationIPv6Page:324 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:50.205 NetworkWANIPConfigurationIPv6Page:329 - IPv6 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:51.033 NetworkWANIPConfigurationIPv6Page:334 - IPv4 Tab is displayed but is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:51.784 NetworkWANIPConfigurationIPv6Page:339 - Stateless Radio button is displayed and is selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:55.680 NetworkWANIPConfigurationIPv6Page:348 - IPv6 Address Label is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:57.711 NetworkWANIPConfigurationIPv6Page:354 - IPv6 Prefix Length Label is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:15:59.664 NetworkWANIPConfigurationIPv6Page:359 - IPv6 Gateway Label is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:01.217 NetworkWANIPConfigurationIPv6Page:362 - Prefix Delegation label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:02.034 NetworkWANIPConfigurationIPv6Page:367 - IPv6 Prefix Delegation checkbox is displayed but is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:04.223 NetworkWANIPConfigurationIPv6Page:374 - IPv6 Primary DNS Label is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:06.556 NetworkWANIPConfigurationIPv6Page:379 - IPv6 Secondary DNS Label is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:08.002 NetworkWANIPConfigurationIPv6Page:382 - SAVE CHANGES button is displayed and is enabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:08.808 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateless_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:09.234 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_WAN_IP_Configuration_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:14.865 NetworkWANIPConfigurationHelpPage:48 - On WAN IP Configuration Help Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:22.469 NetworkWANIPConfigurationHelpPage:37 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:24.795 NetworkWANIPConfigurationIPv6Page:120 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:30.029 TC03_Complex_Test:577 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:30.921 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_WAN_IP_Configuration_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:31.370 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:33.724 NetworkWANSettingsPage:168 - Clicked on DNS Configuration Link
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:34.399 NetworkWANDNSConfigurationIPv4Page:304 - On DNS IPv4 Configuration Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:34.403 NetworkWANDNSConfigurationIPv4Page:193 -                                                 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:34.404 NetworkWANDNSConfigurationIPv4Page:194 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:34.405 NetworkWANDNSConfigurationIPv4Page:195 - Verifying Automatic DNS Configuration for IPv4  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:34.406 NetworkWANDNSConfigurationIPv4Page:196 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:35.003 NetworkWANDNSConfigurationIPv4Page:169 - Automatic Radion button is already selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:36.520 NetworkWANDNSConfigurationIPv4Page:201 - DNS Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:37.143 NetworkWANDNSConfigurationIPv4Page:206 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:37.712 NetworkWANDNSConfigurationIPv4Page:211 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:38.305 NetworkWANDNSConfigurationIPv4Page:216 - IPv4 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:38.810 NetworkWANDNSConfigurationIPv4Page:221 - IPV6 Tab is displayed but is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:41.515 NetworkWANDNSConfigurationIPv4Page:226 - Primary DNS : 49.205.72.130
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:44.266 NetworkWANDNSConfigurationIPv4Page:231 - Secondary DNS : 183.82.243.66
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:45.348 NetworkWANDNSConfigurationIPv4Page:236 - SAVE CHANGES button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:45.723 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:46.159 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:46.167 NetworkWANDNSConfigurationIPv4Page:248 -                                              
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:46.168 NetworkWANDNSConfigurationIPv4Page:249 - *********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:46.168 NetworkWANDNSConfigurationIPv4Page:250 - Verifying Static DNS Configuration for IPv4  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:46.169 NetworkWANDNSConfigurationIPv4Page:251 - *********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:46.748 NetworkWANDNSConfigurationIPv4Page:180 - Static Radion button is already selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:47.875 NetworkWANDNSConfigurationIPv4Page:256 - DNS Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:48.457 NetworkWANDNSConfigurationIPv4Page:261 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:49.025 NetworkWANDNSConfigurationIPv4Page:266 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:50.207 NetworkWANDNSConfigurationIPv4Page:271 - IPv4 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:50.757 NetworkWANDNSConfigurationIPv4Page:276 - IPV6 Tab is displayed but is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:52.931 NetworkWANDNSConfigurationIPv4Page:281 - Primary DNS : 49.205.72.130
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:54.865 NetworkWANDNSConfigurationIPv4Page:286 - Secondary DNS : 183.82.243.66
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:55.468 NetworkWANDNSConfigurationIPv4Page:291 - Save Changes button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:55.794 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:56.199 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:58.650 NetworkWANDNSConfigurationIPv4Page:137 - Clicked on IPv6 Tab
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:59.129 NetworkWANDNSConfigurationIPv6Page:302 - On DNS IPv6 Configuration Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:59.134 NetworkWANDNSConfigurationIPv6Page:191 -                                                 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:59.135 NetworkWANDNSConfigurationIPv6Page:192 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:59.135 NetworkWANDNSConfigurationIPv6Page:193 - Verifying Automatic DNS Configuration for IPv6  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:59.136 NetworkWANDNSConfigurationIPv6Page:194 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:16:59.672 NetworkWANDNSConfigurationIPv6Page:168 - Automatic Radion button is already selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:00.783 NetworkWANDNSConfigurationIPv6Page:199 - DNS Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:01.348 NetworkWANDNSConfigurationIPv6Page:204 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:01.878 NetworkWANDNSConfigurationIPv6Page:209 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:02.430 NetworkWANDNSConfigurationIPv6Page:214 - IPv6 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:03.008 NetworkWANDNSConfigurationIPv6Page:219 - IPv4 Tab is displayed but is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:05.803 NetworkWANDNSConfigurationIPv6Page:224 - Primary DNS : 2406:7400:a:10::2
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:08.609 NetworkWANDNSConfigurationIPv6Page:229 - Secondary DNS : 2406:7400:b0:b::2
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:09.165 NetworkWANDNSConfigurationIPv6Page:234 - Save Changes button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:09.552 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:09.977 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:09.997 NetworkWANDNSConfigurationIPv6Page:245 -                                                 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:09.997 NetworkWANDNSConfigurationIPv6Page:246 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:09.997 NetworkWANDNSConfigurationIPv6Page:247 - Verifying Static DNS Configuration for IPv6     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:09.998 NetworkWANDNSConfigurationIPv6Page:248 - ************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:14.745 NetworkDNSConfigurationStaticAlertDialog:40 - Alert Dialog - Clicked on OK Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:15.913 NetworkWANDNSConfigurationIPv6Page:253 - DNS Configuration title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:16.485 NetworkWANDNSConfigurationIPv6Page:258 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:17.059 NetworkWANDNSConfigurationIPv6Page:263 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:17.603 NetworkWANDNSConfigurationIPv6Page:268 - IPv6 Tab is displayed and is currently selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:18.174 NetworkWANDNSConfigurationIPv6Page:273 - IPv4 Tab is displayed but is not selected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:20.762 NetworkWANDNSConfigurationIPv6Page:278 - Primary DNS : 2406:7400:a:10::2
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:23.523 NetworkWANDNSConfigurationIPv6Page:283 - Secondary DNS : 2406:7400:b0:b::2
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:23.967 NetworkWANDNSConfigurationIPv6Page:288 - Save Changes button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:24.368 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:24.839 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_DNS_Configuration_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:27.314 NetworkWANDNSConfigurationHelpPage:53 - Not on WAN DNS Configuration Help Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:27.987 NetworkWANDNSConfigurationIPv6Page:119 - Back Button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:33.521 TC03_Complex_Test:630 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 13:17:33.931 TestListener:39 - java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_DNS_Configuration_Help_Page(TC03_Complex_Test.java:631)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:34.338 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_DNS_Configuration_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:34.738 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_WAN_Settings_LAC_Alert_Dialog ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 ERROR] 2021-12-28 13:17:40.679 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_NavigationBar_TitleLabel"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkWANSettingsPage.isAt(NetworkWANSettingsPage.java:234)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_WAN_Settings_LAC_Alert_Dialog(TC03_Complex_Test.java:638)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3babcaed (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network_Wan_Settings_Screen_NavigationBar_TitleLabel"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.132', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:40.986 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-13-10-07/TC03_Complex_Test/Verify_WAN_Settings_LAC_Alert_Dialog.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:47.694 ParentClass:185 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 13:17:47.738 ParentClass:187 - Quitting Driver
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:35.044 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:35.055 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:39.700 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:39.701 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:42.983 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:42.989 TC002_Test_Signin_And_Onboard:39 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:42.992 TC002_Test_Signin_And_Onboard:42 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:42.996 TC002_Test_Signin_And_Onboard:45 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:43.000 ParentClass:689 - Name generated : arrisW31-830
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:43.004 TC002_Test_Signin_And_Onboard:48 - SSID Name : arrisW31-830
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:43.009 TC002_Test_Signin_And_Onboard:51 - SSID Password : 1234567890
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:43.012 TC002_Test_Signin_And_Onboard:54 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:43.822 TC002_Test_Signin_And_Onboard:64 - 
+
+****** starting test : Verify_Signin_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:46.365 GetStartedPage:48 - Clicked on Get Started Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:14:48.381 GrantPermissionsPage:197 - Grant Permissions - Clicked on Continue Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:22.762 SelectYourDevicePage:71 - Select your Device 1 - Selected SURFboard mAX option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:24.699 SelectYourDevicePage:79 - Select your Device 1 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:25.906 SelectYourDevicePage2:78 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:27.648 SelectYourDevicePage2:92 - Select your Device 2 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:33.467 SiginPage:61 - Sigin Page - Entered user email address
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:36.933 SiginPage:76 - Sigin Page - Clicked on Signin Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:48.964 ValidOTP:128 - loading...emailDetails
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:15:53.327 EnterValidOTPPage:71 - Entering Valid OTP...237460
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:16:10.943 CodeVerifiedPage:85 - OTP Code Verified Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:16:52.621 SetupHomeNetworkPage:48 - Setup Home Network Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:16:54.327 UnPackYourBoxPage:49 - UnPack your Box Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:16:56.100 PlugInMaxRouterPage:48 - Plugin Max Router Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:17:02.853 ConnectToBlueToothDialog:39 - Connect to Bluetooth Page - Clicked on OK Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:17:21.471 ConnectMaxRouterToMobileDevicePage:61 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:17:41.480 ConnectMaxRouterToInternetPage:48 - Successfully Connected to Internet Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:18:07.540 SystemFirmwareUpdatePage:51 - System Firmware Update Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:18:46.047 NameYourNetwokSSIDPage:76 - Name Your Network Page - Entered SSID Name
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:18:49.466 NameYourNetwokSSIDPage:83 - Name Your Network Page - Entered SSID Password
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:19:12.765 NameYourNetwokSSIDPage:91 - Name Your Network Page  - Clicked on Done Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:19:14.113 NameYourNetwokSSIDPage:97 - Name Your Network Page  - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:20:06.648 ConnectionToWifiNeededPage:97 - Clicked on Join Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:20:38.222 CongratulationsPage:46 - Congratulations Page - Clicked on Continue Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:20:44.555 SetUpYourWiFiManagementPage:54 - Setup Wifi Management Page - Clicked on Skip Tutorial Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:20:51.572 InstallAdditionalSatellitePage:71 - Install Additonal Satellite Dialog - Clicked on Install Later Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:20:58.913 NetworkOptimizationDialog:44 - Network Optimization Dialog - Clicked on OK Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:22:20.422 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28-20-14-34/TC002_Test_Signin_And_Onboard/Verify_Signin_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:22:27.235 ParentClass:185 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-28 INFO ] 2021-12-28 20:22:27.284 ParentClass:187 - Quitting Driver

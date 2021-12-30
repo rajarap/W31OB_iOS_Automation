@@ -9,106 +9,139 @@ import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.remote.HideKeyboardStrategy;
 
 public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_NavigationBar_TitleLabel\"]")
 	public MobileElement lanSubnetConfigurationTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Lan_Subnet_Config_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Lan_Subnet_Config_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/textView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Configure\"]")
 	public MobileElement configureSubnetLabel;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Button_Config\"]")
+	public MobileElement firstRadioButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_rb_ipaddress_one_digit_1")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label\"]")
 	public MobileElement firstRadiodButtonFirstDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_one_digit_2")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_IP1\"]")
 	public MobileElement firstRadioButtonSecondDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_one_digit_3")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_IP2\"]")
 	public MobileElement firstRadioButtonThridDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_tv_ipaddress_one_digit_4")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_IP4\"]")
 	public MobileElement firstRadioButtonFourthDigit;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Button_Configure\"]")
+	public MobileElement secondRadioButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_rb_ipaddress_two_digit_1")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label.Ten\"]")
 	public MobileElement secondRadioFirstDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_two_digit_2")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_2IP1\"]")
 	public MobileElement secondRadioButtonSecondDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_two_digit_3")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_2IP2\"]")
 	public MobileElement secondRadioButtonThridDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_tv_ipaddress_two_digit_4")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_2IP4\"]")
 	public MobileElement secondRadioButtonFourthDigit;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Button_Config3\"]")
+	public MobileElement thirdRadioButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_rb_ipaddress_three_digit_1")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_3IP\"]")
 	public MobileElement thirdRadioFirstDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_three_digit_2")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_3IP1\"]")
 	public MobileElement thirdRadioButtonSecondDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_et_ipaddress_three_digit_3")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_3IP2\"]")
 	public MobileElement thirdRadioButtonThridDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_tv_ipaddress_three_digit_4")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_3IP4\"]")
 	public MobileElement thirdRadioButtonFourthDigit;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/linear_dhcp_range")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Range\"]")
 	public MobileElement dncpRangeLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Starting IP']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Starting\"]")
 	public MobileElement startingIPLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/sub_net_start_ip_prefix")
-	public MobileElement startingIPPrefix;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_StartingIP1\"]")
+	public MobileElement startingIPPrefix1;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_StartingIP2\"]")
+	public MobileElement startingIPPrefix2;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_StartingIP3\"]")
+	public MobileElement startingIPPrefix3;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_starting_ip_digit_4")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_StartingIP\"]")
 	public MobileElement startingIPSuffix;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Ending IP']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Ending\"]")
 	public MobileElement endingIPLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/sub_net_end_ip_prefix")
-	public MobileElement endingIPPrefix;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_EndingIP1\"]")
+	public MobileElement endingIPPrefix1;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_EndingIP2\"]")
+	public MobileElement endingIPPrefix2;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_EndingIP3\"]")
+	public MobileElement endingIPPrefix3;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_ending_ip_digit_4")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_EndingIP1\"]")
 	public MobileElement endingIPSuffix;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Subnet Mask']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Mask\"]")
 	public MobileElement subnetMaskIPLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_subnet_mask")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField\"]")
 	public MobileElement subnetMask;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/save_subnet_configure")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Button\"]")
 	public MobileElement saveButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rest_subnet_configure")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Button_Reset\"]")
 	public MobileElement resetSubnetButton;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_one_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Error0\"]")
+	public MobileElement enterDHCPRangeBtw1And255;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Error0\"]")
+	public MobileElement enterValidDHCPRangeBtw1And255;
+	
+		@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Error3\"]")
 	public MobileElement enterValidIPAddressText1;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_two_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_Label_Error4\"]")
 	public MobileElement enterValidIPAddressText2;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_three_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_Error5\"]")
 	public MobileElement enterValidIPAddressText3;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/rb_three_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Lan_Subnet_Config_Screen_TextField_Error5\"]")
 	public MobileElement enterValidIPAddressTex16_31;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
 
 	
 	public NetworkLANSubnetDHCPRangeConfigurationPage() {
@@ -167,7 +200,7 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 	}
 
 	public boolean clickSaveButton() {
-		super.getDriver().hideKeyboard();
+		((IOSDriver) super.getDriver()).hideKeyboard(HideKeyboardStrategy.PRESS_KEY, "Done");
 		if (saveButton.isDisplayed()) {
 			click(saveButton);
 			utils.log().info("Clicked on Save Changes button");
@@ -216,27 +249,39 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 				utils.log().info(configureSubnetLabel.getText() + " label is displayed");
 			else
 				utils.log().info("Help Icon is not displayed");
+			
+			if (firstRadioButton.isDisplayed())
+				utils.log().info("First Subnet IP address Radio button option is displayed");
+			else
+				utils.log().info("First Subnet IP address Radio button option is not displayed");
 		
 			if (firstRadiodButtonFirstDigit.isDisplayed() && firstRadioButtonSecondDigit.isDisplayed() && 
 					firstRadioButtonThridDigit.isDisplayed() && firstRadioButtonFourthDigit.isDisplayed())
-				utils.log().info("First Subnet IP address Radion button option : " + firstRadiodButtonFirstDigit.getText() + "." + firstRadioButtonSecondDigit.getText()
-				+ "." + firstRadioButtonThridDigit.getText() + "." + firstRadioButtonFourthDigit.getText());
+				utils.log().info("First Subnet IP address : " + firstRadiodButtonFirstDigit.getText() + firstRadioButtonSecondDigit.getText() + "." + firstRadioButtonThridDigit.getText() + firstRadioButtonFourthDigit.getText());
 			else
-				utils.log().info("First Subnet IP address Radion button option is not displayed");
+				utils.log().info("First Subnet IP address is not displayed");
+			
+			if (secondRadioButton.isDisplayed())
+				utils.log().info("Second Subnet IP address Radio button option is displayed");
+			else
+				utils.log().info("Second Subnet IP address Radio button option is not displayed");
 			
 			if (secondRadioFirstDigit.isDisplayed() && secondRadioButtonSecondDigit.isDisplayed() && 
 					secondRadioButtonThridDigit.isDisplayed() && secondRadioButtonFourthDigit.isDisplayed())
-				utils.log().info("Second Subnet IP address Radion button option : " + secondRadioFirstDigit.getText() + "." + secondRadioButtonSecondDigit.getText()
-				+ "." + secondRadioButtonThridDigit.getText() + "." + secondRadioButtonFourthDigit.getText());
+				utils.log().info("Second Subnet IP address : " + secondRadioFirstDigit.getText() + secondRadioButtonSecondDigit.getText() + "." + secondRadioButtonThridDigit.getText() + secondRadioButtonFourthDigit.getText());
 			else
-				utils.log().info("Second Subnet IP address Radion button option is not displayed");
+				utils.log().info("Second Subnet IP address is not displayed");
+			
+			if (thirdRadioButton.isDisplayed())
+				utils.log().info("Third Subnet IP address Radio button option is displayed");
+			else
+				utils.log().info("Third Subnet IP address Radio button option is not displayed");
 			
 			if (thirdRadioFirstDigit.isDisplayed() && thirdRadioButtonSecondDigit.isDisplayed() && 
 					thirdRadioButtonThridDigit.isDisplayed() && thirdRadioButtonFourthDigit.isDisplayed())
-				utils.log().info("Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + "." + thirdRadioButtonSecondDigit.getText()
-				+ "." + thirdRadioButtonThridDigit.getText() + "." + thirdRadioButtonFourthDigit.getText());
+				utils.log().info("Third Subnet IP address : " + thirdRadioFirstDigit.getText() + thirdRadioButtonSecondDigit.getText() + "." + thirdRadioButtonThridDigit.getText() + thirdRadioButtonFourthDigit.getText());
 			else
-				utils.log().info("Third Subnet IP address Radion button option is not displayed");
+				utils.log().info("Third Subnet IP address is not displayed");
 			
 			if (dncpRangeLabel.isDisplayed())
 				utils.log().info("DHCP Range Label is displayed");
@@ -248,27 +293,27 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 			else
 				utils.log().info("Starting IP Label is not displayed");
 			
-			if (startingIPPrefix.isDisplayed() && startingIPSuffix.isDisplayed())
-				utils.log().info("DHCP Rage Starting IP Prefix is : " + startingIPPrefix.getText() + " and Suffix IP : " + startingIPSuffix.getText()+ " is displayed");
+			if (startingIPPrefix1.isDisplayed() && startingIPPrefix2.isDisplayed() && startingIPPrefix3.isDisplayed() && startingIPSuffix.isDisplayed())
+				utils.log().info("DHCP Range Starting IP is : " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText() + " is displayed");
 			else
-				utils.log().info("DHCP Rage Starting IP Prefix and Suffix is not displayed");
+				utils.log().info("DHCP Range Starting IP is not displayed");
 			
 			if (endingIPLabel.isDisplayed())
 				utils.log().info("Ending IP Label is displayed");
 			else
 				utils.log().info("Button to select the time unit is not displayed");
 			
-			if (endingIPPrefix.isDisplayed() && endingIPSuffix.isDisplayed())
-				utils.log().info("DHCP Rage Ending IP Prefix is : " + endingIPPrefix.getText() + " and Suffix IP : " + endingIPSuffix.getText()+ " is displayed");
+			if (endingIPPrefix1.isDisplayed() && endingIPPrefix2.isDisplayed() && endingIPPrefix3.isDisplayed() && endingIPSuffix.isDisplayed())
+				utils.log().info("DHCP Range Ending IP is : " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText() + " is displayed");
 			else
-				utils.log().info("DHCP Rage Ending IP Label Prefix and Suffix is not displayed");
+				utils.log().info("DHCP Range Ending IP is not displayed");
 			
 			if (subnetMaskIPLabel.isDisplayed())
 				utils.log().info("Subnet Mask Label is displayed");
 			else
 				utils.log().info("Subnet Mask Label is not displayed");
 			
-			if (subnetMask.isDisplayed() && !(subnetMask.isEnabled()))
+			if (subnetMask.isDisplayed())
 				utils.log().info("Subnet Mask : " + subnetMask.getText() + " is displayed and is disabled. Subnet Mask cannot be changed");
 			else
 				utils.log().info("Subnet Mask is not displayed");
@@ -295,19 +340,19 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("****************************************************");
 		
 		//192.168.0.1 (192.168.0.100/192.168.0.254)
-		click(firstRadiodButtonFirstDigit);
-		utils.log().info("First Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
-		utils.log().info("First Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
+		click(firstRadioButton);
+		utils.log().info("First Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+		utils.log().info("First Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
 		
 		//10.0.0.1 (10.0.0.100/10.0.0.254)
-		click(secondRadioFirstDigit);
-		utils.log().info("Second Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
-		utils.log().info("Second Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
+		click(secondRadioButton);
+		utils.log().info("Second Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+		utils.log().info("Second Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
 		
 		//172.16.0.1 (172.16.0.100/172.16.0.254)
-		click(thirdRadioFirstDigit);
-		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
-		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
+		click(thirdRadioButton);
+		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
 		
 		return true;
 		
@@ -319,11 +364,15 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Changing DHCP IP Address Range For First Subnet ");
 		utils.log().info("************************************************");
 		
-		click(firstRadiodButtonFirstDigit);
-		utils.log().info("First Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
-		utils.log().info("First Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
+		click(firstRadioButton);
+		utils.log().info("First Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+		utils.log().info("First Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
+		super.clear(startingIPSuffix);
 		super.sendKeys(startingIPSuffix, "10");
-		super.sendKeys(startingIPSuffix, "150");
+		click(doneLink);
+		super.clear(endingIPSuffix);
+		super.sendKeys(endingIPSuffix, "150");
+		click(doneLink);
 
 		return true;
 		
@@ -337,11 +386,15 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Changing DHCP IP Address Range For Second Subnet ");
 		utils.log().info("*************************************************");
 		
-		click(secondRadioFirstDigit);
-		utils.log().info("Second Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
-		utils.log().info("Second Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
+		click(secondRadioButton);
+		utils.log().info("Second Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+		utils.log().info("Second Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
+		super.clear(startingIPSuffix);
 		super.sendKeys(startingIPSuffix, "150");
+		click(doneLink);
+		super.clear(endingIPSuffix);
 		super.sendKeys(endingIPSuffix, "220");
+		click(doneLink);
 
 		return true;
 		
@@ -354,11 +407,15 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Changing DHCP IP Address Range For Third Subnet ");
 		utils.log().info("************************************************");
 		
-		click(thirdRadioFirstDigit);
-		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
-		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
+		click(thirdRadioButton);
+		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
+		super.clear(startingIPSuffix);
 		super.sendKeys(startingIPSuffix, "10");
+		click(doneLink);
+		super.clear(endingIPSuffix);
 		super.sendKeys(endingIPSuffix, "150");
+		click(doneLink);
 		return true;
 		
 		// click save. Alert dialog "NetworkLANSubnetDHCPChangeIPRangeConfigurationAlertDialog" should appear.  Click close/cancel button
@@ -371,11 +428,35 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("DHCP IP Address Range Should be Between 1 and 255 ");
 		utils.log().info("**************************************************");
 		
-		click(thirdRadioFirstDigit);
-		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix.getText() + startingIPSuffix.getText());
-		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix.getText() + endingIPSuffix.getText());
+		click(thirdRadioButton);
+		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
+		super.clear(startingIPSuffix);
 		super.sendKeys(startingIPSuffix, "1");
+		click(doneLink);
+		super.clear(endingIPSuffix);
 		super.sendKeys(endingIPSuffix, "255");
+		click(doneLink);
+		return true;
+		
+		// click save. Alert dialog "NetworkLANDHCPIPRangeBetween1And255AlertDialog" should appear.  Click close/cancel button
+	}
+	
+	public boolean verifyLANDHCPRangeBetween1And2552() {
+//		utils.log().info("                                               ");
+//		utils.log().info("**************************************************");
+//		utils.log().info("DHCP IP Address Range Should be Between 1 and 255 ");
+//		utils.log().info("**************************************************");
+		
+//		click(thirdRadioButton);
+//		utils.log().info("Third Subnet - Starting DHCP IP Address Range is: " + startingIPPrefix1.getText() + startingIPPrefix2.getText() + "." + startingIPPrefix3.getText() + "." + startingIPSuffix.getText());
+//		utils.log().info("Third Subnet - Ending DHCP IP Address Range is: " + endingIPPrefix1.getText() + endingIPPrefix2.getText() + "." + endingIPPrefix3.getText() + "." + endingIPSuffix.getText());
+		super.clear(startingIPSuffix);
+		super.sendKeys(startingIPSuffix, "5");
+		click(doneLink);
+		super.clear(endingIPSuffix);
+		super.sendKeys(endingIPSuffix, "25");
+		click(doneLink);
 		return true;
 		
 		// click save. Alert dialog "NetworkLANDHCPIPRangeBetween1And255AlertDialog" should appear.  Click close/cancel button
@@ -387,12 +468,13 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Changing 3rd Octet to Invalid IP Address Range");
 		utils.log().info("**********************************************");
 		
-		click(firstRadiodButtonFirstDigit);
-		utils.log().info("Selected First Subnet IP address Radion button option : " + firstRadiodButtonFirstDigit.getText() + "." + firstRadioButtonSecondDigit.getText()
-		+ "." + firstRadioButtonThridDigit.getText() + "." + firstRadioButtonFourthDigit.getText());
+		click(firstRadioButton);
+		utils.log().info("Selected First Subnet IP address Radio button option : " + firstRadiodButtonFirstDigit.getText() + firstRadioButtonSecondDigit.getText()
+		+ "." + firstRadioButtonThridDigit.getText() + firstRadioButtonFourthDigit.getText());
 		utils.log().info("Changing 3rd Octet value to 999");
 		clear(firstRadioButtonThridDigit);
 		super.sendKeys(firstRadioButtonThridDigit, "999");
+		click(doneLink);
 		return true;
 		
 		//click save.  enterValidIPAddressText1 text should be displayed
@@ -404,15 +486,17 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Changing 2nd and 3rd Octet to Invalid IP Address Range");
 		utils.log().info("******************************************************");
 		
-		click(secondRadioFirstDigit);
-		utils.log().info("Selected Second Subnet IP address Radion button option : " + secondRadioFirstDigit.getText() + "." + secondRadioButtonSecondDigit.getText()
-		+ "." + secondRadioButtonThridDigit.getText() + "." + secondRadioButtonFourthDigit.getText());
+		click(secondRadioButton);
+		utils.log().info("Selected Second Subnet IP address Radion button option : " + secondRadioFirstDigit.getText() + secondRadioButtonSecondDigit.getText()
+		+ "." + secondRadioButtonThridDigit.getText() + secondRadioButtonFourthDigit.getText());
 		utils.log().info("Changing 2nd Octet value to 555");
 		clear(secondRadioButtonSecondDigit);
 		super.sendKeys(secondRadioButtonSecondDigit, "555");
+		click(doneLink);
 		utils.log().info("Changing 3rd Octet value to 888");
 		clear(secondRadioButtonThridDigit);
 		super.sendKeys(secondRadioButtonThridDigit, "888");
+		click(doneLink);
 		return true;
 		
 		//click save.  enterValidIPAddressText2 text should be displayed
@@ -424,15 +508,17 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Changing 2nd and 3rd Octet to Invalid IP Address Range");
 		utils.log().info("******************************************************");
 		
-		click(thirdRadioFirstDigit);
-		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + "." + thirdRadioButtonSecondDigit.getText()
-		+ "." + thirdRadioButtonThridDigit.getText() + "." + thirdRadioButtonFourthDigit.getText());
+		click(thirdRadioButton);
+		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + thirdRadioButtonSecondDigit.getText()
+		+ "." + thirdRadioButtonThridDigit.getText() + thirdRadioButtonFourthDigit.getText());
 		utils.log().info("Changing 2nd Octet value to 666");
 		clear(thirdRadioButtonSecondDigit);
 		super.sendKeys(thirdRadioButtonSecondDigit, "666");
+		click(doneLink);
 		utils.log().info("Changing 3rd Octet value to 000");
 		clear(thirdRadioButtonThridDigit);
 		super.sendKeys(thirdRadioButtonThridDigit, "000");
+		click(doneLink);
 		return true;
 		
 		//click save.  enterValidIPAddressText3 text should be displayed
@@ -444,12 +530,13 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Changing 2nd Octet value to less than 16 IP Address Range");
 		utils.log().info("*********************************************************");
 		
-		click(thirdRadioFirstDigit);
-		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + "." + thirdRadioButtonSecondDigit.getText()
-		+ "." + thirdRadioButtonThridDigit.getText() + "." + thirdRadioButtonFourthDigit.getText());
-		clear(secondRadioButtonSecondDigit);
-		super.sendKeys(secondRadioButtonSecondDigit, "10");
+		click(thirdRadioButton);
+		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + thirdRadioButtonSecondDigit.getText()
+		+ "." + thirdRadioButtonThridDigit.getText() + thirdRadioButtonFourthDigit.getText());
+		clear(thirdRadioButtonSecondDigit);
+		super.sendKeys(thirdRadioButtonSecondDigit, "10");
 		utils.log().info("Changing 2nd Octet value to 10");
+		click(doneLink);
 		return true;
 		
 		//click save. enterValidIPAddressTex16_31 text should be displayed
@@ -461,11 +548,30 @@ public class NetworkLANSubnetDHCPRangeConfigurationPage extends ParentClass impl
 		utils.log().info("Select 3rd Subnet and Configure DHCP Starting IP Range with Empty Suffix");
 		utils.log().info("************************************************************************");
 		
-		click(thirdRadioFirstDigit);
-		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + "." + thirdRadioButtonSecondDigit.getText()
-		+ "." + thirdRadioButtonThridDigit.getText() + "." + thirdRadioButtonFourthDigit.getText());
+		click(thirdRadioButton);
+		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + thirdRadioButtonSecondDigit.getText()
+		+ "." + thirdRadioButtonThridDigit.getText() + thirdRadioButtonFourthDigit.getText());
 		super.sendKeys(startingIPSuffix, " ");
 		utils.log().info("Changing 3rd Octet value to blank");
+		click(doneLink);
+		return true;
+		
+		//click save. Alert dialog "NetworkLANDHCPIPRangeBetween1And255AlertDialog" should appear.  Click close/cancel button
+	}
+	
+	public boolean verifyLANDHCPRangeWithEmptySuffix2() {
+		utils.log().info("                                                      ");
+		utils.log().info("******************************************************");
+		utils.log().info("Select 3rd Subnet and Configure DHCP Starting IP Range");
+		utils.log().info("******************************************************");
+		
+		click(thirdRadioButton);
+		utils.log().info("Selected Third Subnet IP address Radion button option : " + thirdRadioFirstDigit.getText() + thirdRadioButtonSecondDigit.getText()
+		+ "." + thirdRadioButtonThridDigit.getText() + thirdRadioButtonFourthDigit.getText());
+		super.sendKeys(startingIPSuffix, "45");
+		click(doneLink);
+		super.sendKeys(endingIPSuffix, "145");
+		click(doneLink);
 		return true;
 		
 		//click save. Alert dialog "NetworkLANDHCPIPRangeBetween1And255AlertDialog" should appear.  Click close/cancel button

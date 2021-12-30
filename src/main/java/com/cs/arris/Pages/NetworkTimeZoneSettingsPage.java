@@ -13,69 +13,70 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkTimeZoneSettingsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Timezone Settings\"]")
 	public MobileElement timeZoneTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Midway Island, Samoa (GMT-11:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[1]\"]")
 	public MobileElement midwayIslandLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image1]\"]")
 	public MobileElement midwayIslandCheckBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Hawaii (GMT-10:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[2]\"]")
 	public MobileElement hawaiiLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image2]\"]")
 	public MobileElement hawaiiCheckBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Alaska (GMT-09:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[3]\"]")
 	public MobileElement alaskaLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image3]\"]")
 	public MobileElement alaskaCheckBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Pacific Time, Tijuana (GMT-08:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[4]\"]")
 	public MobileElement pacificLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image4]\"]")
 	public MobileElement pacificCheckBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Mountain Time (GMT-07:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[5]\"]")
 	public MobileElement mountainTimeLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image5]\"]")
 	public MobileElement mountainTimeCheckBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Central Time (GMT-06:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[6]\"]")
 	public MobileElement centralTimeLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[6]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image6]\"]")
 	public MobileElement centralTimeCheckBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Eastern Time (GMT-05:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[7]\"]")
 	public MobileElement easternTimeLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[7]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image7]\"]")
 	public MobileElement easternTimeCheckBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Atlantic Time (GMT-04:00)']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_TimeZone_Settings_Screen_Label_Time[8]\"]")
 	public MobileElement atlanticLabel;
 
-	@AndroidFindBy(xpath = "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[7]/android.widget.ImageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Network_TimeZone_Settings_Screen_Label_Image8]\"]")
 	public MobileElement atlanticCheckBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/set_time_zone")
-	public MobileElement doneButton;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_TimeZone_Settings_Screen_Button\"]")
+	public MobileElement saveButton;
 
 	public NetworkTimeZoneSettingsPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -123,13 +124,13 @@ public class NetworkTimeZoneSettingsPage extends ParentClass implements Page {
 		}
 	}
 
-	public boolean clickDoneButton() {
-		if (doneButton.isDisplayed()) {
-			click(doneButton);
-			utils.log().info("Clicked on Done button");
+	public boolean clickSaveButton() {
+		if (saveButton.isDisplayed()) {
+			click(saveButton);
+			utils.log().info("Clicked on Save button");
 			return true;
 		} else {
-			utils.log().info("Done button is not displayed");
+			utils.log().info("Save button is not displayed");
 			return false;
 		}
 	}
@@ -261,6 +262,8 @@ public class NetworkTimeZoneSettingsPage extends ParentClass implements Page {
 
 			if (centralTimeLabel.isDisplayed())
 				utils.log().info("Central Time (GMT-06:00) option is displayed");
+			
+			super.swipeUp();
 
 			if (centralTimeCheckBox.isDisplayed())
 				utils.log().info("Central Time (GMT-06:00) checkbox is displayed");

@@ -13,80 +13,85 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"LAN DHCP Lease Time\"]")
 	public MobileElement lanDHCPLeaseTimeTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Set Lease Time']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_Set\"]")
 	public MobileElement setLeaseTimeLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_lease_time")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_LAN_DHCP_LeaseTime_Screen_TextField\"]")
 	public MobileElement enterLeaseTimeTextBox;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Select Time Unit']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_Select\"]")
 	public MobileElement selctTimeUnitLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_select_unit")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_Select\"]")
 	public MobileElement selectTimeUnitButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/save_lease_time")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button\"]")
 	public MobileElement saveLeaseTimeButton;
 	
 	// Minute
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement zeroLeaseTimeError;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement maximumLeaseTimeError;
 	
 	// Minute
 	
 	//Hourly
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement zeroHourlyLeaseTimeError;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement maximumHourlyLeaseTimeError;
 	
 	//Hourly
 	
 	//Days
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement zeroDaysLeaseTimeError;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement maximumDaysLeaseTimeError;
 	
 	//Days
 	
 	//Weekly
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement zeroWeeklyLeaseTimeError;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/leasetime_et_error")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_ValidationError\"]")
 	public MobileElement maximumWeeklyLeaseTimeError;
 	
 	//Weekly
 	
 	//Forever
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/et_lease_time")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_LAN_DHCP_LeaseTime_Screen_TextField\"]")
 	public MobileElement disabledLeaseTimeTextBox;
 	
 	//forever
+	
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
 	
 	
 	public NetworkLANDHCPLeaseTimePage() {
@@ -159,11 +164,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 
 	public boolean clickSaveLeaseTimeButton() {
 		try {
-			super.getDriver().hideKeyboard();
-		}catch (Exception e) {}
-
-		try {
-				super.getDriver().hideKeyboard();
+				click(doneLink);
 				if (saveLeaseTimeButton.isDisplayed()) {
 					click(saveLeaseTimeButton);
 					utils.log().info("Clicked on Save Lease Time Button");
@@ -265,7 +266,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		
 		this.enterLeaseTime("25791395");
 		this.clickSaveLeaseTimeButton();
-		utils.log().info("Enter Lease Time between 1 and 35791395 and applied the changes successfully");
+		utils.log().info("Entered Lease Time between 1 and 35791395 and applied the changes successfully");
 		utils.log().info("                                           ");
 		utils.log().info("                                           ");
 		
@@ -291,7 +292,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		
 		this.enterLeaseTime("2335");
 		this.clickSaveLeaseTimeButton();
-		utils.log().info("Enter Lease Time between 1 and 596523 and applied the changes successfully");
+		utils.log().info("Entered Lease Time between 1 and 596523 and applied the changes successfully");
 		
 		utils.log().info("                                           ");
 		utils.log().info("                                           ");
@@ -318,7 +319,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		
 		this.enterLeaseTime("22215");
 		this.clickSaveLeaseTimeButton();
-		utils.log().info("Enter Lease Time between 1 and 24855 and applied the changes successfully");
+		utils.log().info("Entered Lease Time between 1 and 24855 and applied the changes successfully");
 		utils.log().info("                                           ");
 		utils.log().info("                                           ");
 		
@@ -344,7 +345,7 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 		
 		this.enterLeaseTime("2773");
 		this.clickSaveLeaseTimeButton();
-		utils.log().info("Enter Lease Time between 1 and 3550 and applied the changes successfully");
+		utils.log().info("Entered Lease Time between 1 and 3550 and applied the changes successfully");
 		utils.log().info("                                           ");
 		utils.log().info("                                           ");
 		
@@ -353,15 +354,15 @@ public class NetworkLANDHCPLeaseTimePage extends ParentClass implements Page {
 	}
 	
 	public boolean verifyLeaseTimeWithForeverTimeUnit() {
-		utils.log().info("                                            ");
-		utils.log().info("********************************************");
-		utils.log().info("Verifying Lease Time with Forever Time Unit ");
-		utils.log().info("********************************************");
+//		utils.log().info("                                            ");
+//		utils.log().info("********************************************");
+//		utils.log().info("Verifying Lease Time with Forever Time Unit ");
+//		utils.log().info("********************************************");
 		
 		// First select the Forever option in the Test
-		if(disabledLeaseTimeTextBox.isDisplayed() && !(disabledLeaseTimeTextBox.isEnabled()))
-			utils.log().info("Lease Time Text Box is disabled for this TimeUnit. Default Lease Time set for Forever TimeUnit is : " + disabledLeaseTimeTextBox.getText());
-		this.clickSaveLeaseTimeButton();
+		//if(disabledLeaseTimeTextBox.isDisplayed() && !(disabledLeaseTimeTextBox.isEnabled()))
+		utils.log().info("Lease Time Text Box is disabled for this TimeUnit. Default Lease Time set for Forever TimeUnit is : " + disabledLeaseTimeTextBox.getText());
+		//this.clickSaveLeaseTimeButton();
 		//NetworkLANDHCPLeaseTimeAppliedChangesDialog - Click OK button
 		return true;
 	}

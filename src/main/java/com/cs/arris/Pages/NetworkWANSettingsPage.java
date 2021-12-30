@@ -36,10 +36,10 @@ public class NetworkWANSettingsPage extends ParentClass implements Page {
 	public MobileElement lacLabel; // Link Aggregation Control
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_Settings_Screen_Button_Info[2]\"]")
-	public MobileElement lacAlertIcon;
+	public MobileElement lacInfoIcon;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Network_Wan_Settings_Screen_Button_Switch[2]\"]")
-	public MobileElement disableLACToggleButton;
+	public MobileElement LACToggleButton;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_Settings_Screen_Label_Option[3]\"]")
 	public MobileElement dnsConfigurationLabel;
@@ -151,13 +151,13 @@ public class NetworkWANSettingsPage extends ParentClass implements Page {
 		}
 	}
 
-	public boolean clickLacAlertIcon() {
-		if (lacAlertIcon.isDisplayed()) {
-			click(lacAlertIcon);
-			utils.log().info("Clicked on LAC Alert Icon");
+	public boolean clickLacInfoIcon() {
+		if (lacInfoIcon.isDisplayed()) {
+			click(lacInfoIcon);
+			utils.log().info("Clicked on LAC Info Icon");
 			return true;
 		} else {
-			utils.log().info("LAC Alert Icon is not displayed");
+			utils.log().info("LAC Info Icon is not displayed");
 			return false;
 		}
 	}
@@ -203,12 +203,12 @@ public class NetworkWANSettingsPage extends ParentClass implements Page {
 			else
 				utils.log().info("LAC Link text is not displayed ");
 			
-			if (lacAlertIcon.isDisplayed())
+			if (lacInfoIcon.isDisplayed())
 				utils.log().info("LAC Info Link is displayed");
 			else
 				utils.log().info("LAC Info Link is not displayed ");
 
-			if (disableLACToggleButton.isDisplayed())
+			if (LACToggleButton.isDisplayed())
 				utils.log().info("LAC toggle button is displayed but is disabled");
 			else
 				utils.log().info("LAC toggle button is displayed and is enabled");

@@ -71,7 +71,6 @@ public class NetworkHelpPage extends ParentClass implements Page {
 			if (closeButton.isDisplayed()) {
 				new SwipeActions().swipeScreen(Direction.UP);
 				new SwipeActions().swipeScreen(Direction.UP);
-				new SwipeActions().swipeScreen(Direction.UP);
 				click(closeButton);
 				return true;}
 			else

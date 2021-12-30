@@ -14,48 +14,55 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_cancel_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EditClose\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_header_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditHeader\"]")
 	public MobileElement enableGuestNetworkTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_message")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditSubHeader\"]")
 	public MobileElement enableGuestNetworkDescription;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditDesc\"]")
+	public MobileElement enableGuestNetworkDescription2;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_name_title_tv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditNetwork\"]")
 	public MobileElement networkSSIDNameLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_name_value_et")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Screen_TextField_EditSSID\"]")
 	public MobileElement enterNetworkSSIDNameTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_password_title_tv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditPassword\"]")
 	public MobileElement passwordLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_password_value_et")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Settings_Screen_TextField_EditPassword\"]")
 	public MobileElement enterPasswordTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/show_hide_password_iv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EditEyeIcon\"]")
 	public MobileElement showHidePasswordIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_security_type_title")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditSecurity\"]")
 	public MobileElement securityTypeLabel;
 
-	@AndroidFindBy(id = "android:id/text1")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Screen_TextField_EditMode\"]")
 	public MobileElement securityTypeText; // WPA2-PSK (AES)
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_save_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EditSave\"]")
 	public MobileElement saveChangesButton;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_error_tv")
-	public MobileElement ssidErrorMessage;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_BandClose\"]")
+//	public MobileElement ssidErrorMessage;
+//	
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_BandClose\"]")
+//	public MobileElement passwordErrorMessage;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_password_error_tv")
-	public MobileElement passwordErrorMessage;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
 
 	public NetworkEnableGuestNetworkDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -73,7 +80,7 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 	}
 
 	public boolean clickSaveChangesButton() {
-		super.getDriver().hideKeyboard();
+		click(doneLink);
 		if (saveChangesButton.isDisplayed()) {
 			click(saveChangesButton);
 			utils.log().info("Clicked on Save Changes Button");
@@ -97,7 +104,7 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 	
 	public boolean enterGuestNetworkName() {
 		if (enterNetworkSSIDNameTextBox.isDisplayed()) {
-			super.getDriver().hideKeyboard();
+			clear(enterNetworkSSIDNameTextBox);
 			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkeName());
 			utils.log().info("Entered Guest Network Name");
 			return true;
@@ -109,7 +116,7 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 	
 	public boolean enterGuestNetworkPassword() {
 		if (enterPasswordTextBox.isDisplayed()) {
-			super.getDriver().hideKeyboard();
+			clear(enterPasswordTextBox);
 			sendKeys(enterPasswordTextBox, "1234567890");
 			utils.log().info("Entered Guest Network Password");
 			return true;
@@ -126,8 +133,6 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 		utils.log().info("Verifying UI Elements on Enable Guest Network Dialog ");
 		utils.log().info("*****************************************************");
 		try {
-			super.getDriver().hideKeyboard();
-
 			if (enableGuestNetworkTitle.isDisplayed())
 				utils.log().info(enableGuestNetworkTitle.getText() + " title text is displayed ");
 
@@ -135,7 +140,10 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 				utils.log().info("Close Icon is displayed ");
 
 			if (enableGuestNetworkDescription.isDisplayed())
-				utils.log().info("Enable Guest Netowrk Description is displayed");
+				utils.log().info("Please create an SSID and a password for your guests to access the guest network is displayed");
+			
+			if (enableGuestNetworkDescription2.isDisplayed())
+				utils.log().info("ENote: After Guest Network is enabled and changes are saved, it may take a few minutes for the guest network to be enabled and visible. Your device may become disconnected temporarily from the current network is displayed");
 
 			if (networkSSIDNameLabel.isDisplayed())
 				utils.log().info("Network SSID label is displayed");
@@ -164,34 +172,33 @@ public class NetworkEnableGuestNetworkDialog extends ParentClass implements Page
 		}
 	}
 	
-	public boolean validateGuestNetworkPage() {
-		utils.log().info("                                          ");
-		utils.log().info("******************************************");
-		utils.log().info("Enable Guest Network Dialog Validations   ");
-		utils.log().info("******************************************");
-		try {
-			super.getDriver().hideKeyboard();
-			this.clickSaveChangesButton();
-			utils.log().info("Clicked on Save Changes Button without entering SSID Name ");
-			
-			if(ssidErrorMessage.isDisplayed())
-				utils.log().info("Validation Message : " + ssidErrorMessage.getText() + " is displayed ");
-			
-			super.getDriver().hideKeyboard();
-			sendKeys(enterNetworkSSIDNameTextBox, "guestnet");
-			this.clickSaveChangesButton();
-			utils.log().info("Clicked on Save Changes Button without entering Password");
-			
-			if(passwordErrorMessage.isDisplayed())
-				utils.log().info("Validation Message : " + passwordErrorMessage.getText() + " is displayed ");
-			
-			clear(enterNetworkSSIDNameTextBox);
-			clear(enterPasswordTextBox);
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
-	}
+//	public boolean validateGuestNetworkPage() {
+//		utils.log().info("                                          ");
+//		utils.log().info("******************************************");
+//		utils.log().info("Enable Guest Network Dialog Validations   ");
+//		utils.log().info("******************************************");
+//		try {
+//			this.clickSaveChangesButton();
+//			utils.log().info("Clicked on Save Changes Button without entering SSID Name ");
+//			
+//			if(ssidErrorMessage.isDisplayed())
+//				utils.log().info("Validation Message : " + ssidErrorMessage.getText() + " is displayed ");
+//			
+//			super.getDriver().hideKeyboard();
+//			sendKeys(enterNetworkSSIDNameTextBox, "guestnet");
+//			this.clickSaveChangesButton();
+//			utils.log().info("Clicked on Save Changes Button without entering Password");
+//			
+//			if(passwordErrorMessage.isDisplayed())
+//				utils.log().info("Validation Message : " + passwordErrorMessage.getText() + " is displayed ");
+//			
+//			clear(enterNetworkSSIDNameTextBox);
+//			clear(enterPasswordTextBox);
+//			return true;
+//		} catch (Exception e) {
+//			return false;
+//		}
+//	}
 	
 	@Override
 	public boolean isAt() {

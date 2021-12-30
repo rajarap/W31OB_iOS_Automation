@@ -14,30 +14,30 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkWANDNSConfigurationHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivDialogClose")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='DNS Configuration']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"DNS Configuration\"]")
 	public MobileElement wanIDNSConfigurationTitle;
-	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='DNSConfiguration']")
-	public MobileElement helpMessage;
 	
 	public NetworkWANDNSConfigurationHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public void clickCloseButton() {
+	public boolean clickCloseButton() {
 		try {
 			if (closeButton.isDisplayed()) {
 				click(closeButton);
 				utils.log().info("Clicked on Close Button");}
+			return true;
 		} catch (Exception e) {
 			utils.log().info("Close button is not displayed");
+			return false;
 		}
 	}
 

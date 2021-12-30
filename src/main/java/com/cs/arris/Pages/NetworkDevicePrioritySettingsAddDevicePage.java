@@ -16,21 +16,25 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Add Device\"]")
 	public MobileElement addDeviceTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/add_device")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Add_Device_Screen_Button\"]")
 	public MobileElement addDeviceButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Add_Device_Screen_Label_DeviceError\"]")
+	public MobileElement addDeviceErrorMessage;
 
 	public NetworkDevicePrioritySettingsAddDevicePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -76,6 +80,8 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 	public boolean clickAddDeviceButton() {
 		if (addDeviceButton.isDisplayed()) {
 			click(addDeviceButton);
+			utils.log().info("                             ");
+			utils.log().info("Clicked on Add Device button");
 			return true;
 		} else {
 			utils.log().info("Add Device button is not displayed");
@@ -123,29 +129,29 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 		utils.log().info("***********************************");
 		
 		int size = super.getDriver().findElements(By.xpath(
-		"//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView")).size();
-		
-		//int size = super.getDriver().findElements(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/add_device_rv']")).size();
+		"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+
 		utils.log().info("Count of device : " + size);
 		
 		try {
-			for (int i = 1; i <= 2 ; i++) 
+			for (int i = 1; i <= size ; i++) 
 			{
-				utils.log().info("Device Details  : " + i);
+				utils.log().info("                          ");
+				utils.log().info("Add Device Details  : " + i);
 				utils.log().info("--------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) 
-						super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+				super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) 
 				{
-					if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Network_Add_Device_Screen_Image_Device["+i+"]\"]").isDisplayed())
 						utils.log().info("Device Image is displayed");
 
-					if ((e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed()))
-						utils.log().info("Device Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText() + " is displayed");
+					if ((e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Add_Device_Screen_Label_Device["+i+"]\"]").isDisplayed()))
+						utils.log().info("Device Name : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Add_Device_Screen_Label_Device["+i+"]\"]").getText() + " is displayed");
 
-					if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Network_Add_Device_Screen_Button_CheckBox["+i+"]\"]").isDisplayed())
 						utils.log().info("Checkbox is displayed");
 				}
 			}
@@ -167,26 +173,24 @@ public class NetworkDevicePrioritySettingsAddDevicePage extends ParentClass impl
 		try {
 			for (int i = 1; i <= 1 ; i++) 
 			{
-				utils.log().info("Selecting Device : " + i);
-				utils.log().info("------------------------");
+				utils.log().info("Selecting Device From Add Device " );
+				utils.log().info("---------------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) 
-						super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+				super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 					for (MobileElement e : entity) 
 					{
-						if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
+						if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Network_Add_Device_Screen_Image_Device["+i+"]\"]").isDisplayed())
 							utils.log().info("Device Image is displayed");
 
-						if ((e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed()))
-							utils.log().info("Device Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText() + " is displayed");
+						if ((e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Add_Device_Screen_Label_Device["+i+"]\"]").isDisplayed()))
+							utils.log().info("Device Name : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Add_Device_Screen_Label_Device["+i+"]\"]").getText() + " is displayed");
 
-						if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
+						if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Network_Add_Device_Screen_Button_CheckBox["+i+"]\"]").isDisplayed())
 							utils.log().info("Checkbox is displayed");
-						
-						if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
-							click(e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']"));
-							utils.log().info("Clicked on checkbox");
+						click(e.findElementByXPath("//XCUIElementTypeImage[@name=\"Network_Add_Device_Screen_Button_CheckBox["+i+"]\"]"));
+						utils.log().info("Clicked on checkbox");
 					}
 			}
 			return true;

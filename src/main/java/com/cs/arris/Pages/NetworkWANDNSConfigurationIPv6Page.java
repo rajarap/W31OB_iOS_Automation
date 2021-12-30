@@ -13,23 +13,24 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"DNS Configuration\"]")
 	public MobileElement dnsConfigurationTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv4_btn_dns")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"IPv4\"]")
 	public MobileElement dnsIPv4Tab;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_btn_dns")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"IPv6\"]")
 	public MobileElement dnsIPv6Tab;
 	
 //	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv6_automatic_radio_btn' and @checked='true']")
@@ -44,34 +45,34 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 //	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv6_static_radio_btn' and @checked='false']")
 //	public MobileElement staticRadioButtonUnChecked;
 	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv6_static_radio_btn']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_Static\"]")
 	public MobileElement staticRadioButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@resource-id='com.arris.sbcBeta:id/ipv6_automatic_radio_btn']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_Automatic\"]")
 	public MobileElement automaticRadioButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Primary DNS']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_DNS_Configuration_Screen_Label_DNS\"]")
 	public MobileElement primaryDNSLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv6_primary_dns_et' and @enabled='false']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_DNS_Configuration_Screen_TextField_Primary\"]")
 	public MobileElement automatic_primaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv6_primary_dns_et' and @enabled='true']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_DNS_Configuration_Screen_TextField_Primary\"]")
 	public MobileElement static_primaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Secondary DNS']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_DNS_Configuration_Screen_Label_Secondary\"]")
 	public MobileElement secondayDNSLabel;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv6_secondary_dns_et' and @enabled='false']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_DNS_Configuration_Screen_TextField_Secondary\"]")
 	public MobileElement automatic_secondaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/ipv6_secondary_dns_et' and @enabled='true']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_DNS_Configuration_Screen_TextField_Secondary\"]")
 	public MobileElement static_secondaryDNS;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_Save\"]")
 	public MobileElement automatic_saveChangesButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/save_dns_configure']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_Save\"]")
 	public MobileElement static_saveChangesButton;
 
 
@@ -219,12 +220,12 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 			else
 				utils.log().info("IPv4 Tab is not displayed");
 
-			if (primaryDNSLabel.isDisplayed() && automatic_primaryDNS.isDisplayed() && !(automatic_primaryDNS.isEnabled()))
+			if (primaryDNSLabel.isDisplayed() && automatic_primaryDNS.isDisplayed())
 				utils.log().info(primaryDNSLabel.getText() + " : " + automatic_primaryDNS.getText());
 			else
 				utils.log().info("Primary DNS Label is not displayed");
 
-			if (secondayDNSLabel.isDisplayed() && automatic_secondaryDNS.isDisplayed() && !(automatic_secondaryDNS.isEnabled()))
+			if (secondayDNSLabel.isDisplayed() && automatic_secondaryDNS.isDisplayed())
 				utils.log().info(secondayDNSLabel.getText() + " : " + automatic_secondaryDNS.getText());
 			else
 				utils.log().info("Secondary DNS Label is not displayed");
@@ -273,12 +274,12 @@ public class NetworkWANDNSConfigurationIPv6Page extends ParentClass implements P
 			else
 				utils.log().info("IPv4 Tab is not displayed");
 
-			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed() && static_primaryDNS.isEnabled())
+			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed())
 				utils.log().info(primaryDNSLabel.getText() + " : " + static_primaryDNS.getText());
 			else
 				utils.log().info("Primary DNS Label is not displayed");
 
-			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed() && static_secondaryDNS.isEnabled())
+			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed())
 				utils.log().info(secondayDNSLabel.getText() + " : " + static_secondaryDNS.getText());
 			else
 				utils.log().info("Secondary DNS Label is not displayed");

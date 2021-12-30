@@ -14,42 +14,49 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkEditGuestNetworkDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_cancel_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EditClose\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_header_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditHeader\"]")
 	public MobileElement editGuestNetworkTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_message")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditSubHeader\"]")
 	public MobileElement enableGuestNetworkDescription;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditDesc\"]")
+	public MobileElement enableGuestNetworkDescription2;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_name_title_tv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditNetwork\"]")
 	public MobileElement networkSSIDNameLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_name_value_et")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Screen_TextField_EditSSID\"]")
 	public MobileElement enterNetworkSSIDNameTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_password_title_tv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditPassword\"]")
 	public MobileElement passwordLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ssid_password_value_et")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Screen_TextField_EditPassword\"]")
 	public MobileElement enterPasswordTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/show_hide_password_iv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EditEyeIcon\"]")
 	public MobileElement showHidePasswordIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_security_type_title")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_EditSecurity\"]")
 	public MobileElement securityTypeLabel;
 
-	@AndroidFindBy(id = "android:id/text1")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Settings_Screen_TextField_EditMode\"]")
 	public MobileElement securityTypeText; // WPA2-PSK (AES)
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_save_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EditSave\"]")
 	public MobileElement saveChangesButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
 
 	public NetworkEditGuestNetworkDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -67,6 +74,7 @@ public class NetworkEditGuestNetworkDialog extends ParentClass implements Page {
 	}
 
 	public boolean clickSaveChangesButton() {
+			click(doneLink);
 		if (saveChangesButton.isDisplayed()) {
 			click(saveChangesButton);
 			utils.log().info("Clicked on Save Changes Button");
@@ -90,7 +98,6 @@ public class NetworkEditGuestNetworkDialog extends ParentClass implements Page {
 	
 	public boolean createGuestNetwork() {
 		try {
-			super.getDriver().hideKeyboard();
 			clear(enterNetworkSSIDNameTextBox);
 			sendKeys(enterNetworkSSIDNameTextBox, super.generateGuestNetworkeName());
 			super.getDriver().hideKeyboard();

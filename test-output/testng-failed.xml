@@ -3,27 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cs.arris.Tests.TC01_Simple_Test">
+      <class name="com.cs.arris.Tests.TC03_Complex_Test">
         <methods>
-          <include name="beforeClass"/>
-          <include name="afterTest"/>
-          <include name="Verify_Home_UI_Page"/>
-          <include name="beforeSuite"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="Verify_Home_Hamburger_Navigation"/>
           <include name="beforeTest"/>
-          <include name="Login_And_Onboard"/>
-          <include name="Verify_Home_Currently_Blocked_Devices_Navigation"/>
-          <include name="Verify_Home_Device_Signal_Strength_Navigation"/>
+          <include name="afterTest"/>
+          <include name="Verify_WAN_Settings_UI_Page"/>
+          <include name="Verify_Network_UI_Page"/>
+          <include name="beforeSuite"/>
           <include name="afterSuite"/>
-          <include name="Verify_Home_Speed_Test_History_Navigation"/>
-          <include name="Verify_Home_Total_Devices_Navigation"/>
-          <include name="Verify_Home_Main_Devices_Navigation"/>
-          <include name="Verify_Home_Notifications_Navigation"/>
+          <include name="Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
           <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="Login_And_Onboard"/>
         </methods>
-      </class> <!-- com.cs.arris.Tests.TC01_Simple_Test -->
+      </class> <!-- com.cs.arris.Tests.TC03_Complex_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

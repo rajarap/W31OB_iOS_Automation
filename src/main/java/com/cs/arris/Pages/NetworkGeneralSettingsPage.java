@@ -14,67 +14,49 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"General Settings\"]")
 	public MobileElement generalSettingsTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/upnp_text")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"General_Network_Settings_Screen_Label_Option[1]\"]")
 	public MobileElement upnpLabel;
 
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable' and @checked='false']")
-//	public MobileElement disableUPNPToggleButton;
-//
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable' and @checked='true']")
-//	public MobileElement enableUPNPToggleButton;
-	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/upnp_enable_disable']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"General_Network_Settings_Screen_Button_Switch[1]\"]")
 	public MobileElement UPNPToggleButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/upnp_info_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"General_Network_Settings_Screen_Button_Info[1]\"]")
 	public MobileElement upnpInfoIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Bridge Mode']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"General_Network_Settings_Screen_Label_Option[2]\"]")
 	public MobileElement bridgeModeLabel;
 
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable' and @checked='false']")
-//	public MobileElement disableBridgeModeToggleButton;
-//
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable' and @checked='true']")
-//	public MobileElement enableBridgeModeToggleButton;
-	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/bridge_mode_enable_disable']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"General_Network_Settings_Screen_Button_Switch[2]\"]")
 	public MobileElement bridgeModeToggleButton;
 
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/bridge_mode_info_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"General_Network_Settings_Screen_Button_Info[2]\"]")
 	public MobileElement bridgeModeInfoIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_frwd_text")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"General_Network_Settings_Screen_Label_Option[3]\"]")
 	public MobileElement portForwardingLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_txt")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"General_Network_Settings_Screen_Label_Option[4]\"]")
 	public MobileElement ipv6EnableLabel;
 
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable' and @checked='false']")
-//	public MobileElement disableIPv6ToggleButton;
-//
-//	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable' and @checked='true']")
-//	public MobileElement enableIPv6ToggleButton;
-//	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/ipv6_enable_enable_disable']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"General_Network_Settings_Screen_Button_Switch[4]\"]")
 	public MobileElement IPv6ToggleButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ipv6_enable_info_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"General_Network_Settings_Screen_Button_Info[4]\"]")
 	public MobileElement ipv6InfoIcon;
 
 	public NetworkGeneralSettingsPage() {
@@ -181,18 +163,18 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 			return true;
 		} else {
 			click(UPNPToggleButton);
-			utils.log().info("UPnP is now enabled");
+			utils.log().info("UPnP is enabled");
 			return true;
 		}
 	}
 
 	public boolean disableUPnP() {
-		if (!(UPNPToggleButton.isSelected())) {
-			utils.log().info("UPnP is already disabled");
+		if (UPNPToggleButton.isSelected()) {
+			click(UPNPToggleButton);
+			utils.log().info("UPnP is disabled");
 			return true;
 		} else {
-			click(UPNPToggleButton);
-			utils.log().info("UPnP is now disabled");
+			utils.log().info("UPnP is already disabled");
 			return true;
 		}
 	}
@@ -261,15 +243,11 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("UPnP Link is displayed");
 			
 			try {
-				if (UPNPToggleButton.isDisplayed() && !(UPNPToggleButton.isSelected()))
+				if (UPNPToggleButton.isDisplayed() && (!(UPNPToggleButton.isSelected())))
 					utils.log().info("UPnp toggle button is displayed but is disabled");
+				else
+					utils.log().info("UPnp toggle button is displayed and is selected");
 			}catch(Exception e) {}
-			
-			try {
-				if (UPNPToggleButton.isDisplayed() && UPNPToggleButton.isSelected())
-					utils.log().info("UPnp toggle button is displayed and is enabled");
-			}catch(Exception e) {}
-			
 
 			if (upnpInfoIcon.isDisplayed())
 				utils.log().info("UPnP Info Icon is displayed");
@@ -278,13 +256,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("Bridge Mode Link is displayed");
 			
 			try {
-				if (bridgeModeToggleButton.isDisplayed() && !(bridgeModeToggleButton.isSelected()))
+				if (bridgeModeToggleButton.isDisplayed() && (!(bridgeModeToggleButton.isSelected())))
 					utils.log().info("Bridge Mode toggle button is displayed but is disabled");
-			}catch(Exception e) {}
-			
-			try {
-				if (bridgeModeToggleButton.isDisplayed() && bridgeModeToggleButton.isSelected())
-					utils.log().info("Bridge Mode toggle button is displayed and is enabled");
+				else
+					utils.log().info("Bridge Mode toggle button is displayed and is selected");
 			}catch(Exception e) {}
 
 			if (bridgeModeInfoIcon.isDisplayed())
@@ -297,13 +272,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("IPv6 Enable is displayed");
 			
 			try {
-				if (IPv6ToggleButton.isDisplayed() && !(IPv6ToggleButton.isSelected()))
+				if (IPv6ToggleButton.isDisplayed() && (!(IPv6ToggleButton.isSelected())))
 					utils.log().info("IPv6 Enable toggle button is displayed but is disabled");
-			}catch(Exception e) {}
-			
-			try {
-				if (IPv6ToggleButton.isDisplayed() && IPv6ToggleButton.isSelected())
-					utils.log().info("IPv6 Enable toggle button is displayed and is enabled");
+				else
+					utils.log().info("IPv6 Enable toggle button is displayed and is selected");
 			}catch(Exception e) {}
 
 			if (ipv6InfoIcon.isDisplayed())

@@ -12,20 +12,21 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/titleTextView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"DEVICE PRIORITY\"]")
 	public MobileElement title;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/messageTextView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Only one Device can be at Highest Priority.\"]")
 	public MobileElement description;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imageView")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"closeIcon\"]")
 	public MobileElement closeIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/okay_button")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OK\"]")
 	public MobileElement okButton;
 
 	public NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog() {
@@ -57,7 +58,7 @@ public class NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog extends Pare
 	@Override
 	public boolean isAt() {
 		if (description.isDisplayed()) {
-			utils.log().info("On Add Device - Only one device can be at Highest Priority Dialog");
+			utils.log().info(description.getText() + " is displayed");
 			return true;
 		} else {
 			utils.log().info("Not on Add Device - Only one device can be at Highest Priority Dialog");

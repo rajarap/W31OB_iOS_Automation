@@ -13,14 +13,15 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkLANDHCPLeaseTimeAppliedChangesDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_LeaseTime\"]")
 	public MobileElement description;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_SuccessOk\"]")
 	public MobileElement okButton;
 
 	

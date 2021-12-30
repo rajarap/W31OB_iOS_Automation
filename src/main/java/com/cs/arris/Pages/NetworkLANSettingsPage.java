@@ -13,26 +13,27 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkLANSettingsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"LAN Settings\"]")
 	public MobileElement lanSettingsTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_reservation_txt")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_Settings_Screen_Label_[1]\"]")
 	public MobileElement lanIPReservationLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_dhcp_range_txt")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_Settings_Screen_Label_[2]\"]")
 	public MobileElement lanSubnetLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_dhcp_lease_time_txt")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_Settings_Screen_Label_[3]\"]")
 	public MobileElement lanDHCPLeaseTimeLabel;
 
 	public NetworkLANSettingsPage() {
@@ -158,10 +159,12 @@ public class NetworkLANSettingsPage extends ParentClass implements Page {
 				utils.log().info("LAC Link is displayed");
 			else
 				utils.log().info("LAC Link is not displayed");
+			
 			if (lanDHCPLeaseTimeLabel.isDisplayed())
 				utils.log().info("DNS Configuration Link is displayed ");
 			else
 				utils.log().info("DNS Configuration Link is not displayed");
+			
 			return true;
 		} catch (Exception e) {
 			return false;

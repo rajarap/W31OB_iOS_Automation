@@ -1,6 +1,7 @@
 com/cs/arris/Pages/AddDeviceHomePageDeviceDetailsPage.class
 com/cs/arris/Pages/HomeSpeedTestHistoryPage.class
 com/cs/arris/Utilities/InValidOTP.class
+com/cs/arris/Pages/NetworkBandSteeringModeInfoDialog.class
 com/cs/arris/Pages/ParentalControlAlertDialog.class
 com/cs/arris/Pages/FooterIconsPage.class
 com/cs/arris/Pages/GenerateEmailAndPasscode.class
@@ -57,6 +58,7 @@ com/cs/arris/Interface/Page.class
 com/cs/arris/Pages/RemoveDeviceFromHomePage.class
 com/cs/arris/Pages/ParentalControlResumeInternetforAllProfilesDialog.class
 com/cs/arris/Pages/NetworkGeneralSettingsPortFowardingAddRulePage.class
+com/cs/arris/Pages/NetworkBandSteeringModeAlertDialog.class
 com/cs/arris/Pages/NetworkEnableGuestNetworkAlertDialog.class
 com/cs/arris/Pages/UnPackYourBoxPage.class
 com/cs/arris/Utilities/RandomEmailAddress.class

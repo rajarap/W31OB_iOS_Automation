@@ -14,17 +14,18 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkPortRuleEditFaliedAlertDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"closeIcon\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Failed to configure Port Forwarding Rule.\"]")
 	public MobileElement errorDescription;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OK\"]")
 	public MobileElement okButton;
 
 	public NetworkPortRuleEditFaliedAlertDialog() {

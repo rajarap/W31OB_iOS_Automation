@@ -1,0 +1,20 @@
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:29:29.518 ParentClass:308 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:29:29.563 ParentClass:316 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:29:29.564 ParentClass:339 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:29:29.573 ParentClass:353 - loading... error_codes/error_codes.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:39:28.848 ParentClass:308 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:39:28.878 ParentClass:316 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:39:28.879 ParentClass:339 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 12:39:28.888 ParentClass:353 - loading... error_codes/error_codes.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:01:56.957 ParentClass:308 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:01:57.002 ParentClass:316 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:01:57.004 ParentClass:339 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:01:57.014 ParentClass:353 - loading... error_codes/error_codes.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:10:07.176 ParentClass:308 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:10:07.213 ParentClass:316 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:10:07.215 ParentClass:339 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 13:10:07.227 ParentClass:353 - loading... error_codes/error_codes.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 20:14:34.958 ParentClass:308 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 20:14:34.990 ParentClass:316 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 20:14:34.992 ParentClass:339 - loading... strings/strings.xml
+[${ctx:ROUTINGKEY} INFO ] 2021-12-28 20:14:35.002 ParentClass:353 - loading... error_codes/error_codes.xml

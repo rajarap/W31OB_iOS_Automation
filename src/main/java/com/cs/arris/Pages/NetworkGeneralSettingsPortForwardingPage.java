@@ -16,21 +16,22 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkGeneralSettingsPortForwardingPage extends ParentClass implements Page {
 
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Port_Forwarding_Screen_NavigationBar_TitleLabel\"]")
 	public MobileElement portForwardingTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/port_forwarding_add_rule")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_AddRule\"]")
 	public MobileElement addRuleButton;
 
 	public NetworkGeneralSettingsPortForwardingPage() {
@@ -199,12 +200,12 @@ public class NetworkGeneralSettingsPortForwardingPage extends ParentClass implem
 			utils.log().info("Editing Port Forwarding Rule  : " + i);
 			utils.log().info("-------------------------------------");
 
-			List<MobileElement> entity = (List<MobileElement>) super.getDriver()
-				.findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout");
+			List<MobileElement> entity = (List<MobileElement>) 
+			super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 			for (MobileElement e : entity) {		
-				if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']").isDisplayed())
-					click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']"));
+				if (e.findElementByXPath("//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_"+i+"\"]").isDisplayed())
+					click(e.findElementByXPath("//XCUIElementTypeButton[@name=\"Port_Forwarding_Screen_Button_"+i+"\"]"));
 				else
 					utils.log().info("Port Forwardig Edit Rule Name Icon is not displayed");
 			}

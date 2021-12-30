@@ -74,7 +74,42 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_Save\"]")
 	public MobileElement static_saveChangesButton;
-
+	
+	//All fields are mandatory
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Error5\"]")
+	public MobileElement static_dnsIPv4error;
+		
+	//Invalid WAN IP Address
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Error0\"]")
+	public MobileElement static_dnsIPv4invalidIPAddress;
+		
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
+		
+	// Alert dialog
+		
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"closeIcon\"]")
+	public MobileElement closeButton;
+		
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Alert\"]")
+	public MobileElement alertTitle;
+		
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OK\"]")
+	public MobileElement okButton;
+		
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_DNS_Configuration_Screen_Label_Success\"]")
+	public MobileElement successMessage;
+		
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_DNS_Configuration_Screen_Button_SuccessOk\"]")
+	public MobileElement successOKButton;
+	
+	//join dialog
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Join\"]")
+	public MobileElement joinButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Cancel\"]")
+	public MobileElement cancelButton;
 
 	public NetworkWANDNSConfigurationIPv4Page() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -152,17 +187,17 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 		}
 	}
 	
-//	public void clickSaveChangesButton_Static() {
-//		try {
-//			if (static_saveChangesButton.isDisplayed() && static_saveChangesButton.isEnabled()) {
-//				click(static_saveChangesButton);
-//				utils.log().info("Clicked on SAVE CHANGES button");
-//			}
-//		} catch (Exception e) {
-//			utils.log().info("SAVE CHANGES button is displayed, but is disabled");
-//		}
-//	}
-//	
+	public void clickSaveChangesButton_Static() {
+		try {
+			if (static_saveChangesButton.isDisplayed() && static_saveChangesButton.isEnabled()) {
+				click(static_saveChangesButton);
+				utils.log().info("Clicked on SAVE CHANGES button");
+			}
+		} catch (Exception e) {
+			utils.log().info("SAVE CHANGES button is displayed, but is disabled");
+		}
+	}
+	
 
 	public boolean clickAutomaticRadioButton() {
 		if (automaticRadioButton.isSelected()) {
@@ -176,17 +211,13 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 	}
 	
 	public boolean clickStaticRadioButton() {
-		if (staticRadioButton.isEnabled()) {
-			utils.log().info("Static Radion button is already selected");
-			return true;
-		} else {
-			click(staticRadioButton);
-			if (this.getDNSStaticAlertDialogObject().alertTitle.isDisplayed()) {
-				this.getDNSStaticAlertDialogObject().clickOKButton();
-			}
-			utils.log().info("Static Radio button is selected");
-			return true;
+		click(staticRadioButton);
+		if (this.getDNSStaticAlertDialogObject().alertTitle.isDisplayed()) {
+			this.getDNSStaticAlertDialogObject().clickOKButton();
 		}
+		utils.log().info("Static Radio button is selected");
+		
+		return true;
 	}
 	
 	public boolean verifyUIOnDNSIPv4Automatic() {
@@ -294,6 +325,81 @@ public class NetworkWANDNSConfigurationIPv4Page extends ParentClass implements P
 			return true;
 			
 		}catch(Exception e) {
+			return false;
+		}
+	}
+	
+//	public boolean validationOnWANIPv4Static_MandatoryFields() {
+//		utils.log().info("                                                     ");
+//		utils.log().info("*****************************************************");
+//		utils.log().info("Validation WAN IPv4 Static - All fields are Mandatory");
+//		utils.log().info("*****************************************************");
+//		
+//		try {
+//			if (static_gateway.isDisplayed()) {
+//				utils.log().info("Gateway IP Address : " + static_gateway.getText() + " is displayed ");
+//				String gatewayIPAddress = static_gateway.getText();
+//				clear(static_gateway);
+//				clickSaveChangesButton_Static();
+//				
+//				if(static_IPv4error.isDisplayed())
+//					utils.log().info("Validation message : " + static_IPv4error.getText() + " is displayed ");
+//					
+//				sendKeys(static_gateway, gatewayIPAddress);
+//				clickSaveChangesButton_Static();
+//				
+//				if(alertMessage.isDisplayed())
+//					click(okButton);
+//				super.pause(10);
+//				
+//				if(successMessage.isDisplayed())
+//					click(successOKButton);
+//				super.pause(40);
+//			}
+//			return true;
+//		}catch(	Exception e){
+//			return false;
+//		}
+//	}
+	
+	public boolean validationOnWANIPv4Static_InvalidDNSIPAddress() {
+		utils.log().info("                                                   ");
+		utils.log().info("***************************************************");
+		utils.log().info("Validation DNS IPv4 Static - Invalid DNS IP Address");
+		utils.log().info("***************************************************");
+		
+		try {
+			if (static_primaryDNS.isDisplayed()) {
+				utils.log().info("IP Address : " + static_primaryDNS.getText() + " is displayed ");
+				String iPAddress = static_primaryDNS.getText();
+				clear(static_primaryDNS);
+				sendKeys(static_primaryDNS, "49.205.72.850");
+				clickSaveChangesButton_Static();
+				
+				if(static_dnsIPv4invalidIPAddress.isDisplayed())
+					utils.log().info("Validation message : " + static_dnsIPv4invalidIPAddress.getText() + " is displayed ");
+				
+				clear(static_primaryDNS);
+				sendKeys(static_primaryDNS, iPAddress);
+				clickSaveChangesButton_Static();
+				
+				if(successMessage.isDisplayed())
+					click(successOKButton);
+				super.pause(40);
+				
+				if(joinButton.isDisplayed())
+					click(joinButton);
+				super.pause(15);
+				
+				try {
+					if(alertTitle.isDisplayed())
+						click(okButton);
+					super.pause(10);
+				}catch(Exception e) {}
+//49.205.72.130
+			}
+			return true;
+		}catch(	Exception e){
 			return false;
 		}
 	}

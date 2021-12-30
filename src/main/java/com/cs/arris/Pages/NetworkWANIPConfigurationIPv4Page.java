@@ -51,44 +51,78 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Mask\"]")
 	public MobileElement subnetMaskLabel;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Subnet\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Subnet\"]")
 	public MobileElement dhcp_subnetMask;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Subnet\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Subnet\"]")
 	public MobileElement static_subnetMask;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Gateway\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Gateway\"]")
 	public MobileElement gatewayLabel;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Gateway\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Gateway\"]")
 	public MobileElement dhcp_gateway;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Gateway\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Gateway\"]")
 	public MobileElement static_gateway;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Primary\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Primary\"]")
 	public MobileElement primaryDNSLabel;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Primary\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Primary\"]")
 	public MobileElement dhcp_primaryDNS;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Primary\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPv4Primary\"]")
 	public MobileElement static_primaryDNS;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Secondary\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Secondary\"]")
 	public MobileElement secondayDNSLabel;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPV4Secondary\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPV4Secondary\"]")
 	public MobileElement dhcp_secondaryDNS;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPV4Secondary\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Wan_IP_Config_Screen_TextField_IPV4Secondary\"]")
 	public MobileElement static_secondaryDNS;
 
-	@AndroidFindBy(xpath = "//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button\"]")
 	public MobileElement dhcp_saveChangesButton;
 	
-	@AndroidFindBy(xpath = "//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button\"]")
 	public MobileElement static_saveChangesButton;
+	
+	//All fields are mandatory
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Error5\"]")
+	public MobileElement static_IPv4error;
+	
+	//Invalid WAN IP Address
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Error0\"]")
+	public MobileElement static_IPv4invalidIPAddress;
+	
+	
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
+	
+	// Alert dialog
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button_AlertClose\"]")
+	public MobileElement closeButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_AlertTitle\"]")
+	public MobileElement alertTitle;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_AlertSubTitle\"]")
+	public MobileElement alertMessage;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button_AlertOk\"]")
+	public MobileElement okButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_IP_Config_Screen_Label_Success\"]")
+	public MobileElement successMessage;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_IP_Config_Screen_Button_SuccessOk\"]")
+	public MobileElement successOKButton;
+	
 
 
 	public NetworkWANIPConfigurationIPv4Page() {
@@ -159,6 +193,7 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 	}
 	
 	public boolean clickSaveChangesButton_Static() {
+		click(doneLink);
 		if (static_saveChangesButton.isDisplayed() && static_saveChangesButton.isEnabled()) {
 			click(static_saveChangesButton);
 			utils.log().info("Clicked on SAVE CHANGES button");
@@ -264,32 +299,32 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 //			utils.log().info("DHCP Radio button is not displayed");
 //		}
 
-			if (ipAddressLabel.isDisplayed() && dhcp_ipAddress.isDisplayed() && !(dhcp_ipAddress.isEnabled()))
+			if (ipAddressLabel.isDisplayed() && dhcp_ipAddress.isDisplayed())
 				utils.log().info(ipAddressLabel.getText() + " : " + dhcp_ipAddress.getText());
 			else
 				utils.log().info("IP Address details is not displayed");
 
-			if (subnetMaskLabel.isDisplayed() && dhcp_subnetMask.isDisplayed() && !(dhcp_subnetMask.isEnabled()))
+			if (subnetMaskLabel.isDisplayed() && dhcp_subnetMask.isDisplayed())
 				utils.log().info(subnetMaskLabel.getText() + " : " + dhcp_subnetMask.getText());
 			else
 				utils.log().info("Subnet Mask details is not displayed");
 
-			if (gatewayLabel.isDisplayed() && dhcp_gateway.isDisplayed() && !(dhcp_gateway.isEnabled()))
+			if (gatewayLabel.isDisplayed() && dhcp_gateway.isDisplayed())
 				utils.log().info(gatewayLabel.getText() + " : " + dhcp_gateway.getText());
 			else
 				utils.log().info("Gateway details is not displayed");
 
-			if (primaryDNSLabel.isDisplayed() && dhcp_primaryDNS.isDisplayed() && !(dhcp_primaryDNS.isEnabled()))
+			if (primaryDNSLabel.isDisplayed() && dhcp_primaryDNS.isDisplayed())
 				utils.log().info(primaryDNSLabel.getText() + " : " + dhcp_primaryDNS.getText());
 			else
 				utils.log().info("Primary DNS details is not displayed");
 
-			if (secondayDNSLabel.isDisplayed() && dhcp_secondaryDNS.isDisplayed() && !(dhcp_secondaryDNS.isEnabled()))
+			if (secondayDNSLabel.isDisplayed() && dhcp_secondaryDNS.isDisplayed())
 				utils.log().info(secondayDNSLabel.getText() + " : " + dhcp_secondaryDNS.getText());
 			else
 				utils.log().info("Secondary DNS details is not displayed");
 
-			if (dhcp_saveChangesButton.isDisplayed() && !(dhcp_saveChangesButton.isEnabled()))
+			if (dhcp_saveChangesButton.isDisplayed())
 				utils.log().info(dhcp_saveChangesButton.getText() + " button is displayed but is disabled");
 			else
 				utils.log().info("SAVE CHANGES button is not displayed");
@@ -346,37 +381,106 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 //			utils.log().info("Static Radio button is displayed and is already selected");
 //		}
 		
-			if (ipAddressLabel.isDisplayed() && static_ipAddress.isDisplayed() && static_ipAddress.isEnabled())
+			if (ipAddressLabel.isDisplayed() && static_ipAddress.isDisplayed())
 				utils.log().info(ipAddressLabel.getText() + " : " + static_ipAddress.getText());
 			else
-			utils.log().info("IP Address details is not displayed");
+				utils.log().info("IP Address details is not displayed");
 
-			if (subnetMaskLabel.isDisplayed() && static_subnetMask.isDisplayed() && static_subnetMask.isEnabled())
+			if (subnetMaskLabel.isDisplayed() && static_subnetMask.isDisplayed())
 				utils.log().info(subnetMaskLabel.getText() + " : " + static_subnetMask.getText());
 			else
-			utils.log().info("Subnet Mask details is not displayed");
+				utils.log().info("Subnet Mask details is not displayed");
 
-			if (gatewayLabel.isDisplayed() && static_gateway.isDisplayed() && static_gateway.isEnabled())
+			if (gatewayLabel.isDisplayed() && static_gateway.isDisplayed())
 				utils.log().info(gatewayLabel.getText() + " : " + static_gateway.getText());
 			else
-			utils.log().info("Gateway details is not displayed");
+				utils.log().info("Gateway details is not displayed");
 
-			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed() && static_primaryDNS.isEnabled())
+			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed())
 				utils.log().info(primaryDNSLabel.getText() + " : " + static_primaryDNS.getText());
 			else
-			utils.log().info("Primary DNS details is not displayed");
+				utils.log().info("Primary DNS details is not displayed");
 
-			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed() && static_secondaryDNS.isEnabled())
+			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed())
 				utils.log().info(secondayDNSLabel.getText() + " : " + static_secondaryDNS.getText());
 			else
-			utils.log().info("Secondary DNS details is not displayed");
+				utils.log().info("Secondary DNS details is not displayed");
 
-			if (static_saveChangesButton.isDisplayed() && static_saveChangesButton.isEnabled())
+			if (static_saveChangesButton.isDisplayed())
 				utils.log().info(static_saveChangesButton.getText() + " button is displayed and is Enabled");
 			else
-			utils.log().info("SAVE CHANGES button is not displayed");
+				utils.log().info("SAVE CHANGES button is not displayed");
 			return true;
 		}catch(	Exception e){
+			return false;
+		}
+	}
+	
+	public boolean validationOnWANIPv4Static_MandatoryFields() {
+		utils.log().info("                                                     ");
+		utils.log().info("*****************************************************");
+		utils.log().info("Validation WAN IPv4 Static - All fields are Mandatory");
+		utils.log().info("*****************************************************");
+		
+		try {
+			if (static_gateway.isDisplayed()) {
+				utils.log().info("Gateway IP Address : " + static_gateway.getText() + " is displayed ");
+				String gatewayIPAddress = static_gateway.getText();
+				clear(static_gateway);
+				clickSaveChangesButton_Static();
+				
+				if(static_IPv4error.isDisplayed())
+					utils.log().info("Validation message : " + static_IPv4error.getText() + " is displayed ");
+					
+				sendKeys(static_gateway, gatewayIPAddress);
+				clickSaveChangesButton_Static();
+				
+				if(alertMessage.isDisplayed())
+					click(okButton);
+				super.pause(10);
+				
+				if(successMessage.isDisplayed())
+					click(successOKButton);
+				super.pause(40);
+			}
+			return true;
+		}catch(	Exception e){
+			return false;
+		}
+	}
+	
+	public boolean validationOnWANIPv4Static_InvalidWANIPAddress() {
+		utils.log().info("                                                   ");
+		utils.log().info("***************************************************");
+		utils.log().info("Validation WAN IPv4 Static - Invalid WAN IP Address");
+		utils.log().info("***************************************************");
+		
+		try {
+			if (static_ipAddress.isDisplayed()) {
+				utils.log().info("Static IP Address : " + static_ipAddress.getText() + " is displayed ");
+				String iPAddress = static_ipAddress.getText();
+				clear(static_ipAddress);
+				sendKeys(static_ipAddress, "10.240.217.850");
+				clickSaveChangesButton_Static();
+				
+				if(static_IPv4invalidIPAddress.isDisplayed())
+					utils.log().info("Validation message : " + static_IPv4invalidIPAddress.getText() + " is displayed ");
+				
+				clear(static_ipAddress);
+				sendKeys(static_ipAddress, iPAddress);
+				clickSaveChangesButton_Static();
+				
+				if(alertMessage.isDisplayed())
+					click(okButton);
+				super.pause(10);
+				
+				if(successMessage.isDisplayed())
+					click(successOKButton);
+				super.pause(40);
+			}
+			return true;
+		}catch(	Exception e){
+			utils.log().info("Static IP Address is not displayed ");
 			return false;
 		}
 	}

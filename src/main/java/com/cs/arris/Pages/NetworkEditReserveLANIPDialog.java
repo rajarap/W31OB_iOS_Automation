@@ -11,46 +11,53 @@ import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.remote.HideKeyboardStrategy;
 
 public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_cancel_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_AddLan\"]")
 	public MobileElement closeIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_header_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_AddLan\"]")
 	public MobileElement editlanIPTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_message_1")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_AddLanSubTitle\"]")
 	public MobileElement reservelanIPMessage1;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_message_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_AddLanInfo\"]")
 	public MobileElement reservelanIPMessage2;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/enter_alias_tv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_EnterRule\"]")
 	public MobileElement enterRuleNameLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/alias_address_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Lan_IP_Reservation_Screen_TextField_Rule\"]")
 	public MobileElement ruleNameTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/enter_ip_tv")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_EnterIP\"]")
 	public MobileElement enterIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_edit_view")
-	public MobileElement enterIPAddressTextBox;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_AddLan\"]")
+//	public MobileElement enterIPAddressTextBox;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_prefix")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Lan_IP_Reservation_Screen_TextField_IPValue\"]")
 	public MobileElement enterIPAddressPrefixTextBox;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ip_address_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Lan_IP_Reservation_Screen_TextField_IP\"]")
 	public MobileElement enterIPAddressSuffixTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/lan_ip_save_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_Save\"]")
 	public MobileElement saveButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
+	
 
 	public NetworkEditReserveLANIPDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -67,12 +74,15 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 	}
 
 	public boolean clickSaveButton() {
+	//	((IOSDriver) super.getDriver()).hideKeyboard(HideKeyboardStrategy.PRESS_KEY, "Done");
+	//	click(doneLink);
+		((IOSDriver) super.getDriver()).hideKeyboard(HideKeyboardStrategy.PRESS_KEY, "Done");
 		if (saveButton.isDisplayed()) {
 			click(saveButton);
-			utils.log().info("Clicked on Save Button");
+			utils.log().info("Clicked on Save Changes button");
 			return true;
 		} else {
-			utils.log().info("Save Button is not displayed");
+			utils.log().info("Save Changes button is not displayed");
 			return false;
 		}
 	}
@@ -90,6 +100,7 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 
 	public boolean editRuleName() {
 		if (ruleNameTextBox.isDisplayed()) {
+			super.clear(ruleNameTextBox);
 			super.generateRuleName();
 			super.sendKeys(ruleNameTextBox, super.ruleName);
 			utils.log().info("Enter Rule Name : " + super.ruleName);
@@ -102,6 +113,7 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 
 	public boolean editIPAddress() {
 		if (enterIPAddressSuffixTextBox.isDisplayed()) {
+			super.clear(enterIPAddressSuffixTextBox);
 			super.generateRandomIPNumber();
 			super.sendKeys(enterIPAddressSuffixTextBox, String.valueOf(super.ipNumber));
 			utils.log().info("Entered IP Address : " + enterIPAddressSuffixTextBox.getText());

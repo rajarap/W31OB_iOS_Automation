@@ -14,20 +14,21 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkGeneralSettingsUPnPInfoDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"General_Network_Settings_Screen_Button_InfoClose\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_header_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"General_Network_Settings_Screen_Label_InfoTitle\"]")
 	public MobileElement upnptitle;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"General_Network_Settings_Screen_Label_InfoSubTitle\"]")
 	public MobileElement upnpdescription;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"General_Network_Settings_Screen_Button_InfoOk\"]")
 	public MobileElement okButton;
 	
 	

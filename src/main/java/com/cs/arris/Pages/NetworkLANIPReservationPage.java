@@ -15,20 +15,21 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkLANIPReservationPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_NavigationBar_TitleLabel\"]")
 	public MobileElement lanIPTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/add_lan_ip_rule")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button\"]")
 	public MobileElement addReservationButton;
 
 	public NetworkLANIPReservationPage() {
@@ -142,7 +143,7 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 		utils.log().info("Verifying Rules on LAN IP Reservation Page ");
 		utils.log().info("*******************************************");
 		
-		int size = super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/lan_ip_recycler_view']").size();
+		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 		utils.log().info("Size of Rule List is : " + size);
 		
 		try {
@@ -151,40 +152,23 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 				utils.log().info("---------------------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-								+ "]");
+						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					if (e.findElementByXPath(
-							"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']").isDisplayed())
-						utils.log()
-								.info("Rule Name: " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/alise_name']")
-										.getText());
+					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Header["+i+"]\"]").isDisplayed())
+						utils.log().info("Rule Name: " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Header["+i+"]\"]").getText());
 
-					if (e.findElementByXPath("//android.widget.TextView[@text='IP Address']").isDisplayed() && (e
-							.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/lan_ip_address']")
-							.isDisplayed()))
-						utils.log().info(e.findElementByXPath("//android.widget.TextView[@text='IP Address']").getText()
-								+ " : "
-								+ (e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/lan_ip_address']")
-										.getText()));
+					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IPTitle["+i+"]\"]").isDisplayed() && 
+							(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IP["+i+"]\"]").isDisplayed()))
+						utils.log().info(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IPTitle["+i+"]\"]").getText() + " : "
+								+ (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IP["+i+"]\"]").getText()));
 
-					if (e.findElementByXPath("//android.widget.TextView[@text='MAC Address']").isDisplayed() && (e
-							.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/mac_address']")
-							.isDisplayed()))
-						utils.log().info(e.findElementByXPath("//android.widget.TextView[@text='MAC Address']")
-								.getText()
-								+ " : "
-								+ (e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/mac_address']")
-										.getText()));
+					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_MacTitle["+i+"]\"]").isDisplayed() && 
+							(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Mac["+i+"]\"]").isDisplayed()))
+						utils.log().info(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_MacTitle["+i+"]\"]").getText() + " : "
+								+ (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Mac["+i+"]\"]").getText()));
 
-					if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']")
-							.isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_Modify["+i+"]\"]").isDisplayed())
 						utils.log().info("Edit Icon is displayed");
 				}
 			}
@@ -198,10 +182,10 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 		try {
 			for (int i = 1; i <= 1; i++) {
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					click(e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/edit_btn']"));
+					click(e.findElementByXPath("//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_Modify["+i+"]\"]"));
 				}
 			}
 			return true;

@@ -11,21 +11,22 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkLACConfigurationAlertDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/error_header_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_Settings_Screen_Label_Link\"]") 
 	public MobileElement lacAlertTitle; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/error_description") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Wan_Settings_Screen_Label_LinkSubTitle\"]")
 	public MobileElement lacAlertMessage; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/ok_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_Settings_Screen_Button_LacOk\"]")
 	public MobileElement okButton;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/cancel_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Wan_Settings_Screen_Button_Close\"]")
 	public MobileElement cancelDialogIcon; 
 		
 	public NetworkLACConfigurationAlertDialog()

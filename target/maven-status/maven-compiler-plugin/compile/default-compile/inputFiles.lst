@@ -144,6 +144,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Listeners/TestListener.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/JsonMappers/SignUp_TestData.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkPortRuleEditFaliedAlertDialog.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkBandSteeringModeInfoDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BlankSpeedTestHistoryPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/DeviceSignalStrengthLeaderBoardPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANDHCPLeaseTimeAppliedSameChangesDialog.java
@@ -169,6 +170,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BlueToothPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/OptimizeYourNetworkPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettingsPortForwardingPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkBandSteeringModeAlertDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BlankBlockedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/CurrentlyBlockedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/DeviceLocationPage.java

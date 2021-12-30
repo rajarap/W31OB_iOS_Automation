@@ -14,23 +14,24 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class Network5GHzWidebandModeAlertDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
-	public MobileElement closeButton;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
+//	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_header_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Alert\"]") 
 	public MobileElement alertTitle;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_DFS\"]") 
 	public MobileElement alertDescription;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_DFSOk\"]")
 	public MobileElement okButton;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_cancel_dialog") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_DFSCancel\"]") 
 	public MobileElement cancelButton;
 	
 	
@@ -38,16 +39,16 @@ public class Network5GHzWidebandModeAlertDialog extends ParentClass implements P
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
-	public boolean clickCloseButton() {
-		if (closeButton.isDisplayed()) {
-			click(closeButton);
-			utils.log().info("Clicked on Close Button");
-			return true;
-		} else {
-			utils.log().info("Close button is not displayed");
-			return false;
-		}
-	}
+//	public boolean clickCloseButton() {
+//		if (closeButton.isDisplayed()) {
+//			click(closeButton);
+//			utils.log().info("Clicked on Close Button");
+//			return true;
+//		} else {
+//			utils.log().info("Close button is not displayed");
+//			return false;
+//		}
+//	}
 	
 	public boolean clickOKButton() {
 		if (okButton.isDisplayed()) {

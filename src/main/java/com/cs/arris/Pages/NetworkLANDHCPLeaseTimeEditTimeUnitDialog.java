@@ -13,30 +13,46 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialogBoxTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_Edit\"]")
 	public MobileElement editTimeUnitTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialogClose")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_Close\"]")
 	public MobileElement closeIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Minutes']")
-	public MobileElement minutes;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_Radio[1]\"]")
+	public MobileElement minutesRadioButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_TimeLine[1]\"]")
+	public MobileElement minutesLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Hourly']")
-	public MobileElement hourly;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_Radio[2]\"]")
+	public MobileElement hourlyRadioButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_TimeLine[2]\"]")
+	public MobileElement hourlyLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Days']")
-	public MobileElement days;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_Radio[3]\"]")
+	public MobileElement daysRadioButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_TimeLine[3]\"]")
+	public MobileElement daysLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Weekly']")
-	public MobileElement weekly;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_Radio[4]\"]")
+	public MobileElement weeklyRadioButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_TimeLine[4]\"]")
+	public MobileElement weeklyLabel;
 
-	@AndroidFindBy(xpath = "//android.widget.RadioButton[@text='Forever']")
-	public MobileElement forever;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Button_Radio[5]\"]")
+	public MobileElement foreverRadioButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_LAN_DHCP_LeaseTime_Screen_Label_TimeLine[5]\"]")
+	public MobileElement foreverLabel;
 
 	public NetworkLANDHCPLeaseTimeEditTimeUnitDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -54,8 +70,8 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 	}
 
 	public boolean clickMinutesRadioButton() {
-		if (minutes.isDisplayed()) {
-			click(minutes);
+		if (minutesLabel.isDisplayed()) {
+			click(minutesLabel);
 			utils.log().info("Clicked on Minutes Radio Button");
 			return true;
 		} else {
@@ -65,8 +81,8 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 	}
 
 	public boolean clickHourlyRadioButton() {
-		if (hourly.isDisplayed()) {
-			click(hourly);
+		if (hourlyLabel.isDisplayed()) {
+			click(hourlyLabel);
 			utils.log().info("Clicked on Hourly Radio Button");
 			return true;
 		} else {
@@ -76,8 +92,8 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 	}
 
 	public boolean clickDaysRadioButton() {
-		if (days.isDisplayed()) {
-			click(days);
+		if (daysLabel.isDisplayed()) {
+			click(daysLabel);
 			utils.log().info("Clicked on Days Radio Button");
 			return true;
 		} else {
@@ -87,8 +103,8 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 	}
 
 	public boolean clickWeeklyRadioButton() {
-		if (weekly.isDisplayed()) {
-			click(weekly);
+		if (weeklyLabel.isDisplayed()) {
+			click(weeklyLabel);
 			utils.log().info("Clicked on Weekly Radio Button");
 			return true;
 		} else {
@@ -98,8 +114,8 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 	}
 
 	public boolean clickForeverRadioButton() {
-		if (forever.isDisplayed()) {
-			click(forever);
+		if (foreverLabel.isDisplayed()) {
+			click(foreverLabel);
 			utils.log().info("Clicked on Foever Radio Button");
 			return true;
 		} else {
@@ -125,30 +141,55 @@ public class NetworkLANDHCPLeaseTimeEditTimeUnitDialog extends ParentClass imple
 			else
 				utils.log().info("Back Icon is not displayed");
 
-			if (minutes.isDisplayed())
+			if (minutesRadioButton.isDisplayed())
 				utils.log().info("Minutes Radio button is displayed");
 			else
 				utils.log().info("Help Icon is not displayed");
+			
+			if (minutesLabel.isDisplayed())
+				utils.log().info("Minutes Label is displayed");
+			else
+				utils.log().info("Minutes Label is not displayed");
 		
-			if (hourly.isDisplayed())
+			if (hourlyRadioButton.isDisplayed())
 				utils.log().info("Hourly Radio button is displayed");
 			else
 				utils.log().info("Set Lease Time label is displayed");
 			
-			if (days.isDisplayed())
+			if (hourlyLabel.isDisplayed())
+				utils.log().info("Hourly Label is displayed");
+			else
+				utils.log().info("Hourly Label is not displayed");
+			
+			if (daysRadioButton.isDisplayed())
 				utils.log().info("Days Radio button is displayed");
 			else
 				utils.log().info("Enter Lease Time TextBoxis not displayed");
 			
-			if (weekly.isDisplayed())
+			if (daysLabel.isDisplayed())
+				utils.log().info("Days Label is displayed");
+			else
+				utils.log().info("Days Label is not displayed");
+			
+			if (weeklyRadioButton.isDisplayed())
 				utils.log().info(" Weekly Radio button is displayed");
 			else
 				utils.log().info("Select Time Unit Label is not displayed");
 			
-			if (forever.isDisplayed())
+			if (weeklyLabel.isDisplayed())
+				utils.log().info("Weekly Label is displayed");
+			else
+				utils.log().info("Weekly Label is not displayed");
+			
+			if (foreverRadioButton.isDisplayed())
 				utils.log().info("Forever Radion button is displayed");
 			else
 				utils.log().info("Button to select the time unit is not displayed");
+			
+			if (foreverLabel.isDisplayed())
+				utils.log().info("Forever Label is displayed");
+			else
+				utils.log().info("Forever Label is not displayed");
 			
 			return true;
 		} catch (Exception e) {

@@ -1,0 +1,1438 @@
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:30.408 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:30.420 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:35.905 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:35.906 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:39.813 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:39.823 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:39.838 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:39.840 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:39.842 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:39.847 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:39.849 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:40.351 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:40.913 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-36-30/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:41.424 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:41.427 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:41.429 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:41.430 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:41.431 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:44.463 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:44.859 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-36-30/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:45.312 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:36:46.196 NetworkPage:448 - General Settings Link is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:33.748 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:33.759 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:39.121 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:39.123 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.210 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.215 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.227 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.230 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.232 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.236 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.237 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:43.717 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:44.292 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:44.815 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:44.819 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:44.820 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:44.824 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:44.825 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:47.772 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:50.177 NetworkPage:312 - Network Settings Expand Button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:53.253 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:54.366 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:38:57.515 NetworkPage:445 - Clicked on General Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:08.552 NetworkGeneralSettingsPage:293 - On General Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:13.983 NetworkGeneralSettingsPage:227 -                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:13.984 NetworkGeneralSettingsPage:228 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:13.985 NetworkGeneralSettingsPage:229 - Verifying UI Elements on General Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:13.985 NetworkGeneralSettingsPage:230 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:15.582 NetworkGeneralSettingsPage:234 - General Settings title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:16.405 NetworkGeneralSettingsPage:237 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:17.018 NetworkGeneralSettingsPage:240 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:19.092 NetworkGeneralSettingsPage:247 - UPnp toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:19.849 NetworkGeneralSettingsPage:253 - UPnP Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:21.591 NetworkGeneralSettingsPage:256 - Bridge Mode Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:22.857 NetworkGeneralSettingsPage:260 - Bridge Mode toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:23.507 NetworkGeneralSettingsPage:266 - Bridge Mode Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:24.337 NetworkGeneralSettingsPage:269 - Port Forwarding Link is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:25.136 NetworkGeneralSettingsPage:272 - IPv6 Enable is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:27.850 NetworkGeneralSettingsPage:276 - IPv6 Enable toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:29.734 NetworkGeneralSettingsPage:282 - IPv6 Enable Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:31.715 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:32.212 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UPnP_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:32.953 NetworkGeneralSettingsPage:177 - UPnP is already disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:38.311 TC03_Complex_Test:1057 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 00:39:39.545 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: The previously found element ""General_Network_Settings_Screen_Button_Switch[1]" Switch" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: No matches found for Elements matching predicate 'wdUID IN {"26020000-0000-0000-1D51-010000000000"}' from input {(
+    Switch,
+    Switch,
+    Switch
+)}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.arris.sbcBeta, databaseEnabled: false, deviceName: iPhone, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 160, noReset: false, platform: MAC, platformName: iOS, platformVersion: 14.7.1, takesScreenshot: true, udid: a2a6f180af7e6b36828ed95b3fc..., webStorageEnabled: false, xcodeOrgId: MMMJR6XCK4}
+Session ID: 0b22ac76-baa2-4fd0-b7d2-2efd92d2c55e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isSelected(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPage.enableUPnP(NetworkGeneralSettingsPage.java:161)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_UPnP_Settings(TC03_Complex_Test.java:1060)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:40.117 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_UPnP_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:40.545 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_IPv6_Enable_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:43.741 NetworkGeneralSettingsPage:152 - Clicked on IPv6 Info Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:44.632 NetworkGeneralSettingsIPv6EnableInfoDialog:54 - On IPv6 Enable Info Dialog
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:47.303 NetworkGeneralSettingsIPv6EnableInfoDialog:42 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:47.759 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_IPv6_Enable_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:48.401 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Bridge_Mode_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 00:39:52.247 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: The previously found element ""General_Network_Settings_Screen_Button_Info[2]" Button" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: No matches found for Elements matching predicate 'wdUID IN {"92020000-0000-0000-1D51-010000000000"}' from input {(
+    Button,
+    Button, Selected,
+    Button,
+    Button,
+    Button,
+    Button
+)}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.arris.sbcBeta, databaseEnabled: false, deviceName: iPhone, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 160, noReset: false, platform: MAC, platformName: iOS, platformVersion: 14.7.1, takesScreenshot: true, udid: a2a6f180af7e6b36828ed95b3fc..., webStorageEnabled: false, xcodeOrgId: MMMJR6XCK4}
+Session ID: 0b22ac76-baa2-4fd0-b7d2-2efd92d2c55e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:440)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:458)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPage.clickBridgeModeInfoIcon(NetworkGeneralSettingsPage.java:140)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_Bridge_Mode_Settings(TC03_Complex_Test.java:1082)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:52.532 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_Bridge_Mode_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:52.939 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:56.824 NetworkGeneralSettingsPortForwardingPage:223 - On General Settings Port Fowarding Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:56.831 NetworkGeneralSettingsPortForwardingPage:95 -                                                                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:56.832 NetworkGeneralSettingsPortForwardingPage:96 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:56.832 NetworkGeneralSettingsPortForwardingPage:97 - Verifying UI Elements on Network - General Settings Port Forwarding Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:56.833 NetworkGeneralSettingsPortForwardingPage:98 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:57.648 NetworkGeneralSettingsPortForwardingPage:102 - Port Forwarding title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:58.194 NetworkGeneralSettingsPortForwardingPage:105 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:58.736 NetworkGeneralSettingsPortForwardingPage:108 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:59.291 NetworkGeneralSettingsPortForwardingPage:111 - Add Rule button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:39:59.756 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:00.266 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:01.909 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:03.357 NetworkGeneralSettingsPortFowardingAddRulePage:479 - On Port Forwarding Add Rule Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:03.370 NetworkGeneralSettingsPortFowardingAddRulePage:161 -                                                                                   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:03.371 NetworkGeneralSettingsPortFowardingAddRulePage:162 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:03.372 NetworkGeneralSettingsPortFowardingAddRulePage:163 - Verifying UI Elements on Network - General Settings Port Forwarding Add Rule Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:03.373 NetworkGeneralSettingsPortFowardingAddRulePage:164 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:04.998 NetworkGeneralSettingsPortFowardingAddRulePage:167 - ADD PORT FORWARDING RULE title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:05.819 NetworkGeneralSettingsPortFowardingAddRulePage:170 - Close Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:06.528 NetworkGeneralSettingsPortFowardingAddRulePage:173 - Port Forwarding Rule Name text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:08.182 NetworkGeneralSettingsPortFowardingAddRulePage:176 - Protocol: label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:09.054 NetworkGeneralSettingsPortFowardingAddRulePage:179 - TCP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:09.719 NetworkGeneralSettingsPortFowardingAddRulePage:182 - UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:10.444 NetworkGeneralSettingsPortFowardingAddRulePage:185 - TCP/UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:11.987 NetworkGeneralSettingsPortFowardingAddRulePage:188 - Internal Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:12.839 NetworkGeneralSettingsPortFowardingAddRulePage:191 - Enter Internal Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:14.337 NetworkGeneralSettingsPortFowardingAddRulePage:194 - Internal Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:15.209 NetworkGeneralSettingsPortFowardingAddRulePage:197 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:17.150 NetworkGeneralSettingsPortFowardingAddRulePage:200 - External Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:18.638 NetworkGeneralSettingsPortFowardingAddRulePage:203 - Enter External Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:22.210 NetworkGeneralSettingsPortFowardingAddRulePage:206 - External Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:24.048 NetworkGeneralSettingsPortFowardingAddRulePage:209 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:26.826 NetworkGeneralSettingsPortFowardingAddRulePage:212 - Internal IP Address label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:28.391 NetworkGeneralSettingsPortFowardingAddRulePage:215 - Enter Internal IP Address text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:30.824 NetworkGeneralSettingsPortFowardingAddRulePage:218 - Save button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:38.049 NetworkGeneralSettingsPortFowardingAddRulePage:141 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:39.771 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:40.241 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rules ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:40:45.875 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:41:06.713 NetworkGeneralSettingsPortFowardingAddRulePage:430 - Enterted Port Rule Name : PR775
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:41:33.474 NetworkGeneralSettingsPortFowardingAddRulePage:438 - Enterted Internal Port Start : 3865
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:41:46.473 NetworkGeneralSettingsPortFowardingAddRulePage:446 - Enterted Internal Port End : 25130
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:41:57.892 NetworkGeneralSettingsPortFowardingAddRulePage:454 - Enterted External Port Start : 31602
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:42:09.350 NetworkGeneralSettingsPortFowardingAddRulePage:462 - Enterted External Port Stop : 47161
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 00:42:21.031 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeTextField[@name="Port_Forwarding_Screen_TextField_InternalIP"]}) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.arris.sbcBeta, databaseEnabled: false, deviceName: iPhone, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 160, noReset: false, platform: MAC, platformName: iOS, platformVersion: 14.7.1, takesScreenshot: true, udid: a2a6f180af7e6b36828ed95b3fc..., webStorageEnabled: false, xcodeOrgId: MMMJR6XCK4}
+Session ID: 0b22ac76-baa2-4fd0-b7d2-2efd92d2c55e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:440)
+	at com.cs.arris.Base.ParentClass.clear(ParentClass.java:453)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPortFowardingAddRulePage.enterIPAddress(NetworkGeneralSettingsPortFowardingAddRulePage.java:467)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_Port_Forwarding_Add_Rules(TC03_Complex_Test.java:1127)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:42:25.463 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Add_Rules.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:42:25.990 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Edit_Rules ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:42:27.139 NetworkGeneralSettingsPortForwardingPage:226 - Not on General Settings Port Fowarding Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:42:27.396 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-38-33/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Edit_Rules.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:42:27.920 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:42:29.974 NetworkGeneralSettingsPortForwardingPage:78 - Help Button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:19.505 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:19.523 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:25.047 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:25.049 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:30.301 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:30.310 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:30.324 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:30.327 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:30.330 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:30.334 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:30.335 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:31.223 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:31.681 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:32.093 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:32.095 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:32.097 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:32.100 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:32.102 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:34.745 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:37.170 NetworkPage:312 - Network Settings Expand Button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:40.270 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:40.808 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:44.120 NetworkPage:445 - Clicked on General Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:57:55.709 NetworkGeneralSettingsPage:293 - On General Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:01.188 NetworkGeneralSettingsPage:227 -                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:01.189 NetworkGeneralSettingsPage:228 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:01.190 NetworkGeneralSettingsPage:229 - Verifying UI Elements on General Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:01.191 NetworkGeneralSettingsPage:230 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:02.594 NetworkGeneralSettingsPage:234 - General Settings title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:03.894 NetworkGeneralSettingsPage:237 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:04.850 NetworkGeneralSettingsPage:240 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:05.519 NetworkGeneralSettingsPage:243 - UPnP Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:06.952 NetworkGeneralSettingsPage:247 - UPnp toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:08.303 NetworkGeneralSettingsPage:256 - Bridge Mode Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:09.693 NetworkGeneralSettingsPage:260 - Bridge Mode toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:10.472 NetworkGeneralSettingsPage:266 - Bridge Mode Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:11.287 NetworkGeneralSettingsPage:269 - Port Forwarding Link is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:12.188 NetworkGeneralSettingsPage:272 - IPv6 Enable is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:13.453 NetworkGeneralSettingsPage:276 - IPv6 Enable toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:14.190 NetworkGeneralSettingsPage:282 - IPv6 Enable Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:16.171 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:16.699 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UPnP_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:17.417 NetworkGeneralSettingsPage:177 - UPnP is already disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:22.582 TC03_Complex_Test:1057 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:38.183 NetworkGeneralSettingsPage:166 - UPnP is enabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:58:56.884 NetworkGeneralSettingsPage:130 - Clicked on UPnP Info Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 00:59:02.576 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsUPnPInfoDialog.isAt(NetworkGeneralSettingsUPnPInfoDialog.java:52)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_UPnP_Settings(TC03_Complex_Test.java:1063)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1b7a52dd (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:04.825 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_UPnP_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:05.346 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_IPv6_Enable_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:17.900 NetworkGeneralSettingsPage:152 - Clicked on IPv6 Info Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 00:59:23.597 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsIPv6EnableInfoDialog.isAt(NetworkGeneralSettingsIPv6EnableInfoDialog.java:53)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_IPv6_Enable_Settings(TC03_Complex_Test.java:1073)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4f0cab0a (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:24.552 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_IPv6_Enable_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:24.974 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Bridge_Mode_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 00:59:32.144 TestListener:39 - org.openqa.selenium.StaleElementReferenceException: The previously found element ""General_Network_Settings_Screen_Button_Info[2]" Button" is not present in the current view anymore. Make sure the application UI has the expected state. Original error: No matches found for Elements matching predicate 'wdUID IN {"AF040000-0000-0000-8C51-010000000000"}' from input {(
+    Button,
+    Button, Selected,
+    Button,
+    Button,
+    Button,
+    Button
+)}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.arris.sbcBeta, databaseEnabled: false, deviceName: iPhone, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 160, noReset: false, platform: MAC, platformName: iOS, platformVersion: 14.7.1, takesScreenshot: true, udid: a2a6f180af7e6b36828ed95b3fc..., webStorageEnabled: false, xcodeOrgId: MMMJR6XCK4}
+Session ID: 69d5979a-3272-465b-8d28-538e799a6c07
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:440)
+	at com.cs.arris.Base.ParentClass.click(ParentClass.java:458)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPage.clickBridgeModeInfoIcon(NetworkGeneralSettingsPage.java:140)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_Bridge_Mode_Settings(TC03_Complex_Test.java:1082)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:32.589 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_Bridge_Mode_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:33.048 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:41.590 NetworkGeneralSettingsPortForwardingPage:223 - On General Settings Port Fowarding Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:41.595 NetworkGeneralSettingsPortForwardingPage:95 -                                                                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:41.599 NetworkGeneralSettingsPortForwardingPage:96 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:41.600 NetworkGeneralSettingsPortForwardingPage:97 - Verifying UI Elements on Network - General Settings Port Forwarding Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:41.602 NetworkGeneralSettingsPortForwardingPage:98 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:42.480 NetworkGeneralSettingsPortForwardingPage:102 - Port Forwarding title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:42.947 NetworkGeneralSettingsPortForwardingPage:105 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:43.430 NetworkGeneralSettingsPortForwardingPage:108 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:43.928 NetworkGeneralSettingsPortForwardingPage:111 - Add Rule button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:44.699 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:45.220 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:46.855 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:48.382 NetworkGeneralSettingsPortFowardingAddRulePage:484 - On Port Forwarding Add Rule Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:48.390 NetworkGeneralSettingsPortFowardingAddRulePage:160 -                                                                                   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:48.391 NetworkGeneralSettingsPortFowardingAddRulePage:161 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:48.391 NetworkGeneralSettingsPortFowardingAddRulePage:162 - Verifying UI Elements on Network - General Settings Port Forwarding Add Rule Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:48.392 NetworkGeneralSettingsPortFowardingAddRulePage:163 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:50.012 NetworkGeneralSettingsPortFowardingAddRulePage:166 - ADD PORT FORWARDING RULE title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:50.751 NetworkGeneralSettingsPortFowardingAddRulePage:169 - Close Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:51.478 NetworkGeneralSettingsPortFowardingAddRulePage:172 - Port Forwarding Rule Name text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:53.057 NetworkGeneralSettingsPortFowardingAddRulePage:175 - Protocol: label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:53.749 NetworkGeneralSettingsPortFowardingAddRulePage:178 - TCP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:54.591 NetworkGeneralSettingsPortFowardingAddRulePage:181 - UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:55.433 NetworkGeneralSettingsPortFowardingAddRulePage:184 - TCP/UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:57.224 NetworkGeneralSettingsPortFowardingAddRulePage:187 - Internal Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:57.898 NetworkGeneralSettingsPortFowardingAddRulePage:190 - Enter Internal Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 00:59:59.371 NetworkGeneralSettingsPortFowardingAddRulePage:193 - Internal Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:00.186 NetworkGeneralSettingsPortFowardingAddRulePage:196 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:01.374 NetworkGeneralSettingsPortFowardingAddRulePage:199 - External Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:02.189 NetworkGeneralSettingsPortFowardingAddRulePage:202 - Enter External Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:03.818 NetworkGeneralSettingsPortFowardingAddRulePage:205 - External Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:04.444 NetworkGeneralSettingsPortFowardingAddRulePage:208 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:06.227 NetworkGeneralSettingsPortFowardingAddRulePage:211 - Internal IP Address label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:07.544 NetworkGeneralSettingsPortFowardingAddRulePage:214 - Enter Internal IP Address text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:09.040 NetworkGeneralSettingsPortFowardingAddRulePage:217 - Save button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:15.799 NetworkGeneralSettingsPortFowardingAddRulePage:141 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:17.478 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:18.042 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rules ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:23.135 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:00:48.441 NetworkGeneralSettingsPortFowardingAddRulePage:429 - Enterted Port Rule Name : PR263
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:01:19.329 NetworkGeneralSettingsPortFowardingAddRulePage:438 - Enterted Internal Port Start : 6195
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:01:38.955 NetworkGeneralSettingsPortFowardingAddRulePage:447 - Enterted Internal Port End : 29641
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:01:55.217 NetworkGeneralSettingsPortFowardingAddRulePage:456 - Enterted External Port Start : 34912
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:02:10.255 NetworkGeneralSettingsPortFowardingAddRulePage:465 - Enterted External Port Stop : 60229
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:02:26.642 NetworkGeneralSettingsPortFowardingAddRulePage:474 - Enterted IP Address : 192.168.7.248
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:02:36.898 NetworkGeneralSettingsPortFowardingAddRulePage:151 - Clicked on Save Changes Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:02:42.660 TC03_Complex_Test:1150 - All Port details are valid
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:03.970 NetworkGeneralSettingsPortForwardingPage:89 - Add Rule Button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 01:03:15.906 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeTextField[@name="Port_Forwarding_Screen_TextField"]}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:440)
+	at com.cs.arris.Base.ParentClass.clear(ParentClass.java:453)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPortFowardingAddRulePage.enterPortRuleName(NetworkGeneralSettingsPortFowardingAddRulePage.java:426)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_Port_Forwarding_Add_Rules(TC03_Complex_Test.java:1121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeTextField[@name="Port_Forwarding_Screen_TextField"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@8aeab9e (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeTextField[@name="Port_Forwarding_Screen_TextField"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 45 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:24.281 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Add_Rules.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:24.921 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Edit_Rules ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:25.698 NetworkGeneralSettingsPortForwardingPage:226 - Not on General Settings Port Fowarding Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:25.821 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Edit_Rules.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:26.320 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:27.040 NetworkGeneralSettingsPortForwardingPage:78 - Help Button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 01:03:32.560 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Port forwarding"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPortFowardingHelpPage.isAt(NetworkGeneralSettingsPortFowardingHelpPage.java:46)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_Port_Forwarding_Help_Page(TC03_Complex_Test.java:1254)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@58324c9f (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Port forwarding"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:32.895 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-00-57-19/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:39.856 ParentClass:185 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:03:39.895 ParentClass:187 - Quitting Driver
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:41.554 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:41.570 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:46.818 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:46.819 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:50.706 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:50.713 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:50.726 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:50.728 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:50.733 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:50.738 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:50.743 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:51.269 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:51.771 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:52.288 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:52.292 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:52.294 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:52.295 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:52.298 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:55.392 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:56.215 NetworkPage:312 - Network Settings Expand Button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:59.214 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:11:59.679 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:02.942 NetworkPage:445 - Clicked on General Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:15.615 NetworkGeneralSettingsPage:293 - On General Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:21.072 NetworkGeneralSettingsPage:227 -                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:21.074 NetworkGeneralSettingsPage:228 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:21.074 NetworkGeneralSettingsPage:229 - Verifying UI Elements on General Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:21.075 NetworkGeneralSettingsPage:230 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:22.706 NetworkGeneralSettingsPage:234 - General Settings title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:23.483 NetworkGeneralSettingsPage:237 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:24.060 NetworkGeneralSettingsPage:240 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:24.774 NetworkGeneralSettingsPage:243 - UPnP Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:26.377 NetworkGeneralSettingsPage:247 - UPnp toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:27.153 NetworkGeneralSettingsPage:253 - UPnP Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:27.957 NetworkGeneralSettingsPage:256 - Bridge Mode Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:30.682 NetworkGeneralSettingsPage:260 - Bridge Mode toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:31.461 NetworkGeneralSettingsPage:266 - Bridge Mode Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:32.255 NetworkGeneralSettingsPage:269 - Port Forwarding Link is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:32.960 NetworkGeneralSettingsPage:272 - IPv6 Enable is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:34.243 NetworkGeneralSettingsPage:276 - IPv6 Enable toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:34.979 NetworkGeneralSettingsPage:282 - IPv6 Enable Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:37.050 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Verify_General_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:37.539 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UPnP_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:38.400 NetworkGeneralSettingsPage:177 - UPnP is already disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:43.661 TC03_Complex_Test:1057 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:46.242 NetworkGeneralSettingsPage:166 - UPnP is enabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:52.188 NetworkGeneralSettingsPage:133 - UPnP Info Icon is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 01:12:58.042 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsUPnPInfoDialog.isAt(NetworkGeneralSettingsUPnPInfoDialog.java:52)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_UPnP_Settings(TC03_Complex_Test.java:1063)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5793b87 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:59.210 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Verify_General_Settings_UPnP_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:12:59.717 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_IPv6_Enable_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:00.652 NetworkGeneralSettingsPage:155 - IPv6 Info Icon is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 01:13:06.441 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsIPv6EnableInfoDialog.isAt(NetworkGeneralSettingsIPv6EnableInfoDialog.java:53)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_IPv6_Enable_Settings(TC03_Complex_Test.java:1073)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@78b612c6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:06.828 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Verify_General_Settings_IPv6_Enable_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:07.280 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Bridge_Mode_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:08.233 NetworkGeneralSettingsPage:144 - Bridge Mode Info Icon is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 01:13:14.136 TestListener:39 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.NetworkGeneralSettingsBridgeModeInfoDialog.isAt(NetworkGeneralSettingsBridgeModeInfoDialog.java:53)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_Bridge_Mode_Settings(TC03_Complex_Test.java:1083)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7847ef2c (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="General_Network_Settings_Screen_Label_InfoTitle"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:14.588 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Verify_General_Settings_Bridge_Mode_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:15.092 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:18.242 NetworkGeneralSettingsPortForwardingPage:223 - On General Settings Port Fowarding Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:18.248 NetworkGeneralSettingsPortForwardingPage:95 -                                                                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:18.250 NetworkGeneralSettingsPortForwardingPage:96 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:18.251 NetworkGeneralSettingsPortForwardingPage:97 - Verifying UI Elements on Network - General Settings Port Forwarding Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:18.251 NetworkGeneralSettingsPortForwardingPage:98 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:19.236 NetworkGeneralSettingsPortForwardingPage:102 - Port Forwarding title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:19.751 NetworkGeneralSettingsPortForwardingPage:105 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:20.276 NetworkGeneralSettingsPortForwardingPage:108 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:20.853 NetworkGeneralSettingsPortForwardingPage:111 - Add Rule button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:21.368 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:22.158 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:24.015 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:26.067 NetworkGeneralSettingsPortFowardingAddRulePage:484 - On Port Forwarding Add Rule Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:26.077 NetworkGeneralSettingsPortFowardingAddRulePage:160 -                                                                                   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:26.078 NetworkGeneralSettingsPortFowardingAddRulePage:161 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:26.078 NetworkGeneralSettingsPortFowardingAddRulePage:162 - Verifying UI Elements on Network - General Settings Port Forwarding Add Rule Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:26.079 NetworkGeneralSettingsPortFowardingAddRulePage:163 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:27.746 NetworkGeneralSettingsPortFowardingAddRulePage:166 - ADD PORT FORWARDING RULE title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:28.594 NetworkGeneralSettingsPortFowardingAddRulePage:169 - Close Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:30.521 NetworkGeneralSettingsPortFowardingAddRulePage:172 - Port Forwarding Rule Name text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:32.010 NetworkGeneralSettingsPortFowardingAddRulePage:175 - Protocol: label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:32.933 NetworkGeneralSettingsPortFowardingAddRulePage:178 - TCP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:33.821 NetworkGeneralSettingsPortFowardingAddRulePage:181 - UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:34.668 NetworkGeneralSettingsPortFowardingAddRulePage:184 - TCP/UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:36.359 NetworkGeneralSettingsPortFowardingAddRulePage:187 - Internal Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:36.971 NetworkGeneralSettingsPortFowardingAddRulePage:190 - Enter Internal Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:38.628 NetworkGeneralSettingsPortFowardingAddRulePage:193 - Internal Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:39.479 NetworkGeneralSettingsPortFowardingAddRulePage:196 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:41.213 NetworkGeneralSettingsPortFowardingAddRulePage:199 - External Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:42.068 NetworkGeneralSettingsPortFowardingAddRulePage:202 - Enter External Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:43.807 NetworkGeneralSettingsPortFowardingAddRulePage:205 - External Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:44.709 NetworkGeneralSettingsPortFowardingAddRulePage:208 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:46.285 NetworkGeneralSettingsPortFowardingAddRulePage:211 - Internal IP Address label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:47.113 NetworkGeneralSettingsPortFowardingAddRulePage:214 - Enter Internal IP Address text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:47.974 NetworkGeneralSettingsPortFowardingAddRulePage:217 - Save button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:50.893 NetworkGeneralSettingsPortFowardingAddRulePage:141 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:52.844 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-11-41/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:53.751 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rules ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:13:56.250 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:14:13.569 NetworkGeneralSettingsPortFowardingAddRulePage:429 - Enterted Port Rule Name : PR2494
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:14:43.829 NetworkGeneralSettingsPortFowardingAddRulePage:438 - Enterted Internal Port Start : 10821
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:15:04.486 NetworkGeneralSettingsPortFowardingAddRulePage:447 - Enterted Internal Port End : 18674
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:15:23.498 NetworkGeneralSettingsPortFowardingAddRulePage:456 - Enterted External Port Start : 43509
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:15:39.478 NetworkGeneralSettingsPortFowardingAddRulePage:465 - Enterted External Port Stop : 61676
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:15:54.885 NetworkGeneralSettingsPortFowardingAddRulePage:474 - Enterted IP Address : 192.168.7.191
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:16:03.294 NetworkGeneralSettingsPortFowardingAddRulePage:151 - Clicked on Save Changes Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:16:09.120 TC03_Complex_Test:1150 - All Port details entered are valid
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:16:30.333 NetworkGeneralSettingsPortForwardingPage:89 - Add Rule Button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:14.045 ParentClass:301 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:14.060 ParentClass:256 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:19.515 ParentClass:271 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:19.517 ParentClass:272 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.370 TC03_Complex_Test:62 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.379 ParentClass:325 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.391 TC03_Complex_Test:66 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.394 TC03_Complex_Test:69 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.396 TC03_Complex_Test:72 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.399 TC03_Complex_Test:75 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.401 TC03_Complex_Test:77 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:23.919 TC03_Complex_Test:86 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:24.494 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:25.008 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_Network_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:25.013 TC03_Complex_Test:479 -                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:25.016 TC03_Complex_Test:480 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:25.018 TC03_Complex_Test:481 - Test: Network Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:25.019 TC03_Complex_Test:482 - *********************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:27.873 FooterIconsPage:161 - Footer Icons Page - Clicked on Network Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:30.661 NetworkPage:312 - Network Settings Expand Button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:33.983 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_Network_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:34.455 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:37.708 NetworkPage:445 - Clicked on General Settings
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:49.455 NetworkGeneralSettingsPage:293 - On General Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:54.906 NetworkGeneralSettingsPage:227 -                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:54.907 NetworkGeneralSettingsPage:228 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:54.909 NetworkGeneralSettingsPage:229 - Verifying UI Elements on General Settings Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:54.909 NetworkGeneralSettingsPage:230 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:56.450 NetworkGeneralSettingsPage:234 - General Settings title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:57.226 NetworkGeneralSettingsPage:237 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:58.150 NetworkGeneralSettingsPage:240 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:25:58.847 NetworkGeneralSettingsPage:243 - UPnP Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:00.143 NetworkGeneralSettingsPage:247 - UPnp toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:00.868 NetworkGeneralSettingsPage:253 - UPnP Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:01.694 NetworkGeneralSettingsPage:256 - Bridge Mode Link is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:02.973 NetworkGeneralSettingsPage:260 - Bridge Mode toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:03.742 NetworkGeneralSettingsPage:266 - Bridge Mode Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:05.228 NetworkGeneralSettingsPage:269 - Port Forwarding Link is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:06.044 NetworkGeneralSettingsPage:272 - IPv6 Enable is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:07.443 NetworkGeneralSettingsPage:276 - IPv6 Enable toggle button is displayed but is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:08.082 NetworkGeneralSettingsPage:282 - IPv6 Enable Info Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:10.095 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_UI_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:10.580 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_UPnP_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:11.285 NetworkGeneralSettingsPage:177 - UPnP is already disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:16.771 TC03_Complex_Test:1057 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:21.709 NetworkGeneralSettingsPage:166 - UPnP is enabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:31.197 NetworkGeneralSettingsPage:130 - Clicked on UPnP Info Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:32.097 NetworkGeneralSettingsUPnPInfoDialog:53 - On UPnP Info Dialog
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:34.880 NetworkGeneralSettingsUPnPInfoDialog:42 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:36.322 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_UPnP_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:36.807 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_IPv6_Enable_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:41.260 NetworkGeneralSettingsPage:152 - Clicked on IPv6 Info Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:42.123 NetworkGeneralSettingsIPv6EnableInfoDialog:54 - On IPv6 Enable Info Dialog
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:44.564 NetworkGeneralSettingsIPv6EnableInfoDialog:42 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:45.238 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_IPv6_Enable_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:45.823 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Bridge_Mode_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:48.374 NetworkGeneralSettingsPage:141 - Clicked on Bridge Mode Info Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:49.088 NetworkGeneralSettingsBridgeModeInfoDialog:54 - On Bridge Mode Info Dialog
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:51.614 NetworkGeneralSettingsBridgeModeInfoDialog:42 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:52.071 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_Bridge_Mode_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:52.597 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:55.910 NetworkGeneralSettingsPortForwardingPage:223 - On General Settings Port Fowarding Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:55.916 NetworkGeneralSettingsPortForwardingPage:95 -                                                                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:55.916 NetworkGeneralSettingsPortForwardingPage:96 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:55.917 NetworkGeneralSettingsPortForwardingPage:97 - Verifying UI Elements on Network - General Settings Port Forwarding Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:55.917 NetworkGeneralSettingsPortForwardingPage:98 - *************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:56.707 NetworkGeneralSettingsPortForwardingPage:102 - Port Forwarding title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:57.204 NetworkGeneralSettingsPortForwardingPage:105 - Back Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:57.706 NetworkGeneralSettingsPortForwardingPage:108 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:58.846 NetworkGeneralSettingsPortForwardingPage:111 - Add Rule button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:59.370 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:26:59.876 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:01.531 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:03.093 NetworkGeneralSettingsPortFowardingAddRulePage:484 - On Port Forwarding Add Rule Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:03.099 NetworkGeneralSettingsPortFowardingAddRulePage:160 -                                                                                   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:03.101 NetworkGeneralSettingsPortFowardingAddRulePage:161 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:03.102 NetworkGeneralSettingsPortFowardingAddRulePage:162 - Verifying UI Elements on Network - General Settings Port Forwarding Add Rule Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:03.103 NetworkGeneralSettingsPortFowardingAddRulePage:163 - **********************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:04.751 NetworkGeneralSettingsPortFowardingAddRulePage:166 - ADD PORT FORWARDING RULE title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:05.568 NetworkGeneralSettingsPortFowardingAddRulePage:169 - Close Icon is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:06.395 NetworkGeneralSettingsPortFowardingAddRulePage:172 - Port Forwarding Rule Name text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:08.000 NetworkGeneralSettingsPortFowardingAddRulePage:175 - Protocol: label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:08.853 NetworkGeneralSettingsPortFowardingAddRulePage:178 - TCP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:09.625 NetworkGeneralSettingsPortFowardingAddRulePage:181 - UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:10.365 NetworkGeneralSettingsPortFowardingAddRulePage:184 - TCP/UDP button is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:11.865 NetworkGeneralSettingsPortFowardingAddRulePage:187 - Internal Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:12.604 NetworkGeneralSettingsPortFowardingAddRulePage:190 - Enter Internal Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:14.272 NetworkGeneralSettingsPortFowardingAddRulePage:193 - Internal Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:15.096 NetworkGeneralSettingsPortFowardingAddRulePage:196 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:16.766 NetworkGeneralSettingsPortFowardingAddRulePage:199 - External Port Start label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:17.815 NetworkGeneralSettingsPortFowardingAddRulePage:202 - Enter External Port Start text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:20.685 NetworkGeneralSettingsPortFowardingAddRulePage:205 - External Port End label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:22.527 NetworkGeneralSettingsPortFowardingAddRulePage:208 - Enter Internal Port End text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:25.608 NetworkGeneralSettingsPortFowardingAddRulePage:211 - Internal IP Address label is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:27.250 NetworkGeneralSettingsPortFowardingAddRulePage:214 - Enter Internal IP Address text box is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:29.941 NetworkGeneralSettingsPortFowardingAddRulePage:217 - Save button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:36.932 NetworkGeneralSettingsPortFowardingAddRulePage:141 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:39.158 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:39.653 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Add_Rules ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:27:44.244 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:28:03.229 NetworkGeneralSettingsPortFowardingAddRulePage:429 - Enterted Port Rule Name : PR730
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:28:32.140 NetworkGeneralSettingsPortFowardingAddRulePage:438 - Enterted Internal Port Start : 11869
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:28:49.582 NetworkGeneralSettingsPortFowardingAddRulePage:447 - Enterted Internal Port End : 22570
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:29:04.350 NetworkGeneralSettingsPortFowardingAddRulePage:456 - Enterted External Port Start : 40378
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:29:18.636 NetworkGeneralSettingsPortFowardingAddRulePage:465 - Enterted External Port Stop : 56371
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:29:34.479 NetworkGeneralSettingsPortFowardingAddRulePage:474 - Enterted IP Address : 192.168.7.150
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:29:42.934 NetworkGeneralSettingsPortFowardingAddRulePage:151 - Clicked on Save Changes Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:29:48.707 TC03_Complex_Test:1150 - All Port details entered are valid
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:30:10.556 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:30:21.049 NetworkGeneralSettingsPortFowardingAddRulePage:429 - Enterted Port Rule Name : PR944
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:30:40.790 NetworkGeneralSettingsPortFowardingAddRulePage:438 - Enterted Internal Port Start : 11108
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:30:55.855 NetworkGeneralSettingsPortFowardingAddRulePage:447 - Enterted Internal Port End : 29801
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:31:13.162 NetworkGeneralSettingsPortFowardingAddRulePage:456 - Enterted External Port Start : 32919
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:31:31.999 NetworkGeneralSettingsPortFowardingAddRulePage:465 - Enterted External Port Stop : 63311
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:31:51.896 NetworkGeneralSettingsPortFowardingAddRulePage:474 - Enterted IP Address : 192.168.7.181
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:32:02.688 NetworkGeneralSettingsPortFowardingAddRulePage:151 - Clicked on Save Changes Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:32:08.118 TC03_Complex_Test:1150 - All Port details entered are valid
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:32:31.446 NetworkGeneralSettingsPortForwardingPage:86 - Clicked on Add Rule Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:32:42.911 NetworkGeneralSettingsPortFowardingAddRulePage:429 - Enterted Port Rule Name : PR1135
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:33:04.572 NetworkGeneralSettingsPortFowardingAddRulePage:438 - Enterted Internal Port Start : 14238
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:33:21.645 NetworkGeneralSettingsPortFowardingAddRulePage:447 - Enterted Internal Port End : 25878
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:33:39.636 NetworkGeneralSettingsPortFowardingAddRulePage:456 - Enterted External Port Start : 41317
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:33:56.934 NetworkGeneralSettingsPortFowardingAddRulePage:465 - Enterted External Port Stop : 56739
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:34:16.130 NetworkGeneralSettingsPortFowardingAddRulePage:474 - Enterted IP Address : 192.168.7.122
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:34:26.649 NetworkGeneralSettingsPortFowardingAddRulePage:151 - Clicked on Save Changes Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:34:32.502 TC03_Complex_Test:1150 - All Port details entered are valid
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:01.976 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Add_Rules.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:02.575 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Edit_Rules ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:03.170 NetworkGeneralSettingsPortForwardingPage:223 - On General Settings Port Fowarding Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:03.187 NetworkGeneralSettingsPortForwardingPage:193 -                             
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:03.188 NetworkGeneralSettingsPortForwardingPage:194 - ****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:03.188 NetworkGeneralSettingsPortForwardingPage:195 -  Edit Port Forwarding Rules 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:03.189 NetworkGeneralSettingsPortForwardingPage:196 - ****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:03.202 NetworkGeneralSettingsPortForwardingPage:200 - Editing Port Forwarding Rule  : 1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:03.207 NetworkGeneralSettingsPortForwardingPage:201 - -------------------------------------
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 ERROR] 2021-12-31 01:35:20.517 TestListener:39 - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeTextField[@name="Port_Forwarding_Screen_TextField"]}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cs.arris.Base.ParentClass.waitForVisibility(ParentClass.java:440)
+	at com.cs.arris.Base.ParentClass.clear(ParentClass.java:453)
+	at com.cs.arris.Pages.NetworkGeneralSettingsPortFowardingAddRulePage.enterPortRuleName(NetworkGeneralSettingsPortFowardingAddRulePage.java:426)
+	at com.cs.arris.Tests.TC03_Complex_Test.Verify_General_Settings_Port_Forwarding_Edit_Rules(TC03_Complex_Test.java:1172)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeTextField[@name="Port_Forwarding_Screen_TextField"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4b28a7bf (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 43 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeTextField[@name="Port_Forwarding_Screen_TextField"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 45 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:21.671 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Edit_Rules.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:22.108 TC03_Complex_Test:86 - 
+
+****** starting test : Verify_General_Settings_Port_Forwarding_Help_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:24.139 NetworkGeneralSettingsPortForwardingPage:75 - Clicked on Help Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:27.092 NetworkGeneralSettingsPortFowardingHelpPage:47 - On Port Forwarding Help Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:31.518 NetworkGeneralSettingsPortFowardingHelpPage:36 - Clicked on Close Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:33.677 NetworkGeneralSettingsPortForwardingPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:39.718 TC03_Complex_Test:1262 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:44.049 NetworkGeneralSettingsPage:99 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:48.535 NetworkPage:312 - Network Settings Expand Button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:35:54.348 ParentClass:428 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31-01-25-13/TC03_Complex_Test/Verify_General_Settings_Port_Forwarding_Help_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:36:01.168 ParentClass:185 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2021-12-31 INFO ] 2021-12-31 01:36:01.210 ParentClass:187 - Quitting Driver
