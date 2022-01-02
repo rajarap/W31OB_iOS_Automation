@@ -11,27 +11,28 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlAddProfileDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/add_profile_text")  //PROFILE NAME
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_AddProfileTitle\"]")  //PROFILE NAME
 	public MobileElement profileName; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_cancel_dialog")  
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Screen_Button_Close\"]")  
 	public MobileElement closeIcon; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_message")  //Please provide a name for the profile.
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_AddProfileSubTitle\"]")  //Please provide a name for the profile.
 	public MobileElement profileMessage1; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_title")  //Profile Name
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_ProfileNameTitle\"]")  //Profile Name
 	public MobileElement profileTitle; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/edt_profile_name")  //text box to enter profile name
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Parental_Control_Screen_TextField_NewProfile\"]")  //text box to enter profile name
 	public MobileElement enterProfileName; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/profile_save_dialog")  //create profile button
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Screen_Button_CreateProfile\"]")  //create profile button
 	public MobileElement createProfileButton; 
 	
 		

@@ -17,23 +17,18 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddSatelliteInstallAdditionalSatelliteDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_title")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Install_Additional_Satellite_Screen_TitleLabel\"]")
 	public MobileElement installAdditionalSatelliteTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_description")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Install_Additional_Satellite_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_dialog_close")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Install_Additional_Satellite_Screen_Image\"]")
 	public MobileElement closeIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_install_now")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Install_Additional_Satellite_Screen_Button_Now\"]")
 	public MobileElement installNowButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_install_later")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Install_Additional_Satellite_Screen_Button_Later\"]")
 	public MobileElement cancelButton;
 

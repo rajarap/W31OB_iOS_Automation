@@ -30,32 +30,32 @@ public class GetStartedPageTest extends ParentClass
 		  utils.log().info("\n" + "****** starting test:" + m.getName() + "******" + "\n");
 	  }
 	
-	  @Test(priority = 1)
-	  public void VerifyGetStartedMessage() 
-	  {
-		  System.out.println("Inside VerifyGetStartedMessage() method");
-		  
-		  String actualGetStartedMessage = getStartedPageObject.getGetStartedMessage();
-		  String expectedlGetStartedMessage = getStartedPageObject.getStrings().get("get_started_page_message");
-		  AssertJUnit.assertEquals(actualGetStartedMessage, expectedlGetStartedMessage);
-	  }
-	  
-	  @Test(priority = 2)
-	  public void clickGetStartedButton() 
-	  {
-		  String actualGetStartedButtonText = getStartedPageObject.getGetStartedButtonText();
-		  String expectedGetStartedButtonText = getStartedPageObject.getStrings().get("get_started_page_get_started_button_text");
-		  try
-		  {
-			  AssertJUnit.assertEquals(actualGetStartedButtonText, expectedGetStartedButtonText);
-		  } catch(Exception e)
-		  {
-			  e.printStackTrace();
-			  utils.log().error("\n" + "******* Get Started Button Text has changed ***********" + "\n");
-		  }
-		  getStartedPageObject.clickGetStartedButton();
-	  }
-	  
+//	  @Test(priority = 1)
+//	  public void VerifyGetStartedMessage() 
+//	  {
+//		  System.out.println("Inside VerifyGetStartedMessage() method");
+//		  
+//		  String actualGetStartedMessage = getStartedPageObject.getGetStartedTitle();
+//		  String expectedlGetStartedMessage = getStartedPageObject.getStrings().get("get_started_page_message");
+//		  AssertJUnit.assertEquals(actualGetStartedMessage, expectedlGetStartedMessage);
+//	  }
+//	  
+//	  @Test(priority = 2)
+//	  public void clickGetStartedButton() 
+//	  {
+//		  String actualGetStartedButtonText = getStartedPageObject.getGetStartedButtonText();
+//		  String expectedGetStartedButtonText = getStartedPageObject.getStrings().get("get_started_page_get_started_button_text");
+//		  try
+//		  {
+//			  AssertJUnit.assertEquals(actualGetStartedButtonText, expectedGetStartedButtonText);
+//		  } catch(Exception e)
+//		  {
+//			  e.printStackTrace();
+//			  utils.log().error("\n" + "******* Get Started Button Text has changed ***********" + "\n");
+//		  }
+//		  getStartedPageObject.clickGetStartedButton();
+//	  }
+//	  
 //	  @Test(priority = 3, description="Verify the Image on the Get Started Page...")
 //	  public void VerifyGetStartedImage() 
 //	  {

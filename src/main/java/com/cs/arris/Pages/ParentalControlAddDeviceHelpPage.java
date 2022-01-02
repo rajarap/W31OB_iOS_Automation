@@ -14,21 +14,19 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlAddDeviceHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']"), 
-			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Parental Control Devices']") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental Control Devices\"]") 
 	public MobileElement helptitle;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,889][1029,1666]']")
-	public MobileElement deviceText;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_EditProfileSave\"]")
+//	public MobileElement deviceText;
 
 	public ParentalControlAddDeviceHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

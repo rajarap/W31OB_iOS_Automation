@@ -31,6 +31,9 @@ public class AddSatelliteAddNewSatellitePage2 extends ParentClass implements Pag
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Add_New_BOBA_Satellite_Screen_Button_Cancel\"]")
 	public MobileElement cancelButton;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"BOBA Arrow\"]")
+	public MobileElement backButton;
 
 	public AddSatelliteAddNewSatellitePage2() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

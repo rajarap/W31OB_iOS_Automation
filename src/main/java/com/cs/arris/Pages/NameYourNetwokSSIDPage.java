@@ -21,37 +21,20 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBAHelp\"]")
 	public MobileElement helpIcon;
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btnCreateNetwork']"),
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[61,1976][1019,2042]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/btnCreateNetwork") 
-	})
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBA_Network_Connect_Screen_Button\"]")
 	public MobileElement nextButton;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/title_text") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/title_text']") // text = LET’S NAME YOUR HOME NETWORK
+	// text = LET’S NAME YOUR HOME NETWORK
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Connect_Screen_TitleLabel\"]")
 	public MobileElement nameYourHomeNetworkText;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/description_text") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/description_text']") // text = Enter a name and password for your home network that you will use to connect your devices.
+	// text = Enter a name and password for your home network that you will use to connect your devices.
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Connect_Screen_SubTitleLabel\"]")
 	public MobileElement enterNameAndPasswordForHomeNetworkText;
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etNetworkName']"),
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[61,770][1019,882]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/etNetworkName") 
-	})
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[@name=\"Network_Connect_Screen_TextField_SSIDName\"]")
 	public MobileElement ssIDName;
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.EditText[@resource-id='com.arris.sbcBeta:id/etNetworkPassword']"),
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[61,965][1019,1091]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/etNetworkPassword") 
-	})
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Connect_Screen_TextField_Password\"]")
 	public MobileElement ssidPassword;
 	

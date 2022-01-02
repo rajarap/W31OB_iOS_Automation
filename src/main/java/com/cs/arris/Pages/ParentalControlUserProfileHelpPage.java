@@ -14,23 +14,21 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlUserProfileHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose]"), // CONTINUE
-			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Parental Control Profile']")
-	public MobileElement helptitle;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental Control Profile\"]")
+	public MobileElement parentalCaontrolProfiletitle;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Profile view']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement profileView;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,1044][1021,2042]']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement profileText;
 
 	public ParentalControlUserProfileHelpPage() {
@@ -39,7 +37,7 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 
 	public boolean clickCloseButton() {
 		if (closeButton.isDisplayed()) {
-			new SwipeActions().swipeScreen(Direction.UP);
+			super.swipeUp();
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
 			return true;
@@ -51,8 +49,8 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 
 	public boolean verifyUIOnUserProfilePage() {
 		try {
-			if (helptitle.isDisplayed())
-				utils.log().info(helptitle.getText() + " title is displayed ");
+			if (parentalCaontrolProfiletitle.isDisplayed())
+				utils.log().info(parentalCaontrolProfiletitle.getText() + " title is displayed ");
 			else
 				utils.log().info("Parental Control Profile title is not displayed");
 
@@ -73,7 +71,7 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 
 	@Override
 	public boolean isAt() {
-		if (helptitle.isDisplayed()) {
+		if (parentalCaontrolProfiletitle.isDisplayed()) {
 			utils.log().info("On Parental Control Profile Help Page");
 			return true;
 		} else {

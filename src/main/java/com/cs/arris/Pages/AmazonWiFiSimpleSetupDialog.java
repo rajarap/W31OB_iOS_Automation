@@ -14,18 +14,19 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class AmazonWiFiSimpleSetupDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 
-	@AndroidFindBy (xpath= "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_dialog_close']")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button_Close\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Amazon Wi-Fi simple setup']") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
 	public MobileElement wifisetup;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_ok']") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
 	public MobileElement okButton;
 	
 	

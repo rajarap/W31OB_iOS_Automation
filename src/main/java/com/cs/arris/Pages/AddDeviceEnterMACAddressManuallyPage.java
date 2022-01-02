@@ -17,47 +17,36 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceEnterMACAddressManuallyPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Manual_Entry_Screen_TitleLabel\"]")
 	public MobileElement enterManuallyTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_top_description")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Manual_Entry_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/textView5")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Manual_Entry_Screen_Label_EnterSN\"]")
 	public MobileElement enterSerialNoLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/etSnNumber")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Manual_Entry_Screen_TextField_SN\"]")
 	public MobileElement enterSerialNoTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/serial_no_error")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Manual_Entry_Screen_Label_AlertSN\"]")
 	public MobileElement serialNoMustNotBeBlankLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_enter_mac_address")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Manual_Entry_Screen_Label_EnterMacAddress\"]")
 	public MobileElement macAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/etMacAddress")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Manual_Entry_Screen_TextField_MacAddress\"]")
 	public MobileElement enterMACAddressTextBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/mac_address_error")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Manual_Entry_Screen_Label_AlertMacAddress\"]")
 	public MobileElement macAddressMustNotBeBlankLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_next")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Manual_Entry_Screen_Button\"]")
 	public MobileElement nextButton;
 

@@ -18,51 +18,39 @@ public class GrantPermissionsPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/need_help") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/txt_welcome_two_title") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Permission_Screen_TitleLabel_GrantAccess\"]")
 	public MobileElement grantAccessPermissionMessage;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/txt_welcome_two_description") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Permission_Screen_SubTitleLabel_GrantAccess\"]")
 	public MobileElement accessToResourcesMessage;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/txt_welcome_two_location") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"This is used during installation for accessing the bluetooth and when selecting a Wi-Fi Network. ARRIS does not collect and share location information with 3rd parties.\"]")
 	public MobileElement locationMessage;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_welcome_two_location_icon") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"locationIcon\"]")
 	public MobileElement locationIcon;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[3]") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[4]")
 	public MobileElement locationText;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/txt_welcome_two_storage") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement storageMessage;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_welcome_two_storage_icon") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"storageIcon\"]")
 	public MobileElement storageIcon;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[5]") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"This is used to cache data to optimize the performance of the application. \"]")
 	public MobileElement storageText;
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[8]") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement phoneMessage;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_welcome_two_phone_icon") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"phoneIcon1\"]")
 	public MobileElement phoneIcon;
 	
-	@AndroidFindBy (xpath ="//android.widget.TextView[5]") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"This is used to allow dial access to contact customer support when needed.\"]")
 	public MobileElement phoneText;
 

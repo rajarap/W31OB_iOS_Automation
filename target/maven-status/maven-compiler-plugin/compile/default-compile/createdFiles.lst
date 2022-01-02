@@ -15,7 +15,6 @@ com/cs/arris/Pages/SpeedTestHelpPage.class
 com/cs/arris/Pages/SamplePage.class
 com/cs/arris/Pages/NetworkTimeZoneSettingsPage.class
 com/cs/arris/Pages/SignupPage.class
-com/cs/arris/Pages/SettingsAboutHelpPage.class
 com/cs/arris/Pages/ParentalControlWithProfilesPage.class
 com/cs/arris/Pages/NetworkLANSettingsHelpPage.class
 com/cs/arris/Pages/ParentalControlEditUserProfileNameDialog.class
@@ -108,6 +107,7 @@ com/cs/arris/Pages/NetworkLANIPReservationHelpPage.class
 com/cs/arris/JsonMappers/Signin_TestData.class
 com/cs/arris/Pages/AddSatellitePlacementTipsPage3.class
 com/cs/arris/Pages/NetworkWANSettingsHelpPage.class
+com/cs/arris/Pages/HamburgerSettingsPage.class
 com/cs/arris/Pages/SpeedTestPage.class
 com/cs/arris/Pages/AddDeviceFAQPage.class
 com/cs/arris/Pages/NetworkLANSubnetDHCPConfigurationHelpPage.class
@@ -189,6 +189,7 @@ com/cs/arris/Pages/AddDeviceScanBarCodePage.class
 com/cs/arris/Interface/W31_Onboarding_TestData.class
 com/cs/arris/Pages/AddDeviceStepsForActivationPage.class
 com/cs/arris/Pages/NetworkEditReserveLANIPDialog.class
+com/cs/arris/Pages/HamburgerHelpPage.class
 com/cs/arris/Pages/NetworkLANDHCPIPRangeEmptyOctetAlertDialog.class
 com/cs/arris/Pages/AddSatelliteUnPackYourSatellitePage.class
 com/cs/arris/Pages/OptimizeYourNetworkPage.class
@@ -204,4 +205,5 @@ com/cs/arris/Utilities/SwipeActions.class
 com/cs/arris/Pages/ParentalControlAddDeviceHelpPage.class
 com/cs/arris/Pages/MainDevicePage.class
 com/cs/arris/Pages/NetworkGeneralSettingsPage.class
+com/cs/arris/Pages/HamburgerAboutPage.class
 com/cs/arris/Pages/AddSatellitePlacementTipsPage4.class

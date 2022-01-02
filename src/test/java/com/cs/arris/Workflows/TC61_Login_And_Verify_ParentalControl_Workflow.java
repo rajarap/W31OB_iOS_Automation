@@ -51,7 +51,7 @@ import com.cs.arris.Pages.RetrieveOTPPage;
 import com.cs.arris.Pages.SelectYourDevicePage;
 import com.cs.arris.Pages.SelectYourDevicePage2;
 import com.cs.arris.Pages.SetUpYourWiFiManagementPage;
-import com.cs.arris.Pages.SettingsAboutHelpPage;
+import com.cs.arris.Pages.HamburgerSettingsPage;
 import com.cs.arris.Pages.SettingsHelpPage;
 import com.cs.arris.Pages.SetupHomeNetworkPage;
 import com.cs.arris.Pages.ConnectMaxRouterToInternetPage;

@@ -17,23 +17,18 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceAccessCameraDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_title")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Allow_Camera_Screen_TitleLabel\"]")
 	public MobileElement accessCameraTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_description")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Allow_Camera_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_dialog_close")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Allow_Camera_Screen_Image_Close\"]")
 	public MobileElement closeIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_btn")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Allow_Camera_Screen_Button\"]")
 	public MobileElement okButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_donot_allow")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"ENTER MANUALLY\"]")
 	public MobileElement enterManuallyButton;
 

@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class EditDeviceNameDialog extends ParentClass implements Page
 {
@@ -19,28 +20,28 @@ public class EditDeviceNameDialog extends ParentClass implements Page
 	String deviceOrgName1;
 	String editedName;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogBoxTitle") //EDIT DEVICE NAME
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_TitleLabel\"]")
 	public MobileElement editDeviceNameTitle; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogBoxdetail") //Please enter a name for this device
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_SubTitleLabel\"]")//Please enter a name for this device
 	public MobileElement editDeviceNameText; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialog") //Enter Device Name  Label
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_Label_Device\"]") //Enter Device Name  Label
 	public MobileElement enterDeviceNameLabel;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogEditText") //Enter Device Name
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Edit_Device_Name_Screen_TextField_Device\"]")//Enter Device Name
 	public MobileElement enterDeviceName;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogSelectTextLength") //Select Your Device Type Label
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_Label_Select\"]") //Select Your Device Type Label
 	public MobileElement selectYourDeviceTypeLabel;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/spinnerItems")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_Label_DeviceName\"]")
 	public MobileElement selectYourDeviceTypeListBox;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogSave") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Edit_Device_Name_Screen_Button\"]") 
 	public MobileElement saveButton; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogClose") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Edit_Device_Name_Screen_Button_Close\"]") 
 	public MobileElement closeButton; 
 	
 	

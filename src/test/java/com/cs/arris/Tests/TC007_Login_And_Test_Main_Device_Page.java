@@ -255,13 +255,13 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 	@Test(priority = 9)
 	public void Verify_Edit_Main_Router_Name_On_All_Tab_Page() {
 		SoftAssert softmain9 = new SoftAssert();
-		softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
-		if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().isAt())
-		{
-			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
-			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-		}
+//		softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
+//		if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().isAt())
+//		{
+//			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
+//			softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
+//		}
 		
 		softmain9.assertAll();
 	}
@@ -344,13 +344,13 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 	@Test(priority = 18)
 	public void Verify_Edit_Main_Router_Name_On_5GHz_Tab_Page() {
 		SoftAssert softmain18 = new SoftAssert();
-		softmain18.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
-		if(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
-		{
-			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
-			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
-		}
+//		softmain18.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
+//		if(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
+//		{
+//			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
+//			softmain18.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
+//		}
 		softmain18.assertAll();
 	}
 	
@@ -428,13 +428,13 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 	@Test(priority = 27)
 	public void Verify_Edit_Main_Router_Name_On_24GHz_Tab_Page() {
 		SoftAssert softmain27 = new SoftAssert();
-		softmain27.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
-		if(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
-		{
-			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
-			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
-		}
+//		softmain27.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
+//		if(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
+//		{
+//			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
+//			softmain27.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
+//		}
 		
 		softmain27.assertAll();
 	}
@@ -513,13 +513,13 @@ public class TC007_Login_And_Test_Main_Device_Page extends ParentClass {
 	@Test(priority = 36)
 	public void Verify_Edit_Main_Router_Name_On_Ethernet_Tab_Page() {
 		SoftAssert softmain36 = new SoftAssert();
-		softmain36.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
-		if(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().isAt())
-		{
-			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
-			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
-		}
+//		softmain36.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
+//		if(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().isAt())
+//		{
+//			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().editMainDeviceName());
+//			softmain36.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().clickSaveButton());
+//		}
 		
 		softmain36.assertAll();
 	}

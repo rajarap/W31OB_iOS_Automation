@@ -17,22 +17,18 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceChooseInternetServiceProviderPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_header")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"ISP_Selection_Screen_TitleLabel\"]")
 	public MobileElement chooseInternetServiceProviderTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca")
 	public MobileElement cloudIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/btn_next")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"ISP_Selection_Screen_Button_Next\"]")
 	public MobileElement nextButton;
 	

@@ -19,11 +19,11 @@ import com.cs.arris.Pages.NetworkPage;
 import com.cs.arris.Pages.ParentalControlWithProfilesPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
-import com.cs.arris.Workflows.HomePage_Workflow;
+
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 import com.cs.arris.Workflows.TC53_Login_And_Verify_DevicesPage_Workflow;
 import com.cs.arris.Workflows.TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Workflow;
-import com.cs.arris.Workflows.TC61_Login_And_Verify_ParentalControl_Workflow;
+
 
 public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 	TestUtils utils = new TestUtils();
@@ -202,17 +202,17 @@ public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 			this.Verify_Rules_Associated_With_User();
 		}catch(Exception e) {utils.log().info("Issue in Verify Rules Associated With User");}
 		
-		try {
-			this.Verify_Pause_Internet_For_All_Users();
-		}catch(Exception e) {utils.log().info("Issue in Pause Internet For All Users");}
-		
-		try {
-			this.Verify_Currently_Blocked_Profiles();
-		}catch(Exception e) {utils.log().info("Issue in Currently Blocked Profiles");}
-		
-		try {
-			this.Verify_Resume_Internet_For_All_Users();
-		}catch(Exception e) {utils.log().info("Issue in Resume Internet For All Users");}
+//		try {
+//			this.Verify_Pause_Internet_For_All_Users();
+//		}catch(Exception e) {utils.log().info("Issue in Pause Internet For All Users");}
+//		
+//		try {
+//			this.Verify_Currently_Blocked_Profiles();
+//		}catch(Exception e) {utils.log().info("Issue in Currently Blocked Profiles");}
+//		
+//		try {
+//			this.Verify_Resume_Internet_For_All_Users();
+//		}catch(Exception e) {utils.log().info("Issue in Resume Internet For All Users");}
 		
 		try {
 			this.Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users();
@@ -310,10 +310,10 @@ public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 			utils.log().info("Clicking on Add Device button without selecting any device");
 			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
 			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed()) {
-				utils.log().info("Alert dialog box with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().description.getText()+ " - is displayed");
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
-			}
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed()) {
+//				utils.log().info("Alert dialog box with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().description.getText()+ " - is displayed");
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
+//			}
 				
 			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
 			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
@@ -369,10 +369,9 @@ public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
 		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
 		
-		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescription.isDisplayed()) {
-			utils.log().info("Alert dialog with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescription.getText() + " - is displayed");
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickAlertOKButton());}
-		
+		if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.isDisplayed())
+			utils.log().info("Alert dialog with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.getText() + " - is displayed");
+
 		softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCloseButton());
 
 		softcontrol11.assertAll();
@@ -476,37 +475,37 @@ public class TC010_Login_And_Test_Parental_Control_Page extends ParentClass {
 		softcontrol19.assertAll();
 	}
 	
-	@Test(priority = 20)
-	public void Verify_Pause_Internet_For_All_Users() {
-		SoftAssert softcontrol20 = new SoftAssert();
-		if(new ParentalControlWithProfilesPage().isAt()) {
-			softcontrol20.assertTrue(new ParentalControlWithProfilesPage().enablePauseInternetAccessForAllUserProfiles());
-			softcontrol20.assertTrue(new ParentalControlWithProfilesPage().verifyPauseInternetAccessForAllUserProfile());
-		}
-		softcontrol20.assertAll();
-	}
-	
-	@Test(priority = 21)
-	public void Verify_Currently_Blocked_Profiles() {
-		SoftAssert softcontrol21 = new SoftAssert();
-		softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
-
-		if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
-			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
-			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
-		}
-		softcontrol21.assertAll();
-	}
-	
-	@Test(priority = 22)
-	public void Verify_Resume_Internet_For_All_Users() {
-		SoftAssert softcontrol22 = new SoftAssert();
-		if(new ParentalControlWithProfilesPage().isAt()) {
-			softcontrol22.assertTrue(new ParentalControlWithProfilesPage().disablePauseInternetAccessForAllProfiles());
-			softcontrol22.assertTrue(new ParentalControlWithProfilesPage().verifyResumeInternetAccessForAllUserProfile());
-		}
-		softcontrol22.assertAll();
-	}
+//	@Test(priority = 20)
+//	public void Verify_Pause_Internet_For_All_Users() {
+//		SoftAssert softcontrol20 = new SoftAssert();
+//		if(new ParentalControlWithProfilesPage().isAt()) {
+//			softcontrol20.assertTrue(new ParentalControlWithProfilesPage().enablePauseInternetAccessForAllUserProfiles());
+//			softcontrol20.assertTrue(new ParentalControlWithProfilesPage().verifyPauseInternetAccessForAllUserProfile());
+//		}
+//		softcontrol20.assertAll();
+//	}
+//	
+//	@Test(priority = 21)
+//	public void Verify_Currently_Blocked_Profiles() {
+//		SoftAssert softcontrol21 = new SoftAssert();
+//		softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+//
+//		if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+//			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+//			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+//		}
+//		softcontrol21.assertAll();
+//	}
+//	
+//	@Test(priority = 22)
+//	public void Verify_Resume_Internet_For_All_Users() {
+//		SoftAssert softcontrol22 = new SoftAssert();
+//		if(new ParentalControlWithProfilesPage().isAt()) {
+//			softcontrol22.assertTrue(new ParentalControlWithProfilesPage().disablePauseInternetAccessForAllProfiles());
+//			softcontrol22.assertTrue(new ParentalControlWithProfilesPage().verifyResumeInternetAccessForAllUserProfile());
+//		}
+//		softcontrol22.assertAll();
+//	}
 	
 	@Test(priority = 23)
 	public void Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users() {

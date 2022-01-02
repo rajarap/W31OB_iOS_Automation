@@ -19,26 +19,16 @@ public TestUtils utils = new TestUtils();
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBAHelp\"]")
 	public MobileElement helpIcon;
-	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/title_text") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/title_text']") // text = SUCCESSFULLY CONNECTED
+
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"BOBA_Succesfully_Connected_Screen_TitleLabel\"]")
 	public MobileElement successfullyConnectedText;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/tv_description_text") 
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/tv_description_text']") // text = Your mAX router is now connected to your mobile device.
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"BOBA_Succesfully_Connected_Screen_SubTitleLabel\"]")
 	public MobileElement maxRouterConnectedToMobileDeviceText;
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_bluetooth_pairing_success_Continue']"), // text = NEXT
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[61,1915][1019,2042]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/btn_bluetooth_pairing_success_Continue") 
-	})
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBA_Succesfully_Connected_Screen_Button\"]")
 	public MobileElement nextButton;
-	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/btn_generic_error_retry")
+
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OB_Error_Screen_Button\"]")
 	public MobileElement tryAgainButton;
 	

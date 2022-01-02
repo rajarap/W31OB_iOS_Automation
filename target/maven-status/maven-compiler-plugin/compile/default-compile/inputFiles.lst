@@ -71,6 +71,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Utilities/TestUtils.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlAddRuleAddInternetBlockingScheduleDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BTDisabledTroubleShootPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HamburgerHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANSettingsHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkDNSConfigurationStaticAlertDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettingsBridgeModeInfoDialog.java
@@ -106,6 +107,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/Network5GHzWidebandModeInfoDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceAccessCameraDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/Network5GHzWidebandModeAlertDialog.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HamburgerSettingsPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/SelectYourDevicePage2.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AmazonFeaturesPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ServiceNotAvailablePage.java
@@ -173,6 +175,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkBandSteeringModeAlertDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BlankBlockedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/CurrentlyBlockedDevicesPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HamburgerAboutPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/DeviceLocationPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANDNSConfigurationIPv6Page.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Utilities/InValidOTP.java
@@ -198,7 +201,6 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkDevicePrioritySettingsAddDeviceHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceFooterIconsPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANIPReservationPage.java
-/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/SettingsAboutHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/SetupHomeNetworkPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/JsonMappers/Signin_TestData.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkTimeZoneSettingsPage.java

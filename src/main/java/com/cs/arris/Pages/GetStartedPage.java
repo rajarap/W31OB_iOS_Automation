@@ -21,19 +21,12 @@ public class GetStartedPage extends ParentClass implements Page
 	TestUtils utils = new TestUtils();
 	SoftAssert softAssert;
 	
-	@AndroidFindBy (xpath="//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/title_welcome_one']") 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Lets_Get_Started_Screen_TitleLabel_GetStarted\"]")
 	private MobileElement getStartedMessage;
 	
-	@AndroidFindBy (xpath ="//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/welcome_one_circle_bg']")
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Lets_Get_Started_Screen_Image_Surfboard\"]")
 	private MobileElement getStartedImage;
 	
-	@AndroidFindAll({
-		@AndroidBy (id = "com.arris.sbcBeta:id/btn_start_welcome"),
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_start_welcome']"),
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[61,1968][1019,2042]']")
-	})
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Lets_Get_Started_Screen_Button_GetStarted\"]")
 	private MobileElement getStartedButton;
 	
@@ -44,8 +37,15 @@ public class GetStartedPage extends ParentClass implements Page
 	
 	public void clickGetStartedButton() 
 	{
-		click(getStartedButton);
-		utils.log().info("Clicked on Get Started Button");
+		this.getGetStartedTitle();
+		this.getGetStartedImage();
+		
+		if(getStartedButton.isDisplayed()) {
+			click(getStartedButton);
+			utils.log().info("Clicked on Get Started Button");
+		}else {
+			utils.log().info("Get Started Button is not displayed");
+		}
 
 	}
 		
@@ -54,23 +54,17 @@ public class GetStartedPage extends ParentClass implements Page
 		if(getStartedImage.isDisplayed())
 			utils.log("Get Started Image is displayed");
 		else
-		{
 			utils.log("Image on the Get Started page is not displayed");
-		}
 	}
 	
-	  public String getGetStartedMessage() 
+	  public void getGetStartedTitle() 
 	  {
-		  return getStartedMessage.getText();
-		  //String expectedlGetStartedMessage = super.getStrings().get("get_started_page_message");
+		  if(getStartedMessage.isDisplayed())
+			  utils.log("Title : " + getStartedMessage.getText() + " is displayed");
+			else
+			  utils.log("Get Started Title is not displayed");
 
 	  }
-	
-	public String getGetStartedButtonText()
-	{
-		return getStartedButton.getText();
-		//String expectedlGetStartedButtonText = super.getStrings().get("get_started_page_get_started_button_text");
-	}
 
 	@Override
 	public boolean isAt() {

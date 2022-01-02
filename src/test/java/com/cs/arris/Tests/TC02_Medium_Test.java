@@ -145,9 +145,14 @@ public class TC02_Medium_Test extends ParentClass
 //			  }
 //		  });
 	  }
-	  
+//	  
 //	  @Test(priority = 2, dependsOnMethods = { "Login_And_Onboard" })
 //		public void Verify_Main_Device_UI_On_All_Tab_Page() {
+//		  
+//			utils.log().info("                          ");
+//			utils.log().info("**************************");
+//			utils.log().info("Test: Verify Main Device  ");
+//			utils.log().info("**************************");
 //			SoftAssert softmain2 = new SoftAssert();
 //			softmain2.assertTrue(new HomePage().clickMainDeviceImage());
 //			if(new MainDeviceAllTabPage().isAt()) 
@@ -207,7 +212,7 @@ public class TC02_Medium_Test extends ParentClass
 //		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 //		public void Verify_Edit_Main_Router_Name_On_All_Tab_Page() {
 //			SoftAssert softmain9 = new SoftAssert();
-//			softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
+//			softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
 //			if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().isAt())
 //			{
 //				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
@@ -547,14 +552,14 @@ public class TC02_Medium_Test extends ParentClass
 //			softdevices3.assertAll();
 //		}
 //		
-//		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
-//		public void Verify_Edit_Device_Name() 
-//		{
-//			SoftAssert softdevices4 = new SoftAssert();
-//			softdevices4.assertTrue(new DevicesPage().verifyEditDeviceName());
-//			softdevices4.assertAll();
-//		}
-//		
+////		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
+////		public void Verify_Edit_Device_Name() 
+////		{
+////			SoftAssert softdevices4 = new SoftAssert();
+////			softdevices4.assertTrue(new DevicesPage().verifyEditDeviceName());
+////			softdevices4.assertAll();
+////		}
+////		
 //		@Test(priority = 42, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
 //		public void Verify_Offline_Devices_Details() 
 //		{
@@ -562,7 +567,6 @@ public class TC02_Medium_Test extends ParentClass
 //			softdevices5.assertTrue(new DevicesPage().verifyOfflineDeviceDetails());
 //			softdevices5.assertAll();
 //		}
-//		
 //		
 //		@Test(priority = 43, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
 //		public void Verify_Devices_Help_Page() 
@@ -574,104 +578,105 @@ public class TC02_Medium_Test extends ParentClass
 //			softdevices6.assertTrue(new DevicesPage().clickBackButton());
 //			softdevices6.assertAll();
 //		}
-//	  
-//		@Test(priority = 44, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Devices_Signal_Strength_UI_Page() {
-//			utils.log().info("                                            ");
-//			utils.log().info("********************************************");
-//			utils.log().info("Test: Device Signal Strength Leader Board   ");
-//			utils.log().info("********************************************");
-//			SoftAssert softsignal2 = new SoftAssert();
-//			new HomePage().getFooterIconsPageObject().clickHomeButton();
-//			new HomePage().clickDeviceSignalStrengthImage();
-//			if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
-//				softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
-//			softsignal2.assertAll();
-//		}
-//		
-//		@Test(priority = 45, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Signal_Strength_For_Devices() {
-//			SoftAssert softsignal3 = new SoftAssert();
-//			softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
-//			softsignal3.assertAll();
-//		}
-//		
-//		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Sorting_Devices_From_Strong_To_Weak() {
-//			SoftAssert softsignal4= new SoftAssert();
-//			softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
-//			softsignal4.assertAll();
-//		}
-//		
-//		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Sorting_Devices_From_Weak_To_Strong() {
-//			SoftAssert softsignal5= new SoftAssert();
-//			softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
-//			softsignal5.assertAll();
-//		}
-//		
-//		@Test(priority = 48, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Editing_Device_Name() {
-//			SoftAssert softsignal6= new SoftAssert();
-//			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickDeviceName(2));
+	  
+		@Test(priority = 44, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Devices_Signal_Strength_UI_Page() {
+			utils.log().info("                                            ");
+			utils.log().info("********************************************");
+			utils.log().info("Test: Device Signal Strength Leader Board   ");
+			utils.log().info("********************************************");
+			SoftAssert softsignal2 = new SoftAssert();
+			new HomePage().getFooterIconsPageObject().clickHomeButton();
+			super.swipeUp();
+			new HomePage().clickDeviceSignalStrengthImage();
+			if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
+				softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
+			softsignal2.assertAll();
+		}
+		
+		@Test(priority = 45, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Signal_Strength_For_Devices() {
+			SoftAssert softsignal3 = new SoftAssert();
+			softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
+			softsignal3.assertAll();
+		}
+		
+		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Sorting_Devices_From_Strong_To_Weak() {
+			SoftAssert softsignal4= new SoftAssert();
+			softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
+			softsignal4.assertAll();
+		}
+		
+		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Sorting_Devices_From_Weak_To_Strong() {
+			SoftAssert softsignal5= new SoftAssert();
+			softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
+			softsignal5.assertAll();
+		}
+		
+		@Test(priority = 48, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Editing_Device_Name() {
+			SoftAssert softsignal6= new SoftAssert();
+//			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickEditDeviceName(1));
 //			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
 //			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-//			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
-//			softsignal6.assertAll();
+			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
+			softsignal6.assertAll();
+		}
+	  
+//	  @Test(priority = 49, dependsOnMethods = { "Login_And_Onboard"})
+//		public void Verify_Speed_Test_Page() {
+//			utils.log().info("                                ");
+//			utils.log().info("********************************");
+//			utils.log().info("Test: Home Speed Test History   ");
+//			utils.log().info("********************************");
+//			SoftAssert softspeedtest2 = new SoftAssert();
+//			softspeedtest2.assertTrue(new HomePage().clickNavigationButton());
+//			if(new HomePage().getHamburgerMenuPageObject().isAt()) 
+//			{
+//				if(new HomePage().getHamburgerMenuPageObject().speedTest.isDisplayed())
+//					softspeedtest2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSpeedTestButton());
+//				try {
+//					if(new AppRatingDialog().isAt())
+//						new AppRatingDialog().clickRemindMeLaterLink();
+//				}catch(Exception e){}
+//			}
+//			if(new SpeedTestPage().isAt())
+//			{
+//				softspeedtest2.assertTrue(new SpeedTestPage().verifyUIOnSpeedTestPage());
+//			}
+//	  }
+//	  
+//	  @Test(priority = 50, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
+//		public void Verify_Perform_Speed_Test() {
+//			SoftAssert softspeedtest3 = new SoftAssert();
+//			softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
+//			for (int i = 0; i < 2; i++)
+//			{
+//				softspeedtest3.assertTrue(new SpeedTestPage().runSpeedTestAgain());
+//			}
 //		}
-	  
-	  @Test(priority = 49, dependsOnMethods = { "Login_And_Onboard"})
-		public void Verify_Speed_Test_Page() {
-			utils.log().info("                                ");
-			utils.log().info("********************************");
-			utils.log().info("Test: Home Speed Test History   ");
-			utils.log().info("********************************");
-			SoftAssert softspeedtest2 = new SoftAssert();
-			softspeedtest2.assertTrue(new HomePage().clickNavigationButton());
-			if(new HomePage().getHamburgerMenuPageObject().isAt()) 
-			{
-				if(new HomePage().getHamburgerMenuPageObject().speedTest.isDisplayed())
-					softspeedtest2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSpeedTestButton());
-				try {
-					if(new AppRatingDialog().isAt())
-						new AppRatingDialog().clickRemindMeLaterLink();
-				}catch(Exception e){}
-			}
-			if(new SpeedTestPage().isAt())
-			{
-				softspeedtest2.assertTrue(new SpeedTestPage().verifyUIOnSpeedTestPage());
-			}
-	  }
-	  
-	  @Test(priority = 50, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
-		public void Verify_Perform_Speed_Test() {
-			SoftAssert softspeedtest3 = new SoftAssert();
-			softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
-			for (int i = 0; i < 2; i++)
-			{
-				softspeedtest3.assertTrue(new SpeedTestPage().runSpeedTestAgain());
-			}
-		}
-	  
-	  @Test(priority = 51, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
-		public void Verify_Speed_Test_Help_page() {
-			SoftAssert softspeedtest4 = new SoftAssert();
-			softspeedtest4.assertTrue(new SpeedTestPage().clickHelpButton());
-			softspeedtest4.assertTrue(new SpeedTestPage().getSpeedTestHelpPageObject().clickCloseButton());
-			softspeedtest4.assertTrue(new SpeedTestPage().clickBackButton());
-			softspeedtest4.assertAll();
-		}
-	  
-	  @Test(priority = 52, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
-		public void Verify_Home_Speed_Test_History_Page() {
-			SoftAssert softspeedtest5 = new SoftAssert();
-			if(new HomePage().isAt()) 
-				super.swipeUp();
-				softspeedtest5.assertTrue(new HomePage().clickSpeedTestHistoryImage());
-			
-			if(new HomeSpeedTestHistoryPage().isAt())
-				softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
-			
-			softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
-		}
+//	  
+//	  @Test(priority = 51, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
+//		public void Verify_Speed_Test_Help_page() {
+//			SoftAssert softspeedtest4 = new SoftAssert();
+//			softspeedtest4.assertTrue(new SpeedTestPage().clickHelpButton());
+//			softspeedtest4.assertTrue(new SpeedTestPage().getSpeedTestHelpPageObject().clickCloseButton());
+//			softspeedtest4.assertTrue(new SpeedTestPage().clickBackButton());
+//			softspeedtest4.assertAll();
+//		}
+//	  
+//	  @Test(priority = 52, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
+//		public void Verify_Home_Speed_Test_History_Page() {
+//			SoftAssert softspeedtest5 = new SoftAssert();
+//			if(new HomePage().isAt()) 
+//				super.swipeUp();
+//				softspeedtest5.assertTrue(new HomePage().clickSpeedTestHistoryImage());
+//			
+//			if(new HomeSpeedTestHistoryPage().isAt())
+//				softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
+//			
+//			softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
+//		}
   }

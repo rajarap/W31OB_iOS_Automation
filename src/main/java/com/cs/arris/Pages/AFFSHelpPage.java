@@ -19,18 +19,11 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AFFSHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']"), 
-		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[915,146][1046,241]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/ivDialogClose")
-	})
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Amazon AFFS settings']") 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Get Alexa skill\"]")
 	public MobileElement affsSettingstitle;
-	
 	
 	public AFFSHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

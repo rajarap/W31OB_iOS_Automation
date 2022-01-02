@@ -131,13 +131,13 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 			setupwifi.clickskipTutorialButton();
 			super.pause(3);
 		}).homePage(home -> {
-			try {
-				if (home.okButton.isDisplayed()) {
-					home.clickOkButton();
-				}
-			} catch (Exception e) {
-				e.getMessage();
-			}
+//			try {
+//				if (home.okButton.isDisplayed()) {
+//					home.clickOkButton();
+//				}
+//			} catch (Exception e) {
+//				e.getMessage();
+//			}
 //			if (home.isAt()) 
 //				home.clickNavigationButton();
 //

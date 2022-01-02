@@ -17,17 +17,14 @@ public class AppRatingDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView9") //Enjoying our SURFboard Central App?
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Enjoying our SURFboard Central App?\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"InApp_Feedback_Screen_TitleLabel\"]")
 	public MobileElement appRatingTitle; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView13") //Let us know how we are doing by rating us below. We welcome your feedback to help us improve.
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Enjoying our SURFboard Central App?\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"InApp_Feedback_Screen_SubTitleLabel\"]")
 	public MobileElement appRatingMessage; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/feedbackRatingBar") 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Enjoying our SURFboard Central App?\"]")
-	public MobileElement appRatingStarBar;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
+//	public MobileElement appRatingStarBar;
 	
 //	@AndroidFindBy (xpath = "//android.widget.RatingBar[@text='1.0']") 
 //	public MobileElement oneStar;
@@ -59,16 +56,13 @@ public class AppRatingDialog extends ParentClass implements Page
 //	@AndroidFindBy (id = "com.arris.sbcBeta:id/btnSaveChanges") 
 //	public MobileElement reviewOnPlayStoreButton;// only for 4.0/5.0 rating
 			
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/textView10") //Tap the star to rate
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Tap Star to rate\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"InApp_Feedback_Screen_Label_Star\"]")
 	public MobileElement tapTheStarToRate;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/remindMeLaterTxt") //REMIND ME LATER
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement remindMeLaterText;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/imgCancelDialog") 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"crossClose\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"InApp_Feedback_Screen_Button_Close\"]")
 	public MobileElement cancelDialogIcon; 
 		
 	public AppRatingDialog()
@@ -87,13 +81,13 @@ public class AppRatingDialog extends ParentClass implements Page
 		}
 	}
 	
-	public boolean clickStarBar() {
-		if (appRatingStarBar.isDisplayed()) {
-			click(appRatingStarBar);
-			utils.log().info("App Rating Dialog - Clicked on Star Bar");
-		}
-			return true;
-	}
+//	public boolean clickStarBar() {
+//		if (appRatingStarBar.isDisplayed()) {
+//			click(appRatingStarBar);
+//			utils.log().info("App Rating Dialog - Clicked on Star Bar");
+//		}
+//			return true;
+//	}
 	
 //	public boolean clickOneStar() {
 //		if (oneStar.isDisplayed()) {

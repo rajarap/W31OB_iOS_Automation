@@ -18,39 +18,31 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_product_selection")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Screen_TitleLabel_SelectYourDeviceBelow\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Screen_TitleLabel\"]")
 	public MobileElement selectDeviceTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ic_back_icon']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca")
 	public MobileElement cloudIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/need_help']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(xpath = "//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup[1]/android.widget.GridView/android.view.ViewGroup[5]/android.widget.RelativeLayout/android.widget.ImageView[1]")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_CM_Selection_Screen_Image_t25_image\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_CM_Selection_Screen_Image_Product[9]\"]")
 	public MobileElement t25RoutersImage;
 
-	@AndroidFindBy(xpath = "//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup[1]/android.widget.GridView/android.view.ViewGroup[5]/android.widget.RelativeLayout/android.widget.ImageView[2]")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_CM_Selection_Screen_Image_deselect_T25\"]")
+	@iOSXCUITFindBy(xpath = "///XCUIElementTypeImage[@name=\"Select_Your_Device_CM_Selection_Screen_Image_Box[9]\"]")
 	public MobileElement t25RadioButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_product_selection_next")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Select_Your_Device_Screen_Button_Next\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Select_Your_Device_Screen_Button\"]")
 	public MobileElement nextButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/product_selection_description")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Screen_Label_ThisAppSupportsTheProductsListedAbove\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Screen_Label_Note\"]")
 	public MobileElement productSelectionDescription;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_app_store_link")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"App Store Link\"]")
+	@iOSXCUITFindBy(xpath = "///XCUIElementTypeStaticText[@name=\"App Store Link\"]")
 	public MobileElement playStoreLink;
 
 	public AddDeviceSelectDevice2Page() {
@@ -80,7 +72,7 @@ public class AddDeviceSelectDevice2Page extends ParentClass implements Page {
 
 	public boolean selectT25RadioButton() {
 		super.swipeUp();
-		String selector = "**/XCUIElementTypeImage[`name == \"Select_Your_Device_CM_Selection_Screen_Image_deselect_T25\"`]";
+		String selector = "**/XCUIElementTypeImage[`name == \"Select_Your_Device_CM_Selection_Screen_Image_Box[9]\"`]";
 		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
 		return true;
 	

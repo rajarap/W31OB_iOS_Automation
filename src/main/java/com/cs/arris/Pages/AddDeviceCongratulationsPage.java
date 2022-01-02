@@ -17,19 +17,15 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceCongratulationsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Congratulation_CMInstall_Screen_TitleLabel\"]")
 	public MobileElement congratulationsTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_description_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Congratulation_CMInstall_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_next")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Congratulation_CMInstall_Screen_Button\"]")
 	public MobileElement continueButton;
 

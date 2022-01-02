@@ -18,26 +18,21 @@ public class AddDeviceSuccessPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/title_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activation_Success_Screen_TitleLabel_Success\"]")
 	public MobileElement successTitle; 
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_toolbar_remote_lca") 
 	public MobileElement cloudIcon; 
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 		
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/description_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activation_Success_Screen_SubTitleLabel_YouAreAlmostDone\"]")
 	public MobileElement descriptionText;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/tv_next")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Activation_Success_Screen_Button_Next\"]")
 	public MobileElement nextButton;
 

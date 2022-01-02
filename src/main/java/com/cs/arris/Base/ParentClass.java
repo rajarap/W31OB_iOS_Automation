@@ -622,14 +622,14 @@ public class ParentClass
 		{
 			String devices = noOfDevicesText.trim(); 
 			int length = devices.length();
-			if (length == 10)//Devices(2)
+			if (length == 11)//Devices (2)
 			{
-				return Integer.valueOf(devices.substring(8, 9));
+				return Integer.valueOf(devices.substring(9, 10));
 			}
 			else
 			{
-				//Device (12)
-				return Integer.valueOf(devices.substring(8, 10));
+				//Devices (12)
+				return Integer.valueOf(devices.substring(9, 11));
 			}
 		}
 		

@@ -24,54 +24,41 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.android.nativekey.KeyEventFlag;
 import io.appium.java_client.android.nativekey.PressesKey;
 
-public class SettingsAboutHelpPage extends ParentClass implements Page {
+public class HamburgerSettingsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public WebDriver driver;
 
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") 
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Settings\"])[2]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings\"]")
 	public MobileElement settingsTitle;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"), // back button
-			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_header") // Account Settings
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Account Settings\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings_Screen_TitleLabel\"]")
 	public MobileElement accountSettingsTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_name_message") // Name
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Name\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings_Screen_Label_Name\"]")
 	public MobileElement nameLabel;
 
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_name") // demouser demouser
-//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"FAQ_Screen_NavigationBarTitle\"]")
-//	public MobileElement accountName;
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings_Screen_Label_UserName\"]")
+	public MobileElement accountName;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/user_iv")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"iconUser\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Settings_Screen_Image_User\"]")
 	public MobileElement userImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_email_message") // Email
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Email\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings_Screen_Label_Email\"]")
 	public MobileElement emailLabel;
 
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_email") // Name
-//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"FAQ_Screen_NavigationBarTitle\"]")
-//	public MobileElement emailAddress;
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings_Screen_Label_EmailId\"]")
+	public MobileElement emailAddress;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/email_iv")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"message\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Settings_Screen_Image_Email\"]")
 	public MobileElement emailImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/settings_sign_out") // Sign Out
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Sign out\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Settings_Screen_Button\"]")
 	public MobileElement signoutButton;
 	// ****************************Settings*****************************************
 
@@ -176,7 +163,7 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 	// ****************************Help
 	// Screen*****************************************
 
-	public SettingsAboutHelpPage() {
+	public HamburgerSettingsPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
@@ -270,10 +257,10 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 			else
 				utils.log().info("Name Label is not displayed");
 
-//			if (accountName.isDisplayed())
-//				utils.log().info("Users account firstname and lastname is displayed : " + accountName.getText());
-//			else
-//				utils.log().info("Users account firstname and lastname is not displayed");
+			if (accountName.isDisplayed())
+				utils.log().info("Users account firstname and lastname is displayed : " + accountName.getText());
+			else
+				utils.log().info("Users account firstname and lastname is not displayed");
 
 			if (userImage.isDisplayed())
 				utils.log().info("User Image is displayed");
@@ -285,16 +272,16 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 			else
 				utils.log().info("Email Address image is not displayed");
 
-//			if (emailAddress.isDisplayed())
-//				utils.log().info("Email Address " + emailAddress.getText() + " is displayed");
-//			else
-//				utils.log().info("Email Address is not displayed");
-
 			if (emailLabel.isDisplayed())
 				utils.log().info(emailLabel.getText() + " label is displayed");
 			else
 				utils.log().info("Email Label is not displayed");
 
+			if (emailAddress.isDisplayed())
+				utils.log().info("Email Address " + emailAddress.getText() + " is displayed");
+			else
+				utils.log().info("Email Address is not displayed");
+			
 			if (signoutButton.isDisplayed())
 				utils.log().info("Sign Out button is displayed");
 			else
@@ -535,9 +522,9 @@ public class SettingsAboutHelpPage extends ParentClass implements Page {
 //		return accountName.getText();
 //	}
 //
-//	public String getUserEmailAddress() {
-//		return emailAddress.getText();
-//	}
+	public String getUserEmailAddress() {
+		return emailAddress.getText();
+	}
 
 	@Override
 	public boolean isAt() {

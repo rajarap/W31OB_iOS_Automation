@@ -117,188 +117,188 @@ public class TC008_Login_And_Test_Hamburger_Menu_And_Settings_About_Help_Page ex
 //		  });
 //	}
 	
-	@Test(priority = 1)
-	public void Verify_Hamburger_Menu_Settings_About_Help_Page() {	
-		try {
-			this.Verify_Hamburger_Menu_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Page");}
-		
-		try {
-			this.Verify_Hamburger_Menu_Settings_UI_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Settings UI Page");}
-		
-		try {
-//			this.Verify_Hamburger_Menu_Settings_Sign_Out();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Settings Sign Out");}
-		
-		try {
-			this.Verify_Hamburger_Menu_Settings_Help_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Settings Help Page");}
-		
-		try {
-			this.Verify_Hamburger_Menu_About_UI_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu About UI Page");}
-		
-		try {
-			this.Verify_Hamburger_Menu_About_License_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu About License Page");}
-		
-		try {
-			this.Verify_Hamburger_Get_Another_Max_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Get Another Max Page");}
-		
-		try {
-			this.Verify_Hamburger_About_Help_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger About Help Page");}
-		
-		try {
-			this.Verify_Hamburger_Surfboard_Help_UI_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard Help UI Page");}
-		
-		try {
-			this.Verify_Hamburger_Surfboard_FAQ_Help_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard FAQ Help Page");}
-		
-		try {
-			this.Verify_Hamburger_Surfboard_Self_Help_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard Self Help Page");}
-		
-		try {
-			this.Verify_Hamburger_Surfboard_Chat_With_US_Page();
-		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard Chat With US Page");}
-	}
+//	@Test(priority = 1)
+//	public void Verify_Hamburger_Menu_Settings_About_Help_Page() {	
+//		try {
+//			this.Verify_Hamburger_Menu_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Menu_Settings_UI_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Settings UI Page");}
+//		
+//		try {
+////			this.Verify_Hamburger_Menu_Settings_Sign_Out();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Settings Sign Out");}
+//		
+//		try {
+//			this.Verify_Hamburger_Menu_Settings_Help_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu Settings Help Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Menu_About_UI_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu About UI Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Menu_About_License_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Menu About License Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Get_Another_Max_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Get Another Max Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_About_Help_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger About Help Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Surfboard_Help_UI_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard Help UI Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Surfboard_FAQ_Help_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard FAQ Help Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Surfboard_Self_Help_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard Self Help Page");}
+//		
+//		try {
+//			this.Verify_Hamburger_Surfboard_Chat_With_US_Page();
+//		}catch(Exception e) {utils.log().info("Issue in Hamburger Surfboard Chat With US Page");}
+//	}
 	
-	@Test(priority = 2)
-	public void Verify_Hamburger_Menu_Page() {
-		SoftAssert softburger2 = new SoftAssert();
-		softburger2.assertTrue(new HomePage().clickNavigationButton());
-		if(new HomePage().getHamburgerMenuPageObject().isAt()) 
-			softburger2.assertTrue(new HomePage().getHamburgerMenuPageObject().verifyUIOnHamburgerMenuPage());
-		
-		softburger2.assertAll();
-	}
-	
-	@Test(priority = 3)
-	public void Verify_Hamburger_Menu_Settings_UI_Page() {
-		SoftAssert softburger3 = new SoftAssert();
-		softburger3.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSettingsButton());
-		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAt())
-			softburger3.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().verifyUIOnSettingsPage());
-			//softburger3.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
-		softburger3.assertAll();
-	}
-	
-	@Test(priority = 4)
-	public void Verify_Hamburger_Menu_Settings_Sign_Out() {
-		SoftAssert softburger4 = new SoftAssert();
-//		String userEmail = new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getUserEmailAddress();
-		softburger4.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickSignOutButton());
-		new SiginPage().emailAddress.getText();
-		try {
-//			if(userEmail.equals(new SiginPage().emailAddress.getText())) {
-//				softburger4.assertTrue(new SiginPage().clickSigninButton());
-//				super.pause(5);	}
-		}catch(Exception e) {}
-		softburger4.assertAll();
-	}
-	
-	@Test(priority = 5)
-	public void Verify_Hamburger_Menu_Settings_Help_Page() {
-		SoftAssert softburger5 = new SoftAssert();
-//		softburger5.assertTrue(new HomePage().clickNavigationButton());
-//		if(new HomePage().getHamburgerMenuPageObject().isAt()) {
-			softburger5.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickHelpIcon());
-			softburger5.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
-		
-		softburger5.assertAll();
-	}
-	
-
-	@Test(priority = 6)
-	public void Verify_Hamburger_Menu_About_UI_Page() {
-		SoftAssert softburger6 = new SoftAssert();
-		softburger6.assertTrue(new HomePage().clickNavigationButton());
-		if(new HomePage().getHamburgerMenuPageObject().isAt()) 
-			softburger6.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAboutAppButton());
-		
-		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAtAboutPage())
-			softburger6.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().verifyUIOnAboutPage());
-		
-		softburger6.assertAll();
-	}
-	
-	@Test(priority = 7)
-	public void Verify_Hamburger_Menu_About_License_Page() {
-		SoftAssert softburger7 = new SoftAssert();
-		softburger7.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickLicenseButton());
-		super.pause(3);
-		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getLicensesPageObject().isAt())
-		{
-			//softburger7.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getLicensesPageObject().verifyUIOnLicensesPage());
-			softburger7.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getLicensesPageObject().clickCloseButton());
-		}
-		softburger7.assertAll();
-	}
-	
-	@Test(priority = 8)
-	public void Verify_Hamburger_Get_Another_Max_Page() {
-		SoftAssert softburger8 = new SoftAssert();
+//	@Test(priority = 2)
+//	public void Verify_Hamburger_Menu_Page() {
+//		SoftAssert softburger2 = new SoftAssert();
+//		softburger2.assertTrue(new HomePage().clickNavigationButton());
+//		if(new HomePage().getHamburgerMenuPageObject().isAt()) 
+//			softburger2.assertTrue(new HomePage().getHamburgerMenuPageObject().verifyUIOnHamburgerMenuPage());
+//		
+//		softburger2.assertAll();
+//	}
+//	
+//	@Test(priority = 3)
+//	public void Verify_Hamburger_Menu_Settings_UI_Page() {
+//		SoftAssert softburger3 = new SoftAssert();
+//		softburger3.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSettingsButton());
+//		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAt())
+//			softburger3.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().verifyUIOnSettingsPage());
+//			//softburger3.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
+//		softburger3.assertAll();
+//	}
+//	
+//	@Test(priority = 4)
+//	public void Verify_Hamburger_Menu_Settings_Sign_Out() {
+//		SoftAssert softburger4 = new SoftAssert();
+////		String userEmail = new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getUserEmailAddress();
+//		softburger4.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickSignOutButton());
+//		new SiginPage().emailAddressTextBox.getText();
+//		try {
+////			if(userEmail.equals(new SiginPage().emailAddress.getText())) {
+////				softburger4.assertTrue(new SiginPage().clickSigninButton());
+////				super.pause(5);	}
+//		}catch(Exception e) {}
+//		softburger4.assertAll();
+//	}
+//	
+//	@Test(priority = 5)
+//	public void Verify_Hamburger_Menu_Settings_Help_Page() {
+//		SoftAssert softburger5 = new SoftAssert();
+////		softburger5.assertTrue(new HomePage().clickNavigationButton());
+////		if(new HomePage().getHamburgerMenuPageObject().isAt()) {
+//			softburger5.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickHelpIcon());
+//			softburger5.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
+//		
+//		softburger5.assertAll();
+//	}
+//	
+//
+//	@Test(priority = 6)
+//	public void Verify_Hamburger_Menu_About_UI_Page() {
+//		SoftAssert softburger6 = new SoftAssert();
+//		softburger6.assertTrue(new HomePage().clickNavigationButton());
+//		if(new HomePage().getHamburgerMenuPageObject().isAt()) 
+//			softburger6.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAboutAppButton());
+//		
 //		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAtAboutPage())
-			softburger8.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickGetAnotherMaxRouterButton());
-//		softburger8.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
-			
-		softburger8.assertAll();
-	}
-	
-	@Test(priority = 9)
-	public void Verify_Hamburger_About_Help_Page() {
-		SoftAssert softburger9 = new SoftAssert();
-		softburger9.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickHelpIcon());
-		softburger9.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getAboutHelpPageObject().clickCloseButton());
-		softburger9.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
-		
-		softburger9.assertAll();
-	}
-	
-	@Test(priority = 10)
-	public void Verify_Hamburger_Surfboard_Help_UI_Page() {
-		SoftAssert softburger10 = new SoftAssert();
-		softburger10.assertTrue(new HomePage().clickNavigationButton());
-		if(new HomePage().getHamburgerMenuPageObject().isAt()) 
-			softburger10.assertTrue(new HomePage().getHamburgerMenuPageObject().clickHelpMenuButton());
-		
-		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAtHelpPage())
-			softburger10.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().verifyUIOnHelpPage());
-		
-		softburger10.assertAll();
-	}
-		
-	@Test(priority = 11)
-	public void Verify_Hamburger_Surfboard_FAQ_Help_Page() {
-		SoftAssert softburger11 = new SoftAssert();
-		softburger11.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickFAQButton());
-		
-		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getFAQHelpPageObject().isAt()) {
-			softburger11.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getFAQHelpPageObject().verifyUIOnFAQHelpPage());
-			softburger11.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getFAQHelpPageObject().clickBackButton());}
-		
-		softburger11.assertAll();
-	}
-	
-	@Test(priority = 12)
-	public void Verify_Hamburger_Surfboard_Self_Help_Page() {
-		SoftAssert softburger12 = new SoftAssert();
-		softburger12.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickSelfHelp());
-		
-		softburger12.assertAll();
-	}
-	
-	@Test(priority = 13)
-	public void Verify_Hamburger_Surfboard_Chat_With_US_Page() {
-		SoftAssert softburger13 = new SoftAssert();
-		softburger13.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickLiveChatHelp());
-		softburger13.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
-		
-		softburger13.assertAll();
-	}	
+//			softburger6.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().verifyUIOnAboutPage());
+//		
+//		softburger6.assertAll();
+//	}
+//	
+//	@Test(priority = 7)
+//	public void Verify_Hamburger_Menu_About_License_Page() {
+//		SoftAssert softburger7 = new SoftAssert();
+//		softburger7.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickLicenseButton());
+//		super.pause(3);
+//		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getLicensesPageObject().isAt())
+//		{
+//			//softburger7.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getLicensesPageObject().verifyUIOnLicensesPage());
+//			softburger7.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getLicensesPageObject().clickCloseButton());
+//		}
+//		softburger7.assertAll();
+//	}
+//	
+//	@Test(priority = 8)
+//	public void Verify_Hamburger_Get_Another_Max_Page() {
+//		SoftAssert softburger8 = new SoftAssert();
+////		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAtAboutPage())
+//			softburger8.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickGetAnotherMaxRouterButton());
+////		softburger8.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
+//			
+//		softburger8.assertAll();
+//	}
+//	
+//	@Test(priority = 9)
+//	public void Verify_Hamburger_About_Help_Page() {
+//		SoftAssert softburger9 = new SoftAssert();
+//		softburger9.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickHelpIcon());
+//		softburger9.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getAboutHelpPageObject().clickCloseButton());
+//		softburger9.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
+//		
+//		softburger9.assertAll();
+//	}
+//	
+//	@Test(priority = 10)
+//	public void Verify_Hamburger_Surfboard_Help_UI_Page() {
+//		SoftAssert softburger10 = new SoftAssert();
+//		softburger10.assertTrue(new HomePage().clickNavigationButton());
+//		if(new HomePage().getHamburgerMenuPageObject().isAt()) 
+//			softburger10.assertTrue(new HomePage().getHamburgerMenuPageObject().clickHelpMenuButton());
+//		
+//		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().isAtHelpPage())
+//			softburger10.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().verifyUIOnHelpPage());
+//		
+//		softburger10.assertAll();
+//	}
+//		
+//	@Test(priority = 11)
+//	public void Verify_Hamburger_Surfboard_FAQ_Help_Page() {
+//		SoftAssert softburger11 = new SoftAssert();
+//		softburger11.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickFAQButton());
+//		
+//		if(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getFAQHelpPageObject().isAt()) {
+//			softburger11.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getFAQHelpPageObject().verifyUIOnFAQHelpPage());
+//			softburger11.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().getFAQHelpPageObject().clickBackButton());}
+//		
+//		softburger11.assertAll();
+//	}
+//	
+//	@Test(priority = 12)
+//	public void Verify_Hamburger_Surfboard_Self_Help_Page() {
+//		SoftAssert softburger12 = new SoftAssert();
+//		softburger12.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickSelfHelp());
+//		
+//		softburger12.assertAll();
+//	}
+//	
+//	@Test(priority = 13)
+//	public void Verify_Hamburger_Surfboard_Chat_With_US_Page() {
+//		SoftAssert softburger13 = new SoftAssert();
+//		softburger13.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickLiveChatHelp());
+//		softburger13.assertTrue(new HomePage().getHamburgerMenuPageObject().getSettingAboutHelpPageObject().clickBackButton());
+//		
+//		softburger13.assertAll();
+//	}	
 }

@@ -19,12 +19,9 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class SettingsHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-
-	@AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.webkit.WebView[@resource-id='com.arris.sbcBeta:id/webView']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"This page provides information about your Account.\"]")
 	public MobileElement settingsText;
 	

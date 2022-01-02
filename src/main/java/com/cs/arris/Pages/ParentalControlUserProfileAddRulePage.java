@@ -17,6 +17,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlUserProfileAddRulePage extends ParentClass implements Page
 {
@@ -24,39 +25,25 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 	public List<String> deviceList = new ArrayList<String>();
 	public int deviceListSize;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/txtToolBarTitle") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_NavigationBar_TitleLabel\"]") 
 	public MobileElement enableScheduleTimeTitle; 
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@text='No Active Time Rule Found']") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement noActiveRuleFoundText; 
 	
-	@AndroidFindBy (xpath = "//android.widget.TextView[@text='Currently, you have not added any time schedules for this profile. Please tap on the \"Add Time Schedule\" button to set time schedule to block Internet access.']") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement noActiveRuleFoundMessage; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),  //back button
-		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']")
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backButton; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"),  //help Icon
-		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[980,153][1046,219]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/helpIcon") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_NavigationTitle_Button_Help\"]")
 	public MobileElement helpIcon; 
 	
-	@AndroidFindAll({
-		@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_toolbar_remote_lca"),
-		@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[909,154][972,217]']"),
-		@AndroidBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement cloudIcon;
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/add_time_blocks']"),  //back button
-		@AndroidBy (id = "com.arris.sbcBeta:id/add_time_blocks")
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_AddTimeRule\"]")
 	public MobileElement addScheduleButton; 
 	
 	public ParentalControlAddRuleHelpPage getParentalAddRuleHelpPageObject(){

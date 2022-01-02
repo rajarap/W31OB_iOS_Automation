@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class EditMainDeviceNameDialog extends ParentClass implements Page
 {
@@ -20,23 +21,26 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 	String editedName;
 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogBoxTitle") //EDIT DEVICE NAME
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_TitleLabel\"]") //EDIT DEVICE NAME
 	public MobileElement editDeviceNameTitle; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogBoxdetail") //Please enter a name for this device
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_SubTitleLabel\"]") //Please enter a name for this device
 	public MobileElement editDeviceNameText; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialog") //Enter Device Name  Label
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_Label_Device\"]") //Enter Device Name  Label
 	public MobileElement enterDeviceNameLabel;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogEditText") //Enter Device Name
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name=\"Edit_Device_Name_Screen_TextField_Device\"]") //Enter Device Name
 	public MobileElement enterDeviceName;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogSave") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_TitleLabel\"]") 
 	public MobileElement saveButton; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialogClose") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Edit_Device_Name_Screen_Button\"]") 
 	public MobileElement closeButton; 
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
 	
 	
 	public EditMainDeviceNameDialog()
@@ -90,6 +94,7 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 	
 	
 	public boolean clickSaveButton() {
+		click(doneLink);
 		if (saveButton.isDisplayed()) {
 			click(saveButton);
 			utils.log().info("Clicked on Save Changes Button");

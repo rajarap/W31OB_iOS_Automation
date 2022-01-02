@@ -27,76 +27,55 @@ import io.appium.java_client.android.nativekey.PressesKey;
 public class AmazonFeaturesPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public WebDriver driver;
-
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle") 
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Amazon Features\"])[2]")
+ 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Amazon Features\"]")
 	public MobileElement amazonTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_surfboard_logo") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeImage[1]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Amazon_Features_Screen_Image\"]")
 	public MobileElement amazonSurfboardImage;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Enable/Disable Amazon Frustration Free Setup Feature']")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Enable/Disable Amazon Frustration Free Setup Feature\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Amazon_Features_Screen_Label_Setup\"]")
 	public MobileElement enableDisableAFFSText;
-
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/affs_enable_disable' and @checked='false']") 
-	@iOSXCUITFindBy(xpath = "**/XCUIElementTypeSwitch[`value == \"0\"`]")
-	public MobileElement disableAFFSToggleButton;
 	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/affs_enable_disable' and @checked='true']") 
-	@iOSXCUITFindBy(xpath = "**/XCUIElementTypeSwitch[`value == \"1\"`]")
-	public MobileElement enableAFFSToggleButton;
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeSwitch[@name=\"Amazon_Features_Screen_Switch\"]")
+	public MobileElement AFFSToggleButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/affs_des_click") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"This is an Amazon feature enabling simpler smart device setup. For more information, please tap here\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Amazon_Features_Screen_Button\"]")	
 	public MobileElement pleaseTapHere;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Get Alexa Skills\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Amazon_Features_Screen_Image_Expand\"]")
 	public MobileElement getAlexaSkillsButton;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/item1_text_title") 
 	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\" (1) Open the Amazon Alexa app.\"])[1]")
 	public MobileElement alexaSkillsContent;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/pas") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Password\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Amazon_Features_Screen_Label_Password\"]")
 	public MobileElement passwordLabel;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/password") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeSecureTextField")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeSecureTextField[@name=\"Amazon_Features_Screen_TextField_Password\"]")
 	public MobileElement passwordTextBox;
 	
-	@AndroidFindBy(xpath= "//android.widget.ImageButton[@content-desc='Show password']") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"eyeIcon\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Amazon_Features_Screen_Button_Eye\"]")
 	public MobileElement showpassword;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imageButtonCopy") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"copy\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Amazon_Features_Screen_Button_Copy\"]")
 	public MobileElement passwordCopyButton;
 		
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_bottom") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"www.amazon.com/alexaskills\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Amazon_Features_Screen_Image_Link\"]")
 	public MobileElement alexaSkillsLink;
 	
 	
 	//Password Copied Dialog
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Password Copied\"]")
-	public MobileElement passworkCopiedText;
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
+	public MobileElement passwordCopiedText;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog") 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"OK\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
 	public MobileElement okbutton;
 	
 	
@@ -136,23 +115,19 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	}
 	
 	public boolean enableAFFS() {
-		if (disableAFFSToggleButton.isDisplayed()) {
-			click(disableAFFSToggleButton);
-			utils.log().info("Amazon Frustration Free Setup Feature is enabled");
+		if (AFFSToggleButton.isSelected()) {
+			utils.log().info("Amazon Frustration Free Setup Feature is already enabled");
 			return true;
 		}else {
-			utils.log().info("Amazon Frustration Free Setup Feature is already enabled");
+			click(AFFSToggleButton);
+			utils.log().info("Amazon Frustration Free Setup Feature is enabled");
 			return false;
 		}
 	}
 	
-//} else if (enableAFFSToggleButton.isDisplayed()) {
-//	utils.log().info("Amazon Frustration Free Setup Feature is already enabled");
-//	return true;
-
 	public boolean disableAFFS() {
-		if (enableAFFSToggleButton.isDisplayed()) {
-			click(enableAFFSToggleButton);
+		if (AFFSToggleButton.isSelected()) {
+			click(AFFSToggleButton);
 			utils.log().info("Amazon Frustration Free Setup Feature is disabled");
 			return true;
 		} else {
@@ -161,10 +136,6 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 		}
 	}
 	
-//} else if (disableAFFSToggleButton.isDisplayed()) {
-//	utils.log().info("Amazon Frustration Free Setup Feature is already disabled");
-//	return true;
-
 	public boolean clickGetAlexaSkillsButton() {
 		if (getAlexaSkillsButton.isDisplayed()) {
 			click(getAlexaSkillsButton);
@@ -178,7 +149,9 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	
 	public boolean clickAlexaSkillsButtonAgain() {
 		if (getAlexaSkillsButton.isDisplayed()) {
+			super.swipeDown();
 			click(getAlexaSkillsButton);
+			utils.log().info("Clicked on Get Alexa Skills Button Again");
 			return true;
 		} else {
 			return false;
@@ -189,6 +162,16 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 		if (showpassword.isDisplayed()) {
 			click(showpassword);
 			utils.log().info("Clicked on Show Password Button");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean clickShowPasswordButtonAgain() {
+		if (showpassword.isDisplayed()) {
+			click(showpassword);
+			utils.log().info("Clicked on Show Password Button Again");
 			return true;
 		} else {
 			return false;
@@ -216,9 +199,9 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	
 	public boolean clickCopyPasswordOKButton()
 	{
-		if(passworkCopiedText.isDisplayed())
+		if(passwordCopiedText.isDisplayed())
 		{
-			utils.log().info(passworkCopiedText.getText());
+	//		utils.log().info(passwordCopiedText.getText());
 			if (okbutton.isDisplayed()) {
 				click(okbutton);
 				utils.log().info("Clicked on Copy Password Ok button");
@@ -260,12 +243,10 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 			utils.log().info("Enable/Disable AFFS text is not displayed");
 			
 			try {
-				if (disableAFFSToggleButton.isDisplayed())
+				if (AFFSToggleButton.isDisplayed() && AFFSToggleButton.isSelected())
+					utils.log().info("AFFS is enabled");
+				else 
 					utils.log().info("AFFS is currently disabled");
-				else if(enableAFFSToggleButton.isDisplayed())
-					utils.log().info("AFFS is currently enabled");
-				else
-					utils.log().info("AFFS Toggle button is not displayed");
 			}catch(Exception t) {
 				utils.log().info("AFFS Toggle button is not displayed");
 			}
@@ -328,25 +309,23 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 			driver = new ChromeDriver();
 			driver.navigate().to(alexaSkillsLink.getText());
 			String webURL = driver.getCurrentUrl();
-			try {
-				if (webURL.equalsIgnoreCase(alexaSkillsLink.getText())) {
-					driver.getPageSource();
-					if (driver.findElement(By.xpath("//android.webkit.WebView[@text='Alexa Skills and Features | Amazon.com']")).isDisplayed())
-						utils.log().info("On www.amazon.com/alexaskills web page");
-					else
-						utils.log().info("www.amazon.com/alexaskills web page is not displayed");
-				}
-			} catch (Exception e) {
-				utils.log().info("Unable to fetch alexa skills Web Page objects");
-			}
+//			try {
+//				if (webURL.equalsIgnoreCase(alexaSkillsLink.getText())) {
+//					driver.getPageSource();
+//					if (driver.findElement(By.xpath("//android.webkit.WebView[@text='Alexa Skills and Features | Amazon.com']")).isDisplayed())
+//						utils.log().info("On www.amazon.com/alexaskills web page");
+//					else
+//						utils.log().info("www.amazon.com/alexaskills web page is not displayed");
+//				}
+//			} catch (Exception e) {
+//				utils.log().info("Unable to fetch alexa skills Web Page objects");
+//			}
 			
 			if (driver != null)
 				driver.quit();
 			
-			
 			super.getDriver().context("NATIVE_APP");
 			utils.log().info("Switched to NATIVE_APP View");
-			//((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
 			super.getDriver().activateApp("com.arris.sbcBeta");
    
 			return true;
@@ -371,24 +350,25 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			String webURL = driver.getCurrentUrl(); 
-			try {
-				if (webURL.contains("amazon.com/gp/help/customer/")) {
-//					driver.getPageSource();
-					if (driver
-							.findElement(By.xpath("//android.view.View[@content-desc='Where's My Stuff?'])[1]/android.view.View/android.widget.TextView[2]")).isDisplayed())
-						utils.log().info("On amazon.com/gp/help/customer web page");
-					else
-						utils.log().info("amazon.com/gp/help/customer web page is not displayed");
-				}
-			} catch (Exception e) {
-				utils.log().info("Unable to fetch amazon.com/gp/help/customer web page objects");
-			}
-			super.getDriver().context("NATIVE_APP");
-			utils.log().info("Switched to NATIVE_APP View");
-			((PressesKey) super.getDriver()).pressKey(new KeyEvent(AndroidKey.BACK));
+//			try {
+//				if (webURL.contains("amazon.com/gp/help/customer/")) {
+////					driver.getPageSource();
+//					if (driver
+//							.findElement(By.xpath("//android.view.View[@content-desc='Where's My Stuff?'])[1]/android.view.View/android.widget.TextView[2]")).isDisplayed())
+//						utils.log().info("On amazon.com/gp/help/customer web page");
+//					else
+//						utils.log().info("amazon.com/gp/help/customer web page is not displayed");
+//				}
+//			} catch (Exception e) {
+//				utils.log().info("Unable to fetch amazon.com/gp/help/customer web page objects");
+//			}
 
 			if (driver != null)
 				driver.quit();
+			
+			super.getDriver().context("NATIVE_APP");
+			utils.log().info("Switched to NATIVE_APP View");
+			super.getDriver().activateApp("com.arris.sbcBeta");
 
 			return true;
 		} catch (Exception e) {

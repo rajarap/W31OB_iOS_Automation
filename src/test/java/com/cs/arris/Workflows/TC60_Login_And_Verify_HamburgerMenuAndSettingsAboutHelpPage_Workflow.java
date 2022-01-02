@@ -35,7 +35,7 @@ import com.cs.arris.Pages.RetrieveOTPPage;
 import com.cs.arris.Pages.SelectYourDevicePage;
 import com.cs.arris.Pages.SelectYourDevicePage2;
 import com.cs.arris.Pages.SetUpYourWiFiManagementPage;
-import com.cs.arris.Pages.SettingsAboutHelpPage;
+import com.cs.arris.Pages.HamburgerSettingsPage;
 import com.cs.arris.Pages.SettingsHelpPage;
 import com.cs.arris.Pages.SetupHomeNetworkPage;
 import com.cs.arris.Pages.ConnectMaxRouterToInternetPage;
@@ -198,8 +198,8 @@ TestUtils utils = new TestUtils();
     }
     
     //Settings About Help Page 
-    public TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Workflow settingsAboutHelpPage(Consumer<SettingsAboutHelpPage> c){
-    	SettingsAboutHelpPage p = new SettingsAboutHelpPage();
+    public TC60_Login_And_Verify_HamburgerMenuAndSettingsAboutHelpPage_Workflow settingsAboutHelpPage(Consumer<HamburgerSettingsPage> c){
+    	HamburgerSettingsPage p = new HamburgerSettingsPage();
         c.accept(p);
         return this;
     }

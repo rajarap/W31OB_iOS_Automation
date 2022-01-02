@@ -14,75 +14,72 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/time_block_cancel_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Close\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/time_block_heading")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_AddTime\"]")
 	public MobileElement addInternetBlockingScheduleTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/time_block_protocol")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_SelectSchedule\"]")
 	public MobileElement selectScheduleDays;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_every_day")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_EveryDay\"]")
 	public MobileElement everydayButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_custom")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Custom\"]")
 	public MobileElement customButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvFrom")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_StartTimeTitle\"]")
 	public MobileElement startTime;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvTo")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_EndTimeTitle\"]")
 	public MobileElement endTime;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvStartTime")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_StartTime\"]")
 	public MobileElement addStartTimeLink;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvEndTime")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_EndTime\"]")
 	public MobileElement addStopTimeLink;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/save_time_blocks")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Save\"]")
 	public MobileElement saveChangesButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/select_days")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_Select\"]")
 	public MobileElement selectDaysLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbSunday")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Sunday\"]")
 	public MobileElement sunday;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbMonday")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Monday\"]")
 	public MobileElement monday;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbTuesday")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Tuesday\"]")
 	public MobileElement tuesday;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbWednesday")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Wednesday\"]")
 	public MobileElement wednesday;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbThursday")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Thursday\"]")
 	public MobileElement thrusday;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbFriday")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Friday\"]")
 	public MobileElement friday;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cbSaturday")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Saturday\"]")
 	public MobileElement saturday;
 	
 	//When start date and end date are same
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
-	public MobileElement alertCloseButton;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_Error\"]")
+	public MobileElement errorDescriptionWhenNoDaysAreSelected;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description")
-	public MobileElement errorDescription;
-	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
-	public MobileElement alertOKButton;
-	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_Error\"]")
+	public MobileElement errorDescriptionForSameStartEndTime;
 	
 	
 	public ParentalControlUserProfileAddRuleDatePickerDialog getDatePickerDialogObject() {
@@ -159,28 +156,6 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 		}
 	}
 	
-	public boolean clickAlertCloseButton() {
-		if (alertCloseButton.isDisplayed()) {
-			click(alertCloseButton);
-			utils.log().info("Clicked Close buton on Alert Dialog");
-			return true;
-		} else {
-			utils.log().info("Alert Close button is not displayed");
-			return false;
-		}
-	}
-	
-	public boolean clickAlertOKButton() {
-		if (alertOKButton.isDisplayed()) {
-			click(alertOKButton);
-			utils.log().info("Clicked OK button on Alert Dialog");
-			return true;
-		} else {
-			utils.log().info("Alert OK button is not displayed");
-			return false;
-		}
-	}
-
 	public boolean clickEveryDayButton() {
 		if (everydayButton.isDisplayed()) {
 			click(everydayButton);

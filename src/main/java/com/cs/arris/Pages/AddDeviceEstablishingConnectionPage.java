@@ -18,31 +18,24 @@ public class AddDeviceEstablishingConnectionPage extends ParentClass implements 
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/text_establish")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Establishing_Connection_Screen_TitleLabel_EstablishingConnection\"]")
 	public MobileElement establishConnectionTitle; 
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/establish_text_small") 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Establishing_Connection_Screen_Label_WaitFor5-10Minutes\"]")
 	public MobileElement description1; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/tv_waiting_time_is_required") 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Establishing_Connection_Screen_Label_WaitInfo\"]")
 	public MobileElement description2; 
 		
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/btn_online")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Establishing_Connection_Screen_Button_ImOnline\"]")
 	public MobileElement onlineButton;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/btn_i_am_not_online")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Establishing_Connection_Screen_Button_ImNotOnline\"]")
 	public MobileElement notOnlineButton;
 	

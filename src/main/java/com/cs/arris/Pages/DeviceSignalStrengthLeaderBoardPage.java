@@ -27,95 +27,33 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	public List<MobileElement> listOfDevices;
 	public int counter = 1;
 
-	@AndroidFindAll({ 
-		@AndroidBy(id = "com.arris.sbcBeta:id/txtHeader"), // DEVICE SIGNAL STRENGTH LEADER BOARD
-		@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,311][854,380]']")})
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_TitleLabel\"]")
 	public MobileElement leaderBoardTitleText;
 
-//	@AndroidFindAll({
-//			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtTotalDevices']"),
-//			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,397][337,471]']"),
-//			@AndroidBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.widget.TextView[2]]")
-//			})
-//	public MobileElement numberOfDevicesText;
-	
-	//@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.widget.TextView[2]]")
-	//@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
-	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtTotalDevices']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
 	public MobileElement countOfDevices;
 
-	@AndroidFindAll({ @AndroidBy(id = "com.arris.sbcBeta:id/txtThree"),
-			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[101,514][451,567]']") })
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label\"]")
 	public MobileElement topFiveOnlineDevices;
 
-	// @AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc='SBC
-	// Test']/android.view.ViewGroup/android.widget.Spinner/android.widget.TextView")
-	// //strong to weak
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.view.ViewGroup[@content-desc='SBC Test']/android.view.ViewGroup/android.widget.Spinner/android.widget.TextView"),
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='android:id/text1']") })
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Button\"]")
 	public MobileElement signalStrengthOptions;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]"),
-			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[526,579][979,647]']") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Strong to weak\"]")
 	public MobileElement strongToWeak;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]"),
-			@AndroidBy(xpath = "//android.widget.TextView[@bounds='[526,647][979,715]']") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Weak to strong\"]")
 	public MobileElement weakToStrong;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" Strong to weak\"]")
+	public MobileElement selectStrongToWeak;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtDeviceName']"), 
-			@AndroidBy(id = "com.arris.sbcBeta:id/txtDeviceName") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)\"]")
-	public MobileElement mobileDeviceName;
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" Weak to strong\"]")
+	public MobileElement selectWeakToStrong;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainSignalStrength']"), // 5GHz
-			@AndroidBy(id = "com.arris.sbcBeta:id/txtMainSignalStrength") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)Speed\"]")
-	public MobileElement signalStrength;
-
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainDownloadSpeed']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/txtMainDownloadSpeed") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)Download\"]")
-	public MobileElement downloadSpeed;
-
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtMainUpLoadSpeed']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/txtMainUpLoadSpeed") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_iPhone (me)Upload\"]")
-	public MobileElement uploadSpeed;
-
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/imgDevice") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
-	public MobileElement mobileDeviceImage;
-
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/rcyclrDevices']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/rcyclrDevices") })
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
-	public MobileElement recyclerView;
-
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgCloseIcon']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/imgCloseIcon") })
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button\"]")
 	public MobileElement closeIcon;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.view.ViewGroup[@resource-id='com.arris.sbcBeta:id/setBackgroundForFreezingList']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/setBackgroundForFreezingList") })
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Devices\"]")
 	public MobileElement deviceEntry1;
 
@@ -128,17 +66,6 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 		if(closeIcon.isDisplayed())	{
 			click(closeIcon);
 			utils.log().info("Clicked on Close Icon");
-			return true;
-		}else {
-			return false;
-		}
-	}
-	
-	public boolean clickEditDeviceName(int deviceNumber)
-	{
-		if(mobileDeviceName.isDisplayed())	{
-			click(mobileDeviceName);
-			utils.log().info("Device Signal Strength Leader Board - Clicked on Device Name Text");
 			return true;
 		}else {
 			return false;
@@ -162,10 +89,11 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	
 	public boolean verifyUIOnDeviceSignalStrengthPage() {
 		try {
-			
+			utils.log().info("                                                              ");
 			utils.log().info("**************************************************************");
 			utils.log().info("Verifying UI Elements on Device Signal Strength Leader Board  ");
 			utils.log().info("**************************************************************");
+			
 			if (leaderBoardTitleText.isDisplayed())
 				utils.log().info("Title - " + leaderBoardTitleText.getText() + " - is displayed");
 			else
@@ -194,26 +122,26 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 
 	public boolean verifySignalStrengthForDevices() {
-		try {
+
+			utils.log().info("                                             ");
 			utils.log().info("*********************************************");
 			utils.log().info("List of Devices Signal Strength Leader Board ");
 			utils.log().info("*********************************************");
 
-			int size = new HomePage().getBitRateDevicesCount();
-			utils.log().info("Bit Rate Device count is : " + size);
-
-			for (int i = 1; i <= size; i++) {
+//			int size = new HomePage().getBitRateDevicesCount();
+//			utils.log().info("Bit Rate Device count is : " + size);
+			
+		try {
+			for (int i = 1; i <= 2; i++) {
 				utils.log().info("Devices  : " + i);
 				utils.log().info("---------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
+						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
 					try {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
-								.isDisplayed())
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Device_Bit_Rate_Leaderboard_Screen_Image_Device["+i+"]\"]").isDisplayed())
 							utils.log().info("Device Image is displayed");
 					} catch (Exception exp) {
 						utils.log().info("Device Image is not available/displayed");
@@ -221,42 +149,42 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 					try {
 						utils.log().info("Device Name            : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtDeviceName").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Device["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Name is not available/displayed");
 					}
 
 					try {
 						utils.log().info("Device Signal Strength : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Speed["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Signal Strength is not available/displayed");
 					}
 
 					try {
 						utils.log().info("Device Download Speed  : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainDownloadSpeed").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Download["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Download Speed is not available/displayed");
 					}
 
 					try {
 						utils.log().info("Device Upload Speed    : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainUpLoadSpeed").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Upload["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Upload Speed is not available/displayed");
 					}
 
 					try {
 						utils.log().info("RSSI Label             : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtStatusTitle").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSITitle["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("RSSI Label is not available/displayed");
 					}
 
 					try {
 						utils.log().info("RSSI Value             : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtStatus").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("RSSI data is not available/displayed");
 					}
@@ -271,6 +199,188 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 		}
 	}
 
+	public boolean verifySignalStrengthStrongToWeak() {
+
+			utils.log().info("****************************************************************");
+			utils.log().info("Sorting Device Signal Strength Leader Board From Strong to Weak ");
+			utils.log().info("****************************************************************");
+
+			int size = new HomePage().getBitRateDevicesCount();
+			utils.log().info("Bit Rate Device count is : " + size);
+			
+			click(signalStrengthOptions);
+			click(selectStrongToWeak);
+			
+		try {
+			for (int i = 1; i <= size; i++) {
+				utils.log().info("Devices  : " + i);
+				utils.log().info("---------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
+
+				for (MobileElement e : entity) {
+					try {
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Device_Bit_Rate_Leaderboard_Screen_Image_Device["+i+"]\"]").isDisplayed())
+							utils.log().info("Device Image is displayed");
+					} catch (Exception exp) {
+						utils.log().info("Device Image is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Name            : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Device["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Name is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Signal Strength : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Speed["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Signal Strength is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Download Speed  : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Download["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Download Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Upload Speed    : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Upload["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Upload Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Label             : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSITitle["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI Label is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Value             : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI data is not available/displayed");
+					}
+				}
+				if (i >= 5)
+					super.swipeUp();
+			}
+			return true;
+		} catch (Exception ex) {
+			utils.log().info("Error in Device Signal Strength Leader Board Page");
+			return false;
+		}
+	}
+	
+	public boolean verifySignalStrengthWeakToStrong() {
+
+			utils.log().info("****************************************************************");
+			utils.log().info("Sorting Device Signal Strength Leader Board From Weak to Strong ");
+			utils.log().info("****************************************************************");
+
+			int size = new HomePage().getBitRateDevicesCount();
+			utils.log().info("Bit Rate Device count is : " + size);
+			
+			click(signalStrengthOptions);
+			click(selectWeakToStrong);
+			
+		try {
+			for (int i = 1; i <= size; i++) {
+				utils.log().info("Devices  : " + i);
+				utils.log().info("---------------------");
+
+				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
+
+				for (MobileElement e : entity) {
+					try {
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Device_Bit_Rate_Leaderboard_Screen_Image_Device["+i+"]\"]").isDisplayed())
+							utils.log().info("Device Image is displayed");
+					} catch (Exception exp) {
+						utils.log().info("Device Image is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Name            : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Device["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Name is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Signal Strength : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Speed["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Signal Strength is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Download Speed  : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Download["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Download Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("Device Upload Speed    : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Upload["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("Device Upload Speed is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Label             : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSITitle["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI Label is not available/displayed");
+					}
+
+					try {
+						utils.log().info("RSSI Value             : "
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
+					} catch (Exception exp) {
+						utils.log().info("RSSI data is not available/displayed");
+					}
+				}
+				if (i >= 5)
+					super.swipeUp();
+			}
+			return true;
+		} catch (Exception ex) {
+			utils.log().info("Error in Device Signal Strength Leader Board Page");
+			return false;
+		}
+	}
+	
+//	public boolean clickEditDeviceName(int i) {
+//		try {
+//				utils.log().info("Editing Device Name  : " + i);
+//				utils.log().info("-----------------------------");
+//
+//				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+//						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
+//
+//				for (MobileElement e : entity) 
+//					try {
+//							click(e.findElementById("com.arris.sbcBeta:id/txtDeviceName"));
+//					} catch (Exception exp) {
+//						utils.log().info("Device Name is not available/displayed");
+//					}
+//				return true;
+//			} catch (Exception ex) {
+//				utils.log().info("Error in Device Signal Strength Leader Board Page");
+//			return false;
+//			}
+//	}
+	
+	
 	public boolean sortStrongToWeak() {
 		try {
 			click(signalStrengthOptions);
@@ -344,191 +454,6 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 		} catch (Exception e) {
 			return false;
 		}
-	}
-	
-	public boolean verifySignalStrengthStrongToWeak() {
-		try {
-			utils.log().info("****************************************************************");
-			utils.log().info("Sorting Device Signal Strength Leader Board From Strong to Weak ");
-			utils.log().info("****************************************************************");
-
-			int size = new HomePage().getBitRateDevicesCount();
-			utils.log().info("Bit Rate Device count is : " + size);
-			
-			click(signalStrengthOptions);
-			click(strongToWeak);
-
-			for (int i = 1; i <= size ; i++) {
-				utils.log().info("Devices  : " + counter);
-				utils.log().info("---------------------");
-
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
-
-				for (MobileElement e : entity) {
-					try {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
-								.isDisplayed())
-							utils.log().info("Device Image is displayed");
-					} catch (Exception exp) {
-						utils.log().info("Device Image is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Name            : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtDeviceName").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Name is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Signal Strength : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Signal Strength is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Download Speed  : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainDownloadSpeed").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Download Speed is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Upload Speed    : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainUpLoadSpeed").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Upload Speed is not available/displayed");
-					}
-
-					try {
-						utils.log().info("RSSI Label             : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtStatusTitle").getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI Label is not available/displayed");
-					}
-
-					try {
-						utils.log().info("RSSI Value             : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtStatus").getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI data is not available/displayed");
-					}
-					counter++;
-				}
-				if (i >= 5)
-					super.swipeUp();
-			}
-			return true;
-		} catch (Exception ex) {
-			utils.log().info("Error in Device Signal Strength Leader Board Page");
-			return false;
-		}
-	}
-	
-	public boolean verifySignalStrengthWeakToStrong() {
-		try {
-			utils.log().info("****************************************************************");
-			utils.log().info("Sorting Device Signal Strength Leader Board From Weak to Strong ");
-			utils.log().info("****************************************************************");
-
-			int size = new HomePage().getBitRateDevicesCount();
-			utils.log().info("Bit Rate Device count is : " + size);
-			
-			click(signalStrengthOptions);
-			click(weakToStrong);
-
-			for (int i = 1; i <= size; i++) {
-				utils.log().info("Devices  : " + counter);
-				utils.log().info("---------------------");
-
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
-
-				for (MobileElement e : entity) {
-					try {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
-								.isDisplayed())
-							utils.log().info("Device Image is displayed");
-					} catch (Exception exp) {
-						utils.log().info("Device Image is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Name            : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtDeviceName").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Name is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Signal Strength : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainSignalStrength").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Signal Strength is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Download Speed  : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainDownloadSpeed").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Download Speed is not available/displayed");
-					}
-
-					try {
-						utils.log().info("Device Upload Speed    : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtMainUpLoadSpeed").getText());
-					} catch (Exception exp) {
-						utils.log().info("Device Upload Speed is not available/displayed");
-					}
-
-					try {
-						utils.log().info("RSSI Label             : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtStatusTitle").getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI Label is not available/displayed");
-					}
-
-					try {
-						utils.log().info("RSSI Value             : "
-								+ e.findElementById("com.arris.sbcBeta:id/txtStatus").getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI data is not available/displayed");
-					}
-					counter++;
-				}
-				if (i >= 5)
-					super.swipeUp();
-			}
-			return true;
-		} catch (Exception ex) {
-			utils.log().info("Error in Device Signal Strength Leader Board Page");
-			return false;
-		}
-	}
-	
-	public boolean clickDeviceName(int i) {
-		try {
-				utils.log().info("Editing Device Name  : " + i);
-				utils.log().info("-----------------------------");
-
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup[@content-desc='SBC Test']/androidx.recyclerview.widget.RecyclerView/android.widget.ScrollView["+i+"]/android.view.ViewGroup/android.view.ViewGroup");
-
-				for (MobileElement e : entity) 
-					try {
-							click(e.findElementById("com.arris.sbcBeta:id/txtDeviceName"));
-					} catch (Exception exp) {
-						utils.log().info("Device Name is not available/displayed");
-					}
-				return true;
-			} catch (Exception ex) {
-				utils.log().info("Error in Device Signal Strength Leader Board Page");
-			return false;
-			}
 	}
 
 	private Integer convertSignalStrengthToInteger(String ghz) // 5GHz

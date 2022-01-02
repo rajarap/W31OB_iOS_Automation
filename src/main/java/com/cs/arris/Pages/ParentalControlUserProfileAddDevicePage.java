@@ -16,6 +16,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlUserProfileAddDevicePage extends ParentClass implements Page
 {
@@ -23,49 +24,35 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	public List<String> deviceList = new ArrayList<String>();
 	public int deviceListSize;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/txtToolBarTitle") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_NavigationBar_TitleLabel\"]") 
 	public MobileElement addDeviceTitle; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_edit_profile_name") 
-	public MobileElement userProfileEditIcon; 
-	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),  //back button
-		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']")
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Device_List_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backButton; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"),  //help Icon
-		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[980,153][1046,219]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/helpIcon") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Device_List_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon; 
 	
-	@AndroidFindAll({
-		@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_toolbar_remote_lca"),
-		@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[909,154][972,217]']"),
-		@AndroidBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_EditProfileSave\"]")
 	public MobileElement cloudIcon;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/add_connected_devices") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Device_List_Screen_Button_Add\"]") 
 	public MobileElement addDeviceButton;
 	
 	
 	//Click Add Device Button without selecting any devices
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_header_dialog")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Error\"]")
 	public MobileElement alertTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/error_description")
-	public MobileElement description;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
-	public MobileElement closeIcon;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ok_dialog")
-	public MobileElement okButton;
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_EditProfileSave\"]")
+//	public MobileElement description;
+//
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_EditProfileSave\"]")
+//	public MobileElement closeIcon;
+//
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_EditProfileSave\"]")
+//	public MobileElement okButton;
 
 	//Click Add Device Button without selecting any devices
 	
@@ -113,27 +100,27 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 		}
 	}
 	
-	public boolean clickOKButtonOnAlertDialog()	{
-		if(okButton.isDisplayed()) {
-			click(okButton); 
-			utils.log().info("Clicked OK button on Alert Dialog");
-			return true;
-		} else {
-			utils.log().info("Alert dialog did not appear");
-			return false;
-		}
-	}
-	
-	public boolean clickCloseButtonOnAlertDialog()	{
-		if(closeIcon.isDisplayed()) {
-			click(closeIcon); 
-			utils.log().info("Clicked Close button on Alert Dialog");
-			return true;
-		} else {
-			utils.log().info("Alert dialog did not appear");
-			return false;
-		}
-	}
+//	public boolean clickOKButtonOnAlertDialog()	{
+//		if(okButton.isDisplayed()) {
+//			click(okButton); 
+//			utils.log().info("Clicked OK button on Alert Dialog");
+//			return true;
+//		} else {
+//			utils.log().info("Alert dialog did not appear");
+//			return false;
+//		}
+//	}
+//	
+//	public boolean clickCloseButtonOnAlertDialog()	{
+//		if(closeIcon.isDisplayed()) {
+//			click(closeIcon); 
+//			utils.log().info("Clicked Close button on Alert Dialog");
+//			return true;
+//		} else {
+//			utils.log().info("Alert dialog did not appear");
+//			return false;
+//		}
+//	}
 	
 	// Add device page should not list the device already associated to the user
 //	public boolean verifyDeviceCountAfterAssociatingToUser() {
@@ -150,36 +137,34 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	
 	// To verify the devices listed in Add Device Page
 	public boolean verifyDevicesInAddDevicePage() {
-
+		utils.log().info("                                     ");
 		utils.log().info("*************************************");
 		utils.log().info("Devices Listed in the Add Device Page");
 		utils.log().info("*************************************");
 
-		int size = super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/connected_device_list_view']").size();
+		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 		utils.log().info("Count of Devices Listed in the Add Device Page is : " + size);
+		
 		try {
 			for (int i = 1; i <= size ; i++) {
-				utils.log().info("Device : " + i);
-				utils.log().info("--------------------");
+				utils.log().info("Parental Control Add Device : " + i);
+				utils.log().info("----------------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]");
+				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					if (e.findElementByXPath(
-							"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Device["+i+"]\"]").isDisplayed())
 						utils.log().info("Device Image is displayed");
 					else
 						utils.log().info("Device Image is not available : ");
 
-					if (e.findElementByXPath(
-							"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
-						utils.log().info("Device name : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText());
+					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").isDisplayed())
+						utils.log().info("Device name : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").getText());
 					else
 						utils.log().info("Device Name is not available ");
 
-					if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed())
+					if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]").isDisplayed())
 						utils.log().info("Check box is displayed ");
 					else
 						utils.log().info("Check box is not available ");
@@ -198,38 +183,32 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	public boolean selectADeviceForUserProfile() {
 
 		utils.log().info("*******************************************");
-		utils.log().info("Devices Added to the Selected User Profile ");
+		utils.log().info("Select A Device From the List of Devices   ");
 		utils.log().info("*******************************************");
 
 		//utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
 
 			try {
 				for (int i = 2; i <= 2; i++) {
-					utils.log().info("Device : " + i);
-					utils.log().info("--------------------");
+					utils.log().info("Selected Device : " + i);
+					utils.log().info("-----------------------");
 
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-							+ "]");
+					"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 					for (MobileElement e : entity) {
-						if (e.findElementByXPath(
-								"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_image']")
-								.isDisplayed())
+						if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Device["+i+"]\"]").isDisplayed())
 							utils.log().info("Device Image is displayed");
 						else
-							utils.log().info("Device Image is not available : ");
+							utils.log().info("Device Image is not available");
 
-						if (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
-							utils.log()
-								.info("Device name : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getText());
+						if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").isDisplayed())
+							utils.log().info("Device name : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").getText());
 						else
 							utils.log().info("Device Name is not available ");
 
-						if (e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']").isDisplayed()) {
-							click(e.findElementByXPath("//android.widget.CheckBox[@resource-id='com.arris.sbcBeta:id/device_select']"));
+						if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]").isDisplayed()) {
+							click(e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]"));
 							utils.log().info("Clicked the check box to select the device for the user ");}
 						else
 							utils.log().info("Check box is not available ");

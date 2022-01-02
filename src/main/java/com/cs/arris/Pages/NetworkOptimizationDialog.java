@@ -17,20 +17,13 @@ public class NetworkOptimizationDialog extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialog_heading") 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network Optimization\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
 	public MobileElement networkOptimizationText;
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/dialog_description") 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Your network is being optimized. You may be disconnected from your Wi-Fi network during this time. If you are not reconnected please connect to your network through settings.\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_SubTitleLabel\"]")
 	public MobileElement networkOptimizationMessage;
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.Button[@resource-id='com.arris.sbcBeta:id/btn_dialog_ok']"), // text = NEXT
-		@AndroidBy (xpath = "//android.widget.Button[@bounds='[147,1283][933,1420]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/btn_dialog_ok") 
-	})
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OK\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
 	public MobileElement okButton;
 	
 	public NetworkOptimizationDialog()

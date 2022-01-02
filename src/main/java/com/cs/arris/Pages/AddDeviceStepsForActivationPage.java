@@ -16,35 +16,18 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceStepsForActivationPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activation_Step_Screen_TitleLabel_StepsForActivation\"]")
 	public MobileElement stepsForActivation;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/description_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Activation_Step_Screen_SubTitleLabel_ThereAreJustAFewSteps\"]")
 	public MobileElement titleDescriptionText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/step_one_background")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Activation_Step_Screen_Image_Step1\"]")
 	public MobileElement firstSquareBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/step_one_text")
-	public MobileElement step1Text;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/step_one_description")
-	public MobileElement step1Description;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/step_two_background")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Activation_Step_Screen_Image_Step2\"]")
 	public MobileElement secondSquareBox;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/step_two_text")
-	public MobileElement step2Text;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/step_two_description")
-	public MobileElement step2Description;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_lets_start")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Activation_Step_Screen_Button_LetsStart\"]")
 	public MobileElement letsStartButton;
 
@@ -74,17 +57,7 @@ public class AddDeviceStepsForActivationPage extends ParentClass implements Page
 				utils.log().info(titleDescriptionText.getText() + " text is displayed");
 			else
 				utils.log().info("Description Text is not displayed");
-
-//			if (step1Text.isDisplayed() && step1Description.isDisplayed())
-//				utils.log().info(step1Text.getText() + " : " + step1Description.getText() + " is displayed");
-//			else
-//				utils.log().info("Step 1 information is not displayed");
-//
-//			if (step2Text.isDisplayed() && step2Description.isDisplayed())
-//				utils.log().info(step2Text.getText() + " : " + step2Description.getText() + " is displayed");
-//			else
-//				utils.log().info("Step 2 information is not displayed");
-			
+	
 			if (firstSquareBox.isDisplayed())
 				utils.log().info("Step1 box is displayed");
 			else

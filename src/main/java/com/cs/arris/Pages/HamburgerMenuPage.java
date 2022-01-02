@@ -17,44 +17,34 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class HamburgerMenuPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_add_device")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add Device\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[1]\"]")
 	public MobileElement addDevice;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_remove_device")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove Device\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[2]\"]")
 	public MobileElement removeDevice;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_max_speed_test")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Speed Test\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[3]\"]")
 	public MobileElement speedTest;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_add_max")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add a New Satellite\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[4]\"]")
 	public MobileElement addNewSatellite;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_Alexa_Skill")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Amazon Features\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[5]\"]")
 	public MobileElement amazonFeatures;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_Help")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Help\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[6]\"]")
 	public MobileElement helpMenu;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_About")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"About\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[7]\"]")
 	public MobileElement aboutApp;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_Settings")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Settings\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[8]\"]")
 	public MobileElement appSettings;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/closeLogoIcon")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"LeftMenuCross\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Menu_Screen_Image_Close\"]")
 	public MobileElement closeHamburgerMenu;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/centralLogo")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"LeftMenuHeader\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Menu_Screen_Image_Header\"]")
 	public MobileElement logo;
 
 	public HamburgerMenuPage() {
@@ -71,9 +61,19 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 		return speedTestPage;
 	}
 	
-	public SettingsAboutHelpPage getSettingAboutHelpPageObject() {
-		SettingsAboutHelpPage speedTestPage = new SettingsAboutHelpPage();
-		return speedTestPage;
+	public HamburgerSettingsPage getSettingsPageObject() {
+		HamburgerSettingsPage settingsPage = new HamburgerSettingsPage();
+		return settingsPage;
+	}
+	
+	public HamburgerAboutPage getAboutPageObject() {
+		HamburgerAboutPage aboutPage = new HamburgerAboutPage();
+		return aboutPage;
+	}
+	
+	public HamburgerHelpPage getHelpPageObject() {
+		HamburgerHelpPage helpPage = new HamburgerHelpPage();
+		return helpPage;
 	}
 	
 	public AmazonFeaturesPage getAmazonFeaturesPageObject() {

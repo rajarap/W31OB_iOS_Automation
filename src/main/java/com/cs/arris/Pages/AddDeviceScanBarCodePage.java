@@ -17,30 +17,24 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceScanBarCodePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/title_text")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"WiFi_OBNetwork_ConnectionMethod_Screen_TitleLabel\"]")
 	public MobileElement scanBarCodeTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ic_back_icon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 	
 	@AndroidFindBy (id = "com.arris.sbcBeta:id/img_toolbar_remote_lca") 
 	public MobileElement cloudIcon; 
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/need_help")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_top_description")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"WiFi_OBNetwork_ConnectionMethod_Screen_SubTitleLabel\"]")
 	public MobileElement scanDescriptionText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_bottom_one_description")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"WiFi_OBNetwork_ConnectionMethod_Screen_Label\"]")
 	public MobileElement description1;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btnScan")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WiFi_OBNetwork_ConnectionMethod_Screen_Button_Scan\"]")
 	public MobileElement scanButton;
 

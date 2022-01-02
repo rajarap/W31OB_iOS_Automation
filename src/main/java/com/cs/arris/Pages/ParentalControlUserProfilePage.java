@@ -18,6 +18,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlUserProfilePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
@@ -30,90 +31,72 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	public int elementX;
 	public int elementY;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement userProfileTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_edit_profile_name")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement userProfileEditIcon;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"), // back button
-			@AndroidBy(xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_NavigationBar_Button_Back\"]")
 	public MobileElement backButton;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"), 
-			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[980,153][1046,219]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/helpIcon") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/img_toolbar_remote_lca"),
-			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[909,154][972,217]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/img_toolbar_remote_lca") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement cloudIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/profile_image_view")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_Profile\"]")
 	public MobileElement userProfilePic;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/edit_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Parental_Control_Profiles_Screen_Image_Edit\"]")
 	public MobileElement userProfilePicEditIcon;
 
 	// Pause Profile
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Pause Profile']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_PauseProfile\"]")
 	public MobileElement pauseProfileText;
 
 	// Pause Internet access for current profile
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Pause Internet access for current profile']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_PauseInfo\"]")
 	public MobileElement pauseInternetForCurrentProfileText;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/internet_enable_disable' and @checked='true']")
-	public MobileElement enablePauseInternetToggleButton;
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Parental_Control_Profiles_Screen_Switch_PauseInternet\"]")
+	public MobileElement pauseInternetToggleButton;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/internet_enable_disable' and @checked='false']")
-	public MobileElement disablePauseInternetToggleButton;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/profile_device_count")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_DeviceCount\"]")
 	public MobileElement deviceCountPausedForProfile;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/add_devices']"), // +ADD
-																														// DEVICE
-	@AndroidBy(id = "com.arris.sbcBeta:id/add_devices") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_AddDevice\"]")
 	public MobileElement addDeviceLink;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Associated Devices']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_Associated\"]")
 	public MobileElement associatedDevicesText;
 
-	@AndroidFindAll({ @AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_count']"), 
-			@AndroidBy(id = "com.arris.sbcBeta:id/device_count") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_ConnectedDevices\"]")
 	public MobileElement totalDevicesAdded;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/device_list_expand_icon")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_DeviceExpand\"]")
 	public MobileElement expandDeviceListButton;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/expand_time_rule_list_icon") 
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement expandRuleListButton;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/time_rule_count")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_RuleCounter\"]")
 	public MobileElement ruleCountForProfile;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/add_time_rule']"), 
-			@AndroidBy(id = "com.arris.sbcBeta:id/add_time_rule") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_AddRule\"]")
 	public MobileElement addRuleLink;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Associated Rules']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_AssociatedRules\"]")
 	public MobileElement associatedRulesText;
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/time_rule_warning_message']"), 
-			@AndroidBy(id = "com.arris.sbcBeta:id/time_rule_warning_message") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_Total\"]")
 	public MobileElement totalTimeActiveRule;
 
 	
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='true']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement enableTimeBlockToggleButton;
 
-	@AndroidFindBy(xpath = "//android.widget.Switch[@resource-id='com.arris.sbcBeta:id/time_block_enable_disable' and @checked='false']")
-	public MobileElement disableTimeBlockToggleButton;
 	
 	
 	//Delete Associated Devices
@@ -183,6 +166,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	}
 
 	public boolean verifyUIOnUserProfilePage() {
+		utils.log().info("                                      ");
 		utils.log().info("**************************************");
 		utils.log().info(" Parental Control  - User Profile Page");
 		utils.log().info("**************************************");
@@ -196,6 +180,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 				utils.log().info("Back Button is displayed");
 			else
 				utils.log().info("Back Button is not displayed");
+			
 			try {
 			if (cloudIcon.isDisplayed())
 				utils.log().info("Cloud Icon is displayed");
@@ -208,10 +193,10 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			else
 				utils.log().info("Help Icon is not displayed");
 
-			if (userProfileEditIcon.isDisplayed())
-				utils.log().info("User Profile Edit Icon is displayed");
-			else
-				utils.log().info("User Profile Edit Icon is not displayed");
+//			if (userProfileEditIcon.isDisplayed())
+//				utils.log().info("User Profile Edit Icon is displayed");
+//			else
+//				utils.log().info("User Profile Edit Icon is not displayed");
 
 			if (userProfilePic.isDisplayed())
 				utils.log().info("User Profile Pic is displayed");
@@ -234,10 +219,10 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 				utils.log().info("Pause Internet Access for Current Profile text is not displayed");
 			
 			try {
-				if (enablePauseInternetToggleButton.isDisplayed())
-					utils.log().info("Pause Internet switch is ON");
+				if (pauseInternetToggleButton.isDisplayed() && (!(pauseInternetToggleButton).isSelected()))
+					utils.log().info("Pause Internet switch is displayed but is disabled");
 			}catch(Exception e) {
-					utils.log().info("Pause Internet switch is OFF");}
+					utils.log().info("Pause Internet switch is displayed and is enabled");}
 
 			if (deviceCountPausedForProfile.isDisplayed())
 				utils.log().info(deviceCountPausedForProfile.getText() + " text is displayed");
@@ -259,10 +244,10 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			else
 				utils.log().info("Total Devices Added text is not displayed");
 
-			if (expandDeviceListButton.isDisplayed())
-				utils.log().info("Expand button image is displayed");
-			else
-				utils.log().info("Expand button image is not displayed");
+//			if (expandDeviceListButton.isDisplayed())
+//				utils.log().info("Expand button image is displayed");
+//			else
+//				utils.log().info("Expand button image is not displayed");
 
 			if (ruleCountForProfile.isDisplayed())
 				utils.log().info(ruleCountForProfile.getText() + " text is displayed");
@@ -390,8 +375,9 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 
 	public boolean enablePauseInternetAccessForCurentProfiles() {
 		try {
-			if (disablePauseInternetToggleButton.isDisplayed()) {
-				click(disablePauseInternetToggleButton);
+			if (pauseInternetToggleButton.isDisplayed() &&  (!(pauseInternetToggleButton).isSelected()))
+			{
+				click(pauseInternetToggleButton);
 
 				if (this.getAppRatingDialogObject().isAt()) {
 					this.getAppRatingDialogObject().clickRemindMeLaterLink();
@@ -399,19 +385,20 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 				} else {
 					utils.log().info("App Rating Dialog is not displayed");
 				}
-			} else
-				utils.log().info("Pause Internet Access for current user profile is already enabled.");
+			} else {
+				utils.log().info("Pause Internet Access for current user profile is enabled.");}
 			return true;
 		} catch (Exception e) {
-			utils.log().info("Pause Internet Access for current user profile is not displayed");
+			utils.log().info("Pause Internet Access for current user profile is already enabled");
 			return false;
 		}
 	}
 	
 	public boolean disablePauseInternetAccessForAllProfiles() {
 		try {
-			if (enablePauseInternetToggleButton.isDisplayed()) {
-				click(enablePauseInternetToggleButton);
+			if (pauseInternetToggleButton.isDisplayed() &&  (pauseInternetToggleButton).isSelected())
+			{
+				click(pauseInternetToggleButton);
 
 				if (getAppRatingDialogObject().isAt()) {
 					getAppRatingDialogObject().clickRemindMeLaterLink();
@@ -419,41 +406,43 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 				} else {
 					utils.log().info("Internet Access is allowed for the Current User Profiles.");
 				}
-			} else
-				utils.log().info("Pause Internet Access for current user profile is already disabled.");
+			} else {
+				utils.log().info("Pause Internet Access for current user profile is disabled.");}
 			return true;
 		} catch (Exception e) {
-			utils.log().info("Pause Internet Access for Current User Profile is not displayed");
+			utils.log().info("Pause Internet Access for Current User Profile is already diabled");
 			return false;
 		}
 	}
 
 	public boolean verifyAssociatedDeviceList() {
+		utils.log().info("                                                       ");
 		utils.log().info("*******************************************************");
 		utils.log().info("List of Devices Associated with Selected User Profile  ");
 		utils.log().info("*******************************************************");
 		
-		int size = super.getDriver().findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView").size();
+		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable").size();
 		utils.log().info("Count of Devices associated with User is : " + size);
+		
 		try {
 				for (int i = 1; i <= size ; i++) 
 				{
 					utils.log().info("Associated Device : " + i);
 					utils.log().info("-------------------------");
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout");
+					"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 					
 					for (MobileElement e : entity) {
 						try {
-							if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/device_type_icon']").isDisplayed())
+							if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Profiles_Screen_Image_Device["+i+"]\"]").isDisplayed())
 								utils.log().info("Device Image is displayed");
 						} catch (Exception exp) {
 							utils.log().info("Device image is not displayed ");
 						}
 
 						try {
-							if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
-								utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']")
+							if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_Device["+i+"]\"]").isDisplayed())
+								utils.log().info("Device Name: " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_Device["+i+"]\"]")
 										.getText() + " is associated with the user : " + userProfileTitle.getText());
 						} catch (Exception exp) {
 							utils.log().info("Device name associated with the user is not available in the list ");

@@ -47,88 +47,72 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public Integer[] increaseBrightness = { 30, 60, 90 };
 	public Integer[] decreaseBrightness = { 90, 60, 30 };
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
+
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"NavigationBar_Title\"]")
 	public MobileElement mainTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Home\"]")
 	public MobileElement backIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/buttonAll")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"All\"]")
 	public MobileElement allTab;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/button5Ghz")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"5.0 GHz\"]")
 	public MobileElement fiveGhzTab;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/button2.4Ghz")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"2.4 GHz\"]")
 	public MobileElement twentyFourGhzTab;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/buttonEthernet")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Ethernet\"]")
 	public MobileElement ethernetTab;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/img_dining_room_router")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Main\"]")
 	public MobileElement mainRouterImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_DeviceCount\"]")
 	public MobileElement totalDeviceImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtExcellentDevices")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_GreenCount\"]")
 	public MobileElement excellentDeviceImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtMediumDevices")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_OrangeCount\"]")
 	public MobileElement mediumDeviceImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtPoorDevices")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RedCount\"]")
 	public MobileElement poorDeviceImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtRoutername")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Name\"]")
 	public MobileElement mainRouterName;
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Detail_Screen_Button_Edit\"]")
 	public MobileElement mainRouterEditName;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_online")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Status\"]")
 	public MobileElement mainRouterStatus;
 
 	// ====================LED Settings=====================
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtLed")
 	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_LED Settings\"])[1]")
 	public MobileElement ledSettingsText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgLedOpenClose")
 	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_LED Settings\"])[1]")
 	public MobileElement ledExpandImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgLedColor")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Brightness\"]")
 	public MobileElement ledColorImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgMoon")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Moon\"]")
 	public MobileElement ledMoonColorImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgSun")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Icon\"]")
 	public MobileElement ledSunColorImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_led_color_title")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label\"]")
 	public MobileElement chooseColorBrightnessLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/seekBar")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeSlider[@name=\"Device_Detail_Screen_Slider\"]")
 	public MobileElement seekBar;
 
 	@AndroidFindBy(id = "com.arris.sbcBeta:id/ten_progress_tv")
@@ -163,90 +147,87 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	// ====================LED Settings=====================
 
 	// ====================Connected Devices=====================
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/devicesNumbers")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_Connected Devices (5)\"])[1]")
 	public MobileElement connectedDevicesCountText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgDeviceInfoOpen")
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_Connected Devices (2)\"])[1]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Scale\"]")
 	public MobileElement connectedDevicesExpandImage;
 
-	@AndroidFindBy(xpath = "//android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]")
-	public MobileElement deviceName1;
 	// ====================Connected Devices=====================
 
 	// ====================Main Router Details=====================
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_title")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_Details\"])[1]")
 	public MobileElement detailsText;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgDeviceOpenClose")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_Details\"])[1]")
 	public MobileElement mainRouterExpandImage;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_channel")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_ChannelTitle\"]")
 	public MobileElement channelLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtChannelOne")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_5GHzDevice\"]")
 	public MobileElement fiveGhzDeviceCount;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtChannelTwo")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_24GhzDevice\"]")
 	public MobileElement twoFourGhzDeviceCount;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_wan_ip_address")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_WANTitle\"]")
 	public MobileElement wanIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceWanIp")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_WAN\"]")
 	public MobileElement mainDeviceWANIPAddress;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceLanIp")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_LANTitle\"]")
 	public MobileElement lanIPAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceLanIpA")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_LAN\"]")
 	public MobileElement mainDeviceLANIPAddress;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_mac_add_title")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_MacTitle\"]")
 	public MobileElement macAddressLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceMacAddress")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Mac\"]")
 	public MobileElement mainDeviceMACAddress;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_serial_title")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_SerialTitle\"]")
 	public MobileElement serialNumberLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceSerialNum")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_SN\"]")
 	public MobileElement mainDeviceSerialNumber;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_firmware_title")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_FirmwareTitle\"]")
 	public MobileElement firmwareLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceFirmware")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Firmware\"]")
 	public MobileElement firmwareVersion;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txt_dining_room_more_detail_block_model_title")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_ModelTitle\"]")
 	public MobileElement mainDeviceModelNoLabel;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtDeviceModelNumber")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Model\"]")
 	public MobileElement mainDeviceModelNumber;
 
 	// ====================Main Router Details=====================
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/restartRouter")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Detail_Screen_Button\"]")
 	public MobileElement restartRouterButton;
 	
 	//======================  Device Counts ====================
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtTotalDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_DeviceCount\"]")
 	public MobileElement totalDevices;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtExcellentDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_GreenCount\"]")
 	public MobileElement excellentDevices;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtMediumDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_OrangeCount\"]")
 	public MobileElement mediumDevices;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtPoorDevices")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RedCount\"]")
 	public MobileElement poorDevices;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/devicesNumbers")
+	@iOSXCUITFindBy(xpath = "com.arris.sbcBeta:id/devicesNumbers")
 	public MobileElement connectedDevices;
 	
 	//======================  Device Counts ====================
@@ -538,13 +519,13 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		}
 	}
 
-	public boolean clickMainDeviceName() {
-		if (mainRouterName.isDisplayed()) {
-			click(mainRouterName);
-			utils.log().info("Clicked on Main Router Name ");
+	public boolean clickMainDeviceEditIcon() {
+		if (mainRouterEditName.isDisplayed()) {
+			click(mainRouterEditName);
+			utils.log().info("Clicked on Main Router Edit Icon ");
 			return true;
 		} else {
-			utils.log().info("Main Router name is not displayed");
+			utils.log().info("Main Router Edit Icon is not displayed");
 			return false;
 		}
 	}

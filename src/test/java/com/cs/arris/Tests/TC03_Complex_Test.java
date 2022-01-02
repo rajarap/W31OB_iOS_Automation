@@ -19,7 +19,7 @@ import com.cs.arris.Pages.NetworkPage;
 import com.cs.arris.Pages.ParentalControlWithProfilesPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
-//import com.cs.arris.Workflows.HomePage_Workflow;
+import com.cs.arris.Workflows.HomePage_Workflow;
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
  
 
@@ -144,167 +144,168 @@ public class TC03_Complex_Test extends ParentClass
 //		  });
 	  }
 	  
-//	  @Test(priority = 2, dependsOnMethods = {"Login_And_Onboard" })
-//		public void Verify_Parental_Control_UI_Page() {
-//			SoftAssert softcontrol2 = new SoftAssert();
-//			softcontrol2.assertTrue(new HomePage().getFooterIconsPageObject().clickParentalButton());
-//			if(new ParentalControlWithProfilesPage().isAt())
-//				softcontrol2.assertTrue(new ParentalControlWithProfilesPage().verifyUIOnParentalControlProfilesPage());
-//			softcontrol2.assertAll();
-//		}
-//		
-//		@Test(priority = 3, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-//		public void Verify_Add_Profile_Page() {
-//			SoftAssert softcontrol3 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().isAt())
-//				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().enableParentalControl());	
-//			super.pause(2);
-//			try {
-//				if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
-//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
-//			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
-//			
-//			if(new ParentalControlWithProfilesPage().isAt()) {
-//				for(int i = 1; i <= 3; i++)	{
-//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
-//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
-//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
-//				}
-//			}
-//			if(new ParentalControlWithProfilesPage().isAt()) 
-//				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
-//			
+	  @Test(priority = 2, dependsOnMethods = {"Login_And_Onboard" })
+		public void Verify_Parental_Control_UI_Page() {
+			SoftAssert softcontrol2 = new SoftAssert();
+			softcontrol2.assertTrue(new HomePage().getFooterIconsPageObject().clickParentalButton());
+			if(new ParentalControlWithProfilesPage().isAt())
+				softcontrol2.assertTrue(new ParentalControlWithProfilesPage().verifyUIOnParentalControlProfilesPage());
+			softcontrol2.assertAll();
+		}
+		
+		@Test(priority = 3, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Add_Profile_Page() {
+			SoftAssert softcontrol3 = new SoftAssert();
+			
+			if(new ParentalControlWithProfilesPage().isAt())
+			try {
+				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().enableParentalControl());	
+				super.pause(2);
+				if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
+					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
+			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
+			
+			if(new ParentalControlWithProfilesPage().isAt()) {
+				for(int i = 1; i <= 3; i++)	{
+					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
+					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
+					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
+				}
+			}
+			if(new ParentalControlWithProfilesPage().isAt()) 
+				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
+			
 //			if(new ParentalControlWithProfilesPage().isAt()) 
 //				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().deleteUserProfile());
-//			
-//			softcontrol3.assertAll();
-//		}
-//		
-//		@Test(priority = 4, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-//		public void Verify_User_Profile_Page() {
-//			SoftAssert softcontrol4 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().isAt())
-//				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().clickOnUserProfile());
-//			super.pause(5);
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().isAt())
-//				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyUIOnUserProfilePage());
-//			
-//			softcontrol4.assertAll();
-//		}
-//		
-//		@Test(priority = 5, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_User_Profile_Help_Page() {
-//			SoftAssert softcontrol5 = new SoftAssert();
-//			softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickHelpIcon());
-//			super.pause(3);
-//			
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt()){
-//				softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().verifyUIOnUserProfilePage());
-//				softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton());
-//			}
-//			
-//			softcontrol5.assertAll();
-//		}
-//		
-//		@Test(priority = 6, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Edit_User_Profile_Name() {
-//			SoftAssert softcontrol6 = new SoftAssert();
+			
+			softcontrol3.assertAll();
+		}
+		
+		@Test(priority = 4, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_User_Profile_Page() {
+			SoftAssert softcontrol4 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().isAt())
+				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().clickOnUserProfile());
+			super.pause(5);
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().isAt())
+				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyUIOnUserProfilePage());
+			
+			softcontrol4.assertAll();
+		}
+		
+		@Test(priority = 5, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_User_Profile_Help_Page() {
+			SoftAssert softcontrol5 = new SoftAssert();
+			softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickHelpIcon());
+			super.pause(3);
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt()){
+				//softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().verifyUIOnUserProfilePage());
+				softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton());
+			}
+			
+			softcontrol5.assertAll();
+		}
+		
+		@Test(priority = 6, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Edit_User_Profile_Name() {
+			SoftAssert softcontrol6 = new SoftAssert();
 //			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getExistingUserName());
 //			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickUserProfileNameEditButton());
-//			
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()){
-//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog());
-//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName());
-//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton());
-//				super.pause(3);
-//			}
-//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().validateUserProfileEditedName());
-//			softcontrol6.assertAll();
-//		}
-//		
-//		@Test(priority = 7, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Add_Device_To_User_Profile() {
-//			SoftAssert softcontrol7 = new SoftAssert();
-//			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
-//			
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
-//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevicesInAddDevicePage());
-//				utils.log().info("Clicking on Add Device button without selecting any device");
-//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
-//				
-//				if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed()) {
-//					utils.log().info("Alert dialog box with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().description.getText()+ " - is displayed");
-//					softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
-//				}
-//					
-//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
-//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
-//				//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
-//			}
-//			
-//			softcontrol7.assertAll();
-//		}
-//		
-//		@Test(priority = 8, dependsOnMethods = {"Login_And_Onboard"})
-//		public void Verify_Add_Device_Help_Page() {
-//			SoftAssert softcontrol8 = new SoftAssert();
-//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
-//			
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) 
-//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon());
-//			
-//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().isAt()) 
-//				softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton());
-//			
-//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickBackButton());
-//			
-//			softcontrol8.assertAll();
-//		}
-//		
-//		@Test(priority = 9, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Devices_Associated_With_User_Profile() {
-//			SoftAssert softcontrol9 = new SoftAssert();
-//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
-//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedDeviceList());
-//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedDevice());
-//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
-//			
-//			softcontrol9.assertAll();
-//		}
-//		
-//		@Test(priority = 10, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Add_Rule_To_User_Profile() {
-//			SoftAssert softcontrol10 = new SoftAssert();
-//			softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddRuleLink());
-//			
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
-//				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
-//			
-//			softcontrol10.assertAll();
-//		}
-//		
-//		@Test(priority = 11, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Add_EveryDay_Schedule_To_Rule() {
-//			SoftAssert softcontrol11 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) 
-//				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnAddInternetBlockingScheduleDialog());
-//			utils.log().info("                                                          ");
-//			utils.log().info("Selecting same start and stop time");
-//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
-//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-//			
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescription.isDisplayed()) {
-//				utils.log().info("Alert dialog with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescription.getText() + " - is displayed");
-//				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickAlertOKButton());}
-//			
-//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCloseButton());
-//
-//			softcontrol11.assertAll();
-//		}
-//		
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()){
+				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog());
+				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName());
+				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton());
+				super.pause(3);
+			}
+			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().validateUserProfileEditedName());
+			softcontrol6.assertAll();
+		}
+		
+		@Test(priority = 7, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Add_Device_To_User_Profile() {
+			SoftAssert softcontrol7 = new SoftAssert();
+			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevicesInAddDevicePage());
+				
+				utils.log().info("Clicking on Add Device button without selecting any device");
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+				
+				if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed()) {
+					utils.log().info("An Alert message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.getText()+ "  is displayed");
+					//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
+				}
+					
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+				//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
+			}
+			
+			softcontrol7.assertAll();
+		}
+		
+		@Test(priority = 8, dependsOnMethods = {"Login_And_Onboard"})
+		public void Verify_Add_Device_Help_Page() {
+			SoftAssert softcontrol8 = new SoftAssert();
+			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) 
+			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon());
+			
+			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().isAt()) 
+				softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton());
+			
+			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickBackButton());
+			
+			softcontrol8.assertAll();
+		}
+		
+		@Test(priority = 9, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Devices_Associated_With_User_Profile() {
+			SoftAssert softcontrol9 = new SoftAssert();
+			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
+			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedDeviceList());
+			//softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedDevice());
+			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
+			
+			softcontrol9.assertAll();
+		}
+		
+		@Test(priority = 10, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Add_Rule_To_User_Profile() {
+			SoftAssert softcontrol10 = new SoftAssert();
+			softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddRuleLink());
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
+				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+			
+			softcontrol10.assertAll();
+		}
+		
+		@Test(priority = 11, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Add_EveryDay_Schedule_To_Rule() {
+			SoftAssert softcontrol11 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) 
+				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnAddInternetBlockingScheduleDialog());
+			utils.log().info("                                                          ");
+			utils.log().info("Selecting same start and stop time");
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.isDisplayed()) 
+				utils.log().info("Alert dialog with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.getText() + " - is displayed");
+			
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCloseButton());
+
+			softcontrol11.assertAll();
+		}
+		
 //		@Test(priority = 12, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
 //		public void Verify_Select_Start_Time_For_EveryDay_Schedule() {
 //			SoftAssert softcontrol12 = new SoftAssert();
@@ -474,18 +475,18 @@ public class TC03_Complex_Test extends ParentClass
 		
 		
 	  
-		@Test(priority = 25, dependsOnMethods = {"Login_And_Onboard"})
-		public void Verify_Network_UI_Page() {
-			utils.log().info("                     ");
-			utils.log().info("*********************");
-			utils.log().info("Test: Network Page   ");
-			utils.log().info("*********************");
-			SoftAssert softnet2 = new SoftAssert();
-			softnet2.assertTrue(new HomePage().getFooterIconsPageObject().clickNetworkButton());
-			softnet2.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
-//			softnet2.assertTrue(new NetworkPage().verifyUIOnNetworkPage());
-			softnet2.assertAll();
-		}
+//		@Test(priority = 25, dependsOnMethods = {"Login_And_Onboard"})
+//		public void Verify_Network_UI_Page() {
+//			utils.log().info("                     ");
+//			utils.log().info("*********************");
+//			utils.log().info("Test: Network Page   ");
+//			utils.log().info("*********************");
+//			SoftAssert softnet2 = new SoftAssert();
+//			softnet2.assertTrue(new HomePage().getFooterIconsPageObject().clickNetworkButton());
+//			softnet2.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
+////			softnet2.assertTrue(new NetworkPage().verifyUIOnNetworkPage());
+//			softnet2.assertAll();
+//		}
 
 //		@Test(priority = 26, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_Newtork_Help_Page() {
@@ -1026,333 +1027,333 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet38.assertAll();
 //		}
 //		
-		@Test(priority = 63, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
-		public void Verify_General_Settings_UI_Page() 
-		{
-			SoftAssert softnet39 = new SoftAssert();
-			new NetworkPage().clickGeneralSettings(); 
-			try{
-				if(new NetworkPage().getAppRatingPageObject().isAt())
-					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
-			}catch(Exception e) {}
-			if(new NetworkPage().getGeneralSettingsPageObject().isAt())
-				try{
-					if(new NetworkPage().getAppRatingPageObject().isAt())
-						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
-				}catch(Exception e) {}
-				softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().verifyUIOnGeneralSettingsPage());
-			softnet39.assertAll();
-		}
-		
-		@Test(priority = 64, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
-		public void Verify_General_Settings_UPnP_Settings() 
-		{
-			SoftAssert softnet40 = new SoftAssert();
-			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().disableUPnP());
-			
-			try{
-				if(new NetworkPage().getAppRatingPageObject().isAt())
-					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
-			}catch(Exception e) {
-				utils.log().info("App Rating Dialog did not appear");
-			}
-			
-			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableUPnP());
-			super.pause(5);
-			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickUPNPInfoIcon());
-			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().isAt())
-				softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().clickCloseButton());
-			softnet40.assertAll();
-		}
-		
-		@Test(priority = 65, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
-		public void Verify_General_Settings_IPv6_Enable_Settings() 
-		{
-			SoftAssert softnet39 = new SoftAssert();
-			softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickIPv6InfoIcon());
-			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().isAt())
-				softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().clickCloseButton());
-			softnet39.assertAll();
-		}
-		
-		@Test(priority = 66, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
-		public void Verify_General_Settings_Bridge_Mode_Settings() 
-		{
-			SoftAssert softnet42 = new SoftAssert();
-			softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBridgeModeInfoIcon());
-			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().isAt())
-				softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().clickCloseButton());
-			softnet42.assertAll();
-		}
-		
-		@Test(priority = 67, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
-		public void Verify_General_Settings_Port_Forwarding_Settings() 
-		{
-			SoftAssert softnet43 = new SoftAssert();
-			new NetworkPage().getGeneralSettingsPageObject().clickPortForwardingink();
-			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt())
-				softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().verifyUIOnPortForwardingPage());
-			softnet43.assertAll();
-		}
-		
-		@Test(priority = 68, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
-		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page() 
-		{
-			SoftAssert softnet44 = new SoftAssert();
-			new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
-			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().isAt())
-			{
-				//super.getDriver().hideKeyboard();
-				softnet44.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyUIOnPortForwardingAddRulePage());
-				softnet44.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickCloseButton());
-			}
-			softnet44.assertAll();
-		}
-		
-		@Test(priority = 69, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
-		public void Verify_General_Settings_Port_Forwarding_Add_Rules() 
-		{
-			SoftAssert softnet45 = new SoftAssert();
+//		@Test(priority = 63, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+//		public void Verify_General_Settings_UI_Page() 
+//		{
+//			SoftAssert softnet39 = new SoftAssert();
+//			new NetworkPage().clickGeneralSettings(); 
+//			try{
+//				if(new NetworkPage().getAppRatingPageObject().isAt())
+//					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//			}catch(Exception e) {}
+//			if(new NetworkPage().getGeneralSettingsPageObject().isAt())
+//				try{
+//					if(new NetworkPage().getAppRatingPageObject().isAt())
+//						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//				}catch(Exception e) {}
+//				softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().verifyUIOnGeneralSettingsPage());
+//			softnet39.assertAll();
+//		}
+//		
+//		@Test(priority = 64, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		public void Verify_General_Settings_UPnP_Settings() 
+//		{
+//			SoftAssert softnet40 = new SoftAssert();
+//			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().disableUPnP());
+//			
+//			try{
+//				if(new NetworkPage().getAppRatingPageObject().isAt())
+//					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//			}catch(Exception e) {
+//				utils.log().info("App Rating Dialog did not appear");
+//			}
+//			
+//			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableUPnP());
+//			super.pause(5);
+//			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickUPNPInfoIcon());
+//			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().isAt())
+//				softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().clickCloseButton());
+//			softnet40.assertAll();
+//		}
+//		
+//		@Test(priority = 65, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		public void Verify_General_Settings_IPv6_Enable_Settings() 
+//		{
+//			SoftAssert softnet39 = new SoftAssert();
+//			softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickIPv6InfoIcon());
+//			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().isAt())
+//				softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsIPv6EnableInfoDialogObject().clickCloseButton());
+//			softnet39.assertAll();
+//		}
+//		
+//		@Test(priority = 66, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		public void Verify_General_Settings_Bridge_Mode_Settings() 
+//		{
+//			SoftAssert softnet42 = new SoftAssert();
+//			softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBridgeModeInfoIcon());
+//			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().isAt())
+//				softnet42.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsBridgeModeInfoDialogObject().clickCloseButton());
+//			softnet42.assertAll();
+//		}
+//		
+//		@Test(priority = 67, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		public void Verify_General_Settings_Port_Forwarding_Settings() 
+//		{
+//			SoftAssert softnet43 = new SoftAssert();
+//			new NetworkPage().getGeneralSettingsPageObject().clickPortForwardingink();
+//			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt())
+//				softnet43.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().verifyUIOnPortForwardingPage());
+//			softnet43.assertAll();
+//		}
+//		
+//		@Test(priority = 68, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
+//		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page() 
+//		{
+//			SoftAssert softnet44 = new SoftAssert();
+//			new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
+//			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().isAt())
+//			{
+//				//super.getDriver().hideKeyboard();
+//				softnet44.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyUIOnPortForwardingAddRulePage());
+//				softnet44.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickCloseButton());
+//			}
+//			softnet44.assertAll();
+//		}
+//		
+//		@Test(priority = 69, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
+//		public void Verify_General_Settings_Port_Forwarding_Add_Rules() 
+//		{
+//			SoftAssert softnet45 = new SoftAssert();
+////			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt()) 
+////			{
+//			for(int i = 1 ; i <=3 ; i++)
+//			{
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().selectTCP());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
+////				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//				
+//				try {
+//					softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().allFieldsAreMandatoryError.isDisplayed()) {
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed()) {
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed()) {
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed()) {
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed()) {
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
+//					else
+//						utils.log().info("All Port details are valid");
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//				}catch(Exception e) {utils.log().info("All Port details entered are valid");}
+//				super.pause(15);
+//				try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
+//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
+//								.getPortRuleEditFailedDialogObject().clickOKButton());
+//						}catch(Exception e) {
+//							//utils.log().info("Port Rule Edit Failed Dialog did not appear");
+//							}
+//			}
+//			softnet45.assertAll();
+//		}
+//			
+//
+//		@Test(priority = 70)
+//
+//		public void Verify_General_Settings_Port_Forwarding_Edit_Rules() 
+//		{
+//			SoftAssert softnet46 = new SoftAssert();
 //			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt()) 
 //			{
-			for(int i = 1 ; i <=3 ; i++)
-			{
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton());
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().selectTCP());
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
-				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
-//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-				
-				try {
-					softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().allFieldsAreMandatoryError.isDisplayed()) {
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed()) {
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed()) {
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed()) {
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed()) {
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-					else
-						utils.log().info("All Port details are valid");
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-				}catch(Exception e) {utils.log().info("All Port details entered are valid");}
-				super.pause(15);
-				try {
-					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
-						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
-								.getPortRuleEditFailedDialogObject().clickOKButton());
-						}catch(Exception e) {
-							//utils.log().info("Port Rule Edit Failed Dialog did not appear");
-							}
-			}
-			softnet45.assertAll();
-		}
-			
-
-		@Test(priority = 70)
-
-		public void Verify_General_Settings_Port_Forwarding_Edit_Rules() 
-		{
-			SoftAssert softnet46 = new SoftAssert();
-			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().isAt()) 
-			{
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickEditPortFowardingRuleIcon());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().selectUDP());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
-				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-				try {
-					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().allFieldsAreMandatoryError.isDisplayed())
-						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
-						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
-						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
-						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
-					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
-						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
-					else
-						utils.log().info("All Port details are valid");
-					softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-				}catch(Exception e) {utils.log().info("All Port details are valid");}
-				
-				super.pause(15);
-				try {
-					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
-					softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
-							.getPortRuleEditFailedDialogObject().clickOKButton());
-					}catch(Exception e) {utils.log().info("Port Rule Edit Failed Dialog did not appear");}
-			}
-			softnet46.assertAll();
-		}
-////
-////		@Test(priority = 71)
-////		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations() 
-////		{
-////			SoftAssert softnet47 = new SoftAssert();
-////			new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
-////			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().isAt())
-////			{
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterPortForwardingRuleName());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortStart());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortEnd());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyInternalPortStartLessThenPortEnd());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortStart());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortEnd());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyExternalPortStartLessThenPortEnd());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterValidIPAddress());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInValidIPAddress());
-////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-////				try {
-////					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().portNameDialogError.isDisplayed())
-////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
-////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
-////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
-////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
-////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
-////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
-////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
-////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
-////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
-////					else
-////						utils.log().info("All Port details are valid");
-////					softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-////				}catch(Exception e) {utils.log().info("All Port details are valid");}
-////				
-////				super.pause(20);
-////				try {
-////				if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
-////					softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
-////							.getPortRuleEditFailedDialogObject().clickOKButton());
-////					}catch(Exception e) {utils.log().info("Port Rule Edit Failed Dialog did not appear");}
-////			}
-////			softnet47.assertAll();
-////		}
-//		
-		@Test(priority = 72, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
-		public void Verify_General_Settings_Port_Forwarding_Help_Page() 
-		{
-			SoftAssert softnet48 = new SoftAssert();
-			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickHelpButton());
-			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().isAt())
-				softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().clickCloseButton());
-			
-			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickBackButton());
-			try{
-				if(new NetworkPage().getAppRatingPageObject().isAt())
-					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
-			}catch(Exception e) {
-				utils.log().info("App Rating Dialog did not appear");
-			}
-			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBackButton());
-			softnet48.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
-			softnet48.assertAll();
-		}
-		
-//		@Test(priority = 73, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
-//		public void Verify_Guest_WiFi_Network_Page() 
-//		{
-//			SoftAssert softnet49 = new SoftAssert();
-//			try {
-//				if (new NetworkPage().guestNetworkToggleButton.isSelected()) 
-//					new NetworkPage().disableGuestWifiNetwork();
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickEditPortFowardingRuleIcon());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().selectUDP());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
+//				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//				try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().allFieldsAreMandatoryError.isDisplayed())
+//						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
+//						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
+//						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
+//						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
+//						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+//					else
+//						utils.log().info("All Port details are valid");
+//					softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//				}catch(Exception e) {utils.log().info("All Port details are valid");}
 //				
-//				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickCloseButton());
-//				super.pause(40);
-//				if(new NetworkPage().joinButton.isDisplayed())
-//					softnet49.assertTrue(new NetworkPage().clickJoinButton());
-//				super.pause(20);
-//			}catch(Exception e) {}
-//			
-//			softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
-//			try {
-//				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-//				super.pause(40);
-//				
-//				if(new NetworkPage().joinButton.isDisplayed())
-//					softnet49.assertTrue(new NetworkPage().clickJoinButton());
 //				super.pause(15);
-//			}catch(Exception e) {}
+//				try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
+//					softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
+//							.getPortRuleEditFailedDialogObject().clickOKButton());
+//					}catch(Exception e) {utils.log().info("Port Rule Edit Failed Dialog did not appear");}
+//			}
+//			softnet46.assertAll();
+//		}
+//////
+//////		@Test(priority = 71)
+//////		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations() 
+//////		{
+//////			SoftAssert softnet47 = new SoftAssert();
+//////			new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickAddRuleButton();
+//////			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().isAt())
+//////			{
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterPortForwardingRuleName());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortStart());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInternalPortEnd());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyInternalPortStartLessThenPortEnd());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortStart());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterExternalPortEnd());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyExternalPortStartLessThenPortEnd());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterValidIPAddress());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().verifyEnterInValidIPAddress());
+//////				softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//////				try {
+//////					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().portNameDialogError.isDisplayed())
+//////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+//////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
+//////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
+//////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
+//////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
+//////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
+//////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
+//////					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
+//////						softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+//////					else
+//////						utils.log().info("All Port details are valid");
+//////					softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//////				}catch(Exception e) {utils.log().info("All Port details are valid");}
+//////				
+//////				super.pause(20);
+//////				try {
+//////				if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
+//////					softnet47.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
+//////							.getPortRuleEditFailedDialogObject().clickOKButton());
+//////					}catch(Exception e) {utils.log().info("Port Rule Edit Failed Dialog did not appear");}
+//////			}
+//////			softnet47.assertAll();
+//////		}
+////		
+//		@Test(priority = 72, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
+//		public void Verify_General_Settings_Port_Forwarding_Help_Page() 
+//		{
+//			SoftAssert softnet48 = new SoftAssert();
+//			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickHelpButton());
+//			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().isAt())
+//				softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingHelpPageObject().clickCloseButton());
 //			
-//			try {
-//				if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
-//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
-//					//softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().validateGuestNetworkPage());
-//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
-//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
-//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
-//					if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-//						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-//					}
-//					super.pause(30);
-//				}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
-//			
-//			try {
-//				if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
-//					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
-//					softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
-//						if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
-//							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
-//							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
-//							try {
-//								if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-//									softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-//							}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
-//						}
-//						super.pause(35);
-//						
-//						if(new NetworkPage().joinButton.isDisplayed()) {
-//							softnet49.assertTrue(new NetworkPage().clickJoinButton());
-//						super.pause(20);}
-//					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
-//			}catch(Exception e) {utils.log().info("Guest Network is not Created");}
-//			
-//			softnet49.assertAll();
+//			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().clickBackButton());
+//			try{
+//				if(new NetworkPage().getAppRatingPageObject().isAt())
+//					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//			}catch(Exception e) {
+//				utils.log().info("App Rating Dialog did not appear");
+//			}
+//			softnet48.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickBackButton());
+//			softnet48.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
+//			softnet48.assertAll();
 //		}
 //		
-//		@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
-//		public void Verify_Extended_WiFi_Settings_Page() 
-//		{
-//			SoftAssert softnet50 = new SoftAssert();
-//			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-//			
-//			softnet50.assertTrue(new NetworkPage().enable5GHzWidebandMode());
-//			if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
-//				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
-//			super.pause(15);
-//			
-//			softnet50.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
-//			if(new NetworkPage().get5GHzWidebandModeDialogObject().isAt())
-//				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeDialogObject().clickCloseButton());
-//			
-//			softnet50.assertTrue(new NetworkPage().enableBandSteeringMode());
-//			if(new NetworkPage().getBandSteeringModeAlertDialogObject().isAt())
-//				softnet50.assertTrue(new NetworkPage().getBandSteeringModeAlertDialogObject().clickOKButton());
-//			
-//			softnet50.assertTrue(new NetworkPage().clickBandSteeringInfoIcon());
-//			if(new NetworkPage().getBandSteeringModeDialogObject().isAt())
-//				softnet50.assertTrue(new NetworkPage().getBandSteeringModeDialogObject().clickCloseButton());
-//			
-//			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-//			softnet50.assertAll();
-//		}
+////		@Test(priority = 73, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+////		public void Verify_Guest_WiFi_Network_Page() 
+////		{
+////			SoftAssert softnet49 = new SoftAssert();
+////			try {
+////				if (new NetworkPage().guestNetworkToggleButton.isSelected()) 
+////					new NetworkPage().disableGuestWifiNetwork();
+////				
+////				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickCloseButton());
+////				super.pause(40);
+////				if(new NetworkPage().joinButton.isDisplayed())
+////					softnet49.assertTrue(new NetworkPage().clickJoinButton());
+////				super.pause(20);
+////			}catch(Exception e) {}
+////			
+////			softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
+////			try {
+////				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+////				super.pause(40);
+////				
+////				if(new NetworkPage().joinButton.isDisplayed())
+////					softnet49.assertTrue(new NetworkPage().clickJoinButton());
+////				super.pause(15);
+////			}catch(Exception e) {}
+////			
+////			try {
+////				if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
+////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
+////					//softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().validateGuestNetworkPage());
+////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
+////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
+////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
+////					if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+////						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+////					}
+////					super.pause(30);
+////				}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
+////			
+////			try {
+////				if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
+////					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
+////					softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
+////						if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
+////							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
+////							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
+////							try {
+////								if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+////									softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+////							}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
+////						}
+////						super.pause(35);
+////						
+////						if(new NetworkPage().joinButton.isDisplayed()) {
+////							softnet49.assertTrue(new NetworkPage().clickJoinButton());
+////						super.pause(20);}
+////					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
+////			}catch(Exception e) {utils.log().info("Guest Network is not Created");}
+////			
+////			softnet49.assertAll();
+////		}
+////		
+////		@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+////		public void Verify_Extended_WiFi_Settings_Page() 
+////		{
+////			SoftAssert softnet50 = new SoftAssert();
+////			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+////			
+////			softnet50.assertTrue(new NetworkPage().enable5GHzWidebandMode());
+////			if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+////				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
+////			super.pause(15);
+////			
+////			softnet50.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
+////			if(new NetworkPage().get5GHzWidebandModeDialogObject().isAt())
+////				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeDialogObject().clickCloseButton());
+////			
+////			softnet50.assertTrue(new NetworkPage().enableBandSteeringMode());
+////			if(new NetworkPage().getBandSteeringModeAlertDialogObject().isAt())
+////				softnet50.assertTrue(new NetworkPage().getBandSteeringModeAlertDialogObject().clickOKButton());
+////			
+////			softnet50.assertTrue(new NetworkPage().clickBandSteeringInfoIcon());
+////			if(new NetworkPage().getBandSteeringModeDialogObject().isAt())
+////				softnet50.assertTrue(new NetworkPage().getBandSteeringModeDialogObject().clickCloseButton());
+////			
+////			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+////			softnet50.assertAll();
+////		}
 }
