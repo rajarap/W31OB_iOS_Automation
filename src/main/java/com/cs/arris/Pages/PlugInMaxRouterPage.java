@@ -20,14 +20,17 @@ public class PlugInMaxRouterPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBAHelp\"]")
 	public MobileElement helpIcon;
 	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBA Arrow\"]")
+	public MobileElement backButton;
+	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBA_Plug_In_Max_Router_Screen_Button\"]")
 	public MobileElement nextButton;
 	
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/title_text']") // text = LET'S SET UP YOUR HOME NETWORK
+	// text = LET'S SET UP YOUR HOME NETWORK
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"BOBA_Plug_In_Max_Router_Screen_TitleLabel\"]")
 	public MobileElement plugInYourMaxRouterText;
 	
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/description_text']") // text = You are only a few steps away from setting up your home network.
+	// text = You are only a few steps away from setting up your home network.
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"BOBA_Plug_In_Max_Router_Screen_SubTitleLabel\"]")
 	public MobileElement routerSetupStepsText;
 	
@@ -38,6 +41,7 @@ public class PlugInMaxRouterPage extends ParentClass implements Page
 	
 	public void clickNextButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"NEXT\"`]";
 		utils.log().info("Plugin Max Router Page - Clicked on Next Button");
 		click(nextButton);
 	}

@@ -3,6 +3,7 @@ package com.cs.arris.Pages;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.PageFactory;
 
 import com.cs.arris.Base.ParentClass;
@@ -96,6 +97,30 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	public MobileElement deleteProfileConfirmationText;
 	
 	//Delete Associated Rules
+	
+	//Delete User Profiles
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Screen_IButton_DeleteClose\"]")
+	public MobileElement closeButton;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_AlertTitle\"]")
+	public MobileElement alertTitle;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_AlertNote\"]")
+	public MobileElement alertSubTitle;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Screen_Button_Ok\"]")
+	public MobileElement okButton;
+	
+	//Delete Alert Dialog
+	
+	
+	//Delete User Profiles
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Delete\"]")
+	public MobileElement deleteUserProfile;
+	
+	//Delete User Profiles
 
 	
 	public ParentalControlWithProfilesPage() {
@@ -199,41 +224,38 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 			else
 				utils.log().info("Enable Parental Control Text is not displayed");
 			
-//			try {
-//				if (parentalControlToggleButton.isDisplayed() && parentalControlToggleButton.isSelected())
-//					utils.log().info("Parental Control Switch button is enabled");
-//				else
-//					utils.log().info("Parental Control Switch button is disabled");
-//			}catch(Exception exp) {utils.log().info("Parental Control is not displayed");}
-//			
-//			try {
-//				if (globalSettingText.isDisplayed())
-//					utils.log().info("Global Settings Text is displayed");
-//				}catch(Exception e) {utils.log().info("Global Settings Text is not displayed since there are no profiles created");}
-//
-//			try {
-//				if (globalSettingExpandButton.isDisplayed())
-//					utils.log().info("Global Settings Expand button is displayed");
-//				click(globalSettingExpandButton);
-//				}catch(Exception e) {utils.log().info("Global Settings Expand button is not displayed since there are no profiles created");}
-//			
-//
-//			if (pauseAllProfilesText.isDisplayed())
-//				utils.log().info(pauseAllProfilesText.getText() + " text is displayed");
-//			else
-//				utils.log().info("Pause All Profiles text is not displayed");
-//		
-//			if (pauseInternetAccessToAllText.isDisplayed())
-//				utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
-//			else 
-//				utils.log().info("Pause Internet For All Profiles text is not displayed");
-//			
-//			try {
-//				if (pauseAllProfilesToggleButton.isDisplayed() && pauseAllProfilesToggleButton.isSelected())
-//					utils.log().info("Pause All Profiles Switch button is enabled");
-//				else
-//					utils.log().info("Pause All Profiles Switch button is disabled");
-//			}catch(Exception exp) {utils.log().info("Pause All Profiles is not displayed");}
+			try {
+				if (parentalControlToggleButton.isSelected())
+					utils.log().info("Parental Control Toggle button is enabled");
+				else
+					utils.log().info("Parental Control Toggle button is disabled");
+			}catch(Exception exp) {utils.log().info("Parental Control is not displayed");}
+			
+			try {
+				if (globalSettingText.isDisplayed())
+					utils.log().info("Global Settings Text is displayed");
+				}catch(Exception e) {utils.log().info("Global Settings Text is not displayed since there are no profiles created");}
+
+			try {
+				if (globalSettingExpandButton.isDisplayed())
+					utils.log().info("Global Settings Expand button is displayed");
+				click(globalSettingExpandButton);
+				}catch(Exception e) {utils.log().info("Global Settings Expand button is not displayed since there are no profiles created");}
+			
+			try {
+				if (pauseAllProfilesText.isDisplayed())
+					utils.log().info(pauseAllProfilesText.getText() + " text is displayed");
+			}catch(Exception e) {utils.log().info("Pause All Profiles text is not displayed");}
+		
+			try {
+				if (pauseInternetAccessToAllText.isDisplayed())
+				utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
+			}catch(Exception e) {utils.log().info("Pause Internet For All Profiles text is not displayed");}
+			
+			try {
+				if (pauseAllProfilesToggleButton.isDisplayed() && pauseAllProfilesToggleButton.isSelected())
+					utils.log().info("Pause All Profiles Switch button is enabled");
+			}catch(Exception exp) {utils.log().info("Pause All Profiles is not displayed");}
 
 			if (userProfilesText.isDisplayed())
 				utils.log().info(userProfilesText.getText() + " text is displayed");
@@ -250,6 +272,50 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					utils.log().info(noProfilesText1.getText());
 			}catch(Exception exp) {utils.log().info("Currently there are users under Parental Control ");}
 
+			return true;
+
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public boolean verifyUIForGlobalSettingsOnProfilesPage() {
+		utils.log().info("                                                                          ");
+		utils.log().info("************************************************************8*************");
+		utils.log().info("Verifying Global Settings Objects on Parental Control - Profiles Tab      ");
+		utils.log().info("**************************************************************************");
+
+		try {
+		
+			try {
+				if (globalSettingText.isDisplayed())
+					utils.log().info("Global Settings Text is displayed");
+				}catch(Exception e) {utils.log().info("Global Settings Text is not displayed since there are no profiles created");}
+
+			try {
+				if (globalSettingExpandButton.isDisplayed())
+					utils.log().info("Global Settings Expand button is displayed");
+				click(globalSettingExpandButton);
+				}catch(Exception e) {utils.log().info("Global Settings Expand button is not displayed since there are no profiles created");}
+			
+
+			if (pauseAllProfilesText.isDisplayed())
+				utils.log().info(pauseAllProfilesText.getText() + " text is displayed");
+			else
+				utils.log().info("Pause All Profiles text is not displayed");
+		
+			if (pauseInternetAccessToAllText.isDisplayed())
+				utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
+			else 
+				utils.log().info("Pause Internet For All Profiles text is not displayed");
+			
+			try {
+				if (pauseAllProfilesToggleButton.isDisplayed() && pauseAllProfilesToggleButton.isSelected())
+					utils.log().info("Pause All Profiles Switch button is enabled");
+				else
+					utils.log().info("Pause All Profiles Switch button is disabled");
+			}catch(Exception exp) {utils.log().info("Pause All Profiles is not displayed");}
+			
 			return true;
 
 		} catch (Exception e) {
@@ -303,7 +369,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 	public boolean enableParentalControl() {
 		try {
-			if(parentalControlToggleButton.isDisplayed() && (!(parentalControlToggleButton.isSelected()))) {
+			if(!(parentalControlToggleButton.isSelected())) {
 				click(parentalControlToggleButton);
 				utils.log().info("Parental Control is enabled. Add Profile option is enabled to add new profiles.");
 			}else {
@@ -318,7 +384,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 	public boolean disableParentalControl() {
 		try {
-			if(parentalControlToggleButton.isDisplayed() && (parentalControlToggleButton.isSelected()))
+			if(parentalControlToggleButton.isSelected())
 				click(parentalControlToggleButton);
 			utils.log().info("Parental Control is disabled. Add Profile option is disabled");
 			return true;
@@ -330,7 +396,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	
 	public boolean enablePauseAllProfiles() {
 		try {
-			if(pauseAllProfilesToggleButton.isDisplayed() && (!(pauseAllProfilesToggleButton.isSelected()))) {
+			if(!(pauseAllProfilesToggleButton.isSelected())) {
 				click(pauseAllProfilesToggleButton);
 				utils.log().info("Pause All Profiles is enabled");}
 			return true;
@@ -342,7 +408,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 
 	public boolean disablePauseAllProfiles() {
 		try {
-			if(pauseAllProfilesToggleButton.isDisplayed() && (pauseAllProfilesToggleButton.isSelected()))
+			if(pauseAllProfilesToggleButton.isSelected())
 				click(parentalControlToggleButton);
 			utils.log().info("Pause All Profiles is disabled");
 			return true;
@@ -536,35 +602,27 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 	}
 	
 	public boolean deleteUserProfile() {
-		//utils.log().info("****************************************");
-		utils.log().info("Deleting a User Profile from the list  ");
-		//utils.log().info("****************************************");
-		super.generateRandomNumber13();
+		
+		utils.log().info("                                      ");
+		utils.log().info("**************************************");
+		utils.log().info("Deleting a User Profile from the list ");
+		utils.log().info("**************************************");
 
-		try {
-			for (int i = 3; i <= 3; i++) {
-//				utils.log().info("User Profile : " + i);
-//				utils.log().info("------------------");
+			try {
+				utils.log().info("Delete User Profile ");
+				utils.log().info("--------------------");
+				
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i
-								+ "]");
-
-				for (MobileElement e : entity) {
-					
-					try {
-						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed())
-							utils.log().info("Deleting on User profile Name : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']")
-							.getText());
-							elementX = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getLocation().getX();
-							elementY = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getLocation().getY();
-							new SwipeOnElement().swipeAction(elementX, elementY, "Left");
-							if(deleteProfileIcon.isDisplayed())
-								click(deleteProfileIcon);
-					} catch (Exception exp) {
-						utils.log().info("Unable to Delete the selected user profile");
-					}
-				}
-			}
+				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]");
+	
+			    super.swipe(Direction.LEFT);
+			    
+			    if(deleteUserProfile.isDisplayed()) {
+			    	click(deleteUserProfile); }
+			    
+			    if(alertTitle.isDisplayed()) {
+			    	click(okButton); }
+			    super.pause(28);
 			return true;
 		} catch (Exception exp) {
 			utils.log().info("User Profile does not exits. Please create one");

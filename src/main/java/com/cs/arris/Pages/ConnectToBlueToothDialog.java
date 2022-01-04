@@ -36,6 +36,7 @@ public class ConnectToBlueToothDialog extends ParentClass implements Page
 	
 	public void clickOkButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"OK\"`]";
 		utils.log().info("Connect to Bluetooth Page - Clicked on OK Button");
 		click(okButton);
 	}

@@ -164,19 +164,20 @@ public class TC03_Complex_Test extends ParentClass
 				if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
 			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
+			super.pause(5);
 			
 			if(new ParentalControlWithProfilesPage().isAt()) {
-				for(int i = 1; i <= 3; i++)	{
+				for(int i = 1; i <= 4; i++)	{
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
 				}
 			}
-			if(new ParentalControlWithProfilesPage().isAt()) 
-				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
 			
-//			if(new ParentalControlWithProfilesPage().isAt()) 
-//				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().deleteUserProfile());
+			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().deleteUserProfile());
+			
+			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUIForGlobalSettingsOnProfilesPage());
+			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
 			
 			softcontrol3.assertAll();
 		}
@@ -484,10 +485,10 @@ public class TC03_Complex_Test extends ParentClass
 //			SoftAssert softnet2 = new SoftAssert();
 //			softnet2.assertTrue(new HomePage().getFooterIconsPageObject().clickNetworkButton());
 //			softnet2.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
-////			softnet2.assertTrue(new NetworkPage().verifyUIOnNetworkPage());
+//			softnet2.assertTrue(new NetworkPage().verifyUIOnNetworkPage());
 //			softnet2.assertAll();
 //		}
-
+//
 //		@Test(priority = 26, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_Newtork_Help_Page() {
 //			SoftAssert softnet3 = new SoftAssert();

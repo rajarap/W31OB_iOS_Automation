@@ -47,6 +47,7 @@ public TestUtils utils = new TestUtils();
 	
 	public void clickNextButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"NEXT\"`]";
 		click(nextButton);
 		utils.log().info("Connecting mAX Router to Mobile Device Page - Clicked on Next Button");
 	}

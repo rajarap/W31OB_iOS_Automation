@@ -31,7 +31,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	public int elementX;
 	public int elementY;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_EditProfile\"]")
 	public MobileElement userProfileTitle;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
@@ -66,7 +66,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_DeviceCount\"]")
 	public MobileElement deviceCountPausedForProfile;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_AddDevice\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"+ Add Device\"]")
 	public MobileElement addDeviceLink;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_Associated\"]")
@@ -84,7 +84,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_RuleCounter\"]")
 	public MobileElement ruleCountForProfile;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_AddRule\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"+ Add Rule\"]")
 	public MobileElement addRuleLink;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_AssociatedRules\"]")
@@ -93,11 +93,22 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_Total\"]")
 	public MobileElement totalTimeActiveRule;
 
-	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
 	public MobileElement enableTimeBlockToggleButton;
 
 	
+	//Delete User Profiles
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Delete\"]")
+	public MobileElement userProfile;
+	
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
+//	public MobileElement deleteDeviceLabel;
+//	
+//	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
+//	public MobileElement deleteDeviceConfirmationText;
+	
+	//Delete User Profiles
 	
 	//Delete Associated Devices
 	
@@ -464,9 +475,53 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		utils.log().info("*****************************************************");
 		
 		try {
-				for (int i = 1; i <= 1 ; i++) 
+				for (int i = 1; i <= 3 ; i++) 
 				{
 					utils.log().info("Deleting Associated Device : " + i);
+					utils.log().info("---------------------------------");
+					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+							"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout");
+					
+					for (MobileElement e : entity) {
+						try {
+							if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
+								utils.log().info("Device Name: " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']")
+										.getText() + " is associated with the user : " + userProfileTitle.getText());
+						} catch (Exception exp) {
+							utils.log().info("Device name associated with the user is not available in the list ");
+						}
+						
+						try {
+							if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").isDisplayed())
+								elementX = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getLocation().getX();
+								elementY = super.getDriver().findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/device_name']").getLocation().getY();
+								new SwipeOnElement().swipeAction(elementX, elementY, "Left");
+								if(deleteDeviceIcon.isDisplayed())
+									click(deleteDeviceIcon);
+						} catch (Exception exp) {
+							utils.log().info("Unable to Delete the device associated with user");
+						}
+						
+						utils.log().info("****************************************************");
+						utils.log().info("                                                    ");
+					}
+				}
+			return true;
+		} catch (Exception e) {
+			utils.log().info("No devices from the Device List are associated with this user : " + userProfileTitle.getText());
+			return false;
+		}
+	}
+	
+	public boolean deleteUserProfiles() {
+			utils.log().info("**********************");
+			utils.log().info("Delete A User Profile ");
+			utils.log().info("**********************");
+		
+			try {
+				for (int i = 1; i <= 3 ; i++) 
+				{
+					utils.log().info("Deleting A User Profile : " + i);
 					utils.log().info("---------------------------------");
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 							"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout");

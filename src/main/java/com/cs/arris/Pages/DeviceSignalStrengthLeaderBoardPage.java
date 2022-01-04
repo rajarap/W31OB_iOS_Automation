@@ -26,6 +26,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	public TestUtils utils = new TestUtils();
 	public List<MobileElement> listOfDevices;
 	public int counter = 1;
+	public int size;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_TitleLabel\"]")
 	public MobileElement leaderBoardTitleText;
@@ -39,17 +40,25 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Button\"]")
 	public MobileElement signalStrengthOptions;
 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Strong to weak\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" Strong to weak\"]")
 	public MobileElement strongToWeak;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Weak to strong\"]")
 	public MobileElement weakToStrong;
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" Strong to weak\"]")
+	//**/XCUIElementTypeStaticText[`label == " Strong to weak"`]
+	//Strong to weak
 	public MobileElement selectStrongToWeak;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" Weak to strong\"]")
+	//**/XCUIElementTypeStaticText[`label == " Weak to strong"`]
+	//Weak to strong
 	public MobileElement selectWeakToStrong;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"leftArrowAngle\"]")
+	//**/XCUIElementTypeButton[`label == "leftArrowAngle"`]
+	public MobileElement listBoxArrow;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button\"]")
 	public MobileElement closeIcon;
@@ -131,8 +140,11 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 //			int size = new HomePage().getBitRateDevicesCount();
 //			utils.log().info("Bit Rate Device count is : " + size);
 			
+			size = super.getDeviceSignalStrengthCount(countOfDevices.getText());
+			utils.log().info("Bit Rate Device count is : " + size);
+			
 		try {
-			for (int i = 1; i <= 2; i++) {
+			for (int i = 1; i <= size; i++) {
 				utils.log().info("Devices  : " + i);
 				utils.log().info("---------------------");
 
@@ -205,7 +217,10 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			utils.log().info("Sorting Device Signal Strength Leader Board From Strong to Weak ");
 			utils.log().info("****************************************************************");
 
-			int size = new HomePage().getBitRateDevicesCount();
+//			int size = new HomePage().getBitRateDevicesCount();
+//			utils.log().info("Bit Rate Device count is : " + size);
+			
+			size = super.getDeviceSignalStrengthCount(countOfDevices.getText());
 			utils.log().info("Bit Rate Device count is : " + size);
 			
 			click(signalStrengthOptions);
@@ -285,7 +300,10 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			utils.log().info("Sorting Device Signal Strength Leader Board From Weak to Strong ");
 			utils.log().info("****************************************************************");
 
-			int size = new HomePage().getBitRateDevicesCount();
+//			int size = new HomePage().getBitRateDevicesCount();
+//			utils.log().info("Bit Rate Device count is : " + size);
+			
+			size = super.getDeviceSignalStrengthCount(countOfDevices.getText());
 			utils.log().info("Bit Rate Device count is : " + size);
 			
 			click(signalStrengthOptions);

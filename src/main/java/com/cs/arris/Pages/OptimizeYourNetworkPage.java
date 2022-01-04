@@ -29,10 +29,10 @@ public class OptimizeYourNetworkPage  extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"BOBAHelp\"]")
 	public MobileElement helpIcon;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Placement_Tips_Network_Screen_Button_Help\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Placement_Tips_Network_Screen_Label_Help\"]")
 	public MobileElement helpMeOptimizeButton;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Placement_Tips_Network_Screen_Label_Skip\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Placement_Tips_Network_Screen_Button\"]")
 	public MobileElement skipOptimizeButton;
 	
 	
@@ -43,6 +43,7 @@ public class OptimizeYourNetworkPage  extends ParentClass implements Page
 	
 	public void clickSkipOptimizeButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`name == \"Placement_Tips_Network_Screen_Button\"`]";
 		click(skipOptimizeButton);
 	}
 	

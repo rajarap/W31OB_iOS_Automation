@@ -80,10 +80,11 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		  }).selectYourDevicePage(selectDevice -> {
 			  selectDevice.selectSurfboardMaxOption();
 			  selectDevice.clickNextButton();
+			  super.pause(5);
 		  }).selectYourDevicePage2(selectDevice2 -> {
 			  selectDevice2.selectMaxProAX11000RadioButton();
 			  selectDevice2.clickNextButton();
-			  super.pause(3);
+			  super.pause(5);
 		  }).welcomeSigninPage(signin -> {
 			  signin.clearEmailAddress();
 			  signin.enterEmailAddress(email);
@@ -170,6 +171,10 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 			  setupwifi.clickskipTutorialButton();
 			  super.pause(5);
 		  }).installSatellite(insatellite -> {
+			  try {
+				  if(insatellite.allowButton.isDisplayed()) 
+					  click(insatellite.allowButton);
+			  }catch(Exception e) {}
 			  insatellite.clickInstallLaterButton();
 			  super.pause(5);
 		  }).networkOptimization(optimization -> {
@@ -189,9 +194,3 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 	  }
 }
 
-
-
-//	try {
-//	if(homepage.getRATObject().isAt())
-//		homepage.getRATObject().clickOkButton();
-//}catch(Exception e) {};

@@ -36,6 +36,7 @@ public class SetUpYourWiFiManagementPage extends ParentClass implements Page
 	
 	public void clickskipTutorialButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"SKIP TUTORIAL\"`]";
 		click(skipTutorialButton);
 		utils.log().info("Setup Wifi Management Page - Clicked on Skip Tutorial Button");
 	}

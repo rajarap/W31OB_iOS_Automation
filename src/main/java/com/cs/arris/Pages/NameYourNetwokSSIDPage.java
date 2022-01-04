@@ -38,15 +38,6 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Connect_Screen_TextField_Password\"]")
 	public MobileElement ssidPassword;
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
-	public MobileElement doneLink;
-	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Previous\"]")
-	public MobileElement previousLink;
-	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Next\"]")
-	public MobileElement nextLink;
-	
 	public NameYourNetwokSSIDPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -76,6 +67,7 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 
 	public void clickNextButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"NEXT\"`]";
 		click(nextButton);
 		utils.log().info("Name Your Network Page  - Clicked on Next Button");
 	}

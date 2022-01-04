@@ -1,9 +1,11 @@
 package com.cs.arris.Pages;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.support.PageFactory;
 
@@ -22,6 +24,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class MainDeviceAllTabPage extends ParentClass implements Page {
@@ -41,7 +44,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public int counter5 = 0;
 	public int counter24 = 0;
 	public int counterEthernet = 0;
-
 
 
 	public Integer[] increaseBrightness = { 30, 60, 90 };
@@ -94,10 +96,10 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public MobileElement mainRouterStatus;
 
 	// ====================LED Settings=====================
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_LED Settings\"])[1]")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_LED\"])[1]")
 	public MobileElement ledSettingsText;
 
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_LED Settings\"])[1]")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_LED\"])[1]")
 	public MobileElement ledExpandImage;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Brightness\"]")
@@ -115,42 +117,42 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeSlider[@name=\"Device_Detail_Screen_Slider\"]")
 	public MobileElement seekBar;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ten_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label1\"]")
 	public MobileElement ten;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/twenty_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label2\"]")
 	public MobileElement twenty;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/thirty_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label3\"]")
 	public MobileElement thirty;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/forty_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label4\"]")
 	public MobileElement forty;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/fifty_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label5\"]")
 	public MobileElement fifty;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/sixty_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label6\"]")
 	public MobileElement sixty;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/seventy_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label7\"]")
 	public MobileElement seventy;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/eighty_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label8\"]")
 	public MobileElement eighty;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ninety_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label9\"]")
 	public MobileElement ninety;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/hundred_progress_tv")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label10\"]")
 	public MobileElement hundred;
 	// ====================LED Settings=====================
 
 	// ====================Connected Devices=====================
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_Connected Devices (5)\"])[1]")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_Connected\"])[1]")
 	public MobileElement connectedDevicesCountText;
 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Scale\"]")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_Connected\"])[1]")
 	public MobileElement connectedDevicesExpandImage;
 
 	// ====================Connected Devices=====================
@@ -227,9 +229,9 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RedCount\"]")
 	public MobileElement poorDevices;
 	
-	@iOSXCUITFindBy(xpath = "com.arris.sbcBeta:id/devicesNumbers")
+	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_Connected\"])[1]")
 	public MobileElement connectedDevices;
-	
+
 	//======================  Device Counts ====================
 
 	public MainDeviceAllTabPage() {
@@ -299,7 +301,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public boolean increaseLedBrightnessSettings() {
 		utils.log().info("-----------------------------");
 		try {
-			click(ledExpandImage);
 			for (int i = 0; i < increaseBrightness.length; i++) {
 				switch (increaseBrightness[i]) {
 				case 30:
@@ -318,7 +319,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 					utils.log().info("Enter valid brightness value");
 				}
 			}
-			click(ledExpandImage);
 			utils.log().info("-----------------------------");
 			return true;
 		} catch (Exception e) {
@@ -330,7 +330,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public boolean decreaseLedBrightnessSettings() {
 		utils.log().info("-----------------------------");
 		try {
-			click(ledExpandImage);
 			for (int i = 0; i < decreaseBrightness.length; i++) {
 				switch (decreaseBrightness[i]) {
 				case 90:
@@ -349,13 +348,17 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 					utils.log().info("Enter valid brightness value");
 				}
 			}
-			click(ledExpandImage);
 			utils.log().info("-----------------------------");
 			return true;
 		} catch (Exception e) {
 			utils.log().info("Issue in decreaseing LED Brightness Settings");
 			return false;
 		}
+	}
+	
+	public void clickLEDExpandButton()
+	{
+		super.getDriver().findElementByXPath("(//XCUIElementTypeImage[@name=\"Device_Detail_Screen_HeaderImage_LED\"])[1]").click();
 	}
 
 	public boolean verifyUIOnLedSettings() {
@@ -395,55 +398,55 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			else
 				utils.log().info("Choose Color Brightness label is not displayed");
 
-			if (ten.isDisplayed())
-				utils.log().info("Scale of 10 is displayed");
-			else
-				utils.log().info("Scale of 10 is not displayed");
-
-			if (twenty.isDisplayed())
-				utils.log().info("Scale of 20 is displayed");
-			else
-				utils.log().info("Scale of 20 is not displayed");
-
-			if (thirty.isDisplayed())
-				utils.log().info("Scale of 30 is displayed");
-			else
-				utils.log().info("Scale of 30 is not displayed");
-
-			if (forty.isDisplayed())
-				utils.log().info("Scale of 40 is displayed");
-			else
-				utils.log().info("Scale of 40 is not displayed");
-
-			if (fifty.isDisplayed())
-				utils.log().info("Scale of 50 is displayed");
-			else
-				utils.log().info("Scale of 50 is displayed");
-
-			if (sixty.isDisplayed())
-				utils.log().info("Scale of 60 is displayed");
-			else
-				utils.log().info("Scale of 60 is not displayed");
-
-			if (seventy.isDisplayed())
-				utils.log().info("Scale of 70 is displayed");
-			else
-				utils.log().info("Scale of 70 is not displayed");
-
-			if (eighty.isDisplayed())
-				utils.log().info("Scale of 80 is displayed");
-			else
-				utils.log().info("Scale of 80 is not displayed");
-
-			if (ninety.isDisplayed())
-				utils.log().info("Scale of 90 is displayed");
-			else
-				utils.log().info("Scale of 80 is not displayed");
-
-			if (hundred.isDisplayed())
-				utils.log().info("Scale of 100 is displayed");
-			else
-				utils.log().info("Scale of 100 is not displayed");
+//			if (ten.isDisplayed())
+//				utils.log().info("Scale of 10 is displayed");
+//			else
+//				utils.log().info("Scale of 10 is not displayed");
+//
+//			if (twenty.isDisplayed())
+//				utils.log().info("Scale of 20 is displayed");
+//			else
+//				utils.log().info("Scale of 20 is not displayed");
+//
+//			if (thirty.isDisplayed())
+//				utils.log().info("Scale of 30 is displayed");
+//			else
+//				utils.log().info("Scale of 30 is not displayed");
+//
+//			if (forty.isDisplayed())
+//				utils.log().info("Scale of 40 is displayed");
+//			else
+//				utils.log().info("Scale of 40 is not displayed");
+//
+//			if (fifty.isDisplayed())
+//				utils.log().info("Scale of 50 is displayed");
+//			else
+//				utils.log().info("Scale of 50 is displayed");
+//
+//			if (sixty.isDisplayed())
+//				utils.log().info("Scale of 60 is displayed");
+//			else
+//				utils.log().info("Scale of 60 is not displayed");
+//
+//			if (seventy.isDisplayed())
+//				utils.log().info("Scale of 70 is displayed");
+//			else
+//				utils.log().info("Scale of 70 is not displayed");
+//
+//			if (eighty.isDisplayed())
+//				utils.log().info("Scale of 80 is displayed");
+//			else
+//				utils.log().info("Scale of 80 is not displayed");
+//
+//			if (ninety.isDisplayed())
+//				utils.log().info("Scale of 90 is displayed");
+//			else
+//				utils.log().info("Scale of 80 is not displayed");
+//
+//			if (hundred.isDisplayed())
+//				utils.log().info("Scale of 100 is displayed");
+//			else
+//				utils.log().info("Scale of 100 is not displayed");
 
 			click(ledExpandImage);
 
@@ -615,36 +618,66 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			else
 				utils.log().info("Main Router image is not displayed");
 
-			if (totalDeviceImage.isDisplayed()) 
-				utils.log().info(totalDeviceImage.getText() + " devices are connected to the Main Router ");
+//			if (totalDeviceImage.isDisplayed()) 
+//				utils.log().info(totalDeviceImage.getText() + " devices are connected to the Main Router ");
+//			else
+//				utils.log().info("Count of devices connected to the Main Router is not displayed");
+			
+			if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_DeviceCount").isDisplayed()) 
+				utils.log().info(super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_DeviceCount").getText() + " devices are connected to the Main Router ");
 			else
 				utils.log().info("Count of devices connected to the Main Router is not displayed");
 
-			if (excellentDeviceImage.isDisplayed()) 
-				utils.log().info(excellentDeviceImage.getText() + " excellent devices are connected to the Main Router");
+//			if (excellentDeviceImage.isDisplayed()) 
+//				utils.log().info(excellentDeviceImage.getText() + " excellent devices are connected to the Main Router");
+//			else
+//				utils.log().info("Count of excellent devices connected to the Main Router is not displayed");
+			
+			if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_GreenCount").isDisplayed()) 
+				utils.log().info(super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_GreenCount").getText() + " excellent devices are connected to the Main Router ");
 			else
 				utils.log().info("Count of excellent devices connected to the Main Router is not displayed");
 
-			if (mediumDeviceImage.isDisplayed()) 
-				utils.log().info(mediumDeviceImage.getText() + " medium devices are connected to the Main Router");
+//			if (mediumDeviceImage.isDisplayed()) 
+//				utils.log().info(mediumDeviceImage.getText() + " medium devices are connected to the Main Router");
+//			else
+//				utils.log().info("Count of medium devices connected to the Main Router is not displayed");
+			
+			if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_OrangeCount").isDisplayed()) 
+				utils.log().info(super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_OrangeCount").getText() + " medium devices are connected to the Main Router ");
 			else
 				utils.log().info("Count of medium devices connected to the Main Router is not displayed");
 
-			if (poorDeviceImage.isDisplayed()) 
-				utils.log().info(poorDeviceImage.getText() + " poor devices are connected to the Main Router");
-
+//			if (poorDeviceImage.isDisplayed()) 
+//				utils.log().info(poorDeviceImage.getText() + " poor devices are connected to the Main Router");
+//			else
+//				utils.log().info("Count of poor devices connected to the Main Router is not displayed");
+			
+			if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_RedCount").isDisplayed()) 
+				utils.log().info(super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_RedCount").getText() + " poor devices are connected to the Main Router ");
 			else
 				utils.log().info("Count of poor devices connected to the Main Router is not displayed");
 
-			if (mainRouterName.isDisplayed())
-				utils.log().info("Main Router Device Name is " + mainRouterName.getText());
+//			if (mainRouterName.isDisplayed())
+//				utils.log().info("Main Router Device Name is " + mainRouterName.getText());
+//			else
+//				utils.log().info("Main Router Name is not displayed");
+			
+			if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_Name").isDisplayed())
+				utils.log().info("Main Router Device Name is " + super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_Name").getText());
 			else
 				utils.log().info("Main Router Name is not displayed");
 
-			if (mainRouterStatus.isDisplayed())
-				utils.log().info("Main Router Status " + mainRouterStatus.getText());
+//			if (mainRouterStatus.isDisplayed())
+//				utils.log().info("Main Router Status " + mainRouterStatus.getText());
+//			else
+//				utils.log().info("Main Router Status is not displayed");
+			
+			if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_Status").isDisplayed())
+				utils.log().info("Main Router Status " + super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_Status").getText());
 			else
 				utils.log().info("Main Router Status is not displayed");
+			
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -660,157 +693,109 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 
 		this.getAllDevicesCount();
 			if (allDevicesCount > 0) {
+				
 				click(connectedDevicesExpandImage);
-				for (int i = 1; i <= allDevicesCount; i++) {
+								
+				for (int i = 1; i <= 2; i++) {
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
 					
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-							"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["
-									+ i + "]");
+					"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
+//					String pred = "label == \"RSSI\" AND name == \"Device_Detail_Screen_Label_RSSITitle["+i+"]\"";
+//					utils.log().info("RSSI pred id : " + pred);
+//					super.mobileScrollScreenByPredicateIOS(pred, Direction.UP);
+////					MobileElement rssi =(MobileElement) super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RSSITitle["+i+"]\"]");
+////					
+////					super.mobileScrollToElementIOS(rssi);
+//					
+					super.swipe(Direction.UP);
 					for (MobileElement e : entity) {
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/imgDevice']")
-									.isDisplayed())
+							//if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Device["+i+"]\"]").isDisplayed())
+							if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Image_Device["+i+"]").isDisplayed())
 								utils.log().info("Device Image is displayed");
 						} catch (Exception exp) {
 							utils.log().info("Device Image is not displayed ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
-									.isDisplayed())
-								utils.log().info("Device Name: " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
-										.getText());
+							//if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Detail_Screen_Label_Device["+i+"]\"]").isDisplayed())
+							if (super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_Device["+i+"]").isDisplayed())
+								utils.log().info("Device Name: " + super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_Device["+i+"]").getText());
 						} catch (Exception exp) {
 							utils.log().info("Device Name is not available ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
-									.isDisplayed()) {
-								utils.log().info("Device Signal Strength : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
-										.getText());
-								signal.add(e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']")
-										.getText());
-							}
+							if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Speed["+i+"]\"]").isDisplayed()) 
+								utils.log().info("Device Signal Strength : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Speed["+i+"]").getText());
+								//signal.add(e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtSignalStrength']").getText());
 						} catch (Exception exp) {
 							utils.log().info("Device Signal Strength data is not available ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceDownloadSpeed']")
-									.isDisplayed()) {
-								utils.log().info("Device Download Speed : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceDownloadSpeed']")
-										.getText());
-							}
+							if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Download["+i+"]\"]").isDisplayed()) 
+								utils.log().info("Device Download Speed : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Download["+i+"]\"]").getText());
 						} catch (Exception exp) {
 							utils.log().info("Device Download Speed data is not available ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']")
-									.isDisplayed()) {
-								utils.log().info("Device Upload Speed : " + e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceUploadSpeed']")
-										.getText());
-							}
+							if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Upload["+i+"]\"]").isDisplayed())
+								utils.log().info("Device Upload Speed : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Upload["+i+"]\"]").getText());
 						} catch (Exception exp) {
 							utils.log().info("Device Upload Speed data is not available ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
-									.isDisplayed()
-									&& e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceIpAddress']")
-											.isDisplayed()) {
-								utils.log().info(e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_ip_address']")
-										.getText()
+							if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_IPTitle["+i+"]\"]").isDisplayed()
+									&& super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_IP["+i+"]\"]").isDisplayed()) 
+								utils.log().info(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_IPTitle["+i+"]\"]").getText()
 										+ " : "
-										+ e.findElementByXPath(
-												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceIpAddress']")
+										+ super.getDriver().findElementByXPath(
+												"//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_IP["+i+"]\"]")
 												.getText());
-							}
 						} catch (Exception exp) {
 							utils.log().info("IP Address Details are not available or displayed ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/tv_mac_address']")
-									.isDisplayed()
-									&& e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceIpAddress']")
-											.isDisplayed()) {
-								utils.log().info(e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/tv_mac_address']")
-										.getText()
+							if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_MacTitle["+i+"]\"]").isDisplayed()
+									&& super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Mac["+i+"]\"]").isDisplayed()) 
+								utils.log().info(super.getDriver().findElementByXPath(
+										"//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_MacTitle["+i+"]\"]").getText()
 										+ " : "
-										+ e.findElementByXPath(
-												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceMacAddress']")
-												.getText());
-							}
+										+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Mac["+i+"]\"]").getText());
 						} catch (Exception exp) {
 							utils.log().info("MAC Address Details are not available or displayed ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
-									.isDisplayed()
-									&& e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceChannel']")
-											.isDisplayed()) {
-								utils.log().info(e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txt_channel']")
-										.getText()
+							if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_ChannelTitle["+i+"]\"]").isDisplayed()
+									&& super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Channel["+i+"]\"]").isDisplayed()) 
+								utils.log().info(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_ChannelTitle["+i+"]\"]").getText()
 										+ " : "
-										+ e.findElementByXPath(
-												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceChannel']")
-												.getText());
-							}
+										+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_Channel["+i+"]\"]").getText());
 						} catch (Exception exp) {
 							utils.log().info("Channel Details are not available or displayed ");
 						}
 
 						try {
-							if (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']")
-									.isDisplayed()
-									&& e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssi']")
-											.isDisplayed()) {
-								utils.log().info(e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtRssi']")
-										.getText()
+							if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RSSITitle["+i+"]\"]").isDisplayed()
+									&& super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RSSI["+i+"]\"]").isDisplayed()) 
+								utils.log().info(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RSSITitle["+i+"]\"]")	.getText()
 										+ " : "
-										+ e.findElementByXPath(
-												"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/rssi']")
-												.getText());
-							}
+										+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RSSI["+i+"]\"]").getText());
 						} catch (Exception exp) {
 							utils.log().info("RSSI Details are not available or displayed ");
 						}
 
 						utils.log().info("****************************************************");
-//						utils.log().info("                                                    ");
+						utils.log().info("                                                    ");
 					}
-					if (i >= 1)
-						super.swipeUp();
-						super.pause(3);
 				}
 				super.swipeDown();
 				super.waitForVisibility(connectedDevicesExpandImage);
@@ -827,16 +812,19 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		try {
 			super.swipeUp();
 			super.waitForVisibility(mainRouterExpandImage);
+			
 			click(mainRouterExpandImage);
+			
 			super.swipeUp();
-			utils.log().info("***************************************************");
-			utils.log().info("Details of MAIN Router Device                      ");
-			utils.log().info("***************************************************");
+			utils.log().info("                                  ");
+			utils.log().info("**********************************");
+			utils.log().info("Details of MAIN Router Device     ");
+			utils.log().info("**********************************");
 
 			if (detailsText.isDisplayed())
-				utils.log().info("Details Text is displayed");
+				utils.log().info("Details Header Text is displayed");
 			else
-				utils.log().info("Details Text is not displayed ");
+				utils.log().info("Details Header Text is not displayed ");
 
 			if (channelLabel.isDisplayed()) {
 				if (fiveGhzDeviceCount.isDisplayed()) {
@@ -937,11 +925,11 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		utils.log().info("*************************************");
 		try {
 			
-			 txtDevices = totalDevices.getText();
-			 execDevices = excellentDevices.getText();
-			 medDevices = mediumDevices.getText();
-			 prDevices = poorDevices.getText();
-			 connDevices = String.valueOf(getAllCountOfDevices(connectedDevices.getText()));
+			 txtDevices = super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_DeviceCount").getText();
+			 execDevices = super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_GreenCount").getText();
+			 medDevices = super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_OrangeCount").getText();
+			 prDevices = super.getDriver().findElementByAccessibilityId("Device_Detail_Screen_Label_RedCount").getText();
+			 connDevices = String.valueOf(getAllCountOfDevices(super.getDriver().findElementByXPath("(//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_HeaderLabel_Connected\"])[1]").getText()));
 			
 			try {
 				if(txtDevices.equals(connDevices)) {
@@ -969,6 +957,76 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			utils.log().info("Issue in validating count of devices");
 			return false;
 		}
+	}
+	
+		public void dragSeekBarTo(int perc) {
+			// get location of seek bar from left
+			int start=seekBar.getLocation().getX();
+			utils.log().info("Startpoint - " + start);
+        
+			//get location of seekbar from top
+			int y=seekBar.getLocation().getY();
+			utils.log().info("Yaxis - "+ y);
+        
+			//Get total width of seekbar
+			int end=start + seekBar.getSize().getWidth();
+			utils.log().info("End point - "+ end);
+        
+			TouchAction action = new TouchAction(super.getDriver());
+        
+			//move slider to 70% of width
+			int moveTo=(int)(end * ((float)perc/100));
+        
+			action.longPress(PointOption.point(start,y)).moveTo(PointOption.point(moveTo,y)).release().perform();
+	}
+	
+	public void swipe(Direction dir) {
+	    Dimension size;
+		size = getDriver().manage().window().getSize();
+		TouchAction action = new TouchAction(getDriver());
+
+	    int startX = 0;
+	    int endX = 0;
+	    int startY = 0;
+	    int endY = 0;
+
+	    switch (dir) {
+	        case RIGHT:
+	            startY = (int) (size.height / 2);
+	            startX = (int) (size.width * 0.90);
+	            endX = (int) (size.width * 0.05);
+	            action.press(PointOption.point(427, 878)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+	                    .moveTo(PointOption.point(427, 554)).release().perform();
+
+	            break;
+
+	        case LEFT:
+	            startY = (int) (size.height / 2);
+	            startX = (int) (size.width * 0.05);
+	            endX = (int) (size.width * 0.90);
+	            action.press(PointOption.point(427, 878)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+	                    .moveTo(PointOption.point(427, 254)).release().perform();
+
+	            break;
+
+	        case UP:
+	            endY = (int) (size.height * 0.50);
+	            startY = (int) (size.height * 0.30);
+	            startX = (size.width / 2);
+	            action.press(PointOption.point(169, 492)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+                .moveTo(PointOption.point(1697, 400)).release().perform();
+	            break;
+
+
+	        case DOWN:
+	            startY = (int) (size.height * 0.70);
+	            endY = (int) (size.height * 0.30);
+	            startX = (size.width / 2);
+	            action.press(PointOption.point(427, 878)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+                .moveTo(PointOption.point(427, 554)).release().perform();
+
+	            break;
+	    }
 	}
 
 	@Override

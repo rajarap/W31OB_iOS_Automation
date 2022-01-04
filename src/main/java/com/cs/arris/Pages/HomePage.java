@@ -73,13 +73,13 @@ public class HomePage extends ParentClass implements Page {
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_AddRight\"]")
 	public MobileElement rightSatelliteImage;
 	
-	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title[1]\"])[1]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title[1]\"]")
 	public MobileElement deviceSignalStrengthLeaderBoardText;
 
-	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_Expand[1]\"])[1]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_Expand[1]\"]")
 	public MobileElement deviceSignalStrengthLeaderBoardImage;
 
-	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Value[1]\"])[1]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Value[1]\"]")
 	public MobileElement bitRateDevices;
 
 	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title[1]\"])[2]")
@@ -411,20 +411,20 @@ public class HomePage extends ParentClass implements Page {
 			else
 				utils.log().info("Close Banner Icon is not displayed");
 			
+			try {
 			if (deviceSignalStrengthLeaderBoardText.isDisplayed())
 				utils.log().info("Device Signal Strength Leader Board Text is displayed");
-			else
-				utils.log().info("Device Signal Strength Leader Board Text is not displayed");
+			}catch(Exception e) {utils.log().info("Device Signal Strength Leader Board Text is not displayed");}
 
+			try {
 			if (deviceSignalStrengthLeaderBoardImage.isDisplayed())
 				utils.log().info("Device Signal Strength Leader Board Image is displayed");
-			else
-				utils.log().info("Device Signal Strength Leader Board Image is not displayed");
+			}catch(Exception e) {utils.log().info("Device Signal Strength Leader Board Image is not displayed");}
 
+			try {
 			if (bitRateDevices.isDisplayed())
 				utils.log().info("Device Signal Strength Leader Board is displayed for " + bitRateDevices.getText());
-			else
-				utils.log().info("Device Signal Strength Leader Board Count is not displayed");
+			}catch(Exception e) {utils.log().info("Device Signal Strength Leader Board Count is not displayed");}
 
 			if (speedTestHistoryText.isDisplayed())
 				utils.log().info("Speed Test History Text is displayed");
@@ -495,13 +495,14 @@ public class HomePage extends ParentClass implements Page {
 	}
 
 	public boolean clickDeviceSignalStrengthImage() {
-		if (deviceSignalStrengthLeaderBoardText.isDisplayed()) {
-			click(deviceSignalStrengthLeaderBoardText);
-			utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board Image");
+		String selector = "**/XCUIElementTypeStaticText[`label == \"Device Signal Strength Leader Board\"`]";
+		if (super.getDriver().findElement(MobileBy.iOSClassChain(selector)).isDisplayed()) {
+			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+			utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board ");
 			return true;
 		} else {
 			utils.log().info(
-					"Home Page - Device Signal Strength Leader Board Image is either not visible or is not present on the DOM");
+					"Home Page - Device Signal Strength Leader Board is either not visible or is not present on the DOM");
 			return false;
 		}
 	}

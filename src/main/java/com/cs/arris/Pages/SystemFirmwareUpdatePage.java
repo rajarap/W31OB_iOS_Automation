@@ -42,6 +42,7 @@ public class SystemFirmwareUpdatePage extends ParentClass implements Page
 	public void clickNextButton()
 	{
 		utils.log().info("System Firmware Update Page - Clicked on Next Button");
+		String selector = "**/XCUIElementTypeButton[`label == \"NEXT\"`]";
 		click(nextButton);
 	}
 	

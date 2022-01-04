@@ -23,11 +23,11 @@ public class SetupHomeNetworkPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Setting_Up_Home_Network_Screen_Button\"]")
 	public MobileElement nextButton;
 	
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/title_text']") // text = LET'S SET UP YOUR HOME NETWORK
+	// text = LET'S SET UP YOUR HOME NETWORK
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"BOBA_Setting_Up_Home_Network_Screen_TitleLabel\"]")
 	public MobileElement setupHomeNetworkText;
 	
-	//@AndroidFindBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/description_text']") // text = You are only a few steps away from setting up your home network.
+	// text = You are only a few steps away from setting up your home network.
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"BOBA_Setting_Up_Home_Network_Screen_SubTitleLabel\"]")
 	public MobileElement fewStepsAwayText;
 	
@@ -38,6 +38,7 @@ public class SetupHomeNetworkPage extends ParentClass implements Page
 	
 	public void clickNextButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"NEXT\"`]";
 		utils.log().info("Setup Home Network Page - Clicked on Next Button");
 		click(nextButton);
 	}

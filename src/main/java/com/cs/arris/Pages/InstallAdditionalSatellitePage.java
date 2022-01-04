@@ -27,9 +27,6 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 	public MobileElement installNowButton; 
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Install_Additional_Satellite_Screen_Image\"]")
-	public MobileElement cancelButton; 
-	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Install_Additional_Satellite_Screen_Image\"]")
 	public MobileElement closeButton; 
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Install_Additional_Satellite_Screen_Button_Later\"]")
@@ -37,6 +34,8 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"I do not have a satellite\"]")
 	public MobileElement dontHaveSatelliteLink;
+	
+	
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"“SBC Test” Would Like to Send You Notifications\"]")
 	public MobileElement SBCNotificationTitle; 
@@ -57,12 +56,14 @@ public class InstallAdditionalSatellitePage extends ParentClass implements Page
 	
 	public void clickAllowButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"Allow\"`]";
 		click(allowButton);
 		utils.log().info("Clicked on Allow Button to send Notifiations");
 	}
 	
 	public void clickInstallLaterButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"Allow\"`]";
 		click(installLaterButton);
 		utils.log().info("Install Additonal Satellite Dialog - Clicked on Install Later Button");
 	}

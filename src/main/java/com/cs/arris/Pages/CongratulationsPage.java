@@ -33,9 +33,11 @@ public class CongratulationsPage extends ParentClass implements Page
 	
 	public void clickContinueButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"CONTINUE\"`]";
 		click(continueButton);
 		utils.log().info("Congratulations Page - Clicked on Continue Button");
 	}
+	
 	@Override
 	public boolean isAt() {
 		super.pause();

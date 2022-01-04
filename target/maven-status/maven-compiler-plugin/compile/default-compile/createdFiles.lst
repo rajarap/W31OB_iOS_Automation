@@ -19,6 +19,7 @@ com/cs/arris/Pages/ParentalControlWithProfilesPage.class
 com/cs/arris/Pages/NetworkLANSettingsHelpPage.class
 com/cs/arris/Pages/ParentalControlEditUserProfileNameDialog.class
 com/cs/arris/Pages/NetworkGeneralSettingsIPv6EnableInfoDialog.class
+com/cs/arris/Pages/MainDeviceAllTabPage$1.class
 com/cs/arris/Pages/NetworkGeneralSettingsPortForwardingPage.class
 com/cs/arris/Pages/AmazonFeaturesPage.class
 com/cs/arris/Pages/NetworkLANDHCPLeaseTimeEditTimeUnitDialog.class
@@ -28,6 +29,7 @@ com/cs/arris/Pages/ErrorCode_0003_1003_Service_Is_Currently_Not_Available.class
 com/cs/arris/Pages/NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog.class
 com/cs/arris/Pages/InstallAdditionalSatellitePage.class
 com/cs/arris/Pages/CurrentlyBlockedDevicesPage.class
+com/cs/arris/Base/ParentClass$1.class
 com/cs/arris/Pages/ParentalControlAddRuleHelpPage.class
 com/cs/arris/Pages/NetworkReserveLANIPDialog.class
 com/cs/arris/Pages/AddDeviceMaximumTwoDevicesDialog.class

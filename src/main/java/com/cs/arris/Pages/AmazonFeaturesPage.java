@@ -12,6 +12,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -45,11 +46,14 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeSwitch[@name=\"Amazon_Features_Screen_Switch\"]")
 	public MobileElement AFFSToggleButton;
+	
+//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeSwitch[@name=\"Amazon_Features_Screen_Switch\"]")
+//	public MobileElement AFFSToggleButtonDisabled;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Amazon_Features_Screen_Button\"]")	
 	public MobileElement pleaseTapHere;
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Amazon_Features_Screen_Image_Expand\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Amazon_Features_Screen_Button_Skills\"]")
 	public MobileElement getAlexaSkillsButton;
 	
 	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\" (1) Open the Amazon Alexa app.\"])[1]")
@@ -67,7 +71,7 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Amazon_Features_Screen_Button_Copy\"]")
 	public MobileElement passwordCopyButton;
 		
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Amazon_Features_Screen_Image_Link\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Amazon_Features_Screen_Button_Link\"]")
 	public MobileElement alexaSkillsLink;
 	
 	
@@ -77,9 +81,7 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
 	public MobileElement okbutton;
-	
-	
-	
+		
 	public AmazonFeaturesPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
@@ -126,12 +128,12 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	}
 	
 	public boolean disableAFFS() {
-		if (AFFSToggleButton.isSelected()) {
-			click(AFFSToggleButton);
-			utils.log().info("Amazon Frustration Free Setup Feature is disabled");
+		if (!(AFFSToggleButton.isSelected())) {
+			utils.log().info("Amazon Frustration Free Setup Feature is already disabled");
 			return true;
 		} else {
-			utils.log().info("Amazon Frustration Free Setup Feature is already disabled");
+			click(AFFSToggleButton);
+			utils.log().info("Amazon Frustration Free Setup Feature is disabled");
 			return false;
 		}
 	}
@@ -139,7 +141,6 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	public boolean clickGetAlexaSkillsButton() {
 		if (getAlexaSkillsButton.isDisplayed()) {
 			click(getAlexaSkillsButton);
-			super.swipeUp();
 			utils.log().info("Clicked on Get Alexa Skills Button");
 			return true;
 		} else {
@@ -246,7 +247,7 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 				if (AFFSToggleButton.isDisplayed() && AFFSToggleButton.isSelected())
 					utils.log().info("AFFS is enabled");
 				else 
-					utils.log().info("AFFS is currently disabled");
+					utils.log().info("AFFS is disabled");
 			}catch(Exception t) {
 				utils.log().info("AFFS Toggle button is not displayed");
 			}
@@ -294,9 +295,10 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 
 	public boolean clickAlexaSkillsLink() {
 		try {
-			click(alexaSkillsLink);
+			String selector = "**/XCUIElementTypeStaticText[`label == \"www.amazon.com/alexaskills\"`]";
+			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
 			super.pause(5);
-			utils.log().info("Clicked on " + alexaSkillsLink.getText() +  " link");	
+			utils.log().info("Clicked on " + super.getDriver().findElement(MobileBy.iOSClassChain(selector)).getText() +  " link");	
 			
 			Set<String> allContext = super.getDriver().getContextHandles();
 			for (String context : allContext) {

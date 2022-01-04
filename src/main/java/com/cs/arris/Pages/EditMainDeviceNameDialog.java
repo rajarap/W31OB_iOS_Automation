@@ -36,7 +36,7 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Edit_Device_Name_Screen_TitleLabel\"]") 
 	public MobileElement saveButton; 
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Edit_Device_Name_Screen_Button\"]") 
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Edit_Device_Name_Screen_Button_Close\"]") 
 	public MobileElement closeButton; 
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")

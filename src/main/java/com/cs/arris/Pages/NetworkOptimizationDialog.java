@@ -33,6 +33,7 @@ public class NetworkOptimizationDialog extends ParentClass implements Page
 	
 	public void clickOkButton()
 	{
+		String selector = "**/XCUIElementTypeButton[`label == \"OK\"`]";
 		click(okButton);
 		utils.log().info("Network Optimization Dialog - Clicked on OK Button");
 	}

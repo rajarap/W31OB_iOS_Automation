@@ -18,6 +18,9 @@ public class SiginPage  extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
+	public MobileElement backbutton;
+	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Welcome_Screen_TitleLabel_Welcome\"]")
 	public MobileElement welcomeMessage;
 	
@@ -39,8 +42,6 @@ public class SiginPage  extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Welcome_Screen_Button_SignUp\"]")
 	public MobileElement signUpButton;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
-	public MobileElement backButton;
 	
 	public SiginPage()
 	{

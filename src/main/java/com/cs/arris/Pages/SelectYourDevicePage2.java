@@ -36,9 +36,6 @@ public class SelectYourDevicePage2 extends ParentClass implements Page
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Select_Your_Device_Router_Selection_Screen_Image_Box[4]\"]")
 	public MobileElement selectYourDeviceMaxDashAC3800;
 	
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Select_Your_Device_Screen_Label_ThisAppSupportsTheProductsListedAbove\"]")
-	public MobileElement selectYourDevicePlayStoreMessage;	
-	
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"App Store Link\"]")
 	public MobileElement selectYourDevicePlayStoreLink;	
 	
@@ -55,20 +52,20 @@ public class SelectYourDevicePage2 extends ParentClass implements Page
 	
 	public void selectMaxProAX11000RadioButton()
 	{
-//		String selector = "**/XCUIElementTypeImage[`name == "Select_Your_Device_Router_Selection_Screen_Image_Box[1]"`]";
-//		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
-		if(selectYourDeviceMaxProAX11000RadioButton.isDisplayed())
-			click(selectYourDeviceMaxProAX11000RadioButton);
+		String selector = "**/XCUIElementTypeImage[`name == \"Select_Your_Device_Router_Selection_Screen_Image_Box[1]\"`]";
+		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+//		if(selectYourDeviceMaxProAX11000RadioButton.isDisplayed())
+//			click(selectYourDeviceMaxProAX11000RadioButton);
 		utils.log().info("Select your Device 2 - Selected mAX Pro AX11000 option");
 	}
 	
 	public void selectMaxProAX7800RadioButton()
 	{
-//		String selector = "**/XCUIElementTypeImage[`name == \"Select_Your_Device_Router_Selection_Screen_Image_Box[2]\"`]";
-//		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+		String selector = "**/XCUIElementTypeImage[`name == \"Select_Your_Device_Router_Selection_Screen_Image_Box[2]\"`]";
+		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
 		
-		if(selectYourDeviceMaxPlusAX7800RadioButton.isDisplayed())
-			click(selectYourDeviceMaxPlusAX7800RadioButton);
+//		if(selectYourDeviceMaxPlusAX7800RadioButton.isDisplayed())
+//			click(selectYourDeviceMaxPlusAX7800RadioButton);
 		utils.log().info("Select your Device 2 - Selected mAX Pro AX7800 option");
 	}
 	public void clickNextButton()
