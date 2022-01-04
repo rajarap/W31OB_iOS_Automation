@@ -23,6 +23,7 @@ import com.cs.arris.Pages.NetworkPage;
 import com.cs.arris.Pages.ParentalControlWithProfilesPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Pages.SpeedTestPage;
+import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
 
@@ -146,75 +147,75 @@ public class TC02_Medium_Test extends ParentClass
 //		  });
 	  }
 	  
-//	  @Test(priority = 2, dependsOnMethods = { "Login_And_Onboard" })
-//		public void Verify_Main_Device_UI_On_All_Tab_Page() {
-//		  
-//			utils.log().info("                          ");
-//			utils.log().info("**************************");
-//			utils.log().info("Test: Verify Main Device  ");
-//			utils.log().info("**************************");
-//			SoftAssert softmain2 = new SoftAssert();
-//			softmain2.assertTrue(new HomePage().clickMainDeviceImage());
-//			if(new MainDeviceAllTabPage().isAt()) 
-//				softmain2.assertTrue(new MainDeviceAllTabPage().verifyUIOnMainDevicePage());
-//			
-//			softmain2.assertAll();
-//		}
-//		
-//		@Test(priority = 3, dependsOnMethods    = { "Login_And_Onboard", "Verify_Main_Device_UI_On_All_Tab_Page" })
-//		public void Verify_LED_Settings_UI_On_All_Tab() {
-//			SoftAssert softmain3 = new SoftAssert();
-//			softmain3.assertTrue(new MainDeviceAllTabPage().verifyUIOnLedSettings());
-//			
-//			softmain3.assertAll();
-//		}
-//		
-//		@Test(priority = 4, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
-//		public void Verify_Decrease_LED_Settings_On_All_Tab_Page() {
-//			SoftAssert softmain4 = new SoftAssert();
-////			new MainDeviceAllTabPage().ledExpandImage.click();
-////			softmain4.assertTrue(new MainDeviceAllTabPage().decreaseLedBrightnessSettings());
-//			new MainDeviceAllTabPage().clickLEDExpandButton();
-//			new MainDeviceAllTabPage().dragSeekBarTo(50);
-//			
-//			softmain4.assertAll();
-//		}
-//		
-//		@Test(priority = 5, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
-//  		public void Verify_Increase_LED_Settings_On_All_Tab_Page() {
-//			SoftAssert softmain5 = new SoftAssert();
-////			softmain5.assertTrue(new MainDeviceAllTabPage().increaseLedBrightnessSettings());
-////			new MainDeviceAllTabPage().ledExpandImage.click();
-//			
-//			new MainDeviceAllTabPage().dragSeekBarTo(90);
-//			new MainDeviceAllTabPage().clickLEDExpandButton();
-//			
-//			softmain5.assertAll();
-//		}
-//		
-//		@Test(priority = 6, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
-//		public void Verify_Devices_Count_Validation_On_All_Tab_Page() {
-//			SoftAssert softmain6 = new SoftAssert();
-//			softmain6.assertTrue(new MainDeviceAllTabPage().allTabvalidations());
-//			
-//			softmain6.assertAll();
-//		}
-//		
-//		@Test(priority = 7, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
-//		public void Verify_Connected_Devices_On_All_Tab_Page() {
-//			SoftAssert softmain7 = new SoftAssert();
-//			softmain7.assertTrue(new MainDeviceAllTabPage().verifyConnectedDeviceDetails());
-//			
-//			softmain7.assertAll();
-//		}
-//		
-//		@Test(priority = 8, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
-//		public void Verify_Main_Router_Details_On_All_Tab_Page() {
-//			SoftAssert softmain8 = new SoftAssert();
-//			softmain8.assertTrue(new MainDeviceAllTabPage().verifyMainRouterDetails());
-//			softmain8.assertAll();
-//		}
-//		
+	  @Test(priority = 2, dependsOnMethods = { "Login_And_Onboard" })
+		public void Verify_Main_Device_UI_On_All_Tab_Page() {
+		  
+			utils.log().info("                          ");
+			utils.log().info("**************************");
+			utils.log().info("Test: Verify Main Device  ");
+			utils.log().info("**************************");
+			SoftAssert softmain2 = new SoftAssert();
+			softmain2.assertTrue(new HomePage().clickMainDeviceImage());
+			if(new MainDeviceAllTabPage().isAt()) 
+				softmain2.assertTrue(new MainDeviceAllTabPage().verifyUIOnMainDevicePage());
+			
+			softmain2.assertAll();
+		}
+		
+		@Test(priority = 3, dependsOnMethods    = { "Login_And_Onboard", "Verify_Main_Device_UI_On_All_Tab_Page" })
+		public void Verify_LED_Settings_UI_On_All_Tab() {
+			SoftAssert softmain3 = new SoftAssert();
+			softmain3.assertTrue(new MainDeviceAllTabPage().verifyUIOnLedSettings());
+			
+			softmain3.assertAll();
+		}
+		
+		@Test(priority = 4, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
+		public void Verify_Decrease_LED_Settings_On_All_Tab_Page() {
+			SoftAssert softmain4 = new SoftAssert();
+//			new MainDeviceAllTabPage().ledExpandImage.click();
+//			softmain4.assertTrue(new MainDeviceAllTabPage().decreaseLedBrightnessSettings());
+			new MainDeviceAllTabPage().clickLEDExpandButton();
+			new MainDeviceAllTabPage().mobileSwipeSeekBar(Direction.LEFT);
+			
+			softmain4.assertAll();
+		}
+		
+		@Test(priority = 5, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
+  		public void Verify_Increase_LED_Settings_On_All_Tab_Page() {
+			SoftAssert softmain5 = new SoftAssert();
+//			softmain5.assertTrue(new MainDeviceAllTabPage().increaseLedBrightnessSettings());
+//			new MainDeviceAllTabPage().ledExpandImage.click();
+			
+			new MainDeviceAllTabPage().mobileSwipeSeekBar(Direction.RIGHT);
+			new MainDeviceAllTabPage().clickLEDExpandButton();
+			
+			softmain5.assertAll();
+		}
+		
+		@Test(priority = 6, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
+		public void Verify_Devices_Count_Validation_On_All_Tab_Page() {
+			SoftAssert softmain6 = new SoftAssert();
+			softmain6.assertTrue(new MainDeviceAllTabPage().allTabvalidations());
+			
+			softmain6.assertAll();
+		}
+		
+		@Test(priority = 7, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
+		public void Verify_Connected_Devices_On_All_Tab_Page() {
+			SoftAssert softmain7 = new SoftAssert();
+			softmain7.assertTrue(new MainDeviceAllTabPage().verifyConnectedDeviceDetails());
+			
+			softmain7.assertAll();
+		}
+		
+		@Test(priority = 8, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
+		public void Verify_Main_Router_Details_On_All_Tab_Page() {
+			SoftAssert softmain8 = new SoftAssert();
+			softmain8.assertTrue(new MainDeviceAllTabPage().verifyMainRouterDetails());
+			softmain8.assertAll();
+		}
+		
 ////		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
 ////		public void Verify_Edit_Main_Router_Name_On_All_Tab_Page() {
 ////			SoftAssert softmain9 = new SoftAssert();
@@ -584,42 +585,42 @@ public class TC02_Medium_Test extends ParentClass
 //			softdevices6.assertAll();
 //		}
 //	  
-		@Test(priority = 44, dependsOnMethods = { "Login_And_Onboard"})
-		public void Verify_Devices_Signal_Strength_UI_Page() {
-			utils.log().info("                                            ");
-			utils.log().info("********************************************");
-			utils.log().info("Test: Device Signal Strength Leader Board   ");
-			utils.log().info("********************************************");
-			SoftAssert softsignal2 = new SoftAssert();
-			new HomePage().getFooterIconsPageObject().clickHomeButton();
-			super.swipeUp();
-			new HomePage().clickDeviceSignalStrengthImage();
-			if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
-				softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
-			softsignal2.assertAll();
-		}
-		
-		@Test(priority = 45, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-		public void Verify_Signal_Strength_For_Devices() {
-			SoftAssert softsignal3 = new SoftAssert();
-			softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
-			softsignal3.assertAll();
-		}
-		
-		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-		public void Verify_Sorting_Devices_From_Strong_To_Weak() {
-			SoftAssert softsignal4= new SoftAssert();
-			softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
-			softsignal4.assertAll();
-		}
-		
-		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-		public void Verify_Sorting_Devices_From_Weak_To_Strong() {
-			SoftAssert softsignal5= new SoftAssert();
-			softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
-			softsignal5.assertAll();
-		}
-		
+//		@Test(priority = 44, dependsOnMethods = { "Login_And_Onboard"})
+//		public void Verify_Devices_Signal_Strength_UI_Page() {
+//			utils.log().info("                                            ");
+//			utils.log().info("********************************************");
+//			utils.log().info("Test: Device Signal Strength Leader Board   ");
+//			utils.log().info("********************************************");
+//			SoftAssert softsignal2 = new SoftAssert();
+//			new HomePage().getFooterIconsPageObject().clickHomeButton();
+//			super.swipeUp();
+//			new HomePage().clickDeviceSignalStrengthImage();
+//			if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
+//				softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
+//			softsignal2.assertAll();
+//		}
+//		
+//		@Test(priority = 45, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+//		public void Verify_Signal_Strength_For_Devices() {
+//			SoftAssert softsignal3 = new SoftAssert();
+//			softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
+//			softsignal3.assertAll();
+//		}
+//		
+//		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+//		public void Verify_Sorting_Devices_From_Strong_To_Weak() {
+//			SoftAssert softsignal4= new SoftAssert();
+//			softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
+//			softsignal4.assertAll();
+//		}
+//		
+//		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+//		public void Verify_Sorting_Devices_From_Weak_To_Strong() {
+//			SoftAssert softsignal5= new SoftAssert();
+//			softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
+//			softsignal5.assertAll();
+//		}
+//		
 //		@Test(priority = 48, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
 //		public void Verify_Editing_Device_Name() {
 //			SoftAssert softsignal6= new SoftAssert();

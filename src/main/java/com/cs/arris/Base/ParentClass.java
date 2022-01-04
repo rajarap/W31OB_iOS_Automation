@@ -889,10 +889,10 @@ public class ParentClass
 
 		        case UP:
 		            endY = (int) (size.height * 0.50);
-		            startY = (int) (size.height * 0.30);
+		            startY = (int) (size.height * 0.10);
 		            startX = (size.width / 2);
 		            action.press(PointOption.point(169, 492)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
-                    .moveTo(PointOption.point(1697, 400)).release().perform();
+                    .moveTo(PointOption.point(1697, 200)).release().perform();
 		            break;
 
 

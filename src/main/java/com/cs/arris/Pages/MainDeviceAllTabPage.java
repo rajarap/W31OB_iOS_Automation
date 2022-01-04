@@ -2,6 +2,7 @@ package com.cs.arris.Pages;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -30,6 +31,7 @@ import io.appium.java_client.touch.offset.PointOption;
 public class MainDeviceAllTabPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public List<String> signal = new ArrayList<String>();
+	public TouchAction action = new TouchAction(getDriver());
 	public String fiveGhzDevice;
 	public String twoFourGhzDevice;
 	public String txtDevices;
@@ -696,7 +698,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 				
 				click(connectedDevicesExpandImage);
 								
-				for (int i = 1; i <= 2; i++) {
+				for (int i = 1; i <= allDevicesCount; i++) {
 					utils.log().info("Connected Device  : " + i);
 					utils.log().info("--------------------------");
 					
@@ -810,8 +812,8 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 
 	public boolean verifyMainRouterDetails() {
 		try {
-			super.swipeUp();
-			super.waitForVisibility(mainRouterExpandImage);
+//			super.swipeUp();
+//			super.waitForVisibility(mainRouterExpandImage);
 			
 			click(mainRouterExpandImage);
 			
@@ -979,11 +981,38 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
         
 			action.longPress(PointOption.point(start,y)).moveTo(PointOption.point(moveTo,y)).release().perform();
 	}
+		
+		public void mobileSwipeSeekBar(Direction dir) {
+		    final int ANIMATION_TIME = 200; // ms
+		    final HashMap<String, String> scrollObject = new HashMap<String, String>();
+		    MobileElement element = (MobileElement) getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSlider[`name == \"Device_Detail_Screen_Slider\"`]"));
+		    switch (dir) {
+		        case LEFT: 
+			            action.press(PointOption.point(286, 449)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+		                    .moveTo(PointOption.point(185, 449)).release().perform();
+			            scrollObject.put("direction", dir.name().toLowerCase());
+			            break;
+		        case RIGHT: 
+		            	action.press(PointOption.point(185, 449)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+                    		.moveTo(PointOption.point(286, 449)).release().perform();
+		            scrollObject.put("direction", dir.name().toLowerCase());
+		            break;
+		        default:
+		            throw new IllegalArgumentException("mobileSwipeElementIOS(): dir: '" + dir + "' NOT supported");
+		    }
+		    scrollObject.put("element", element.getId());
+		    try {
+		        getDriver().executeScript("mobile:swipe", scrollObject);
+		        Thread.sleep(ANIMATION_TIME); 
+		    } catch (Exception e) {
+		        System.err.println("mobileSwipeElementIOS(): FAILED\n" + e.getMessage());
+		    }
+		}
 	
 	public void swipe(Direction dir) {
 	    Dimension size;
 		size = getDriver().manage().window().getSize();
-		TouchAction action = new TouchAction(getDriver());
+		
 
 	    int startX = 0;
 	    int endX = 0;

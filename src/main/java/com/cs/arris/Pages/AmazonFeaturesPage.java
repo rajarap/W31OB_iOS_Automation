@@ -81,6 +81,7 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
 	public MobileElement okbutton;
+	
 		
 	public AmazonFeaturesPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

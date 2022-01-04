@@ -1,0 +1,463 @@
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:30.735 ParentClass:304 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:30.752 ParentClass:259 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:36.868 ParentClass:274 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:36.871 ParentClass:275 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:41.631 TC02_Medium_Test:59 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:41.642 ParentClass:328 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:41.651 TC02_Medium_Test:63 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:41.653 TC02_Medium_Test:66 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:41.655 TC02_Medium_Test:69 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:41.655 TC02_Medium_Test:72 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:41.658 TC02_Medium_Test:74 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:42.279 TC02_Medium_Test:83 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:42.814 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-00-50-30/TC02_Medium_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:43.375 TC02_Medium_Test:83 - 
+
+****** starting test : Verify_Main_Device_UI_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:43.379 TC02_Medium_Test:152 -                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:43.380 TC02_Medium_Test:153 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:43.381 TC02_Medium_Test:154 - Test: Verify Main Device  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:43.384 TC02_Medium_Test:155 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:46.997 HomePage:536 - Home Page - Clicked on Main Device Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:50.764 MainDeviceAllTabPage:1035 - On MAIN Router - All Tab Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:50.784 MainDeviceAllTabPage:576 -                                            
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:50.785 MainDeviceAllTabPage:577 - *******************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:50.786 MainDeviceAllTabPage:578 - Details of UI Elements on the All Tab Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:50.787 MainDeviceAllTabPage:579 - *******************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:53.585 MainDeviceAllTabPage:582 - MAIN Title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:54.686 MainDeviceAllTabPage:587 - Back Icon image is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:56.170 MainDeviceAllTabPage:592 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:57.569 MainDeviceAllTabPage:597 - All tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:50:58.865 MainDeviceAllTabPage:602 - 5GHz tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:00.478 MainDeviceAllTabPage:607 - 2.4GHz tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:01.727 MainDeviceAllTabPage:612 - Ethernet tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:03.177 MainDeviceAllTabPage:617 - Main Router image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:04.611 MainDeviceAllTabPage:627 - 4 devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:05.895 MainDeviceAllTabPage:637 - 4 excellent devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:07.389 MainDeviceAllTabPage:647 - 0 medium devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:10.762 MainDeviceAllTabPage:657 - 0 poor devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:12.003 MainDeviceAllTabPage:667 - Main Router Device Name is MAIN
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:13.185 MainDeviceAllTabPage:677 - Main Router Status Online
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:14.890 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-00-50-30/TC02_Medium_Test/Verify_Main_Device_UI_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:15.676 TC02_Medium_Test:83 - 
+
+****** starting test : Verify_LED_Settings_UI_On_All_Tab ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:15.695 MainDeviceAllTabPage:365 -                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:15.696 MainDeviceAllTabPage:366 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:15.696 MainDeviceAllTabPage:367 - LED Settings Verficiation
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:15.696 MainDeviceAllTabPage:368 - *************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:18.815 MainDeviceAllTabPage:371 - LED Settings text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:23.271 MainDeviceAllTabPage:376 - Expand button image is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 ERROR] 2022-01-05 00:51:33.514 TestListener:39 - java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.cs.arris.Tests.TC02_Medium_Test.Verify_LED_Settings_UI_On_All_Tab(TC02_Medium_Test.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:34.553 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-00-50-30/TC02_Medium_Test/Verify_LED_Settings_UI_On_All_Tab.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:35.075 TC02_Medium_Test:83 - 
+
+****** starting test : Verify_Devices_Count_Validation_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:35.088 MainDeviceAllTabPage:922 -                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:35.091 MainDeviceAllTabPage:923 - *************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:35.092 MainDeviceAllTabPage:924 - Device Count Validations on All Tab  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:35.092 MainDeviceAllTabPage:925 - *************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.494 MainDeviceAllTabPage:936 - Total Count of devices displayed to the main Router Image are : 4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.497 MainDeviceAllTabPage:937 - Total Count of 5GHz devices connected to the main Router are : 4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.498 MainDeviceAllTabPage:938 - Count of devices displayed on the main Router Image is equal to the count of all devices connected to the main Router
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.498 MainDeviceAllTabPage:947 - Total Count of execellent devices connected to the main Router are : 4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.500 MainDeviceAllTabPage:948 - Total Count of medium devices connected to the main Router are : 0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.500 MainDeviceAllTabPage:949 - Total Count of poor devices connected to the main Router are : 0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.501 MainDeviceAllTabPage:950 - Total Count of execellent, medium and poor devices are equal the count of devices displayed on the main Router Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:37.731 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-00-50-30/TC02_Medium_Test/Verify_Devices_Count_Validation_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:38.323 TC02_Medium_Test:83 - 
+
+****** starting test : Verify_Connected_Devices_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:38.338 MainDeviceAllTabPage:689 -                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:38.339 MainDeviceAllTabPage:690 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:38.339 MainDeviceAllTabPage:691 - Details of All Devices Connected to Main Router
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:38.339 MainDeviceAllTabPage:692 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:39.407 MainDeviceAllTabPage:288 - Number of online devices connected to the main mAX Router is : 4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:42.599 MainDeviceAllTabPage:700 - Connected Device  : 1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:42.600 MainDeviceAllTabPage:701 - --------------------------
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:46.648 MainDeviceAllTabPage:718 - Device Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:50.213 MainDeviceAllTabPage:726 - Device Name: TP-Link-Archer C6
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:55.743 MainDeviceAllTabPage:736 - Device Signal Strength data is not available 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:51:58.909 MainDeviceAllTabPage:741 - Device Download Speed : ---
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:03.344 MainDeviceAllTabPage:748 - Device Upload Speed : ---
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:10.423 MainDeviceAllTabPage:756 -  : 192.168.7.211
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:15.933 MainDeviceAllTabPage:768 - MAC Address : E4:C3:2A:48:5B:D9
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:23.442 MainDeviceAllTabPage:779 - Channel : Auto
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:28.093 MainDeviceAllTabPage:793 - RSSI Details are not available or displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:28.094 MainDeviceAllTabPage:796 - ****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:28.095 MainDeviceAllTabPage:797 -                                                     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:28.095 MainDeviceAllTabPage:700 - Connected Device  : 2
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:28.099 MainDeviceAllTabPage:701 - --------------------------
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:33.935 MainDeviceAllTabPage:718 - Device Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:35.411 MainDeviceAllTabPage:726 - Device Name: Xiaomi-Mobile
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:52:44.320 MainDeviceAllTabPage:736 - Device Signal Strength data is not available 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:53:01.308 MainDeviceAllTabPage:748 - Device Upload Speed : 0.005 Mbps
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:53:10.996 MainDeviceAllTabPage:762 - IP Address Details are not available or displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:53:26.436 MainDeviceAllTabPage:768 - MAC Address : 4C:02:20:1D:EF:97
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:53:41.772 MainDeviceAllTabPage:779 - Channel : 1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:53:57.148 MainDeviceAllTabPage:789 - RSSI : -47 dBm
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:53:57.150 MainDeviceAllTabPage:796 - ****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:53:57.153 MainDeviceAllTabPage:797 -                                                     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:15.440 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-00-50-30/TC02_Medium_Test/Verify_Connected_Devices_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:16.321 TC02_Medium_Test:83 - 
+
+****** starting test : Verify_Main_Router_Details_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:22.299 MainDeviceAllTabPage:819 -                                   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:22.307 MainDeviceAllTabPage:820 - **********************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:22.308 MainDeviceAllTabPage:821 - Details of MAIN Router Device     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:22.308 MainDeviceAllTabPage:822 - **********************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:24.660 MainDeviceAllTabPage:825 - Details Header Text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:27.572 MainDeviceAllTabPage:832 - Channel 1 : 1 Devices(5 Ghz)
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:32.895 MainDeviceAllTabPage:844 - Channel 2 : 2 Devices(2.4 Ghz)
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:36.240 MainDeviceAllTabPage:854 - WAN IP Address : 10.240.167.231
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:39.378 MainDeviceAllTabPage:863 - LAN IP Address : 192.168.7.1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:42.394 MainDeviceAllTabPage:872 - MAC Address : 6c:ca:08:7d:8f:6c
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:46.818 MainDeviceAllTabPage:881 - Serial No. : 8BP3W9455100053
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:52.321 MainDeviceAllTabPage:890 - Firmware : AXR.0509.210914.13
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:55.636 MainDeviceAllTabPage:899 - Model No. : W31
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:54:56.835 MainDeviceAllTabPage:907 - Restart Router Button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:55:05.254 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-00-50-30/TC02_Medium_Test/Verify_Main_Router_Details_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:55:12.140 ParentClass:188 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 00:55:12.246 ParentClass:190 - Quitting Driver
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:11.194 ParentClass:304 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:11.207 ParentClass:259 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:17.289 ParentClass:274 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:17.291 ParentClass:275 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:21.298 TC02_Medium_Test:60 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:21.311 ParentClass:328 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:21.325 TC02_Medium_Test:64 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:21.327 TC02_Medium_Test:67 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:21.328 TC02_Medium_Test:70 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:21.331 TC02_Medium_Test:73 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:21.333 TC02_Medium_Test:75 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:22.938 TC02_Medium_Test:84 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:23.503 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-22-11/TC02_Medium_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:23.963 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Main_Device_UI_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:23.967 TC02_Medium_Test:153 -                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:23.969 TC02_Medium_Test:154 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:23.971 TC02_Medium_Test:155 - Test: Verify Main Device  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:23.972 TC02_Medium_Test:156 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:27.741 HomePage:536 - Home Page - Clicked on Main Device Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:30.896 MainDeviceAllTabPage:1064 - On MAIN Router - All Tab Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:30.913 MainDeviceAllTabPage:578 -                                            
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:30.914 MainDeviceAllTabPage:579 - *******************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:30.915 MainDeviceAllTabPage:580 - Details of UI Elements on the All Tab Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:30.915 MainDeviceAllTabPage:581 - *******************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:33.608 MainDeviceAllTabPage:584 - MAIN Title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:34.921 MainDeviceAllTabPage:589 - Back Icon image is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:36.255 MainDeviceAllTabPage:594 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:37.587 MainDeviceAllTabPage:599 - All tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:38.738 MainDeviceAllTabPage:604 - 5GHz tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:40.057 MainDeviceAllTabPage:609 - 2.4GHz tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:41.227 MainDeviceAllTabPage:614 - Ethernet tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:42.504 MainDeviceAllTabPage:619 - Main Router image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:43.638 MainDeviceAllTabPage:629 - 3 devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:44.749 MainDeviceAllTabPage:639 - 3 excellent devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:45.891 MainDeviceAllTabPage:649 - 0 medium devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:46.931 MainDeviceAllTabPage:659 - 0 poor devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:50.361 MainDeviceAllTabPage:669 - Main Router Device Name is MAIN
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:51.484 MainDeviceAllTabPage:679 - Main Router Status Online
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:53.244 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-22-11/TC02_Medium_Test/Verify_Main_Device_UI_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:53.867 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_LED_Settings_UI_On_All_Tab ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:53.886 MainDeviceAllTabPage:367 -                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:53.886 MainDeviceAllTabPage:368 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:53.887 MainDeviceAllTabPage:369 - LED Settings Verficiation
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:53.887 MainDeviceAllTabPage:370 - *************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:56.344 MainDeviceAllTabPage:373 - LED Settings text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:22:57.859 MainDeviceAllTabPage:378 - Expand button image is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 ERROR] 2022-01-05 01:23:19.541 TestListener:39 - java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.cs.arris.Tests.TC02_Medium_Test.Verify_LED_Settings_UI_On_All_Tab(TC02_Medium_Test.java:170)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:21.016 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-22-11/TC02_Medium_Test/Verify_LED_Settings_UI_On_All_Tab.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:21.548 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Devices_Count_Validation_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:21.565 MainDeviceAllTabPage:924 -                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:21.566 MainDeviceAllTabPage:925 - *************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:21.566 MainDeviceAllTabPage:926 - Device Count Validations on All Tab  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:21.567 MainDeviceAllTabPage:927 - *************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.106 MainDeviceAllTabPage:938 - Total Count of devices displayed to the main Router Image are : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.112 MainDeviceAllTabPage:939 - Total Count of 5GHz devices connected to the main Router are : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.114 MainDeviceAllTabPage:940 - Count of devices displayed on the main Router Image is equal to the count of all devices connected to the main Router
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.114 MainDeviceAllTabPage:949 - Total Count of execellent devices connected to the main Router are : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.116 MainDeviceAllTabPage:950 - Total Count of medium devices connected to the main Router are : 0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.117 MainDeviceAllTabPage:951 - Total Count of poor devices connected to the main Router are : 0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.118 MainDeviceAllTabPage:952 - Total Count of execellent, medium and poor devices are equal the count of devices displayed on the main Router Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.447 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-22-11/TC02_Medium_Test/Verify_Devices_Count_Validation_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:25.988 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Connected_Devices_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:26.009 MainDeviceAllTabPage:691 -                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:26.010 MainDeviceAllTabPage:692 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:26.010 MainDeviceAllTabPage:693 - Details of All Devices Connected to Main Router
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:26.011 MainDeviceAllTabPage:694 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:27.315 MainDeviceAllTabPage:290 - Number of online devices connected to the main mAX Router is : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:32.415 MainDeviceAllTabPage:702 - Connected Device  : 1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:32.416 MainDeviceAllTabPage:703 - --------------------------
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:40.679 MainDeviceAllTabPage:722 - Device Image is not displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:45.976 MainDeviceAllTabPage:730 - Device Name is not available 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:23:51.764 MainDeviceAllTabPage:738 - Device Signal Strength data is not available 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:01.198 ParentClass:304 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:01.208 ParentClass:259 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:07.504 ParentClass:274 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:07.509 ParentClass:275 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:12.544 TC02_Medium_Test:60 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:12.551 ParentClass:328 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:12.561 TC02_Medium_Test:64 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:12.564 TC02_Medium_Test:67 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:12.567 TC02_Medium_Test:70 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:12.568 TC02_Medium_Test:73 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:12.572 TC02_Medium_Test:75 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:13.263 TC02_Medium_Test:84 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:13.787 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:14.349 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Main_Device_UI_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:14.351 TC02_Medium_Test:153 -                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:14.352 TC02_Medium_Test:154 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:14.352 TC02_Medium_Test:155 - Test: Verify Main Device  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:14.353 TC02_Medium_Test:156 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:18.264 HomePage:536 - Home Page - Clicked on Main Device Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:21.288 MainDeviceAllTabPage:1064 - On MAIN Router - All Tab Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:21.301 MainDeviceAllTabPage:578 -                                            
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:21.302 MainDeviceAllTabPage:579 - *******************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:21.303 MainDeviceAllTabPage:580 - Details of UI Elements on the All Tab Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:21.304 MainDeviceAllTabPage:581 - *******************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:24.017 MainDeviceAllTabPage:584 - MAIN Title text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:25.204 MainDeviceAllTabPage:589 - Back Icon image is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:26.457 MainDeviceAllTabPage:594 - Help Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:27.772 MainDeviceAllTabPage:599 - All tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:28.780 MainDeviceAllTabPage:604 - 5GHz tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:30.125 MainDeviceAllTabPage:609 - 2.4GHz tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:31.580 MainDeviceAllTabPage:614 - Ethernet tab is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:32.799 MainDeviceAllTabPage:619 - Main Router image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:34.045 MainDeviceAllTabPage:629 - 3 devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:35.145 MainDeviceAllTabPage:639 - 3 excellent devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:36.300 MainDeviceAllTabPage:649 - 0 medium devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:37.406 MainDeviceAllTabPage:659 - 0 poor devices are connected to the Main Router 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:39.972 MainDeviceAllTabPage:669 - Main Router Device Name is MAIN
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:41.122 MainDeviceAllTabPage:679 - Main Router Status Online
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:43.138 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Verify_Main_Device_UI_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:43.716 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_LED_Settings_UI_On_All_Tab ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:43.735 MainDeviceAllTabPage:367 -                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:43.736 MainDeviceAllTabPage:368 - **************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:43.736 MainDeviceAllTabPage:369 - LED Settings Verficiation
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:43.736 MainDeviceAllTabPage:370 - *************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:46.275 MainDeviceAllTabPage:373 - LED Settings text is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:47.650 MainDeviceAllTabPage:378 - Expand button image is displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:51.099 MainDeviceAllTabPage:384 - Brightness Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:52.980 MainDeviceAllTabPage:389 - Moon Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:54.016 MainDeviceAllTabPage:394 - Sun Brightness image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:55.068 MainDeviceAllTabPage:399 - Choose Color Brightness label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:58.408 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Verify_LED_Settings_UI_On_All_Tab.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:25:59.036 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Decrease_LED_Settings_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:04.406 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Verify_Decrease_LED_Settings_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:04.903 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Increase_LED_Settings_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:10.908 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Verify_Increase_LED_Settings_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:11.334 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Devices_Count_Validation_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:11.346 MainDeviceAllTabPage:924 -                                      
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:11.347 MainDeviceAllTabPage:925 - *************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:11.347 MainDeviceAllTabPage:926 - Device Count Validations on All Tab  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:11.348 MainDeviceAllTabPage:927 - *************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.701 MainDeviceAllTabPage:938 - Total Count of devices displayed to the main Router Image are : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.702 MainDeviceAllTabPage:939 - Total Count of 5GHz devices connected to the main Router are : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.703 MainDeviceAllTabPage:940 - Count of devices displayed on the main Router Image is equal to the count of all devices connected to the main Router
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.704 MainDeviceAllTabPage:949 - Total Count of execellent devices connected to the main Router are : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.704 MainDeviceAllTabPage:950 - Total Count of medium devices connected to the main Router are : 0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.705 MainDeviceAllTabPage:951 - Total Count of poor devices connected to the main Router are : 0
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.705 MainDeviceAllTabPage:952 - Total Count of execellent, medium and poor devices are equal the count of devices displayed on the main Router Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:13.908 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Verify_Devices_Count_Validation_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:14.292 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Connected_Devices_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:14.312 MainDeviceAllTabPage:691 -                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:14.313 MainDeviceAllTabPage:692 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:14.314 MainDeviceAllTabPage:693 - Details of All Devices Connected to Main Router
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:14.315 MainDeviceAllTabPage:694 - ***********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:15.186 MainDeviceAllTabPage:290 - Number of online devices connected to the main mAX Router is : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:17.267 MainDeviceAllTabPage:702 - Connected Device  : 1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:17.268 MainDeviceAllTabPage:703 - --------------------------
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:21.627 MainDeviceAllTabPage:720 - Device Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:22.705 MainDeviceAllTabPage:728 - Device Name: TP-Link-Archer C6
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:32.796 MainDeviceAllTabPage:738 - Device Signal Strength data is not available 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:34.994 MainDeviceAllTabPage:743 - Device Download Speed : ---
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:37.227 MainDeviceAllTabPage:750 - Device Upload Speed : ---
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:45.944 MainDeviceAllTabPage:770 - MAC Address : E4:C3:2A:48:5B:D9
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:26:56.881 MainDeviceAllTabPage:781 - Channel : Auto
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:02.029 MainDeviceAllTabPage:795 - RSSI Details are not available or displayed 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:02.030 MainDeviceAllTabPage:798 - ****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:02.031 MainDeviceAllTabPage:799 -                                                     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:02.031 MainDeviceAllTabPage:702 - Connected Device  : 2
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:02.033 MainDeviceAllTabPage:703 - --------------------------
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:10.019 MainDeviceAllTabPage:720 - Device Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:12.779 MainDeviceAllTabPage:728 - Device Name: Xiaomi-Mobile
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:24.094 MainDeviceAllTabPage:738 - Device Signal Strength data is not available 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:30.816 MainDeviceAllTabPage:743 - Device Download Speed : 0.0 Mbps
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:45.255 MainDeviceAllTabPage:750 - Device Upload Speed : 0.141 Mbps
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:27:58.660 MainDeviceAllTabPage:758 - IP Address: : 192.168.7.107
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:13.345 MainDeviceAllTabPage:770 - MAC Address : 4C:02:20:1D:EF:97
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:28.107 MainDeviceAllTabPage:781 - Channel : 1
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:32.124 MainDeviceAllTabPage:798 - ****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:32.126 MainDeviceAllTabPage:799 -                                                     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:32.127 MainDeviceAllTabPage:702 - Connected Device  : 3
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:32.127 MainDeviceAllTabPage:703 - --------------------------
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:36.541 MainDeviceAllTabPage:720 - Device Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:37.922 MainDeviceAllTabPage:728 - Device Name: iPhone (me)
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:40.447 MainDeviceAllTabPage:738 - Device Signal Strength data is not available 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:53.668 MainDeviceAllTabPage:798 - ****************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:28:53.669 MainDeviceAllTabPage:799 -                                                     
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:29:12.732 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Verify_Connected_Devices_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:29:13.359 TC02_Medium_Test:84 - 
+
+****** starting test : Verify_Main_Router_Details_On_All_Tab_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:29:14.646 MainDeviceAllTabPage:918 - Issue when verifying Main Router Details
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 ERROR] 2022-01-05 01:29:15.065 TestListener:39 - java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.cs.arris.Tests.TC02_Medium_Test.Verify_Main_Router_Details_On_All_Tab_Page(TC02_Medium_Test.java:216)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:29:15.248 ParentClass:431 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05-01-25-01/TC02_Medium_Test/Verify_Main_Router_Details_On_All_Tab_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:29:22.069 ParentClass:188 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-05 INFO ] 2022-01-05 01:29:22.108 ParentClass:190 - Quitting Driver
