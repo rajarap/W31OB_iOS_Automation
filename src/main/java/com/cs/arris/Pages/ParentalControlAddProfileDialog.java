@@ -6,6 +6,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -101,6 +102,8 @@ public class ParentalControlAddProfileDialog extends ParentClass implements Page
 	}
 	
 	public boolean clickCreateProfileButton() {
+		////XCUIElementTypeButton[@name="Done"]
+		super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeButton[`label == \"Done\"`]")).click();
 		if (createProfileButton.isDisplayed()) {
 			click(createProfileButton);
 			utils.log().info("Clicked on Create Profile Button Icon");

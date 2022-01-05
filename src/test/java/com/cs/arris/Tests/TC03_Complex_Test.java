@@ -169,13 +169,16 @@ public class TC03_Complex_Test extends ParentClass
 			if(new ParentalControlWithProfilesPage().isAt()) {
 				for(int i = 1; i <= 4; i++)	{
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
+					super.pause(2);
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
+					super.pause(2);
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
+					super.pause(3);
 				}
 			}
 			
 			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().deleteUserProfile());
-			
+			super.pause(5);
 			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUIForGlobalSettingsOnProfilesPage());
 			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
 			
@@ -211,8 +214,8 @@ public class TC03_Complex_Test extends ParentClass
 		@Test(priority = 6, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
 		public void Verify_Edit_User_Profile_Name() {
 			SoftAssert softcontrol6 = new SoftAssert();
-//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getExistingUserName());
-//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickUserProfileNameEditButton());
+			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getExistingUserName());
+			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickUserProfileNameEditButton());
 			
 			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()){
 				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog());
@@ -239,9 +242,11 @@ public class TC03_Complex_Test extends ParentClass
 					utils.log().info("An Alert message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.getText()+ "  is displayed");
 					//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
 				}
-					
 				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
 				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
 				//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
 			}
 			
@@ -260,7 +265,7 @@ public class TC03_Complex_Test extends ParentClass
 				softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton());
 			
 			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickBackButton());
-			
+			super.pause(5);
 			softcontrol8.assertAll();
 		}
 		
@@ -268,21 +273,23 @@ public class TC03_Complex_Test extends ParentClass
 		public void Verify_Devices_Associated_With_User_Profile() {
 			SoftAssert softcontrol9 = new SoftAssert();
 			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
-			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedDeviceList());
-			//softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedDevice());
+			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedDevice());
+			//softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedDeviceList());
 			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
 			
 			softcontrol9.assertAll();
 		}
 		
 		@Test(priority = 10, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Add_Rule_To_User_Profile() {
+		public void Verify_Add_Rule_Help_Page() {
 			SoftAssert softcontrol10 = new SoftAssert();
 			softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddRuleLink());
 			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
-				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
-			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
+				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickHelpIcon());
+				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getParentalAddRuleHelpPageObject().clickCloseButton());
+				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());}
+				
 			softcontrol10.assertAll();
 		}
 		
@@ -291,12 +298,15 @@ public class TC03_Complex_Test extends ParentClass
 			SoftAssert softcontrol11 = new SoftAssert();
 			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) 
 				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnAddInternetBlockingScheduleDialog());
-			utils.log().info("                                                          ");
+			
+			utils.log().info("                                  ");
 			utils.log().info("Selecting same start and stop time");
+			utils.log().info("----------------------------------");
+			
 			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
 			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
+			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
 			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
 			
 			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.isDisplayed()) 
@@ -307,167 +317,190 @@ public class TC03_Complex_Test extends ParentClass
 			softcontrol11.assertAll();
 		}
 		
-//		@Test(priority = 12, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Select_Start_Time_For_EveryDay_Schedule() {
-//			SoftAssert softcontrol12 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
-//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
-//			
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) {
-//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickEveryDayButton());
-//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());}
-//			
-//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
-//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-//
-//			softcontrol12.assertAll();
-//		}
-//		
-//		@Test(priority = 13, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Select_Stop_Time_For_EveryDay_Schedule() {
-//			SoftAssert softcontrol13 = new SoftAssert();
-//			super.pause(65);
-//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
-//			
-//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
-//				softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-//				
-//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-//			super.pause(3);
-//
-//			softcontrol13.assertAll();
-//		}
-//		
-//		@Test(priority = 14, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Add_Custom_Schedule_To_Rule() {
-//			SoftAssert softcontrol14 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
-//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
-//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCustomButton());
-//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnCustomClick());
-//			}
-//			softcontrol14.assertAll();
-//		}
-//		
-//		@Test(priority = 15, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Add_Custom_Schedule_Select_DOW() {
-//			SoftAssert softcontrol15 = new SoftAssert();
-//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSunday());
-//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickTuesday());
-//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickThrusday());
-//
-//			softcontrol15.assertAll();
-//			}
-//		
-//		@Test(priority = 16, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Add_Custom_Schedule_Select_Start_Time() {
-//			SoftAssert softcontrol16 = new SoftAssert();
-//			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-//			
-//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt())
-//				softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-//			
-//			softcontrol16.assertAll();
-//			}
-//		
-//		@Test(priority = 17, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Add_Custom_Schedule_Select_Stop_Time() {
-//			SoftAssert softcontrol17 = new SoftAssert();
-//			super.pause(65);
-//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
-//			
-//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().isAt()) 
-//				softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().getDatePickerDialogObject().clickOkButton());
-//			
-//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-//			super.pause(3);
-//			
-//			softcontrol17.assertAll();
-//		}
-//		
-//		@Test(priority = 18, dependsOnMethods = {"Login_And_Onboard"})
-//		public void Verify_Enable_Schedule_Time_UI_Page() {
-//			SoftAssert softcontrol18 = new SoftAssert();
-//
-//			new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonEnableScheduleTimePage();
-//			softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickBackButton());
-//			
-//			softcontrol18.assertAll();
-//		}
-//		
-//		@Test(priority = 19, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-//		public void Verify_Rules_Associated_With_User() {
-//			SoftAssert softcontrol19 = new SoftAssert();
-//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
-//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyRulesAssociatedWithUser());
-//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedRulesList());
-//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
-//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickBackButton());
-//			
-//			softcontrol19.assertAll();
-//		}
-//		
-//		@Test(priority = 20, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-//		public void Verify_Pause_Internet_For_All_Users() {
-//			SoftAssert softcontrol20 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().isAt()) {
-//				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().enablePauseInternetAccessForAllUserProfiles());
+		@Test(priority = 12, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Select_Start_Time_For_EveryDay_Schedule() {
+			SoftAssert softcontrol12 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
+				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+			
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) {
+				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickEveryDayButton());
+				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());}
+			
+			softcontrol12.assertAll();
+		}
+		
+		@Test(priority = 13, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Select_Stop_Time_For_EveryDay_Schedule() {
+			SoftAssert softcontrol13 = new SoftAssert();
+			super.pause(65);
+			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+			super.pause(3);
+
+			softcontrol13.assertAll();
+		}
+		
+		@Test(priority = 14, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Add_Custom_Schedule_To_Rule() {
+			SoftAssert softcontrol14 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
+				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCustomButton());
+				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnCustomClick());	}
+
+			softcontrol14.assertAll();
+		}
+		
+		@Test(priority = 15, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Add_Custom_Schedule_Select_DOW() {
+			SoftAssert softcontrol15 = new SoftAssert();
+			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSunday());
+			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickTuesday());
+			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickThrusday());
+
+			softcontrol15.assertAll();
+			}
+		
+		@Test(priority = 16, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Add_Custom_Schedule_Select_Start_Time() {
+			SoftAssert softcontrol16 = new SoftAssert();
+			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+			softcontrol16.assertAll();
+			}
+		
+		@Test(priority = 17, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Verify_Add_Custom_Schedule_Select_Stop_Time() {
+			SoftAssert softcontrol17 = new SoftAssert();
+			super.pause(65);
+			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+			super.pause(3);
+			
+			softcontrol17.assertAll();
+		}
+		
+		@Test(priority = 18, dependsOnMethods = {"Login_And_Onboard"})
+		public void Verify_Enable_Schedule_Time_UI_Page() {
+			SoftAssert softcontrol18 = new SoftAssert();
+
+		//	new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonEnableScheduleTimePage();
+			softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickBackButton());
+			super.pause(5);
+			softcontrol18.assertAll();
+		}
+		
+		@Test(priority = 19, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		public void Delete_Rules_Associated_With_User() {
+			SoftAssert softcontrol19 = new SoftAssert();
+			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
+			//softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyRulesAssociatedWithUser());
+			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedRulesList());
+			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
+			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickBackButton());
+			
+			softcontrol19.assertAll();
+		}
+		
+		@Test(priority = 20, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Pause_Internet_For_Selected_Users() {
+			SoftAssert softcontrol20 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().isAt()) 
+				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().pauseInternetForSelectedUsers());
+			
+			softcontrol20.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+
+			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+			}
+
+			softcontrol20.assertAll();
+		}
+		
+		@Test(priority = 21, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Resume_Internet_For_Selected_Users() {
+			SoftAssert softcontrol21 = new SoftAssert();
+			
+			if(new ParentalControlWithProfilesPage().isAt()) 
+				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().resumeInternetForSelectedUsers());
+			
+			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+
+			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+			}
+			softcontrol21.assertAll();
+		}
+		
+		@Test(priority = 22, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Pause_Internet_For_All_Users() {
+			SoftAssert softcontrol20 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().isAt()) {
+				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().enablePauseAllProfiles());
+				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().clickYesPauseInternetButton());
 //				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().verifyPauseInternetAccessForAllUserProfile());
-//			}
-//			softcontrol20.assertAll();
-//		}
-//		
-//		@Test(priority = 21, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-//		public void Verify_Currently_Blocked_Profiles() {
-//			SoftAssert softcontrol21 = new SoftAssert();
-//			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
-//
-//			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
-//				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
-//				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
-//			}
-//			softcontrol21.assertAll();
-//		}
-//		
-//		@Test(priority = 22, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-//		public void Verify_Resume_Internet_For_All_Users() {
-//			SoftAssert softcontrol22 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().isAt()) {
-//				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().disablePauseInternetAccessForAllProfiles());
+			}
+			softcontrol20.assertAll();
+		}
+		
+		@Test(priority = 23, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Currently_Blocked_Profiles() {
+			SoftAssert softcontrol21 = new SoftAssert();
+			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+
+			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+			}
+			softcontrol21.assertAll();
+		}
+		
+		@Test(priority = 24, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Resume_Internet_For_All_Users() {
+			SoftAssert softcontrol22 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().isAt()) {
+				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().disablePauseAllProfiles());
+				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().clickYesResumeInternetButton());
 //				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().verifyResumeInternetAccessForAllUserProfile());
-//			}
-//			softcontrol22.assertAll();
-//		}
-//		
-//		@Test(priority = 23, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-//		public void Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users() {
-//			SoftAssert softcontrol23 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().isAt())
-//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
-//			
-//			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
-//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyNoBlockedProfileMessages());
-//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
-//			}
-//			softcontrol23.assertAll();
-//		}
-//		
-//		@Test(priority = 24, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-//		public void Verify_Parental_Control_Help_Page() {
-//			SoftAssert softcontrol24 = new SoftAssert();
-//			if(new ParentalControlWithProfilesPage().isAt())
-//				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickHelpIcon());
-//			super.pause(3);
-//				
-//			if(new ParentalControlWithProfilesPage().getParentalHelpPageObject().isAt()) {
-//			//	softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().verifyUIOnParentalControlOverviewHelpPage());
-//				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().clickCloseButton());
-//				super.pause(3);
-//			}
-//			softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickBackButton());
-//
-//			softcontrol24.assertAll();
-//		}	
+			}
+			softcontrol22.assertAll();
+		}
+		
+		@Test(priority = 25, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users() {
+			SoftAssert softcontrol23 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().isAt())
+				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+			
+			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyNoBlockedProfileMessages());
+				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().disableParentalControl());
+			}
+			softcontrol23.assertAll();
+		}
+		
+		@Test(priority = 26, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+		public void Verify_Parental_Control_Help_Page() {
+			SoftAssert softcontrol24 = new SoftAssert();
+			if(new ParentalControlWithProfilesPage().isAt())
+				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickHelpIcon());
+			super.pause(3);
+				
+			if(new ParentalControlWithProfilesPage().getParentalHelpPageObject().isAt()) {
+				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().clickCloseButton());
+				super.pause(3);
+			}
+			softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getFooterIconsPageObject().clickHomeButton());
+
+			softcontrol24.assertAll();
+		}	
 		
 		
 		
@@ -476,7 +509,7 @@ public class TC03_Complex_Test extends ParentClass
 		
 		
 	  
-//		@Test(priority = 25, dependsOnMethods = {"Login_And_Onboard"})
+//		@Test(priority = 27, dependsOnMethods = {"Login_And_Onboard"})
 //		public void Verify_Network_UI_Page() {
 //			utils.log().info("                     ");
 //			utils.log().info("*********************");
@@ -489,7 +522,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet2.assertAll();
 //		}
 //
-//		@Test(priority = 26, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+//		@Test(priority = 28, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_Newtork_Help_Page() {
 //			SoftAssert softnet3 = new SoftAssert();
 //			softnet3.assertTrue(new NetworkPage().clickHelpButton());
@@ -497,7 +530,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet3.assertAll();
 //		}
 //
-//		@Test(priority = 27, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+//		@Test(priority = 29, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_Newtork_Test_Connection_Speed_Page() {
 //			SoftAssert softnet4 = new SoftAssert();
 //			softnet4.assertTrue(new NetworkPage().clickTestConnectionSpeedButton());
@@ -506,7 +539,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet4.assertAll();
 //		}
 //
-//		@Test(priority = 28, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+//		@Test(priority = 30, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_WAN_Settings_UI_Page() {
 //			SoftAssert softnet5 = new SoftAssert();
 ////			softnet5.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
@@ -526,7 +559,7 @@ public class TC03_Complex_Test extends ParentClass
 //				softnet5.assertAll();
 //		}
 //
-//		@Test(priority = 29, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
+//		@Test(priority = 31, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
 //		public void Verify_WAN_Settings_Help_Page() {
 //			SoftAssert softnet6 = new SoftAssert();
 //			softnet6.assertTrue(new NetworkPage().getWANSettingsPageObject().clickHelpButton());
@@ -535,7 +568,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet6.assertAll();
 //		}
 //
-//		@Test(priority = 30, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page",})
+//		@Test(priority = 32, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page",})
 //		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page() {
 //			SoftAssert softnet7 = new SoftAssert();
 //			new NetworkPage().getWANSettingsPageObject().clickWANIPConfigurationLink();
@@ -544,7 +577,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet7.assertAll();
 //		}
 //
-//		@Test(priority = 31, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page"})
+//		@Test(priority = 33, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv4_DHCP_UI_Page"})
 //		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv4_Static_UI_Page() {
 //			SoftAssert softnet8 = new SoftAssert();
 //			softnet8.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().verifyUIOnWANIPv4Static());
@@ -553,7 +586,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet8.assertAll();
 //		}
 //
-//		@Test(priority = 32, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv4_Static_UI_Page"})
+//		@Test(priority = 34, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv4_Static_UI_Page"})
 //		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page() {
 //			SoftAssert softnet9 = new SoftAssert();
 //			softnet9.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv4ConfigurationPageObject().clickWANIPv6Tab());
@@ -562,7 +595,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet9.assertAll();
 //		}
 //
-//		@Test(priority = 33, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page"})
+//		@Test(priority = 35, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page"})
 //		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateless_UI_Page() {
 //			SoftAssert softnet10 = new SoftAssert();
 //			softnet10.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().verifyUIOnWANIPv6Stateless());
@@ -570,7 +603,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet10.assertAll();
 //		}
 //
-////		@Test(priority = 34, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page"})
+////		@Test(priority = 36, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page"})
 ////		public void Verify_WAN_Settings_WAN_IP_Configuration_Help_Page() {
 ////			SoftAssert softnet11 = new SoftAssert();
 ////			new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickHelpButton();
@@ -585,7 +618,7 @@ public class TC03_Complex_Test extends ParentClass
 ////			softnet11.assertAll();
 ////		}
 ////		
-////		@Test(priority = 35, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
+////		@Test(priority = 37, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
 ////		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page() 
 ////		{
 ////			SoftAssert softnet12 = new SoftAssert();
@@ -595,7 +628,7 @@ public class TC03_Complex_Test extends ParentClass
 ////			softnet12.assertAll();
 ////		}
 ////		
-////		@Test(priority = 36, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page"})
+////		@Test(priority = 38, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page"})
 ////		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page() 
 ////		{
 ////			SoftAssert softnet13 = new SoftAssert();
@@ -604,7 +637,7 @@ public class TC03_Complex_Test extends ParentClass
 ////			softnet13.assertAll();
 ////		}
 ////		
-////		@Test(priority = 37, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page"})
+////		@Test(priority = 39, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page"})
 ////		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page() 
 ////		{
 ////			SoftAssert softnet14 = new SoftAssert();
@@ -614,7 +647,7 @@ public class TC03_Complex_Test extends ParentClass
 ////			softnet14.assertAll();
 ////		}
 ////		
-////		@Test(priority = 38, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page"})
+////		@Test(priority = 40, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page"})
 ////		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page() 
 ////		{
 ////			SoftAssert softnet15 = new SoftAssert();
@@ -622,7 +655,7 @@ public class TC03_Complex_Test extends ParentClass
 ////			softnet15.assertAll();
 ////		}
 //		
-////		@Test(priority = 39, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page"})
+////		@Test(priority = 41, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page"})
 ////		public void Verify_WAN_Settings_DNS_Configuration_Help_Page() 
 ////		{
 ////			SoftAssert softnet16 = new SoftAssert();
@@ -639,7 +672,7 @@ public class TC03_Complex_Test extends ParentClass
 ////				softnet16.assertAll();
 ////		}
 //		
-//		@Test(priority = 40, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
+//		@Test(priority = 42, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
 //		public void Verify_WAN_Settings_LAC_Alert_Dialog() 
 //		{
 //			SoftAssert softnet17 = new SoftAssert();
@@ -651,7 +684,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet17.assertAll();
 //		}
 //		
-//		@Test(priority = 41, dependsOnMethods = {"Login_And_Onboard"})
+//		@Test(priority = 43, dependsOnMethods = {"Login_And_Onboard"})
 //		public void Verify_LAN_Settings_UI_Page() 
 //		{
 //			SoftAssert softnet18 = new SoftAssert();
@@ -670,7 +703,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet18.assertAll();
 //		}
 //		
-//		@Test(priority = 42, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
+//		@Test(priority = 44, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
 //		public void Verify_LAN_Settings_LAN_IP_Reservation_Page() 
 //		{
 //			SoftAssert softnet19 = new SoftAssert();
@@ -680,7 +713,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet19.assertAll();
 //		}
 //		
-//		@Test(priority = 43, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Page"})
+//		@Test(priority = 45, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Page"})
 //		public void Verify_LAN_Settings_LAN_IP_Reservation_Add_Reservation_Page() 
 //		{
 //			SoftAssert softnet20 = new SoftAssert();
@@ -696,7 +729,7 @@ public class TC03_Complex_Test extends ParentClass
 //			}
 //		}
 //		
-//		@Test(priority = 44, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Add_Reservation_Page"})
+//		@Test(priority = 46, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Add_Reservation_Page"})
 //		public void Verify_LAN_Settings_LAN_IP_Reservation_Rules() 
 //		{
 //			SoftAssert softnet21 = new SoftAssert();
@@ -704,7 +737,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet21.assertAll();
 //		}
 //		
-////		@Test(priority = 45, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Rules"})
+////		@Test(priority = 47, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Rules"})
 ////		public void Verify_LAN_Settings_LAN_IP_Reservation_Edit_Page() 
 ////		{
 ////			SoftAssert softnet22 = new SoftAssert();
@@ -721,7 +754,7 @@ public class TC03_Complex_Test extends ParentClass
 ////			softnet22.assertAll();
 ////		}
 //
-//		@Test(priority = 46, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Page"})
+//		@Test(priority = 48, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Page"})
 //		public void Verify_LAN_Settings_LAN_IP_Reservation_Help_Page() {
 //			SoftAssert softnet23 = new SoftAssert();
 //			softnet23.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickHelpButton());
@@ -732,7 +765,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet23.assertAll();
 //		}
 //		
-//		@Test(priority = 47, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
+//		@Test(priority = 49, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
 //		public void Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page() 
 //		{
 //			SoftAssert softnet24 = new SoftAssert();
@@ -744,7 +777,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet24.assertAll();
 //		}
 //		
-//		@Test(priority = 48, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page"})
+//		@Test(priority = 50, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page"})
 //		public void Verify_Edit_LAN_Subnet_DHCP_Range_Configuration_Page() 
 //		{
 //			SoftAssert softnet25 = new SoftAssert();
@@ -781,7 +814,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet25.assertAll();
 //		}
 //		
-//		@Test(priority = 49, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page"})
+//		@Test(priority = 51, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page"})
 //		public void Edit_LAN_Subnet_Configuration_Octets() 
 //		{
 //			SoftAssert softnet26 = new SoftAssert();
@@ -805,7 +838,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet26.assertAll();
 //		}
 //		
-//		@Test(priority = 50, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page"})
+//		@Test(priority = 52, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Page"})
 //		public void Verify_LAN_Settings_LAN_Subnet_DHCP_Range_Configuration_Help_Page() 
 //		{
 //			SoftAssert softnet27 = new SoftAssert();
@@ -817,7 +850,7 @@ public class TC03_Complex_Test extends ParentClass
 //			}
 //		}
 //		
-//		@Test(priority = 51, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
+//		@Test(priority = 53, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
 //		public void Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page() 
 //		{
 //			SoftAssert softnet28 = new SoftAssert();	
@@ -828,7 +861,7 @@ public class TC03_Complex_Test extends ParentClass
 //				softnet28.assertAll();
 //		}
 //		
-//		@Test(priority = 52, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page"})
+//		@Test(priority = 54, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page"})
 //		public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Page() 
 //		{
 //			SoftAssert softnet29 = new SoftAssert();
@@ -884,7 +917,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet29.assertAll();
 //		}
 //		
-//		@Test(priority = 53, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page"})
+//		@Test(priority = 55, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page"})
 //		public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Help_Page() 
 //		{
 //			SoftAssert softnet30 = new SoftAssert();
@@ -902,7 +935,7 @@ public class TC03_Complex_Test extends ParentClass
 //				softnet30.assertAll();
 //		}
 //		
-//		@Test(priority = 54, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
+//		@Test(priority = 56, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
 //		public void Verify_Device_Priority_Settings_UI_Page() 
 //		{
 //			SoftAssert softnet31 = new SoftAssert();
@@ -929,7 +962,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet31.assertAll();
 //		}
 //		
-//		@Test(priority = 55, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_UI_Page"})
+//		@Test(priority = 57, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_UI_Page"})
 //		public void Verify_Device_Priority_Settings_Add_Device_UI_Page() 
 //		{
 //			SoftAssert softnet32 = new SoftAssert();
@@ -939,7 +972,7 @@ public class TC03_Complex_Test extends ParentClass
 //			}
 //		}
 //		
-//		@Test(priority = 56, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_Add_Device_UI_Page"})
+//		@Test(priority = 58, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_Add_Device_UI_Page"})
 //		public void Verify_Device_Priority_Settings_Add_Device_Page() 
 //		{
 //			SoftAssert softnet33 = new SoftAssert();
@@ -963,7 +996,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet33.assertAll();
 //		}
 //
-//		@Test(priority = 58, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_Add_Device_Page"})
+//		@Test(priority = 59, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_Add_Device_Page"})
 //		public void Verify_Device_Priority_Settings_Added_Device_Page() 
 //		{
 //			SoftAssert softnet34 = new SoftAssert();
@@ -979,7 +1012,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet34.assertAll();
 //		}
 //		
-//		@Test(priority = 59, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_Add_Device_Page"})
+//		@Test(priority = 60, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_Add_Device_Page"})
 //		public void Verify_Device_Priority_Settings_Add_Device_Help_Page() 
 //		{
 //			SoftAssert softnet35 = new SoftAssert();
@@ -993,7 +1026,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet35.assertAll();
 //		}
 //		
-//		@Test(priority = 60, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_UI_Page"})
+//		@Test(priority = 61, dependsOnMethods = {"Login_And_Onboard", "Verify_Device_Priority_Settings_UI_Page"})
 //		public void Verify_Device_Priority_Settings_Help_Page() 
 //		{
 //			SoftAssert softnet36 = new SoftAssert();
@@ -1006,7 +1039,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet36.assertAll();
 //		}
 //		
-//		@Test(priority = 61, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+//		@Test(priority = 62, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_Time_Zone_Settings_UI_Page() 
 //		{
 //			SoftAssert softnet37 = new SoftAssert();
@@ -1017,7 +1050,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet37.assertAll();
 //		}
 //		
-//		@Test(priority = 62, dependsOnMethods = {"Login_And_Onboard", "Verify_Time_Zone_Settings_UI_Page"})
+//		@Test(priority = 63, dependsOnMethods = {"Login_And_Onboard", "Verify_Time_Zone_Settings_UI_Page"})
 //		public void Verify_Time_Zone_Settings_Help_Page() 
 //		{
 //			SoftAssert softnet38 = new SoftAssert();
@@ -1028,7 +1061,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet38.assertAll();
 //		}
 //		
-//		@Test(priority = 63, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+//		@Test(priority = 64, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_General_Settings_UI_Page() 
 //		{
 //			SoftAssert softnet39 = new SoftAssert();
@@ -1046,7 +1079,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet39.assertAll();
 //		}
 //		
-//		@Test(priority = 64, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		@Test(priority = 65, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
 //		public void Verify_General_Settings_UPnP_Settings() 
 //		{
 //			SoftAssert softnet40 = new SoftAssert();
@@ -1067,7 +1100,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet40.assertAll();
 //		}
 //		
-//		@Test(priority = 65, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		@Test(priority = 66, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
 //		public void Verify_General_Settings_IPv6_Enable_Settings() 
 //		{
 //			SoftAssert softnet39 = new SoftAssert();
@@ -1077,7 +1110,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet39.assertAll();
 //		}
 //		
-//		@Test(priority = 66, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		@Test(priority = 67, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
 //		public void Verify_General_Settings_Bridge_Mode_Settings() 
 //		{
 //			SoftAssert softnet42 = new SoftAssert();
@@ -1087,7 +1120,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet42.assertAll();
 //		}
 //		
-//		@Test(priority = 67, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
+//		@Test(priority = 68, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_UI_Page"})
 //		public void Verify_General_Settings_Port_Forwarding_Settings() 
 //		{
 //			SoftAssert softnet43 = new SoftAssert();
@@ -1097,7 +1130,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet43.assertAll();
 //		}
 //		
-//		@Test(priority = 68, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
+//		@Test(priority = 69, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
 //		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Page() 
 //		{
 //			SoftAssert softnet44 = new SoftAssert();
@@ -1111,7 +1144,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet44.assertAll();
 //		}
 //		
-//		@Test(priority = 69, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
+//		@Test(priority = 70, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
 //		public void Verify_General_Settings_Port_Forwarding_Add_Rules() 
 //		{
 //			SoftAssert softnet45 = new SoftAssert();
@@ -1163,8 +1196,7 @@ public class TC03_Complex_Test extends ParentClass
 //		}
 //			
 //
-//		@Test(priority = 70)
-//
+//		@Test(priority = 71)
 //		public void Verify_General_Settings_Port_Forwarding_Edit_Rules() 
 //		{
 //			SoftAssert softnet46 = new SoftAssert();
@@ -1205,7 +1237,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet46.assertAll();
 //		}
 //////
-//////		@Test(priority = 71)
+//////		@Test(priority = 72)
 //////		public void Verify_General_Settings_Port_Forwarding_Add_Rule_Settings_Validations() 
 //////		{
 //////			SoftAssert softnet47 = new SoftAssert();
@@ -1248,7 +1280,7 @@ public class TC03_Complex_Test extends ParentClass
 //////			softnet47.assertAll();
 //////		}
 ////		
-//		@Test(priority = 72, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
+//		@Test(priority = 73, dependsOnMethods = {"Login_And_Onboard", "Verify_General_Settings_Port_Forwarding_Settings"})
 //		public void Verify_General_Settings_Port_Forwarding_Help_Page() 
 //		{
 //			SoftAssert softnet48 = new SoftAssert();
@@ -1268,7 +1300,7 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet48.assertAll();
 //		}
 //		
-////		@Test(priority = 73, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+////		@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 ////		public void Verify_Guest_WiFi_Network_Page() 
 ////		{
 ////			SoftAssert softnet49 = new SoftAssert();
@@ -1331,7 +1363,7 @@ public class TC03_Complex_Test extends ParentClass
 ////			softnet49.assertAll();
 ////		}
 ////		
-////		@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+////		@Test(priority = 75, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 ////		public void Verify_Extended_WiFi_Settings_Page() 
 ////		{
 ////			SoftAssert softnet50 = new SoftAssert();

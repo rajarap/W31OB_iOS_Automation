@@ -9,6 +9,7 @@ import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -36,9 +37,10 @@ public class ParentalControlUserProfileHelpPage extends ParentClass implements P
 	}
 
 	public boolean clickCloseButton() {
-		if (closeButton.isDisplayed()) {
+		String selector = "**/XCUIElementTypeButton[`label == \"cross\"`]";
+		if (super.getDriver().findElement(MobileBy.iOSClassChain(selector)).isDisplayed()) {
 			super.swipeUp();
-			click(closeButton);
+			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();;
 			utils.log().info("Clicked on Close Button");
 			return true;
 		} else {

@@ -6,6 +6,7 @@ import com.cs.arris.Base.ParentClass;
 import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -79,6 +80,7 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 	}
 	
 	public boolean clickSaveButton() {
+		super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeButton[`label == \"Done\"`]")).click();
 		if (saveButton.isDisplayed()) {
 			click(saveButton);
 			utils.log().info("Clicked on Save Changes Button");
@@ -102,6 +104,7 @@ public class ParentalControlEditUserProfileNameDialog extends ParentClass implem
 	public boolean enterUserProfileName() {
 		if (enterProfileName.isDisplayed()) {
 			super.generateProfileName();
+			clear(enterProfileName);
 			super.sendKeys(enterProfileName, super.profileName);
 			return true;
 		} else {

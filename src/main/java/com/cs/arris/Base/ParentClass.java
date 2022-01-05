@@ -48,7 +48,6 @@ import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
-import com.cs.arris.JsonMappers.Signin_TestData;
 import com.cs.arris.Reports.ExtentReport;
 import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
@@ -821,44 +820,74 @@ public class ParentClass
 			String[] allDevices = totalDevices.trim().split(" ");  //2
 			return Integer.valueOf(allDevices[0]);
 		}
+		
+		public void swipeUserProfile(Direction dir) {
+		    Dimension size;
+			size = getDriver().manage().window().getSize();
+			TouchAction action = new TouchAction(getDriver());
 
-		public void mobileScrollToElementIOS(MobileElement el) {
-		// System.out.println("mobileScrollToElementIOS(): pre: '" + pre + "'"); // always log your actions
+		    int startX = 0;
+		    int endX = 0;
+		    int startY = 0;
+		    int endY = 0;
 
-		    // Animation default time:
-		    //  - iOS: 200 ms
-		    // final value depends on your app and could be greater
-		    final int ANIMATION_TIME = 200; // ms
-		    final HashMap<String, String> scrollObject = new HashMap<String, String>();
-		    scrollObject.put("element", el.getText());
-		//    scrollObject.put("predicateString", pre);
-		    try {
-		        getDriver().executeScript("mobile:scroll", scrollObject);
-		        Thread.sleep(ANIMATION_TIME); // always allow swipe action to complete
-		    } catch (Exception e) {
-		        utils.log().info("mobileScrollToElementIOS(): FAILED\n" + e.getMessage());
-		        return;
-		    }
-		}
+		    switch (dir) {
+		        case LEFT:
+		            startY = (int) (size.height / 2);
+		            startX = (int) (size.width * 0.08);
+		            endX = (int) (size.width * 0.70);
+		            action.press(PointOption.point(260, 400)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+		                    .moveTo(PointOption.point(120, 400)).release().perform();
 
-		public void mobileScrollScreenByPredicateIOS(String pred, Direction dir) {
-			//utils.log().info("mobileScrollScreenByPredicateIOS(): dir: '" + dir + "'"); // always log your actions
-		    final int MAX_SWIPES = 5; // limit maximum swipes
-
-		    for (int i = 0; i < MAX_SWIPES; i++) {
-		        try {
-		            if (getDriver().findElement(MobileBy.iOSNsPredicateString(pred)).isDisplayed())
-		                break;
-		        } catch (Exception e) {
-		            // ignore
-		        }
-		        //mobileScrollScreenIOS(dir);
+		            break;
 		    }
 		}
 		
+		public void swipeAssocaitedDevices(Direction dir) {
+		    Dimension size;
+			size = getDriver().manage().window().getSize();
+			TouchAction action = new TouchAction(getDriver());
+
+		    int startX = 0;
+		    int endX = 0;
+		    int startY = 0;
+		    int endY = 0;
+
+		    switch (dir) {
+		        case LEFT:
+		            startY = (int) (size.height / 2);
+		            startX = (int) (size.width * 0.08);
+		            endX = (int) (size.width * 0.70);
+		            action.press(PointOption.point(275, 422)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+		                    .moveTo(PointOption.point(127, 422)).release().perform();
+
+		            break;
+		    }
+		}
 		
+		public void swipeAssocaitedRules(Direction dir) {
+		    Dimension size;
+			size = getDriver().manage().window().getSize();
+			TouchAction action = new TouchAction(getDriver());
+
+		    int startX = 0;
+		    int endX = 0;
+		    int startY = 0;
+		    int endY = 0;
+
+		    switch (dir) {
+		        case LEFT:
+		            startY = (int) (size.height / 2);
+		            startX = (int) (size.width * 0.08);
+		            endX = (int) (size.width * 0.70);
+		            action.press(PointOption.point(250, 555)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+		                    .moveTo(PointOption.point(140, 555)).release().perform();
+
+		            break;
+		    }
+		}
 		
-		public void swipe(Direction dir) {
+		public void swipeConnectedDevices(Direction dir) {
 		    Dimension size;
 			size = getDriver().manage().window().getSize();
 			TouchAction action = new TouchAction(getDriver());
@@ -906,13 +935,6 @@ public class ParentClass
 		            break;
 		    }
 		}
-		
-		
-		
-		
-		
-		
-		
 		
 }
 	

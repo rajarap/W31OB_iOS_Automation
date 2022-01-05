@@ -705,14 +705,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 					"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
-//					String pred = "label == \"RSSI\" AND name == \"Device_Detail_Screen_Label_RSSITitle["+i+"]\"";
-//					utils.log().info("RSSI pred id : " + pred);
-//					super.mobileScrollScreenByPredicateIOS(pred, Direction.UP);
-////					MobileElement rssi =(MobileElement) super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Detail_Screen_Label_RSSITitle["+i+"]\"]");
-////					
-////					super.mobileScrollToElementIOS(rssi);
-//					
-					super.swipe(Direction.UP);
+					super.swipeConnectedDevices(Direction.UP);
 					for (MobileElement e : entity) {
 						try {
 							//if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Device_Detail_Screen_Image_Device["+i+"]\"]").isDisplayed())
@@ -959,27 +952,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			utils.log().info("Issue in validating count of devices");
 			return false;
 		}
-	}
-	
-		public void dragSeekBarTo(int perc) {
-			// get location of seek bar from left
-			int start=seekBar.getLocation().getX();
-			utils.log().info("Startpoint - " + start);
-        
-			//get location of seekbar from top
-			int y=seekBar.getLocation().getY();
-			utils.log().info("Yaxis - "+ y);
-        
-			//Get total width of seekbar
-			int end=start + seekBar.getSize().getWidth();
-			utils.log().info("End point - "+ end);
-        
-			TouchAction action = new TouchAction(super.getDriver());
-        
-			//move slider to 70% of width
-			int moveTo=(int)(end * ((float)perc/100));
-        
-			action.longPress(PointOption.point(start,y)).moveTo(PointOption.point(moveTo,y)).release().perform();
 	}
 		
 		public void mobileSwipeSeekBar(Direction dir) {

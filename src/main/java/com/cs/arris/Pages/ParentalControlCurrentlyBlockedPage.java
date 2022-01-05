@@ -15,6 +15,7 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlCurrentlyBlockedPage extends ParentClass implements Page
 {
@@ -54,10 +55,10 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 	})
 	public MobileElement currentlyBlockedTab; 
 
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/heading_error_message")  //There are currently no Blocked Profiles
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_Blocked\"]")  //There are currently no Blocked Profiles
 	public MobileElement currentlyBlockederrorMessage1; 
 	
-	@AndroidFindBy (id = "com.arris.sbcBeta:id/heading_error_message_1")  //Please note the profile will only appear here if the time block applied on the particular profile is active.
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedNote\"]")  //Please note the profile will only appear here if the time block applied on the particular profile is active.
 	public MobileElement currentlyBlockederrorMessage2; 
 	
 		
@@ -92,7 +93,6 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 	
 	public boolean verifyInternetPausedUserProfiles() {
 		try {
-			int counter = 1;
 			utils.log().info("*********************************************************************");
 			utils.log().info("Details of User Profiles For Whom Internet is Currently Paused/Blocked");
 			utils.log().info("*********************************************************************");
@@ -102,28 +102,28 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 				utils.log().info("Blocked User Profile : " + i);
 				utils.log().info("--------------------------------");
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[" + i + "]");
+				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 				
 				for (MobileElement e : entity) {
-						if (e.findElementByXPath("//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/profile_image']").isDisplayed()) {
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Screen_Image_BlockedProfile["+i+"]\"]").isDisplayed()) {
 							utils.log().info("Profile Image is displayed");
 					} else {
 						utils.log().info("Profile Image is not displayed ");}
 
-						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").isDisplayed()) {
-							utils.log().info("Profile user Name is : " + e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_name']").getText());
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedProfile["+i+"]\"]").isDisplayed()) {
+						utils.log().info("Profile user Name is : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedProfile["+i+"]\"]").getText());
 					} else {
 						utils.log().info("User Profile Name is not displayed ");}
 	
-						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").isDisplayed()) {
-							utils.log().info("Number of Devices Paused for Internet Connection is : " + (e.findElementByXPath(
-								"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_connected_devices']").getText()));
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedConnectedDevice["+i+"]\"]").isDisplayed()) {
+							utils.log().info("Number of Devices Paused for Internet Connection is : " + (super.getDriver().findElementByXPath(
+								"//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedConnectedDevice["+i+"]\"]").getText()));
 					} else {
 						utils.log().info("Number of Devices Paused for Internet Connection is not displayed ");	}
 	
-						if (e.findElementByXPath("//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").isDisplayed()) {
-							utils.log().info("Internet Paused Label is displayed : " + (e.findElementByXPath(
-									"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/pause_internet_message']").getText()));
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedPause["+i+"\"]").isDisplayed()) {
+							utils.log().info("Internet Paused Label is displayed : " + (super.getDriver().findElementByXPath(
+									"//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedPause["+i+"]\"]").getText()));
 					} else {
 						utils.log().info("Internet Paused Label is not displayed ");}
 					utils.log().info("****************************************************");

@@ -11,6 +11,7 @@ import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -142,7 +143,11 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 		utils.log().info("Devices Listed in the Add Device Page");
 		utils.log().info("*************************************");
 
-		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
+		String selector = "**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable";
+		//int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain(selector)).size();
+		
+		
 		utils.log().info("Count of Devices Listed in the Add Device Page is : " + size);
 		
 		try {
@@ -154,24 +159,24 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Device["+i+"]\"]").isDisplayed())
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Device["+i+"]\"]").isDisplayed())
 						utils.log().info("Device Image is displayed");
 					else
 						utils.log().info("Device Image is not available : ");
 
-					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").isDisplayed())
-						utils.log().info("Device name : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").getText());
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").isDisplayed())
+						utils.log().info("Device name : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").getText());
 					else
 						utils.log().info("Device Name is not available ");
 
-					if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]").isDisplayed())
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]").isDisplayed())
 						utils.log().info("Check box is displayed ");
 					else
 						utils.log().info("Check box is not available ");
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
 				}
-				if (i >= 8)
+				if (i >= 5)
 					new SwipeActions().swipeScreen(Direction.UP);
 			}
 			return true;
@@ -181,34 +186,35 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 	}
 	
 	public boolean selectADeviceForUserProfile() {
-
+		utils.log().info("                                           ");
 		utils.log().info("*******************************************");
 		utils.log().info("Select A Device From the List of Devices   ");
 		utils.log().info("*******************************************");
 
-		//utils.log().info("Number of Devices listed in the Add Device page is  : " + super.devicesConnectedToRouter);
-
+		String selector = "**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable";
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain(selector)).size();
+		
 			try {
-				for (int i = 2; i <= 2; i++) {
-					utils.log().info("Selected Device : " + i);
-					utils.log().info("-----------------------");
+				for (int i = 1; i <= size ; i++) {
+//					utils.log().info("Selected Device : " + i);
+//					utils.log().info("-----------------------");
 
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 					"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 					for (MobileElement e : entity) {
-						if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Device["+i+"]\"]").isDisplayed())
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Device["+i+"]\"]").isDisplayed())
 							utils.log().info("Device Image is displayed");
 						else
 							utils.log().info("Device Image is not available");
 
-						if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").isDisplayed())
-							utils.log().info("Device name : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").getText());
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").isDisplayed())
+							utils.log().info("Device name : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Device_List_Screen_Label_Device["+i+"]\"]").getText());
 						else
 							utils.log().info("Device Name is not available ");
 
-						if (e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]").isDisplayed()) {
-							click(e.findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]"));
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]").isDisplayed()) {
+							click(super.getDriver().findElementByXPath("//XCUIElementTypeImage[@name=\"Parental_Control_Device_List_Screen_Image_Box["+i+"]\"]"));
 							utils.log().info("Clicked the check box to select the device for the user ");}
 						else
 							utils.log().info("Check box is not available ");
@@ -223,6 +229,7 @@ public class ParentalControlUserProfileAddDevicePage extends ParentClass impleme
 
 	 
 	public boolean verifyUIOnAddDevicePage() {
+		utils.log().info("                                       ");
 		utils.log().info("***************************************");
 		utils.log().info(" Parental Control  -  Add Device Page  ");
 		utils.log().info("***************************************");

@@ -28,10 +28,10 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_NavigationBar_TitleLabel\"]") 
 	public MobileElement enableScheduleTimeTitle; 
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_NoRule\"]")
 	public MobileElement noActiveRuleFoundText; 
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_NoActiveInfo\"]")
 	public MobileElement noActiveRuleFoundMessage; 
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_NavigationBar_Button_Back\"]")
@@ -91,6 +91,44 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 			return true;
 		} else {
 			utils.log().info("Add Time Schedule button is not displayed");
+			return false;
+		}
+	}
+	
+	
+	public boolean verifyUIOnEnableScheduleTimePage() {
+		try {
+			if (enableScheduleTimeTitle.isDisplayed())
+				utils.log().info("Title - " + enableScheduleTimeTitle.getText() + " - is displayed");
+			else
+				utils.log().info("Enable Schedule Time Title is not displayed");
+
+			if (backButton.isDisplayed())
+				utils.log().info("Back button is displayed");
+			else
+				utils.log().info("Back button button is not displayed");
+
+			if (helpIcon.isDisplayed())
+				utils.log().info("Help Icon is displayed");
+			else
+				utils.log().info("Help Icon is not displayed");
+			
+			if (noActiveRuleFoundText.isDisplayed())
+				utils.log().info(noActiveRuleFoundText.getText() + " is displayed");
+			else
+				utils.log().info("No Active Time Rule Found, is not displayed");
+			
+			if (noActiveRuleFoundMessage.isDisplayed())
+				utils.log().info("No Time Schedule Added to this profile, is displayed");
+			else
+				utils.log().info("No Time Schedule Added to this profile, is not displayed");
+			
+			if (addScheduleButton.isDisplayed())
+				utils.log().info(addScheduleButton.getText() + " button is displayed");
+			else
+				utils.log().info("Add Time Schedule button is not displayed");
+			return true;
+		} catch (Exception e) {
 			return false;
 		}
 	}
@@ -161,16 +199,17 @@ public class ParentalControlUserProfileAddRulePage extends ParentClass implement
 		utils.log().info("Add Rule - Details of Schedules Listed in Enabled Schedule Time Custom Page ");
 		utils.log().info("****************************************************************************");
 		
-		int size = super.getDriver().findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.arris.sbcBeta:id/time_block_list_view']").size();
+		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 		utils.log().info("Count of Schedule Time : " + size);
+		
 		try {
 			for (int i = 1; i <= size ; i++) 
 			{
 				utils.log().info("Enable Schedule Time - Rule : " + i);
-				utils.log().info("---------------------------------");
+				utils.log().info("----------------------------------");
 
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver()
-						.findElementsByXPath("//androidx.drawerlayout.widget.DrawerLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+i+"]/android.widget.FrameLayout/android.widget.LinearLayout");
+						.findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 			for (MobileElement e : entity) 
 			{

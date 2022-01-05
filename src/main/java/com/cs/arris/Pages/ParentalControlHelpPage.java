@@ -14,24 +14,16 @@ import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class ParentalControlHelpPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose]"),
-			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Parental Control Overview']")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental Control Overview\"]")
 	public MobileElement helptitle;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Overview']")
-	public MobileElement overView;
-
-	@AndroidFindBy(xpath = "//android.widget.TextView[@bounds='[157,968][1023,1823]']")
-	public MobileElement parentalHelpText;
 
 	public ParentalControlHelpPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -55,16 +47,6 @@ public class ParentalControlHelpPage extends ParentClass implements Page {
 				utils.log().info(helptitle.getText() + " title is displayed ");
 			else
 				utils.log().info("Parental Control Overview title is not displayed");
-
-			if (overView.isDisplayed())
-				utils.log().info("OverView Text is displayed ");
-			else
-				utils.log().info("OverView Text is not displayed");
-
-			if (parentalHelpText.isDisplayed())
-				utils.log().info("Parental Help Text is displayed");
-			else
-				utils.log().info("Parental Help Text is not displayed");
 
 			return true;
 		} catch (Exception e) {

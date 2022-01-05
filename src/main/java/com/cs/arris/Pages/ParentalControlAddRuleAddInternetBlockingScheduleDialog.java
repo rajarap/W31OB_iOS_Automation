@@ -40,11 +40,11 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_EndTimeTitle\"]")
 	public MobileElement endTime;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_StartTime\"]")
-	public MobileElement addStartTimeLink;
-
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_EndTime\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_StartTime\"]")
 	public MobileElement addStopTimeLink;
+
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_EndTime\"]")
+	public MobileElement addStartTimeLink;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Save\"]")
 	public MobileElement saveChangesButton;
@@ -73,13 +73,27 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Saturday\"]")
 	public MobileElement saturday;
 	
-	//When start date and end date are same
-	
+	//When no start end time is selected and Add schedule button is clicked
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_Error\"]")
 	public MobileElement errorDescriptionWhenNoDaysAreSelected;
 	
+	//When start date and end date are same
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Time_Schedule_Screen_Label_Error\"]")
 	public MobileElement errorDescriptionForSameStartEndTime;
+	
+	
+	//Time Picker
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeDatePicker[@name=\"Parental_Control_Time_Schedule_Screen_DatePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[1]")
+	public MobileElement hour;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeDatePicker[@name=\"Parental_Control_Time_Schedule_Screen_DatePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[2]")
+	public MobileElement minute;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeDatePicker[@name=\"Parental_Control_Time_Schedule_Screen_DatePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[3]")
+	public MobileElement meridian;
+	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Time_Schedule_Screen_Button_Done\"]")
+	public MobileElement doneButton;
 	
 	
 	public ParentalControlUserProfileAddRuleDatePickerDialog getDatePickerDialogObject() {
@@ -146,12 +160,22 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 
 	public boolean clickCloseButton() {
 		if (closeButton.isDisplayed()) {
-			new SwipeActions().swipeScreen(Direction.UP);
 			click(closeButton);
 			utils.log().info("Clicked on Close Button");
 			return true;
 		} else {
 			utils.log().info("Close button is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickDoneButton() {
+		if (doneButton.isDisplayed()) {
+			click(doneButton);
+			utils.log().info("Clicked on Done Button");
+			return true;
+		} else {
+			utils.log().info("Done button is not displayed");
 			return false;
 		}
 	}
