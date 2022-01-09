@@ -85,7 +85,7 @@ public class RemoveDevicePage extends ParentClass implements Page
 	
 	public boolean selectDeviceToRemove()
 	{
-		if(deviceName2.getText().contains("SURFboard® T25 DOCSIS")){
+		if(deviceName2.isDisplayed()){
 			utils.log().info("Selected Device Name : " + deviceName2.getText());
 			click(radioButton2);
 			return true;

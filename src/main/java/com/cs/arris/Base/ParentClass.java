@@ -114,6 +114,7 @@ public class ParentClass
 	public String ruleName;
 	public String editedDeviceName;
 	public String editedMainDeviceName;
+	public String memberName;
 	public int noOfDevices;
 	public int randNumber;
 	public int ipNumber;
@@ -781,6 +782,18 @@ public class ParentClass
 			 randNum = String.valueOf(result);
 			 ruleName = "rule"+ randNum;
 			 lanIPRuleName.add(ruleName);
+		}
+		
+		public String generateMemberName()
+		{
+			Random r = new Random();
+			int low = 10;
+			int high = 999;
+			int result = r.nextInt(high-low) + low;
+			 randNum = String.valueOf(result);
+			 memberName = "member"+ randNum;
+			 return memberName;
+			
 		}
 		
 //		//For Network - LAN IP Reservation

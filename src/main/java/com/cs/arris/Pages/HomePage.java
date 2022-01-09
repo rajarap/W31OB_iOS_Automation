@@ -326,6 +326,7 @@ public class HomePage extends ParentClass implements Page {
 	
 	// Verify if all the required UI elements are displayed on the Home Page
 	public boolean verifyUIOnHomePage() {
+		utils.log().info("                                         ");
 		utils.log().info("*****************************************");
 		utils.log().info("Details of UI Elements on the Home Page  ");
 		utils.log().info("*****************************************");
@@ -620,21 +621,19 @@ public class HomePage extends ParentClass implements Page {
 	}
 
 	public boolean clickDeviceSignalStrengthImage() {
-		String selector = "**/XCUIElementTypeStaticText[`label == \"Device Signal Strength Leader Board\"`]";
-		if (super.getDriver().findElement(MobileBy.iOSClassChain(selector)).isDisplayed()) {
-			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
-			utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board ");
+		if (deviceSignalStrengthLeaderBoardImage.isDisplayed()) {
+			click(deviceSignalStrengthLeaderBoardImage);
+			utils.log().info("Home Page - Clicked on Device Signal Strength Leader Board Image");
 			return true;
 		} else {
-			utils.log().info(
-					"Home Page - Device Signal Strength Leader Board is either not visible or is not present on the DOM");
+			utils.log().info("Home Page - Device Signal Strength Leader Board is either not visible or is not present on the DOM");
 			return false;
 		}
 	}
 
 	public boolean clickSpeedTestHistoryImage() {
-		if (speedTestHistoryText.isDisplayed()) {
-			speedTestHistoryText.click();
+		if (speedTestHistoryImage.isDisplayed()) {
+			speedTestHistoryImage.click();
 			utils.log().info("Home Page - Clicked on Speed Test History");
 			return true;
 		} else {

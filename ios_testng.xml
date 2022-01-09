@@ -8,9 +8,9 @@
 	<parameter name="platform" value="iOS" />
 	<parameter name="device" value="iPhone" />
 	
-	<test name="Simple_Tests">
+	<test name="Medium_Tests">
 		<classes>
-			<class name="com.cs.arris.Tests.TC01_Simple_Test" />
+			<class name="com.cs.arris.Tests.TC02_Medium_Test" />
 		</classes>
 	</test>
       

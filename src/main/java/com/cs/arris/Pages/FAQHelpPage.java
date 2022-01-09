@@ -18,7 +18,7 @@ public class FAQHelpPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Help\"]")
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeStaticText[`label == \"Help\"`][2]")
 	public MobileElement helpTitle; 
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
@@ -31,7 +31,7 @@ public class FAQHelpPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name=\"FAQ_Help_Screen_TextField\"]") //Search FAQs by keywords...
 	public MobileElement searchText;
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"FAQ_Help_Screen_Button\"]")  //SEARCH
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeButton[`label == \"SEARCH\"`]")  //SEARCH
 	public MobileElement searchButton;
 	
 		public FAQHelpPage()
@@ -79,7 +79,7 @@ public class FAQHelpPage extends ParentClass implements Page
 	
 	@Override
 	public boolean isAt() {
-		if(helpTitle.isDisplayed())	{
+		if(searchButton.isDisplayed())	{
 			utils.log().info("On FAQ Help Page");
 			return true;
 		}else {

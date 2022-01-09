@@ -155,7 +155,9 @@ public class TC02_Medium_Test extends ParentClass
 			utils.log().info("Test: Verify Main Device  ");
 			utils.log().info("**************************");
 			SoftAssert softmain2 = new SoftAssert();
+			super.pause(8);
 			softmain2.assertTrue(new HomePage().clickMainDeviceImage());
+			super.pause(5);
 			if(new MainDeviceAllTabPage().isAt()) 
 				softmain2.assertTrue(new MainDeviceAllTabPage().verifyUIOnMainDevicePage());
 			
@@ -220,7 +222,7 @@ public class TC02_Medium_Test extends ParentClass
 				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
 				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
 				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-				super.pause(3);
+				super.pause(5);
 				
 				if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().successTitle.isDisplayed())
 					softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickOkButton());
@@ -550,8 +552,10 @@ public class TC02_Medium_Test extends ParentClass
 		public void Verify_Main_Device_Help_Page() {
 			SoftAssert softmain38 = new SoftAssert();
 			softmain38.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickHelpButton());
+			
 			if(new MainDeviceAllTabPage().getMainRouterDetailsHelpPageObject().isAt())
 				new MainDeviceAllTabPage().getMainRouterDetailsHelpPageObject().clickCloseButton();
+			
 			new MainDeviceAllTabPage().getEthernetPageObject().clickBackButton();
 			
 			softmain38.assertAll();

@@ -50,6 +50,7 @@ com/cs/arris/Pages/ErrorCode_0000_1506_Warranty_Support_Page.class
 com/cs/arris/Pages/AddDeviceNotificationsPage.class
 com/cs/arris/Reports/ExtentReport.class
 com/cs/arris/Pages/FAQHelpPage.class
+com/cs/arris/Pages/AddSatelliteDeviceFullyNotConfigured.class
 com/cs/arris/Pages/ErrorCode_0015_1805_Something_Went_Wrong_Page.class
 com/cs/arris/Pages/Error_0005_1200_Bluetooth_Connection_Failed_Page.class
 com/cs/arris/Pages/Network5GHzWidebandModeInfoDialog.class
@@ -57,8 +58,10 @@ com/cs/arris/Pages/NetworkGeneralSettings.class
 com/cs/arris/Pages/NetworkWANDNSConfigurationIPv4Page.class
 com/cs/arris/Pages/ErrorCode_0002_1304_Internet_Connection_Not_Available_On_Router.class
 com/cs/arris/Pages/ParentalControlUserProfilePage.class
+com/cs/arris/Pages/AddSatelliteAddNewSatellitePage4.class
 com/cs/arris/Interface/Page.class
 com/cs/arris/Pages/RemoveDeviceFromHomePage.class
+com/cs/arris/Pages/WhosHomeMonitoringPage.class
 com/cs/arris/Pages/ParentalControlResumeInternetforAllProfilesDialog.class
 com/cs/arris/Pages/NetworkGeneralSettingsPortFowardingAddRulePage.class
 com/cs/arris/Pages/NetworkBandSteeringModeAlertDialog.class
@@ -98,6 +101,7 @@ com/cs/arris/Pages/AddDeviceSuccessPage.class
 com/cs/arris/Pages/NetworkLANDHCPLeaseTimeHelpPage.class
 com/cs/arris/Pages/ParentalControlUserProfileAddRulePage.class
 com/cs/arris/Pages/NetworkGeneralSettingsBridgeModeInfoDialog.class
+com/cs/arris/Pages/AddSatelliteAddNewSatellitePage3.class
 com/cs/arris/Pages/ConnectToBlueToothDialog.class
 com/cs/arris/Pages/SystemFirmwareUpdatePage.class
 com/cs/arris/Pages/TurnOnBluetoothDialog.class
@@ -111,6 +115,7 @@ com/cs/arris/Pages/MainDeviceEthernetTabPage.class
 com/cs/arris/Pages/AddSatelliteSuccessfullyConnectedToInternetPage.class
 com/cs/arris/Pages/AmazonWiFiSimpleSetupDialog.class
 com/cs/arris/Pages/NetworkLANIPReservationHelpPage.class
+com/cs/arris/Pages/WhosHomeAddHouseholdMemberDialog.class
 com/cs/arris/JsonMappers/Signin_TestData.class
 com/cs/arris/Pages/AddSatellitePlacementTipsPage3.class
 com/cs/arris/Pages/NetworkWANSettingsHelpPage.class
@@ -186,6 +191,7 @@ com/cs/arris/Pages/AddDeviceRegistrationFailedPage.class
 com/cs/arris/Pages/BlankBlockedDevicesPage.class
 com/cs/arris/Pages/NetworkWANSettingsPage.class
 com/cs/arris/Pages/ErrorCode_0000_1303_Router_Failed_To_Connect_To_Internet.class
+com/cs/arris/Pages/WhosHomePickADeviceDialog.class
 com/cs/arris/Pages/AddDeviceUserGuidePage.class
 com/cs/arris/Pages/HomePage.class
 com/cs/arris/Pages/NetworkLANDHCPLeaseTimeAppliedChangesDialog.class
@@ -218,6 +224,7 @@ com/cs/arris/Pages/BlueToothPage.class
 com/cs/arris/Utilities/SwipeActions.class
 com/cs/arris/Pages/ParentalControlAddDeviceHelpPage.class
 com/cs/arris/Pages/MainDevicePage.class
+com/cs/arris/Pages/WhosHomeWelcomePage.class
 com/cs/arris/Pages/NetworkGeneralSettingsPage.class
 com/cs/arris/Pages/HamburgerAboutPage.class
 com/cs/arris/Pages/AddSatellitePlacementTipsPage4.class

@@ -8,14 +8,17 @@ import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class AddDeviceRegistrationFailedPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
+	public TouchAction action = new TouchAction(getDriver());
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"OB_Error_Screen_TitleLabel\"]")
 	public MobileElement registrationFailedTitle;
@@ -71,7 +74,19 @@ public class AddDeviceRegistrationFailedPage extends ParentClass implements Page
 			return false;
 		}
 	}
-
+	
+	public void checkError() {
+		int x = 180;
+		int y = 455;
+		PointOption p = new PointOption();
+		p.point(x, y);
+		
+		for(int i=0; i <=7; i++) {
+			action.tap(p);
+			action.release().perform();
+		}
+	}
+	
 	public boolean verifyDeviceRegistrationFailedPageUI() {
 		try {
 			if (registrationFailedTitle.isDisplayed())

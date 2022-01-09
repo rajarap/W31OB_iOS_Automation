@@ -47,17 +47,12 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 	public MobileElement weakToStrong;
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" Strong to weak\"]")
-	//**/XCUIElementTypeStaticText[`label == " Strong to weak"`]
-	//Strong to weak
 	public MobileElement selectStrongToWeak;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\" Weak to strong\"]")
-	//**/XCUIElementTypeStaticText[`label == " Weak to strong"`]
-	//Weak to strong
 	public MobileElement selectWeakToStrong;
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"leftArrowAngle\"]")
-	//**/XCUIElementTypeButton[`label == "leftArrowAngle"`]
 	public MobileElement listBoxArrow;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"NavigationBar_Button\"]")
@@ -161,7 +156,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 					try {
 						utils.log().info("Device Name            : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Device["+i+"]\"]").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Button_DeviceName["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Name is not available/displayed");
 					}
@@ -244,7 +239,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 					try {
 						utils.log().info("Device Name            : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Device["+i+"]\"]").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Button_DeviceName["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Name is not available/displayed");
 					}
@@ -327,7 +322,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 					try {
 						utils.log().info("Device Name            : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_Device["+i+"]\"]").getText());
+								+ super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Bit_Rate_Leaderboard_Screen_Button_DeviceName["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Name is not available/displayed");
 					}
@@ -376,29 +371,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			return false;
 		}
 	}
-	
-//	public boolean clickEditDeviceName(int i) {
-//		try {
-//				utils.log().info("Editing Device Name  : " + i);
-//				utils.log().info("-----------------------------");
-//
-//				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-//						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
-//
-//				for (MobileElement e : entity) 
-//					try {
-//							click(e.findElementById("com.arris.sbcBeta:id/txtDeviceName"));
-//					} catch (Exception exp) {
-//						utils.log().info("Device Name is not available/displayed");
-//					}
-//				return true;
-//			} catch (Exception ex) {
-//				utils.log().info("Error in Device Signal Strength Leader Board Page");
-//			return false;
-//			}
-//	}
-	
-	
+		
 	public boolean sortStrongToWeak() {
 		try {
 			click(signalStrengthOptions);
@@ -427,11 +400,6 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 				utils.log().info("The devices are displayed from Strongest to Weakest signal strength order");
 			} 
 			return true;
-//			else {
-//				utils.log().info("Signal Strength option selected is - Strong to Weak");
-//				utils.log().info("The devices are not displayed from Strongest to Weakest signal strength order");
-//				return false;
-//			}
 		} catch (Exception e) {
 			return false;
 		}
@@ -465,10 +433,6 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 				utils.log().info("The devices are displayed from Weakest to Strongest signal strength order");
 			}
 			return true;
-//		else {
-//			utils.log().info("Signal Strength option selected is - Weak to Strong");
-//			utils.log().info("The devices are not displayed from Weakest to Strongest signal strength order");
-//		}
 		} catch (Exception e) {
 			return false;
 		}

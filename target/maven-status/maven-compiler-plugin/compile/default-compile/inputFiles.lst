@@ -12,6 +12,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceEstablishingConnectionPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/MainDevice24GHzTabPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceScanBarCodePage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomePickADeviceDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlUserProfileAddRuleDatePickerDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/DevicesPage.java
@@ -19,6 +20,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/UnPackYourBoxPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatellitePlacementTipsPage4.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlEditUserProfileNameDialog.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeAddHouseholdMemberDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ConnectMaxRouterToInternetPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettingsHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ConnectionToWifiNeededPage.java
@@ -74,6 +76,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatelliteSystemUpToDatePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlAddRuleAddInternetBlockingScheduleDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BTDisabledTroubleShootPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeWelcomePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HamburgerHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANSettingsHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkDNSConfigurationStaticAlertDialog.java
@@ -82,6 +85,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AppRatingDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettingsPortFowardingAddRulePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/TurnOnBluetoothDialog.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeMonitoringPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/DisableBlueToothPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceUserGuidePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlProfilesPage.java
@@ -92,6 +96,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HamburgerMenuPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlResumeInternetforAllProfilesDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkDevicePrioritySettings.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatelliteAddNewSatellitePage4.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkDevicePrioritySettingsAddDevicePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettingsIPv6EnableInfoDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceStepsForActivationPage.java
@@ -154,6 +159,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkBandSteeringModeInfoDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BlankSpeedTestHistoryPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatelliteSuccessfullyConnectedPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatelliteAddNewSatellitePage3.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/DeviceSignalStrengthLeaderBoardPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANDHCPLeaseTimeAppliedSameChangesDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ErrorCode_0000_1603_Failure_To_Configure_Your_Router_Page.java
@@ -210,6 +216,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkDevicePrioritySettingsAddDeviceHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceFooterIconsPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANIPReservationPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatelliteDeviceFullyNotConfigured.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/SetupHomeNetworkPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/JsonMappers/Signin_TestData.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkTimeZoneSettingsPage.java
