@@ -17,12 +17,16 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceUserGuidePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvTitle")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"User_Guide_Screen_NavigationBarTitle\"]")
 	public MobileElement userGuideTitle;
 
 //	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivBackButton")
 //	public MobileElement backIcon;
+	
+	 public AddDeviceFooterIconsPage getAddDeviceFooterIconsPageObject() {
+		 AddDeviceFooterIconsPage footerIconsPage = new AddDeviceFooterIconsPage();
+	     return footerIconsPage;
+	  }	
 
 	public AddDeviceUserGuidePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

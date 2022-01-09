@@ -18,13 +18,26 @@ public class AddDeviceHamburgerMenuPage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_add_device")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add Device\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[1]\"]")
 	public MobileElement addDevice;  //must be disabled. Onclick of add device, Add device dialog box should be displayed
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/nav_remove_device")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove Device\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Menu_Screen_Label_Option[2]\"]")
 	public MobileElement removeDevice;
+	
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
+	public MobileElement disabledAddDeviceButton;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_SubTitleLabel\"]")
+	public MobileElement subTitle; //You have added maximum two devices.
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
+	public MobileElement okButton;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Error_Alert_Screen_Image_Close\"]")
+	public MobileElement closeButton;
+	
+	//XCUIElementTypeStaticText[@name="Error_Alert_Screen_TitleLabel"]
 
 	public AddDeviceHamburgerMenuPage()
 	{
@@ -54,6 +67,18 @@ public class AddDeviceHamburgerMenuPage extends ParentClass implements Page
 				return true;
 			} else {
 				utils.log().info("Remove Device Button is not displayed");
+				return false;
+			}
+		}
+		
+		 public boolean clickOkButton() {
+			if (okButton.isDisplayed()) {
+				utils.log().info(subTitle.getText());
+				click(okButton);
+				utils.log().info("Clicked on OK Button");
+				return true;
+			} else {
+				utils.log().info("OK button is not displayed");
 				return false;
 			}
 		}

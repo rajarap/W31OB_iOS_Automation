@@ -21,40 +21,28 @@ public class RemoveDevicePage extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove_Device_Screen_TitleLabel\"]")
 	public MobileElement selectDeviceTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/helpIcon")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon;
 	
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/tv_description_text")
-//	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove_Device_Screen_Label_Title_Cable Modem\"]")
-//	public MobileElement description;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/btn_remove_product")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Remove_Device_Screen_Button_Next\"]")
 	public MobileElement nextButton;
 	
-	@AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView[1]")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove_Device_Screen_Label_Description_W133/W31\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove_Device_Screen_Label_Description[1]\"]")
 	public MobileElement deviceName1;
 	
-	@AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView[2]")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Remove_Device_Screen_Image_BoxW133/W31\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Remove_Device_Screen_Image_Box[1]\"]")
 	public MobileElement radioButton1;
 	
-	@AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.TextView[1]")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove_Device_Screen_Label_Title_Cable Modem\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Remove_Device_Screen_Label_Description[2]\"]")
 	public MobileElement deviceName2;
 	
-	@AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.ImageView[2]")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Remove_Device_Screen_Image_BoxCable Modem\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Remove_Device_Screen_Image_Box[2]\"]")
 	public MobileElement radioButton2;
 
 	public RemoveDevicePage() {
@@ -97,10 +85,7 @@ public class RemoveDevicePage extends ParentClass implements Page
 	
 	public boolean selectDeviceToRemove()
 	{
-//		if(deviceName1.getText() == "Cable Modem") {
-//			click(getDriver().findElement(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.ImageView[2]")));
-		//utils.log().info("Device Name : " + deviceName2.getText());
-		if(deviceName2.getText().contains("Cable Modem")){
+		if(deviceName2.getText().contains("SURFboard® T25 DOCSIS")){
 			utils.log().info("Selected Device Name : " + deviceName2.getText());
 			click(radioButton2);
 			return true;

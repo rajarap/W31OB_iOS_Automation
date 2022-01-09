@@ -174,6 +174,20 @@ public class TC03_Complex_Test extends ParentClass
 					super.pause(2);
 					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
 					super.pause(3);
+					
+					try {
+						if(new ParentalControlWithProfilesPage().getAddProfileDialogObject().profileNameExists.isDisplayed())
+							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCloseIcon());
+						if(i == 4)
+						{
+							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
+							super.pause(2);
+							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
+							super.pause(2);
+							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
+							super.pause(3);
+						}
+					}catch(Exception e) {}
 				}
 			}
 			
@@ -244,9 +258,9 @@ public class TC03_Complex_Test extends ParentClass
 				}
 				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
 				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
-//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
-//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
-//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
+				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
 				//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
 			}
 			
@@ -334,8 +348,8 @@ public class TC03_Complex_Test extends ParentClass
 		@Test(priority = 13, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
 		public void Verify_Select_Stop_Time_For_EveryDay_Schedule() {
 			SoftAssert softcontrol13 = new SoftAssert();
-			super.pause(65);
 			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().selectMinutes());
 			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
 			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
 			super.pause(3);
@@ -343,7 +357,7 @@ public class TC03_Complex_Test extends ParentClass
 			softcontrol13.assertAll();
 		}
 		
-		@Test(priority = 14, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+		@Test(priority = 14, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})  
 		public void Verify_Add_Custom_Schedule_To_Rule() {
 			SoftAssert softcontrol14 = new SoftAssert();
 			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
@@ -375,8 +389,8 @@ public class TC03_Complex_Test extends ParentClass
 		@Test(priority = 17, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
 		public void Verify_Add_Custom_Schedule_Select_Stop_Time() {
 			SoftAssert softcontrol17 = new SoftAssert();
-			super.pause(65);
 			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().selectMinutes());
 			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
 			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
 			super.pause(3);

@@ -17,21 +17,18 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceMaximumTwoDevicesDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_title")
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Add Device\"])[2]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
 	public MobileElement addDeviceTitle;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/dialog_description")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"You have added maximum two devices.\"]")
-	public MobileElement description;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/cancel_dialog")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"closeIcon\"]")
-	public MobileElement closeIcon;
-
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/okButton")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"OK\"]")
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_SubTitleLabel\"]")
+	public MobileElement subTitle; //You have added maximum two devices.
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
 	public MobileElement okButton;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Error_Alert_Screen_Image_Close\"]")
+	public MobileElement closeIcon;
+	
 
 	public AddDeviceMaximumTwoDevicesDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

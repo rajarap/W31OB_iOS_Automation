@@ -14,7 +14,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
-public class AddSatelliteAddNewSatellitePage extends ParentClass implements Page {
+public class AddSatelliteAddNewSatellitePage1 extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"ADD SATELLITE\"]")
@@ -35,7 +35,7 @@ public class AddSatelliteAddNewSatellitePage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"BOBA Arrow\"]")
 	public MobileElement backButton;
 
-	public AddSatelliteAddNewSatellitePage() {
+	public AddSatelliteAddNewSatellitePage1() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 

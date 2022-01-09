@@ -149,8 +149,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		  }).nameYourNetworkPage(nameYourNetwork -> {
 			  nameYourNetwork.enterSSIDName(this.ssidName);
 			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
-			  super.pause(22);
-			  nameYourNetwork.clickDoneLink();
+			  super.pause(20);
 			  nameYourNetwork.clickNextButton();
 //			  try{
 //				  if(nameYourNetwork.doneLink.isDisplayed())
@@ -187,7 +186,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		  			homepage.getAppRatingDialogObject().clickRemindMeLaterLink();
 	  		}catch(Exception e) {};
 	  		try {
-	  			if(homepage.cloudIcon1.isDisplayed() || homepage.remoteAccessNotAvailableLink.isDisplayed())
+	  			if(homepage.cloudIcon.isDisplayed() || homepage.remoteAccessNotAvailableLink.isDisplayed())
 		  			homepage.connectToSSID(this.ssidName);
 	  		}catch(Exception e) {};
 		  });

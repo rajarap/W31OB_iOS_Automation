@@ -122,6 +122,8 @@ public class ParentClass
 	public List<String> selectedProfileNames = new ArrayList<String>();
 	public List<String> deviceNames = new ArrayList<String>();
 	public List<String> lanIPRuleName = new ArrayList<String>();
+//	public String[] logEmailids = {"prabhu.rajarathinam@mobileprogramming.com", "prabhu.rajarathinam@commscope.com"};
+	public String[] logEmailids;
 	
 	private static final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
 	
@@ -838,6 +840,28 @@ public class ParentClass
 		            endX = (int) (size.width * 0.70);
 		            action.press(PointOption.point(260, 400)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
 		                    .moveTo(PointOption.point(120, 400)).release().perform();
+
+		            break;
+		    }
+		}
+		
+		public void swipeMinutes(Direction dir) {
+		    Dimension size;
+			size = getDriver().manage().window().getSize();
+			TouchAction action = new TouchAction(getDriver());
+
+		    int startX = 0;
+		    int endX = 0;
+		    int startY = 0;
+		    int endY = 0;
+
+		    switch (dir) {
+		        case UP:
+		            startY = (int) (size.height / 2);
+		            startX = (int) (size.width * 0.08);
+		            endX = (int) (size.width * 0.70);
+		            action.press(PointOption.point(184, 660)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+		                    .moveTo(PointOption.point(184, 620)).release().perform();
 
 		            break;
 		    }

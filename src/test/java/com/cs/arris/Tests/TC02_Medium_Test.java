@@ -173,8 +173,6 @@ public class TC02_Medium_Test extends ParentClass
 		@Test(priority = 4, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
 		public void Verify_Decrease_LED_Settings_On_All_Tab_Page() {
 			SoftAssert softmain4 = new SoftAssert();
-//			new MainDeviceAllTabPage().ledExpandImage.click();
-//			softmain4.assertTrue(new MainDeviceAllTabPage().decreaseLedBrightnessSettings());
 			new MainDeviceAllTabPage().clickLEDExpandButton();
 			new MainDeviceAllTabPage().mobileSwipeSeekBar(Direction.LEFT);
 			
@@ -184,9 +182,6 @@ public class TC02_Medium_Test extends ParentClass
 		@Test(priority = 5, dependsOnMethods = { "Login_And_Onboard",  "Verify_LED_Settings_UI_On_All_Tab"})
   		public void Verify_Increase_LED_Settings_On_All_Tab_Page() {
 			SoftAssert softmain5 = new SoftAssert();
-//			softmain5.assertTrue(new MainDeviceAllTabPage().increaseLedBrightnessSettings());
-//			new MainDeviceAllTabPage().ledExpandImage.click();
-			
 			new MainDeviceAllTabPage().mobileSwipeSeekBar(Direction.RIGHT);
 			new MainDeviceAllTabPage().clickLEDExpandButton();
 			
@@ -216,103 +211,126 @@ public class TC02_Medium_Test extends ParentClass
 			softmain8.assertAll();
 		}
 		
-////		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
-////		public void Verify_Edit_Main_Router_Name_On_All_Tab_Page() {
-////			SoftAssert softmain9 = new SoftAssert();
-////			softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
-////			if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().isAt())
-////			{
-////				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-////				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
-////				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-////			}
-////			
-////			softmain9.assertAll();
-////		}
-////		
-////		@Test(priority = 10, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
-////		public void Verify_Edit_Connected_Device_Name_On_All_Tab_Page() {
-////			SoftAssert softmain10 = new SoftAssert();
-////				softmain10.assertTrue(new MainDeviceAllTabPage().clickDeviceName(1));
-////				if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
-////				{
-////					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-////					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName());
-////					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
-////				}
-////			softmain10.assertAll();
-////		}
-//		
-//		@Test(priority = 11, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Main_Device_UI_On_5GHz_Tab_Page() {
-//			SoftAssert softmain11 = new SoftAssert();
-//			softmain11.assertTrue(new MainDeviceAllTabPage().click5GhzTab());
-//			if(new MainDeviceAllTabPage().get5GHzPageObject().isAt())
-//				softmain11.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyUIOn5GHzDevicePage());
-//			softmain11.assertAll();
+		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
+		public void Verify_Edit_Main_Router_Name_On_All_Tab_Page() {
+			SoftAssert softmain9 = new SoftAssert();
+			softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
+			if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().isAt())
+			{
+				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
+				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
+				super.pause(3);
+				
+				if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().successTitle.isDisplayed())
+					softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickOkButton());
+				
+				softmain9.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
+				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName2());
+				softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
+				super.pause(5);
+				
+				if(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().successTitle.isDisplayed())
+					softmain9.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickOkButton());
+			}
+			
+			softmain9.assertAll();
+		}
+		
+//		@Test(priority = 10, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_All_Tab_Page"})
+//		public void Verify_Edit_Connected_Device_Name_On_All_Tab_Page() {
+//			SoftAssert softmain10 = new SoftAssert();
+//				softmain10.assertTrue(new MainDeviceAllTabPage().clickDeviceNameEditIcon());
+//				if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
+//				{
+//					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName());
+//					softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
+//					super.pause(5);
+//				}
+//				
+//				softmain10.assertTrue(new MainDeviceAllTabPage().clickDeviceNameEditIcon());
+//				softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//				softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName());
+//				softmain10.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
+//				
+//			softmain10.assertAll();
 //		}
-////		
-////		@Test(priority = 12)
-////		public void Verify_LED_Settings_UI_On_5GHz_Tab_Page() {
-////			SoftAssert softmain12 = new SoftAssert();
-////			softmain12.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyUIOnLedSettings());
-////			softmain12.assertAll();
-////		}
-////		
-////		@Test(priority = 13)
-////		public void Verify_Decrease_LED_Settings_On_5GHz_Tab_Page() {
-////			SoftAssert softmain13 = new SoftAssert();
-////			softmain13.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().decreaseLedBrightnessSettings());
-////			
-////			softmain13.assertAll();
-////		}
-////		
-////		@Test(priority = 14)
-////		public void Verify_Increase_LED_Settings_On_5GHz_Tab_Page() {
-////			SoftAssert softmain14 = new SoftAssert();
-////			softmain14.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().increaseLedBrightnessSettings());
-////			softmain14.assertAll();
-////		}
-////		
-//		@Test(priority = 15, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_5GHz_Tab_Page"})
-//		public void Verify_Devices_Count_Validation_On_5GHz_Tab_Page() {
-//			SoftAssert softmain15 = new SoftAssert();
-//			softmain15.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().GHz5Tabvalidations());
-//			
-//		softmain15.assertAll();
-//		}
-//		
-//		@Test(priority = 16, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_5GHz_Tab_Page"})
-//		public void Verify_Connected_Devices_On_5GHz_Tab_Page() {
-//			SoftAssert softmain16 = new SoftAssert();
-//			softmain16.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyConnectedDeviceDetails());
-//			softmain16.assertAll();
-//		}
-//		
-////		@Test(priority = 17)
-////		public void Verify_Main_Router_Details_On_5GHz_Tab_Page() {
-////			SoftAssert softmain17= new SoftAssert();
-////			softmain17.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyMainRouterDetails());
-////			super.swipeDown();
-////			softmain17.assertAll();
-////		}
-////		
-////		@Test(priority = 18)
-////		public void Verify_Edit_Main_Router_Name_On_5GHz_Tab_Page() {
-////			SoftAssert softmain18 = new SoftAssert();
-////			softmain18.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
-////			if(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
-////			{
-////				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-////				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
+		
+		@Test(priority = 11, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Main_Device_UI_On_5GHz_Tab_Page() {
+			SoftAssert softmain11 = new SoftAssert();
+			softmain11.assertTrue(new MainDeviceAllTabPage().click5GhzTab());
+			if(new MainDeviceAllTabPage().get5GHzPageObject().isAt())
+				softmain11.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyUIOn5GHzDevicePage());
+			softmain11.assertAll();
+		}
+		
+		@Test(priority = 12)
+		public void Verify_LED_Settings_UI_On_5GHz_Tab_Page() {
+			SoftAssert softmain12 = new SoftAssert();
+			softmain12.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyUIOnLedSettings());
+			
+			softmain12.assertAll();
+		}
+		
+		@Test(priority = 13)
+		public void Verify_Decrease_LED_Settings_On_5GHz_Tab_Page() {
+			SoftAssert softmain13 = new SoftAssert();
+			new MainDeviceAllTabPage().get5GHzPageObject().clickLEDExpandButton();
+			new MainDeviceAllTabPage().get5GHzPageObject().mobileSwipeSeekBar(Direction.LEFT);
+			
+			softmain13.assertAll();
+		}
+		
+		@Test(priority = 14)
+		public void Verify_Increase_LED_Settings_On_5GHz_Tab_Page() {
+			SoftAssert softmain14 = new SoftAssert();
+			new MainDeviceAllTabPage().get5GHzPageObject().mobileSwipeSeekBar(Direction.RIGHT);
+			new MainDeviceAllTabPage().get5GHzPageObject().clickLEDExpandButton();
+			
+			softmain14.assertAll();
+		}
+		
+		@Test(priority = 15, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_5GHz_Tab_Page"})
+		public void Verify_Devices_Count_Validation_On_5GHz_Tab_Page() {
+			SoftAssert softmain15 = new SoftAssert();
+			softmain15.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().GHz5Tabvalidations());
+			
+		softmain15.assertAll();
+		}
+		
+		@Test(priority = 16, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_5GHz_Tab_Page"})
+		public void Verify_Connected_Devices_On_5GHz_Tab_Page() {
+			SoftAssert softmain16 = new SoftAssert();
+			softmain16.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyConnectedDeviceDetails());
+			softmain16.assertAll();
+		}
+		
+		@Test(priority = 17)
+		public void Verify_Main_Router_Details_On_5GHz_Tab_Page() {
+			SoftAssert softmain17= new SoftAssert();
+			softmain17.assertTrue(new MainDeviceAllTabPage().get5GHzPageObject().verifyMainRouterDetails());
+			super.swipeDown();
+			softmain17.assertAll();
+		}
+		
+//		@Test(priority = 18)
+//		public void Verify_Edit_Main_Router_Name_On_5GHz_Tab_Page() {
+//			SoftAssert softmain18 = new SoftAssert();
+//			softmain18.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
+//			if(new MainDeviceAllTabPage().get5GHzPageObject().getEditMainDeviceNameDialogObject().isAt())
+//			{
+//				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
+//				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
+////				softmain18.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
+////				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName1());
 ////				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-//////				softmain18.assertTrue(new MainDeviceAllTabPage().clickMainDeviceEditIcon());
-//////				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName1());
-//////				softmain18.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-////			}
-////			softmain18.assertAll();
-////		}
-////		
+//			}
+//			softmain18.assertAll();
+//		}
+//		
 ////		@Test(priority = 19)
 ////		public void Verify_Edit_Connected_Device_Name_On_5GHz_Tab_Page() {
 ////			SoftAssert softmain19 = new SoftAssert();
@@ -335,62 +353,64 @@ public class TC02_Medium_Test extends ParentClass
 ////		}
 ////		
 ////		
-//		@Test(priority = 20, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Main_Device_UI_On_24GHz_Tab_Page() {
-//			SoftAssert softmain20 = new SoftAssert();
-//			softmain20.assertTrue(new MainDeviceAllTabPage().click24GhzTab());
-//			if(new MainDeviceAllTabPage().get24GHzPageObject().isAt())
-//				softmain20.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyUIOn24GHzDevicePage());
-//			
-//			softmain20.assertAll();
-//		}
-////		
-////		@Test(priority = 21)
-////		public void Verify_LED_Settings_UI_On_24GHz_Tab_Page() {
-////			SoftAssert softmain21 = new SoftAssert();
-////			softmain21.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyUIOnLedSettings());
-////			
-////			softmain21.assertAll();
-////		}
-////		
-////		@Test(priority = 22)
-////		public void Verify_Decrease_LED_Settings_On_24GHz_Tab_Page() {
-////			SoftAssert softmain22 = new SoftAssert();
-////			softmain22.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().decreaseLedBrightnessSettings());
-////			
-////			softmain22.assertAll();
-////		}
-////		
-////		@Test(priority = 23)
-////		public void Verify_Increase_LED_Settings_On_24GHz_Tab_Page() {
-////			SoftAssert softmain23 = new SoftAssert();
-////			softmain23.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().increaseLedBrightnessSettings());
-////			
-////			softmain23.assertAll();
-////		}
-////		
-//		@Test(priority = 24, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_24GHz_Tab_Page"})
-//		public void Verify_Devices_Count_Validation_On_24GHz_Tab_Page() {
-//			SoftAssert softmain24 = new SoftAssert();
-//			softmain24.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().GHz24Tabvalidations());
-//			softmain24.assertAll();
-//		}
-//		
-//		@Test(priority = 25, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_24GHz_Tab_Page"})
-//		public void Verify_Connected_Devices_On_24GHz_Tab_Page() {
-//			SoftAssert softmain25 = new SoftAssert();
-//			softmain25.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyConnectedDeviceDetails());
-//			
-//			softmain25.assertAll();
-//		}
-////		
-////		@Test(priority = 26)
-////		public void Verify_Main_Router_Details_On_24GHz_Tab_Page() {
-////			SoftAssert softmain26 = new SoftAssert();
-////			softmain26.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyMainRouterDetails());
-////			super.swipeDown();
-////			softmain26.assertAll();
-////		}
+		@Test(priority = 20, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Main_Device_UI_On_24GHz_Tab_Page() {
+			SoftAssert softmain20 = new SoftAssert();
+			softmain20.assertTrue(new MainDeviceAllTabPage().click24GhzTab());
+			if(new MainDeviceAllTabPage().get24GHzPageObject().isAt())
+				softmain20.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyUIOn24GHzDevicePage());
+			
+			softmain20.assertAll();
+		}
+		
+		@Test(priority = 21)
+		public void Verify_LED_Settings_UI_On_24GHz_Tab_Page() {
+			SoftAssert softmain21 = new SoftAssert();
+			softmain21.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyUIOnLedSettings());
+			
+			softmain21.assertAll();
+		}
+		
+		@Test(priority = 22)
+		public void Verify_Decrease_LED_Settings_On_24GHz_Tab_Page() {
+			SoftAssert softmain22 = new SoftAssert();
+			new MainDeviceAllTabPage().get24GHzPageObject().clickLEDExpandButton();
+			new MainDeviceAllTabPage().get24GHzPageObject().mobileSwipeSeekBar(Direction.LEFT);
+			
+			softmain22.assertAll();
+		}
+		
+		@Test(priority = 23)
+		public void Verify_Increase_LED_Settings_On_24GHz_Tab_Page() {
+			SoftAssert softmain23 = new SoftAssert();
+			new MainDeviceAllTabPage().get24GHzPageObject().mobileSwipeSeekBar(Direction.RIGHT);
+			new MainDeviceAllTabPage().get24GHzPageObject().clickLEDExpandButton();
+			
+			softmain23.assertAll();
+		}
+		
+		@Test(priority = 24, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_24GHz_Tab_Page"})
+		public void Verify_Devices_Count_Validation_On_24GHz_Tab_Page() {
+			SoftAssert softmain24 = new SoftAssert();
+			softmain24.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().GHz24Tabvalidations());
+			softmain24.assertAll();
+		}
+		
+		@Test(priority = 25, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_24GHz_Tab_Page"})
+		public void Verify_Connected_Devices_On_24GHz_Tab_Page() {
+			SoftAssert softmain25 = new SoftAssert();
+			softmain25.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyConnectedDeviceDetails());
+			
+			softmain25.assertAll();
+		}
+		
+		@Test(priority = 26)
+		public void Verify_Main_Router_Details_On_24GHz_Tab_Page() {
+			SoftAssert softmain26 = new SoftAssert();
+			softmain26.assertTrue(new MainDeviceAllTabPage().get24GHzPageObject().verifyMainRouterDetails());
+			super.swipeDown();
+			softmain26.assertAll();
+		}
 //////		
 //////		@Test(priority = 27)
 //////		public void Verify_Edit_Main_Router_Name_On_24GHz_Tab_Page() {
@@ -430,259 +450,261 @@ public class TC02_Medium_Test extends ParentClass
 //////			softmain28.assertAll();
 //////		}
 ////		
-//		@Test(priority = 29, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Main_Device_UI_On_Ethernet_Tab_Page() {
-//			SoftAssert softmain29 = new SoftAssert();
-//			softmain29.assertTrue(new MainDeviceAllTabPage().clickEthernetTab());
-//			if(new MainDeviceAllTabPage().getEthernetPageObject().isAt())
-//				softmain29.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyUIOnEthernetDevicePage());
+		@Test(priority = 29, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Main_Device_UI_On_Ethernet_Tab_Page() {
+			SoftAssert softmain29 = new SoftAssert();
+			softmain29.assertTrue(new MainDeviceAllTabPage().clickEthernetTab());
+			if(new MainDeviceAllTabPage().getEthernetPageObject().isAt())
+				softmain29.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyUIOnEthernetDevicePage());
+			
+			softmain29.assertAll();
+		}
+		
+		@Test(priority = 30)
+		public void Verify_LED_Settings_UI_On_Ethernet_Tab_Page() {
+			SoftAssert softmain30 = new SoftAssert();
+			softmain30.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyUIOnLedSettings());
+			
+			softmain30.assertAll();
+		}
+		
+		@Test(priority = 31)
+		public void Verify_Decrease_LED_Settings_On_Ethernet_Tab_Page() {
+			SoftAssert softmain31 = new SoftAssert();
+			new MainDeviceAllTabPage().getEthernetPageObject().clickLEDExpandButton();
+			new MainDeviceAllTabPage().getEthernetPageObject().mobileSwipeSeekBar(Direction.LEFT);
+			
+			softmain31.assertAll();
+		}
+		
+		@Test(priority = 32)
+		public void Verify_Increase_LED_Settings_On_Ethernet_Tab_Page() {
+			SoftAssert softmain32 = new SoftAssert();
+			new MainDeviceAllTabPage().getEthernetPageObject().mobileSwipeSeekBar(Direction.RIGHT);
+			new MainDeviceAllTabPage().getEthernetPageObject().clickLEDExpandButton();
+			softmain32.assertAll();
+		}
+		
+		@Test(priority = 33, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_Ethernet_Tab_Page"})
+		public void Verify_Devices_Count_Validation_On_Ethernet_Tab_Page() {
+			SoftAssert softmain33 = new SoftAssert();
+			softmain33.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().ethernetTabvalidations());
+			
+			softmain33.assertAll();
+		}
+		
+		@Test(priority = 34, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_Ethernet_Tab_Page"})
+		public void Verify_Connected_Devices_On_Ethernet_Tab_Page() {
+			SoftAssert softmain34 = new SoftAssert();
+			softmain34.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyConnectedDeviceDetails());
+			
+			softmain34.assertAll();
+		}
+		
+		@Test(priority = 35)
+		public void Verify_Main_Router_Details_On_Ethernet_Tab_Page() {
+			SoftAssert softmain35 = new SoftAssert();
+			softmain35.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyMainRouterDetails());
+			super.swipeDown();
+			softmain35.assertAll();
+		}
+//		
+//		@Test(priority = 36)
+//		public void Verify_Edit_Main_Router_Name_On_Ethernet_Tab_Page() {
+//			SoftAssert softmain36 = new SoftAssert();
+//			softmain36.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
+//			if(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().isAt())
+//			{
+//				softmain36.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName1());
+//				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
+//				softmain36.assertTrue(new MainDeviceAllTabPage().clickDeviceName(1));
+//				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName1());
+//				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
+//			}
 //			
-//			softmain29.assertAll();
+//			softmain36.assertAll();
 //		}
 //		
-////		@Test(priority = 30)
-////		public void Verify_LED_Settings_UI_On_Ethernet_Tab_Page() {
-////			SoftAssert softmain30 = new SoftAssert();
-////			softmain30.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyUIOnLedSettings());
-////			
-////			softmain30.assertAll();
-////		}
-////		
-////		@Test(priority = 31)
-////		public void Verify_Decrease_LED_Settings_On_Ethernet_Tab_Page() {
-////			SoftAssert softmain31 = new SoftAssert();
-////			softmain31.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().decreaseLedBrightnessSettings());
-////			
-////			softmain31.assertAll();
-////		}
-////		
-////		@Test(priority = 32)
-////		public void Verify_Increase_LED_Settings_On_Ethernet_Tab_Page() {
-////			SoftAssert softmain32 = new SoftAssert();
-////			softmain32.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().increaseLedBrightnessSettings());
-////			softmain32.assertAll();
-////		}
-////		
-//		@Test(priority = 33, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_Ethernet_Tab_Page"})
-//		public void Verify_Devices_Count_Validation_On_Ethernet_Tab_Page() {
-//			SoftAssert softmain33 = new SoftAssert();
-//			softmain33.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().ethernetTabvalidations());
-//			
-//			softmain33.assertAll();
+//		@Test(priority = 37)
+//		public void Verify_Edit_Connected_Device_Name_On_Ethernet_Tab_Page() {
+//			SoftAssert softmain37 = new SoftAssert();
+//			if (new MainDeviceAllTabPage().getEthernetPageObject().allDevicesCount > 0) {
+//				softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickDeviceName(1));
+//				if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
+//				{
+//					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
+//					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().editDeviceName1());
+//					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().clickSaveButton());
+//					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickDeviceName(1));
+//					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().editDeviceName2());
+//					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().clickSaveButton());
+//				}
+//			}else {
+//				utils.log().info("There are no Ethernet devices connected to the Main Router ");
+//			}
+//			softmain37.assertAll();
 //		}
-//		
-//		@Test(priority = 34, dependsOnMethods = { "Login_And_Onboard",  "Verify_Main_Device_UI_On_Ethernet_Tab_Page"})
-//		public void Verify_Connected_Devices_On_Ethernet_Tab_Page() {
-//			SoftAssert softmain34 = new SoftAssert();
-//			softmain34.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyConnectedDeviceDetails());
-//			
-//			softmain34.assertAll();
-//		}
-////		
-////		@Test(priority = 35)
-////		public void Verify_Main_Router_Details_On_Ethernet_Tab_Page() {
-////			SoftAssert softmain35 = new SoftAssert();
-////			softmain35.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().verifyMainRouterDetails());
-////			super.swipeDown();
-////			softmain35.assertAll();
-////		}
-////////		
-////////		@Test(priority = 36)
-////////		public void Verify_Edit_Main_Router_Name_On_Ethernet_Tab_Page() {
-////////			SoftAssert softmain36 = new SoftAssert();
-////////			softmain36.assertTrue(new MainDeviceAllTabPage().clickMainDeviceName());
-////////			if(new MainDeviceAllTabPage().getEthernetPageObject().getEditMainDeviceNameDialogObject().isAt())
-////////			{
-////////				softmain36.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-////////				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName1());
-////////				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
-////////				softmain36.assertTrue(new MainDeviceAllTabPage().clickDeviceName(1));
-////////				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().editDeviceName1());
-////////				softmain36.assertTrue(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().clickSaveButton());
-////////			}
-////////			
-////////			softmain36.assertAll();
-////////		}
-////////		
-////////		@Test(priority = 37)
-////////		public void Verify_Edit_Connected_Device_Name_On_Ethernet_Tab_Page() {
-////////			SoftAssert softmain37 = new SoftAssert();
-////////			if (new MainDeviceAllTabPage().getEthernetPageObject().allDevicesCount > 0) {
-////////				softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickDeviceName(1));
-////////				if(new MainDeviceAllTabPage().getEditDeviceNameDialogObject().isAt())
-////////				{
-////////					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().verifyUIOnEditDeviceNameDialog());
-////////					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().editDeviceName1());
-////////					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().clickSaveButton());
-////////					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickDeviceName(1));
-////////					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().editDeviceName2());
-////////					softmain37.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().getEditDeviceNameDialogObject().clickSaveButton());
-////////				}
-////////			}else {
-////////				utils.log().info("There are no Ethernet devices connected to the Main Router ");
-////////			}
-////////			softmain37.assertAll();
-////////		}
-//////
-//		@Test(priority = 38, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Main_Device_Help_Page() {
-//			SoftAssert softmain38 = new SoftAssert();
-//			softmain38.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickHelpButton());
-//			if(new MainDeviceAllTabPage().getMainRouterDetailsHelpPageObject().isAt())
-//				new MainDeviceAllTabPage().getMainRouterDetailsHelpPageObject().clickCloseButton();
-//			new MainDeviceAllTabPage().getEthernetPageObject().clickBackButton();
-//			
-//			softmain38.assertAll();
-//		}
-//	  
-//		@Test(priority = 39, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Devices_UI_Page() {
-//			utils.log().info("                                            ");
-//			utils.log().info("********************************************");
-//			utils.log().info("Test: Online and Offline Connected Devices  ");
-//			utils.log().info("********************************************");
-//			SoftAssert softdevices2 = new SoftAssert();
-//			new HomePage().getFooterIconsPageObject().clickHomeButton();
-//			if(new HomePage().isAt())
-//				softdevices2.assertTrue(new HomePage().clickDevicesImage());
-//			if(new DevicesPage().isAt()) 
-//				softdevices2.assertTrue(new DevicesPage().verifyUIOnDevicesPage());
-//			softdevices2.assertAll();
-//		}
-//			
-//		@Test(priority = 40, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
-//		public void Verify_Online_Devices_Details() 
-//		{
-//			SoftAssert softdevices3 = new SoftAssert();
-//			softdevices3.assertTrue(new DevicesPage().verifyOnlineDeviceDetails());
-//			softdevices3.assertAll();
-//		}
-//		
-////		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
-////		public void Verify_Edit_Device_Name() 
-////		{
-////			SoftAssert softdevices4 = new SoftAssert();
-////			softdevices4.assertTrue(new DevicesPage().verifyEditDeviceName());
-////			softdevices4.assertAll();
-////		}
-////		
-//		@Test(priority = 42, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
-//		public void Verify_Offline_Devices_Details() 
-//		{
-//			SoftAssert softdevices5 = new SoftAssert();
-//			softdevices5.assertTrue(new DevicesPage().verifyOfflineDeviceDetails());
-//			softdevices5.assertAll();
-//		}
-//		
-//		@Test(priority = 43, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
-//		public void Verify_Devices_Help_Page() 
-//		{
-//			SoftAssert softdevices6 = new SoftAssert();
-//			softdevices6.assertTrue(new DevicesPage().clickHelpButton());
-//			if(new DevicesPage().getDevicesHelpPageObject().isAt())
-//				softdevices6.assertTrue(new DevicesPage().getDevicesHelpPageObject().clickCloseButton());
-//			softdevices6.assertTrue(new DevicesPage().clickBackButton());
-//			softdevices6.assertAll();
-//		}
-//	  
-//		@Test(priority = 44, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Devices_Signal_Strength_UI_Page() {
-//			utils.log().info("                                            ");
-//			utils.log().info("********************************************");
-//			utils.log().info("Test: Device Signal Strength Leader Board   ");
-//			utils.log().info("********************************************");
-//			SoftAssert softsignal2 = new SoftAssert();
-//			new HomePage().getFooterIconsPageObject().clickHomeButton();
-//			super.swipeUp();
-//			new HomePage().clickDeviceSignalStrengthImage();
-//			if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
-//				softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
-//			softsignal2.assertAll();
-//		}
-//		
-//		@Test(priority = 45, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Signal_Strength_For_Devices() {
-//			SoftAssert softsignal3 = new SoftAssert();
-//			softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
-//			softsignal3.assertAll();
-//		}
-//		
-//		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Sorting_Devices_From_Strong_To_Weak() {
-//			SoftAssert softsignal4= new SoftAssert();
-//			softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
-//			softsignal4.assertAll();
-//		}
-//		
-//		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Sorting_Devices_From_Weak_To_Strong() {
-//			SoftAssert softsignal5= new SoftAssert();
-//			softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
-//			softsignal5.assertAll();
-//		}
-//		
-//		@Test(priority = 48, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
-//		public void Verify_Editing_Device_Name() {
-//			SoftAssert softsignal6= new SoftAssert();
-////			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickEditDeviceName(1));
-////			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
-////			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-//			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
-//			softsignal6.assertAll();
-//		}
+
+		@Test(priority = 38, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Main_Device_Help_Page() {
+			SoftAssert softmain38 = new SoftAssert();
+			softmain38.assertTrue(new MainDeviceAllTabPage().getEthernetPageObject().clickHelpButton());
+			if(new MainDeviceAllTabPage().getMainRouterDetailsHelpPageObject().isAt())
+				new MainDeviceAllTabPage().getMainRouterDetailsHelpPageObject().clickCloseButton();
+			new MainDeviceAllTabPage().getEthernetPageObject().clickBackButton();
+			
+			softmain38.assertAll();
+		}
 	  
-//	  @Test(priority = 49, dependsOnMethods = { "Login_And_Onboard"})
-//		public void Verify_Speed_Test_Page() {
-//			utils.log().info("                                ");
-//			utils.log().info("********************************");
-//			utils.log().info("Test: Home Speed Test History   ");
-//			utils.log().info("********************************");
-//			SoftAssert softspeedtest2 = new SoftAssert();
-//			softspeedtest2.assertTrue(new HomePage().clickNavigationButton());
-//			if(new HomePage().getHamburgerMenuPageObject().isAt()) 
-//			{
-//				if(new HomePage().getHamburgerMenuPageObject().speedTest.isDisplayed())
-//					softspeedtest2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSpeedTestButton());
-//				try {
-//					if(new AppRatingDialog().isAt())
-//						new AppRatingDialog().clickRemindMeLaterLink();
-//				}catch(Exception e){}
-//			}
-//			if(new SpeedTestPage().isAt())
-//			{
-//				softspeedtest2.assertTrue(new SpeedTestPage().verifyUIOnSpeedTestPage());
-//			}
-//	  }
-//	  
-//	  @Test(priority = 50, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
-//		public void Verify_Perform_Speed_Test() {
-//			SoftAssert softspeedtest3 = new SoftAssert();
-//			softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
-//			for (int i = 0; i < 2; i++)
-//			{
-//				softspeedtest3.assertTrue(new SpeedTestPage().runSpeedTestAgain());
-//			}
+		@Test(priority = 39, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Devices_UI_Page() {
+			utils.log().info("                                            ");
+			utils.log().info("********************************************");
+			utils.log().info("Test: Online and Offline Connected Devices  ");
+			utils.log().info("********************************************");
+			SoftAssert softdevices2 = new SoftAssert();
+			new HomePage().getFooterIconsPageObject().clickHomeButton();
+			if(new HomePage().isAt())
+				softdevices2.assertTrue(new HomePage().clickDevicesImage());
+			if(new DevicesPage().isAt()) 
+				softdevices2.assertTrue(new DevicesPage().verifyUIOnDevicesPage());
+			softdevices2.assertAll();
+		}
+			
+		@Test(priority = 40, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
+		public void Verify_Online_Devices_Details() 
+		{
+			SoftAssert softdevices3 = new SoftAssert();
+			softdevices3.assertTrue(new DevicesPage().verifyOnlineDeviceDetails());
+			softdevices3.assertAll();
+		}
+		
+//		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
+//		public void Verify_Edit_Device_Name() 
+//		{
+//			SoftAssert softdevices4 = new SoftAssert();
+//			softdevices4.assertTrue(new DevicesPage().verifyEditDeviceName());
+//			softdevices4.assertAll();
 //		}
-//	  
-//	  @Test(priority = 51, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
-//		public void Verify_Speed_Test_Help_page() {
-//			SoftAssert softspeedtest4 = new SoftAssert();
-//			softspeedtest4.assertTrue(new SpeedTestPage().clickHelpButton());
-//			softspeedtest4.assertTrue(new SpeedTestPage().getSpeedTestHelpPageObject().clickCloseButton());
-//			softspeedtest4.assertTrue(new SpeedTestPage().clickBackButton());
-//			softspeedtest4.assertAll();
-//		}
-//	  
-//	  @Test(priority = 52, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
-//		public void Verify_Home_Speed_Test_History_Page() {
-//			SoftAssert softspeedtest5 = new SoftAssert();
-//			if(new HomePage().isAt()) 
-//				super.swipeUp();
-//				softspeedtest5.assertTrue(new HomePage().clickSpeedTestHistoryImage());
-//			
-//			if(new HomeSpeedTestHistoryPage().isAt())
-//				softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
-//			
-//			softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
-//		}
+//		
+		@Test(priority = 42, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
+		public void Verify_Offline_Devices_Details() 
+		{
+			SoftAssert softdevices5 = new SoftAssert();
+			softdevices5.assertTrue(new DevicesPage().verifyOfflineDeviceDetails());
+			softdevices5.assertAll();
+		}
+		
+		@Test(priority = 43, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_UI_Page"})
+		public void Verify_Devices_Help_Page() 
+		{
+			SoftAssert softdevices6 = new SoftAssert();
+			softdevices6.assertTrue(new DevicesPage().clickHelpButton());
+			if(new DevicesPage().getDevicesHelpPageObject().isAt())
+				softdevices6.assertTrue(new DevicesPage().getDevicesHelpPageObject().clickCloseButton());
+			softdevices6.assertTrue(new DevicesPage().clickBackButton());
+			softdevices6.assertAll();
+		}
+	  
+		@Test(priority = 44, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Devices_Signal_Strength_UI_Page() {
+			utils.log().info("                                            ");
+			utils.log().info("********************************************");
+			utils.log().info("Test: Device Signal Strength Leader Board   ");
+			utils.log().info("********************************************");
+			SoftAssert softsignal2 = new SoftAssert();
+			new HomePage().getFooterIconsPageObject().clickHomeButton();
+			super.swipeUp();
+			new HomePage().clickDeviceSignalStrengthImage();
+			if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
+				softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
+			softsignal2.assertAll();
+		}
+		
+		@Test(priority = 45, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Signal_Strength_For_Devices() {
+			SoftAssert softsignal3 = new SoftAssert();
+			softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
+			softsignal3.assertAll();
+		}
+		
+		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Sorting_Devices_From_Strong_To_Weak() {
+			SoftAssert softsignal4= new SoftAssert();
+			softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
+			softsignal4.assertAll();
+		}
+		
+		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Sorting_Devices_From_Weak_To_Strong() {
+			SoftAssert softsignal5= new SoftAssert();
+			softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
+			softsignal5.assertAll();
+		}
+		
+		@Test(priority = 48, dependsOnMethods = { "Login_And_Onboard", "Verify_Devices_Signal_Strength_UI_Page"})
+		public void Verify_Editing_Device_Name() {
+			SoftAssert softsignal6= new SoftAssert();
+//			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickEditDeviceName(1));
+//			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
+//			softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
+			softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
+			softsignal6.assertAll();
+		}
+	  
+	  @Test(priority = 49, dependsOnMethods = { "Login_And_Onboard"})
+		public void Verify_Speed_Test_Page() {
+			utils.log().info("                                ");
+			utils.log().info("********************************");
+			utils.log().info("Test: Home Speed Test History   ");
+			utils.log().info("********************************");
+			SoftAssert softspeedtest2 = new SoftAssert();
+			softspeedtest2.assertTrue(new HomePage().clickNavigationButton());
+			if(new HomePage().getHamburgerMenuPageObject().isAt()) 
+			{
+				if(new HomePage().getHamburgerMenuPageObject().speedTest.isDisplayed())
+					softspeedtest2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSpeedTestButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){}
+			}
+			if(new SpeedTestPage().isAt())
+			{
+				softspeedtest2.assertTrue(new SpeedTestPage().verifyUIOnSpeedTestPage());
+			}
+	  }
+	  
+	  @Test(priority = 50, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
+		public void Verify_Perform_Speed_Test() {
+			SoftAssert softspeedtest3 = new SoftAssert();
+			softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
+			for (int i = 0; i < 2; i++)
+			{
+				softspeedtest3.assertTrue(new SpeedTestPage().runSpeedTestAgain());
+			}
+		}
+	  
+	  @Test(priority = 51, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
+		public void Verify_Speed_Test_Help_page() {
+			SoftAssert softspeedtest4 = new SoftAssert();
+			softspeedtest4.assertTrue(new SpeedTestPage().clickHelpButton());
+			softspeedtest4.assertTrue(new SpeedTestPage().getSpeedTestHelpPageObject().clickCloseButton());
+			softspeedtest4.assertTrue(new SpeedTestPage().clickBackButton());
+			softspeedtest4.assertAll();
+		}
+	  
+	  @Test(priority = 52, dependsOnMethods = { "Login_And_Onboard", "Verify_Speed_Test_Page"})
+		public void Verify_Home_Speed_Test_History_Page() {
+			SoftAssert softspeedtest5 = new SoftAssert();
+			if(new HomePage().isAt()) 
+				super.swipeUp();
+				softspeedtest5.assertTrue(new HomePage().clickSpeedTestHistoryImage());
+			
+			if(new HomeSpeedTestHistoryPage().isAt())
+				softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
+			
+			softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
+		}
   }

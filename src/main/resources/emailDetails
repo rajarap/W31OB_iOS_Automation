@@ -11,3 +11,12 @@ password=demouser123
 //hostname=smtp.gmail.com
 //username=arrisuser2652@gmail.com
 //password=arrisuser123
+
+
+
+
+
+
+//email ids to send error logs
+emailid1=prabhu.rajarathinam@mobileprogramming.com
+emailid2=prabhu.rajarathinam@commscope.com

@@ -17,17 +17,14 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddSatelliteUnPackYourSatellitePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"BOBA Arrow\"]")
-	public MobileElement backIcon;
-	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"ADD SATELLITE\"]")
-	public MobileElement addSatelliteTitle;
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"BOBAHelp\"]")
+	public MobileElement helpIcon;
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Unpack_BOBA_Satellite_Screen_TitleLabel\"]")
-	public MobileElement addSatelliteTitle2;
-
+	public MobileElement unpackYourSatelliteTitle;
+	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Unpack_BOBA_Satellite_Screen_SubTitleLabel\"]")
-	public MobileElement description;
+	public MobileElement unpackYourSatelliteSubTitle;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Unpack_BOBA_Satellite_Screen_Button\"]")
 	public MobileElement nextButton;
@@ -48,24 +45,24 @@ public class AddSatelliteUnPackYourSatellitePage extends ParentClass implements 
 		}
 	}
 	
-	public boolean clickBackButton() {
-		if (backIcon.isDisplayed()) {
-			click(backIcon);
-			utils.log().info("Clicked on Back Button");
+	public boolean clickHelpButton() {
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
+			utils.log().info("Clicked on Help Button");
 			return true;
 		} else {
-			utils.log().info("Back Button is not displayed");
+			utils.log().info("Help Button is not displayed");
 			return false;
 		}
 	}
 
 	@Override
 	public boolean isAt() {
-		if (addSatelliteTitle.isDisplayed()) {
-			utils.log().info("On ADD SATELLITE Page");
+		if (unpackYourSatelliteTitle.isDisplayed()) {
+			utils.log().info("On UNPACK YOUR SATELLITE Page");
 			return true;
 		} else {
-			utils.log().info("Not on ADD SATELLITE Page");
+			utils.log().info("Not on UNPACK YOUR SATELLITE Page");
 			return false;
 		}
 	}

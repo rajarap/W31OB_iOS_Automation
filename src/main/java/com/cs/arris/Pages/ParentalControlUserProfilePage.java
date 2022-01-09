@@ -79,7 +79,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_DeviceExpand\"]")
 	public MobileElement expandDeviceListButton;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Profiles_Screen_Button_Expand\"]")
 	public MobileElement expandRuleListButton;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_RuleCounter\"]")
@@ -94,7 +94,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Profiles_Screen_Label_Total\"]")
 	public MobileElement totalTimeActiveRule;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Remind me later\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeSwitch[@name=\"Parental_Control_Profiles_Screen_Label_Switch\"]")
 	public MobileElement enableTimeBlockToggleButton;
 
 	
@@ -369,14 +369,51 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			return false;
 		}
 	}
-
-	public boolean enablePauseInternetAccessForCurentProfile() {
+	
+	public boolean enableAssociatedRules() {
 		try {
-			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Pause Profile, Pause Internet access for current profile\"`]")).getAttribute("value");
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Profiles_Screen_Label_Switch\"`]")).getAttribute("value");
 			int value = Integer.parseInt(str);
 			if(value == 0)
 			{
-				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Pause Profile, Pause Internet access for current profile\"`]")).click();
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Profiles_Screen_Label_Switch\"`]")).click();
+				super.pause(25);
+				utils.log().info("Rules associated with user profile is enabled");
+			}else {
+				utils.log().info("Rules associated with user profile is already enabled");
+			}
+			return true;
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling Rules associated with user profile");
+			return true;
+		}
+	}
+		
+	public boolean disableAssociatedRules() {
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Profiles_Screen_Label_Switch\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Profiles_Screen_Label_Switch\"`]")).click();
+				utils.log().info("Rules associated with user profile is disabled");
+			}else {
+				utils.log().info("Rules associated with user profile is already disabled");
+			}
+			return true;
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling Rules associated with user profile");
+			return true;
+		}
+	}
+
+	public boolean enablePauseInternetAccessForCurentProfile() {
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("(//XCUIElementTypeSwitch[@name=\"Parental_Control_Profiles_Screen_Label_Switch\"])[1]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("(//XCUIElementTypeSwitch[@name=\"Parental_Control_Profiles_Screen_Label_Switch\"])[1]")).click();
 				utils.log().info("Pause Internet Access for current user profile is enabled");
 				if (this.getAppRatingDialogObject().isAt()) {
 					this.getAppRatingDialogObject().clickRemindMeLaterLink();
@@ -397,18 +434,18 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	
 	public boolean disablePauseInternetAccessAccessForCurentProfile() {
 		try {
-			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Pause Profile, Pause Internet access for current profile\"`]")).getAttribute("value");
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("(//XCUIElementTypeSwitch[@name=\"Parental_Control_Profiles_Screen_Label_Switch\"])[1]")).getAttribute("value");
 			int value = Integer.parseInt(str);
 			if(value == 1)
 			{
-				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Pause Profile, Pause Internet access for current profile\"`]")).click();
+				super.getDriver().findElement(MobileBy.iOSClassChain("(//XCUIElementTypeSwitch[@name=\"Parental_Control_Profiles_Screen_Label_Switch\"])[1]")).click();
 				utils.log().info("Pause Internet Access for current user profile is disabled");
 			}else {
 				utils.log().info("Pause Internet Access for current user profile is already disabled");
 			}
 			return true;
 		} catch(Exception e) {
-			utils.log().info("Issue in enabling Pause Internet Access for current user profile");
+			utils.log().info("Issue in disabling Pause Internet Access for current user profile");
 			return true;
 		}
 	}

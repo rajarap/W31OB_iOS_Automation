@@ -17,11 +17,9 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceHomePageSpecificationDetailsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/tvTitle")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Specifications\"]")
 	public MobileElement specificationsTitle;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/ivBackButton")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backButton;
 	

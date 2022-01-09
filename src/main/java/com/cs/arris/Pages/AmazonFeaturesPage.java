@@ -97,6 +97,7 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 		return affsHelpPage;
 	}
 	
+	
 	public boolean clickHelpIcon() {
 		if (helpIcon.isDisplayed()) {
 			click(helpIcon);
@@ -118,24 +119,39 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 	}
 	
 	public boolean enableAFFS() {
-		if (AFFSToggleButton.isSelected()) {
-			utils.log().info("Amazon Frustration Free Setup Feature is already enabled");
+		try {
+			String str = super.getDriver().findElementByXPath("//XCUIElementTypeSwitch[@name=\"Amazon_Features_Screen_Switch\"]").getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElementByXPath("//XCUIElementTypeSwitch[@name=\"Amazon_Features_Screen_Switch\"]").click();
+				utils.log().info("Amazon Frustration Free Setup Feature is enabled");
+			}else {
+				utils.log().info("Amazon Frustration Free Setup Feature is already enabled");
+			}
 			return true;
-		}else {
-			click(AFFSToggleButton);
-			utils.log().info("Amazon Frustration Free Setup Feature is enabled");
-			return false;
+		} catch(Exception e) {
+			utils.log().info("");
+			return true;
 		}
 	}
 	
 	public boolean disableAFFS() {
-		if (!(AFFSToggleButton.isSelected())) {
-			utils.log().info("Amazon Frustration Free Setup Feature is already disabled");
+		try {
+			String str = super.getDriver().findElementByXPath("//XCUIElementTypeSwitch[@name=\"Amazon_Features_Screen_Switch\"]").getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)  //enabled
+			{
+				//click(parentalControlToggleButton);  click to enable parental control switch button
+				super.getDriver().findElementByXPath("//XCUIElementTypeSwitch[@name=\"Amazon_Features_Screen_Switch\"]").click();
+				utils.log().info("Amazon Frustration Free Setup Feature is disabled.");
+			}else {
+				utils.log().info("Amazon Frustration Free Setup Feature is already disabled");
+			}
 			return true;
-		} else {
-			click(AFFSToggleButton);
-			utils.log().info("Amazon Frustration Free Setup Feature is disabled");
-			return false;
+		} catch(Exception e) {
+			utils.log().info("");
+			return true;
 		}
 	}
 	
@@ -253,15 +269,15 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 				utils.log().info("AFFS Toggle button is not displayed");
 			}
 
-			if (pleaseTapHere.isDisplayed())
-				utils.log().info(pleaseTapHere.getText() + " is displayed");
-			else
-				utils.log().info("Please Tap Here text is not displayed");
-
-			if (getAlexaSkillsButton.isDisplayed())
-				utils.log().info(getAlexaSkillsButton.getText() + " is displayed");
-			else
-				utils.log().info("Get Alexa Skills text is not displayed");
+//			if (pleaseTapHere.isDisplayed())
+//				utils.log().info(pleaseTapHere.getText() + " is displayed");
+//			else
+//				utils.log().info("Please Tap Here text is not displayed");
+//
+//			if (getAlexaSkillsButton.isDisplayed())
+//				utils.log().info(getAlexaSkillsButton.getText() + " is displayed");
+//			else
+//				utils.log().info("Get Alexa Skills text is not displayed");
 
 			if (passwordLabel.isDisplayed())
 				utils.log().info(passwordLabel.getText() + " label is displayed");

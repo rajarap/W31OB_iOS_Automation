@@ -1,7 +1,10 @@
 package com.cs.arris.Pages;
 
 import java.time.Duration;
+import java.util.Set;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.cs.arris.Base.ParentClass;
@@ -17,10 +20,12 @@ import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HomePage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	public Integer count;
+	public WebDriver driver;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Home\"]")
 	public MobileElement homeTitle;
@@ -73,22 +78,22 @@ public class HomePage extends ParentClass implements Page {
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_AddRight\"]")
 	public MobileElement rightSatelliteImage;
 	
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title[1]\"]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title_Device\"]")
 	public MobileElement deviceSignalStrengthLeaderBoardText;
 
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_Expand[1]\"]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandDevice\"]")
 	public MobileElement deviceSignalStrengthLeaderBoardImage;
 
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Value[1]\"]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_DeviceValue\"]")
 	public MobileElement bitRateDevices;
 
-	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title[1]\"])[2]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title_Speed\"]")
 	public MobileElement speedTestHistoryText;
 
-	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_Expand[1]\"])[2]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandSpeed\"]")
 	public MobileElement speedTestHistoryImage;
 
-	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Value[1]\"])[2]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_SpeedValue\"]")
 	public MobileElement speedTestHistoryDevices;
 	
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_WhoIsHomeTitle\"]")
@@ -100,30 +105,29 @@ public class HomePage extends ParentClass implements Page {
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_Arrow\"]")
 	public MobileElement whoseHomeArrow;
 
-//	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title_Currently\"]")
-//	public MobileElement currentlyBlockedDevicesText; // Currently Blocked Devices
-//
-//	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandCurrently\"]")
-//	public MobileElement currentlyBlockedDevicesImage;
-//
-//	@AndroidFindBy(id = "com.arris.sbcBeta:id/imgBlockedDevices")
-//	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
-//	public MobileElement currentlyBlockedDevicesButton;
-//
-//	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_CurrentlyValue\"]")
-//	public MobileElement parentalControlIsDisabled; // Parental Control is disabled
-//
-//	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
-//	public MobileElement parentalControlImage;
-//
-//	//@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
-//	public MobileElement currentlyBlockedDevicesEnabledText; // Currently Blocked Devices
-//
-//	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
-//	public MobileElement parentalControlBlockedDevices; // 00
-//
-//	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
-//	public MobileElement parentalControlEnabledImage;
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Title_Currently\"]")
+	public MobileElement currentlyBlockedDevicesText; // Currently Blocked Devices
+
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandCurrently\"]")
+	public MobileElement currentlyBlockedDevicesImage;
+
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
+	public MobileElement currentlyBlockedDevicesButton;
+
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_CurrentlyValue\"]")
+	public MobileElement parentalControlIsDisabled; // Parental Control is disabled
+
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
+	public MobileElement parentalControlImage;
+
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
+	public MobileElement currentlyBlockedDevicesEnabledText; // Currently Blocked Devices
+
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
+	public MobileElement parentalControlBlockedDevices; // 00
+
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Notification\"]")
+	public MobileElement parentalControlEnabledImage;
 	
 	//Network Health
 	
@@ -167,9 +171,6 @@ public class HomePage extends ParentClass implements Page {
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_More\"]")
 	public MobileElement moreLink; 
 	
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_NavigationBar_Button_Cloud\"]")
-	public MobileElement cloudIcon1;
-	
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeCell[@name=\"Wi-Fi\"]")
 	public MobileElement wifiLink;
 
@@ -178,6 +179,37 @@ public class HomePage extends ParentClass implements Page {
 	
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Settings\"]")
 	public MobileElement settings;
+	
+	//Amazon Features in home page
+	
+	@iOSXCUITFindBy (iOSClassChain = "**/XCUIElementTypeStaticText[`label == \"New Amazon Feature is available in this SW Release [Click for info]\"`]")
+	public MobileElement clickForInfo;
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Dismiss\"]")
+	public MobileElement dismissButton;
+	
+	@iOSXCUITFindBy (xpath = "(//XCUIElementTypeImage[@name=\"Mesh_Home_Screen_Image_ExpandDevice\"])[1]")
+	public MobileElement amazonImage;
+	
+	//Amazon Features Page
+	
+	//click for info in RAT mode
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeImage[@name=\"Error_Alert_Screen_Image_Close\"]")
+	public MobileElement closeIcon;
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
+	public MobileElement alertTitle;
+	
+	//AFFS is unavailable in the RAT mode.
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_SubTitleLabel\"]")
+	public MobileElement affsUnavailable;
+	
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
+	public MobileElement okButton;
+	
+	
+//	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Settings\"]")
+//	public MobileElement settings;
 
 	public MainDeviceAllTabPage getMainDeviceAllTabPageObject() {
 		MainDeviceAllTabPage mainDevicePage = new MainDeviceAllTabPage();
@@ -248,6 +280,14 @@ public class HomePage extends ParentClass implements Page {
 		NotificationPage notificationPage = new NotificationPage();
 		return notificationPage;
 	}
+	
+	public AmazonFeaturesInformationPage getAFFSInfoPageObject() {
+		AmazonFeaturesInformationPage affsinfoPage = new AmazonFeaturesInformationPage();
+		return affsinfoPage;
+	}
+	
+	
+		
 	public HomePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
@@ -267,6 +307,23 @@ public class HomePage extends ParentClass implements Page {
 		utils.log().info("Closed Banner on Home Page");
 	}
 
+	public void clickOkButton() {
+		click(okButton);
+		utils.log().info("Click Ok Button");
+	}
+
+	public boolean clickAFFSRATUnavailableOkButton() {
+		if (okButton.isDisplayed()) {
+			click(okButton);
+			utils.log().info("Home Page - Clicked on RAT Unavailable OK Button");
+			return true;
+		} else {
+			utils.log().info("Home Page - RAT Unavailable OK Buttonis is either not visible or is not present on the DOM");
+			return false;
+		}
+	}
+		
+	
 	// Verify if all the required UI elements are displayed on the Home Page
 	public boolean verifyUIOnHomePage() {
 		utils.log().info("*****************************************");
@@ -376,40 +433,47 @@ public class HomePage extends ParentClass implements Page {
 			
 			super.swipeUp();
 			
-			if (promotionLogo.isDisplayed()) 
-				utils.log().info("Promotional Logo is displayed");
-			else
-				utils.log().info("Promotional Logo is not displayed");
+			try {
+				if (promotionLogo.isDisplayed()) 
+					utils.log().info("Promotional Logo is displayed");
+			}catch(Exception e) {
+				utils.log().info("Promotional Logo is not displayed");}
+
+			try {
+				if (promotionImage.isDisplayed()) 
+					utils.log().info("Promotional Image is displayed");
+			}catch(Exception e) {
+				utils.log().info("Promotional Image is not displayed");}
 			
-			if (promotionImage.isDisplayed()) 
-				utils.log().info("Promotional Image is displayed");
-			else
-				utils.log().info("Promotional Image is not displayed");
+			try {
+				if (getProtectionNowButton.isDisplayed()) 
+					utils.log().info("GET PROTECTION NOW button is displayed");
+			}catch(Exception e) {
+				utils.log().info("GET PROTECTION NOW button is not displayed");}
 			
-			if (getProtectionNowButton.isDisplayed()) 
-				utils.log().info("GET PROTECTION NOW button is displayed");
-			else
-				utils.log().info("GET PROTECTION NOW button is not displayed");
-			
+			try {
 			if (dontSeePromotionAgainText.isDisplayed()) 
 				utils.log().info("Don't want to see promotion again? text is displayed");
-			else
-				utils.log().info("Don't want to see promotion again? text is not displayed");
+			}catch(Exception e) {
+				utils.log().info("Don't want to see promotion again? text is not displayed");}
 			
+			try {
 			if (specialOffersText.isDisplayed()) 
 				utils.log().info("Special offer to our valued customers text is displayed");
-			else
-				utils.log().info("Special offer to our valued customers text is not displayed");
+			}catch(Exception e) {
+				utils.log().info("Special offer to our valued customers text is not displayed");}
 			
+			try {
 			if (freeTrialText.isDisplayed())
 				utils.log().info("Exclusive to ARRIS - Identity Guard free trial for 60 days text is displayed");
-			else
-				utils.log().info("Exclusive to ARRIS - Identity Guard free trial for 60 days text is not displayed");
+			}catch(Exception e) {
+				utils.log().info("Exclusive to ARRIS - Identity Guard free trial for 60 days text is not displayed");}
 			
+			try {
 			if (closeBanner.isDisplayed()) 
 				utils.log().info("Close Banner Icon is displayed");
-			else
-				utils.log().info("Close Banner Icon is not displayed");
+			}catch(Exception e) {
+				utils.log().info("Close Banner Icon is not displayed");}
 			
 			try {
 			if (deviceSignalStrengthLeaderBoardText.isDisplayed())
@@ -426,52 +490,113 @@ public class HomePage extends ParentClass implements Page {
 				utils.log().info("Device Signal Strength Leader Board is displayed for " + bitRateDevices.getText());
 			}catch(Exception e) {utils.log().info("Device Signal Strength Leader Board Count is not displayed");}
 
+			try {
 			if (speedTestHistoryText.isDisplayed())
 				utils.log().info("Speed Test History Text is displayed");
-			else
-				utils.log().info("Speed Test History Text is not displayed");
+			}catch(Exception e) {utils.log().info("Speed Test History Text is not displayed");}
 
+			try {
 			if (speedTestHistoryImage.isDisplayed())
 				utils.log().info("Speed Test History Image is displayed");
-			else
-				utils.log().info("Speed Test History Image is not displayed");
+			}catch(Exception e) {utils.log().info("Speed Test History Image is not displayed");}
 
+			try {
 			if (speedTestHistoryDevices.isDisplayed())
 				utils.log().info("Count of Speed Test History Devices : " + speedTestHistoryDevices.getText() + " is displayed");
-			else
-				utils.log().info("Count of Speed Test History Devices is not displayed");
+			}catch(Exception e) {utils.log().info("Count of Speed Test History Devices is not displayed");}
 
+			try {
 			if (whoseHomeText.isDisplayed())
 				utils.log().info("Who's Home Text is displayed");
-			else
-				utils.log().info("Who's Home Text is not displayed");
+			}catch(Exception e) {utils.log().info("Who's Home Text is not displayed");}
 
+			try {
 			if (whoseHomeAndWhoseNotText.isDisplayed())
 				utils.log().info("Find out who’s home and who’s not text is displayed");
-			else
-				utils.log().info("Find out who’s home and who’s not text is not displayed");
+			}catch(Exception e) {utils.log().info("Find out who’s home and who’s not text is not displayed");}
 			
+			try {
 			if (whoseHomeArrow.isDisplayed())
 				utils.log().info("Who's Home Arrow Image is displayed");
-			else
-				utils.log().info("Who's Home Arrow Image is not displayed");
+			}catch(Exception e) {utils.log().info("Who's Home Arrow Image is not displayed");}
 			
-//			if (currentlyBlockedDevicesText.isDisplayed())
-//				utils.log().info("Currently Blocked Devices Text is displayed");
-//			else
-//				utils.log().info("Currently Blocked Devices is not displayed");
-//
-//			if (currentlyBlockedDevicesImage.isDisplayed())
-//				utils.log().info("Currently Blocked Devices Image is displayed");
-//			else
-//				utils.log().info("Currently Blocked Devices Image is not displayed");
+			try {
+			if (currentlyBlockedDevicesText.isDisplayed())
+				utils.log().info("Currently Blocked Devices Text is displayed");
+			}catch(Exception e) {utils.log().info("Currently Blocked Devices is not displayed");}
+
+			try {
+			if (currentlyBlockedDevicesImage.isDisplayed())
+				utils.log().info("Currently Blocked Devices Image is displayed");
+			}catch(Exception e) {utils.log().info("Currently Blocked Devices Image is not displayed");}
 			
 			return true;
 		}catch(Exception e) {
 			return false;
 		}
 	}
+	
+	public boolean clickProtectionButton() {
+		try {
+				click(getProtectionNowButton);
+				super.pause(5);
+				utils.log().info("Clicked on Get Protection Now Button");
+								
+				Set<String> allContext = super.getDriver().getContextHandles();
+				for (String context : allContext) {
+					if (context.contains("WEBVIEW"))
+						super.getDriver().context(context);
+				}
+				utils.log().info("Switched to WEBVIEW");
 
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver();
+				
+				if (driver != null)
+					driver.quit();
+					
+					super.getDriver().context("NATIVE_APP");
+					utils.log().info("Switched to NATIVE_APP View");
+					super.getDriver().activateApp("com.arris.sbcBeta");
+
+					return true;
+			} catch (Exception e) {
+					return false;}
+	}
+	
+	public boolean clickDismissButton() {
+		if (dismissButton.isDisplayed()) {
+			click(dismissButton);
+			utils.log().info("Home Page - Clicked on Dismiss Link");
+			return true;
+		} else {
+			utils.log().info("Home Page - Dismiss Link is either not visible or is not present on the DOM");
+			return false;
+		}
+	}
+	
+	public boolean clickAFFSInfoLink() {
+		try {
+				if (clickForInfo.isDisplayed()) {
+					click(clickForInfo);
+					utils.log().info("Home Page - Clicked on AFFS Info Link");
+					return true;
+				} else {
+					utils.log().info("Home Page - AFFS Info Link is either not visible or is not present on the DOM");
+					return false;
+				} 
+			}catch(Exception e) {utils.log().info("Home Page - AFFS Info Link is either not visible or is not present on the DOM");
+			return false;
+		}
+	}
+	
+	public boolean RATExists(){
+		if(cloudIcon.isDisplayed())
+			return true;
+		else
+			return false;
+	}
+	
 	public boolean clickNotificationsIcon() {
 		if (notificationsIcon.isDisplayed()) {
 			click(notificationsIcon);
@@ -639,6 +764,24 @@ public class HomePage extends ParentClass implements Page {
 			super.pause(2);
 				
 			String selector = "**/XCUIElementTypeCell[`label == \""+ssidentity+", Secure network, Signal strength 3 of 3 bars\"`]";
+			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+			super.pause(3);
+				
+			click(settings);
+			super.getDriver().activateApp("com.arris.sbcBeta");
+		}catch(Exception e) {}
+	}
+	
+	public void connectToSSID()
+	{
+		try
+		{
+			super.getDriver().activateApp("com.apple.Preferences");
+				
+			if(wifiLink.isDisplayed())
+				click(wifiLink);
+			super.pause(5);
+			String selector = "//XCUIElementTypeCell[@name=\""+ssidName.getText()+", Secure network, Signal strength 3 of 3 bars\"]/XCUIElementTypeOther[2]";
 			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
 			super.pause(3);
 				

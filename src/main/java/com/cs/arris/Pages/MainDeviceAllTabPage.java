@@ -299,64 +299,6 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		twoFourGHzDevicesCount = super.get24GHzCountOfDevices(twoFourGhzDeviceCount.getText());
 		utils.log().info("Number of 2.4GHz devices connected to the main mAX Router is : " + twoFourGHzDevicesCount);
 	}
-
-	public boolean increaseLedBrightnessSettings() {
-		utils.log().info("-----------------------------");
-		try {
-			for (int i = 0; i < increaseBrightness.length; i++) {
-				switch (increaseBrightness[i]) {
-				case 30:
-					click(thirty);
-					utils.log().info("Increased LED light by 30%");
-					break;
-				case 60:
-					click(sixty);
-					utils.log().info("Increased LED light by 60%");
-					break;
-				case 90:
-					click(ninety);
-					utils.log().info("Increased LED light by 90%");
-					break;
-				default:
-					utils.log().info("Enter valid brightness value");
-				}
-			}
-			utils.log().info("-----------------------------");
-			return true;
-		} catch (Exception e) {
-			utils.log().info("Issue in increasing LED Brightness Settings");
-			return false;
-		}
-	}
-
-	public boolean decreaseLedBrightnessSettings() {
-		utils.log().info("-----------------------------");
-		try {
-			for (int i = 0; i < decreaseBrightness.length; i++) {
-				switch (decreaseBrightness[i]) {
-				case 90:
-					click(ninety);
-					utils.log().info("Decrease LED light to 90%");
-					break;
-				case 60:
-					click(sixty);
-					utils.log().info("Decrease LED light to 60%");
-					break;
-				case 30:
-					click(thirty);
-					utils.log().info("Decrease LED light to 30%");
-					break;
-				default:
-					utils.log().info("Enter valid brightness value");
-				}
-			}
-			utils.log().info("-----------------------------");
-			return true;
-		} catch (Exception e) {
-			utils.log().info("Issue in decreaseing LED Brightness Settings");
-			return false;
-		}
-	}
 	
 	public void clickLEDExpandButton()
 	{
@@ -535,33 +477,16 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		}
 	}
 
-//	public boolean clickDeviceName() {
-//		if (deviceName1.isDisplayed()) {
-//			click(deviceName1);
-//			utils.log().info("Clicked on Device " + deviceName1.getText());
-//			return true;
-//		} else {
-//			utils.log().info("Device Name is not displayed ");
-//			return false;
-//		}
-//	}
-	
-	public boolean clickDeviceName(int i) {
+	public boolean clickDeviceNameEditIcon() {
+		this.getAllDevicesCount();
 		try {
 			if (allDevicesCount > 0) {
-				utils.log().info("Editing Device Name  : " + i);
-				utils.log().info("-----------------------------");
-
-						List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-								"//android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup["+ i + "]");
+						List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]");
 
 						for (MobileElement e : entity) {
 							try {
-								if (e.findElementByXPath(
-										"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']")
-										.isDisplayed())
-									click(e.findElementByXPath(
-											"//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtInnerDeviceName']"));
+								if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Detail_Screen_Button_EditDevice[1]\"]").isDisplayed())
+									click(super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_Detail_Screen_Button_EditDevice[1]\"]"));
 							} catch (Exception exp) {
 								utils.log().info("Device Name is not available ");
 							}

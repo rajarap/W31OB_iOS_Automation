@@ -447,10 +447,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		
 
 		try {
-			for (int i = 1; i <= 3; i=+2) {
-				utils.log().info("                  ");
-				utils.log().info("User Profile : " + i);
-				utils.log().info("------------------");
+			for (int i = 1; i <= 3; i+=2) {
 				
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
@@ -458,7 +455,7 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 				for (MobileElement e : entity) {
 					String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Screen_Switch_Profile["+i+"]\"`]")).getAttribute("value");
 					int value = Integer.parseInt(str);
-					if(value == 1)  //disabled
+					if(value == 1)  //enabled
 					{
 						super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Screen_Switch_Profile["+i+"]\"`]")).click();
 						utils.log().info("Parental internet is disabled");

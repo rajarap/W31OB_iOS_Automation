@@ -42,6 +42,20 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Done\"]")
 	public MobileElement doneLink;
 	
+	//Edit MAIN Device name success
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[@name=\"Error_Alert_Screen_Image_Close\"]")
+	public MobileElement closeIcon;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
+	public MobileElement successTitle;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_SubTitleLabel\"]")
+	public MobileElement successSubTitle;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
+	public MobileElement okButton;
+	
 	
 	public EditMainDeviceNameDialog()
 	{
@@ -106,6 +120,28 @@ public class EditMainDeviceNameDialog extends ParentClass implements Page
 		}
 	}
 	
+		public boolean clickCloseIconn() {
+			if (closeIcon.isDisplayed()) {
+				click(closeIcon);
+				utils.log().info("Clicked on Close Icon");
+				return true;
+			} else {
+				utils.log().info("Close Icon is not displayed");
+				return false;
+			}
+		}
+		
+		public boolean clickOkButton() {
+			if (okButton.isDisplayed()) {
+				click(okButton);
+				utils.log().info("Clicked on OK Icon");
+				return true;
+			} else {
+				utils.log().info("OK Button is not displayed");
+				return false;
+			}
+		}
+		
 		public boolean clickCloseButton() {
 			if (closeButton.isDisplayed()) {
 				click(closeButton);

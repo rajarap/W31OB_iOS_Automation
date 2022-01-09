@@ -1,5 +1,7 @@
 package com.cs.arris.Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -233,6 +235,12 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 			utils.log().info("Save Changes Button is not displayed");
 			return false;
 		}
+	}
+	
+	public boolean selectMinutes()
+	{
+		super.swipeMinutes(Direction.UP);
+		return true;
 	}
 
 	public boolean verifyUIOnCustomClick() {

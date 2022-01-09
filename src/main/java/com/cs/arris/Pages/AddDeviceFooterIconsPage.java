@@ -18,15 +18,15 @@ public class AddDeviceFooterIconsPage extends ParentClass implements Page
 	public TestUtils utils = new TestUtils();
 	public Integer count;
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/home_view")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Home\"]")
 	public MobileElement homeButton; 
 	
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/network_view")
+		@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"User_Guide_Screen_NavigationBarTitle\"]")
+	public MobileElement userGuideTitle; 
+	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"User Guide\"]")
 	public MobileElement userGuideButton; 
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/parental_view")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"FAQ\"]")
 	public MobileElement faqButton; 
 	
@@ -98,12 +98,12 @@ public class AddDeviceFooterIconsPage extends ParentClass implements Page
 	
 	@Override
 	public boolean isAt() {
-		if(homeButton.isDisplayed())
+		if(userGuideTitle.isDisplayed())
 		{
-			utils.log().info("On Footer Icons Page");
+			utils.log().info("On User Guide Page");
 			return true;}
 		else {
-			utils.log().info("Not on Footer Icons Page");
+			utils.log().info("Not on User Guide Page");
 		return false;}
 	}
 }

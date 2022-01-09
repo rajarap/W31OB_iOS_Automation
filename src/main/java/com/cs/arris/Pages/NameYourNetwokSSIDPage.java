@@ -38,6 +38,10 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Connect_Screen_TextField_Password\"]")
 	public MobileElement ssidPassword;
 	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
+	public MobileElement doneLink;
+	
+	
 	public NameYourNetwokSSIDPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -45,25 +49,29 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	
 	public void enterSSIDName(String ssidName)
 	{
-		//super.getDriver().hideKeyboard();
 		sendKeys(ssIDName, ssidName);
 		utils.log().info("Name Your Network Page - Entered SSID Name");
 	}
 	
 	public void enterSSIDPassword(String ssidpwd)
 	{
-		//super.getDriver().hideKeyboard();
 		sendKeys(ssidPassword, ssidpwd);
 		utils.log().info("Name Your Network Page - Entered SSID Password");
-	}
-	
-	public void clickDoneLink()
-	{
+		
 		String selector = "**/XCUIElementTypeButton[`label == \"Done\"`]";
 		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
-		//click(doneLink);
 		utils.log().info("Name Your Network Page  - Clicked on Done Button");
 	}
+	
+//	public void clickDoneLink()
+//	{
+//		String selector = "**/XCUIElementTypeButton[`label == \"Done\"`]";
+//		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+//// 		String pred = "label == \"Done\"";
+//// 		super.getDriver().findElement(MobileBy.iOSNsPredicateString(pred)).click();
+////		click(doneLink);
+//		utils.log().info("Name Your Network Page  - Clicked on Done Button");
+//	}
 
 	public void clickNextButton()
 	{

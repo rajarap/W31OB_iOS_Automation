@@ -1,0 +1,81 @@
+package com.cs.arris.Pages;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.cs.arris.Base.ParentClass;
+import com.cs.arris.Interface.Page;
+import com.cs.arris.Utilities.TestUtils;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidBy;
+import io.appium.java_client.pagefactory.AndroidFindAll;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+
+public class MailErrorLogsPage extends ParentClass implements Page {
+	public TestUtils utils = new TestUtils();
+
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Mail.sendButton\"]")
+	public MobileElement sendButton;
+
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Mail.cancelSendButton\"]")
+	public MobileElement cancelButton;
+
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"ComposeRecipientAddButton\"]")
+	public MobileElement addEmailAddressButton;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"#mobdevsupport@commscope.com\"]")
+	public MobileElement existingEmailAddressButton;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeTextField[@name=\"toField\"]")
+	public MobileElement toFieldTextBox;
+	
+	public MailErrorLogsPage() {
+		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
+	}
+
+	public boolean clickCancelButton() {
+		if (cancelButton.isDisplayed()) {
+			click(cancelButton); 
+			utils.log().info("Clicked Cancel Button");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean clickSendButton() {
+		if (sendButton.isDisplayed()) {
+			click(sendButton); 
+			utils.log().info("Clicked Send Button");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public boolean enterEmailAddress() {
+		if (toFieldTextBox.isDisplayed()) {
+			clear(toFieldTextBox);
+			sendKeys(toFieldTextBox, "prabhu.rajarathinam@mobileprogramming.com, prabhu.rajarathinam@commscope.com");
+			utils.log().info("Entered email address in To field");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+
+	@Override
+	public boolean isAt() {
+		if (sendButton.isDisplayed()) {
+			utils.log().info("On Error Log File Email Compose Page");
+			return true;
+		} else {
+			utils.log().info("Not on Error Log File Email Compose Page");
+			return false;
+		}
+	}
+}

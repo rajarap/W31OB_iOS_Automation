@@ -12,6 +12,7 @@ com/cs/arris/Pages/NotificationPage.class
 com/cs/arris/Pages/NetworkDevicePrioritySettingsHelpPage.class
 com/cs/arris/Pages/AboutHelpPage.class
 com/cs/arris/Pages/SpeedTestHelpPage.class
+com/cs/arris/Pages/AddSatellitePlugInYourSatellitePage.class
 com/cs/arris/Pages/SamplePage.class
 com/cs/arris/Pages/NetworkTimeZoneSettingsPage.class
 com/cs/arris/Pages/SignupPage.class
@@ -41,6 +42,7 @@ com/cs/arris/Pages/NetworkEnableGuestNetworkDialog.class
 com/cs/arris/Pages/SelectYourDevicePage2.class
 com/cs/arris/Pages/NetworkDevicePrioritySettings.class
 com/cs/arris/Pages/DevicesPage.class
+com/cs/arris/Pages/AddSatelliteFailureToAddSatellitePage.class
 com/cs/arris/Pages/CongratulationsPage.class
 com/cs/arris/Pages/AboutViewLicensesPage.class
 com/cs/arris/Pages/RebootYouRouterDialog.class
@@ -60,6 +62,7 @@ com/cs/arris/Pages/RemoveDeviceFromHomePage.class
 com/cs/arris/Pages/ParentalControlResumeInternetforAllProfilesDialog.class
 com/cs/arris/Pages/NetworkGeneralSettingsPortFowardingAddRulePage.class
 com/cs/arris/Pages/NetworkBandSteeringModeAlertDialog.class
+com/cs/arris/Pages/AddSatelliteAddNewSatellitePage1.class
 com/cs/arris/Pages/NetworkEnableGuestNetworkAlertDialog.class
 com/cs/arris/Pages/UnPackYourBoxPage.class
 com/cs/arris/Utilities/RandomEmailAddress.class
@@ -98,12 +101,14 @@ com/cs/arris/Pages/NetworkGeneralSettingsBridgeModeInfoDialog.class
 com/cs/arris/Pages/ConnectToBlueToothDialog.class
 com/cs/arris/Pages/SystemFirmwareUpdatePage.class
 com/cs/arris/Pages/TurnOnBluetoothDialog.class
+com/cs/arris/Pages/AddSatelliteRegisteringDeviceFailedPage.class
 com/cs/arris/Pages/NetworkGeneralSettingsHelpPage.class
 com/cs/arris/Listeners/TestListener.class
 com/cs/arris/Utilities/SwipeOnElement.class
 com/cs/arris/Pages/MainDevice24GHzTabPage.class
 com/cs/arris/Pages/AddDeviceCongratulationsPage.class
 com/cs/arris/Pages/MainDeviceEthernetTabPage.class
+com/cs/arris/Pages/AddSatelliteSuccessfullyConnectedToInternetPage.class
 com/cs/arris/Pages/AmazonWiFiSimpleSetupDialog.class
 com/cs/arris/Pages/NetworkLANIPReservationHelpPage.class
 com/cs/arris/JsonMappers/Signin_TestData.class
@@ -115,9 +120,10 @@ com/cs/arris/Pages/AddDeviceFAQPage.class
 com/cs/arris/Pages/NetworkLANSubnetDHCPConfigurationHelpPage.class
 com/cs/arris/Pages/NetworkEditPortForwardingRulePage.class
 com/cs/arris/Pages/DeviceLocationPage.class
+com/cs/arris/Pages/MainDevice24GHzTabPage$1.class
 com/cs/arris/Pages/RemoveDevicePage.class
-com/cs/arris/Pages/AddSatelliteAddNewSatellitePage.class
 com/cs/arris/Pages/ParentalControlProfilesPage.class
+com/cs/arris/Pages/MainDeviceEthernetTabPage$1.class
 com/cs/arris/Utilities/TestingDeviceCount.class
 com/cs/arris/Pages/AddDeviceHomePage.class
 com/cs/arris/Pages/NetworkLACConfigurationAlertDialog.class
@@ -147,13 +153,16 @@ com/cs/arris/Pages/EditDeviceNameDialog.class
 com/cs/arris/Pages/NetworkWANIPConfigurationIPv4Page.class
 com/cs/arris/Pages/AddDeviceHomePageSpecificationDetailsPage.class
 com/cs/arris/Pages/Error_0001_1201_Bluetooth_Pairing_Failed_Page.class
+com/cs/arris/Pages/AddSatelliteSuccessfullyConnectedPage.class
 com/cs/arris/Pages/ParentalControlUserProfileAddDevicePage.class
 com/cs/arris/Pages/Network5GHzWidebandModeAlertDialog.class
 com/cs/arris/Pages/AddDeviceAccessCameraDialog.class
 com/cs/arris/Pages/ParentalControlUserProfileAddRuleDatePickerDialog.class
 com/cs/arris/Pages/SetupHomeNetworkPage.class
 com/cs/arris/Pages/NetworkPortRuleEditFaliedAlertDialog.class
+com/cs/arris/Pages/AddSatelliteSystemUpToDatePage.class
 com/cs/arris/Pages/ErrorCode_0000_1603_Failure_To_Configure_Your_Router_Page.class
+com/cs/arris/Pages/MainDevice5GHzTabPage$1.class
 com/cs/arris/Pages/AddDeviceSelectDevice1Page.class
 com/cs/arris/Pages/SettingsHelpPage.class
 com/cs/arris/Pages/ErrorCode_0000_1015_Invalid_OTP_Page.class
@@ -189,9 +198,11 @@ com/cs/arris/Pages/AddSatelliteInstallAdditionalSatelliteDialog.class
 com/cs/arris/Pages/NetworkDNSConfigurationStaticAlertDialog.class
 com/cs/arris/Pages/AddDeviceScanBarCodePage.class
 com/cs/arris/Interface/W31_Onboarding_TestData.class
+com/cs/arris/Pages/AddSatelliteHelpPlaceYourSatellitePage.class
 com/cs/arris/Pages/AddDeviceStepsForActivationPage.class
 com/cs/arris/Pages/NetworkEditReserveLANIPDialog.class
 com/cs/arris/Pages/HamburgerHelpPage.class
+com/cs/arris/Pages/AmazonFeaturesInformationPage.class
 com/cs/arris/Pages/NetworkLANDHCPIPRangeEmptyOctetAlertDialog.class
 com/cs/arris/Pages/AddSatelliteUnPackYourSatellitePage.class
 com/cs/arris/Pages/OptimizeYourNetworkPage.class
@@ -200,6 +211,7 @@ com/cs/arris/Pages/NetworkDevicePrioritySettingsAddDeviceHelpPage.class
 com/cs/arris/Pages/ResendOTPDialog.class
 com/cs/arris/Pages/CodeVerifiedPage.class
 com/cs/arris/Pages/NetworkGeneralSettingsPortFowardingHelpPage.class
+com/cs/arris/Pages/AddSatelliteBluetoothConnectionFailedPage.class
 com/cs/arris/Pages/MainDevice5GHzTabPage.class
 com/cs/arris/Pages/ParentalControlAddRuleAddInternetBlockingScheduleDialog.class
 com/cs/arris/Pages/BlueToothPage.class
@@ -209,3 +221,4 @@ com/cs/arris/Pages/MainDevicePage.class
 com/cs/arris/Pages/NetworkGeneralSettingsPage.class
 com/cs/arris/Pages/HamburgerAboutPage.class
 com/cs/arris/Pages/AddSatellitePlacementTipsPage4.class
+com/cs/arris/Pages/MailErrorLogsPage.class

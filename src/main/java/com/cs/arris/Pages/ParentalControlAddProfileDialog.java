@@ -36,6 +36,9 @@ public class ParentalControlAddProfileDialog extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Screen_Button_CreateProfile\"]")  //create profile button
 	public MobileElement createProfileButton; 
 	
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_ProfileExist\"]")
+	public MobileElement profileNameExists;
+	
 		
 	public ParentalControlAddProfileDialog()
 	{

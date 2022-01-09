@@ -17,11 +17,9 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddDeviceNotificationsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/txtToolBarTitle")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Notification\"]")
 	public MobileElement NotificationsTitle;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc='Navigate up']")
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"NavigationBar_Button_Back\"]")
 	public MobileElement backIcon;
 
