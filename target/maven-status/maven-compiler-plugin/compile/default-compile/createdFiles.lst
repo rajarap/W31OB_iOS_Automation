@@ -2,6 +2,7 @@ com/cs/arris/Pages/AddDeviceHomePageDeviceDetailsPage.class
 com/cs/arris/Pages/HomeSpeedTestHistoryPage.class
 com/cs/arris/Utilities/InValidOTP.class
 com/cs/arris/Pages/NetworkBandSteeringModeInfoDialog.class
+com/cs/arris/Pages/WhosHomeChangeMemberNameDialog.class
 com/cs/arris/Pages/ParentalControlAlertDialog.class
 com/cs/arris/Pages/FooterIconsPage.class
 com/cs/arris/Pages/GenerateEmailAndPasscode.class
@@ -73,6 +74,7 @@ com/cs/arris/Pages/DeviceSignalStrengthLeaderBoardPage.class
 com/cs/arris/Pages/Error_0000_1401_Downloading_Firmware_File_Failed_Page.class
 com/cs/arris/Utilities/SwipeActions$1.class
 com/cs/arris/Pages/AddDeviceSelectDevice2Page.class
+com/cs/arris/Pages/WhosHomeRemoveMemberDialog.class
 com/cs/arris/Pages/NetworkLANSettingsPage.class
 com/cs/arris/Utilities/TestUtils.class
 com/cs/arris/Pages/AddDeviceActivateYourDeviceWithServiceProviderPage.class
@@ -186,6 +188,7 @@ com/cs/arris/Pages/NetworkOptimizationDialog.class
 com/cs/arris/Pages/AddDeviceHamburgerMenuPage.class
 com/cs/arris/Pages/ErrorCode_0000_1016_Maximum_Verification_Attempts_Exceeded.class
 com/cs/arris/Pages/AddSatellitePlacementTipsPage2.class
+com/cs/arris/Pages/WhosHomeMonitoringHelpPage.class
 com/cs/arris/Pages/NetworkOptimizationDialog2.class
 com/cs/arris/Pages/AddDeviceRegistrationFailedPage.class
 com/cs/arris/Pages/BlankBlockedDevicesPage.class
@@ -204,6 +207,7 @@ com/cs/arris/Pages/AddSatelliteInstallAdditionalSatelliteDialog.class
 com/cs/arris/Pages/NetworkDNSConfigurationStaticAlertDialog.class
 com/cs/arris/Pages/AddDeviceScanBarCodePage.class
 com/cs/arris/Interface/W31_Onboarding_TestData.class
+com/cs/arris/Pages/WhosHomeChangeDeviceDialog.class
 com/cs/arris/Pages/AddSatelliteHelpPlaceYourSatellitePage.class
 com/cs/arris/Pages/AddDeviceStepsForActivationPage.class
 com/cs/arris/Pages/NetworkEditReserveLANIPDialog.class

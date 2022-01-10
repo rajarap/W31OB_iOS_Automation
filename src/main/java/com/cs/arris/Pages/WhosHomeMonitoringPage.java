@@ -59,6 +59,11 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	public WhosHomeMonitoringPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
+	
+	public WhosHomeMonitoringHelpPage getWhosHomeMonitoringHelpPage() {
+		WhosHomeMonitoringHelpPage montoringHelpPage = new WhosHomeMonitoringHelpPage();
+		return montoringHelpPage;
+	}
 
 	public boolean clickBackButton() {
 		if (backButton.isDisplayed()) {
@@ -67,6 +72,17 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 			return true;
 		} else {
 			utils.log().info("Back Button is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickHelpButton() {
+		if (helpIcon.isDisplayed()) {
+			click(helpIcon);
+			utils.log().info("Clicked on Help Button");
+			return true;
+		} else {
+			utils.log().info("Help Button is not displayed");
 			return false;
 		}
 	}
@@ -93,13 +109,46 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 		}
 	}
 	
-	public boolean clickNotifyMEButton() {
+	public boolean clickNotifyMeText() {
 		if (notifyMeLabel.isDisplayed()) {
 			click(notifyMeLabel);
 			utils.log().info("Clicked on Notify Text");
 			return true;
 		} else {
 			utils.log().info("Notify Text is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickChangeNameOption() {
+		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
+			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
+			utils.log().info("Clicked on Change Member Name Option");
+			return true;
+		} else {
+			utils.log().info("Change Member Name Option is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickChangeDeviceOption() {
+		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
+			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
+			utils.log().info("Clicked on Change Device Name Option");
+			return true;
+		} else {
+			utils.log().info("Change Device Name Option is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickRemoveMemberOption() {
+		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
+			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
+			utils.log().info("Clicked on Remove Member Name Option");
+			return true;
+		} else {
+			utils.log().info("Remove Member Name Option is not displayed");
 			return false;
 		}
 	}
@@ -279,41 +328,6 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 			return true;
 	}
 	
-	public boolean clickChangeNameOption() {
-		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
-			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
-			utils.log().info("Clicked on Change Member Name Option");
-			return true;
-		} else {
-			utils.log().info("Change Member Name Option is not displayed");
-			return false;
-		}
-	}
-	
-	public boolean clickChangeDeviceOption() {
-		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
-			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
-			utils.log().info("Clicked on Change Device Name Option");
-			return true;
-		} else {
-			utils.log().info("Change Device Name Option is not displayed");
-			return false;
-		}
-	}
-	
-	public boolean clickRemoveMemberOption() {
-		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
-			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
-			utils.log().info("Clicked on Remove Member Name Option");
-			return true;
-		} else {
-			utils.log().info("Remove Member Name Option is not displayed");
-			return false;
-		}
-	}
-
-
-
 	@Override
 	public boolean isAt() {
 		if (whosHomeMonitoringPageTitle.isDisplayed()) {
