@@ -463,7 +463,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		try {
 				for (int i = 1; i <= size ; i++) 
 				{
-					utils.log().info("Associated Device : " + i);
+					utils.log().info("Associated Devices : " + i);
 					utils.log().info("-------------------------");
 					
 					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
@@ -497,7 +497,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 	
 	public boolean deleteAssociatedDevice() {
 		
-//		utils.log().info("                                       ");
+		utils.log().info("                                       ");
 		utils.log().info("***************************************");
 		utils.log().info("Deleting A Device Associated with User ");
 		utils.log().info("***************************************");
@@ -505,7 +505,6 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			try {
 			    super.swipeAssocaitedDevices(Direction.LEFT);
 			    utils.log().info("Swiped LEFT on Associated Device");
-			    
 			    if(deleteDeviceIcon.isDisplayed()) {
 			    	click(deleteDeviceIcon); 
 			    	utils.log().info("Clicked on Delete Button");
@@ -695,14 +694,13 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			try {
 			    super.swipeAssocaitedRules(Direction.LEFT);
 			    utils.log().info("Swiped LEFT on Associated Rule");
-			    
 			    if(deleteDeviceIcon.isDisplayed()) {
 			    	click(deleteDeviceIcon); 
 			    	utils.log().info("Clicked on Delete Button");
+			    	
+				    if(alertTitle.isDisplayed()) 
+				    	click(okButton); 
 			    }
-			    
-			    if(alertTitle.isDisplayed()) {
-			    	click(okButton); }
 			return true;
 		} catch (Exception exp) {
 			utils.log().info("Unable to delete rules associated with User");

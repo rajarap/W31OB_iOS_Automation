@@ -10,6 +10,7 @@ import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -106,25 +107,40 @@ public class NetworkDevicePrioritySettings extends ParentClass implements Page {
 	}
 	
 	public boolean enableDevicePrioritySettings() {
-		if(devicePrioritySettingToggleButton.isSelected()) {
-			utils.log().info("Device Priority Settings is already selected");
-		return true;
-		}else {
-			click(devicePrioritySettingToggleButton);
-			super.pause(5);
-			utils.log().info("Device Priority Settings is selected");
-		return true;
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Device_Priority_Screen_Button_Switch\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Device_Priority_Screen_Button_Switch\"`]")).click();
+				utils.log().info("Device Priority Settings is enabled");
+			}else {
+				utils.log().info("Device Priority Settings is already enabled");
+			}
+			return true;
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling Device Priority Settings");
+			return true;
 		}
 	}
-	
+
 	public boolean disableDevicePrioritySettings() {
-		if(devicePrioritySettingToggleButton.isSelected()) {
-			click(devicePrioritySettingToggleButton);
-			super.pause(5);
-			utils.log().info("Device Priority Settings is disabled");}
-		return true;
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Device_Priority_Screen_Button_Switch\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Device_Priority_Screen_Button_Switch\"`]")).click();
+				utils.log().info("Device Priority Settings is disabled");
+			}else {
+				utils.log().info("Device Priority Settings is already disabled");
+			}
+			return true;
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling Device Priority Settings");
+			return true;
+		}
 	}
-	
 
 	public boolean verifyUIOnDevicePrioritySettingsPage() {
 		utils.log().info("                                                       ");

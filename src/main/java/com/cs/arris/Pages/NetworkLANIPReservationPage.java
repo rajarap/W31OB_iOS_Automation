@@ -144,7 +144,7 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 		utils.log().info("*******************************************");
 		
 		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-		utils.log().info("Size of Rule List is : " + size);
+	//	utils.log().info("Size of Rule List is : " + size);
 		
 		try {
 			for (int i = 1; i <= size; i++) {
@@ -155,20 +155,20 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Header["+i+"]\"]").isDisplayed())
-						utils.log().info("Rule Name: " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Header["+i+"]\"]").getText());
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Header["+i+"]\"]").isDisplayed())
+						utils.log().info("Rule Name: " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Header["+i+"]\"]").getText());
 
-					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IPTitle["+i+"]\"]").isDisplayed() && 
-							(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IP["+i+"]\"]").isDisplayed()))
-						utils.log().info(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IPTitle["+i+"]\"]").getText() + " : "
-								+ (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IP["+i+"]\"]").getText()));
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IPTitle["+i+"]\"]").isDisplayed() && 
+							(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IP["+i+"]\"]").isDisplayed()))
+						utils.log().info(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IPTitle["+i+"]\"]").getText() + " : "
+								+ (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_IP["+i+"]\"]").getText()));
 
-					if (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_MacTitle["+i+"]\"]").isDisplayed() && 
-							(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Mac["+i+"]\"]").isDisplayed()))
-						utils.log().info(e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_MacTitle["+i+"]\"]").getText() + " : "
-								+ (e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Mac["+i+"]\"]").getText()));
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_MacTitle["+i+"]\"]").isDisplayed() && 
+							(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Mac["+i+"]\"]").isDisplayed()))
+						utils.log().info(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_MacTitle["+i+"]\"]").getText() + " : "
+								+ (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Network_Lan_IP_Reservation_Screen_Label_Mac["+i+"]\"]").getText()));
 
-					if (e.findElementByXPath("//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_Modify["+i+"]\"]").isDisplayed())
+					if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_Modify["+i+"]\"]").isDisplayed())
 						utils.log().info("Edit Icon is displayed");
 				}
 			}
@@ -182,10 +182,10 @@ public class NetworkLANIPReservationPage extends ParentClass implements Page {
 		try {
 			for (int i = 1; i <= 1; i++) {
 				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-						"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
+				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					click(e.findElementByXPath("//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_Modify["+i+"]\"]"));
+					click(super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Network_Lan_IP_Reservation_Screen_Button_Modify["+i+"]\"]"));
 				}
 			}
 			return true;

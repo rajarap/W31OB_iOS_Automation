@@ -12,6 +12,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/MainDeviceRestartRouterDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceEstablishingConnectionPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/MainDevice24GHzTabPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetworkHealthOptimizationSettingsPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceScanBarCodePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomePickADeviceDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkPage.java
@@ -64,6 +65,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkOptimizationDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlAddDeviceHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlWithProfilesPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetworkHealthOptimizationISPSpeedRatePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceEnterMACAddressManuallyPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceSuccessPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANSubnetDHCPConfigurationHelpPage.java
@@ -76,10 +78,14 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AmazonFeaturesInformationPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Utilities/TestUtils.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatelliteSystemUpToDatePage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetworkHealthOptimizationPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlAddRuleAddInternetBlockingScheduleDialog.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeAddNewNotificationPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/BTDisabledTroubleShootPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeWelcomePage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetworkHealthOptimizationSatelliteLinkRatePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HamburgerHelpPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetowrkDevicesWifiClientConnectionHealthPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANSettingsHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkDNSConfigurationStaticAlertDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettingsBridgeModeInfoDialog.java
@@ -134,6 +140,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlPauseInternetforAllProfilesDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/RetrieveOTPPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/Error_0001_1201_Bluetooth_Pairing_Failed_Page.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetowrkISPServicePerformanceAndConnectionHealthPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettings.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkGeneralSettingsUPnPInfoDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlAddProfileDialog.java
@@ -147,6 +154,8 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeRemoveMemberDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/EnterInValidOTPPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeNotifyMeWhenPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetworkHealthOptimizationConnectedDevicesPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANDHCPIPRangeEmptyOctetAlertDialog.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkLANDHCPLeaseTimeHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomePageRATTroubleShootPage.java
@@ -172,6 +181,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ParentalControlUserProfileAddRulePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANIPConfigurationHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceActivateYourDeviceWithServiceProviderPage.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HomeNetworkHealthOptimizationSatelliteSignalPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddDeviceHomePageSpecificationDetailsPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/MailErrorLogsPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/AddSatellitePlugInYourSatellitePage.java
@@ -197,6 +207,7 @@
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/HamburgerAboutPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/DeviceLocationPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/NetworkWANDNSConfigurationIPv6Page.java
+/Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/WhosHomeNotifyMeWhenHelpPage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Utilities/InValidOTP.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/SamplePage.java
 /Users/prabhu/eclipse-workspace/W31-iOS-BOBA/src/main/java/com/cs/arris/Pages/ResendOTPDialog.java

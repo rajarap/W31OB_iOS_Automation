@@ -23,6 +23,7 @@ import com.cs.arris.Pages.NetworkPage;
 import com.cs.arris.Pages.ParentalControlWithProfilesPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Pages.SpeedTestPage;
+import com.cs.arris.Pages.WhosHomeWelcomePage;
 import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Workflows.TC52_Login_And_Verify_HomePage_Workflow;
@@ -155,7 +156,7 @@ public class TC02_Medium_Test extends ParentClass
 			utils.log().info("Test: Verify Main Device  ");
 			utils.log().info("**************************");
 			SoftAssert softmain2 = new SoftAssert();
-			super.pause(8);
+			super.pause(15);
 			softmain2.assertTrue(new HomePage().clickMainDeviceImage());
 			super.pause(5);
 			if(new MainDeviceAllTabPage().isAt()) 
@@ -710,5 +711,5 @@ public class TC02_Medium_Test extends ParentClass
 				softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
 			
 			softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
-		}
+	  }
   }

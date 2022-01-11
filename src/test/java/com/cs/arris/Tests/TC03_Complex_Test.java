@@ -144,377 +144,389 @@ public class TC03_Complex_Test extends ParentClass
 //		  });
 	  }
 	  
-	  @Test(priority = 2, dependsOnMethods = {"Login_And_Onboard" })
-		public void Verify_Parental_Control_UI_Page() {
-			SoftAssert softcontrol2 = new SoftAssert();
-			softcontrol2.assertTrue(new HomePage().getFooterIconsPageObject().clickParentalButton());
-			if(new ParentalControlWithProfilesPage().isAt())
-				softcontrol2.assertTrue(new ParentalControlWithProfilesPage().verifyUIOnParentalControlProfilesPage());
-			softcontrol2.assertAll();
-		}
-		
-		@Test(priority = 3, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Add_Profile_Page() {
-			SoftAssert softcontrol3 = new SoftAssert();
-			
-			if(new ParentalControlWithProfilesPage().isAt())
-			try {
-				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().enableParentalControl());	
-				super.pause(2);
-				if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
-					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
-			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
-			super.pause(5);
-			
-			if(new ParentalControlWithProfilesPage().isAt()) {
-				for(int i = 1; i <= 4; i++)	{
-					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
-					super.pause(2);
-					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
-					super.pause(2);
-					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
-					super.pause(3);
-					
-					try {
-						if(new ParentalControlWithProfilesPage().getAddProfileDialogObject().profileNameExists.isDisplayed())
-							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCloseIcon());
-						if(i == 4)
-						{
-							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
-							super.pause(2);
-							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
-							super.pause(2);
-							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
-							super.pause(3);
-						}
-					}catch(Exception e) {}
-				}
-			}
-			
-			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().deleteUserProfile());
-			super.pause(5);
-			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUIForGlobalSettingsOnProfilesPage());
-			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
-			
-			softcontrol3.assertAll();
-		}
-		
-		@Test(priority = 4, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_User_Profile_Page() {
-			SoftAssert softcontrol4 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().isAt())
-				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().clickOnUserProfile());
-			super.pause(5);
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().isAt())
-				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyUIOnUserProfilePage());
-			
-			softcontrol4.assertAll();
-		}
-		
-		@Test(priority = 5, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_User_Profile_Help_Page() {
-			SoftAssert softcontrol5 = new SoftAssert();
-			softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickHelpIcon());
-			super.pause(3);
-			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt()){
-				//softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().verifyUIOnUserProfilePage());
-				softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton());
-			}
-			
-			softcontrol5.assertAll();
-		}
-		
-		@Test(priority = 6, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Edit_User_Profile_Name() {
-			SoftAssert softcontrol6 = new SoftAssert();
-			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getExistingUserName());
-			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickUserProfileNameEditButton());
-			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()){
-				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog());
-				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName());
-				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton());
-				super.pause(3);
-			}
-			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().validateUserProfileEditedName());
-			softcontrol6.assertAll();
-		}
-		
-		@Test(priority = 7, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Add_Device_To_User_Profile() {
-			SoftAssert softcontrol7 = new SoftAssert();
-			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
-			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevicesInAddDevicePage());
-				
-				utils.log().info("Clicking on Add Device button without selecting any device");
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
-				
-				if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed()) {
-					utils.log().info("An Alert message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.getText()+ "  is displayed");
-					//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
-				}
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
-				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
-				//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
-			}
-			
-			softcontrol7.assertAll();
-		}
-		
-		@Test(priority = 8, dependsOnMethods = {"Login_And_Onboard"})
-		public void Verify_Add_Device_Help_Page() {
-			SoftAssert softcontrol8 = new SoftAssert();
-			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
-			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) 
-			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon());
-			
-			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().isAt()) 
-				softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton());
-			
-			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickBackButton());
-			super.pause(5);
-			softcontrol8.assertAll();
-		}
-		
-		@Test(priority = 9, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Devices_Associated_With_User_Profile() {
-			SoftAssert softcontrol9 = new SoftAssert();
-			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
-			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedDevice());
-			//softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedDeviceList());
-			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
-			
-			softcontrol9.assertAll();
-		}
-		
-		@Test(priority = 10, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Add_Rule_Help_Page() {
-			SoftAssert softcontrol10 = new SoftAssert();
-			softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddRuleLink());
-			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
-				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickHelpIcon());
-				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getParentalAddRuleHelpPageObject().clickCloseButton());
-				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());}
-				
-			softcontrol10.assertAll();
-		}
-		
-		@Test(priority = 11, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Add_EveryDay_Schedule_To_Rule() {
-			SoftAssert softcontrol11 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) 
-				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnAddInternetBlockingScheduleDialog());
-			
-			utils.log().info("                                  ");
-			utils.log().info("Selecting same start and stop time");
-			utils.log().info("----------------------------------");
-			
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.isDisplayed()) 
-				utils.log().info("Alert dialog with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.getText() + " - is displayed");
-			
-			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCloseButton());
-
-			softcontrol11.assertAll();
-		}
-		
-		@Test(priority = 12, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Select_Start_Time_For_EveryDay_Schedule() {
-			SoftAssert softcontrol12 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
-				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
-			
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) {
-				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickEveryDayButton());
-				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());}
-			
-			softcontrol12.assertAll();
-		}
-		
-		@Test(priority = 13, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Select_Stop_Time_For_EveryDay_Schedule() {
-			SoftAssert softcontrol13 = new SoftAssert();
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().selectMinutes());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
-			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-			super.pause(3);
-
-			softcontrol13.assertAll();
-		}
-		
-		@Test(priority = 14, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})  
-		public void Verify_Add_Custom_Schedule_To_Rule() {
-			SoftAssert softcontrol14 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
-				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
-				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCustomButton());
-				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnCustomClick());	}
-
-			softcontrol14.assertAll();
-		}
-		
-		@Test(priority = 15, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Add_Custom_Schedule_Select_DOW() {
-			SoftAssert softcontrol15 = new SoftAssert();
-			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSunday());
-			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickTuesday());
-			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickThrusday());
-
-			softcontrol15.assertAll();
-			}
-		
-		@Test(priority = 16, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Add_Custom_Schedule_Select_Start_Time() {
-			SoftAssert softcontrol16 = new SoftAssert();
-			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
-			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
-			softcontrol16.assertAll();
-			}
-		
-		@Test(priority = 17, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Verify_Add_Custom_Schedule_Select_Stop_Time() {
-			SoftAssert softcontrol17 = new SoftAssert();
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().selectMinutes());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
-			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
-			super.pause(3);
-			
-			softcontrol17.assertAll();
-		}
-		
-		@Test(priority = 18, dependsOnMethods = {"Login_And_Onboard"})
-		public void Verify_Enable_Schedule_Time_UI_Page() {
-			SoftAssert softcontrol18 = new SoftAssert();
-
-		//	new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonEnableScheduleTimePage();
-			softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickBackButton());
-			super.pause(5);
-			softcontrol18.assertAll();
-		}
-		
-		@Test(priority = 19, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
-		public void Delete_Rules_Associated_With_User() {
-			SoftAssert softcontrol19 = new SoftAssert();
-			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
-			//softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyRulesAssociatedWithUser());
-			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedRulesList());
-			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
-			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickBackButton());
-			
-			softcontrol19.assertAll();
-		}
-		
-		@Test(priority = 20, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Pause_Internet_For_Selected_Users() {
-			SoftAssert softcontrol20 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().isAt()) 
-				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().pauseInternetForSelectedUsers());
-			
-			softcontrol20.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
-
-			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
-				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
-				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
-			}
-
-			softcontrol20.assertAll();
-		}
-		
-		@Test(priority = 21, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Resume_Internet_For_Selected_Users() {
-			SoftAssert softcontrol21 = new SoftAssert();
-			
-			if(new ParentalControlWithProfilesPage().isAt()) 
-				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().resumeInternetForSelectedUsers());
-			
-			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
-
-			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
-				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
-				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
-			}
-			softcontrol21.assertAll();
-		}
-		
-		@Test(priority = 22, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Pause_Internet_For_All_Users() {
-			SoftAssert softcontrol20 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().isAt()) {
-				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().enablePauseAllProfiles());
-				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().clickYesPauseInternetButton());
-//				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().verifyPauseInternetAccessForAllUserProfile());
-			}
-			softcontrol20.assertAll();
-		}
-		
-		@Test(priority = 23, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Currently_Blocked_Profiles() {
-			SoftAssert softcontrol21 = new SoftAssert();
-			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
-
-			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
-				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
-				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
-			}
-			softcontrol21.assertAll();
-		}
-		
-		@Test(priority = 24, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Resume_Internet_For_All_Users() {
-			SoftAssert softcontrol22 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().isAt()) {
-				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().disablePauseAllProfiles());
-				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().clickYesResumeInternetButton());
-//				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().verifyResumeInternetAccessForAllUserProfile());
-			}
-			softcontrol22.assertAll();
-		}
-		
-		@Test(priority = 25, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users() {
-			SoftAssert softcontrol23 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().isAt())
-				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
-			
-			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
-				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyNoBlockedProfileMessages());
-				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
-				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().disableParentalControl());
-			}
-			softcontrol23.assertAll();
-		}
-		
-		@Test(priority = 26, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
-		public void Verify_Parental_Control_Help_Page() {
-			SoftAssert softcontrol24 = new SoftAssert();
-			if(new ParentalControlWithProfilesPage().isAt())
-				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickHelpIcon());
-			super.pause(3);
-				
-			if(new ParentalControlWithProfilesPage().getParentalHelpPageObject().isAt()) {
-				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().clickCloseButton());
-				super.pause(3);
-			}
-			softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getFooterIconsPageObject().clickHomeButton());
-
-			softcontrol24.assertAll();
-		}	
+//	  @Test(priority = 2, dependsOnMethods = {"Login_And_Onboard" })
+//		public void Verify_Parental_Control_UI_Page() {
+//			SoftAssert softcontrol2 = new SoftAssert();
+//			softcontrol2.assertTrue(new HomePage().getFooterIconsPageObject().clickParentalButton());
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol2.assertTrue(new ParentalControlWithProfilesPage().verifyUIOnParentalControlProfilesPage());
+//			softcontrol2.assertAll();
+//		}
+//		
+//		@Test(priority = 3, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+//		public void Verify_Add_Profile_Page() {
+//			SoftAssert softcontrol3 = new SoftAssert();
+//			
+//			if(new ParentalControlWithProfilesPage().isAt())
+//			try {
+//				softcontrol3.assertTrue(new ParentalControlWithProfilesPage().enableParentalControl());	
+//				super.pause(2);
+//				if(new ParentalControlWithProfilesPage().getAppRatingDialogObject().isAt())
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAppRatingDialogObject().clickRemindMeLaterLink());
+//			}catch(Exception e) {utils.log().info("App Rating Dialog did not appear");}
+//			super.pause(5);
+//			
+//			if(new ParentalControlWithProfilesPage().isAt()) {
+//				for(int i = 1; i <= 4; i++)	{
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
+//					super.pause(2);
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
+//					super.pause(2);
+//					softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
+//					super.pause(3);
+//					
+//					try {
+//						if(new ParentalControlWithProfilesPage().getAddProfileDialogObject().profileNameExists.isDisplayed())
+//							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCloseIcon());
+//						if(i == 4)
+//						{
+//							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().clickAddProfilesLink());
+//							super.pause(2);
+//							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().enterProfileName());
+//							super.pause(2);
+//							softcontrol3.assertTrue(new ParentalControlWithProfilesPage().getAddProfileDialogObject().clickCreateProfileButton());
+//							super.pause(3);
+//						}
+//					}catch(Exception e) {}
+//				}
+//			}
+//			
+//			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().deleteUserProfile());
+//			super.pause(5);
+//			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUIForGlobalSettingsOnProfilesPage());
+//			softcontrol3.assertTrue(new ParentalControlWithProfilesPage().verifyUserProfile());
+//			
+//			softcontrol3.assertAll();
+//		}
+//		
+//		@Test(priority = 4, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+//		public void Verify_User_Profile_Page() {
+//			SoftAssert softcontrol4 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().clickOnUserProfile());
+//			super.pause(5);
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().isAt())
+//				softcontrol4.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyUIOnUserProfilePage());
+//			
+//			softcontrol4.assertAll();
+//		}
+//		
+//		@Test(priority = 5, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_User_Profile_Help_Page() {
+//			SoftAssert softcontrol5 = new SoftAssert();
+//			softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickHelpIcon());
+//			super.pause(3);
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().isAt()){
+//				//softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().verifyUIOnUserProfilePage());
+//				softcontrol5.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileHelpPageObject().clickCloseButton());
+//			}
+//			
+//			softcontrol5.assertAll();
+//		}
+//		
+//		@Test(priority = 6, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Edit_User_Profile_Name() {
+//			SoftAssert softcontrol6 = new SoftAssert();
+//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getExistingUserName());
+//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickUserProfileNameEditButton());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().isAt()){
+//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().verifyUIOnEditUserProfileDialog());
+//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().enterUserProfileName());
+//				softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalEditUserProfileDialogObject().clickSaveButton());
+//				super.pause(3);
+//			}
+//			softcontrol6.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().validateUserProfileEditedName());
+//			softcontrol6.assertAll();
+//		}
+//		
+//		@Test(priority = 7, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Add_Device_To_User_Profile() {
+//			SoftAssert softcontrol7 = new SoftAssert();
+//			softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+//			super.pause(25);
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) {
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDevicesInAddDevicePage());
+//				
+//				utils.log().info("Clicking on Add Device button without selecting any device");
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+//				
+//				if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.isDisplayed()) {
+//					utils.log().info("An Alert message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().alertTitle.getText()+ "  is displayed");
+//					//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickCloseButtonOnAlertDialog());	
+//				}
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+//				super.pause(5);
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+//				super.pause(25);
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().selectADeviceForUserProfile());
+//				softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickAddDeviceButton());
+//				super.pause(5);
+//				//softcontrol7.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().verifyDeviceCountAfterAssociatingToUser());
+//			}
+//			
+//			softcontrol7.assertAll();
+//		}
+//		
+//		@Test(priority = 8, dependsOnMethods = {"Login_And_Onboard"})
+//		public void Verify_Add_Device_Help_Page() {
+//			SoftAssert softcontrol8 = new SoftAssert();
+//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddDeviceLink());
+//			super.pause(25);
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().isAt()) 
+//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickHelpIcon());
+//			
+//			if (new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().isAt()) 
+//				softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().getParentalAddDeviceHelpPageObject().clickCloseButton());
+//			
+//			softcontrol8.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddDevicePageObject().clickBackButton());
+//			super.pause(5);
+//			softcontrol8.assertAll();
+//		}
+//		
+//		@Test(priority = 9, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Devices_Associated_With_User_Profile() {
+//			SoftAssert softcontrol9 = new SoftAssert();
+//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
+//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyAssociatedDeviceList());
+//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedDevice());
+//			softcontrol9.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickDeviceListExpandButton());
+//			
+//			softcontrol9.assertAll();
+//		}
+//		
+//		@Test(priority = 10, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Add_Rule_Help_Page() {
+//			SoftAssert softcontrol10 = new SoftAssert();
+//			softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickAddRuleLink());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
+//				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickHelpIcon());
+//				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getParentalAddRuleHelpPageObject().clickCloseButton());
+//				softcontrol10.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());}
+//				
+//			softcontrol10.assertAll();
+//		}
+//		
+//		@Test(priority = 11, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Add_EveryDay_Schedule_To_Rule() {
+//			SoftAssert softcontrol11 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) 
+//				softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnAddInternetBlockingScheduleDialog());
+//			
+//			utils.log().info("                                  ");
+//			utils.log().info("Selecting same start and stop time");
+//			utils.log().info("----------------------------------");
+//			
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.isDisplayed()) 
+//				utils.log().info("Alert dialog with message - " + new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().errorDescriptionForSameStartEndTime.getText() + " - is displayed");
+//			
+//			softcontrol11.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCloseButton());
+//
+//			softcontrol11.assertAll();
+//		}
+//		
+//		@Test(priority = 12, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Select_Start_Time_For_EveryDay_Schedule() {
+//			SoftAssert softcontrol12 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) 
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+//			
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().isAt()) {
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickEveryDayButton());
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+//				softcontrol12.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());}
+//			
+//			softcontrol12.assertAll();
+//		}
+//		
+//		@Test(priority = 13, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Select_Stop_Time_For_EveryDay_Schedule() {
+//			SoftAssert softcontrol13 = new SoftAssert();
+//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+//			super.pause(3);
+//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().selectMinutes());
+//			super.pause(3);
+//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+//			super.pause(3);
+//			softcontrol13.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+//			super.pause(3);
+//
+//			softcontrol13.assertAll();
+//		}
+//		
+//		@Test(priority = 14, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})  
+//		public void Verify_Add_Custom_Schedule_To_Rule() {
+//			SoftAssert softcontrol14 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().isAt()) {
+//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickAddScheduleButton());
+//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickCustomButton());
+//				softcontrol14.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().verifyUIOnCustomClick());	}
+//
+//			softcontrol14.assertAll();
+//		}
+//		
+//		@Test(priority = 15, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Add_Custom_Schedule_Select_DOW() {
+//			SoftAssert softcontrol15 = new SoftAssert();
+//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSunday());
+//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickTuesday());
+//			softcontrol15.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickThrusday());
+//
+//			softcontrol15.assertAll();
+//			}
+//		
+//		@Test(priority = 16, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Add_Custom_Schedule_Select_Start_Time() {
+//			SoftAssert softcontrol16 = new SoftAssert();
+//			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStartTimeLink());
+//			softcontrol16.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+//			softcontrol16.assertAll();
+//			}
+//		
+//		@Test(priority = 17, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Verify_Add_Custom_Schedule_Select_Stop_Time() {
+//			SoftAssert softcontrol17 = new SoftAssert();
+//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickStopTimeLink());
+//			super.pause(3);
+//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().selectMinutes());
+//			super.pause(3);
+//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickDoneButton());
+//			super.pause(3);
+//			softcontrol17.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().getInternetBlockingScheduleDialogObject().clickSaveChangesButton());
+//			super.pause(3);
+//			
+//			softcontrol17.assertAll();
+//		}
+//		
+//		@Test(priority = 18, dependsOnMethods = {"Login_And_Onboard"})
+//		public void Verify_Enable_Schedule_Time_UI_Page() {
+//			SoftAssert softcontrol18 = new SoftAssert();
+//
+//		//	new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().verifyUIonEnableScheduleTimePage();
+//			softcontrol18.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().getParentalUserProfileAddRulePageObject().clickBackButton());
+//			super.pause(5);
+//			softcontrol18.assertAll();
+//		}
+//		
+//		@Test(priority = 19, dependsOnMethods = {"Login_And_Onboard" , "Verify_User_Profile_Page"})
+//		public void Delete_Rules_Associated_With_User() {
+//			SoftAssert softcontrol19 = new SoftAssert();
+//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
+//			//softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().verifyRulesAssociatedWithUser());
+//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().deleteAssociatedRulesList());
+//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickRuleListExpandButton());
+//			softcontrol19.assertTrue(new ParentalControlWithProfilesPage().getUserProfilePageObject().clickBackButton());
+//			
+//			softcontrol19.assertAll();
+//		}
+//		
+////		@Test(priority = 20, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+////		public void Verify_Pause_Internet_For_Selected_Users() {
+////			SoftAssert softcontrol20 = new SoftAssert();
+////			if(new ParentalControlWithProfilesPage().isAt()) 
+////				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().pauseInternetForSelectedUsers());
+////			
+////			softcontrol20.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+////
+////			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+////				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+////				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+////			}
+////
+////			softcontrol20.assertAll();
+////		}
+////		
+////		@Test(priority = 21, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+////		public void Verify_Resume_Internet_For_Selected_Users() {
+////			SoftAssert softcontrol21 = new SoftAssert();
+////			
+////			if(new ParentalControlWithProfilesPage().isAt()) 
+////				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().resumeInternetForSelectedUsers());
+////			
+////			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+////
+////			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+////				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+////				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+////			}
+////			softcontrol21.assertAll();
+////		}
+//		
+//		@Test(priority = 22, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+//		public void Verify_Pause_Internet_For_All_Users() {
+//			SoftAssert softcontrol20 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt()) {
+//				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().clickGlobalSettingExpandButton());
+//				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().enablePauseAllProfiles());
+//				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().clickYesPauseInternetButton());
+//				super.pause(5);
+////				softcontrol20.assertTrue(new ParentalControlWithProfilesPage().verifyPauseInternetAccessForAllUserProfile());
+//			}
+//			softcontrol20.assertAll();
+//		}
+//		
+//		@Test(priority = 23, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+//		public void Verify_Currently_Blocked_Profiles() {
+//			SoftAssert softcontrol21 = new SoftAssert();
+//			softcontrol21.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+//
+//			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+//				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyInternetPausedUserProfiles());
+//				softcontrol21.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+//			}
+//			softcontrol21.assertAll();
+//		}
+//		
+//		@Test(priority = 24, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+//		public void Verify_Resume_Internet_For_All_Users() {
+//			SoftAssert softcontrol22 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt()) {
+//				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().disablePauseAllProfiles());
+//				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().clickYesResumeInternetButton());
+////				softcontrol22.assertTrue(new ParentalControlWithProfilesPage().verifyResumeInternetAccessForAllUserProfile());
+//			}
+//			softcontrol22.assertAll();
+//		}
+//		
+//		@Test(priority = 25, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+//		public void Verify_Currently_Blocked_Users_After_Resuming_Internet_For_All_Users() {
+//			SoftAssert softcontrol23 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().clickCurrentlyBlockedTab());
+//			
+//			if(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().isAt()) {
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().verifyNoBlockedProfileMessages());
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().getParentalControlCurrentlyBlockedTabPageObject().clickProfilesTab());
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().clickGlobalSettingExpandButton());
+//				softcontrol23.assertTrue(new ParentalControlWithProfilesPage().disableParentalControl());
+//			}
+//			softcontrol23.assertAll();
+//		}
+//		
+//		@Test(priority = 26, dependsOnMethods = {"Login_And_Onboard" , "Verify_Parental_Control_UI_Page"})
+//		public void Verify_Parental_Control_Help_Page() {
+//			SoftAssert softcontrol24 = new SoftAssert();
+//			if(new ParentalControlWithProfilesPage().isAt())
+//				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().clickHelpIcon());
+//			super.pause(3);
+//				
+//			if(new ParentalControlWithProfilesPage().getParentalHelpPageObject().isAt()) {
+//				softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getParentalHelpPageObject().clickCloseButton());
+//				super.pause(3);
+//			}
+//			softcontrol24.assertTrue(new ParentalControlWithProfilesPage().getFooterIconsPageObject().clickHomeButton());
+//
+//			softcontrol24.assertAll();
+//		}	
 		
 		
 		
@@ -523,19 +535,19 @@ public class TC03_Complex_Test extends ParentClass
 		
 		
 	  
-//		@Test(priority = 27, dependsOnMethods = {"Login_And_Onboard"})
-//		public void Verify_Network_UI_Page() {
-//			utils.log().info("                     ");
-//			utils.log().info("*********************");
-//			utils.log().info("Test: Network Page   ");
-//			utils.log().info("*********************");
-//			SoftAssert softnet2 = new SoftAssert();
-//			softnet2.assertTrue(new HomePage().getFooterIconsPageObject().clickNetworkButton());
-//			softnet2.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
+		@Test(priority = 27, dependsOnMethods = {"Login_And_Onboard"})
+		public void Verify_Network_UI_Page() {
+			utils.log().info("                     ");
+			utils.log().info("*********************");
+			utils.log().info("Test: Network Page   ");
+			utils.log().info("*********************");
+			SoftAssert softnet2 = new SoftAssert();
+			softnet2.assertTrue(new HomePage().getFooterIconsPageObject().clickNetworkButton());
+			//softnet2.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
 //			softnet2.assertTrue(new NetworkPage().verifyUIOnNetworkPage());
-//			softnet2.assertAll();
-//		}
-//
+			softnet2.assertAll();
+		}
+
 //		@Test(priority = 28, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
 //		public void Verify_Newtork_Help_Page() {
 //			SoftAssert softnet3 = new SoftAssert();
@@ -564,13 +576,10 @@ public class TC03_Complex_Test extends ParentClass
 //				if(new AppRatingDialog().isAt())
 //					new AppRatingDialog().clickRemindMeLaterLink();
 //			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-////			try {
-////					if(super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt").isDisplayed())
-////						super.getDriver().findElementById("com.arris.sbcBeta:id/remindMeLaterTxt").click();
-////			}catch(Exception e) {}
-//				softnet5.assertTrue(new NetworkPage().getWANSettingsPageObject().verifyUIOnWANSettingsPage());
+//				
+//			softnet5.assertTrue(new NetworkPage().getWANSettingsPageObject().verifyUIOnWANSettingsPage());
 //
-//				softnet5.assertAll();
+//			softnet5.assertAll();
 //		}
 //
 //		@Test(priority = 31, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
@@ -613,61 +622,68 @@ public class TC03_Complex_Test extends ParentClass
 //		public void Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateless_UI_Page() {
 //			SoftAssert softnet10 = new SoftAssert();
 //			softnet10.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().verifyUIOnWANIPv6Stateless());
-//			softnet10.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickBackButton());
+////			softnet10.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickBackButton());
 //			softnet10.assertAll();
 //		}
 //
-////		@Test(priority = 36, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page"})
-////		public void Verify_WAN_Settings_WAN_IP_Configuration_Help_Page() {
-////			SoftAssert softnet11 = new SoftAssert();
-////			new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickHelpButton();
-////			if (new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().isAt()) {
-////				softnet11.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().clickCloseButton());
-////				softnet11.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickBackButton());
-////				try {
-////					if(new AppRatingDialog().isAt())
-////						new AppRatingDialog().clickRemindMeLaterLink();
-////				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-////			}
-////			softnet11.assertAll();
-////		}
-////		
-////		@Test(priority = 37, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
-////		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page() 
-////		{
-////			SoftAssert softnet12 = new SoftAssert();
-////			softnet12.assertTrue(new NetworkPage().getWANSettingsPageObject().clickDNSConfigurationLink());
-////			if (new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().isAt()) 
-////				softnet12.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Automatic());
-////			softnet12.assertAll();
-////		}
-////		
-////		@Test(priority = 38, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page"})
-////		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page() 
-////		{
-////			SoftAssert softnet13 = new SoftAssert();
-////			softnet13.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Static());
-//////			softnet13.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().validationOnWANIPv4Static_InvalidDNSIPAddress());
-////			softnet13.assertAll();
-////		}
-////		
-////		@Test(priority = 39, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page"})
-////		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page() 
-////		{
-////			SoftAssert softnet14 = new SoftAssert();
-////			softnet14.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().clickDNSIPv6Tab());
-////			if (new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().isAt()) 
-////				softnet14.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Automatic());
-////			softnet14.assertAll();
-////		}
-////		
-////		@Test(priority = 40, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page"})
-////		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page() 
-////		{
-////			SoftAssert softnet15 = new SoftAssert();
-////			softnet15.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Static());
-////			softnet15.assertAll();
-////		}
+//		@Test(priority = 36, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page", "Verify_WAN_Settings_WAN_IP_Configuration_IPv6_Stateful_UI_Page"})
+//		public void Verify_WAN_Settings_WAN_IP_Configuration_Help_Page() {
+//			SoftAssert softnet11 = new SoftAssert();
+//			new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickHelpButton();
+//			if (new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().isAt()) {
+//				softnet11.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().getNetworkWANIPConfigurationHelpPageObject().clickCloseButton());
+//				softnet11.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANIPv6ConfigurationPageObject().clickBackButton());
+//				try {
+//					if(new AppRatingDialog().isAt())
+//						new AppRatingDialog().clickRemindMeLaterLink();
+//				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+//			}
+//			softnet11.assertAll();
+//		}
+//		
+//		@Test(priority = 37, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_UI_Page"})
+//		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page() 
+//		{
+//			SoftAssert softnet12 = new SoftAssert();
+//			softnet12.assertTrue(new NetworkPage().getWANSettingsPageObject().clickDNSConfigurationLink());
+//			if (new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().isAt()) 
+//				softnet12.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Automatic());
+//			softnet12.assertAll();
+//		}
+//		
+//		@Test(priority = 38, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page"})
+//		public void Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page() 
+//		{
+//			SoftAssert softnet13 = new SoftAssert();
+//			softnet13.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().verifyUIOnDNSIPv4Static());
+////			softnet13.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().validationOnWANIPv4Static_InvalidDNSIPAddress());
+//			softnet13.assertAll();
+//		}
+//		
+//		@Test(priority = 39, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv4_Static_UI_Page"})
+//		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page() 
+//		{
+//			SoftAssert softnet14 = new SoftAssert();
+//			softnet14.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv4ConfigurationPageObject().clickDNSIPv6Tab());
+//			if (new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().isAt()) 
+//				softnet14.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Automatic());
+//			softnet14.assertAll();
+//		}
+//		
+//		@Test(priority = 40, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv6_Automatic_UI_Page"})
+//		public void Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page() 
+//		{
+//			SoftAssert softnet15 = new SoftAssert();
+//			softnet15.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().verifyUIOnDNSIPv6Static());
+//			softnet15.assertTrue(new NetworkPage().getWANSettingsPageObject().getWANDNSIPv6ConfigurationPageObject().clickBackButton());
+//			try{
+//				if(new NetworkPage().getAppRatingPageObject().isAt())
+//					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//			}catch(Exception e) {
+//				utils.log().info("App Rating Dialog did not appear");}
+//		//	softnet15.assertTrue(new NetworkPage().getWANSettingsPageObject().clickBackButton());
+//			softnet15.assertAll();
+//		}
 //		
 ////		@Test(priority = 41, dependsOnMethods = {"Login_And_Onboard", "Verify_WAN_Settings_DNS_Configuration_IPv6_Static_UI_Page"})
 ////		public void Verify_WAN_Settings_DNS_Configuration_Help_Page() 
@@ -732,6 +748,8 @@ public class TC03_Complex_Test extends ParentClass
 //		{
 //			SoftAssert softnet20 = new SoftAssert();
 //			new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickAddReservationButton();
+//			super.pause(10);
+//			new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickAddReservationButton();
 //			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().isAt())
 //			{
 //				softnet20.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getLANIPReservationDialogObject().verifyUIOnReserveLANIP());
@@ -751,22 +769,22 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet21.assertAll();
 //		}
 //		
-////		@Test(priority = 47, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Rules"})
-////		public void Verify_LAN_Settings_LAN_IP_Reservation_Edit_Page() 
-////		{
-////			SoftAssert softnet22 = new SoftAssert();
-////			softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickEditLAPIPReservation());
-////			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().isAt())
-////			{
-////				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().verifyUIOnEditReserveLANIP());
-////				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editRuleName());
-////				super.pause(3);
-////				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editIPAddress());
-////				super.pause(3);
-////				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().clickSaveButton());
-////			}
-////			softnet22.assertAll();
-////		}
+//		@Test(priority = 47, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Rules"})
+//		public void Verify_LAN_Settings_LAN_IP_Reservation_Edit_Page() 
+//		{
+//			SoftAssert softnet22 = new SoftAssert();
+//			softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().clickEditLAPIPReservation());
+//			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().isAt())
+//			{
+//				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().verifyUIOnEditReserveLANIP());
+//				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editRuleName());
+//				super.pause(3);
+//				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().editIPAddress());
+//				super.pause(3);
+//				softnet22.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANIPReservationPageObject().getEditLANIPReservationDialogObject().clickSaveButton());
+//			}
+//			softnet22.assertAll();
+//		}
 //
 //		@Test(priority = 48, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_IP_Reservation_Page"})
 //		public void Verify_LAN_Settings_LAN_IP_Reservation_Help_Page() {
@@ -928,26 +946,35 @@ public class TC03_Complex_Test extends ParentClass
 //			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().isAt())
 //				softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLeaseTimeAppliedChangesDialogObject().clickOKButton());
 //			
+//			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickBackButton());
+//			try{
+//				if(new NetworkPage().getAppRatingPageObject().isAt())
+//					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+//			}catch(Exception e) {
+//				utils.log().info("App Rating Dialog did not appear");
+//				}
+//			softnet29.assertTrue(new NetworkPage().getLANSettingsPageObject().clickBackButton());
+//			
 //			softnet29.assertAll();
 //		}
 //		
-//		@Test(priority = 55, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page"})
-//		public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Help_Page() 
-//		{
-//			SoftAssert softnet30 = new SoftAssert();
-//			softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickHelpButton());
-//			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().isAt())
-//				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().clickCloseButton());
-//				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickBackButton());
-//				try{
-//					if(new NetworkPage().getAppRatingPageObject().isAt())
-//						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
-//				}catch(Exception e) {
-//					utils.log().info("App Rating Dialog did not appear");
-//					}
-//				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().clickBackButton());
-//				softnet30.assertAll();
-//		}
+////		@Test(priority = 55, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_LAN_DHCP_Lease_Time_UI_Page"})
+////		public void Verify_LAN_Settings_LAN_DHCP_Set_Lease_Time_Help_Page() 
+////		{
+////			SoftAssert softnet30 = new SoftAssert();
+////			softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickHelpButton());
+////			if(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().isAt())
+////				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().getLANDHCPLeaseTimeHelpPageObject().clickCloseButton());
+////				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().getNetworkLANDHCPLeaseTimePageObject().clickBackButton());
+////				try{
+////					if(new NetworkPage().getAppRatingPageObject().isAt())
+////						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
+////				}catch(Exception e) {
+////					utils.log().info("App Rating Dialog did not appear");
+////					}
+////				softnet30.assertTrue(new NetworkPage().getLANSettingsPageObject().clickBackButton());
+////				softnet30.assertAll();
+////		}
 //		
 //		@Test(priority = 56, dependsOnMethods = {"Login_And_Onboard", "Verify_LAN_Settings_UI_Page"})
 //		public void Verify_Device_Priority_Settings_UI_Page() 
@@ -960,6 +987,7 @@ public class TC03_Complex_Test extends ParentClass
 //			}catch(Exception e) {
 //				utils.log().info("App Rating Dialog did not appear");
 //			}
+//			
 //			if(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().isAt())
 //			{
 //				softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().enableDevicePrioritySettings());
@@ -969,9 +997,10 @@ public class TC03_Complex_Test extends ParentClass
 //				}catch(Exception e) {
 //					utils.log().info("App Rating Dialog did not appear");
 //				}
+//				
 //				softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().verifyUIOnDevicePrioritySettingsPage());
 //				softnet31.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
-//				super.pause(5);
+//				super.pause(25);
 //			}
 //			softnet31.assertAll();
 //		}
@@ -999,10 +1028,10 @@ public class TC03_Complex_Test extends ParentClass
 //
 //			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().selectDeviceFromList());
 //			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
-//			super.pause(5);
+//			super.pause(3);
 //			
 //			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().clickAddDeviceButton());
-//			super.pause(5);
+//			super.pause(25);
 //			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().selectDeviceFromList());
 //			softnet33.assertTrue(new NetworkPage().getNetworkDevicePrioritySettingsPageObject().getAddDevicePriorityPageObject().clickAddDeviceButton());
 //			super.pause(5);
@@ -1061,6 +1090,8 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet37.assertTrue(new NetworkPage().clickTimeZone());
 //			if(new NetworkPage().getTimeZoneSettingsPageObject().isAt())
 //				softnet37.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().verifyUIOnTimeZonePage());
+//			softnet37.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickAtlanticTimeZone());
+//			softnet37.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickSaveButton());
 //			softnet37.assertAll();
 //		}
 //		
@@ -1068,6 +1099,7 @@ public class TC03_Complex_Test extends ParentClass
 //		public void Verify_Time_Zone_Settings_Help_Page() 
 //		{
 //			SoftAssert softnet38 = new SoftAssert();
+//			softnet38.assertTrue(new NetworkPage().clickTimeZone());
 //			softnet38.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().clickHelpButton());
 //			if (new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().isAt())
 //				softnet38.assertTrue(new NetworkPage().getTimeZoneSettingsPageObject().getTimeZoneHelpPageObject().clickCloseButton());
@@ -1084,12 +1116,8 @@ public class TC03_Complex_Test extends ParentClass
 //				if(new NetworkPage().getAppRatingPageObject().isAt())
 //					new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
 //			}catch(Exception e) {}
-//			if(new NetworkPage().getGeneralSettingsPageObject().isAt())
-//				try{
-//					if(new NetworkPage().getAppRatingPageObject().isAt())
-//						new NetworkPage().getAppRatingPageObject().clickRemindMeLaterLink();
-//				}catch(Exception e) {}
-//				softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().verifyUIOnGeneralSettingsPage());
+//			
+//			softnet39.assertTrue(new NetworkPage().getGeneralSettingsPageObject().verifyUIOnGeneralSettingsPage());
 //			softnet39.assertAll();
 //		}
 //		
@@ -1107,8 +1135,9 @@ public class TC03_Complex_Test extends ParentClass
 //			}
 //			
 //			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().enableUPnP());
-//			super.pause(5);
+//			super.pause(15);
 //			softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().clickUPNPInfoIcon());
+//			
 //			if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().isAt())
 //				softnet40.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsUPnPInfoDialogObject().clickCloseButton());
 //			softnet40.assertAll();
@@ -1174,41 +1203,53 @@ public class TC03_Complex_Test extends ParentClass
 //				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
 //				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
 //				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
-////				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//				softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
 //				
 //				try {
-//					softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().allFieldsAreMandatoryError.isDisplayed()) {
-//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
-//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed()) {
+//				if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().allFieldsAreMandatoryError.isDisplayed()) {
+//					softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
+//					softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
+//					}catch(Exception e) {}
+//					
+//				try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed()) {
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed()) {
+//					}catch(Exception e) {}
+//					
+//				try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed()) {
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed()) {
+//					}catch(Exception e) {}
+//						
+//				try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed()) {
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed()) {
+//					}catch(Exception e) {}
+//					
+//				try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed()) {
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());}
-//					else
-//						utils.log().info("All Port details are valid");
-//						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-//				}catch(Exception e) {utils.log().info("All Port details entered are valid");}
-//				super.pause(15);
+//					}catch(Exception e) {}
+//					
+//					utils.log().info("All Port details are valid");
+//					softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
+//					super.pause(15);
+//					
 //				try {
 //					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().getPortRuleEditFailedDialogObject().isAt()) 
 //						softnet45.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject()
 //								.getPortRuleEditFailedDialogObject().clickOKButton());
-//						}catch(Exception e) {
-//							//utils.log().info("Port Rule Edit Failed Dialog did not appear");
-//							}
+//					}catch(Exception e) {
+//							utils.log().info("Port Rule Edit Failed Dialog did not appear");
+//					}
 //			}
 //			softnet45.assertAll();
 //		}
-//			
+//	
 //
 //		@Test(priority = 71)
 //		public void Verify_General_Settings_Port_Forwarding_Edit_Rules() 
@@ -1225,21 +1266,34 @@ public class TC03_Complex_Test extends ParentClass
 //				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
 //				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterIPAddress());
 //				softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-//				try {
+//
+//					try {
 //					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().allFieldsAreMandatoryError.isDisplayed())
 //						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterPortRuleName());
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
+//					}catch(Exception e) {}
+//					
+//					try {
+//					 if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortStartError.isDisplayed())
 //						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortStart());
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
+//					}catch(Exception e) {}
+//					
+//					try {
+//					 if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().internalPortEndError.isDisplayed())
 //						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterInternalPortEnd());
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
+//					}catch(Exception e) {}
+//					
+//					try {
+//					if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortStartError.isDisplayed())
 //						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortStart());
-//					else if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
-//						softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
-//					else
-//						utils.log().info("All Port details are valid");
+//					}catch(Exception e) {}
+//				
+//					try {
+//						if(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().externalPortEndError.isDisplayed())
+//							softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().enterExternalPortEnd());
+//					}catch(Exception e) {}
+//
+//					utils.log().info("All Port details are valid");
 //					softnet46.assertTrue(new NetworkPage().getGeneralSettingsPageObject().getNetworkGeneralSettingsPortForwardingPageObject().getPortForwardingAddRulePageObject().clickSaveButton());
-//				}catch(Exception e) {utils.log().info("All Port details are valid");}
 //				
 //				super.pause(15);
 //				try {
@@ -1313,94 +1367,163 @@ public class TC03_Complex_Test extends ParentClass
 //			softnet48.assertTrue(new NetworkPage().clickNetworkSettingsExpandButton());
 //			softnet48.assertAll();
 //		}
-//		
-////		@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
-////		public void Verify_Guest_WiFi_Network_Page() 
-////		{
-////			SoftAssert softnet49 = new SoftAssert();
-////			try {
-////				if (new NetworkPage().guestNetworkToggleButton.isSelected()) 
-////					new NetworkPage().disableGuestWifiNetwork();
-////				
-////				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickCloseButton());
-////				super.pause(40);
-////				if(new NetworkPage().joinButton.isDisplayed())
-////					softnet49.assertTrue(new NetworkPage().clickJoinButton());
-////				super.pause(20);
-////			}catch(Exception e) {}
-////			
-////			softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
-////			try {
-////				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-////				super.pause(40);
-////				
-////				if(new NetworkPage().joinButton.isDisplayed())
-////					softnet49.assertTrue(new NetworkPage().clickJoinButton());
-////				super.pause(15);
-////			}catch(Exception e) {}
-////			
-////			try {
-////				if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
-////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
-////					//softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().validateGuestNetworkPage());
-////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
-////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
-////					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
-////					if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-////						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-////					}
-////					super.pause(30);
-////				}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
-////			
-////			try {
-////				if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
-////					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
-////					softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
-////						if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
-////							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
-////							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
-////							try {
-////								if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
-////									softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
-////							}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
-////						}
-////						super.pause(35);
-////						
-////						if(new NetworkPage().joinButton.isDisplayed()) {
-////							softnet49.assertTrue(new NetworkPage().clickJoinButton());
-////						super.pause(20);}
-////					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
-////			}catch(Exception e) {utils.log().info("Guest Network is not Created");}
-////			
-////			softnet49.assertAll();
-////		}
-////		
-////		@Test(priority = 75, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
-////		public void Verify_Extended_WiFi_Settings_Page() 
-////		{
-////			SoftAssert softnet50 = new SoftAssert();
-////			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-////			
-////			softnet50.assertTrue(new NetworkPage().enable5GHzWidebandMode());
-////			if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
-////				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
-////			super.pause(15);
-////			
-////			softnet50.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
-////			if(new NetworkPage().get5GHzWidebandModeDialogObject().isAt())
-////				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeDialogObject().clickCloseButton());
-////			
-////			softnet50.assertTrue(new NetworkPage().enableBandSteeringMode());
-////			if(new NetworkPage().getBandSteeringModeAlertDialogObject().isAt())
-////				softnet50.assertTrue(new NetworkPage().getBandSteeringModeAlertDialogObject().clickOKButton());
-////			
-////			softnet50.assertTrue(new NetworkPage().clickBandSteeringInfoIcon());
-////			if(new NetworkPage().getBandSteeringModeDialogObject().isAt())
-////				softnet50.assertTrue(new NetworkPage().getBandSteeringModeDialogObject().clickCloseButton());
-////			
-////			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
-////			softnet50.assertAll();
-////		}
+		
+		@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard"})
+		public void Verify_Existing_Guest_WiFi_Network() 
+		{
+			SoftAssert softnet49 = new SoftAssert();
+			try {
+				if (new NetworkPage().guestNetworkExpandIcon.isDisplayed())
+					new NetworkPage().verifyGuestWifiNetwork();
+				}catch(Exception e) {utils.log().info("Guest Wifi Network is not created");}
+		}
+		
+		
+		@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard"})
+		public void Verify_New_Guest_WiFi_Network() 
+		{
+			SoftAssert softnet49 = new SoftAssert();
+			
+			if(new NetworkPage().isGuestWifiDisabled()) 
+			{
+				softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
+				try {
+					if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+					super.pause(40);
+					
+					if(new NetworkPage().joinButton.isDisplayed())
+						softnet49.assertTrue(new NetworkPage().clickJoinButton());
+					super.pause(15);
+				}catch(Exception e) {}
+					
+				try {
+					if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
+						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
+						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
+						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
+						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
+						
+						if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+							softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+						}
+						super.pause(30);
+					}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
+					
+					try {
+						if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
+							softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
+							softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
+								if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
+									softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
+									softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
+									try {
+										if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+											softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+										super.pause(35);
+										if(new NetworkPage().joinButton.isDisplayed()) {
+											softnet49.assertTrue(new NetworkPage().clickJoinButton());
+										super.pause(20);}
+									}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
+								}
+							softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
+					}catch(Exception e) {utils.log().info("Guest Network is not Created");}
+			}
+
+			softnet49.assertAll();
+		}
+		
+		@Test(priority = 75, dependsOnMethods = {"Login_And_Onboard", "Verify_Network_UI_Page"})
+		public void Verify_Extended_WiFi_Settings_Page() 
+		{
+			SoftAssert softnet50 = new SoftAssert();
+			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+			
+			softnet50.assertTrue(new NetworkPage().enable5GHzWidebandMode());
+			try {
+				if(new NetworkPage().get5GHzWidebandModeAlertDialogObject().isAt())
+					softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeAlertDialogObject().clickOKButton());
+					super.pause(15);
+			}catch(Exception e) {}
+			
+//			softnet50.assertTrue(new NetworkPage().clickfiveGHzWidebandInfoIcon());
+//			if(new NetworkPage().get5GHzWidebandModeDialogObject().isAt())
+//				softnet50.assertTrue(new NetworkPage().get5GHzWidebandModeDialogObject().clickCloseButton());
+			
+			softnet50.assertTrue(new NetworkPage().enableBandSteeringMode());
+			try {
+				if(new NetworkPage().getBandSteeringModeAlertDialogObject().isAt())
+					softnet50.assertTrue(new NetworkPage().getBandSteeringModeAlertDialogObject().clickOKButton());
+			}catch(Exception e) {}
+				
+			softnet50.assertTrue(new NetworkPage().clickBandSteeringInfoIcon());
+			if(new NetworkPage().getBandSteeringModeDialogObject().isAt())
+				softnet50.assertTrue(new NetworkPage().getBandSteeringModeDialogObject().clickCloseButton());
+			
+			softnet50.assertTrue(new NetworkPage().clickExtendedWifiSettingsExpandButton());
+			softnet50.assertAll();
+		}
 }
+
+
+
+
+//@Test(priority = 74, dependsOnMethods = {"Login_And_Onboard"})
+//public void Verify_Guest_WiFi_Network_Page() 
+//{
+//	SoftAssert softnet49 = new SoftAssert();
+//	try {
+//		if (new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
+//			new NetworkPage().verifyGuestWifiNetwork();}
+//	}catch(Exception e) {}
+//	
+//	try {
+//		if(! new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
+//			softnet49.assertTrue(new NetworkPage().enableGuestWifiNetwork());
+//			try {
+//				if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+//				super.pause(40);
+//				
+//				if(new NetworkPage().joinButton.isDisplayed())
+//					softnet49.assertTrue(new NetworkPage().clickJoinButton());
+//				super.pause(15);
+//			}catch(Exception e) {}
+//			
+//			try {
+//				if(new NetworkPage().getEnableGuestNetworkDialogObject().isAt()) {
+//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().verifyUIOnGuestNetworkPage());
+//					//softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().validateGuestNetworkPage());
+//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkName());
+//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().enterGuestNetworkPassword());
+//					softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkDialogObject().clickSaveChangesButton());
+//				
+//					if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+//						softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+//					}
+//					super.pause(30);
+//				}catch(Exception e) {utils.log().info("Enable Guest Network Page did not appear");}
+//			
+//			try {
+//				if(new NetworkPage().guestNetworkExpandIcon.isDisplayed()) {
+//					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());
+//					softnet49.assertTrue(new NetworkPage().clickGuestNetworkEditdButton());
+//						if(new NetworkPage().getEditGuestNetworkDialogObject().isAt()) {
+//							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().createGuestNetwork());
+//							softnet49.assertTrue(new NetworkPage().getEditGuestNetworkDialogObject().clickSaveChangesButton()); 
+//							try {
+//								if(new NetworkPage().getEnableGuestNetworkAlertDialogObject().isAt())
+//									softnet49.assertTrue(new NetworkPage().getEnableGuestNetworkAlertDialogObject().clickOkButton());
+//								super.pause(35);
+//								if(new NetworkPage().joinButton.isDisplayed()) {
+//									softnet49.assertTrue(new NetworkPage().clickJoinButton());
+//								super.pause(20);}
+//							}catch(Exception e) {utils.log().info("Guest Network Alert dialog did not appear");}
+//						}
+//					softnet49.assertTrue(new NetworkPage().clickGuestNetworkExpandButton());}
+//			}catch(Exception e) {utils.log().info("Guest Network is not Created");}
+//		}
+//	}catch(Exception e) {}
+//
+//	softnet49.assertAll();
+//}

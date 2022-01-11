@@ -260,11 +260,9 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 				utils.log().info("Enable Parental Control Text is not displayed");
 			
 			try {
-				if (parentalControlToggleButton.isSelected())
-					utils.log().info("Parental Control Toggle button is enabled");
-				else
-					utils.log().info("Parental Control Toggle button is disabled");
-			}catch(Exception exp) {utils.log().info("Parental Control is not displayed");}
+				if (parentalControlToggleButton.isDisplayed())
+					utils.log().info("Parental Control Toggle button is displayed");
+			}catch(Exception exp) {utils.log().info("Parental Control Toggle button is not displayed");}
 			
 			try {
 				if (globalSettingText.isDisplayed())
@@ -288,8 +286,8 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 			}catch(Exception e) {utils.log().info("Pause Internet For All Profiles text is not displayed");}
 			
 			try {
-				if (pauseAllProfilesToggleButton.isDisplayed() && pauseAllProfilesToggleButton.isSelected())
-					utils.log().info("Pause All Profiles Switch button is enabled");
+				if (pauseAllProfilesToggleButton.isDisplayed())
+					utils.log().info("Pause All Profiles Switch button is displayed");
 			}catch(Exception exp) {utils.log().info("Pause All Profiles is not displayed");}
 
 			if (userProfilesText.isDisplayed())
@@ -398,6 +396,17 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 			return true;
 		} else {
 			utils.log().info("Currently Blocked Tab on Parental Control Page is not displayed");
+			return false;
+		}
+	}
+	
+	public boolean clickGlobalSettingExpandButton() {
+		if (globalSettingExpandButton.isDisplayed()) {
+			click(globalSettingExpandButton);
+			utils.log().info("Clicked on Global Setting Expand Button");
+			return true;
+		} else {
+			utils.log().info("Currently Global Setting Expand Button is not displayed");
 			return false;
 		}
 	}

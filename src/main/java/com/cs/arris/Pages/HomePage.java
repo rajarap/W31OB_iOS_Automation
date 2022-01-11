@@ -137,7 +137,7 @@ public class HomePage extends ParentClass implements Page {
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_Detail\"]")
 	public MobileElement networkHealthOptimizatonTurnedOffText;
 	
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Tap here to turn on\"]")
+	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_NonDial\"]")
 	public MobileElement tapToTurnOnNetworkHealth;
 	
 	//Promotion
@@ -286,6 +286,10 @@ public class HomePage extends ParentClass implements Page {
 		return affsinfoPage;
 	}
 	
+	public HomeNetworkHealthOptimizationPage getNetworkOtptimizationPageObject() {
+		HomeNetworkHealthOptimizationPage netOptimize = new HomeNetworkHealthOptimizationPage();
+		return netOptimize;
+	}
 	
 		
 	public HomePage() {
@@ -716,6 +720,17 @@ public class HomePage extends ParentClass implements Page {
 			return true;
 		} else {
 			utils.log().info("Home Page - Promotion close Button is either not visible or is not present on the DOM");
+			return false;
+		}
+	}
+	
+	public boolean clickTapHereToTurnON() {
+		if (tapToTurnOnNetworkHealth.isDisplayed()) {
+			click(tapToTurnOnNetworkHealth);
+			utils.log().info("Home Page - Clicked on Tap Here To Turn ON Button");
+			return true;
+		} else {
+			utils.log().info("Home Page -  Tap Here To Turn ON Button is either not visible or is not present on the DOM");
 			return false;
 		}
 	}

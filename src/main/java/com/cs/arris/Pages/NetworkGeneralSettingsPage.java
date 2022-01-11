@@ -9,6 +9,7 @@ import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -158,71 +159,116 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 	}
 
 	public boolean enableUPnP() {
-		if (UPNPToggleButton.isSelected()) {
-			utils.log().info("UPnP is already enabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[1]\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[1]\"`]")).click();
+				utils.log().info("UPnP is enabled");
+			}else {
+				utils.log().info("UPnP is already enabled");
+			}
 			return true;
-		} else {
-			click(UPNPToggleButton);
-			utils.log().info("UPnP is enabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling UPnP");
 			return true;
 		}
 	}
 
 	public boolean disableUPnP() {
-		if (UPNPToggleButton.isSelected()) {
-			click(UPNPToggleButton);
-			utils.log().info("UPnP is disabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[1]\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				//click(parentalControlToggleButton);
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[1]\"`]")).click();
+				utils.log().info("UPnP is disabled");
+			}else {
+				utils.log().info("UPnP is already disabled");
+			}
 			return true;
-		} else {
-			utils.log().info("UPnP is already disabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling UPnP");
 			return true;
 		}
 	}
-
+	
 	public boolean enableBridgeMode() {
-		if (bridgeModeToggleButton.isSelected()) {
-			utils.log().info("Bridge Mode is already enabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[2]\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[2]\"`]")).click();
+				utils.log().info("Bridge Mode is enabled");
+			}else {
+				utils.log().info("Bridge Mode is already enabled");
+			}
 			return true;
-		} else {
-			click(bridgeModeToggleButton);
-			utils.log().info("Bridge Mode is now enabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling Bridge Mode");
 			return true;
 		}
 	}
 
 	public boolean disableBridgeMode() {
-		if (!(bridgeModeToggleButton.isSelected())) {
-			utils.log().info("Bridge Mode is already disabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[2]\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				//click(parentalControlToggleButton);
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[2]\"`]")).click();
+				utils.log().info("Bridge Mode is disabled");
+			}else {
+				utils.log().info("Bridge Mode is already disabled");
+			}
 			return true;
-		} else {
-			click(bridgeModeToggleButton);
-			utils.log().info("Bridge Mode is now disabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling Bridge Mode");
 			return true;
 		}
 	}
 
 	public boolean enableIPV6Enable() {
-		if (IPv6ToggleButton.isSelected()) {
-			utils.log().info("IPv6 Enableis already enabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[4]\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[4]\"`]")).click();
+				utils.log().info("IPv6 Enable is enabled");
+			}else {
+				utils.log().info("IPv6 Enable is already enabled");
+			}
 			return true;
-		} else {
-			click(IPv6ToggleButton);
-			utils.log().info("IPv6 Enable is now enabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling IPv6 Enable");
 			return true;
-		} 
+		}
 	}
 
 	public boolean disableIPv6Enable() {
-		if (!(IPv6ToggleButton.isSelected())) {
-			utils.log().info("IPv6 Enable is already disabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[4]\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				//click(parentalControlToggleButton);
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"General_Network_Settings_Screen_Button_Switch[4]\"`]")).click();
+				utils.log().info("IPv6 Enable is disabled");
+			}else {
+				utils.log().info("IPv6 Enable is already disabled");
+			}
 			return true;
-		} else {
-			click(IPv6ToggleButton);
-			utils.log().info("IPv6 Enable is now disabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling IPv6 Enable");
 			return true;
-		} 
+		}
 	}
-
+	
 	public boolean verifyUIOnGeneralSettingsPage() {
 		utils.log().info("                                               ");
 		utils.log().info("***********************************************");
@@ -243,10 +289,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("UPnP Link is displayed");
 			
 			try {
-				if (UPNPToggleButton.isDisplayed() && (!(UPNPToggleButton.isSelected())))
-					utils.log().info("UPnp toggle button is displayed but is disabled");
+				if (UPNPToggleButton.isDisplayed())
+					utils.log().info("UPnp toggle button is displayed");
 				else
-					utils.log().info("UPnp toggle button is displayed and is selected");
+					utils.log().info("UPnp toggle button is not displayed");
 			}catch(Exception e) {}
 
 			if (upnpInfoIcon.isDisplayed())
@@ -256,10 +302,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("Bridge Mode Link is displayed");
 			
 			try {
-				if (bridgeModeToggleButton.isDisplayed() && (!(bridgeModeToggleButton.isSelected())))
-					utils.log().info("Bridge Mode toggle button is displayed but is disabled");
+				if (bridgeModeToggleButton.isDisplayed())
+					utils.log().info("Bridge Mode toggle button is displayed");
 				else
-					utils.log().info("Bridge Mode toggle button is displayed and is selected");
+					utils.log().info("Bridge Mode toggle button is not displayed");
 			}catch(Exception e) {}
 
 			if (bridgeModeInfoIcon.isDisplayed())
@@ -272,10 +318,10 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 				utils.log().info("IPv6 Enable is displayed");
 			
 			try {
-				if (IPv6ToggleButton.isDisplayed() && (!(IPv6ToggleButton.isSelected())))
-					utils.log().info("IPv6 Enable toggle button is displayed but is disabled");
+				if (IPv6ToggleButton.isDisplayed())
+					utils.log().info("IPv6 Enable toggle button is displayed");
 				else
-					utils.log().info("IPv6 Enable toggle button is displayed and is selected");
+					utils.log().info("IPv6 Enable toggle button is not displayed");
 			}catch(Exception e) {}
 
 			if (ipv6InfoIcon.isDisplayed())

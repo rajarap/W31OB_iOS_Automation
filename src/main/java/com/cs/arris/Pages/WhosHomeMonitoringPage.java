@@ -56,6 +56,8 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WH_Main_Screen_Button_Add\"]")
 	public MobileElement addButton;
 	
+
+	
 	public WhosHomeMonitoringPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
@@ -178,6 +180,7 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 			if(value == 1)  //enabled
 			{
 				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"WH_Main_Screen_Switch\"`][1]")).click();
+				
 				utils.log().info("Monitoring is disabled.");
 			}else {
 				utils.log().info("Monitoring is already disabled.");

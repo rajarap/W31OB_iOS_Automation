@@ -8,6 +8,7 @@ import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.SwipeActions;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -45,7 +46,6 @@ public class NetworkPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_EyeIcon\"]")
 	public MobileElement showPasswordIcon;
 
-	@AndroidFindBy(id = "com.arris.sbcBeta:id/main_wifi_password")
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Settings_Screen_TextField_Password\"]")
 	public MobileElement showPassword;
 
@@ -83,14 +83,10 @@ public class NetworkPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_GuestShare\"]")
 	public MobileElement guestNetworkShareCredentialsButton;
 	
-
-	
-	
-	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Extended\"]")
 	public MobileElement extendedWifiSettingsLabel;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_SettingsExpand\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Network_Settings_Screen_Button_ExtendedExpand\"]")
 	public MobileElement extendedWifiExpandIcon;
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Network_Settings_Screen_Label_Extended5g\"]")
@@ -162,8 +158,6 @@ public class NetworkPage extends ParentClass implements Page {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Cancel\"]")
 	public MobileElement cancelButton;
 	
-
-
 	public NetworkPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
@@ -362,28 +356,6 @@ public class NetworkPage extends ParentClass implements Page {
 		}
 	}
 	
-	public boolean enable5GHzWidebandMode() {
-		if (widebandModeToggleButton.isSelected()) {
-			utils.log().info("5GHz Wideband Mode is already enabled");
-			return true;
-		} else {
-			click(widebandModeToggleButton);
-			utils.log().info("5GHz Wideband Mode is now enabled");
-			return true;
-		}
-	}
-
-	public boolean disable5GHzWidebandMode() {
-		if (!(widebandModeToggleButton.isSelected())) {
-			utils.log().info("5GHz Wideband Mode is already disabled");
-			return true;
-		} else {
-			click(widebandModeToggleButton);
-			utils.log().info("5GHz Wideband Mode is now disabled");
-			return true;
-		}
-	}
-	
 	public boolean clickBandSteeringInfoIcon() {
 		if (bandSteeringModeInfoIcon.isDisplayed()) {
 			click(bandSteeringModeInfoIcon);
@@ -395,47 +367,125 @@ public class NetworkPage extends ParentClass implements Page {
 		}
 	}
 	
-	public boolean enableBandSteeringMode() {
-		if (bandSteeringModeToggleButton.isSelected()) {
-			utils.log().info("Band Steering Mode is already enabled");
+	public boolean enable5GHzWidebandMode() {
+		try {
+			String str = super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchExtended\"]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchExtended\"]")).click();
+				utils.log().info("5GHz Wide Band Mode is enabled");
+			}else {
+				utils.log().info("5GHz Wide Band Mode is already enabled");
+			}
 			return true;
-		} else {
-			click(bandSteeringModeToggleButton);
-			utils.log().info("Band Steering Mode is now enabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling 5GHz Wide Band Mode");
+			return true;
+		}
+	}
+
+	public boolean disable5GHzWidebandMode() {
+		try {
+			String str = super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchExtended\"]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchExtended\"]")).click();
+				utils.log().info("5GHz Wide Band Mode is disabled");
+			}else {
+				utils.log().info("5GHz Wide Band Mode is already disabled");
+			}
+			return true;
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling 5GHz Wide Band Mode");
+			return true;
+		}
+	}
+	
+	public boolean enableBandSteeringMode() {
+		try {
+			String str = super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchBand\"]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchBand\"]")).click();
+				utils.log().info("Band Steering Mode is enabled");
+			}else {
+				utils.log().info("Band Steering Mode is already enabled");
+			}
+			return true;
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling Band Steering Mode");
 			return true;
 		}
 	}
 
 	public boolean disableBandSteeringMode() {
-		if (!(bandSteeringModeToggleButton.isSelected())) {
-			utils.log().info("Band Steering Mode is already disabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchBand\"]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				super.getDriver().findElement(MobileBy.xpath("//XCUIElementTypeSwitch[@name=\"Network_Settings_Screen_Button_SwitchBand\"]")).click();
+				utils.log().info("Band Steering Mode is disabled");
+			}else {
+				utils.log().info("Band Steering Mode is already disabled");
+			}
 			return true;
-		} else {
-			click(bandSteeringModeToggleButton);
-			utils.log().info("Band Steering Mode is now disabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling Band Steering Mode");
 			return true;
 		}
 	}
 	
 	public boolean enableGuestWifiNetwork() {
-		if (guestNetworkToggleButton.isSelected()) {
-			utils.log().info("Enable/Disable Guest Network is already enabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Guest Wi-Fi Network, Enable/Disable Guest Network, Network Name (SSID), Password\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Guest Wi-Fi Network, Enable/Disable Guest Network, Network Name (SSID), Password\"`]")).click();
+				utils.log().info("Guest Wifi is enabled");
+			}else {
+				utils.log().info("Guest Wifi is already enabled");
+			}
 			return true;
-		}else {
-			click(guestNetworkToggleButton);
-			utils.log().info("Enable/Disable Guest Network is now enabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in enabling Guest Wifi");
 			return true;
 		}
 	}
 
 	public boolean disableGuestWifiNetwork() {
-		if (!(guestNetworkToggleButton.isSelected())) {
-			utils.log().info("Enable/Disable Guest Network is already disabled");
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Guest Wi-Fi Network, Enable/Disable Guest Network, Network Name (SSID), Password\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 1)
+			{
+				super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Guest Wi-Fi Network, Enable/Disable Guest Network, Network Name (SSID), Password\"`]")).click();
+				utils.log().info("Guest Wifi is disabled");
+			}else {
+				utils.log().info("Guest Wifi is already disabled");
+			}
 			return true;
-		} else {
-			click(guestNetworkToggleButton);
-			utils.log().info("Enable/Disable Guest Network is now disabled");
+		} catch(Exception e) {
+			utils.log().info("Issue in disabling Guest Wifi");
 			return true;
+		}
+	}
+	
+	public boolean isGuestWifiDisabled()
+	{
+		try {
+			String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`label == \"Guest Wi-Fi Network, Enable/Disable Guest Network, Network Name (SSID), Password\"`]")).getAttribute("value");
+			int value = Integer.parseInt(str);
+			if(value == 0)  //disabled
+				utils.log().info("Guest Wifi is disabled");
+			return true;
+		} catch(Exception e) {
+			utils.log().info("Guest Wifi is enabled");
+			return false;
 		}
 	}
 
@@ -547,58 +597,11 @@ public class NetworkPage extends ParentClass implements Page {
 			else
 				utils.log().info("Enable/disable Guest Network label is not displayed");
 			
-//			try {
-//				if (!(guestNetworkToggleButton.isSelected()))
-//					utils.log().info("Guest Newtork toggle button is disabled");
-//			}catch(Exception e) {utils.log().info("Guest Newtork toggle button is enabled");}
-//			
-//			try {
-//				if (guestNetworkExpandIcon.isDisplayed()) 
-//				{
-//					utils.log().info("Guest Newtork expand button is displayed");
-//					click(guestNetworkExpandIcon);
-//					if (guestNetworkSIDLabel.isDisplayed())
-//						utils.log().info(guestNetworkSIDLabel.getText() + " label is displayed");
-//					else
-//						utils.log().info("Network Name (SSID) label is not displayed");
-//
-//					if (guestNetworkSSIDName.isDisplayed())
-//						utils.log().info("Guest Newtork SSID Name is : " + guestNetworkSSIDName.getText());
-//					else
-//						utils.log().info("uest Newtork SSID Name is not displayed");
-//					
-//					if (guestNetworkPasswordLabel.isDisplayed())
-//						utils.log().info(guestNetworkPasswordLabel.getText() + " label is displayed");
-//					else
-//						utils.log().info("PAssword label is not displayed");
-//	
-//					if (guestNetworkPassword.isDisplayed())
-//						utils.log().info("Guest Newtork SSID Password is : " + guestNetworkPassword.getText());
-//					else
-//						utils.log().info("uest Newtork SSID Name is not displayed");
-//
-//					if (guestNetworkShowPasswordIcon.isDisplayed()) {
-//						utils.log().info("Show Password Icon is displayed");
-//						click(guestNetworkShowPasswordIcon);
-//						click(guestNetworkShowPasswordIcon);}  //1
-//					else
-//						utils.log().info("Show Password Icon is not displayed");
-//					
-//					if (guestNetworkEditIcon.isDisplayed())
-//						utils.log().info("Edit Icon is displayed");
-//					else
-//						utils.log().info("Edit Icon is not displayed");
-//					
-//					if (guestNetworkShareCredentialsButton.isDisplayed())
-//						utils.log().info("SHARE CREDENTIALS button is displayed");
-//					else
-//						utils.log().info("SHARE CREDENTIALS button is not displayed");		
-//					
-//						click(guestNetworkExpandIcon);
-//					}  
-//				}catch(Exception e) {utils.log().info("Guest Newtork Settings expand button is not displayed");}
+			if (guestNetworkToggleButton.isDisplayed())
+				utils.log().info("Guest Wi-Fi Network Toggle button is displayed");
+			else
+				utils.log().info("Guest Wi-Fi Network Toggle button is not displayed");
 			
-
 			if (extendedWifiExpandIcon.isDisplayed()) {
 				utils.log().info("Extended WiFi Settings expand button is displayed");
 				click(extendedWifiExpandIcon);}  //1
@@ -620,15 +623,30 @@ public class NetworkPage extends ParentClass implements Page {
 			else
 				utils.log().info("Enables DFS (up to) 160MHz channels label is not displayed");
 			
-			try {
-				if (!(widebandModeToggleButton.isDisplayed()))
-					utils.log().info("Extended Wifi toggle button is disabled");
-			}catch(Exception e) {utils.log().info("Extended Wifi toggle button is enabled");}
+			if (widebandModeToggleButton.isDisplayed())
+				utils.log().info("Extended Wifi toggle button is displayed");
+			else 
+				utils.log().info("Extended Wifi toggle button is not displayed");
+
+			if (fiveGHzWidebandInfoIcon.isDisplayed())
+				utils.log().info("5GHz Widebank Mode Info Icon is displayed");
+			else 
+				utils.log().info("5GHz Widebank Mode Info Icon is not displayed");
 			
 			if (bandSteeringModeLabel.isDisplayed())
 				utils.log().info(bandSteeringModeLabel.getText() + " label is displayed");
 			else
 				utils.log().info("Band Steering Mode label is not displayed");
+			
+			if (bandSteeringModeInfoIcon.isDisplayed())
+				utils.log().info("Band Steering Mode Info Icon is displayed");
+			else 
+				utils.log().info("5Band Steering Mode Info Icon is not displayed");
+			
+			if (bandSteeringModeToggleButton.isDisplayed())
+				utils.log().info("Band Steering Mode toggle button is displayed");
+			else 
+				utils.log().info("Band Steering Mode toggle button is not displayed");
 			
 			if (periodicCheckLabel.isDisplayed())
 				utils.log().info(periodicCheckLabel.getText() + " label is displayed");
@@ -637,12 +655,7 @@ public class NetworkPage extends ParentClass implements Page {
 			
 			click(extendedWifiExpandIcon); //2
 
-//			if (networkSettingsExpandIcon.isDisplayed()) {
-//				utils.log().info("Network Settings expand button is displayed");
-//				click(networkSettingsExpandIcon);	//1
-//				super.swipeUp();}
-//			else
-//				utils.log().info("Network Settings expand button is not displayed");
+
 			click(networkSettingsExpandIcon); //1
 			super.swipeUp();
 
@@ -701,6 +714,57 @@ public class NetworkPage extends ParentClass implements Page {
 		} catch (Exception e) {
 			return false;
 		}
+	}
+	
+	public void verifyGuestWifiNetwork() {
+
+		try {
+			if (guestNetworkExpandIcon.isDisplayed()) 
+			{
+				utils.log().info("Guest Newtork expand button is displayed");
+				
+				clickGuestNetworkExpandButton();
+				
+				if (guestNetworkSIDLabel.isDisplayed())
+					utils.log().info(guestNetworkSIDLabel.getText() + " label is displayed");
+				else
+					utils.log().info("Network Name (SSID) label is not displayed");
+
+				if (guestNetworkSSIDName.isDisplayed())
+					utils.log().info("Guest Newtork SSID Name is : " + guestNetworkSSIDName.getText());
+				else
+					utils.log().info("uest Newtork SSID Name is not displayed");
+			
+				if (guestNetworkPasswordLabel.isDisplayed())
+					utils.log().info(guestNetworkPasswordLabel.getText() + " label is displayed");
+				else
+					utils.log().info("PAssword label is not displayed");
+
+				if (guestNetworkPassword.isDisplayed())
+					utils.log().info("Guest Newtork SSID Password is : " + guestNetworkPassword.getText());
+				else
+					utils.log().info("uest Newtork SSID Name is not displayed");
+
+				if (guestNetworkShowPasswordIcon.isDisplayed()) {
+					utils.log().info("Show Password Icon is displayed");
+					click(guestNetworkShowPasswordIcon);
+					click(guestNetworkShowPasswordIcon);}  //1
+				else
+					utils.log().info("Show Password Icon is not displayed");
+			
+				if (guestNetworkEditIcon.isDisplayed())
+					utils.log().info("Edit Icon is displayed");
+				else
+					utils.log().info("Edit Icon is not displayed");
+			
+				if (guestNetworkShareCredentialsButton.isDisplayed())
+					utils.log().info("SHARE CREDENTIALS button is displayed");
+				else
+					utils.log().info("SHARE CREDENTIALS button is not displayed");		
+			
+				clickGuestNetworkExpandButton();
+			}  
+		}catch(Exception e) {utils.log().info("Guest Newtork Settings expand button is not displayed");}
 	}
 
 	@Override

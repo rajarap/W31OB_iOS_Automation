@@ -129,15 +129,15 @@ public class ParentalControlAddRuleAddInternetBlockingScheduleDialog extends Par
 			else
 				utils.log().info("CUSTOM button is not displayed");
 
-			if (startTime.isDisplayed())
-				utils.log().info(startTime.getText() + " text is displayed ");
-			else
-				utils.log().info("Start Time Text is not displayed");
-
-			if (endTime.isDisplayed())
-				utils.log().info(endTime.getText() + " text is displayed ");
-			else
-				utils.log().info("End Time Text is not displayed");
+//			if (startTime.isDisplayed())
+//				utils.log().info(startTime.getText() + " text is displayed ");
+//			else
+//				utils.log().info("Start Time Text is not displayed");
+//
+//			if (endTime.isDisplayed())
+//				utils.log().info(endTime.getText() + " text is displayed ");
+//			else
+//				utils.log().info("End Time Text is not displayed");
 
 			if (addStartTimeLink.isDisplayed())
 				utils.log().info("Add Start Time Link is displayed ");
