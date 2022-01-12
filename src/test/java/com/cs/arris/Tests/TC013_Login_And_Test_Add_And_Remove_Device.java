@@ -1,6 +1,9 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
@@ -225,54 +228,54 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	public void Verify_Add_Device_Menu() {
 		SoftAssert softhome2 = new SoftAssert();
 		if(new HomePage().isAt())
-			softhome2.assertTrue(new HomePage().clickNavigationButton());
+			AssertJUnit.assertTrue(new HomePage().clickNavigationButton());
 		
 		if(new HomePage().getHamburgerMenuPageObject().isAt())
-			softhome2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAddDeviceButton());
+			AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAddDeviceButton());
 		
 		if(new AddDeviceSelectDevice1Page().isAt()) {
-			softhome2.assertTrue(new AddDeviceSelectDevice1Page().selectISPCableRadioButton());
-			softhome2.assertTrue(new AddDeviceSelectDevice1Page().clickNextButton());}
+			AssertJUnit.assertTrue(new AddDeviceSelectDevice1Page().selectISPCableRadioButton());
+			AssertJUnit.assertTrue(new AddDeviceSelectDevice1Page().clickNextButton());}
 		
 		if(new AddDeviceSelectDevice2Page().isAt()) {
-			softhome2.assertTrue(new AddDeviceSelectDevice2Page().selectT25RadioButton());
-			softhome2.assertTrue(new AddDeviceSelectDevice2Page().clickNextButton());
+			AssertJUnit.assertTrue(new AddDeviceSelectDevice2Page().selectT25RadioButton());
+			AssertJUnit.assertTrue(new AddDeviceSelectDevice2Page().clickNextButton());
 			super.pause(5);}
 		
 		if(new AddDeviceStepsForActivationPage().isAt())
-			softhome2.assertTrue(new AddDeviceStepsForActivationPage().clickStartButton());
+			AssertJUnit.assertTrue(new AddDeviceStepsForActivationPage().clickStartButton());
 		
 		if(new AddDeviceLetsStartWithDeviceConnectionPage().isAt())
-			softhome2.assertTrue(new AddDeviceLetsStartWithDeviceConnectionPage().clickNextButton());
+			AssertJUnit.assertTrue(new AddDeviceLetsStartWithDeviceConnectionPage().clickNextButton());
 		
 		if(new AddDeviceChooseInternetServiceProviderPage().isAt())
-			softhome2.assertTrue(new AddDeviceChooseInternetServiceProviderPage().clickNextButton());
+			AssertJUnit.assertTrue(new AddDeviceChooseInternetServiceProviderPage().clickNextButton());
 		
 		if(new AddDeviceActivateYourDeviceWithServiceProviderPage().isAt())
-			softhome2.assertTrue(new AddDeviceActivateYourDeviceWithServiceProviderPage().clickSkipButton());
+			AssertJUnit.assertTrue(new AddDeviceActivateYourDeviceWithServiceProviderPage().clickSkipButton());
 		
 		if(new AddDeviceEstablishingConnectionPage().isAt())
-			softhome2.assertTrue(new AddDeviceEstablishingConnectionPage().clickOnlineButton());
+			AssertJUnit.assertTrue(new AddDeviceEstablishingConnectionPage().clickOnlineButton());
 		
 		if(new AddDeviceSuccessPage().isAt())
-			softhome2.assertTrue(new AddDeviceSuccessPage().clickNextButton());
+			AssertJUnit.assertTrue(new AddDeviceSuccessPage().clickNextButton());
 		
 		if(new AddDeviceScanBarCodePage().isAt())
-			softhome2.assertTrue(new AddDeviceScanBarCodePage().clickScanButton());
+			AssertJUnit.assertTrue(new AddDeviceScanBarCodePage().clickScanButton());
 		
 		if(new AddDeviceAccessCameraDialog().isAt())
-			softhome2.assertTrue(new AddDeviceAccessCameraDialog().clickEnterManuallyButton());
+			AssertJUnit.assertTrue(new AddDeviceAccessCameraDialog().clickEnterManuallyButton());
 		
 		if(new AddDeviceEnterMACAddressManuallyPage().isAt()) {
-			softhome2.assertTrue(new AddDeviceEnterMACAddressManuallyPage().enterSerialNumber());
-			softhome2.assertTrue(new AddDeviceEnterMACAddressManuallyPage().enterMACAddress());
-			softhome2.assertTrue(new AddDeviceEnterMACAddressManuallyPage().clickNextButton());}
+			AssertJUnit.assertTrue(new AddDeviceEnterMACAddressManuallyPage().enterSerialNumber());
+			AssertJUnit.assertTrue(new AddDeviceEnterMACAddressManuallyPage().enterMACAddress());
+			AssertJUnit.assertTrue(new AddDeviceEnterMACAddressManuallyPage().clickNextButton());}
 		
 		if(new AddDeviceRegistrationFailedPage().isAt())
-			softhome2.assertTrue(new AddDeviceRegistrationFailedPage().clickContinueButton());
+			AssertJUnit.assertTrue(new AddDeviceRegistrationFailedPage().clickContinueButton());
 		
 		if(new AddDeviceCongratulationsPage().isAt())
-			softhome2.assertTrue(new AddDeviceCongratulationsPage().clickContinueButton());
+			AssertJUnit.assertTrue(new AddDeviceCongratulationsPage().clickContinueButton());
 		
 		softhome2.assertAll();
 	}
@@ -281,7 +284,7 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	public void Verify_Cable_Modem_Tab() {
 		SoftAssert softhome0 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome0.assertTrue(new AddDeviceHomePage().verifyUIOnHomePage());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().verifyUIOnHomePage());
 		
 		softhome0.assertAll();
 	}
@@ -289,9 +292,9 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	@Test(priority = 3)
 	public void Verify_Max_Router_Tab() {
 		SoftAssert softhome3 = new SoftAssert();
-		softhome3.assertTrue(new AddDeviceHomePage().clickMaxRouterTab());
-		softhome3.assertTrue(new AddDeviceHomePage().getHomePageObject().verifyUIOnHomePage());
-		softhome3.assertTrue(new AddDeviceHomePage().clickCableModemTab());
+		AssertJUnit.assertTrue(new AddDeviceHomePage().clickMaxRouterTab());
+		AssertJUnit.assertTrue(new AddDeviceHomePage().getHomePageObject().verifyUIOnHomePage());
+		AssertJUnit.assertTrue(new AddDeviceHomePage().clickCableModemTab());
 		
 		softhome3.assertAll();
 	}
@@ -299,10 +302,10 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	@Test(priority = 4)
 	public void Verify_Device_Details_Page() {
 		SoftAssert softhome4 = new SoftAssert();
-		softhome4.assertTrue(new AddDeviceHomePage().clickDeviceDetailsText());
+		AssertJUnit.assertTrue(new AddDeviceHomePage().clickDeviceDetailsText());
 		if(new AddDeviceHomePage().getDeviceDetailsPageObject().isAt()) {
-			softhome4.assertTrue(new AddDeviceHomePage().getDeviceDetailsPageObject().verifyDeviceDetailsUI());
-			softhome4.assertTrue(new AddDeviceHomePage().getDeviceDetailsPageObject().clickCloseButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getDeviceDetailsPageObject().verifyDeviceDetailsUI());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getDeviceDetailsPageObject().clickCloseButton());
 		}
 		
 		softhome4.assertAll();
@@ -311,10 +314,10 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	@Test(priority = 5)
 	public void Verify_Specifications_Page() {
 		SoftAssert softhome5 = new SoftAssert();
-		softhome5.assertTrue(new AddDeviceHomePage().clickSpecificationsText());
+		AssertJUnit.assertTrue(new AddDeviceHomePage().clickSpecificationsText());
 		super.pause(5);
 		if(new AddDeviceHomePage().getDeviceSpecificationsPageObject().isAt())
-			softhome5.assertTrue(new AddDeviceHomePage().getDeviceSpecificationsPageObject().clickBackButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getDeviceSpecificationsPageObject().clickBackButton());
 		
 		softhome5.assertAll();
 	}
@@ -323,13 +326,13 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	public void Verify_Add_Additional_Device() {
 		SoftAssert softhome6 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome6.assertTrue(new AddDeviceHomePage().clickNavigationButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().clickNavigationButton());
 			
 		if(new AddDeviceHomePage().getHamburgerMenuObject().isAt())
-			softhome6.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickAddDeviceButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickAddDeviceButton());
 			
 		if(new AddDeviceHomePage().getMaxTwoDevicesDialogObject().isAt())
-			softhome6.assertTrue(new AddDeviceHomePage().getMaxTwoDevicesDialogObject().clickOkButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getMaxTwoDevicesDialogObject().clickOkButton());
 		
 		softhome6.assertAll();
 	}
@@ -338,10 +341,10 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	public void Verify_Notifications_Page() {
 		SoftAssert softhome7 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome7.assertTrue(new AddDeviceHomePage().clickNotificationsIcon());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().clickNotificationsIcon());
 		
 		if(new AddDeviceHomePage().getNotificationsPageObject().isAt())
-			softhome7.assertTrue(new AddDeviceHomePage().getNotificationsPageObject().clickBackButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getNotificationsPageObject().clickBackButton());
 		
 		softhome7.assertAll();
 	}
@@ -350,7 +353,7 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	public void Verify_User_Guide_Page() {
 		SoftAssert softhome8 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome8.assertTrue(new AddDeviceHomePage().getAddDeviceFooterIconsPageObject().clickUserGuideButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getAddDeviceFooterIconsPageObject().clickUserGuideButton());
 		super.pause(3);
 
 		if(new AddDeviceHomePage().getUserGuidePageObject().isAt())
@@ -364,7 +367,7 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	public void Verify_FAQ_Page() {
 		SoftAssert softhome9 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome9.assertTrue(new AddDeviceHomePage().getAddDeviceFooterIconsPageObject().clickFAQButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getAddDeviceFooterIconsPageObject().clickFAQButton());
 		super.pause(3);
 		
 		if(new AddDeviceHomePage().getFAQPageObject().isAt())
@@ -378,14 +381,14 @@ public class TC013_Login_And_Test_Add_And_Remove_Device extends ParentClass {
 	public void Verify_Remove_Device_Page() {
 		SoftAssert softhome10 = new SoftAssert();
 		if(new AddDeviceHomePage().isAt())
-			softhome10.assertTrue(new AddDeviceHomePage().clickNavigationButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().clickNavigationButton());
 			
 		if(new AddDeviceHomePage().getHamburgerMenuObject().isAt())
 //			softhome10.assertTrue(new AddDeviceHomePage().getHamburgerMenuObject().clickRemoveDeviceeButton());
 		
 		if(new AddDeviceHomePage().getRemoveDevicePageObject().isAt()) {
-			softhome10.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().selectDeviceToRemove());
-			softhome10.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().clickNextButton());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().selectDeviceToRemove());
+			AssertJUnit.assertTrue(new AddDeviceHomePage().getRemoveDevicePageObject().clickNextButton());
 			super.pause(3);}
 			
 		softhome10.assertAll();

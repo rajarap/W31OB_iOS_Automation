@@ -26,7 +26,6 @@ public class TestListener implements ITestListener{
 
 	public void onTestSuccess(ITestResult result) {
 		ExtentReport.getTest().log(Status.PASS, "Test Passed");
-
 	}
 
 	public void onTestFailure(ITestResult result) {

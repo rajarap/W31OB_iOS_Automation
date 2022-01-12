@@ -1,6 +1,9 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -147,28 +150,28 @@ public class TC005_Login_And_Test_Device_Signal_Strength_Leader_Board_Page exten
 		SoftAssert softsignal2 = new SoftAssert();
 		new HomePage().clickDeviceSignalStrengthImage();
 		if(new DeviceSignalStrengthLeaderBoardPage().isAt()) 
-			softsignal2.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
+			AssertJUnit.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifyUIOnDeviceSignalStrengthPage());
 		softsignal2.assertAll();
 	}
 	
 	@Test(priority = 3)
 	public void Verify_Signal_Strength_For_Devices() {
 		SoftAssert softsignal3 = new SoftAssert();
-		softsignal3.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
+		AssertJUnit.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthForDevices());
 		softsignal3.assertAll();
 	}
 	
 	@Test(priority = 4)
 	public void Verify_Sorting_Devices_From_Strong_To_Weak() {
 		SoftAssert softsignal4= new SoftAssert();
-		softsignal4.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
+		AssertJUnit.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthStrongToWeak());
 		softsignal4.assertAll();
 	}
 	
 	@Test(priority = 5)
 	public void Verify_Sorting_Devices_From_Weak_To_Strong() {
 		SoftAssert softsignal5= new SoftAssert();
-		softsignal5.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
+		AssertJUnit.assertTrue(new DeviceSignalStrengthLeaderBoardPage().verifySignalStrengthWeakToStrong());
 		softsignal5.assertAll();
 	}
 	
@@ -178,7 +181,7 @@ public class TC005_Login_And_Test_Device_Signal_Strength_Leader_Board_Page exten
 //		softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().clickDeviceName(2));
 //		softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().editMainDeviceName());
 //		softsignal6.assertTrue(new MainDeviceAllTabPage().getEditMainDeviceNameDialogObject().clickSaveButton());
-		softsignal6.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
+		AssertJUnit.assertTrue(new DeviceSignalStrengthLeaderBoardPage().getFooterIconsPageObject().clickHomeButton());
 		softsignal6.assertAll();
 	}
 }

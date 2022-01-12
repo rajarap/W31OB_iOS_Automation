@@ -197,22 +197,22 @@ public class ParentClass
 		
 	}
 	
-	public AppiumDriverLocalService getAppiumServerDefault() {
-		return AppiumDriverLocalService.buildDefaultService();
-	}
-	
-	public AppiumDriverLocalService getAppiumService() {
-		HashMap<String, String> environment = new HashMap<String, String>();
-		environment.put("PATH",  "/Users/prabhu/.fastlane/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/opt/homebrew/Cellar/openjdk@11/11.0.10/libexec/openjdk.jdk/Contents/Home/bin:/Users/prabhu/Library/Android/sdk:/Applications/sonar-scanner/bin:/Applications/sonarqube/bin:/usr/bin/ruby:/usr/local/bin/pod");
-		environment.put("ANDROID_HOME", "/Users/prabhu/Library/Android/sdk");
-		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-				.usingDriverExecutable(new File("/usr/local/bin/node"))
-				.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
-				.usingPort(4723)
-				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-				.withEnvironment(environment)
-				.withLogFile(new File("ServerLogs/server.log")));
-	}
+//	public AppiumDriverLocalService getAppiumServerDefault() {
+//		return AppiumDriverLocalService.buildDefaultService();
+//	}
+//	
+//	public AppiumDriverLocalService getAppiumService() {
+//		HashMap<String, String> environment = new HashMap<String, String>();
+//		environment.put("PATH",  "/Users/prabhu/.fastlane/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/opt/homebrew/Cellar/openjdk@11/11.0.10/libexec/openjdk.jdk/Contents/Home/bin:/Users/prabhu/Library/Android/sdk:/Applications/sonar-scanner/bin:/Applications/sonarqube/bin:/usr/bin/ruby:/usr/local/bin/pod");
+//		environment.put("ANDROID_HOME", "/Users/prabhu/Library/Android/sdk");
+//		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+//				.usingDriverExecutable(new File("/usr/local/bin/node"))
+//				.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
+//				.usingPort(4723)
+//				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+//				.withEnvironment(environment)
+//				.withLogFile(new File("ServerLogs/server.log")));
+//	}
 	
 	@Parameters({"platform", "device"})
 	@BeforeSuite

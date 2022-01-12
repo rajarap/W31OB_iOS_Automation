@@ -20,10 +20,10 @@ public class HomeNetowrkISPServicePerformanceAndConnectionHealthPage extends Par
 {
 	public TestUtils utils = new TestUtils();
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Network Health Optimization\"]")
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeButton[`label == \"Network Health Optimization\"`]")
 	public MobileElement backButton; 
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"ISP Service Performance and Connection Health\"]")
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeStaticText[`label == \"ISP Service Performance and Connection Health\"`]")
 	public MobileElement ispServicePerformanceConnectionHealthTitle;
 	
 	

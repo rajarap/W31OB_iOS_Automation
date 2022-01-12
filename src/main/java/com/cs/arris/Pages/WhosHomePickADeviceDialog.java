@@ -253,6 +253,7 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
 				}
+				if(i >= 2) super.swipeUp();
 			}
 			return true;
 		}else {
@@ -297,6 +298,7 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
 				}
+				if(i >= 2) super.swipeUp();
 			}
 			return true;
 		}else {
@@ -341,6 +343,7 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
 				}
+				if(i >= 2) super.swipeUp();
 			}
 			return true;
 		}else {
@@ -385,6 +388,7 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");
 				}
+				if(i >= 2) super.swipeUp();
 			}
 			return true;
 		}else {
@@ -393,7 +397,7 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 		}
 	}
 	
-	public boolean pickAIOTrDevice() {
+	public boolean pickAIOTDevice() {
 		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
 		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();

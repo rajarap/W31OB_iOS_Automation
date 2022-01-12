@@ -40,6 +40,22 @@ public class WhosHomeWelcomePage extends ParentClass implements Page {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
 
+	public WhosHomeAddHouseholdMemberDialog getAddMemberDialogObject() {
+		WhosHomeAddHouseholdMemberDialog addMember = new WhosHomeAddHouseholdMemberDialog();
+		return addMember;
+	}
+	
+	public WhosHomePickADeviceDialog getPickADeviceDialogObject() {
+		WhosHomePickADeviceDialog pickDevice = new WhosHomePickADeviceDialog();
+		return pickDevice;
+	}
+	
+	public WhosHomeMonitoringPage getHomeMonitoringPageObject() {
+		WhosHomeMonitoringPage homeMonitoring = new WhosHomeMonitoringPage();
+		return homeMonitoring;
+	}
+
+	
 	public boolean clickBackButton() {
 		if (backButton.isDisplayed()) {
 			click(backButton);

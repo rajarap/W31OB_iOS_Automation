@@ -1,6 +1,9 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -150,9 +153,9 @@ public class TC004_Login_And_Test_Devices_Page extends ParentClass
 		public void Verify_Devices_UI_Page() {
 			SoftAssert softdevices2 = new SoftAssert();
 			if(new HomePage().isAt())
-				softdevices2.assertTrue(new HomePage().clickDevicesImage());
+				AssertJUnit.assertTrue(new HomePage().clickDevicesImage());
 			if(new DevicesPage().isAt()) 
-				softdevices2.assertTrue(new DevicesPage().verifyUIOnDevicesPage());
+				AssertJUnit.assertTrue(new DevicesPage().verifyUIOnDevicesPage());
 			softdevices2.assertAll();
 		}
 			
@@ -160,7 +163,7 @@ public class TC004_Login_And_Test_Devices_Page extends ParentClass
 		public void Verify_Online_Devices_Details() 
 		{
 			SoftAssert softdevices3 = new SoftAssert();
-			softdevices3.assertTrue(new DevicesPage().verifyOnlineDeviceDetails());
+			AssertJUnit.assertTrue(new DevicesPage().verifyOnlineDeviceDetails());
 			softdevices3.assertAll();
 		}
 		
@@ -168,7 +171,7 @@ public class TC004_Login_And_Test_Devices_Page extends ParentClass
 		public void Verify_Edit_Device_Name() 
 		{
 			SoftAssert softdevices4 = new SoftAssert();
-			softdevices4.assertTrue(new DevicesPage().verifyEditDeviceName());
+			AssertJUnit.assertTrue(new DevicesPage().verifyEditDeviceName());
 			softdevices4.assertAll();
 		}
 		
@@ -176,7 +179,7 @@ public class TC004_Login_And_Test_Devices_Page extends ParentClass
 		public void Verify_Offline_Devices_Details() 
 		{
 			SoftAssert softdevices5 = new SoftAssert();
-			softdevices5.assertTrue(new DevicesPage().verifyOfflineDeviceDetails());
+			AssertJUnit.assertTrue(new DevicesPage().verifyOfflineDeviceDetails());
 			softdevices5.assertAll();
 		}
 		
@@ -185,10 +188,10 @@ public class TC004_Login_And_Test_Devices_Page extends ParentClass
 		public void Verify_Devices_Help_Page() 
 		{
 			SoftAssert softdevices6 = new SoftAssert();
-			softdevices6.assertTrue(new DevicesPage().clickHelpButton());
+			AssertJUnit.assertTrue(new DevicesPage().clickHelpButton());
 			if(new DevicesPage().getDevicesHelpPageObject().isAt())
-				softdevices6.assertTrue(new DevicesPage().getDevicesHelpPageObject().clickCloseButton());
-			softdevices6.assertTrue(new DevicesPage().clickBackButton());
+				AssertJUnit.assertTrue(new DevicesPage().getDevicesHelpPageObject().clickCloseButton());
+			AssertJUnit.assertTrue(new DevicesPage().clickBackButton());
 			softdevices6.assertAll();
 		}
 }

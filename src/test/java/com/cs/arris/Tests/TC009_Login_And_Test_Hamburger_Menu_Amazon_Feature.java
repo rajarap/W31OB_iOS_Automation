@@ -1,6 +1,9 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -168,77 +171,77 @@ public class TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature extends ParentCl
 	@Test(priority = 2)
 	public void Verify_Hamburger_Menu_Page() {
 		SoftAssert softfeatures2 = new SoftAssert();
-		softfeatures2.assertTrue(new HomePage().clickNavigationButton());
+		AssertJUnit.assertTrue(new HomePage().clickNavigationButton());
 		if(new HomePage().getHamburgerMenuPageObject().isAt()) 
-			softfeatures2.assertTrue(new HomePage().getHamburgerMenuPageObject().verifyUIOnHamburgerMenuPage());
+			AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().verifyUIOnHamburgerMenuPage());
 	}
 	
 	@Test(priority = 3)
 	public void Verify_Amazon_Features_UI_Page() {
 		SoftAssert softfeatures3 = new SoftAssert();
-		softfeatures3.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAmazonFeaturesButton());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAmazonFeaturesButton());
 		if(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().isAt())
-			softfeatures3.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().verifyUIOnAFFSPage());
+			AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().verifyUIOnAFFSPage());
 	}
 	
 	@Test(priority = 4)
 	public void Verify_Get_Alexa_Skills_Drop_Down_Box() {
 		SoftAssert softfeatures4 = new SoftAssert();
-		softfeatures4.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickGetAlexaSkillsButton());
-		softfeatures4.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().alexaSkillsContent.isDisplayed());
-		softfeatures4.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickAlexaSkillsButtonAgain());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickGetAlexaSkillsButton());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().alexaSkillsContent.isDisplayed());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickAlexaSkillsButtonAgain());
 	}
 	
 	@Test(priority = 5)
 	public void Verify_Show_Password_Button() {
 		SoftAssert softfeatures5 = new SoftAssert();
-		softfeatures5.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickShowPasswordButton());
-		softfeatures5.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getPasswordText());
-		softfeatures5.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickShowPasswordButton());
-		softfeatures5.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getPasswordText());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickShowPasswordButton());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getPasswordText());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickShowPasswordButton());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getPasswordText());
 	}
 	
 	@Test(priority = 6)
 	public void Verify_Copy_Password() {
 		SoftAssert softfeatures6 = new SoftAssert();
-		softfeatures6.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickCopyPasswordButton());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickCopyPasswordButton());
 		if(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickCopyPasswordOKButton());
 	}
 	
 	@Test(priority = 7)
 	public void Verify_Amazon_Alexa_Skills_Link() {
 		SoftAssert softfeatures7 = new SoftAssert();
-		softfeatures7.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickAlexaSkillsLink());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickAlexaSkillsLink());
 	}
 	
 	@Test(priority = 8)
 	public void Verify_Please_Tap_Here_Link() {
 		SoftAssert softfeatures6 = new SoftAssert();
-		softfeatures6.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickPleaseTapHereLink());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickPleaseTapHereLink());
 	}
 
 	@Test(priority = 9)
 	public void Verify_Enable_AFFS_Feature() {
 		SoftAssert softfeatures9 = new SoftAssert();
-		softfeatures9.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().enableAFFS());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().enableAFFS());
 		if(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getAmazonWifiSimpleSetupPageObject().isAt())
-			softfeatures9.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getAmazonWifiSimpleSetupPageObject().clickCloseButton());
+			AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getAmazonWifiSimpleSetupPageObject().clickCloseButton());
 	}
 	
 	@Test(priority = 10)
 	public void Verify_Disable_AFFS_Feature() {
 		SoftAssert softfeatures10 = new SoftAssert();
-		softfeatures10.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().disableAFFS());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().disableAFFS());
 	}
 		
 	@Test(priority = 11)
 	public void Verify_Amazon_Feature_Help_Page() {
 		SoftAssert softfeatures11 = new SoftAssert();
-		softfeatures11.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickHelpIcon());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickHelpIcon());
 		
 		if(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getAFFSHelpPageObject().isAt())
-			softfeatures11.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getAFFSHelpPageObject().clickCloseButton());
+			AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().getAFFSHelpPageObject().clickCloseButton());
 		
-		softfeatures11.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickBackButton());
+		AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().getAmazonFeaturesPageObject().clickBackButton());
 	}
 }

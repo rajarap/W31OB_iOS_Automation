@@ -1,6 +1,9 @@
 package com.cs.arris.Tests;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -151,15 +154,15 @@ public class TC006_Login_And_Test_Home_Speed_Test_History_Page extends ParentCla
 	  @Test(priority = 2)
 		public void Verify_Speed_Test_Page() {
 			SoftAssert softspeedtest2 = new SoftAssert();
-			softspeedtest2.assertTrue(new HomePage().clickNavigationButton());
+			AssertJUnit.assertTrue(new HomePage().clickNavigationButton());
 			if(new HomePage().getHamburgerMenuPageObject().isAt()) 
 			{
 				if(new HomePage().getHamburgerMenuPageObject().speedTest.isDisplayed())
-					softspeedtest2.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSpeedTestButton());
+					AssertJUnit.assertTrue(new HomePage().getHamburgerMenuPageObject().clickSpeedTestButton());
 			}
 			if(new SpeedTestPage().isAt())
 			{
-				softspeedtest2.assertTrue(new SpeedTestPage().verifyUIOnSpeedTestPage());
+				AssertJUnit.assertTrue(new SpeedTestPage().verifyUIOnSpeedTestPage());
 			}
 	  }
 	  
@@ -168,16 +171,16 @@ public class TC006_Login_And_Test_Home_Speed_Test_History_Page extends ParentCla
 			SoftAssert softspeedtest3 = new SoftAssert();
 			for (int i = 0; i < 3; i++)
 			{
-				softspeedtest3.assertTrue(new SpeedTestPage().performSpeedTest());
+				AssertJUnit.assertTrue(new SpeedTestPage().performSpeedTest());
 			}
 		}
 	  
 	  @Test(priority = 4)
 		public void Verify_Speed_Test_Help_page() {
 			SoftAssert softspeedtest4 = new SoftAssert();
-			softspeedtest4.assertTrue(new SpeedTestPage().clickHelpButton());
-			softspeedtest4.assertTrue(new SpeedTestPage().getSpeedTestHelpPageObject().clickCloseButton());
-			softspeedtest4.assertTrue(new SpeedTestPage().clickBackButton());
+			AssertJUnit.assertTrue(new SpeedTestPage().clickHelpButton());
+			AssertJUnit.assertTrue(new SpeedTestPage().getSpeedTestHelpPageObject().clickCloseButton());
+			AssertJUnit.assertTrue(new SpeedTestPage().clickBackButton());
 			softspeedtest4.assertAll();
 		}
 	  
@@ -185,12 +188,12 @@ public class TC006_Login_And_Test_Home_Speed_Test_History_Page extends ParentCla
 		public void Verify_Home_Speed_Test_History_Page() {
 			SoftAssert softspeedtest5 = new SoftAssert();
 			if(new HomePage().isAt()) 
-				softspeedtest5.assertTrue(new HomePage().clickSpeedTestHistoryImage());
+				AssertJUnit.assertTrue(new HomePage().clickSpeedTestHistoryImage());
 			
 			if(new HomeSpeedTestHistoryPage().isAt())
-				softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
+				AssertJUnit.assertTrue(new HomeSpeedTestHistoryPage().verifyHomeSpeedTestHistory());
 			
-			softspeedtest5.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
+			AssertJUnit.assertTrue(new HomeSpeedTestHistoryPage().getFooterIconsPageObject().clickHomeButton());
 		}
 }
 

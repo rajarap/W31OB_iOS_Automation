@@ -61,11 +61,6 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	public WhosHomeMonitoringPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
-	
-	public WhosHomeMonitoringHelpPage getWhosHomeMonitoringHelpPage() {
-		WhosHomeMonitoringHelpPage montoringHelpPage = new WhosHomeMonitoringHelpPage();
-		return montoringHelpPage;
-	}
 
 	public boolean clickBackButton() {
 		if (backButton.isDisplayed()) {
@@ -291,10 +286,7 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 		utils.log().info("Count is : " + size);
 			
-		for (int i = 2 ; i <= size; i++) {
-			utils.log().info("Computer Device  : " + i);
-			utils.log().info("--------------------------");
-						
+		for (int i = 2 ; i <= size; i++) {					
 			List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 			"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
@@ -322,8 +314,15 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 				} catch (Exception exp) {
 					utils.log().info("Monitoring Device is not displayed ");
 				}
+				
+				try {								     
+				if (super.getDriver().findElementByXPath("["+i--+"]\"]").isDisplayed())
+					utils.log().info("Monitoring Device " + " : "
+							+ super.getDriver().findElementByXPath("["+i--+"]\"]").getText());
+				} catch (Exception exp) {
+					utils.log().info("Monitoring Device is not displayed ");
+				}
 							
-
 				utils.log().info("****************************************************");
 				utils.log().info("                                                    ");
 			}

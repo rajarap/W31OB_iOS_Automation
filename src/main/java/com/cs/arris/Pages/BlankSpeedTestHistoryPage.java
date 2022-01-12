@@ -45,10 +45,10 @@ public class BlankSpeedTestHistoryPage extends ParentClass implements Page
 	public boolean isAt() {
 		if(speedTestHistoryTitle.isDisplayed())
 		{
-			utils.log().info("On Blank Speed Test History Page");
+			utils.log().info("On Speed Test History Page");
 			return true;}
 		else {
-			utils.log().info("Not on Blank Speed Test History Page");
+			utils.log().info("Not on Speed Test History Page");
 		return false;}
 	}
 	

@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.lang.reflect.Method;
 
 import org.testng.annotations.BeforeClass;
@@ -11,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.cs.arris.Base.ParentClass;
+import com.cs.arris.Pages.MailErrorLogsPage;
 import com.cs.arris.Pages.SiginPage;
 import com.cs.arris.Utilities.TestUtils;
 import com.cs.arris.Workflows.TC51_Signin_And_Onboard_Workflow;
@@ -101,6 +104,14 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 				  super.pause(35);
 				  try{
 					  if(codeVerified.continueOnBoardingButton.isDisplayed()){
+						  codeVerified.checkError();
+						  try {
+						  	if(new MailErrorLogsPage().isAt()) {
+						  		new MailErrorLogsPage().enterEmailAddress();
+						  		new MailErrorLogsPage().clickSendButton();
+						  		super.pause(5);
+						  	}
+						  }catch(Exception e) {}
 						  codeVerified.clickContinueOnboardingButton();}
 				  }catch(Exception e){ e.getMessage();}
 		  }).optimizeYourNetworkPage(optimize -> {
@@ -149,16 +160,12 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		  }).nameYourNetworkPage(nameYourNetwork -> {
 			  nameYourNetwork.enterSSIDName(this.ssidName);
 			  nameYourNetwork.enterSSIDPassword(this.ssidpass);
-			  super.pause(20);
+			  super.pause(10);
+			  try{
+				  if(nameYourNetwork.doneLink.isDisplayed())
+					  nameYourNetwork.doneLink.click();
+			  }catch(Exception e){ e.getMessage();}
 			  nameYourNetwork.clickNextButton();
-//			  try{
-//				  if(nameYourNetwork.doneLink.isDisplayed())
-//					  nameYourNetwork.clickDoneLink();
-//			  }catch(Exception e){ e.getMessage();}
-//			  try{
-//				  if(nameYourNetwork.nextButton.isDisplayed() && nameYourNetwork.nextButton.isEnabled())
-//					  nameYourNetwork.clickNextButton();
-//			  }catch(Exception e){ e.getMessage();}
 			  super.pause(50);
 		  }).connectNeeded(connectionRequired -> { //connect SSID network to wifi
 			  connectionRequired.clickJoinButton();
@@ -192,4 +199,6 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 		  });
 	  }
 }
+
+
 

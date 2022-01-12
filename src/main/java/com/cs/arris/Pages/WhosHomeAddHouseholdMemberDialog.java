@@ -38,7 +38,7 @@ public class WhosHomeAddHouseholdMemberDialog extends ParentClass implements Pag
 	public WhosHomeAddHouseholdMemberDialog() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
-
+	
 	public boolean clickContinueButton() {
 		if (continueButton.isDisplayed()) {
 			click(continueButton);

@@ -172,7 +172,8 @@ public class DevicesPage extends ParentClass implements Page {
 				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 					
 				for (MobileElement e : entity) 
-				{
+				{	
+					super.pause(5);
 					click(super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_List_Screen_Button_Expand["+i+"]\"]"));
 					
 					try {
@@ -263,7 +264,9 @@ public class DevicesPage extends ParentClass implements Page {
 						utils.log().info("RSSI Label and RSSI data is not displayed");
 					}
 
+					super.pause(5);
 					click(super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_List_Screen_Button_Expand["+i+"]\"]"));
+					
 
 					utils.log().info("****************************************************");
 					utils.log().info("                                                    ");

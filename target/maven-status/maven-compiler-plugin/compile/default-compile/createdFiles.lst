@@ -100,6 +100,7 @@ com/cs/arris/Pages/GrantPermissionsPage.class
 com/cs/arris/Pages/NetworkEditGuestNetworkDialog.class
 com/cs/arris/Pages/ParentalControlPauseInternetforAllProfilesDialog.class
 com/cs/arris/Pages/SiginPage.class
+com/cs/arris/Listeners/RetryAnalyser.class
 com/cs/arris/Pages/NetworkLANSubnetDHCPChangeIPRangeConfigurationAlertDialog.class
 com/cs/arris/Pages/ValidationCodePage.class
 com/cs/arris/Pages/NetworkWANDNSConfigurationHelpPage.class
@@ -123,6 +124,7 @@ com/cs/arris/Pages/AddSatelliteSuccessfullyConnectedToInternetPage.class
 com/cs/arris/Pages/AmazonWiFiSimpleSetupDialog.class
 com/cs/arris/Pages/NetworkLANIPReservationHelpPage.class
 com/cs/arris/Pages/WhosHomeAddHouseholdMemberDialog.class
+com/cs/arris/Listeners/AnnotationTransformer.class
 com/cs/arris/JsonMappers/Signin_TestData.class
 com/cs/arris/Pages/AddSatellitePlacementTipsPage3.class
 com/cs/arris/Pages/NetworkWANSettingsHelpPage.class

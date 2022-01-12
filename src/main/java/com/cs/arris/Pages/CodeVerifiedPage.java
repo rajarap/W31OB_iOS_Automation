@@ -7,15 +7,18 @@ import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class CodeVerifiedPage  extends ParentClass implements Page
 {
 	public TestUtils utils = new TestUtils();
+	public TouchAction action = new TouchAction(getDriver());
 	
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Code_Verified_Screen_TitleLabel_EnterVerificationCode\"]")
 	public MobileElement codeVerifiedText;
@@ -71,6 +74,18 @@ public class CodeVerifiedPage  extends ParentClass implements Page
 	public void clickContinueOnboardingButton()
 	{
 		click(continueOnBoardingButton);
+	}
+	
+	public void checkError() {
+		int x = 187;
+		int y = 458;
+		PointOption p = new PointOption();
+		p.withCoordinates(x, y);
+		
+		for(int i=0; i <= 7; i++) {
+			action.tap(p);
+			action.release().perform();
+		}
 	}
 
 	@Override
