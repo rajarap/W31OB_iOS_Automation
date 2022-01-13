@@ -79,35 +79,47 @@ public class WhosHomeAddHouseholdMemberDialog extends ParentClass implements Pag
 		utils.log().info("Details of UI Elements on Whos Home Page ");
 		utils.log().info("*****************************************");
 		try {
-			if (addMemberTitle.isDisplayed())
-				utils.log().info(addMemberTitle.getText() + " text is displayed");
-			else
+			try {
+				if (addMemberTitle.isDisplayed())
+					utils.log().info(addMemberTitle.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("ADD HOUSEHOLD MEMBER Text is not displayed");
+			}
 
-			if (pageIndicator.isDisplayed())
-				utils.log().info("Page Indicator Image is displayed");
-			else
+			try {
+				if (pageIndicator.isDisplayed())
+					utils.log().info("Page Indicator Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("age Indicator  Image is not displayed");
+			}
 			
-			if (houseHoldMemberLabel.isDisplayed())
-				utils.log().info(houseHoldMemberLabel.getText() + " title is displayed");
-			else
+			try {
+				if (houseHoldMemberLabel.isDisplayed())
+					utils.log().info(houseHoldMemberLabel.getText() + " title is displayed");
+			} catch (Exception e) {
 				utils.log().info("Household Member Name label is not displayed");
+			}
 
-			if (enterHouseHoldMemberNameTextBox.isDisplayed())
-				utils.log().info("Add Household memeber text box is displayed");
-			else
+			try {
+				if (enterHouseHoldMemberNameTextBox.isDisplayed())
+					utils.log().info("Add Household memeber text box is displayed");
+			} catch (Exception e) {
 				utils.log().info("Add Household memeber text box is not displayed");
+			}
 
-			if (continueButton.isDisplayed())
-				utils.log().info("Continue button is displayed");
-			else
+			try {
+				if (continueButton.isDisplayed())
+					utils.log().info("Continue button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Continue button is not displayed");
+			}
 			
-			if (closeButton.isDisplayed())
-				utils.log().info("Close button is displayed");
-			else
+			try {
+				if (closeButton.isDisplayed())
+					utils.log().info("Close button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Close button is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {

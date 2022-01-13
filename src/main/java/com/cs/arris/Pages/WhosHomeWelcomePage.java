@@ -84,30 +84,40 @@ public class WhosHomeWelcomePage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on Whos Home Welcome Page");
 		utils.log().info("************************************************");
 		try {
-			if (whosHomeWelcomePageTitle.isDisplayed())
-				utils.log().info(whosHomeWelcomePageTitle.getText() + " text is displayed");
-			else
+			try {
+				if (whosHomeWelcomePageTitle.isDisplayed())
+					utils.log().info(whosHomeWelcomePageTitle.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Welcome to Who’s Home Text is not displayed");
+			}
 
-			if (whosHomeWelcomePageSubTitle.isDisplayed())
-				utils.log().info(whosHomeWelcomePageSubTitle.getText() + " title is displayed");
-			else
+			try {
+				if (whosHomeWelcomePageSubTitle.isDisplayed())
+					utils.log().info(whosHomeWelcomePageSubTitle.getText() + " title is displayed");
+			} catch (Exception e) {
 				utils.log().info("Find out who’s home and who’s not sub title is not displayed");
+			}
 
-			if (image.isDisplayed())
-				utils.log().info("Who's home Image is displayed");
-			else
+			try {
+				if (image.isDisplayed())
+					utils.log().info("Who's home Image is displayed");	
+			} catch (Exception e) {
 				utils.log().info("Who's home Image is not displayed");
+			}
 
-			if (addMemberButton.isDisplayed())
-				utils.log().info(addMemberButton.getText() + " button is displayed");
-			else
+			try {
+				if (addMemberButton.isDisplayed())
+					utils.log().info("Adding Household Member button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Add Household Member button is not displayed");
+			}
 
-			if (backButton.isDisplayed())
-				utils.log().info(backButton.getText() + " button is displayed");
-			else
+			try {
+				if (backButton.isDisplayed())
+					utils.log().info("BACK button is displayed");
+			} catch (Exception e) {
 				utils.log().info("BACK button is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {

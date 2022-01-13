@@ -203,45 +203,63 @@ public class HamburgerMenuPage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on the Hamburger Page  ");
 		utils.log().info("**********************************************");
 		try {
-			if (addDevice.isDisplayed())
-				utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is displayed");
-			else
+			try {
+				if (addDevice.isDisplayed())
+					utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + addDevice.getText() + " - is not displayed");
+			}
 
-			if (removeDevice.isDisplayed())
-				utils.log().info("Hamburger Menu - " + removeDevice.getText() + " - is displayed");
-			else
+			try {
+				if (removeDevice.isDisplayed())
+					utils.log().info("Hamburger Menu - " + removeDevice.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + removeDevice.getText() + " - is not displayed");
+			}
+			
 
-			if (speedTest.isDisplayed())
-				utils.log().info("Hamburger Menu - " + speedTest.getText() + " - is displayed");
-			else
+			try {
+				if (speedTest.isDisplayed())
+					utils.log().info("Hamburger Menu - " + speedTest.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + speedTest.getText() + " - is not displayed");
+			}
 
-			if (addNewSatellite.isDisplayed())
-				utils.log().info("Hamburger Menu - " + addNewSatellite.getText() + " - is displayed");
-			else
+			try {
+				if (addNewSatellite.isDisplayed())
+					utils.log().info("Hamburger Menu - " + addNewSatellite.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + addNewSatellite.getText() + " - is not displayed");
+			}
 
-			if (amazonFeatures.isDisplayed())
-				utils.log().info("Hamburger Menu - " + amazonFeatures.getText() + " - is displayed");
-			else
+			try {
+				if (amazonFeatures.isDisplayed())
+					utils.log().info("Hamburger Menu - " + amazonFeatures.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + amazonFeatures.getText() + " - is not displayed");
+			}
 
-			if (helpMenu.isDisplayed())
-				utils.log().info("Hamburger Menu - " + helpMenu.getText() + " - is displayed");
-			else
+			try {
+				if (helpMenu.isDisplayed())
+					utils.log().info("Hamburger Menu - " + helpMenu.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + helpMenu.getText() + " - is not displayed");
+			}
 
-			if (aboutApp.isDisplayed())
-				utils.log().info("Hamburger Menu - " + aboutApp.getText() + " - is displayed");
-			else
+			try {
+				if (aboutApp.isDisplayed())
+					utils.log().info("Hamburger Menu - " + aboutApp.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + aboutApp.getText() + " - is not displayed");
+			}
 
-			if (appSettings.isDisplayed())
-				utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is displayed");
-			else
+			try {
+				if (appSettings.isDisplayed())
+					utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is displayed");
+
+			} catch (Exception e) {
 				utils.log().info("Hamburger Menu - " + appSettings.getText() + " - is not displayed");
+			}
 			return true;
 		} catch (Exception e) {
 			return false;

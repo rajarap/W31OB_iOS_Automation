@@ -40,8 +40,7 @@ public class HomeNetworkHealthOptimizationPage extends ParentClass implements Pa
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_TurnOn\"]")
 	public MobileElement networkOptimizationTurnedOnText; 
 	
-	
-	
+		
 	//after network optimization
 
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_Title[1]\"]")
@@ -53,8 +52,7 @@ public class HomeNetworkHealthOptimizationPage extends ParentClass implements Pa
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_Connection[1]\"]")
 	public MobileElement satelliteDeviceStatus; 
 	
-	
-	
+		
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_Title[2]\"]")
 	public MobileElement devicesLabel; 
 	
@@ -64,8 +62,7 @@ public class HomeNetworkHealthOptimizationPage extends ParentClass implements Pa
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_Connection[2]\"]")
 	public MobileElement devicesStatus; 
 	
-	
-	
+		
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_Title[3]\"]")
 	public MobileElement ispLabel; 
 	
@@ -75,8 +72,7 @@ public class HomeNetworkHealthOptimizationPage extends ParentClass implements Pa
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_Connection[3]\"]")
 	public MobileElement ispDeviceStatus; 
 	
-	
-	
+		
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Network_Health_Dashboard_Screen_Label_NoRecommendations\"]")
 	public MobileElement noRecommendations; 
 	
@@ -172,20 +168,26 @@ public class HomeNetworkHealthOptimizationPage extends ParentClass implements Pa
 			utils.log().info("Details of UI Elements on Network Health Optimization Page");
 			utils.log().info("**********************************************************");
 			try {
-				if (networkOptimizationTitle.isDisplayed())
-					utils.log().info(networkOptimizationTitle.getText() + " title text is displayed");
-				else
+				try {
+					if (networkOptimizationTitle.isDisplayed())
+						utils.log().info(networkOptimizationTitle.getText() + " title text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Network Health Optimization title text is not displayed");
+				}
 
-				if (backButton.isDisplayed())
-					utils.log().info("Back button is displayed");
-				else
+				try {
+					if (backButton.isDisplayed())
+						utils.log().info("Back button is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Back button is not displayed");
+				}
 				
-				if (networkOptimizationIcon.isDisplayed())
-					utils.log().info("Optimization button is displayed");
-				else
+				try {
+					if (networkOptimizationIcon.isDisplayed())
+						utils.log().info("Optimization button is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Optimization button is not displayed");
+				}
 				
 				try{
 					if (networkOptimizationTurnedOffText.isDisplayed())
@@ -214,20 +216,26 @@ public class HomeNetworkHealthOptimizationPage extends ParentClass implements Pa
 			utils.log().info("Details of UI Elements with Network Optimization Recommendations ");
 			utils.log().info("******************************************************************");
 			try {
-				if (satelliteLabel.isDisplayed() && satelliteDeviceStatus.isDisplayed())
-					utils.log().info(satelliteLabel.getText() + " : " + satelliteDeviceStatus.getText());
-				else
+				try {
+					if (satelliteLabel.isDisplayed() && satelliteDeviceStatus.isDisplayed())
+						utils.log().info(satelliteLabel.getText() + " : " + satelliteDeviceStatus.getText());
+				} catch (Exception e1) {
 					utils.log().info("Satellite Health Recommendations is not displayed");
+				}
 
-				if (devicesLabel.isDisplayed() && devicesStatus.isDisplayed())
-					utils.log().info(devicesLabel.getText() + " : " + devicesStatus.getText());
-				else
+				try {
+					if (devicesLabel.isDisplayed() && devicesStatus.isDisplayed())
+						utils.log().info(devicesLabel.getText() + " : " + devicesStatus.getText());
+				} catch (Exception e1) {
 					utils.log().info("Devices Health Recommendations is not displayed");
+				}
 				
-				if (ispLabel.isDisplayed() && ispDeviceStatus.isDisplayed())
-					utils.log().info(ispLabel.getText() + " : " + ispDeviceStatus.getText());
-				else
+				try {
+					if (ispLabel.isDisplayed() && ispDeviceStatus.isDisplayed())
+						utils.log().info(ispLabel.getText() + " : " + ispDeviceStatus.getText());
+				} catch (Exception e1) {
 					utils.log().info("ISP Health Recommendations is not displayed");
+				}
 				
 				try{
 					if (noRecommendations.isDisplayed())

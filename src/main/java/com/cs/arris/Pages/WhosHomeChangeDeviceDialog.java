@@ -199,14 +199,12 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 		}
 	}
 	
-	public boolean verifyPickAPhoneDevice() {
+	public boolean verifyPhoneDevice() {
 		utils.log().info("                                                       ");
 		utils.log().info("*******************************************************");
 		utils.log().info("Details of Phone Devices Listed in Pick A Device Dialog");
 		utils.log().info("*******************************************************");
 
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 			utils.log().info("Count of Phone Devices is : " + size);
 			
@@ -237,20 +235,14 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no Phone Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 	
-	public boolean verifyPickATabDevice() {
+	public boolean verifyTabDevice() {
 		utils.log().info("                                                     ");
 		utils.log().info("*****************************************************");
 		utils.log().info("Details of Tab Devices Listed in Pick A Device Dialog");
 		utils.log().info("*****************************************************");
 
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 			utils.log().info("Count of Tab Devices is : " + size);
 			
@@ -281,20 +273,14 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no Tab Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 	
-	public boolean verifyPickAComputerDevice() {
+	public boolean verifyComputerDevice() {
 		utils.log().info("                                                          ");
 		utils.log().info("**********************************************************");
 		utils.log().info("Details of Computer Devices Listed in Pick A Device Dialog");
 		utils.log().info("**********************************************************");
 
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 			utils.log().info("Count of Computer Devices is : " + size);
 			
@@ -325,20 +311,14 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no Computer Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 	
-	public boolean verifyPickAIOTrDevice() {
+	public boolean verifyIOTrDevice() {
 		utils.log().info("                                                     ");
 		utils.log().info("*****************************************************");
 		utils.log().info("Details of IOT Devices Listed in Pick A Device Dialog");
 		utils.log().info("*****************************************************");
 
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 			utils.log().info("Count of IOT Devices is : " + size);
 			
@@ -369,17 +349,12 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no IOT Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 	
 	public boolean pickAIOTrDevice() {
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
+
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-	//		utils.log().info("Count of IOT Devices is : " + size);
+			utils.log().info("Count of IOT Devices is : " + size);
 			
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting IOT Device  : " + i);
@@ -409,17 +384,11 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no IOT Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 	
 	public boolean pickAPhoneDevice() {
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-	//		utils.log().info("Count of IOT Devices is : " + size);
+			utils.log().info("Count of Phone Devices is : " + size);
 			
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting Phone Device  : " + i);
@@ -449,17 +418,11 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no Phone Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 	
 	public boolean pickATabDevice() {
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-	//		utils.log().info("Count of IOT Devices is : " + size);
+			utils.log().info("Count of IOT Devices is : " + size);
 			
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting Tab Device  : " + i);
@@ -489,17 +452,11 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no Tab Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 	
 	public boolean pickAComputerDevice() {
-		if(!(super.getDriver().findElementByXPath("//XCUIElementTypeTable[@name=\"Empty list\"]").isDisplayed()))
-		{
 			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-	//		utils.log().info("Count of IOT Devices is : " + size);
+			utils.log().info("Count of Computer Devices is : " + size);
 			
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting Computer Device  : " + i);
@@ -529,10 +486,6 @@ public class WhosHomeChangeDeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-		}else {
-			utils.log().info("There are currently no Computer Device Listed in the Pick A Device Dialog ");
-			return true;
-		}
 	}
 
 	@Override

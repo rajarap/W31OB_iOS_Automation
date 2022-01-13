@@ -339,30 +339,40 @@ public class DevicesPage extends ParentClass implements Page {
 		utils.log().info("********************************************");
 
 		try {
-			if (onlineDeviceTitle.isDisplayed())
-				utils.log().info("Device Title - " + onlineDeviceTitle.getText() + " is displayed");
-			else
+			try {
+				if (onlineDeviceTitle.isDisplayed())
+					utils.log().info("Device Title - " + onlineDeviceTitle.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Device Title is not displayed");
+			}
 
-			if (backButton.isDisplayed())
+			try {
+				if (backButton.isDisplayed())
+					utils.log().info("Back Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Back Icon is displayed");
-			else
-				utils.log().info("Back Icon is displayed");
+			}
 
-			if (helpIcon.isDisplayed())
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help Icon is displayed");
-			else
-				utils.log().info("Help Icon is displayed");
+			}
 
-			if (onlineButton.isDisplayed())
-				utils.log().info("Online Tab is displayed");
-			else
+			try {
+				if (onlineButton.isDisplayed())
+					utils.log().info("Online Tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("Online Tab is not displayed");
+			}
 
-			if (offlineButton.isDisplayed())
-				utils.log().info("Offline Tab is displayed");
-			else
+			try {
+				if (offlineButton.isDisplayed())
+					utils.log().info("Offline Tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("Offline Tab is not displayed");
+			}
 
 //			if (mainDeviceName.isDisplayed())
 //				utils.log().info("Main Device name - " + mainDeviceName.getText() + " - is displayed");

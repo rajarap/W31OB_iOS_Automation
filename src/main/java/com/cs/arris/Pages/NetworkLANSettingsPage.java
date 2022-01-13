@@ -135,35 +135,47 @@ public class NetworkLANSettingsPage extends ParentClass implements Page {
 		utils.log().info("*****************************************************");
 		try {
 
-			if (lanSettingsTitle.isDisplayed())
-				utils.log().info(lanSettingsTitle.getText() + " title text is displayed ");
-			else
+			try {
+				if (lanSettingsTitle.isDisplayed())
+					utils.log().info(lanSettingsTitle.getText() + " title text is displayed ");
+			} catch (Exception e) {
 				utils.log().info("LAN Settings title text is not displayed");
+			}
 
-			if (backIcon.isDisplayed())
-				utils.log().info("Back Icon is displayed ");
-			else
+			try {
+				if (backIcon.isDisplayed())
+					utils.log().info("Back Icon is displayed ");
+			} catch (Exception e) {
 				utils.log().info("Back Icon is not displayed");
+			}
 
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help Icon is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help Icon is not displayed");
+			}
 
-			if (lanIPReservationLabel.isDisplayed())
-				utils.log().info("LAN IP Reservation Link is displayed");
-			else
+			try {
+				if (lanIPReservationLabel.isDisplayed())
+					utils.log().info("LAN IP Reservation Link is displayed");
+			} catch (Exception e) {
 				utils.log().info("LAN IP Reservation Link is not displayed");
+			}
 
-			if (lanSubnetLabel.isDisplayed())
-				utils.log().info("LAC Link is displayed");
-			else
+			try {
+				if (lanSubnetLabel.isDisplayed())
+					utils.log().info("LAC Link is displayed");
+			} catch (Exception e) {
 				utils.log().info("LAC Link is not displayed");
+			}
 			
-			if (lanDHCPLeaseTimeLabel.isDisplayed())
-				utils.log().info("DNS Configuration Link is displayed ");
-			else
+			try {
+				if (lanDHCPLeaseTimeLabel.isDisplayed())
+					utils.log().info("DNS Configuration Link is displayed ");
+			} catch (Exception e) {
 				utils.log().info("DNS Configuration Link is not displayed");
+			}
 			
 			return true;
 		} catch (Exception e) {

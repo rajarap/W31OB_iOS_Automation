@@ -67,60 +67,82 @@ public class AddDeviceHomePageDeviceDetailsPage extends ParentClass implements P
 
 	public boolean verifyDeviceDetailsUI() {
 		try {
-			if (deviceDetailsTitle.isDisplayed())
-				utils.log().info(deviceDetailsTitle.getText() + " text is displayed");
-			else
+			try {
+				if (deviceDetailsTitle.isDisplayed())
+					utils.log().info(deviceDetailsTitle.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Device Details Text is not displayed");
+			}
 
-			if (deviceDetailsText.isDisplayed())
-				utils.log().info(deviceDetailsText.getText() + " text is displayed");
-			else
+			try {
+				if (deviceDetailsText.isDisplayed())
+					utils.log().info(deviceDetailsText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Devide Details Text is not displayed");
+			}
 
-			if (closeButton.isDisplayed())
-				utils.log().info("Cloe button is displayed");
-			else
+			try {
+				if (closeButton.isDisplayed())
+					utils.log().info("Cloe button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Close button is not displayed");
+			}
 
-			if (productNumber.isDisplayed())
-				utils.log().info(productNumber.getText() + " text is displayed");
-			else
+			try {
+				if (productNumber.isDisplayed())
+					utils.log().info(productNumber.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Product Model No. text is not displayed");
+			}
 
-			if (productDetails.isDisplayed())
-				utils.log().info(productDetails.getText() + " text is displayed");
-			else
+			try {
+				if (productDetails.isDisplayed())
+					utils.log().info(productDetails.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Product Details is not displayed");
+			}
 
-			if (serviceProviderText.isDisplayed())
-				utils.log().info(serviceProviderText.getText() + " text is displayed");
-			else
+			try {
+				if (serviceProviderText.isDisplayed())
+					utils.log().info(serviceProviderText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Service Provider text is not displayed");
+			}
 
-			if (serviceProviderName.isDisplayed())
-				utils.log().info(serviceProviderName.getText() + " text is displayed");
-			else
+			try {
+				if (serviceProviderName.isDisplayed())
+					utils.log().info(serviceProviderName.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Service Provider Name text is not displayed");
+			}
 
-			if (hardwareSpecText.isDisplayed())
-				utils.log().info(hardwareSpecText.getText() + " text is displayed");
-			else
+			try {
+				if (hardwareSpecText.isDisplayed())
+					utils.log().info(hardwareSpecText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hardware Spec text is not displayed");
+			}
 
-			if (hardwareSpecDetails.isDisplayed())
-				utils.log().info(hardwareSpecDetails.getText() + " text is displayed");
-			else
+			try {
+				if (hardwareSpecDetails.isDisplayed())
+					utils.log().info(hardwareSpecDetails.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Hardware Spec Name is not displayed");
+			}
 
-			if (ethernetPortText.isDisplayed())
-				utils.log().info(ethernetPortText.getText() + " text is displayed");
-			else
+			try {
+				if (ethernetPortText.isDisplayed())
+					utils.log().info(ethernetPortText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Ethernet Port text is not displayed");
+			}
 
-			if (ethernetPortDetails.isDisplayed())
-				utils.log().info(ethernetPortDetails.getText() + " text is displayed");
-			else
+			try {
+				if (ethernetPortDetails.isDisplayed())
+					utils.log().info(ethernetPortDetails.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Ethernet Port Number is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {

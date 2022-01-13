@@ -188,50 +188,68 @@ public class AddDeviceHomePage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on the Home Page  ");
 		utils.log().info("*****************************************");
 		try {
-			if (homeTitle.isDisplayed())
-				utils.log().info("Title " + homeTitle.getText() + " is displayed");
-			else
+			try {
+				if (homeTitle.isDisplayed())
+					utils.log().info("Title " + homeTitle.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Home Title is not displayed");
+			}
 
-			if (navigateButton.isDisplayed())
+			try {
+				if (navigateButton.isDisplayed())
+					utils.log().info("Navigate Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Navigate Icon is displayed");
-			else
-				utils.log().info("Navigate Icon is displayed");
+			}
 
-			if (notificationsIcon.isDisplayed())
-				utils.log().info("Notifications Icon is displayed");
-			else
+			try {
+				if (notificationsIcon.isDisplayed())
+					utils.log().info("Notifications Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Notifications Icon is not displayed");
+			}
 
-			if (maxRouterTab.isDisplayed())
-				utils.log().info("Max Router Tab is displayed");
-			else
+			try {
+				if (maxRouterTab.isDisplayed())
+					utils.log().info("Max Router Tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("Max Router Tab is not displayed");
+			}
 
-			if (cableModemTab.isDisplayed())
-				utils.log().info("Cable Modem Tab is displayed");
-			else
+			try {
+				if (cableModemTab.isDisplayed())
+					utils.log().info("Cable Modem Tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("cable Modem Tab is not displayed");
+			}
 
-			if (cableModemName.isDisplayed())
-				utils.log().info("Cable Modem Name : " + cableModemName.getText() + " is displayed");
-			else
+			try {
+				if (cableModemName.isDisplayed())
+					utils.log().info("Cable Modem Name : " + cableModemName.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Cable Modem Name is not displayed");
+			}
 
-			if (cableModemImage.isDisplayed())
-				utils.log().info("Cable Modem Image is displayed");
-			else
+			try {
+				if (cableModemImage.isDisplayed())
+					utils.log().info("Cable Modem Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Cable Modem Image is not displayed");
+			}
 
-			if (deviceDetailsText.isDisplayed())
-				utils.log().info("Device Details Text is displayed");
-			else
+			try {
+				if (deviceDetailsText.isDisplayed())
+					utils.log().info("Device Details Text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Device Details is not displayed");
+			}
 
-			if (specificationsText.isDisplayed())
-				utils.log().info("Specifications Text is displayed");
-			else
+			try {
+				if (specificationsText.isDisplayed())
+					utils.log().info("Specifications Text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Specifications is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {

@@ -327,20 +327,26 @@ public class HomeNetworkHealthOptimizationSettingsPage extends ParentClass imple
 			utils.log().info("Details of UI Elements on Network Health Optimization Settings Page");
 			utils.log().info("*******************************************************************");
 			try {
-				if (networkOptimizationSettingsTitle.isDisplayed())
-					utils.log().info(networkOptimizationSettingsTitle.getText() + " title text is displayed");
-				else
+				try {
+					if (networkOptimizationSettingsTitle.isDisplayed())
+						utils.log().info(networkOptimizationSettingsTitle.getText() + " title text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Network Health Optimization Settings title text is not displayed");
+				}
 
-				if (backButton.isDisplayed())
-					utils.log().info("Back button is displayed");
-				else
+				try {
+					if (backButton.isDisplayed())
+						utils.log().info("Back button is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Back button is not displayed");
+				}
 				
-				if (networkOptimizationToggleButton.isDisplayed())
-					utils.log().info("Optimization Toggle button is displayed");
-				else
+				try {
+					if (networkOptimizationToggleButton.isDisplayed())
+						utils.log().info("Optimization Toggle button is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Optimization Toggle button is not displayed");
+				}
 				
 				try{
 					if (optimizationLabel.isDisplayed())
@@ -369,40 +375,54 @@ public class HomeNetworkHealthOptimizationSettingsPage extends ParentClass imple
 			utils.log().info("Details of UI Elements on Network Health Optimization Settings Enabled Page");
 			utils.log().info("***************************************************************************");
 			try {
-				if (recommendedSensitivitiy.isDisplayed())
-					utils.log().info(recommendedSensitivitiy.getText() + " text is displayed");
-				else
+				try {
+					if (recommendedSensitivitiy.isDisplayed())
+						utils.log().info(recommendedSensitivitiy.getText() + " text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Recommendation sensitivity text is not displayed");
+				}
 
-				if (controlSensitivityText.isDisplayed())
-					utils.log().info(controlSensitivityText.getText() + " text is displayed");
-				else
+				try {
+					if (controlSensitivityText.isDisplayed())
+						utils.log().info(controlSensitivityText.getText() + " text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Control the recommendation frequency by adjusting the sensitivity is not displayed");
+				}
 				
-				if (lowSensitivityLabel.isDisplayed())
-					utils.log().info(lowSensitivityLabel.getText() + " text is displayed");
-				else
+				try {
+					if (lowSensitivityLabel.isDisplayed())
+						utils.log().info(lowSensitivityLabel.getText() + " text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Low text is not displayed");
+				}
 				
-				if (mediumSensitivityLabel.isDisplayed())
-					utils.log().info(mediumSensitivityLabel.getText() + " text is displayed");
-				else
+				try {
+					if (mediumSensitivityLabel.isDisplayed())
+						utils.log().info(mediumSensitivityLabel.getText() + " text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Medium(Optional) is not displayed");
+				}
 				
-				if (highSensitivityLabel.isDisplayed())
-					utils.log().info(highSensitivityLabel.getText() + " text is displayed");
-				else
+				try {
+					if (highSensitivityLabel.isDisplayed())
+						utils.log().info(highSensitivityLabel.getText() + " text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("High is not displayed");
+				}
 				
-				if (sliderImage.isDisplayed())
-					utils.log().info("Slider Image is displayed");
-				else
+				try {
+					if (sliderImage.isDisplayed())
+						utils.log().info("Slider Image is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Slider Image is not displayed");
+				}
 				
-				if (notifiedLabel.isDisplayed())
-					utils.log().info(notifiedLabel.getText() + " text is displayed");
-				else
+				try {
+					if (notifiedLabel.isDisplayed())
+						utils.log().info(notifiedLabel.getText() + " text is displayed");
+				} catch (Exception e1) {
 					utils.log().info("You will be notified as soon as your  text is not displayed");
+				}
 				
 				try{
 					if (connectedDevicesSignalLabel.isDisplayed())

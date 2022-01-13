@@ -286,41 +286,55 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		utils.log().info("LED Settings Verficiation");
 		utils.log().info("*************************");
 		try {
-			if (ledSettingsButton.isDisplayed()) {
-				click(ledSettingsButton);
-				utils.log().info("Clicked on LED Settings button");
-			}else {
-				utils.log().info("LED SEttings text is not displayed");}
+			try {
+				if (ledSettingsButton.isDisplayed()) {
+					click(ledSettingsButton);
+					utils.log().info("Clicked on LED Settings button");}
+			} catch (Exception e) {
+				utils.log().info("LED SEttings text is not displayed");
+			}
 
-			if (ledColorImage.isDisplayed())
-				utils.log().info("Brightness Icon is displayed");
-			else
+			try {
+				if (ledColorImage.isDisplayed())
+					utils.log().info("Brightness Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Brightness Icon is not displayed");
+			}
 
-			if (ledMoonColorImage.isDisplayed())
-				utils.log().info("Moon Image is displayed");
-			else
+			try {
+				if (ledMoonColorImage.isDisplayed())
+					utils.log().info("Moon Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Moon Image is not displayed");
+			}
 
-			if (ledSunColorImage.isDisplayed())
-				utils.log().info("Sun Brightness image is displayed");
-			else
+			try {
+				if (ledSunColorImage.isDisplayed())
+					utils.log().info("Sun Brightness image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Sun Brightness image is not displayed");
+			}
 
-			if (chooseColorBrightnessLabel.isDisplayed())
-				utils.log().info("Choose Color Brightness label is displayed");
-			else
+			try {
+				if (chooseColorBrightnessLabel.isDisplayed())
+					utils.log().info("Choose Color Brightness label is displayed");
+			} catch (Exception e) {
 				utils.log().info("Choose Color Brightness label is not displayed");
+			}
 			
-			if (seekBar.isDisplayed())
-				utils.log().info("Seekbar is displayed");
-			else
+			try {
+				if (seekBar.isDisplayed())
+					utils.log().info("Seekbar is displayed");
+			} catch (Exception e) {
 				utils.log().info("Seekbar is not displayed");
+			}
 			
-			if (scale.isDisplayed())
-				utils.log().info("Scale is displayed");
-			else
+			try {
+				if (scale.isDisplayed())
+					utils.log().info("Scale is displayed");
+			} catch (Exception e) {
 				utils.log().info("Scale is not displayed");
+			}
 
 			click(ledSettingsButton);
 
@@ -435,75 +449,103 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on the All Tab Page ");
 		utils.log().info("*******************************************");
 		try {
-			if (mainTitle.isDisplayed())
-				utils.log().info(mainTitle.getText() + " Title text is displayed ");
-			else
+			try {
+				if (mainTitle.isDisplayed())
+					utils.log().info(mainTitle.getText() + " Title text is displayed ");
+			} catch (Exception e) {
 				utils.log().info("Main title text is not displayed");
+			}
 
-			if (backIcon.isDisplayed())
-				utils.log().info("Back Icon image is displayed ");
-			else
+			try {
+				if (backIcon.isDisplayed())
+					utils.log().info("Back Icon image is displayed ");
+			} catch (Exception e) {
 				utils.log().info("Back Icon image is not displayed");
+			}
 
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help Icon is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help Icon is not displayed");
+			}
 
-			if (allTab.isDisplayed())
-				utils.log().info("All tab is displayed");
-			else
+			try {
+				if (allTab.isDisplayed())
+					utils.log().info("All tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("All tab is not displayed");
+			}
 
-			if (fiveGhzTab.isDisplayed())
-				utils.log().info("5GHz tab is displayed");
-			else
+			try {
+				if (fiveGhzTab.isDisplayed())
+					utils.log().info("5GHz tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("5GHz tab is not displayed");
+			}
 
-			if (twentyFourGhzTab.isDisplayed())
-				utils.log().info("2.4GHz tab is displayed");
-			else
+			try {
+				if (twentyFourGhzTab.isDisplayed())
+					utils.log().info("2.4GHz tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("2.4GHz tab is not displayed");
+			}
 
-			if (ethernetTab.isDisplayed())
-				utils.log().info("Ethernet tab is displayed");
-			else
+			try {
+				if (ethernetTab.isDisplayed())
+					utils.log().info("Ethernet tab is displayed");
+			} catch (Exception e) {
 				utils.log().info("Ethernet tab is not displayed");
+			}
 
-			if (mainRouterImage.isDisplayed())
-				utils.log().info("Main Router image is displayed");
-			else
+			try {
+				if (mainRouterImage.isDisplayed())
+					utils.log().info("Main Router image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Main Router image is not displayed");
+			}
 
-			if (totalDeviceImage.isDisplayed()) 
-				utils.log().info(totalDeviceImage.getText() + " devices are connected to the Main Router ");
-			else
+			try {
+				if (totalDeviceImage.isDisplayed()) 
+					utils.log().info(totalDeviceImage.getText() + " devices are connected to the Main Router ");
+			} catch (Exception e) {
 				utils.log().info("Count of devices connected to the Main Router is not displayed");
+			}
 			
-			if (excellentDeviceImage.isDisplayed()) 
-				utils.log().info(excellentDeviceImage.getText() + " excellent devices are connected to the Main Router");
-			else
+			try {
+				if (excellentDeviceImage.isDisplayed()) 
+					utils.log().info(excellentDeviceImage.getText() + " excellent devices are connected to the Main Router");
+			} catch (Exception e) {
 				utils.log().info("Count of excellent devices connected to the Main Router is not displayed");
+			}
 			
-			if (mediumDeviceImage.isDisplayed()) 
-				utils.log().info(mediumDeviceImage.getText() + " medium devices are connected to the Main Router");
-			else
+			try {
+				if (mediumDeviceImage.isDisplayed()) 
+					utils.log().info(mediumDeviceImage.getText() + " medium devices are connected to the Main Router");
+			} catch (Exception e) {
 				utils.log().info("Count of medium devices connected to the Main Router is not displayed");
+			}
 			
-			if (poorDeviceImage.isDisplayed()) 
-				utils.log().info(poorDeviceImage.getText() + " poor devices are connected to the Main Router");
-			else
+			try {
+				if (poorDeviceImage.isDisplayed()) 
+					utils.log().info(poorDeviceImage.getText() + " poor devices are connected to the Main Router");
+			} catch (Exception e) {
 				utils.log().info("Count of poor devices connected to the Main Router is not displayed");
+			}
 
-			if (mainRouterName.isDisplayed())
-				utils.log().info("Main Router Device Name is " + mainRouterName.getText());
-			else
+			try {
+				if (mainRouterName.isDisplayed())
+					utils.log().info("Main Router Device Name is " + mainRouterName.getText());
+			} catch (Exception e) {
 				utils.log().info("Main Router Name is not displayed");
+			}
 
-			if (mainRouterStatus.isDisplayed())
-				utils.log().info("Main Router Status " + mainRouterStatus.getText());
-			else
+			try {
+				if (mainRouterStatus.isDisplayed())
+					utils.log().info("Main Router Status " + mainRouterStatus.getText());
+			} catch (Exception e) {
 				utils.log().info("Main Router Status is not displayed");
+			}
 			
 			return true;
 		} catch (Exception e) {
@@ -633,89 +675,73 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			utils.log().info("Details of MAIN Router Device     ");
 			utils.log().info("**********************************");
 
-			if (channelLabel.isDisplayed()) {
-				if (fiveGhzDeviceCount.isDisplayed()) {
+			try {
+				if (channelLabel.isDisplayed() && fiveGhzDeviceCount.isDisplayed()) 
 					this.fiveGhzDevice = fiveGhzDeviceCount.getText();
-					utils.log().info("Channel 1 : " + this.fiveGhzDevice);
-				} else {
-					utils.log().info("Count of 5GHz devices connected to Main Router is not displayed ");
-				}
-			} else {
-				utils.log().info("Channel Label is not displayed ");
+				utils.log().info("Channel 2 : " + this.fiveGhzDevice);
+			} catch (Exception e) {
+				utils.log().info("Channel 5GHz count details is not displayed ");
 			}
 
-			if (channelLabel.isDisplayed()) {
-				if (twoFourGhzDeviceCount.isDisplayed()) {
+			try {
+				if (channelLabel.isDisplayed() && twoFourGhzDeviceCount.isDisplayed())
 					this.twoFourGhzDevice = twoFourGhzDeviceCount.getText();
-					utils.log().info("Channel 2 : " + this.twoFourGhzDevice);
-				} else {
-					utils.log().info("Count of 2.4GHz devices connected to Main Router is not displayed ");
-				}
-			} else {
-				utils.log().info("Channel Label is not displayed ");
+				utils.log().info("Channel 2 : " + this.twoFourGhzDevice);
+			} catch (Exception e) {
+				utils.log().info("Channel 2.4GHz count details is not displayed ");
 			}
 
-			if (wanIPAddressLabel.isDisplayed()) {
-				if (mainDeviceWANIPAddress.isDisplayed())
-					utils.log().info("WAN IP Address : " + mainDeviceWANIPAddress.getText());
-				else
+			try {
+			if (wanIPAddressLabel.isDisplayed() && mainDeviceWANIPAddress.isDisplayed())
+					utils.log().info(wanIPAddressLabel.getText() + " : " + mainDeviceWANIPAddress.getText());
+			} catch (Exception e) {
 					utils.log().info("WAN IP Address of the Main Router is not displayed ");
-			} else {
-				utils.log().info("WAN IP Address Label is not displayed ");
 			}
 
-			if (lanIPAddressLabel.isDisplayed()) {
-				if (mainDeviceLANIPAddress.isDisplayed())
-					utils.log().info("LAN IP Address : " + mainDeviceLANIPAddress.getText());
-				else
-					utils.log().info("LAN IP Address of the Main Router is not displayed ");
-			} else {
-				utils.log().info("LAN IP Address Label is not displayed ");
+			try {
+				if (lanIPAddressLabel.isDisplayed() && mainDeviceLANIPAddress.isDisplayed())
+					utils.log().info(lanIPAddressLabel.getText() + " : " + mainDeviceLANIPAddress.getText());
+			} catch (Exception e) {
+				utils.log().info("LAN IP Address of the Main Router is not displayed ");
 			}
 
-			if (macAddressLabel.isDisplayed()) {
-				if (mainDeviceMACAddress.isDisplayed())
-					utils.log().info("MAC Address : " + mainDeviceMACAddress.getText());
-				else
-					utils.log().info("MAC Address of the Main Router is not displayed ");
-			} else {
-				utils.log().info("MAC Address Label is not displayed ");
+			try {
+				if (macAddressLabel.isDisplayed() && mainDeviceMACAddress.isDisplayed())
+					utils.log().info(macAddressLabel.getText() + " : " + mainDeviceMACAddress.getText());
+			} catch (Exception e) {
+				utils.log().info("MAC Address of the Main Router is not displayed ");
 			}
 
-			if (serialNumberLabel.isDisplayed()) {
-				if (mainDeviceSerialNumber.isDisplayed())
-					utils.log().info("Serial No. : " + mainDeviceSerialNumber.getText());
-				else
-					utils.log().info("Serial No. of the Main Router is not displayed ");
-			} else {
-				utils.log().info("Serial No. Label is not displayed ");
+			try {
+				if (serialNumberLabel.isDisplayed() && mainDeviceSerialNumber.isDisplayed())
+						utils.log().info(serialNumberLabel.getText() + " : " + mainDeviceSerialNumber.getText());
+			} catch (Exception e) {
+				utils.log().info("Serial No. of the Main Router is not displayed ");
 			}
 
-			if (firmwareLabel.isDisplayed()) {
-				if (firmwareVersion.isDisplayed())
-					utils.log().info("Firmware : " + firmwareVersion.getText());
-				else
-					utils.log().info("Firmware version is not displayed ");
-			} else {
-				utils.log().info("Firmware Label is not displayed ");
+			try {
+				if (firmwareLabel.isDisplayed() && firmwareVersion.isDisplayed())
+						utils.log().info(firmwareLabel.getText() + " : " + firmwareVersion.getText());
+			} catch (Exception e) {
+				utils.log().info("Firmware version is not displayed ");
 			}
 
-			if (mainDeviceModelNoLabel.isDisplayed()) {
-				if (mainDeviceModelNumber.isDisplayed())
-					utils.log().info("Model No. : " + mainDeviceModelNumber.getText());
-				else
-					utils.log().info("Model No. of the Main Router is not displayed ");
-			} else {
-				utils.log().info("Model No. Label is not displayed ");
+			try {
+				if (mainDeviceModelNoLabel.isDisplayed() && mainDeviceModelNumber.isDisplayed())
+						utils.log().info(mainDeviceModelNoLabel.getText() + " : " + mainDeviceModelNumber.getText());
+			} catch (Exception e) {
+				utils.log().info("Model No. of the Main Router is not displayed ");
 			}
 
-			if (restartRouterButton.isDisplayed())
-				utils.log().info("Restart Router Button is displayed");
-			else
+			try {
+				if (restartRouterButton.isDisplayed())
+					utils.log().info("Restart Router Button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Restart Router Button is not displayed");
+			}
 
 			click(routerDetailsButton);
-			super.swipeDown();
+//			super.swipeDown();
 			return true;
 			
 		} catch (Exception e) {

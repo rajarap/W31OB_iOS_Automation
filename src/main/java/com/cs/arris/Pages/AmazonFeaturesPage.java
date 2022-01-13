@@ -235,36 +235,44 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on the Amazon Features Page  ");
 		utils.log().info("****************************************************");
 		try {
-			if (amazonTitle.isDisplayed())
-				utils.log().info("Title " + amazonTitle.getText() + " is displayed");
-			else
+			try {
+				if (amazonTitle.isDisplayed())
+					utils.log().info("Title " + amazonTitle.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Amazon Feature title is not displayed");
+			}
 
-			if (backButton.isDisplayed())
-				utils.log().info("Back button is displayed");
-			else
+			try {
+				if (backButton.isDisplayed())
+					utils.log().info("Back button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Back Button is not displayed");
+			}
 
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help icon is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help icon is not displayed");
+			}
 
-			if (amazonSurfboardImage.isDisplayed())
-				utils.log().info("Amazon Surfboard Image is displayed");
-			else
+			try {
+				if (amazonSurfboardImage.isDisplayed())
+					utils.log().info("Amazon Surfboard Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Amazon Surfboard Image is not displayed");
-			
-			if (enableDisableAFFSText.isDisplayed())
-				utils.log().info(enableDisableAFFSText.getText() + " text is displayed");
-			else
-			utils.log().info("Enable/Disable AFFS text is not displayed");
+			}
 			
 			try {
-				if (AFFSToggleButton.isDisplayed() && AFFSToggleButton.isSelected())
-					utils.log().info("AFFS is enabled");
-				else 
-					utils.log().info("AFFS is disabled");
+				if (enableDisableAFFSText.isDisplayed())
+					utils.log().info(enableDisableAFFSText.getText() + " text is displayed");
+			} catch (Exception e) {
+				utils.log().info("Enable/Disable AFFS text is not displayed");
+			}
+			
+			try {
+				if (AFFSToggleButton.isDisplayed())
+					utils.log().info("AFFS Toggle button is displayed");
 			}catch(Exception t) {
 				utils.log().info("AFFS Toggle button is not displayed");
 			}
@@ -279,30 +287,40 @@ public class AmazonFeaturesPage extends ParentClass implements Page {
 //			else
 //				utils.log().info("Get Alexa Skills text is not displayed");
 
-			if (passwordLabel.isDisplayed())
-				utils.log().info(passwordLabel.getText() + " label is displayed");
-			else
+			try {
+				if (passwordLabel.isDisplayed())
+					utils.log().info(passwordLabel.getText() + " label is displayed");
+			} catch (Exception e) {
 				utils.log().info("Password Label is not displayed");
+			}
 
-			if (passwordTextBox.isDisplayed())
-				utils.log().info("Text box to enter password is displayed");
-			else
+			try {
+				if (passwordTextBox.isDisplayed())
+					utils.log().info("Text box to enter password is displayed");
+			} catch (Exception e) {
 				utils.log().info("Text box to enter password is not displayed");
+			}
 			
-			if (showpassword.isDisplayed())
-				utils.log().info("Show password icon is displayed");
-			else
+			try {
+				if (showpassword.isDisplayed())
+					utils.log().info("Show password icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Show password icon is not displayed");
+			}
 			
-			if (passwordCopyButton.isDisplayed())
-				utils.log().info("Password copy button is displayed");
-			else
+			try {
+				if (passwordCopyButton.isDisplayed())
+					utils.log().info("Password copy button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Password copy button is not displayed");
+			}
 			
-			if (alexaSkillsLink.isDisplayed())
-				utils.log().info("Alexa Skills link is displayed");
-			else
-				utils.log().info("Alexa Skills link  is not displayed");
+			try {
+				if (alexaSkillsLink.isDisplayed())
+					utils.log().info("Alexa Skills link is displayed");
+			} catch (Exception e) {
+					utils.log().info("Alexa Skills link  is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {

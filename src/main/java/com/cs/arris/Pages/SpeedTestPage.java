@@ -190,70 +190,94 @@ public class SpeedTestPage extends ParentClass implements Page
 			utils.log().info("*****************************************");
 
 			try {
-				if (speedTestTitle.isDisplayed())
-					utils.log().info("Title - " + speedTestTitle.getText() + " - is displayed");
-				else
+				try {
+					if (speedTestTitle.isDisplayed())
+						utils.log().info("Title - " + speedTestTitle.getText() + " - is displayed");
+				} catch (Exception e) {
 					utils.log().info("Notifications Title is not displayed");
+				}
 
-				if (backIcon.isDisplayed())
-					utils.log().info("Back Icon is displayed");
-				else
+				try {
+					if (backIcon.isDisplayed())
+						utils.log().info("Back Icon is displayed");
+				} catch (Exception e) {
 					utils.log().info("Back Icon is not displayed");
+				}
 
-//		if(cloudIcon.isDisplayed())
-//			utils.log().info("Cloud Icon is displayed");
-//		else
-//			utils.log().info("Cloud Icon is displayed");
+//				if(cloudIcon.isDisplayed())
+//					utils.log().info("Cloud Icon is displayed");
+//				else
+//					utils.log().info("Cloud Icon is displayed");
 
-				if (helpIcon.isDisplayed())
+				try {
+					if (helpIcon.isDisplayed())
+						utils.log().info("Help Icon is displayed");
+				} catch (Exception e) {
 					utils.log().info("Help Icon is displayed");
-				else
-					utils.log().info("Help Icon is displayed");
+				}
 
-				if (deviceImage.isDisplayed())
-					utils.log().info("Device Image is displayed");
-				else
+				try {
+					if (deviceImage.isDisplayed())
+						utils.log().info("Device Image is displayed");
+				} catch (Exception e) {
 					utils.log().info("Device Image is not displayed");
+				}
 
-				if (deviceName.isDisplayed())
-					utils.log().info("Device Name is displayed");
-				else
+				try {
+					if (deviceName.isDisplayed())
+						utils.log().info("Device Name is displayed");
+				} catch (Exception e) {
 					utils.log().info("Device Name is not displayed");
+				}
 
-				if (routerImage.isDisplayed())
-					utils.log().info("Router Image is displayed");
-				else
+				try {
+					if (routerImage.isDisplayed())
+						utils.log().info("Router Image is displayed");
+				} catch (Exception e) {
 					utils.log().info("Router Imnage Button is not displayed");
+				}
 
-				if (ssidName.isDisplayed())
-					utils.log().info("SSID Name is displayed");
-				else
+				try {
+					if (ssidName.isDisplayed())
+						utils.log().info("SSID Name is displayed");
+				} catch (Exception e) {
 					utils.log().info("SSID Name is not displayed");
+				}
 
-				if (speedTestIcon.isDisplayed())
-					utils.log().info("Interet Icon is displayed");
-				else
+				try {
+					if (speedTestIcon.isDisplayed())
+						utils.log().info("Interet Icon is displayed");
+				} catch (Exception e) {
 					utils.log().info("Interet Icon is not displayed");
+				}
 
-				if (speedTestName.isDisplayed())
-					utils.log().info("Internet Text is displayed");
-				else
+				try {
+					if (speedTestName.isDisplayed())
+						utils.log().info("Internet Text is displayed");
+				} catch (Exception e) {
 					utils.log().info("Internet Text is not displayed");
+				}
 
-				if (speedTestMeter.isDisplayed())
-					utils.log().info("Speed Test Meter is displayed");
-				else
+				try {
+					if (speedTestMeter.isDisplayed())
+						utils.log().info("Speed Test Meter is displayed");
+				} catch (Exception e) {
 					utils.log().info("Speed Test Meter is not displayed");
+				}
 
-				if (startSpeedTestButton.isDisplayed())
-					utils.log().info("Start Speed Test Button is displayed");
-				else
+				try {
+					if (startSpeedTestButton.isDisplayed())
+						utils.log().info("Start Speed Test Button is displayed");
+				} catch (Exception e) {
 					utils.log().info("Start Speed Test Button is not displayed");
+				}
 
-				if (viewHistory.isDisplayed())
-					utils.log().info("View History Button is displayed");
-				else
+				try {
+					if (viewHistory.isDisplayed())
+						utils.log().info("View History Button is displayed");
+				} catch (Exception e) {
 					utils.log().info("View History Button is not displayed");
+				}
 				return true;
 			} catch (Exception e) {
 				return false;
@@ -349,110 +373,152 @@ public class SpeedTestPage extends ParentClass implements Page
 	
 	public boolean verifySpeedTestResultsUI() {
 		try {
-			if (wifiDownloadView.isDisplayed())
-				utils.log().info("Wifi " + wifiDownloadView.getText() + " text is displayed");
-			else
+			try {
+				if (wifiDownloadView.isDisplayed())
+					utils.log().info("Wifi " + wifiDownloadView.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Wifi Download Text is not displayed");
+			}
 
-			if (wifiDownloadSpeed.isDisplayed())
-				utils.log().info("Wifi " + wifiDownloadSpeed.getText() + " speed is displayed");
-			else
+			try {
+				if (wifiDownloadSpeed.isDisplayed())
+					utils.log().info("Wifi " + wifiDownloadSpeed.getText() + " speed is displayed");
+			} catch (Exception e) {
 				utils.log().info("Wifi Download Speed is not displayed");
+			}
 
-			if (wifiUploadWifiView.isDisplayed())
-				utils.log().info("Wifi " + wifiUploadWifiView.getText() + " text is displayed");
-			else
+			try {
+				if (wifiUploadWifiView.isDisplayed())
+					utils.log().info("Wifi " + wifiUploadWifiView.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Wifi Upload Text is not displayed");
+			}
 
-			if (wifiUploadloadSpeed.isDisplayed())
-				utils.log().info("Wifi " + wifiUploadloadSpeed.getText() + " speed is displayed");
-			else
+			try {
+				if (wifiUploadloadSpeed.isDisplayed())
+					utils.log().info("Wifi " + wifiUploadloadSpeed.getText() + " speed is displayed");
+			} catch (Exception e) {
 				utils.log().info("Wifi Upload Speed is not displayed");
+			}
 
-			if (internetDownloadView.isDisplayed())
-				utils.log().info("Internet " + internetDownloadView.getText() + " text is displayed");
-			else
+			try {
+				if (internetDownloadView.isDisplayed())
+					utils.log().info("Internet " + internetDownloadView.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Internet Download Text is not displayed");
+			}
 
-			if (internetDownloadSpeed.isDisplayed())
-				utils.log().info("Internet " + internetDownloadSpeed.getText() + " speed is displayed");
-			else
+			try {
+				if (internetDownloadSpeed.isDisplayed())
+					utils.log().info("Internet " + internetDownloadSpeed.getText() + " speed is displayed");
+			} catch (Exception e) {
 				utils.log().info("Internet Download Speed is not displayed");
+			}
 
-			if (internetUploadView.isDisplayed())
-				utils.log().info("Internet " + internetUploadView.getText() + " text is displayed");
-			else
+			try {
+				if (internetUploadView.isDisplayed())
+					utils.log().info("Internet " + internetUploadView.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Internet Upload Text is not displayed");
+			}
 
-			if (internetUploadSpeed.isDisplayed())
-				utils.log().info("Internet " + internetUploadSpeed.getText() + " speed is displayed");
-			else
+			try {
+				if (internetUploadSpeed.isDisplayed())
+					utils.log().info("Internet " + internetUploadSpeed.getText() + " speed is displayed");
+			} catch (Exception e) {
 				utils.log().info("Internet Download Speed is not displayed");
+			}
 
-			if (wifiSpeedGoodForText.isDisplayed())
-				utils.log().info("" + wifiSpeedGoodForText.getText() + " is displayed");
-			else
+			try {
+				if (wifiSpeedGoodForText.isDisplayed())
+					utils.log().info("" + wifiSpeedGoodForText.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("This Wi-Fi Speed is good for: text is not displayed");
+			}
 			
-			if (webBrowsingImage.isDisplayed())
-				utils.log().info("Web Browsing/Email Image is displayed");
-			else
+			try {
+				if (webBrowsingImage.isDisplayed())
+					utils.log().info("Web Browsing/Email Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Web Browsing/Email Image is not displayed");
+			}
 
-			if (webBrowsingEmail.isDisplayed())
-				utils.log().info("" + webBrowsingEmail.getText() + " is displayed");
-			else
+			try {
+				if (webBrowsingEmail.isDisplayed())
+					utils.log().info("" + webBrowsingEmail.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Web Browsing/E-mail text is not displayed");
+			}
 
-			if (emailEnableIcon.isDisplayed())
-				utils.log().info("Web Browsing/E-mail enable/disable icon is displayed");
-			else
+			try {
+				if (emailEnableIcon.isDisplayed())
+					utils.log().info("Web Browsing/E-mail enable/disable icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Web Browsing/E-mail enable/disable iconis not displayed");
+			}
 			
-			if (casualGamingImage.isDisplayed())
-				utils.log().info("SD video / Music / Casual games Image is displayed");
-			else
+			try {
+				if (casualGamingImage.isDisplayed())
+					utils.log().info("SD video / Music / Casual games Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("SD video / Music / Casual games Image is not displayed");
+			}
 
-			if (casualGaming.isDisplayed())
-				utils.log().info("" + casualGaming.getText() + " is displayed");
-			else
+			try {
+				if (casualGaming.isDisplayed())
+					utils.log().info("" + casualGaming.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("SD Video, Music, and Casual Gaming text is not displayed");
+			}
 
-			if (sdVideoEnableIcon.isDisplayed())
-				utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is displayed");
-			else
+			try {
+				if (sdVideoEnableIcon.isDisplayed())
+					utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("SD Video, Music, and Casual Gaming enable/disable icon is not displayed");
+			}
 
-			if (hdImage.isDisplayed())
-				utils.log().info("HD video / Competitive gaming Image is displayed");
-			else
+			try {
+				if (hdImage.isDisplayed())
+					utils.log().info("HD video / Competitive gaming Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("HD video / Competitive gaming Image is not displayed");
+			}
 			
-			if (hdVideo.isDisplayed())
-				utils.log().info("" + hdVideo.getText() + " is displayed");
-			else
+			try {
+				if (hdVideo.isDisplayed())
+					utils.log().info("" + hdVideo.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("HD Video and Competitive Gaming text is not displayed");
+			}
 
-			if (hdVideoEnableIcon.isDisplayed())
-				utils.log().info("HD Video and Competitive Gaming enable/disable icon is displayed");
-			else
+			try {
+				if (hdVideoEnableIcon.isDisplayed())
+					utils.log().info("HD Video and Competitive Gaming enable/disable icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("HD Video and Competitive Gaming enable/disable icon is not displayed");
+			}
 
-			if (vrImage.isDisplayed())
-				utils.log().info("UHD / 4K video / VR Image is displayed");
-			else
+			try {
+				if (vrImage.isDisplayed())
+					utils.log().info("UHD / 4K video / VR Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("UHD / 4K video / VR Image is not displayed");
+			}
 			
-			if (virtualReality.isDisplayed())
-				utils.log().info("" + virtualReality.getText() + " is displayed");
-			else
+			try {
+				if (virtualReality.isDisplayed())
+					utils.log().info("" + virtualReality.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("UHD/4K Video/ Virtual Reality text is not displayed");
+			}
 
-			if (virtualEnableIcon.isDisplayed())
-				utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon is displayed");
-			else
+			try {
+				if (virtualEnableIcon.isDisplayed())
+					utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("UHD/4K Video/ Virtual Reality enable/disable icon  is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {

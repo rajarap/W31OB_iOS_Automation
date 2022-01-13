@@ -94,6 +94,18 @@ public class WhosHomeChangeMemberNameDialog extends ParentClass implements Page 
 		}
 	}
 	
+	public boolean enterMemberName() {
+		if (enterMemberNameTextBox.isDisplayed()) {
+			clear(enterMemberNameTextBox);
+			sendKeys(enterMemberNameTextBox, super.generateMemberName());
+			utils.log().info("Entered member name : " + enterMemberNameTextBox.getText());
+			return true;
+		} else {
+			utils.log().info("Househole member name text box is not displayed");
+			return false;
+		}
+	}
+	
 	
 	
 	//Click Update button without chaning the member name.  Below dialod shoould appear.

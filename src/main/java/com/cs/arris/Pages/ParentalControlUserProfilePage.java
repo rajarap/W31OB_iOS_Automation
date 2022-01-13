@@ -179,92 +179,122 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 		utils.log().info(" Parental Control  - User Profile Page");
 		utils.log().info("**************************************");
 		try {
-			if (userProfileTitle.isDisplayed())
-				utils.log().info("Title - " + userProfileTitle.getText() + " - is displayed");
-			else
+			try {
+				if (userProfileTitle.isDisplayed())
+					utils.log().info("Title - " + userProfileTitle.getText() + " - is displayed");
+			} catch (Exception e1) {
 				utils.log().info("User Profile Name is not displayed");
+			}
 
-			if (backButton.isDisplayed())
-				utils.log().info("Back Button is displayed");
-			else
+			try {
+				if (backButton.isDisplayed())
+					utils.log().info("Back Button is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Back Button is not displayed");
+			}
 			
 			try {
 			if (cloudIcon.isDisplayed())
 				utils.log().info("Cloud Icon is displayed");
-			else
-				utils.log().info("Cloud Icon is not displayed");
 			}catch(Exception e) {utils.log().info("Cloud Icon is not displayed");}
 
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help Icon is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help Icon is not displayed");
+			}
 
-			if (userProfilePic.isDisplayed())
-				utils.log().info("User Profile Pic is displayed");
-			else
+			try {
+				if (userProfilePic.isDisplayed())
+					utils.log().info("User Profile Pic is displayed");
+			} catch (Exception e) {
 				utils.log().info("User Profile Pic is not displayed");
+			}
 
-			if (userProfilePicEditIcon.isDisplayed())
-				utils.log().info("User Profile Edit pic Icon is displayed");
-			else
+			try {
+				if (userProfilePicEditIcon.isDisplayed())
+					utils.log().info("User Profile Edit pic Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("User Profile Edit pic Icon is not displayed");
+			}
 
-			if (pauseProfileText.isDisplayed())
-				utils.log().info(pauseProfileText.getText() + " text is displayed");
-			else
+			try {
+				if (pauseProfileText.isDisplayed())
+					utils.log().info(pauseProfileText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Pause Profile text is not displayed");
+			}
 
-			if (pauseInternetForCurrentProfileText.isDisplayed())
-				utils.log().info(pauseInternetForCurrentProfileText.getText() + " text is displayed");
-			else
+			try {
+				if (pauseInternetForCurrentProfileText.isDisplayed())
+					utils.log().info(pauseInternetForCurrentProfileText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Pause Internet Access for Current Profile text is not displayed");
+			}
 			
-			if (pauseInternetToggleButton.isDisplayed())
-				utils.log().info("Pause Internet switch is displayed");
-			else
+			try {
+				if (pauseInternetToggleButton.isDisplayed())
+					utils.log().info("Pause Internet switch is displayed");
+			} catch (Exception e) {
 				utils.log().info("Pause Internet switch is not displayed");
+			}
 
-			if (deviceCountPausedForProfile.isDisplayed())
-				utils.log().info(deviceCountPausedForProfile.getText() + " text is displayed");
-			else
+			try {
+				if (deviceCountPausedForProfile.isDisplayed())
+					utils.log().info(deviceCountPausedForProfile.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Device Count for user profie is not displayed");
+			}
 
-			if (addDeviceLink.isDisplayed())
-				utils.log().info(addDeviceLink.getText() + " link is displayed");
-			else
+			try {
+				if (addDeviceLink.isDisplayed())
+					utils.log().info(addDeviceLink.getText() + " link is displayed");
+			} catch (Exception e) {
 				utils.log().info("ADD DEVICE link is not displayed");
+			}
 
-			if (associatedDevicesText.isDisplayed())
-				utils.log().info(associatedDevicesText.getText() + " text is displayed");
-			else
+			try {
+				if (associatedDevicesText.isDisplayed())
+					utils.log().info(associatedDevicesText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Associated Devices text is not displayed");
+			}
 
-			if (totalDevicesAdded.isDisplayed())
-				utils.log().info(totalDevicesAdded.getText() + " text is displayed");
-			else
+			try {
+				if (totalDevicesAdded.isDisplayed())
+					utils.log().info(totalDevicesAdded.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Total Devices Added text is not displayed");
+			}
 
-			if (ruleCountForProfile.isDisplayed())
-				utils.log().info(ruleCountForProfile.getText() + " text is displayed");
-			else
+			try {
+				if (ruleCountForProfile.isDisplayed())
+					utils.log().info(ruleCountForProfile.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Rules Count for user profile is not displayed");
+			}
 
-			if (addRuleLink.isDisplayed())
-				utils.log().info(addRuleLink.getText() + " link is displayed");
-			else
+			try {
+				if (addRuleLink.isDisplayed())
+					utils.log().info(addRuleLink.getText() + " link is displayed");
+			} catch (Exception e) {
 				utils.log().info("ADD RULE link is not displayed");
+			}
 
-			if (associatedRulesText.isDisplayed())
-				utils.log().info(associatedRulesText.getText() + " text is displayed");
-			else
+			try {
+				if (associatedRulesText.isDisplayed())
+					utils.log().info(associatedRulesText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Associated Rules text is not displayed");
+			}
 
-			if (totalTimeActiveRule.isDisplayed())
-				utils.log().info(totalTimeActiveRule.getText() + " text is displayed");
-			else
+			try {
+				if (totalTimeActiveRule.isDisplayed())
+					utils.log().info(totalTimeActiveRule.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Total Devices and Active Rules text is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {
@@ -505,6 +535,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			try {
 			    super.swipeAssocaitedDevices(Direction.LEFT);
 			    utils.log().info("Swiped LEFT on Associated Device");
+			    super.pause(2);
 			    if(deleteDeviceIcon.isDisplayed()) {
 			    	click(deleteDeviceIcon); 
 			    	utils.log().info("Clicked on Delete Button");
@@ -694,6 +725,7 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			try {
 			    super.swipeAssocaitedRules(Direction.LEFT);
 			    utils.log().info("Swiped LEFT on Associated Rule");
+			    super.pause(2);
 			    if(deleteDeviceIcon.isDisplayed()) {
 			    	click(deleteDeviceIcon); 
 			    	utils.log().info("Clicked on Delete Button");

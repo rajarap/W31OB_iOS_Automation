@@ -262,72 +262,89 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 		
 		this.clickDHCPRadioButton();
 		try {
-			if (wanIPConfigurationTitle.isDisplayed())
-				utils.log().info(wanIPConfigurationTitle.getText() + " title text is displayed ");
-			else
+			try {
+				if (wanIPConfigurationTitle.isDisplayed())
+					utils.log().info(wanIPConfigurationTitle.getText() + " title text is displayed ");
+			} catch (Exception e) {
 				utils.log().info("WAN IP Configuration title text is not displayed");
+			}
 
-			if (backIcon.isDisplayed())
-				utils.log().info("Back Icon is displayed ");
-			else
+			try {
+				if (backIcon.isDisplayed())
+					utils.log().info("Back Icon is displayed ");
+			} catch (Exception e) {
 				utils.log().info("Back Icon is not displayed");
+			}
 
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help Icon is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help Icon is not displayed");
+			}
 
-			if (wanIPv4Tab.isDisplayed())
-				utils.log().info("IPv4 Tab is displayed and is currently selected");
-			else
+			try {
+				if (wanIPv4Tab.isDisplayed())
+					utils.log().info("IPv4 Tab is displayed and is currently selected");
+			} catch (Exception e) {
 				utils.log().info("IPv4 Tab is not displayed");
+			}
 
-			if (wanIPv6Tab.isDisplayed())
-				utils.log().info("IPV6 Tab is displayed and is not selected");
-			else
+			try {
+				if (wanIPv6Tab.isDisplayed())
+					utils.log().info("IPV6 Tab is displayed and is not selected");
+			} catch (Exception e) {
 				utils.log().info("IPV6 Tab is not displayed");
+			}
 
-			if (dhcpRadioButton.isDisplayed())
-				utils.log().info("DHCP Radio button is displayed and is selected");
-			else
+			try {
+				if (dhcpRadioButton.isDisplayed())
+					utils.log().info("DHCP Radio button is displayed");
+			} catch (Exception e) {
 				utils.log().info("DHCP Radio button is not displayed");
+			}
 
-//		try {
-//			if (dhcpRadioButtonUnChecked.isDisplayed())
-//				utils.log().info("DHCP Radio button is displayed and is not selected ");
-//		} catch (Exception e) {
-//			utils.log().info("DHCP Radio button is not displayed");
-//		}
-
-			if (ipAddressLabel.isDisplayed() && dhcp_ipAddress.isDisplayed())
-				utils.log().info(ipAddressLabel.getText() + " : " + dhcp_ipAddress.getText());
-			else
+			try {
+				if (ipAddressLabel.isDisplayed() && dhcp_ipAddress.isDisplayed())
+					utils.log().info(ipAddressLabel.getText() + " : " + dhcp_ipAddress.getText());
+			} catch (Exception e) {
 				utils.log().info("IP Address details is not displayed");
+			}
 
-			if (subnetMaskLabel.isDisplayed() && dhcp_subnetMask.isDisplayed())
-				utils.log().info(subnetMaskLabel.getText() + " : " + dhcp_subnetMask.getText());
-			else
+			try {
+				if (subnetMaskLabel.isDisplayed() && dhcp_subnetMask.isDisplayed())
+					utils.log().info(subnetMaskLabel.getText() + " : " + dhcp_subnetMask.getText());
+				} catch (Exception e) {
 				utils.log().info("Subnet Mask details is not displayed");
+			}
 
-			if (gatewayLabel.isDisplayed() && dhcp_gateway.isDisplayed())
-				utils.log().info(gatewayLabel.getText() + " : " + dhcp_gateway.getText());
-			else
+			try {
+				if (gatewayLabel.isDisplayed() && dhcp_gateway.isDisplayed())
+					utils.log().info(gatewayLabel.getText() + " : " + dhcp_gateway.getText());
+			} catch (Exception e) {
 				utils.log().info("Gateway details is not displayed");
+			}
 
-			if (primaryDNSLabel.isDisplayed() && dhcp_primaryDNS.isDisplayed())
-				utils.log().info(primaryDNSLabel.getText() + " : " + dhcp_primaryDNS.getText());
-			else
+			try {
+				if (primaryDNSLabel.isDisplayed() && dhcp_primaryDNS.isDisplayed())
+					utils.log().info(primaryDNSLabel.getText() + " : " + dhcp_primaryDNS.getText());
+			} catch (Exception e) {
 				utils.log().info("Primary DNS details is not displayed");
+			}
 
-			if (secondayDNSLabel.isDisplayed() && dhcp_secondaryDNS.isDisplayed())
-				utils.log().info(secondayDNSLabel.getText() + " : " + dhcp_secondaryDNS.getText());
-			else
+			try {
+				if (secondayDNSLabel.isDisplayed() && dhcp_secondaryDNS.isDisplayed())
+					utils.log().info(secondayDNSLabel.getText() + " : " + dhcp_secondaryDNS.getText());
+			} catch (Exception e) {
 				utils.log().info("Secondary DNS details is not displayed");
+			}
 
-			if (dhcp_saveChangesButton.isDisplayed())
-				utils.log().info(dhcp_saveChangesButton.getText() + " button is displayed but is disabled");
-			else
+			try {
+				if (dhcp_saveChangesButton.isDisplayed())
+					utils.log().info(dhcp_saveChangesButton.getText() + " button is displayed but is disabled");
+			} catch (Exception e) {
 				utils.log().info("SAVE CHANGES button is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {
@@ -344,72 +361,89 @@ public class NetworkWANIPConfigurationIPv4Page extends ParentClass implements Pa
 		this.clickStaticRadioButton();
 
 		try {
-			if (wanIPConfigurationTitle.isDisplayed())
-				utils.log().info(wanIPConfigurationTitle.getText() + " title text is displayed ");
-			else
+			try {
+				if (wanIPConfigurationTitle.isDisplayed())
+					utils.log().info(wanIPConfigurationTitle.getText() + " title text is displayed ");
+			} catch (Exception e) {
 				utils.log().info("WAN IP Configuration title text is not displayed");
+			}
 
-			if (backIcon.isDisplayed())
-				utils.log().info("Back Icon is displayed ");
-			else
+			try {
+				if (backIcon.isDisplayed())
+					utils.log().info("Back Icon is displayed ");
+			} catch (Exception e) {
 				utils.log().info("Back Icon is not displayed");
+			}
 
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help Icon is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help Icon is not displayed");
+			}
 
-			if(wanIPv4Tab.isDisplayed())
-				utils.log().info("IPv4 Tab is displayed and is currently selected");
-			else
+			try {
+				if(wanIPv4Tab.isDisplayed())
+					utils.log().info("IPv4 Tab is displayed and is currently selected");
+			} catch (Exception e) {
 				utils.log().info("IPv4 Tab is not displayed");
+			}
 
-			if (wanIPv6Tab.isDisplayed())
-				utils.log().info("IPV6 Tab is displayed and is not selected");
-			else
+			try {
+				if (wanIPv6Tab.isDisplayed())
+					utils.log().info("IPV6 Tab is displayed and is not selected");
+			} catch (Exception e) {
 				utils.log().info("IPV6 Tab is not displayed");
+			}
 
-			if (staticRadioButton.isDisplayed())
-				utils.log().info("Static Radio button is displayed and is selected");
-			else
+			try {
+				if (staticRadioButton.isDisplayed())
+					utils.log().info("Static Radio button is displayed and is selected");
+			} catch (Exception e) {
 				utils.log().info("Static Radio button is not displayed");
-
-//		try {
-//			if (staticRadioButtonUnChecked.isDisplayed())
-//				utils.log().info("Static Radio button is displayed and is not selected ");
-//		} catch (Exception e) {
-//			utils.log().info("Static Radio button is displayed and is already selected");
-//		}
+			}
 		
-			if (ipAddressLabel.isDisplayed() && static_ipAddress.isDisplayed())
-				utils.log().info(ipAddressLabel.getText() + " : " + static_ipAddress.getText());
-			else
+			try {
+				if (ipAddressLabel.isDisplayed() && static_ipAddress.isDisplayed())
+					utils.log().info(ipAddressLabel.getText() + " : " + static_ipAddress.getText());
+			} catch (Exception e) {
 				utils.log().info("IP Address details is not displayed");
+			}
 
-			if (subnetMaskLabel.isDisplayed() && static_subnetMask.isDisplayed())
-				utils.log().info(subnetMaskLabel.getText() + " : " + static_subnetMask.getText());
-			else
+			try {
+				if (subnetMaskLabel.isDisplayed() && static_subnetMask.isDisplayed())
+					utils.log().info(subnetMaskLabel.getText() + " : " + static_subnetMask.getText());
+			} catch (Exception e) {
 				utils.log().info("Subnet Mask details is not displayed");
+			}
 
-			if (gatewayLabel.isDisplayed() && static_gateway.isDisplayed())
-				utils.log().info(gatewayLabel.getText() + " : " + static_gateway.getText());
-			else
+			try {
+				if (gatewayLabel.isDisplayed() && static_gateway.isDisplayed())
+					utils.log().info(gatewayLabel.getText() + " : " + static_gateway.getText());
+			} catch (Exception e) {
 				utils.log().info("Gateway details is not displayed");
+			}
 
-			if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed())
-				utils.log().info(primaryDNSLabel.getText() + " : " + static_primaryDNS.getText());
-			else
+			try {
+				if (primaryDNSLabel.isDisplayed() && static_primaryDNS.isDisplayed())
+					utils.log().info(primaryDNSLabel.getText() + " : " + static_primaryDNS.getText());
+			} catch (Exception e) {
 				utils.log().info("Primary DNS details is not displayed");
+			}
 
-			if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed())
-				utils.log().info(secondayDNSLabel.getText() + " : " + static_secondaryDNS.getText());
-			else
+			try {
+				if (secondayDNSLabel.isDisplayed() && static_secondaryDNS.isDisplayed())
+					utils.log().info(secondayDNSLabel.getText() + " : " + static_secondaryDNS.getText());
+			} catch (Exception e) {
 				utils.log().info("Secondary DNS details is not displayed");
+			}
 
-			if (static_saveChangesButton.isDisplayed())
-				utils.log().info(static_saveChangesButton.getText() + " button is displayed and is Enabled");
-			else
+			try {
+				if (static_saveChangesButton.isDisplayed())
+					utils.log().info(static_saveChangesButton.getText() + " button is displayed and is Enabled");
+			} catch (Exception e) {
 				utils.log().info("SAVE CHANGES button is not displayed");
+			}
 			return true;
 		}catch(	Exception e){
 			return false;

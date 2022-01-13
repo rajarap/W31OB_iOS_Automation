@@ -419,6 +419,12 @@ public class WhosHomeAddNewNotificationPage extends ParentClass implements Page 
 		}
 	}
 	
+	public boolean selectMinutes()
+	{
+		super.swipeWhosHomeNotificationMinutes(Direction.UP);
+		return true;
+	}
+	
 	
 	public boolean verifyAddNewNotificationPageUI() {
 		utils.log().info("                                                   ");

@@ -224,10 +224,12 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 		utils.log().info("**********************************************************");
 
 		try {
-			if (parentalControlTitle.isDisplayed())
-				utils.log().info("Title - " + parentalControlTitle.getText() + " - is displayed");
-			else
+			try {
+				if (parentalControlTitle.isDisplayed())
+					utils.log().info("Title - " + parentalControlTitle.getText() + " - is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Parental Control Title Text is not displayed");
+			}
 			
 			try {
 				if (backButton.isDisplayed())
@@ -239,71 +241,97 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 					utils.log().info("Cloud Icon is displayed");
 				}catch(Exception e) {utils.log().info("Cloud Icon is not displayed");}
 
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help Icon is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help Icon is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Help Icon is not displayed");
+			}
 
-			if (profilesTab.isDisplayed())
-				utils.log().info("Profiles Tab is displayed");
-			else
+			try {
+				if (profilesTab.isDisplayed())
+					utils.log().info("Profiles Tab is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Profiles Tab is not displayed");
+			}
 
-			if (currentlyBlockedTab.isDisplayed())
-				utils.log().info("Currently Blocked Tab is displayed");
-			else
+			try {
+				if (currentlyBlockedTab.isDisplayed())
+					utils.log().info("Currently Blocked Tab is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Currently Blocked Tab is not displayed");
+			}
 			
-			if (enableParentalControlText.isDisplayed())
-				utils.log().info(enableParentalControlText.getText() + " text is displayed");
-			else
+			try {
+				if (enableParentalControlText.isDisplayed())
+					utils.log().info(enableParentalControlText.getText() + " text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Enable Parental Control Text is not displayed");
+			}
 			
 			try {
 				if (parentalControlToggleButton.isDisplayed())
 					utils.log().info("Parental Control Toggle button is displayed");
-			}catch(Exception exp) {utils.log().info("Parental Control Toggle button is not displayed");}
+			}catch(Exception exp) {
+				utils.log().info("Parental Control Toggle button is not displayed");
+			}
 			
 			try {
 				if (globalSettingText.isDisplayed())
 					utils.log().info("Global Settings Text is displayed");
-				}catch(Exception e) {utils.log().info("Global Settings Text is not displayed since there are no profiles created");}
+				}catch(Exception e) {
+					utils.log().info("Global Settings Text is not displayed since there are no profiles created");
+				}
 
 			try {
 				if (globalSettingExpandButton.isDisplayed())
 					utils.log().info("Global Settings Expand button is displayed");
 				click(globalSettingExpandButton);
-				}catch(Exception e) {utils.log().info("Global Settings Expand button is not displayed since there are no profiles created");}
+				}catch(Exception e) {
+					utils.log().info("Global Settings Expand button is not displayed since there are no profiles created");
+				}
 			
 			try {
 				if (pauseAllProfilesText.isDisplayed())
 					utils.log().info(pauseAllProfilesText.getText() + " text is displayed");
-			}catch(Exception e) {utils.log().info("Pause All Profiles text is not displayed");}
+			}catch(Exception e) {
+				utils.log().info("Pause All Profiles text is not displayed");
+			}
 		
 			try {
 				if (pauseInternetAccessToAllText.isDisplayed())
 				utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
-			}catch(Exception e) {utils.log().info("Pause Internet For All Profiles text is not displayed");}
+			}catch(Exception e) {
+				utils.log().info("Pause Internet For All Profiles text is not displayed");
+			}
 			
 			try {
 				if (pauseAllProfilesToggleButton.isDisplayed())
 					utils.log().info("Pause All Profiles Switch button is displayed");
-			}catch(Exception exp) {utils.log().info("Pause All Profiles is not displayed");}
+			}catch(Exception exp) {
+				utils.log().info("Pause All Profiles is not displayed");
+			}
 
-			if (userProfilesText.isDisplayed())
-				utils.log().info(userProfilesText.getText() + " text is displayed");
-			else
+			try {
+				if (userProfilesText.isDisplayed())
+					utils.log().info(userProfilesText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("User Profiles text is not displayed");
+			}
 
-			if (addProfileLink.isDisplayed())
-				utils.log().info(addProfileLink.getText() + " link is displayed");
-			else
+			try {
+				if (addProfileLink.isDisplayed())
+					utils.log().info(addProfileLink.getText() + " link is displayed");
+			} catch (Exception e) {
 				utils.log().info("Add Profile link is not displayed");
+			}
 			
 			try {	
 				if (noProfilesText1.isDisplayed())
 					utils.log().info(noProfilesText1.getText());
-			}catch(Exception exp) {utils.log().info("Currently there are users under Parental Control ");}
+			}catch(Exception exp) {
+				utils.log().info("Currently there are users under Parental Control ");
+			}
 
 			return true;
 
@@ -332,21 +360,23 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 				}catch(Exception e) {utils.log().info("Global Settings Expand button is not displayed since there are no profiles created");}
 			
 
-			if (pauseAllProfilesText.isDisplayed())
-				utils.log().info(pauseAllProfilesText.getText() + " text is displayed");
-			else
+			try {
+				if (pauseAllProfilesText.isDisplayed())
+					utils.log().info(pauseAllProfilesText.getText() + " text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Pause All Profiles text is not displayed");
+			}
 		
-			if (pauseInternetAccessToAllText.isDisplayed())
-				utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
-			else 
+			try {
+				if (pauseInternetAccessToAllText.isDisplayed())
+					utils.log().info(pauseInternetAccessToAllText.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Pause Internet For All Profiles text is not displayed");
+			}
 			
 			try {
-				if (pauseAllProfilesToggleButton.isDisplayed() && pauseAllProfilesToggleButton.isSelected())
-					utils.log().info("Pause All Profiles Switch button is enabled");
-				else
-					utils.log().info("Pause All Profiles Switch button is disabled");
+				if (pauseAllProfilesToggleButton.isDisplayed())
+					utils.log().info("Pause All Profiles Switch button is displayed");
 			}catch(Exception exp) {utils.log().info("Pause All Profiles is not displayed");}
 			
 			return true;

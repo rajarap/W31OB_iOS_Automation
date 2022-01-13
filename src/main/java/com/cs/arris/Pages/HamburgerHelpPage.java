@@ -100,40 +100,54 @@ public class HamburgerHelpPage extends ParentClass implements Page {
 
 	public boolean verifyUIOnHelpPage() {
 		try {
-			if (helpTitle.isDisplayed())
-				utils.log().info("Title " + helpTitle.getText() + " is displayed");
-			else
-				utils.log().info("Help page title is not displayed");
+			try {
+				if (helpTitle.isDisplayed())
+					utils.log().info("Title " + helpTitle.getText() + " is displayed");
+			} catch (Exception e) {
+					utils.log().info("Help page title is not displayed");
+			}
 
-			if (surfboardLogoImage.isDisplayed())
-				utils.log().info("Surfboard Logo Image is displayed");
-			else
+			try {
+				if (surfboardLogoImage.isDisplayed())
+					utils.log().info("Surfboard Logo Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Surfboard Logo Image is not displayed");
+			}
 
-			if (additionalHelpText.isDisplayed())
-				utils.log().info("Additional Help Text " + additionalHelpText.getText() + " is displayed");
-			else
+			try {
+				if (additionalHelpText.isDisplayed())
+					utils.log().info("Additional Help Text " + additionalHelpText.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Additional Help Text is not displayed");
+			}
 
-			if (helpMessage.isDisplayed())
-				utils.log().info(helpMessage.getText() + " message is displayed");
-			else
+			try {
+				if (helpMessage.isDisplayed())
+					utils.log().info(helpMessage.getText() + " message is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help Message Text is not displayed");
+			}
 
-			if (faqButton.isDisplayed())
-				utils.log().info("Button " + faqButton.getText() + " is displayed");
-			else
+			try {
+				if (faqButton.isDisplayed())
+					utils.log().info("Button " + faqButton.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("FAQ Button is not displayed");
+			}
 
-			if (selfHelpButton.isDisplayed())
-				utils.log().info(selfHelpButton.getText() + " is displayed");
-			else
+			try {
+				if (selfHelpButton.isDisplayed())
+					utils.log().info(selfHelpButton.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("SelfHelp URL is not displayed");
+			}
 
-			if (liveChatButton.isDisplayed())
-				utils.log().info(liveChatButton.getText() + " is displayed");
-			else
+			try {
+				if (liveChatButton.isDisplayed())
+					utils.log().info(liveChatButton.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Chat With Us button is not displayed");
+			}
 			return true;
 		} catch (Exception e) {
 			return false;

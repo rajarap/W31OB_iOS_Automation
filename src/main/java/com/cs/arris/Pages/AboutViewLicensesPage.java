@@ -19,10 +19,6 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AboutViewLicensesPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@AndroidFindAll({
-			@AndroidBy(xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/ivDialogClose]"), // CONTINUE
-			@AndroidBy(xpath = "//android.widget.ImageView[@bounds='[915,146][1046,241]']"),
-			@AndroidBy(id = "com.arris.sbcBeta:id/ivDialogClose") })
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"cross\"]")
 	public MobileElement closeButton;
 

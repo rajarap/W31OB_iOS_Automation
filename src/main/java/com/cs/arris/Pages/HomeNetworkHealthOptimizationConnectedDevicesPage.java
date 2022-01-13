@@ -77,20 +77,26 @@ public class HomeNetworkHealthOptimizationConnectedDevicesPage extends ParentCla
 			utils.log().info("Details of UI Elements on Network Health Optimization Settings - Connected Devices Page");
 			utils.log().info("***************************************************************************************");
 			try {
-				if (connectedDevicesTitle.isDisplayed())
-					utils.log().info(connectedDevicesTitle.getText() + " title text is displayed");
-				else
+				try {
+					if (connectedDevicesTitle.isDisplayed())
+						utils.log().info(connectedDevicesTitle.getText() + " title text is displayed");
+				} catch (Exception e3) {
 					utils.log().info("Connected Devices title text is not displayed");
+				}
 
-				if (backButton.isDisplayed())
-					utils.log().info("Back button is displayed");
-				else
+				try {
+					if (backButton.isDisplayed())
+						utils.log().info("Back button is displayed");
+				} catch (Exception e2) {
 					utils.log().info("Back button is not displayed");
+				}
 				
-				if (recommendedSensitivityLabel.isDisplayed())
-					utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
-				else
+				try {
+					if (recommendedSensitivityLabel.isDisplayed())
+						utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Sensitivity Text is not displayed");
+				}
 				
 				try{
 					if (recommendationText.isDisplayed())

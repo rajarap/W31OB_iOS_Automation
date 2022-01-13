@@ -880,6 +880,28 @@ public class ParentClass
 		    }
 		}
 		
+		public void swipeWhosHomeNotificationMinutes(Direction dir) {
+		    Dimension size;
+			size = getDriver().manage().window().getSize();
+			TouchAction action = new TouchAction(getDriver());
+
+		    int startX = 0;
+		    int endX = 0;
+		    int startY = 0;
+		    int endY = 0;
+
+		    switch (dir) {
+		        case UP:
+		            startY = (int) (size.height / 2);
+		            startX = (int) (size.width * 0.08);
+		            endX = (int) (size.width * 0.70);
+		            action.press(PointOption.point(183, 685)).waitAction( WaitOptions.waitOptions(Duration.ofMillis(1300)))
+		                    .moveTo(PointOption.point(183, 625)).release().perform();
+
+		            break;
+		    }
+		}
+		
 		public void swipeAssocaitedDevices(Direction dir) {
 		    Dimension size;
 			size = getDriver().manage().window().getSize();

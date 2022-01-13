@@ -57,10 +57,31 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	public MobileElement addButton;
 	
 
-	
 	public WhosHomeMonitoringPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
 	}
+	
+	public WhosHomeChangeMemberNameDialog getChangeMemberNamePageObject() {
+		WhosHomeChangeMemberNameDialog changeMemberName = new WhosHomeChangeMemberNameDialog();
+		return changeMemberName;
+	}
+	
+	public WhosHomeChangeDeviceDialog getChangeMemberDeviceNamePageObject() {
+		WhosHomeChangeDeviceDialog changeMemberDeviceName = new WhosHomeChangeDeviceDialog();
+		return changeMemberDeviceName;
+	}
+	
+	public WhosHomeRemoveMemberDialog getRemoveMemberPageObject() {
+		WhosHomeRemoveMemberDialog removeMemberName = new WhosHomeRemoveMemberDialog();
+		return removeMemberName;
+	}
+	
+	public WhosHomeNotifyMeWhenPage getNotifyMeWhenPageObject() {
+		WhosHomeNotifyMeWhenPage notifyMeWhen = new WhosHomeNotifyMeWhenPage();
+		return notifyMeWhen;
+	}
+	
+	
 
 	public boolean clickBackButton() {
 		if (backButton.isDisplayed()) {
@@ -118,8 +139,8 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	}
 	
 	public boolean clickChangeNameOption() {
-		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
-			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
+		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Change Name\"`]")).isDisplayed()) {
+			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Change Name\"`]")));
 			utils.log().info("Clicked on Change Member Name Option");
 			return true;
 		} else {
@@ -129,8 +150,8 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	}
 	
 	public boolean clickChangeDeviceOption() {
-		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
-			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
+		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Change Device\"`]")).isDisplayed()) {
+			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Change Device\"`]")));
 			utils.log().info("Clicked on Change Device Name Option");
 			return true;
 		} else {
@@ -140,8 +161,8 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	}
 	
 	public boolean clickRemoveMemberOption() {
-		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther")).isDisplayed()) {
-			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypePopover/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther")));
+		if (super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Remove Member\"`]")).isDisplayed()) {
+			click(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Remove Member\"`]")));
 			utils.log().info("Clicked on Remove Member Name Option");
 			return true;
 		} else {
@@ -193,55 +214,75 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on Who's Home Monitoring Page");
 		utils.log().info("****************************************************");
 		try {
-			if (whosHomeMonitoringPageTitle.isDisplayed())
-				utils.log().info(whosHomeMonitoringPageTitle.getText() + " text is displayed");
-			else
+			try {
+				if (whosHomeMonitoringPageTitle.isDisplayed())
+					utils.log().info(whosHomeMonitoringPageTitle.getText() + " text is displayed");
+			} catch (Exception e) {
 				utils.log().info("WHO'S HOME Title text is not displayed");
+			}
 			
-			if (backButton.isDisplayed())
-				utils.log().info("BACK button is displayed");
-			else
+			try {
+				if (backButton.isDisplayed())
+					utils.log().info("BACK button is displayed");
+			} catch (Exception e) {
 				utils.log().info("BACK button is not displayed");
+			}
 			
-			if (helpIcon.isDisplayed())
-				utils.log().info("Help button is displayed");
-			else
+			try {
+				if (helpIcon.isDisplayed())
+					utils.log().info("Help button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Help button is not displayed");
+			}
 			
-			if (monitoringLabel.isDisplayed())
-				utils.log().info(monitoringLabel.getText() + " Label is displayed");
-			else
+			try {
+				if (monitoringLabel.isDisplayed())
+					utils.log().info(monitoringLabel.getText() + " Label is displayed");
+			} catch (Exception e) {
 				utils.log().info("Monitoring label is not displayed");
+			}
 			
-			if (monitoringToggleButton.isDisplayed())
-				utils.log().info("Monitoring Toggle button is displayed");
-			else
+			try {
+				if (monitoringToggleButton.isDisplayed())
+					utils.log().info("Monitoring Toggle button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Monitoring Toggle button is not displayed");
+			}
 			
-			if (whosHomeLabel.isDisplayed())
-				utils.log().info(whosHomeLabel.getText() + " button is displayed");
-			else
+			try {
+				if (whosHomeLabel.isDisplayed())
+					utils.log().info(whosHomeLabel.getText() + " button is displayed");
+			} catch (Exception e) {
 				utils.log().info("Who’s Home label is not displayed");
+			}
 
-			if (whosInOutLabel.isDisplayed())
-				utils.log().info(whosInOutLabel.getText() + " label is displayed");
-			else
+			try {
+				if (whosInOutLabel.isDisplayed())
+					utils.log().info(whosInOutLabel.getText() + " label is displayed");
+			} catch (Exception e) {
 				utils.log().info("WHO’S IN / OUT label is not displayed");
+			}
 
-			if (memberCount.isDisplayed())
-				utils.log().info(memberCount.getText() + " is displayed");
-			else
+			try {
+				if (memberCount.isDisplayed())
+					utils.log().info(memberCount.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Member Count is not displayed");
+			}
 			
-			if (notifyBellIcon.isDisplayed())
-				utils.log().info("Notify Me Bell Icon is displayed");
-			else
+			try {
+				if (notifyBellIcon.isDisplayed())
+					utils.log().info("Notify Me Bell Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Notify Me Bell Icon is not displayed");
+			}
 
-			if (addButton.isDisplayed())
-				utils.log().info("Add Icon is displayed");
-			else
+			try {
+				if (addButton.isDisplayed())
+					utils.log().info("Add Icon is displayed");
+			} catch (Exception e) {
 				utils.log().info("Add Icon is not displayed");
+			}
 
 			return true;
 		} catch (Exception e) {
@@ -258,7 +299,7 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
 		utils.log().info("Count is : " + size);
 			
-		for (int i = 2 ; i <= size; i++) {
+		for (int i = 1 ; i <= size; i++) {
 			utils.log().info("Members Device Details : " + i);
 			utils.log().info("-----------------------------");
 						
@@ -268,11 +309,24 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 			for (MobileElement e : entity) {
 				
 				try {
-				if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"WH_Main_Screen_Button_Option["+i--+"]\"]").isDisplayed()){
-					click(super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"WH_Main_Screen_Button_Option["+i--+"]\"]"));
+				if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"WH_Main_Screen_Button_Option["+ i +"]\"]").isDisplayed()){
 					utils.log().info("Member Initial is displayed ");}
 				} catch (Exception exp) {
 					utils.log().info("Member Initial is not displayed ");
+				}
+				
+				try {
+				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+ i +"]\"]").isDisplayed()){
+					utils.log().info("Member Name is  : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+ i +"]\"]").getText());}
+				} catch (Exception exp) {
+					utils.log().info("Member name is not displayed ");
+				}
+				
+				try {
+				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+ i +"]\"]").isDisplayed()){
+					utils.log().info("Monitoring Device is  : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+ i +"]\"]").getText());}
+				} catch (Exception exp) {
+					utils.log().info("Monitoing Device name is not displayed ");
 				}
 
 				utils.log().info("****************************************************");
@@ -283,44 +337,20 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 	}
 	
 	public boolean selectMemberOptionIcon() {
-		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-		utils.log().info("Count is : " + size);
+	//	int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
+	//	utils.log().info("Count is : " + size);
 			
-		for (int i = 2 ; i <= size; i++) {					
+		for (int i = 2 ; i <= 2; i++) {		
 			List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 			"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 			for (MobileElement e : entity) {
-				
-				try {
-				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Initial["+i--+"]\"]").isDisplayed())
-					utils.log().info("Member Initial is displayed ");
-				} catch (Exception exp) {
-					utils.log().info("Member Initial is not displayed ");
-				}
-
 				try {								     
-				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+i--+"]\"]").isDisplayed())
-					utils.log().info("Member Name " + " : "
-							+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+i--+"]\"]").getText());
+				if (e.findElement(MobileBy.iOSClassChain("**/XCUIElementTypeButton[`label == \"icon ellipses\"`]")).isDisplayed())
+					e.findElement(MobileBy.iOSClassChain("**/XCUIElementTypeButton[`label == \"icon ellipses\"`]")).click();
+					utils.log().info("Clicked on Member Eclipse option ");
 				} catch (Exception exp) {
-					utils.log().info("Member Name is not displayed ");
-				}
-				
-				try {								     
-				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+i--+"]\"]").isDisplayed())
-					utils.log().info("Monitoring Device " + " : "
-							+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+i--+"]\"]").getText());
-				} catch (Exception exp) {
-					utils.log().info("Monitoring Device is not displayed ");
-				}
-				
-				try {								     
-				if (super.getDriver().findElementByXPath("["+i--+"]\"]").isDisplayed())
-					utils.log().info("Monitoring Device " + " : "
-							+ super.getDriver().findElementByXPath("["+i--+"]\"]").getText());
-				} catch (Exception exp) {
-					utils.log().info("Monitoring Device is not displayed ");
+					utils.log().info("Member Eclipse option is not displayed ");
 				}
 							
 				utils.log().info("****************************************************");

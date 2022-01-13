@@ -77,20 +77,26 @@ public class HomeNetworkHealthOptimizationSatelliteLinkRatePage extends ParentCl
 			utils.log().info("Details of UI Elements on Network Health Optimization Settings - Satellite Link Rate Page ");
 			utils.log().info("******************************************************************************************");
 			try {
-				if (satelliteLinkRateTitle.isDisplayed())
-					utils.log().info(satelliteLinkRateTitle.getText() + " title text is displayed");
-				else
+				try {
+					if (satelliteLinkRateTitle.isDisplayed())
+						utils.log().info(satelliteLinkRateTitle.getText() + " title text is displayed");
+				} catch (Exception e3) {
 					utils.log().info("Satellite Link Rate title text is not displayed");
+				}
 
-				if (backButton.isDisplayed())
-					utils.log().info("Back button is displayed");
-				else
+				try {
+					if (backButton.isDisplayed())
+						utils.log().info("Back button is displayed");
+				} catch (Exception e2) {
 					utils.log().info("Back button is not displayed");
+				}
 				
-				if (recommendedSensitivityLabel.isDisplayed())
-					utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
-				else
+				try {
+					if (recommendedSensitivityLabel.isDisplayed())
+						utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Sensitivity Text is not displayed");
+				}
 				
 				try{
 					if (recommendSignalText.isDisplayed())

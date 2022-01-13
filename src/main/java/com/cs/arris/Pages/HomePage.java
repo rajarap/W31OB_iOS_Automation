@@ -297,6 +297,12 @@ public class HomePage extends ParentClass implements Page {
 		return whoseHome;
 	}
 	
+	public WhosHomeMonitoringPage getMonitoringWhoseHomePageObject() {
+		WhosHomeMonitoringPage whoseHomeMonitoring = new WhosHomeMonitoringPage();
+		return whoseHomeMonitoring;
+	}
+	
+	
 		
 	public HomePage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
@@ -341,20 +347,26 @@ public class HomePage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on the Home Page  ");
 		utils.log().info("*****************************************");
 		try {
-			if (homeTitle.isDisplayed()) 
-				utils.log().info("Title " + homeTitle.getText() + " is displayed");
-			else 
+			try {
+				if (homeTitle.isDisplayed()) 
+					utils.log().info("Title " + homeTitle.getText() + " is displayed");
+			} catch (Exception e2) {
 				utils.log().info("Home Title is not displayed");
+			}
 
-			if (networkSpeedTitle.isDisplayed())
-				utils.log().info("Title " + networkSpeedTitle.getText() + " is displayed");
-			else
+			try {
+				if (networkSpeedTitle.isDisplayed())
+					utils.log().info("Title " + networkSpeedTitle.getText() + " is displayed");
+			} catch (Exception e2) {
 				utils.log().info("Network Title is not displayed");
+			}
 
-			if (navigateButton.isDisplayed())
+			try {
+				if (navigateButton.isDisplayed())
+					utils.log().info("Navigate Icon is displayed");	
+			} catch (Exception e1) {
 				utils.log().info("Navigate Icon is displayed");
-			else
-				utils.log().info("Navigate Icon is displayed");
+			}
 			
 			try {
 				if (cloudIcon.isDisplayed())
@@ -362,85 +374,117 @@ public class HomePage extends ParentClass implements Page {
 			}catch(Exception e) {
 				utils.log().info("Cloud Icon is not displayed");}
 
-			if (notificationsIcon.isDisplayed())
-				utils.log().info("Notifications Icon is displayed");
-			else
+			try {
+				if (notificationsIcon.isDisplayed())
+					utils.log().info("Notifications Icon is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Notifications Icon is not displayed");
+			}
 
-			if (downloadText.isDisplayed())
-				utils.log().info("Download Text is displayed");
-			else
+			try {
+				if (downloadText.isDisplayed())
+					utils.log().info("Download Text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Download Text is not displayed");
+			}
 
-			if (downloadSpeedText.isDisplayed())
-				utils.log().info("Download Speed Text " + downloadSpeedText.getText() + " is displayed");
-			else
+			try {
+				if (downloadSpeedText.isDisplayed())
+					utils.log().info("Download Speed Text " + downloadSpeedText.getText() + " is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Download Speed Text is not displayed");
+			}
 
-			if (uploadText.isDisplayed())
-				utils.log().info("Upload Text is displayed");
-			else
+			try {
+				if (uploadText.isDisplayed())
+					utils.log().info("Upload Text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Upload Text is not displayed");
+			}
 
-			if (uploadSpeedText.isDisplayed())
-				utils.log().info("Upload Speed Text " + uploadSpeedText.getText() + " is displayed");
-			else
+			try {
+				if (uploadSpeedText.isDisplayed())
+					utils.log().info("Upload Speed Text " + uploadSpeedText.getText() + " is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Upload Speed Text is not displayed");
+			}
 			
-			if (networkHealthHeader.isDisplayed())
-				utils.log().info("Network Health Header Text is displayed");
-			else
+			try {
+				if (networkHealthHeader.isDisplayed())
+					utils.log().info("Network Health Header Text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Network Health Header Text is not displayed");
+			}
 			
-			if (networkHealthOptimizatonTurnedOffText.isDisplayed())
-				utils.log().info("Network health optimization is turned off Text is displayed");
-			else
+			try {
+				if (networkHealthOptimizatonTurnedOffText.isDisplayed())
+					utils.log().info("Network health optimization is turned off Text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Network health optimization is turned off Text is not displayed");
+			}
 			
-			if (tapToTurnOnNetworkHealth.isDisplayed())
-				utils.log().info("Tap here to turn on Text is displayed");
-			else
+			try {
+				if (tapToTurnOnNetworkHealth.isDisplayed())
+					utils.log().info("Tap here to turn on Text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Tap here to turn on Text is not displayed");
+			}
 
-			if (ssidName.isDisplayed())
-				utils.log().info("Main Router SSID Name " + ssidName.getText() + "  is displayed");
-			else
+			try {
+				if (ssidName.isDisplayed())
+					utils.log().info("Main Router SSID Name " + ssidName.getText() + "  is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Main Router SSID Name is not displayed");
+			}
 
-			if (mainDeviceImage.isDisplayed())
-				utils.log().info("Main Router Device image is displayed");
-			else
+			try {
+				if (mainDeviceImage.isDisplayed())
+					utils.log().info("Main Router Device image is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Main Router Device is not displayed");
+			}
 
-			if (mainDeviceName.isDisplayed())
-				utils.log().info("Main Router Device Name " + mainDeviceName.getText() + " is displayed");
-			else
+			try {
+				if (mainDeviceName.isDisplayed())
+					utils.log().info("Main Router Device Name " + mainDeviceName.getText() + " is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Main Router Device Name is displayed");
+			}
 
-			if (mainDeviceCounter.isDisplayed())
-				utils.log().info(mainDeviceCounter.getText() + " are connected to Main Router " );
-			else
-				utils.log().info("Devices conneced to the Main Router is not displayed");
+			try {
+				if (mainDeviceCounter.isDisplayed())
+					utils.log().info(mainDeviceCounter.getText() + " are connected to Main Router " );
+			} catch (Exception e1) {
+					utils.log().info("Devices conneced to the Main Router is not displayed");
+			}
 
-			if (totalNoOfDevicesImage.isDisplayed())
-				utils.log().info("Total number of devices image is displayed");
-			else
+			try {
+				if (totalNoOfDevicesImage.isDisplayed())
+					utils.log().info("Total number of devices image is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Total number of devices image is not displayed");
+			}
 
-			if (totalNoOfDevices.isDisplayed())
-				utils.log().info(totalNoOfDevices.getText() + " text is displayed");
-			else
+			try {
+				if (totalNoOfDevices.isDisplayed())
+					utils.log().info(totalNoOfDevices.getText() + " text is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Number of devices connected to the router is not displayed");
+			}
 
-			if (leftSatelliteImage.isDisplayed())
-				utils.log().info("Left Satellite Image is displayed");
-			else
-				utils.log().info("Left Satellite Image is not displayed");
+			try {
+				if (leftSatelliteImage.isDisplayed())
+					utils.log().info("Left Satellite Image is displayed");
+			} catch (Exception e1) {
+					utils.log().info("Left Satellite Image is not displayed");
+			}
 
-			if (rightSatelliteImage.isDisplayed())
-				utils.log().info("Right Satellite Image is displayed");
-			else
+			try {
+				if (rightSatelliteImage.isDisplayed())
+					utils.log().info("Right Satellite Image is displayed");
+			} catch (Exception e1) {
 				utils.log().info("Right Satellite Image is not displayed");
+			}
 			
 			super.swipeUp();
 			
@@ -833,3 +877,217 @@ public class HomePage extends ParentClass implements Page {
 		}
 	}
 }
+
+
+////Verify if all the required UI elements are displayed on the Home Page
+//	public boolean verifyUIOnHomePage() {
+//		utils.log().info("                                         ");
+//		utils.log().info("*****************************************");
+//		utils.log().info("Details of UI Elements on the Home Page  ");
+//		utils.log().info("*****************************************");
+//		try {
+//			if (homeTitle.isDisplayed()) 
+//				utils.log().info("Title " + homeTitle.getText() + " is displayed");
+//			else 
+//				utils.log().info("Home Title is not displayed");
+//
+//			if (networkSpeedTitle.isDisplayed())
+//				utils.log().info("Title " + networkSpeedTitle.getText() + " is displayed");
+//			else
+//				utils.log().info("Network Title is not displayed");
+//
+//			if (navigateButton.isDisplayed())
+//				utils.log().info("Navigate Icon is displayed");
+//			else
+//				utils.log().info("Navigate Icon is displayed");
+//			
+//			try {
+//				if (cloudIcon.isDisplayed())
+//				utils.log().info("Cloud Icon is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("Cloud Icon is not displayed");}
+//
+//			if (notificationsIcon.isDisplayed())
+//				utils.log().info("Notifications Icon is displayed");
+//			else
+//				utils.log().info("Notifications Icon is not displayed");
+//
+//			if (downloadText.isDisplayed())
+//				utils.log().info("Download Text is displayed");
+//			else
+//				utils.log().info("Download Text is not displayed");
+//
+//			if (downloadSpeedText.isDisplayed())
+//				utils.log().info("Download Speed Text " + downloadSpeedText.getText() + " is displayed");
+//			else
+//				utils.log().info("Download Speed Text is not displayed");
+//
+//			if (uploadText.isDisplayed())
+//				utils.log().info("Upload Text is displayed");
+//			else
+//				utils.log().info("Upload Text is not displayed");
+//
+//			if (uploadSpeedText.isDisplayed())
+//				utils.log().info("Upload Speed Text " + uploadSpeedText.getText() + " is displayed");
+//			else
+//				utils.log().info("Upload Speed Text is not displayed");
+//			
+//			if (networkHealthHeader.isDisplayed())
+//				utils.log().info("Network Health Header Text is displayed");
+//			else
+//				utils.log().info("Network Health Header Text is not displayed");
+//			
+//			if (networkHealthOptimizatonTurnedOffText.isDisplayed())
+//				utils.log().info("Network health optimization is turned off Text is displayed");
+//			else
+//				utils.log().info("Network health optimization is turned off Text is not displayed");
+//			
+//			if (tapToTurnOnNetworkHealth.isDisplayed())
+//				utils.log().info("Tap here to turn on Text is displayed");
+//			else
+//				utils.log().info("Tap here to turn on Text is not displayed");
+//
+//			if (ssidName.isDisplayed())
+//				utils.log().info("Main Router SSID Name " + ssidName.getText() + "  is displayed");
+//			else
+//				utils.log().info("Main Router SSID Name is not displayed");
+//
+//			if (mainDeviceImage.isDisplayed())
+//				utils.log().info("Main Router Device image is displayed");
+//			else
+//				utils.log().info("Main Router Device is not displayed");
+//
+//			if (mainDeviceName.isDisplayed())
+//				utils.log().info("Main Router Device Name " + mainDeviceName.getText() + " is displayed");
+//			else
+//				utils.log().info("Main Router Device Name is displayed");
+//
+//			if (mainDeviceCounter.isDisplayed())
+//				utils.log().info(mainDeviceCounter.getText() + " are connected to Main Router " );
+//			else
+//				utils.log().info("Devices conneced to the Main Router is not displayed");
+//
+//			if (totalNoOfDevicesImage.isDisplayed())
+//				utils.log().info("Total number of devices image is displayed");
+//			else
+//				utils.log().info("Total number of devices image is not displayed");
+//
+//			if (totalNoOfDevices.isDisplayed())
+//				utils.log().info(totalNoOfDevices.getText() + " text is displayed");
+//			else
+//				utils.log().info("Number of devices connected to the router is not displayed");
+//
+//			if (leftSatelliteImage.isDisplayed())
+//				utils.log().info("Left Satellite Image is displayed");
+//			else
+//				utils.log().info("Left Satellite Image is not displayed");
+//
+//			if (rightSatelliteImage.isDisplayed())
+//				utils.log().info("Right Satellite Image is displayed");
+//			else
+//				utils.log().info("Right Satellite Image is not displayed");
+//			
+//			super.swipeUp();
+//			
+//			try {
+//				if (promotionLogo.isDisplayed()) 
+//					utils.log().info("Promotional Logo is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("Promotional Logo is not displayed");}
+//
+//			try {
+//				if (promotionImage.isDisplayed()) 
+//					utils.log().info("Promotional Image is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("Promotional Image is not displayed");}
+//			
+//			try {
+//				if (getProtectionNowButton.isDisplayed()) 
+//					utils.log().info("GET PROTECTION NOW button is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("GET PROTECTION NOW button is not displayed");}
+//			
+//			try {
+//			if (dontSeePromotionAgainText.isDisplayed()) 
+//				utils.log().info("Don't want to see promotion again? text is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("Don't want to see promotion again? text is not displayed");}
+//			
+//			try {
+//			if (specialOffersText.isDisplayed()) 
+//				utils.log().info("Special offer to our valued customers text is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("Special offer to our valued customers text is not displayed");}
+//			
+//			try {
+//			if (freeTrialText.isDisplayed())
+//				utils.log().info("Exclusive to ARRIS - Identity Guard free trial for 60 days text is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("Exclusive to ARRIS - Identity Guard free trial for 60 days text is not displayed");}
+//			
+//			try {
+//			if (closeBanner.isDisplayed()) 
+//				utils.log().info("Close Banner Icon is displayed");
+//			}catch(Exception e) {
+//				utils.log().info("Close Banner Icon is not displayed");}
+//			
+//			try {
+//			if (deviceSignalStrengthLeaderBoardText.isDisplayed())
+//				utils.log().info("Device Signal Strength Leader Board Text is displayed");
+//			}catch(Exception e) {utils.log().info("Device Signal Strength Leader Board Text is not displayed");}
+//
+//			try {
+//			if (deviceSignalStrengthLeaderBoardImage.isDisplayed())
+//				utils.log().info("Device Signal Strength Leader Board Image is displayed");
+//			}catch(Exception e) {utils.log().info("Device Signal Strength Leader Board Image is not displayed");}
+//
+//			try {
+//			if (bitRateDevices.isDisplayed())
+//				utils.log().info("Device Signal Strength Leader Board is displayed for " + bitRateDevices.getText());
+//			}catch(Exception e) {utils.log().info("Device Signal Strength Leader Board Count is not displayed");}
+//
+//			try {
+//			if (speedTestHistoryText.isDisplayed())
+//				utils.log().info("Speed Test History Text is displayed");
+//			}catch(Exception e) {utils.log().info("Speed Test History Text is not displayed");}
+//
+//			try {
+//			if (speedTestHistoryImage.isDisplayed())
+//				utils.log().info("Speed Test History Image is displayed");
+//			}catch(Exception e) {utils.log().info("Speed Test History Image is not displayed");}
+//
+//			try {
+//			if (speedTestHistoryDevices.isDisplayed())
+//				utils.log().info("Count of Speed Test History Devices : " + speedTestHistoryDevices.getText() + " is displayed");
+//			}catch(Exception e) {utils.log().info("Count of Speed Test History Devices is not displayed");}
+//
+//			try {
+//			if (whoseHomeText.isDisplayed())
+//				utils.log().info("Who's Home Text is displayed");
+//			}catch(Exception e) {utils.log().info("Who's Home Text is not displayed");}
+//
+//			try {
+//			if (whoseHomeAndWhoseNotText.isDisplayed())
+//				utils.log().info("Find out who’s home and who’s not text is displayed");
+//			}catch(Exception e) {utils.log().info("Find out who’s home and who’s not text is not displayed");}
+//			
+//			try {
+//			if (whoseHomeArrow.isDisplayed())
+//				utils.log().info("Who's Home Arrow Image is displayed");
+//			}catch(Exception e) {utils.log().info("Who's Home Arrow Image is not displayed");}
+//			
+//			try {
+//			if (currentlyBlockedDevicesText.isDisplayed())
+//				utils.log().info("Currently Blocked Devices Text is displayed");
+//			}catch(Exception e) {utils.log().info("Currently Blocked Devices is not displayed");}
+//
+//			try {
+//			if (currentlyBlockedDevicesImage.isDisplayed())
+//				utils.log().info("Currently Blocked Devices Image is displayed");
+//			}catch(Exception e) {utils.log().info("Currently Blocked Devices Image is not displayed");}
+//			
+//			return true;
+//		}catch(Exception e) {
+//			return false;
+//		}
+//	}

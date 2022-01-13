@@ -23,6 +23,7 @@ public class AddSatelliteAddNewSatellitePage1 extends ParentClass implements Pag
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add_New_BOBA_Satellite_Screen_TitleLabel\"]")
 	public MobileElement addSatelliteTitle2;
 
+	//Each satellite expands your network coverage. The following steps will add your satellite to your network.
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add_New_BOBA_Satellite_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 

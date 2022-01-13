@@ -78,20 +78,26 @@ public class HomeNetworkHealthOptimizationSatelliteSignalPage extends ParentClas
 			utils.log().info("***********************************************************************************************");
 			
 			try {
-				if (connectedSatelliteTitle.isDisplayed())
-					utils.log().info(connectedSatelliteTitle.getText() + " title text is displayed");
-				else
+				try {
+					if (connectedSatelliteTitle.isDisplayed())
+						utils.log().info(connectedSatelliteTitle.getText() + " title text is displayed");
+				} catch (Exception e3) {
 					utils.log().info("Satellite Signal Strength title text is not displayed");
+				}
 
-				if (backButton.isDisplayed())
-					utils.log().info("Back button is displayed");
-				else
+				try {
+					if (backButton.isDisplayed())
+						utils.log().info("Back button is displayed");
+				} catch (Exception e2) {
 					utils.log().info("Back button is not displayed");
+				}
 				
-				if (recommendedSensitivityLabel.isDisplayed())
-					utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
-				else
+				try {
+					if (recommendedSensitivityLabel.isDisplayed())
+						utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Sensitivity Text is not displayed");
+				}
 				
 				try{
 					if (recommendedText.isDisplayed())

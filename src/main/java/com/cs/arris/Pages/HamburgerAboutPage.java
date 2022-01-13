@@ -120,35 +120,47 @@ public class HamburgerAboutPage extends ParentClass implements Page {
 		utils.log().info("Details of UI Elements on the Hamburger - About Page  ");
 		utils.log().info("******************************************************");
 		try {
-			if (aboutTitle.isDisplayed())
-				utils.log().info("Title " + aboutTitle.getText() + " is displayed");
-			else
+			try {
+				if (aboutTitle.isDisplayed())
+					utils.log().info("Title " + aboutTitle.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("About page title is not displayed");
+			}
 
-			if (routerImage.isDisplayed())
-				utils.log().info("Router Image is displayed");
-			else
+			try {
+				if (routerImage.isDisplayed())
+					utils.log().info("Router Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Router Image is not displayed");
+			}
 
-			if (surfboardImage.isDisplayed())
-				utils.log().info("Surfboard Image is displayed");
-			else
+			try {
+				if (surfboardImage.isDisplayed())
+					utils.log().info("Surfboard Image is displayed");
+			} catch (Exception e) {
 				utils.log().info("Surfboard Image is not displayed");
+			}
 
-			if (firmwareVersionText.isDisplayed())
-				utils.log().info(firmwareVersionText.getText() + " is displayed");
-			else
+			try {
+				if (firmwareVersionText.isDisplayed())
+					utils.log().info(firmwareVersionText.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Firmware Version is not displayed");
+			}
 
-			if (appVersionText.isDisplayed())
-				utils.log().info(appVersionText.getText() + " is displayed");
-			else
+			try {
+				if (appVersionText.isDisplayed())
+					utils.log().info(appVersionText.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("App Version is not displayed");
+			}
 
-			if (modelNameText.isDisplayed())
-				utils.log().info(modelNameText.getText() + " is displayed");
-			else
+			try {
+				if (modelNameText.isDisplayed())
+					utils.log().info(modelNameText.getText() + " is displayed");
+			} catch (Exception e) {
 				utils.log().info("Model Name is not displayed");
+			}
 			
 			return true;
 		} catch (Exception e) {

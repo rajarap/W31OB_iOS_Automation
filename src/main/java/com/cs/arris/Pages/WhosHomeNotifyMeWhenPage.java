@@ -82,6 +82,11 @@ public class WhosHomeNotifyMeWhenPage extends ParentClass implements Page {
 		WhosHomeNotifyMeWhenHelpPage notifyMeHelpPage = new WhosHomeNotifyMeWhenHelpPage();
 		return notifyMeHelpPage;
 	}
+	
+	public WhosHomeAddNewNotificationPage getAddNewNotificationPageObject() {
+		WhosHomeAddNewNotificationPage notifyMePage = new WhosHomeAddNewNotificationPage();
+		return notifyMePage;
+	}
 
 	public boolean verifyPickADeviceDialogUI() {
 		
@@ -168,7 +173,7 @@ public class WhosHomeNotifyMeWhenPage extends ParentClass implements Page {
 	
 	
 	
-	public boolean pauseInternetForSelectedUsers()
+	public boolean Verify_Member_Notifications()
 	{
 		utils.log().info("                                                 ");
 		utils.log().info("*************************************************");
@@ -187,20 +192,15 @@ public class WhosHomeNotifyMeWhenPage extends ParentClass implements Page {
 				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					String str = super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Screen_Switch_Profile["+i+"]\"`]")).getAttribute("value");
-					int value = Integer.parseInt(str);
-					if(value == 0)  //disabled
-					{
-						super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeSwitch[`name == \"Parental_Control_Screen_Switch_Profile["+i+"]\"`]")).click();
-						utils.log().info("Parental internet is enabled");
-					}else {
-						utils.log().info("Parental Control is already enabled");
-					}
+					utils.log().info("Member Name : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_MemberName["+i+"]\"]").getText());
+					utils.log().info("Notification : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_Occur["+i+"]\"]").getText());
+					utils.log().info("Member will be notified : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_Event["+i+"]\"]").getText());
+					//utils.log().info("Member notification is : " + super.getDriver().findElementByXPath("").getText());
 				}
 			}
 			return true;
 		} catch (Exception exp) {
-			utils.log().info("Error in Pausing Internet for selected User Profile ");
+			utils.log().info("Error in retrieving Member Notifications ");
 			return false;
 		}
 	}

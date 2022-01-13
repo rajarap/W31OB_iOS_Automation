@@ -21,38 +21,16 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 {
 	public TestUtils utils = new TestUtils();
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/txtToolBarTitle']"),  //Devices (2)
-		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[359,149][721,223]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/txtToolBarTitle") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_NavigationBar_TitleLabel\"]")
 	public MobileElement parentalControlTitle; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageButton[@content-desc='Navigate up']"),  //back button
-		@AndroidBy (xpath = "//android.widget.ImageButton[@bounds='[0,112][147,259]']")
-	})
-	public MobileElement backButton; 
-	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.ImageView[@resource-id='com.arris.sbcBeta:id/helpIcon']"),  //help Icon
-		@AndroidBy (xpath = "//android.widget.ImageView[@bounds='[980,153][1046,219]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/helpIcon") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Parental_Control_Screen_NavigationBar_Button_Help\"]")
 	public MobileElement helpIcon; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/profile_parental_view']"),  //Profile tab
-		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[102,276][540,378]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/profile_parental_view") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Profiles\"]")
 	public MobileElement profilesTab; 
 	
-	@AndroidFindAll({
-		@AndroidBy (xpath = "//android.widget.TextView[@resource-id='com.arris.sbcBeta:id/blocked_parental_view']"),  //Currently blocked tab
-		@AndroidBy (xpath = "//android.widget.TextView[@bounds='[540,276][978,378]']"),
-		@AndroidBy (id = "com.arris.sbcBeta:id/blocked_parental_view") 
-	})
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Currently Blocked\"]")
 	public MobileElement currentlyBlockedTab; 
 
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_Blocked\"]")  //There are currently no Blocked Profiles
@@ -65,17 +43,6 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 	public ParentalControlCurrentlyBlockedPage()
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);
-	}
-
-	public boolean clickBackButton() {
-		if (backButton.isDisplayed()) {
-			click(backButton);
-			utils.log().info("Clicked on Back Button");
-			return true;
-		} else {
-			utils.log().info("Back Button is not displayed");
-			return false;
-		}
 	}
 
 	public boolean clickProfilesTab() {
@@ -157,7 +124,7 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 	
 	@Override
 	public boolean isAt() {
-		if(currentlyBlockedTab.isDisplayed() && currentlyBlockedTab.isEnabled())
+		if(currentlyBlockedTab.isDisplayed())
 		{
 			utils.log().info("On Parental Control - Currently Blocked Page");
 			return true;}

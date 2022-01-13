@@ -77,20 +77,26 @@ public class HomeNetworkHealthOptimizationISPSpeedRatePage extends ParentClass i
 			utils.log().info("Details of UI Elements on Network Health Optimization Settings - ISP Speed Rate Page   ");
 			utils.log().info("***************************************************************************************");
 			try {
-				if (ispSpeedRateTitle.isDisplayed())
-					utils.log().info(ispSpeedRateTitle.getText() + " title text is displayed");
-				else
+				try {
+					if (ispSpeedRateTitle.isDisplayed())
+						utils.log().info(ispSpeedRateTitle.getText() + " title text is displayed");
+				} catch (Exception e3) {
 					utils.log().info("ISP Speed Rate title text is not displayed");
+				}
 
-				if (backButton.isDisplayed())
-					utils.log().info("Back button is displayed");
-				else
+				try {
+					if (backButton.isDisplayed())
+						utils.log().info("Back button is displayed");
+				} catch (Exception e2) {
 					utils.log().info("Back button is not displayed");
+				}
 				
-				if (recommendedSensitivityLabel.isDisplayed())
-					utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
-				else
+				try {
+					if (recommendedSensitivityLabel.isDisplayed())
+						utils.log().info(recommendedSensitivityLabel.getText() + " is displayed");
+				} catch (Exception e1) {
 					utils.log().info("Sensitivity Text is not displayed");
+				}
 				
 				try{
 					if (ispRecommendedRate.isDisplayed())

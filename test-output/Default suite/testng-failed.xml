@@ -3,22 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cs.arris.Tests.TC03_Complex_Test">
+      <class name="com.cs.arris.Tests.TC02_Medium_Test">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="Verify_WAN_Settings_UI_Page"/>
-          <include name="Verify_Network_UI_Page"/>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="Verify_WAN_Settings_DNS_Configuration_IPv4_Automatic_UI_Page"/>
-          <include name="afterMethod"/>
           <include name="beforeClass"/>
+          <include name="afterTest"/>
           <include name="beforeMethod"/>
-          <include name="beforeMethod"/>
+          <include name="Verify_Whos_Home_Page"/>
+          <include name="beforeSuite"/>
+          <include name="Verify_Add_Member_Dialog"/>
+          <include name="afterMethod"/>
+          <include name="Verify_Whos_Home_Monitoring_Page"/>
+          <include name="Verify_Whos_Home_Monitoring_Page_Remove_Member_Name"/>
+          <include name="Verify_Add_Member_In_Whos_Home_Monitoring_Page"/>
+          <include name="Verify_Whos_Home_Monitoring_Page_Add_Notification"/>
+          <include name="Verify_Whos_Home_Monitoring_Page_Change_Member_Name"/>
+          <include name="beforeTest"/>
+          <include name="Verify_Pick_A_Phone_Device"/>
           <include name="Login_And_Onboard"/>
+          <include name="Verify_Whos_Home_Monitoring_Page_Change_Device_Name"/>
+          <include name="afterSuite"/>
+          <include name="Verify_Whos_Home_Monitoring_Page_Verify_Notification"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.cs.arris.Tests.TC03_Complex_Test -->
+      </class> <!-- com.cs.arris.Tests.TC02_Medium_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

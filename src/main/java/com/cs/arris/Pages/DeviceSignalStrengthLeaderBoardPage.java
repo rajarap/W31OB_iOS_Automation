@@ -98,25 +98,33 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			utils.log().info("Verifying UI Elements on Device Signal Strength Leader Board  ");
 			utils.log().info("**************************************************************");
 			
-			if (leaderBoardTitleText.isDisplayed())
-				utils.log().info("Title - " + leaderBoardTitleText.getText() + " - is displayed");
-			else
+			try {
+				if (leaderBoardTitleText.isDisplayed())
+					utils.log().info("Title - " + leaderBoardTitleText.getText() + " - is displayed");
+			} catch (Exception e) {
 				utils.log().info("Leader Board Title Text is not displayed");
+			}
 
-			if (topFiveOnlineDevices.isDisplayed())
-				utils.log().info(topFiveOnlineDevices.getText() + " - text is displayed");
-			else
+			try {
+				if (topFiveOnlineDevices.isDisplayed())
+					utils.log().info(topFiveOnlineDevices.getText() + " - text is displayed");
+			} catch (Exception e) {
 				utils.log().info("Top five Online Devices text is not displayed");
+			}
 
-			if (signalStrengthOptions.isDisplayed())
-				utils.log().info("Sorting based on Device Signal Strength option is displayed");
-			else
+			try {
+				if (signalStrengthOptions.isDisplayed())
+					utils.log().info("Sorting based on Device Signal Strength option is displayed");
+			} catch (Exception e) {
 				utils.log().info("Sorting based on device signal strength option is not displayed");
+			}
 			
-			if (countOfDevices.isDisplayed())
-				utils.log().info(countOfDevices.getText() + " are displayed");
-			else
+			try {
+				if (countOfDevices.isDisplayed())
+					utils.log().info(countOfDevices.getText() + " are displayed");
+			} catch (Exception e) {
 				utils.log().info("Number of Devices is not displayed");
+			}
 			
 			return true;
 		} catch (Exception e) {

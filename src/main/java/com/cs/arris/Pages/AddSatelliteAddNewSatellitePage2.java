@@ -17,12 +17,13 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class AddSatelliteAddNewSatellitePage2 extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"BOBAHelp\"]")
-	public MobileElement helpIcon;
-	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"ADD SATELLITE\"]")
+	public MobileElement addSatelliteTitle;
+		
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add_New_BOBA_Satellite_Screen_TitleLabel\"]")
 	public MobileElement addSatelliteTitle2;
 
+	//Your network is being configured for satellite install. You may be disconnected from your Wi-Fi network. If you are not reconnected please connect to your network through settings.
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Add_New_BOBA_Satellite_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 
