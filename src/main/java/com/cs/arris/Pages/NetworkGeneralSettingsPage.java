@@ -324,9 +324,6 @@ public class NetworkGeneralSettingsPage extends ParentClass implements Page {
 					utils.log().info("IPv6 Enable toggle button is not displayed");
 			}catch(Exception e) {}
 
-			if (ipv6InfoIcon.isDisplayed())
-				utils.log().info("IPv6 Enable Info Icon is displayed");
-
 			return true;
 		} catch (Exception e) {
 			return false;

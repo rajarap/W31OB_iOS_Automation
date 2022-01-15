@@ -88,7 +88,7 @@ public class ParentalControlCurrentlyBlockedPage extends ParentClass implements 
 					} else {
 						utils.log().info("Number of Devices Paused for Internet Connection is not displayed ");	}
 	
-						if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedPause["+i+"\"]").isDisplayed()) {
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedPause["+i+"]\"]").isDisplayed()) {
 							utils.log().info("Internet Paused Label is displayed : " + (super.getDriver().findElementByXPath(
 									"//XCUIElementTypeStaticText[@name=\"Parental_Control_Screen_Label_BlockedPause["+i+"]\"]").getText()));
 					} else {

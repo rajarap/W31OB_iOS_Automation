@@ -139,10 +139,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 			utils.log().info("*********************************************");
 			utils.log().info("List of Devices Signal Strength Leader Board ");
 			utils.log().info("*********************************************");
-
-//			int size = new HomePage().getBitRateDevicesCount();
-//			utils.log().info("Bit Rate Device count is : " + size);
-			
+	
 			size = super.getDeviceSignalStrengthCount(countOfDevices.getText());
 			utils.log().info("Bit Rate Device count is : " + size);
 			
@@ -191,18 +188,12 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 					}
 
 					try {
-						utils.log().info("RSSI Label             : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSITitle["+i+"]\"]").getText());
+						utils.log().info(super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSITitle["+i+"]\"]").getText() + " : " +
+								super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
 					} catch (Exception exp) {
-						utils.log().info("RSSI Label is not available/displayed");
+						utils.log().info("RSSI Label/data is not available/displayed");
 					}
 
-					try {
-						utils.log().info("RSSI Value             : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI data is not available/displayed");
-					}
 				}
 				if (i >= 5)
 					super.swipeUp();
@@ -275,14 +266,7 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 					try {
 						utils.log().info("RSSI Label             : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSITitle["+i+"]\"]").getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI Label is not available/displayed");
-					}
-
-					try {
-						utils.log().info("RSSI Value             : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
+								+  super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("RSSI data is not available/displayed");
 					}
@@ -358,13 +342,6 @@ public class DeviceSignalStrengthLeaderBoardPage extends ParentClass implements 
 
 					try {
 						utils.log().info("RSSI Label             : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSITitle["+i+"]\"]").getText());
-					} catch (Exception exp) {
-						utils.log().info("RSSI Label is not available/displayed");
-					}
-
-					try {
-						utils.log().info("RSSI Value             : "
 								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_Bit_Rate_Leaderboard_Screen_Label_RSSI["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("RSSI data is not available/displayed");

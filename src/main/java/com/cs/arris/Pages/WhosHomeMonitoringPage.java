@@ -296,12 +296,12 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 		utils.log().info("Details of Members Being Monitored");
 		utils.log().info("**********************************");
 
-		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-		utils.log().info("Count is : " + size);
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+	//	utils.log().info("Count is : " + size);
 			
 		for (int i = 1 ; i <= size; i++) {
 			utils.log().info("Members Device Details : " + i);
-			utils.log().info("-----------------------------");
+			utils.log().info("------------------------------");
 						
 			List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
 			"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
@@ -309,22 +309,22 @@ public class WhosHomeMonitoringPage extends ParentClass implements Page {
 			for (MobileElement e : entity) {
 				
 				try {
-				if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"WH_Main_Screen_Button_Option["+ i +"]\"]").isDisplayed()){
+				if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"WH_Main_Screen_Button_Option["+ i++ +"]\"]").isDisplayed()){
 					utils.log().info("Member Initial is displayed ");}
 				} catch (Exception exp) {
 					utils.log().info("Member Initial is not displayed ");
 				}
 				
 				try {
-				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+ i +"]\"]").isDisplayed()){
-					utils.log().info("Member Name is  : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+ i +"]\"]").getText());}
+				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+ i++ +"]\"]").isDisplayed()){
+					utils.log().info("Member Name is  : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_MemberName["+ i++ +"]\"]").getText());}
 				} catch (Exception exp) {
 					utils.log().info("Member name is not displayed ");
 				}
 				
 				try {
-				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+ i +"]\"]").isDisplayed()){
-					utils.log().info("Monitoring Device is  : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+ i +"]\"]").getText());}
+				if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+ i++ +"]\"]").isDisplayed()){
+					utils.log().info("Monitoring Device is  : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Main_Screen_Label_Status["+ i++ +"]\"]").getText());}
 				} catch (Exception exp) {
 					utils.log().info("Monitoing Device name is not displayed ");
 				}

@@ -812,8 +812,8 @@ public class ParentalControlWithProfilesPage extends ParentClass implements Page
 				utils.log().info("Delete User Profile ");
 				utils.log().info("--------------------");
 				
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]");
+//				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+//				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable/XCUIElementTypeCell[1]");
 	
 			    super.swipeUserProfile(Direction.LEFT);
 			    

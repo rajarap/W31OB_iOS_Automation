@@ -534,10 +534,12 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 
 			try {
 			    super.swipeAssocaitedDevices(Direction.LEFT);
+			    
 			    utils.log().info("Swiped LEFT on Associated Device");
-			    super.pause(2);
-			    if(deleteDeviceIcon.isDisplayed()) {
-			    	click(deleteDeviceIcon); 
+			    
+			    if(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Delete\"`]")).isDisplayed()) 
+			    {
+			    	super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Delete\"`]")).click(); 
 			    	utils.log().info("Clicked on Delete Button");
 			    	
 				    if(alertTitle.isDisplayed()) 
@@ -726,8 +728,8 @@ public class ParentalControlUserProfilePage extends ParentClass implements Page 
 			    super.swipeAssocaitedRules(Direction.LEFT);
 			    utils.log().info("Swiped LEFT on Associated Rule");
 			    super.pause(2);
-			    if(deleteDeviceIcon.isDisplayed()) {
-			    	click(deleteDeviceIcon); 
+			    if(super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Delete\"`]")).isDisplayed()) {
+			    	super.getDriver().findElement(MobileBy.iOSClassChain("**/XCUIElementTypeStaticText[`label == \"Delete\"`]")).click(); 
 			    	utils.log().info("Clicked on Delete Button");
 			    	
 				    if(alertTitle.isDisplayed()) 

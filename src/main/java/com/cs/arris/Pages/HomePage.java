@@ -695,15 +695,16 @@ public class HomePage extends ParentClass implements Page {
 			return false;
 		}
 	}
-
-	public boolean clickCurrentlyBlockedDevicesImage() {
+	
+	
+	public boolean clickCurrentlyBlockedDevicesText() {
 		super.swipeUp();
-		if (whoseHomeText.isDisplayed()) {
-			click(whoseHomeText);
-			utils.log().info("Home Page - Clicked on Who's Home Text");
+		if (currentlyBlockedDevicesText.isDisplayed()) {
+			click(currentlyBlockedDevicesText);
+			utils.log().info("Home Page - Clicked on Currently Blocked Devices Text");
 			return true;
 		} else {
-			utils.log().info("Home Page - Who's Home Text is either not visible or is not present on the DOM");
+			utils.log().info("Home Page - Currently Blocked Devices Text is either not visible or is not present on the DOM");
 			return false;
 		}
 	}

@@ -10,6 +10,7 @@ import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.Direction;
 import com.cs.arris.Utilities.TestUtils;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
@@ -223,38 +224,44 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 		utils.log().info("Details of Phone Devices Listed in Pick A Device Dialog");
 		utils.log().info("*******************************************************");
 
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
+			int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
 			utils.log().info("Count of Phone Devices is : " + size);
 			
-			for (int i = 1; i <= size; i++) {
-				utils.log().info("Phone Device  : " + i);
-				utils.log().info("--------------------------");
+			if(size != 0)
+			{
+				for (int i = 1; i <= size; i++) {
+					utils.log().info("Phone Device  : " + i);
+					utils.log().info("--------------------------");
+							
+					List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
+					"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
+
+					for (MobileElement e : entity) {
+						try {								     
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_HouseholdAddDeviceSelectedPopup_Screen_Label_Device["+i+"]\"]").isDisplayed())
+							utils.log().info("Phone Device Name " + " : "
+									+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_HouseholdAddDeviceSelectedPopup_Screen_Label_Device["+i+"]\"]").getText());
+						} catch (Exception exp) {
+							utils.log().info("Phone Device Name is not displayed ");
+						}
 						
-				List<MobileElement> entity = (List<MobileElement>) super.getDriver().findElementsByXPath(
-				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
-
-				for (MobileElement e : entity) {
-					try {								     
-					if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_HouseholdAddDeviceSelectedPopup_Screen_Label_Device["+i+"]\"]").isDisplayed())
-						utils.log().info("Phone Device Name " + " : "
-								+ super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_HouseholdAddDeviceSelectedPopup_Screen_Label_Device["+i+"]\"]").getText());
-					} catch (Exception exp) {
-						utils.log().info("Phone Device Name is not displayed ");
+						try {
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"WH_HouseholdAddDeviceSelectedPopup_Screen_Button_Device["+i+"]\"]").isDisplayed())
+							utils.log().info("Phone Device Radio Button is displayed ");
+						} catch (Exception exp) {
+							utils.log().info("Phone Device Radio Button is not displayed ");
+						}
+						utils.log().info("****************************************************");
+						utils.log().info("                                                    ");
 					}
-					
-					try {
-					if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"WH_HouseholdAddDeviceSelectedPopup_Screen_Button_Device["+i+"]\"]").isDisplayed())
-						utils.log().info("Phone Device Radio Button is displayed ");
-					} catch (Exception exp) {
-						utils.log().info("Phone Device Radio Button is not displayed ");
-					}
-					utils.log().info("****************************************************");
-					utils.log().info("                                                    ");
+					if(i >= 2) super.swipeUp();
 				}
-				if(i >= 2) super.swipeUp();
-			}
+				
 			return true;
-
+			}else {
+				utils.log().info("Currently there are no phone devices listed in the Pick A Device dialog");
+				return true;
+			}
 	}
 	
 	public boolean verifyPickATabDevice() {
@@ -263,9 +270,11 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 		utils.log().info("Details of Tab Devices Listed in Pick A Device Dialog");
 		utils.log().info("*****************************************************");
 
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-			utils.log().info("Count of Tab Devices is : " + size);
-			
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+		utils.log().info("Count of Tab Devices is : " + size);
+		
+		if(size != 0)
+		{
 			for (int i = 1; i <= size; i++) {
 				utils.log().info("Tab Device  : " + i);
 				utils.log().info("--------------------------");
@@ -294,7 +303,12 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 				if(i >= 2) super.swipeUp();
 			}
 			return true;
+		}else {
+			utils.log().info("Currently there are no Tab devices listed in the Pick A Device dialog");
+			return true;
 		}
+
+	}
 	
 	public boolean verifyPickAComputerDevice() {
 		utils.log().info("                                                          ");
@@ -302,9 +316,11 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 		utils.log().info("Details of Computer Devices Listed in Pick A Device Dialog");
 		utils.log().info("**********************************************************");
 
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-			utils.log().info("Count of Computer Devices is : " + size);
-			
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+		utils.log().info("Count of Computer Devices is : " + size);
+		
+		if(size != 0)
+		{
 			for (int i = 1; i <= size; i++) {
 				utils.log().info("Computer Device  : " + i);
 				utils.log().info("--------------------------");
@@ -333,17 +349,23 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 				if(i >= 2) super.swipeUp();
 			}
 			return true;
+		}else {
+			utils.log().info("Currently there are no Computer devices listed in the Pick A Device dialog");
+			return true;
+		}
 	}
 	
-	public boolean verifyPickAIOTrDevice() {
+	public boolean verifyPickAIOTDevice() {
 		utils.log().info("                                                     ");
 		utils.log().info("*****************************************************");
 		utils.log().info("Details of IOT Devices Listed in Pick A Device Dialog");
 		utils.log().info("*****************************************************");
 
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-			utils.log().info("Count of IOT Devices is : " + size);
-			
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+		utils.log().info("Count of IOT Devices is : " + size);
+		
+		if(size != 0)
+		{
 			for (int i = 1; i <= size; i++) {
 				utils.log().info("IOT Device  : " + i);
 				utils.log().info("-------------------");
@@ -372,13 +394,19 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 				if(i >= 2) super.swipeUp();
 			}
 			return true;
+		}else {
+			utils.log().info("Currently there are no Computer devices listed in the Pick A Device dialog");
+			return true;
 		}
+	}
 	
 	public boolean pickAIOTDevice() {
 
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-			utils.log().info("Count of IOT Devices is : " + size);
-			
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+		utils.log().info("Count of IOT Devices is : " + size);
+		
+		if(size != 0)
+		{
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting IOT Device  : " + i);
 				utils.log().info("----------------------------");
@@ -407,12 +435,18 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
+		}else {
+			utils.log().info("Currently there are no IOT devices listed in the Pick A Device dialog");
+			return true;
+		}
 	}
 	
 	public boolean pickAPhoneDevice() {
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-			utils.log().info("Count of Phone Devices is : " + size);
-			
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+		utils.log().info("Count of Phone Devices is : " + size);
+		
+		if(size != 0)
+		{
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting Phone Device  : " + i);
 				utils.log().info("------------------------------");
@@ -441,13 +475,20 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
+		}else {
+			utils.log().info("Currently there are no Phone devices listed in the Pick A Device dialog");
+			return true;
 		}
 	
+	}
+	
 	public boolean pickATabDevice() {
+	
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+		utils.log().info("Count of Tab Devices is : " + size);
 		
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-			utils.log().info("Count of Tab Devices is : " + size);
-			
+		if(size != 0)
+		{
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting Tab Device  : " + i);
 				utils.log().info("------------------------------");
@@ -476,12 +517,19 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
+		}else {
+			utils.log().info("Currently there are no Tab devices listed in the Pick A Device dialog");
+			return true;
 		}
 	
+	}
+	
 	public boolean pickAComputerDevice() {
-			int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
-			utils.log().info("Count of Computer Devices is : " + size);
-			
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
+		utils.log().info("Count of Computer Devices is : " + size);
+		
+		if(size != 0)
+		{
 			for (int i = 1; i <= 1; i++) {
 				utils.log().info("Selecting Computer Device  : " + i);
 				utils.log().info("---------------------------------");
@@ -510,7 +558,11 @@ public class WhosHomePickADeviceDialog extends ParentClass implements Page {
 				}
 			}
 			return true;
-
+		}else {
+			utils.log().info("Currently there are no Computer devices listed in the Pick A Device dialog");
+			return true;
+		}
+	
 	}
 
 	@Override

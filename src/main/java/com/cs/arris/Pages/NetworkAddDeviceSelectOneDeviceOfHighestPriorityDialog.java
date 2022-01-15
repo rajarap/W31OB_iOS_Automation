@@ -17,16 +17,16 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"DEVICE PRIORITY\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_TitleLabel\"]")
 	public MobileElement title;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Only one Device can be at Highest Priority.\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name=\"Error_Alert_Screen_SubTitleLabel\"]")
 	public MobileElement description;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"closeIcon\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeImage[@name=\"Error_Alert_Screen_Image_Close\"]")
 	public MobileElement closeIcon;
 
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"OK\"]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Error_Alert_Screen_Button\"]")
 	public MobileElement okButton;
 
 	public NetworkAddDeviceSelectOneDeviceOfHighestPriorityDialog() {

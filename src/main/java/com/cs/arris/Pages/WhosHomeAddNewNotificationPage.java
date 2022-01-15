@@ -130,23 +130,20 @@ public class WhosHomeAddNewNotificationPage extends ParentClass implements Page 
 	
 	//on-click of timeButton - Time Picker dialog appears
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WH_Add_Edit_Notification_Screen_Button_Tolerance\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WH_Add_Edit_Notification_Screen_Button_Cancel\"]")
 	public MobileElement timePickerCancelButton;
 	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WH_Add_Edit_Notification_Screen_Button_Done\"]")
 	public MobileElement timePickerDoneButton;
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WH_Add_Edit_Notification_Screen_Button_Done\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeDatePicker[@name=\"WH_Add_Edit_Notification_Screen_TimePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[1]")
 	public MobileElement hourPicker;
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeDatePicker[@name=\"WH_Add_Edit_Notification_Screen_TimePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[1]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeDatePicker[@name=\"WH_Add_Edit_Notification_Screen_TimePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[2]")
 	public MobileElement minutePicker;
 	
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeDatePicker[@name=\"WH_Add_Edit_Notification_Screen_TimePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[2]")
-	public MobileElement meridianPicker;
-	
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeDatePicker[@name=\"WH_Add_Edit_Notification_Screen_TimePicker\"]/XCUIElementTypePicker/XCUIElementTypePickerWheel[3]")
-	public MobileElement saveButton;
+	public MobileElement meridianPicker;
 	
 	
 	//on-click on selectTolerance list box
@@ -183,6 +180,8 @@ public class WhosHomeAddNewNotificationPage extends ParentClass implements Page 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WH_Add_Edit_Notification_Screen_Button_Saturday\"]")
 	public MobileElement saturday;
 	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"WH_Add_Edit_Notification_Screen_Button\"]")
+	public MobileElement saveButton;
 	
 	public WhosHomeAddNewNotificationPage() {
 		PageFactory.initElements(new AppiumFieldDecorator(super.getDriver()), this);

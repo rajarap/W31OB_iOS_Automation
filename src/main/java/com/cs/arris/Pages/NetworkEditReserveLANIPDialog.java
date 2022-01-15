@@ -76,6 +76,7 @@ public class NetworkEditReserveLANIPDialog extends ParentClass implements Page {
 	public boolean clickSaveButton() {
 	//	((IOSDriver) super.getDriver()).hideKeyboard(HideKeyboardStrategy.PRESS_KEY, "Done");
 	//	click(doneLink);
+
 		((IOSDriver) super.getDriver()).hideKeyboard(HideKeyboardStrategy.PRESS_KEY, "Done");
 		if (saveButton.isDisplayed()) {
 			click(saveButton);

@@ -69,6 +69,7 @@ com/cs/arris/Pages/WhosHomeMonitoringPage.class
 com/cs/arris/Pages/ParentalControlResumeInternetforAllProfilesDialog.class
 com/cs/arris/Pages/NetworkGeneralSettingsPortFowardingAddRulePage.class
 com/cs/arris/Pages/NetworkBandSteeringModeAlertDialog.class
+com/cs/arris/Pages/AddSatelliteCongratulationsPage.class
 com/cs/arris/Pages/AddSatelliteAddNewSatellitePage1.class
 com/cs/arris/Pages/NetworkEnableGuestNetworkAlertDialog.class
 com/cs/arris/Pages/UnPackYourBoxPage.class

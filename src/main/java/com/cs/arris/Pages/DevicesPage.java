@@ -212,8 +212,7 @@ public class DevicesPage extends ParentClass implements Page {
 					}
 
 					try {
-						if (super.getDriver().findElementByXPath(
-								"//XCUIElementTypeStaticText[@name=\"Device_List_Screen_Label_Upload["+i+"]\"]").isDisplayed())
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_List_Screen_Label_Upload["+i+"]\"]").isDisplayed())
 							utils.log().info("Device Upload Speed : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"Device_List_Screen_Label_Upload["+i+"]\"]").getText());
 					} catch (Exception exp) {
 						utils.log().info("Device Upload Speed data is not available ");
@@ -265,6 +264,7 @@ public class DevicesPage extends ParentClass implements Page {
 					}
 
 					super.pause(5);
+					
 					click(super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_List_Screen_Button_Expand["+i+"]\"]"));
 					
 
@@ -304,8 +304,8 @@ public class DevicesPage extends ParentClass implements Page {
 						else
 							utils.log().info("Device Image is not available : ");
 
-						if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_List_Screen_Label_Device["+i+"]\"]").isDisplayed())
-							utils.log().info("Device Name: " + super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_List_Screen_Label_Device["+i+"]\"]").getText());
+						if (super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_List_Screen_Button_DeviceName["+i+"]\"]").isDisplayed())
+							utils.log().info("Device Name  : " + super.getDriver().findElementByXPath("//XCUIElementTypeButton[@name=\"Device_List_Screen_Button_DeviceName["+i+"]\"]").getText());
 						else
 							utils.log().info("Device Name is not available ");
 

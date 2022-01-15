@@ -173,14 +173,14 @@ public class WhosHomeNotifyMeWhenPage extends ParentClass implements Page {
 	
 	
 	
-	public boolean Verify_Member_Notifications()
+	public boolean verifyMemberNotifications()
 	{
 		utils.log().info("                                                 ");
 		utils.log().info("*************************************************");
 		utils.log().info("List of Notifications in the NOTIFY ME WHEN Page ");
 		utils.log().info("*************************************************");
 		
-		int size = super.getDriver().findElementsByXPath("//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable").size();
+		int size = super.getDriver().findElements(MobileBy.iOSClassChain("**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable")).size();
 
 		try {
 			for (int i = 1; i <= size; i++) {
@@ -192,10 +192,9 @@ public class WhosHomeNotifyMeWhenPage extends ParentClass implements Page {
 				"//XCUIElementTypeApplication[@name=\"SBC Test\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell["+i+"]");
 
 				for (MobileElement e : entity) {
-					utils.log().info("Member Name : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_MemberName["+i+"]\"]").getText());
-					utils.log().info("Notification : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_Occur["+i+"]\"]").getText());
-					utils.log().info("Member will be notified : " + super.getDriver().findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_Event["+i+"]\"]").getText());
-					//utils.log().info("Member notification is : " + super.getDriver().findElementByXPath("").getText());
+					utils.log().info("Member Name : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_MemberName["+i+"]\"]").getText());
+					utils.log().info("Notification : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_Occur["+i+"]\"]").getText());
+					utils.log().info("Member will be notified : " + e.findElementByXPath("//XCUIElementTypeStaticText[@name=\"WH_Notify_Screen_Label_Event["+i+"]\"]").getText());
 				}
 			}
 			return true;

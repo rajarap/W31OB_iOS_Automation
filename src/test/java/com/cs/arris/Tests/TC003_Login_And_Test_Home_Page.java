@@ -196,7 +196,7 @@ public class TC003_Login_And_Test_Home_Page extends ParentClass
 			@Test(priority = 6)
 			public void Verify_Home_Currently_Blocked_Devices_Navigation() {
 				SoftAssert softhome5 = new SoftAssert();
-				AssertJUnit.assertTrue(new HomePage().clickCurrentlyBlockedDevicesImage());
+				AssertJUnit.assertTrue(new HomePage().clickCurrentlyBlockedDevicesText());
 				if(new HomePage().getBlankBlockedDevicesPageObject().isAt())
 					AssertJUnit.assertTrue(new HomePage().getBlankBlockedDevicesPageObject().clickCloseIcon());
 				softhome5.assertAll();
