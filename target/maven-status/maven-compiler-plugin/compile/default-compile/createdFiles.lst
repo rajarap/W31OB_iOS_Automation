@@ -137,6 +137,7 @@ com/cs/arris/Pages/NetworkEditPortForwardingRulePage.class
 com/cs/arris/Pages/DeviceLocationPage.class
 com/cs/arris/Pages/MainDevice24GHzTabPage$1.class
 com/cs/arris/Pages/RemoveDevicePage.class
+com/cs/arris/Pages/HomeNetworkHealthOptimizationSkipPage.class
 com/cs/arris/Pages/ParentalControlProfilesPage.class
 com/cs/arris/Pages/MainDeviceEthernetTabPage$1.class
 com/cs/arris/Utilities/TestingDeviceCount.class

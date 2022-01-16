@@ -282,6 +282,11 @@ public class HomePage extends ParentClass implements Page {
 		return notificationPage;
 	}
 	
+	public HomeNetworkHealthOptimizationSkipPage getSkipTutorialPageObject() {
+		HomeNetworkHealthOptimizationSkipPage skipTutorial = new HomeNetworkHealthOptimizationSkipPage();
+		return skipTutorial;
+	}
+	
 	public AmazonFeaturesInformationPage getAFFSInfoPageObject() {
 		AmazonFeaturesInformationPage affsinfoPage = new AmazonFeaturesInformationPage();
 		return affsinfoPage;

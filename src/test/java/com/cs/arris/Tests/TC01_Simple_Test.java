@@ -184,88 +184,88 @@ public class TC01_Simple_Test extends ParentClass
 //		  });
 	  }
 		  
-	    @Test(priority = 2 , dependsOnMethods = { "Login_And_Onboard" })
-		public void Verify_Home_UI_Page() {
-	    	utils.log().info("                                            ");
-			utils.log().info("********************************************");
-			utils.log().info("Test: Home Page and Home Page Navigations   ");
-			utils.log().info("********************************************");
-			SoftAssert softhome2 = new SoftAssert();
-			try {
-				softhome2.assertTrue(new HomePage().verifyUIOnHomePage());
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-			softhome2.assertAll();
-		}
-		
-		@Test(priority = 3, dependsOnMethods = { "Login_And_Onboard"})
-		public void Verify_Home_Device_Signal_Strength_Navigation() {
-			SoftAssert softhome3 = new SoftAssert();
-			super.swipeUp();
-			softhome3.assertTrue(new HomePage().clickDeviceSignalStrengthImage());
-			if(new HomePage().getDeviceSignalStrengthPageObject().isAt())
-				softhome3.assertTrue(new HomePage().getDeviceSignalStrengthPageObject().clickCloseIcon());
-			softhome3.assertAll();
-		}
-		
-		@Test(priority = 4, dependsOnMethods = { "Login_And_Onboard"})
-		public void Verify_Home_Speed_Test_History_Navigation() {
-			SoftAssert softhome4 = new SoftAssert();
-			super.swipeUp();
-			softhome4.assertTrue(new HomePage().clickSpeedTestHistoryImage());
-			if(new HomePage().getBlankSpeedTestHistoryPageObject().isAt())
-				softhome4.assertTrue(new HomePage().getBlankSpeedTestHistoryPageObject().clickCloseIcon());
-			softhome4.assertAll();
-		}
-		
-		@Test(priority = 5, dependsOnMethods = { "Login_And_Onboard"})
-		public void Verify_Home_Currently_Blocked_Devices_Navigation() {
-			SoftAssert softhome5 = new SoftAssert();
-			softhome5.assertTrue(new HomePage().clickCurrentlyBlockedDevicesText());
-			if(new HomePage().getBlankBlockedDevicesPageObject().isAt())
-				softhome5.assertTrue(new HomePage().getBlankBlockedDevicesPageObject().clickCloseIcon());
-			softhome5.assertAll();
-		}
-		
-		@Test(priority = 6, dependsOnMethods = { "Login_And_Onboard"})
-		public void Verify_Home_Main_Devices_Navigation() {
-			SoftAssert softhome6 = new SoftAssert();
-			super.swipeDown();
-			softhome6.assertTrue(new HomePage().clickMainDeviceImage());
-			if(new HomePage().getMainDeviceAllTabPageObject().isAt())
-				softhome6.assertTrue(new HomePage().getMainDeviceAllTabPageObject().clickBackButton());
-			softhome6.assertAll();
-		}
-		
-		@Test(priority = 7, dependsOnMethods = { "Login_And_Onboard" })
-		public void Verify_Home_Total_Devices_Navigation() {
-			SoftAssert softhome7 = new SoftAssert();
-			softhome7.assertTrue(new HomePage().clickDevicesImage());
-			if(new HomePage().getDevicesPageObject().isAt())
-				softhome7.assertTrue(new HomePage().getDevicesPageObject().clickBackButton());
-			softhome7.assertAll();
-		}
-		
-		@Test(priority = 8, dependsOnMethods = { "Login_And_Onboard" })
-		public void Verify_Home_Hamburger_Navigation() {
-			SoftAssert softhome8 = new SoftAssert();
-			softhome8.assertTrue(new HomePage().clickNavigationButton());
-			if(new HomePage().getHamburgerMenuPageObject().isAt()) {
-				//softhome8.assertTrue(new HomePage().getHamburgerMenuPageObject().verifyUIOnHamburgerMenuPage());
-				softhome8.assertTrue(new HomePage().getHamburgerMenuPageObject().clickCloseButton());}
-			softhome8.assertAll();
-		}
-		
-		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard" })
-		public void Verify_Home_Notifications_Navigation() {
-			SoftAssert softhome9= new SoftAssert();
-			softhome9.assertTrue(new HomePage().clickNotificationsIcon());
-			if(new HomePage().getNotificationPageObject().isAt())
-				softhome9.assertTrue(new HomePage().getNotificationPageObject().clickBackButton());
-			softhome9.assertAll();
-		}
- 
+//	    @Test(priority = 2 , dependsOnMethods = { "Login_And_Onboard" })
+//		public void Verify_Home_UI_Page() {
+//	    	utils.log().info("                                            ");
+//			utils.log().info("********************************************");
+//			utils.log().info("Test: Home Page and Home Page Navigations   ");
+//			utils.log().info("********************************************");
+//			SoftAssert softhome2 = new SoftAssert();
+//			try {
+//				softhome2.assertTrue(new HomePage().verifyUIOnHomePage());
+//				if(new AppRatingDialog().isAt())
+//					new AppRatingDialog().clickRemindMeLaterLink();
+//			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+//			softhome2.assertAll();
+//		}
+//		
+//		@Test(priority = 3, dependsOnMethods = { "Login_And_Onboard"})
+//		public void Verify_Home_Device_Signal_Strength_Navigation() {
+//			SoftAssert softhome3 = new SoftAssert();
+//			super.swipeUp();
+//			softhome3.assertTrue(new HomePage().clickDeviceSignalStrengthImage());
+//			if(new HomePage().getDeviceSignalStrengthPageObject().isAt())
+//				softhome3.assertTrue(new HomePage().getDeviceSignalStrengthPageObject().clickCloseIcon());
+//			softhome3.assertAll();
+//		}
+//		
+//		@Test(priority = 4, dependsOnMethods = { "Login_And_Onboard"})
+//		public void Verify_Home_Speed_Test_History_Navigation() {
+//			SoftAssert softhome4 = new SoftAssert();
+//			super.swipeUp();
+//			softhome4.assertTrue(new HomePage().clickSpeedTestHistoryImage());
+//			if(new HomePage().getBlankSpeedTestHistoryPageObject().isAt())
+//				softhome4.assertTrue(new HomePage().getBlankSpeedTestHistoryPageObject().clickCloseIcon());
+//			softhome4.assertAll();
+//		}
+//		
+//		@Test(priority = 5, dependsOnMethods = { "Login_And_Onboard"})
+//		public void Verify_Home_Currently_Blocked_Devices_Navigation() {
+//			SoftAssert softhome5 = new SoftAssert();
+//			softhome5.assertTrue(new HomePage().clickCurrentlyBlockedDevicesText());
+//			if(new HomePage().getBlankBlockedDevicesPageObject().isAt())
+//				softhome5.assertTrue(new HomePage().getBlankBlockedDevicesPageObject().clickCloseIcon());
+//			softhome5.assertAll();
+//		}
+//		
+//		@Test(priority = 6, dependsOnMethods = { "Login_And_Onboard"})
+//		public void Verify_Home_Main_Devices_Navigation() {
+//			SoftAssert softhome6 = new SoftAssert();
+//			super.swipeDown();
+//			softhome6.assertTrue(new HomePage().clickMainDeviceImage());
+//			if(new HomePage().getMainDeviceAllTabPageObject().isAt())
+//				softhome6.assertTrue(new HomePage().getMainDeviceAllTabPageObject().clickBackButton());
+//			softhome6.assertAll();
+//		}
+//		
+//		@Test(priority = 7, dependsOnMethods = { "Login_And_Onboard" })
+//		public void Verify_Home_Total_Devices_Navigation() {
+//			SoftAssert softhome7 = new SoftAssert();
+//			softhome7.assertTrue(new HomePage().clickDevicesImage());
+//			if(new HomePage().getDevicesPageObject().isAt())
+//				softhome7.assertTrue(new HomePage().getDevicesPageObject().clickBackButton());
+//			softhome7.assertAll();
+//		}
+//		
+//		@Test(priority = 8, dependsOnMethods = { "Login_And_Onboard" })
+//		public void Verify_Home_Hamburger_Navigation() {
+//			SoftAssert softhome8 = new SoftAssert();
+//			softhome8.assertTrue(new HomePage().clickNavigationButton());
+//			if(new HomePage().getHamburgerMenuPageObject().isAt()) {
+//				//softhome8.assertTrue(new HomePage().getHamburgerMenuPageObject().verifyUIOnHamburgerMenuPage());
+//				softhome8.assertTrue(new HomePage().getHamburgerMenuPageObject().clickCloseButton());}
+//			softhome8.assertAll();
+//		}
+//		
+//		@Test(priority = 9, dependsOnMethods = { "Login_And_Onboard" })
+//		public void Verify_Home_Notifications_Navigation() {
+//			SoftAssert softhome9= new SoftAssert();
+//			softhome9.assertTrue(new HomePage().clickNotificationsIcon());
+//			if(new HomePage().getNotificationPageObject().isAt())
+//				softhome9.assertTrue(new HomePage().getNotificationPageObject().clickBackButton());
+//			softhome9.assertAll();
+//		}
+// 
 //		//TC008_Login_And_Test_Hamburger_Menu_And_Settings_About_Help_Page
 //		@Test(priority = 10, dependsOnMethods = { "Login_And_Onboard" })
 //		public void Verify_Hamburger_Menu_Page() {
@@ -775,22 +775,30 @@ public class TC01_Simple_Test extends ParentClass
 //		
 //		//TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature
 //		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard" })
-//		public void Verify_Add_Satellite_Page() {
-//		utils.log().info("                                                   ");
-//		utils.log().info("***************************************************");
-//		utils.log().info("Test: Hamburger Menu - Add Satellite Menu Option ");
-//		utils.log().info("***************************************************");
+//		public void Verify_Install_Additional_Satellite_Page() {
+//		utils.log().info("                                                    ");
+//		utils.log().info("****************************************************");
+//		utils.log().info("Test: Hamburger Menu - Install Additional Satellite ");
+//		utils.log().info("****************************************************");
 //			SoftAssert softsatellite1 = new SoftAssert();
 //			new HomePage().getFooterIconsPageObject().clickHomeButton();
 //			softsatellite1.assertTrue(new HomePage().clickNavigationButton());
 //			softsatellite1.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAddSatelliteButton());
 //			softsatellite1.assertTrue(new AddSatelliteInstallAdditionalSatelliteDialog().clickInstallSatelliteButton());
+//			//1
 //			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage1().clickNextButton());
+//			
+//			//2
 //			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage2().clickNextButton());
 //			super.pause(20);
+//			
+//			//3
 //			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage3().clickNextButton());
 //
+//			//4
 //			softsatellite1.assertTrue(new AddSatelliteUnPackYourSatellitePage().clickNextButton());
+//			
+//			//5
 //			softsatellite1.assertTrue(new AddSatelliteHelpPlaceYourSatellitePage().clickSkipButton());
 //			softsatellite1.assertTrue(new AddSatellitePlugInYourSatellitePage().clickNextButton());
 //			super.pause(20);
@@ -808,14 +816,21 @@ public class TC01_Simple_Test extends ParentClass
 		//TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature
 		@Test(priority = 42, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Network_Health_Page() {
-		utils.log().info("                     ");
-		utils.log().info("*********************");
-		utils.log().info("Test: Network Health ");
-		utils.log().info("**********************");
+		utils.log().info("                            ");
+		utils.log().info("*****************************");
+		utils.log().info("Test: Network Health Feature ");
+		utils.log().info("*****************************");
 			SoftAssert softnetwork1 = new SoftAssert();
 			new HomePage().getFooterIconsPageObject().clickHomeButton();
-			super.swipeDown();
+			super.pause(10);
 			softnetwork1.assertTrue(new HomePage().clickTapHereToTurnON());
+			
+			try
+			{
+	//			if(new HomePage().getSkipTutorialPageObject().isAt())
+					softnetwork1.assertTrue(new HomePage().getSkipTutorialPageObject().tapSkip());
+			}catch(Exception e) { utils.log().info("Skip Tutorial Page did not appear");}
+			
 			
 			if(new HomePage().getNetworkOtptimizationPageObject().isAt()) {
 				softnetwork1.assertTrue(new HomePage().getNetworkOtptimizationPageObject().verifyNetworkOptimizationPageUI());
@@ -879,7 +894,7 @@ public class TC01_Simple_Test extends ParentClass
 		@Test(priority = 46, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Satellite_Link_Rate_Sensitivity_Medium() {
 			SoftAssert softnetwork5 = new SoftAssert();
-				
+			super.swipeUp();
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork5.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteLinkRateButton());
 			
@@ -898,7 +913,7 @@ public class TC01_Simple_Test extends ParentClass
 		@Test(priority = 47, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_ISP_Speed_Link_Rate_Sensitivity_Medium() {
 			SoftAssert softnetwork6 = new SoftAssert();
-				
+			super.swipeUp();
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork6.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickISPSpeedRateButton());
 			
@@ -918,6 +933,7 @@ public class TC01_Simple_Test extends ParentClass
 		public void Verify_Connected_Device_Signal_Strength_Sensitivity_High() {
 			SoftAssert softnetwork7 = new SoftAssert();
 			super.swipeDown();
+			
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().tapHigh();
 			softnetwork7.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickConnectedDeviceSignalButton());
@@ -956,7 +972,7 @@ public class TC01_Simple_Test extends ParentClass
 		@Test(priority = 50, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Satellite_Link_Rate_Sensitivity_High() {
 			SoftAssert softnetwork9 = new SoftAssert();
-				
+			super.swipeUp();
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork9.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteLinkRateButton());
 			
@@ -975,7 +991,7 @@ public class TC01_Simple_Test extends ParentClass
 		@Test(priority = 51, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_ISP_Speed_Link_Rate_Sensitivity_High() {
 			SoftAssert softnetwork10 = new SoftAssert();
-				
+			super.swipeUp();
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork10.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickISPSpeedRateButton());
 			
@@ -1033,7 +1049,7 @@ public class TC01_Simple_Test extends ParentClass
 		@Test(priority = 54, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Satellite_Link_Rate__Sensitivity_Low() {
 			SoftAssert softnetwork13 = new SoftAssert();
-				
+			super.swipeUp();
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork13.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteLinkRateButton());
 			
@@ -1052,7 +1068,7 @@ public class TC01_Simple_Test extends ParentClass
 		@Test(priority = 55, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_ISP_Speed_Link_Rate_Sensitivity_Low() {
 			SoftAssert softnetwork14 = new SoftAssert();
-				
+			super.swipeUp();
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork14.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickISPSpeedRateButton());
 			
@@ -1076,7 +1092,7 @@ public class TC01_Simple_Test extends ParentClass
 		@Test(priority = 56, dependsOnMethods = { "Login_And_Onboard" })
 		public void Verify_Network_Optimization_Recommendations() {
 			SoftAssert softnetwork15 = new SoftAssert();
-				
+				super.swipeDown();
 			if(new HomePage().getNetworkOtptimizationPageObject().isAt()) 
 				softnetwork15.assertTrue(new HomePage().getNetworkOtptimizationPageObject().verifyNetworkAfterOptimization());		
 			softnetwork15.assertTrue(new HomePage().getNetworkOtptimizationPageObject().clickSatelliteImage());

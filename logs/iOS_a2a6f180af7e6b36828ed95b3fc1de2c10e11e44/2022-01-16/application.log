@@ -1,0 +1,1156 @@
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:19:52.640 ParentClass:306 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:19:52.653 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:19:58.432 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:19:58.434 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.060 TC01_Simple_Test:108 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.073 ParentClass:330 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.084 TC01_Simple_Test:112 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.085 TC01_Simple_Test:115 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.088 TC01_Simple_Test:118 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.090 TC01_Simple_Test:121 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.091 TC01_Simple_Test:123 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:02.975 TC01_Simple_Test:132 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:03.598 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-19-52/TC01_Simple_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.064 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Home_UI_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.067 TC01_Simple_Test:189 -                                             
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.068 TC01_Simple_Test:190 - ********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.069 TC01_Simple_Test:191 - Test: Home Page and Home Page Navigations   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.069 TC01_Simple_Test:192 - ********************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.291 HomePage:350 -                                          
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.292 HomePage:351 - *****************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.292 HomePage:352 - Details of UI Elements on the Home Page  
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:04.292 HomePage:353 - *****************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:06.309 HomePage:357 - Title Home is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:08.534 HomePage:364 - Title Network Speed is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:09.574 HomePage:371 - Navigate Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:19.836 HomePage:380 - Cloud Icon is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:20:20.958 HomePage:384 - Notifications Icon is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:09.329 ParentClass:306 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:09.340 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:15.131 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:15.133 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:18.810 TC01_Simple_Test:108 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:18.818 ParentClass:330 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:18.828 TC01_Simple_Test:112 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:18.830 TC01_Simple_Test:115 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:18.832 TC01_Simple_Test:118 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:18.835 TC01_Simple_Test:121 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:18.836 TC01_Simple_Test:123 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:19.408 TC01_Simple_Test:132 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:19.876 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:20.351 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Health_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:20.352 TC01_Simple_Test:819 -                             
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:20.353 TC01_Simple_Test:820 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:20.353 TC01_Simple_Test:821 - Test: Network Health Feature 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:20.353 TC01_Simple_Test:822 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:22.794 FooterIconsPage:93 - Footer Icons Page - Clicked on Home Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:34.778 HomePage:786 - Home Page - Clicked on Tap Here To Turn ON Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:36.011 HomeNetworkHealthOptimizationPage:265 - On Network Health Optimization Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:36.038 HomeNetworkHealthOptimizationPage:166 -                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:36.039 HomeNetworkHealthOptimizationPage:167 - **********************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:36.039 HomeNetworkHealthOptimizationPage:168 - Details of UI Elements on Network Health Optimization Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:36.040 HomeNetworkHealthOptimizationPage:169 - **********************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:37.062 HomeNetworkHealthOptimizationPage:173 - Network Health Optimization title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:37.571 HomeNetworkHealthOptimizationPage:180 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:38.033 HomeNetworkHealthOptimizationPage:187 - Optimization button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:39.539 HomeNetworkHealthOptimizationPage:194 - Optimization is turned off message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:40.647 HomeNetworkHealthOptimizationPage:201 - Turn on optimization from settings to access network health & view recommendations message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:42.469 HomeNetworkHealthOptimizationPage:156 - Clicked on Optimization Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:43.872 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Network_Health_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:44.685 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Optimization_Settings_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:45.283 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:45.301 HomeNetworkHealthOptimizationSettingsPage:325 -                                                                    
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:45.301 HomeNetworkHealthOptimizationSettingsPage:326 - *******************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:45.301 HomeNetworkHealthOptimizationSettingsPage:327 - Details of UI Elements on Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:45.302 HomeNetworkHealthOptimizationSettingsPage:328 - *******************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:46.300 HomeNetworkHealthOptimizationSettingsPage:332 - Network Optimization Settings title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:46.775 HomeNetworkHealthOptimizationSettingsPage:339 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:47.265 HomeNetworkHealthOptimizationSettingsPage:346 - Optimization Toggle button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:48.200 HomeNetworkHealthOptimizationSettingsPage:353 - Optimization label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:49.134 HomeNetworkHealthOptimizationSettingsPage:360 - Turn on optimization to access network health & view recommendations message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:49.936 HomeNetworkHealthOptimizationSettingsPage:232 - Network Optimization is enabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:49.958 HomeNetworkHealthOptimizationSettingsPage:373 -                                                                            
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:49.960 HomeNetworkHealthOptimizationSettingsPage:374 - ***************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:49.960 HomeNetworkHealthOptimizationSettingsPage:375 - Details of UI Elements on Network Health Optimization Settings Enabled Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:49.960 HomeNetworkHealthOptimizationSettingsPage:376 - ***************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:51.377 HomeNetworkHealthOptimizationSettingsPage:380 - Recommendation sensitivity text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:52.778 HomeNetworkHealthOptimizationSettingsPage:387 - Control the recommendation frequency by adjusting the sensitivity. text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:54.239 HomeNetworkHealthOptimizationSettingsPage:394 - Low text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:55.544 HomeNetworkHealthOptimizationSettingsPage:401 - Medium (default) text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:56.867 HomeNetworkHealthOptimizationSettingsPage:408 - High text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:57.634 HomeNetworkHealthOptimizationSettingsPage:415 - Slider Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:34:59.000 HomeNetworkHealthOptimizationSettingsPage:422 - You will be notified as soon as your : text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:00.304 HomeNetworkHealthOptimizationSettingsPage:429 - Connected Device(s) signal strength is very low label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:01.823 HomeNetworkHealthOptimizationSettingsPage:436 - Satellite(s) signal strength is very low message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:03.708 HomeNetworkHealthOptimizationSettingsPage:443 - Satellite(s) link rate is very low message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:06.606 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Network_Optimization_Settings_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:07.052 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Connected_Device_Signal_Strength_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:08.783 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:11.464 HomeNetworkHealthOptimizationSettingsPage:183 - Clicked on Connected Device Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:21.649 TC01_Simple_Test:866 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:22.187 HomeNetworkHealthOptimizationConnectedDevicesPage:132 - On Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:22.193 HomeNetworkHealthOptimizationConnectedDevicesPage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:22.194 HomeNetworkHealthOptimizationConnectedDevicesPage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:22.194 HomeNetworkHealthOptimizationConnectedDevicesPage:77 - Details of UI Elements on Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:22.194 HomeNetworkHealthOptimizationConnectedDevicesPage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:23.223 HomeNetworkHealthOptimizationConnectedDevicesPage:82 - Connected Devices title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:23.791 HomeNetworkHealthOptimizationConnectedDevicesPage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:24.823 HomeNetworkHealthOptimizationConnectedDevicesPage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:25.837 HomeNetworkHealthOptimizationConnectedDevicesPage:103 - Recommendation : Wi-Fi signal < -75 dbm text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:26.862 HomeNetworkHealthOptimizationConnectedDevicesPage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:27.889 HomeNetworkHealthOptimizationConnectedDevicesPage:117 - You will be provided with a recommendation when your connected device is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:29.670 HomeNetworkHealthOptimizationConnectedDevicesPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:31.201 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Connected_Device_Signal_Strength_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:31.989 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Signal_Strength_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:32.779 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:35.801 HomeNetworkHealthOptimizationSettingsPage:194 - Clicked on Satellite Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:41.074 TC01_Simple_Test:885 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:41.685 HomeNetworkHealthOptimizationSatelliteSignalPage:133 - On Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:41.697 HomeNetworkHealthOptimizationSatelliteSignalPage:75 -                                                                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:41.698 HomeNetworkHealthOptimizationSatelliteSignalPage:76 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:41.699 HomeNetworkHealthOptimizationSatelliteSignalPage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:41.699 HomeNetworkHealthOptimizationSatelliteSignalPage:78 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:42.733 HomeNetworkHealthOptimizationSatelliteSignalPage:83 - Satellite Signal Strength title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:43.249 HomeNetworkHealthOptimizationSatelliteSignalPage:90 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:44.250 HomeNetworkHealthOptimizationSatelliteSignalPage:97 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:45.282 HomeNetworkHealthOptimizationSatelliteSignalPage:104 - Recommendation : Signal < -75 dbm label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:46.293 HomeNetworkHealthOptimizationSatelliteSignalPage:111 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:47.302 HomeNetworkHealthOptimizationSatelliteSignalPage:118 - You will be provided with a recommendation when your connected satellite is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:49.054 HomeNetworkHealthOptimizationSatelliteSignalPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:50.136 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Satellite_Signal_Strength_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:50.601 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Link_Rate_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:51.473 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:54.167 HomeNetworkHealthOptimizationSettingsPage:205 - Clicked on Satellite Link Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:59.211 TC01_Simple_Test:904 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:59.759 HomeNetworkHealthOptimizationSatelliteLinkRatePage:132 - On Network Health Optimization Settings - Satellite Link Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:59.770 HomeNetworkHealthOptimizationSatelliteLinkRatePage:75 -                                                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:59.771 HomeNetworkHealthOptimizationSatelliteLinkRatePage:76 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:59.771 HomeNetworkHealthOptimizationSatelliteLinkRatePage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Link Rate Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:35:59.771 HomeNetworkHealthOptimizationSatelliteLinkRatePage:78 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:00.646 HomeNetworkHealthOptimizationSatelliteLinkRatePage:82 - Satellite Link Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:01.180 HomeNetworkHealthOptimizationSatelliteLinkRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:02.473 HomeNetworkHealthOptimizationSatelliteLinkRatePage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:03.504 HomeNetworkHealthOptimizationSatelliteLinkRatePage:103 - Recommendation : Link rate < 1 Gbps is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:04.533 HomeNetworkHealthOptimizationSatelliteLinkRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:05.550 HomeNetworkHealthOptimizationSatelliteLinkRatePage:117 - You will be provided with a recommendation when your connected satellite is connected at less than 1 Gbps message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:07.332 HomeNetworkHealthOptimizationSatelliteLinkRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:08.395 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Satellite_Link_Rate_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:08.854 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:09.699 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:11.401 HomeNetworkHealthOptimizationSettingsPage:220 - ISP Speed Rate button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:16.971 TC01_Simple_Test:923 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:23.258 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:23.755 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:24.618 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:26.289 HomeNetworkHealthOptimizationSettingsPage:220 - ISP Speed Rate button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:31.956 TC01_Simple_Test:923 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 ERROR] 2022-01-16 23:36:37.886 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="ISP Speed Rate"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.HomeNetworkHealthOptimizationISPSpeedRatePage.isAt(HomeNetworkHealthOptimizationISPSpeedRatePage.java:130)
+	at com.cs.arris.Tests.TC01_Simple_Test.Verify_ISP_Speed_Link_Rate_Sensitivity_Medium(TC01_Simple_Test.java:925)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@32d5279 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="ISP Speed Rate"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:38.883 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:39.583 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Connected_Device_Signal_Strength_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:41.464 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:44.554 HomeNetworkHealthOptimizationSettingsPage:183 - Clicked on Connected Device Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:49.886 TC01_Simple_Test:943 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:50.397 HomeNetworkHealthOptimizationConnectedDevicesPage:132 - On Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:50.404 HomeNetworkHealthOptimizationConnectedDevicesPage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:50.405 HomeNetworkHealthOptimizationConnectedDevicesPage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:50.406 HomeNetworkHealthOptimizationConnectedDevicesPage:77 - Details of UI Elements on Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:50.407 HomeNetworkHealthOptimizationConnectedDevicesPage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:51.466 HomeNetworkHealthOptimizationConnectedDevicesPage:82 - Connected Devices title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:52.023 HomeNetworkHealthOptimizationConnectedDevicesPage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:53.041 HomeNetworkHealthOptimizationConnectedDevicesPage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:54.055 HomeNetworkHealthOptimizationConnectedDevicesPage:103 - Recommendation : Wi-Fi signal < -75 dbm text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:55.090 HomeNetworkHealthOptimizationConnectedDevicesPage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:56.071 HomeNetworkHealthOptimizationConnectedDevicesPage:117 - You will be provided with a recommendation when your connected device is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:57.713 HomeNetworkHealthOptimizationConnectedDevicesPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:58.807 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Connected_Device_Signal_Strength_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:36:59.279 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Signal_Strength_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:00.089 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:02.530 HomeNetworkHealthOptimizationSettingsPage:194 - Clicked on Satellite Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:08.050 TC01_Simple_Test:962 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:08.588 HomeNetworkHealthOptimizationSatelliteSignalPage:133 - On Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:08.594 HomeNetworkHealthOptimizationSatelliteSignalPage:75 -                                                                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:08.595 HomeNetworkHealthOptimizationSatelliteSignalPage:76 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:08.595 HomeNetworkHealthOptimizationSatelliteSignalPage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:08.595 HomeNetworkHealthOptimizationSatelliteSignalPage:78 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:09.588 HomeNetworkHealthOptimizationSatelliteSignalPage:83 - Satellite Signal Strength title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:10.113 HomeNetworkHealthOptimizationSatelliteSignalPage:90 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:11.126 HomeNetworkHealthOptimizationSatelliteSignalPage:97 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:12.139 HomeNetworkHealthOptimizationSatelliteSignalPage:104 - Recommendation : Signal < -75 dbm label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:13.160 HomeNetworkHealthOptimizationSatelliteSignalPage:111 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:14.181 HomeNetworkHealthOptimizationSatelliteSignalPage:118 - You will be provided with a recommendation when your connected satellite is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:15.964 HomeNetworkHealthOptimizationSatelliteSignalPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:16.972 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Satellite_Signal_Strength_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:17.442 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Link_Rate_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:18.278 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:20.871 HomeNetworkHealthOptimizationSettingsPage:205 - Clicked on Satellite Link Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:26.006 TC01_Simple_Test:981 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:26.528 HomeNetworkHealthOptimizationSatelliteLinkRatePage:132 - On Network Health Optimization Settings - Satellite Link Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:26.529 HomeNetworkHealthOptimizationSatelliteLinkRatePage:75 -                                                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:26.530 HomeNetworkHealthOptimizationSatelliteLinkRatePage:76 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:26.530 HomeNetworkHealthOptimizationSatelliteLinkRatePage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Link Rate Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:26.530 HomeNetworkHealthOptimizationSatelliteLinkRatePage:78 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:27.594 HomeNetworkHealthOptimizationSatelliteLinkRatePage:82 - Satellite Link Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:28.117 HomeNetworkHealthOptimizationSatelliteLinkRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:29.152 HomeNetworkHealthOptimizationSatelliteLinkRatePage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:30.162 HomeNetworkHealthOptimizationSatelliteLinkRatePage:103 - Recommendation : Link rate < 1 Gbps is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:31.150 HomeNetworkHealthOptimizationSatelliteLinkRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:32.190 HomeNetworkHealthOptimizationSatelliteLinkRatePage:117 - You will be provided with a recommendation when your connected satellite is connected at less than 1 Gbps message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:34.010 HomeNetworkHealthOptimizationSatelliteLinkRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:35.040 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Satellite_Link_Rate_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:35.520 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:36.377 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:37.977 HomeNetworkHealthOptimizationSettingsPage:220 - ISP Speed Rate button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:43.720 TC01_Simple_Test:1000 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:50.301 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:50.790 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:51.666 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:53.408 HomeNetworkHealthOptimizationSettingsPage:220 - ISP Speed Rate button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:37:58.497 TC01_Simple_Test:1000 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 ERROR] 2022-01-16 23:38:04.363 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="ISP Speed Rate"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.HomeNetworkHealthOptimizationISPSpeedRatePage.isAt(HomeNetworkHealthOptimizationISPSpeedRatePage.java:130)
+	at com.cs.arris.Tests.TC01_Simple_Test.Verify_ISP_Speed_Link_Rate_Sensitivity_High(TC01_Simple_Test.java:1002)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@733e6df7 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="ISP Speed Rate"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:05.351 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:05.953 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Connected_Device_Signal_Strength_Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:07.562 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:10.816 HomeNetworkHealthOptimizationSettingsPage:183 - Clicked on Connected Device Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:16.166 TC01_Simple_Test:1020 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:16.649 HomeNetworkHealthOptimizationConnectedDevicesPage:132 - On Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:16.660 HomeNetworkHealthOptimizationConnectedDevicesPage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:16.662 HomeNetworkHealthOptimizationConnectedDevicesPage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:16.662 HomeNetworkHealthOptimizationConnectedDevicesPage:77 - Details of UI Elements on Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:16.662 HomeNetworkHealthOptimizationConnectedDevicesPage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:17.754 HomeNetworkHealthOptimizationConnectedDevicesPage:82 - Connected Devices title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:18.292 HomeNetworkHealthOptimizationConnectedDevicesPage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:19.319 HomeNetworkHealthOptimizationConnectedDevicesPage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:20.392 HomeNetworkHealthOptimizationConnectedDevicesPage:103 - Recommendation : Wi-Fi signal < -75 dbm text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:21.454 HomeNetworkHealthOptimizationConnectedDevicesPage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:22.471 HomeNetworkHealthOptimizationConnectedDevicesPage:117 - You will be provided with a recommendation when your connected device is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:24.308 HomeNetworkHealthOptimizationConnectedDevicesPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:25.507 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Connected_Device_Signal_Strength_Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:26.020 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Signal_Strength_Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:26.925 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:29.589 HomeNetworkHealthOptimizationSettingsPage:194 - Clicked on Satellite Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:35.025 TC01_Simple_Test:1039 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:35.889 HomeNetworkHealthOptimizationSatelliteSignalPage:133 - On Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:35.892 HomeNetworkHealthOptimizationSatelliteSignalPage:75 -                                                                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:35.892 HomeNetworkHealthOptimizationSatelliteSignalPage:76 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:35.893 HomeNetworkHealthOptimizationSatelliteSignalPage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:35.893 HomeNetworkHealthOptimizationSatelliteSignalPage:78 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:36.889 HomeNetworkHealthOptimizationSatelliteSignalPage:83 - Satellite Signal Strength title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:37.411 HomeNetworkHealthOptimizationSatelliteSignalPage:90 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:38.469 HomeNetworkHealthOptimizationSatelliteSignalPage:97 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:40.197 HomeNetworkHealthOptimizationSatelliteSignalPage:104 - Recommendation : Signal < -75 dbm label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:41.242 HomeNetworkHealthOptimizationSatelliteSignalPage:111 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:42.282 HomeNetworkHealthOptimizationSatelliteSignalPage:118 - You will be provided with a recommendation when your connected satellite is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:44.076 HomeNetworkHealthOptimizationSatelliteSignalPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:45.241 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Satellite_Signal_Strength_Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:45.718 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Link_Rate__Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:46.539 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:49.145 HomeNetworkHealthOptimizationSettingsPage:205 - Clicked on Satellite Link Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:54.413 TC01_Simple_Test:1058 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:54.938 HomeNetworkHealthOptimizationSatelliteLinkRatePage:132 - On Network Health Optimization Settings - Satellite Link Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:54.942 HomeNetworkHealthOptimizationSatelliteLinkRatePage:75 -                                                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:54.943 HomeNetworkHealthOptimizationSatelliteLinkRatePage:76 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:54.944 HomeNetworkHealthOptimizationSatelliteLinkRatePage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Link Rate Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:54.944 HomeNetworkHealthOptimizationSatelliteLinkRatePage:78 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:55.888 HomeNetworkHealthOptimizationSatelliteLinkRatePage:82 - Satellite Link Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:56.322 HomeNetworkHealthOptimizationSatelliteLinkRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:57.349 HomeNetworkHealthOptimizationSatelliteLinkRatePage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:58.322 HomeNetworkHealthOptimizationSatelliteLinkRatePage:103 - Recommendation : Link rate < 1 Gbps is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:38:59.329 HomeNetworkHealthOptimizationSatelliteLinkRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:00.376 HomeNetworkHealthOptimizationSatelliteLinkRatePage:117 - You will be provided with a recommendation when your connected satellite is connected at less than 1 Gbps message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:02.205 HomeNetworkHealthOptimizationSatelliteLinkRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:03.248 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Satellite_Link_Rate__Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:04.061 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:04.754 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:06.505 HomeNetworkHealthOptimizationSettingsPage:220 - ISP Speed Rate button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:11.779 TC01_Simple_Test:1077 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:18.240 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:18.715 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:19.542 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:21.195 HomeNetworkHealthOptimizationSettingsPage:220 - ISP Speed Rate button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:26.755 TC01_Simple_Test:1077 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 ERROR] 2022-01-16 23:39:32.633 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="ISP Speed Rate"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.HomeNetworkHealthOptimizationISPSpeedRatePage.isAt(HomeNetworkHealthOptimizationISPSpeedRatePage.java:130)
+	at com.cs.arris.Tests.TC01_Simple_Test.Verify_ISP_Speed_Link_Rate_Sensitivity_Low(TC01_Simple_Test.java:1079)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@747f6c5a (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="ISP Speed Rate"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:33.683 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:34.172 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Optimization_Recommendations ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:39.855 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Network_Optimization_Recommendations.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:40.346 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Optimization_Recommendations ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 ERROR] 2022-01-16 23:39:46.114 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network Health Optimization"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.HomeNetworkHealthOptimizationPage.isAt(HomeNetworkHealthOptimizationPage.java:263)
+	at com.cs.arris.Tests.TC01_Simple_Test.Verify_Network_Optimization_Recommendations(TC01_Simple_Test.java:1095)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5a30722c (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Network Health Optimization"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:46.639 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Network_Optimization_Recommendations.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:47.085 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Disabled_Network_Optimization_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:53.078 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Disabled_Network_Optimization_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:53.473 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Disabled_Network_Optimization_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 ERROR] 2022-01-16 23:39:59.085 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeButton[@name="Network_Health_Dashboard_Screen_NavigationBar_Button_Setting"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.HomeNetworkHealthOptimizationPage.clickOptimizationIcon(HomeNetworkHealthOptimizationPage.java:154)
+	at com.cs.arris.Tests.TC01_Simple_Test.Verify_Disabled_Network_Optimization_Settings(TC01_Simple_Test.java:1114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@624b3544 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeButton[@name="Network_Health_Dashboard_Screen_NavigationBar_Button_Setting"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:39:59.481 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-34-09/TC01_Simple_Test/Verify_Disabled_Network_Optimization_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:40:06.386 ParentClass:190 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:40:06.433 ParentClass:192 - Quitting Driver
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:06.857 ParentClass:306 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:06.870 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:11.379 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:11.382 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.011 TC01_Simple_Test:108 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.023 ParentClass:330 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.040 TC01_Simple_Test:112 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.042 TC01_Simple_Test:115 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.043 TC01_Simple_Test:118 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.046 TC01_Simple_Test:121 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.046 TC01_Simple_Test:123 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:15.583 TC01_Simple_Test:132 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:16.149 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-50-06/TC01_Simple_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:16.609 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Health_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:16.612 TC01_Simple_Test:819 -                             
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:16.613 TC01_Simple_Test:820 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:16.616 TC01_Simple_Test:821 - Test: Network Health Feature 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:16.617 TC01_Simple_Test:822 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:50:19.059 FooterIconsPage:93 - Footer Icons Page - Clicked on Home Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:20.881 ParentClass:306 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:20.889 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:26.230 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:26.232 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:30.500 TC01_Simple_Test:108 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:30.510 ParentClass:330 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:30.522 TC01_Simple_Test:112 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:30.527 TC01_Simple_Test:115 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:30.534 TC01_Simple_Test:118 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:30.542 TC01_Simple_Test:121 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:30.544 TC01_Simple_Test:123 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:31.124 TC01_Simple_Test:132 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:31.707 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-51-20/TC01_Simple_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:32.173 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Health_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:32.174 TC01_Simple_Test:819 -                             
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:32.175 TC01_Simple_Test:820 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:32.175 TC01_Simple_Test:821 - Test: Network Health Feature 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:32.175 TC01_Simple_Test:822 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:34.433 FooterIconsPage:93 - Footer Icons Page - Clicked on Home Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:56.674 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-51-20/TC01_Simple_Test/Verify_Network_Health_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:57.137 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Health_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:57.140 TC01_Simple_Test:819 -                             
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:57.141 TC01_Simple_Test:820 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:57.141 TC01_Simple_Test:821 - Test: Network Health Feature 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:57.142 TC01_Simple_Test:822 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:51:59.290 FooterIconsPage:93 - Footer Icons Page - Clicked on Home Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 ERROR] 2022-01-16 23:52:15.302 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeButton[`label == "Tap here to turn on"`]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.HomePage.clickTapHereToTurnON(HomePage.java:784)
+	at com.cs.arris.Tests.TC01_Simple_Test.Verify_Network_Health_Page(TC01_Simple_Test.java:826)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@646c0a67 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosClassChain: **/XCUIElementTypeButton[`label == "Tap here to turn on"`]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 38 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:52:16.498 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-51-20/TC01_Simple_Test/Verify_Network_Health_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:52:16.989 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Optimization_Settings_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:05.711 ParentClass:306 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:05.721 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:11.166 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:11.168 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:15.750 TC01_Simple_Test:108 - Loading...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:15.760 ParentClass:330 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:15.776 TC01_Simple_Test:112 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:15.778 TC01_Simple_Test:115 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:15.782 TC01_Simple_Test:118 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:15.785 TC01_Simple_Test:121 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:15.787 TC01_Simple_Test:123 - Retrieved...Sign Up Test Data
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:16.362 TC01_Simple_Test:132 - 
+
+****** starting test : Login_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:16.943 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Login_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:17.462 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Health_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:17.464 TC01_Simple_Test:819 -                             
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:17.464 TC01_Simple_Test:820 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:17.465 TC01_Simple_Test:821 - Test: Network Health Feature 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:17.465 TC01_Simple_Test:822 - *****************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:19.785 FooterIconsPage:93 - Footer Icons Page - Clicked on Home Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:31.597 HomePage:786 - Home Page - Clicked on Tap Here To Turn ON Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:32.845 HomeNetworkHealthOptimizationPage:265 - On Network Health Optimization Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:32.864 HomeNetworkHealthOptimizationPage:166 -                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:32.865 HomeNetworkHealthOptimizationPage:167 - **********************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:32.865 HomeNetworkHealthOptimizationPage:168 - Details of UI Elements on Network Health Optimization Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:32.866 HomeNetworkHealthOptimizationPage:169 - **********************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:33.830 HomeNetworkHealthOptimizationPage:173 - Network Health Optimization title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:34.368 HomeNetworkHealthOptimizationPage:180 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:34.798 HomeNetworkHealthOptimizationPage:187 - Optimization button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:35.726 HomeNetworkHealthOptimizationPage:194 - Optimization is turned off message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:36.705 HomeNetworkHealthOptimizationPage:201 - Turn on optimization from settings to access network health & view recommendations message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:39.719 HomeNetworkHealthOptimizationPage:156 - Clicked on Optimization Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:41.123 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Network_Health_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:41.612 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Optimization_Settings_Page ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:42.214 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:42.226 HomeNetworkHealthOptimizationSettingsPage:325 -                                                                    
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:42.227 HomeNetworkHealthOptimizationSettingsPage:326 - *******************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:42.228 HomeNetworkHealthOptimizationSettingsPage:327 - Details of UI Elements on Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:42.228 HomeNetworkHealthOptimizationSettingsPage:328 - *******************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:43.208 HomeNetworkHealthOptimizationSettingsPage:332 - Network Optimization Settings title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:43.683 HomeNetworkHealthOptimizationSettingsPage:339 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:44.173 HomeNetworkHealthOptimizationSettingsPage:346 - Optimization Toggle button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:45.120 HomeNetworkHealthOptimizationSettingsPage:353 - Optimization label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:46.112 HomeNetworkHealthOptimizationSettingsPage:360 - Turn on optimization to access network health & view recommendations message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:46.992 HomeNetworkHealthOptimizationSettingsPage:232 - Network Optimization is enabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:47.015 HomeNetworkHealthOptimizationSettingsPage:373 -                                                                            
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:47.016 HomeNetworkHealthOptimizationSettingsPage:374 - ***************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:47.016 HomeNetworkHealthOptimizationSettingsPage:375 - Details of UI Elements on Network Health Optimization Settings Enabled Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:47.017 HomeNetworkHealthOptimizationSettingsPage:376 - ***************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:48.424 HomeNetworkHealthOptimizationSettingsPage:380 - Recommendation sensitivity text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:49.642 HomeNetworkHealthOptimizationSettingsPage:387 - Control the recommendation frequency by adjusting the sensitivity. text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:51.091 HomeNetworkHealthOptimizationSettingsPage:394 - Low text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:52.528 HomeNetworkHealthOptimizationSettingsPage:401 - Medium (default) text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:53.577 HomeNetworkHealthOptimizationSettingsPage:408 - High text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:54.104 HomeNetworkHealthOptimizationSettingsPage:415 - Slider Image is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:55.317 HomeNetworkHealthOptimizationSettingsPage:422 - You will be notified as soon as your : text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:56.735 HomeNetworkHealthOptimizationSettingsPage:429 - Connected Device(s) signal strength is very low label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:58.167 HomeNetworkHealthOptimizationSettingsPage:436 - Satellite(s) signal strength is very low message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:53:59.407 HomeNetworkHealthOptimizationSettingsPage:443 - Satellite(s) link rate is very low message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:02.328 HomeNetworkHealthOptimizationSettingsPage:452 - ISP Speed drop is very high message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:03.630 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Network_Optimization_Settings_Page.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:04.136 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Connected_Device_Signal_Strength_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:04.948 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:05.778 HomeNetworkHealthOptimizationSettingsPage:186 - Connected Device Signal button is not displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:16.182 TC01_Simple_Test:866 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:22.727 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Connected_Device_Signal_Strength_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:23.228 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Connected_Device_Signal_Strength_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:24.010 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:26.423 HomeNetworkHealthOptimizationSettingsPage:183 - Clicked on Connected Device Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:31.551 TC01_Simple_Test:866 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:32.208 HomeNetworkHealthOptimizationConnectedDevicesPage:132 - On Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:32.220 HomeNetworkHealthOptimizationConnectedDevicesPage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:32.221 HomeNetworkHealthOptimizationConnectedDevicesPage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:32.221 HomeNetworkHealthOptimizationConnectedDevicesPage:77 - Details of UI Elements on Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:32.221 HomeNetworkHealthOptimizationConnectedDevicesPage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:33.124 HomeNetworkHealthOptimizationConnectedDevicesPage:82 - Connected Devices title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:33.597 HomeNetworkHealthOptimizationConnectedDevicesPage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:34.517 HomeNetworkHealthOptimizationConnectedDevicesPage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:35.436 HomeNetworkHealthOptimizationConnectedDevicesPage:103 - Recommendation : Wi-Fi signal < -75 dbm text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:36.363 HomeNetworkHealthOptimizationConnectedDevicesPage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:37.924 HomeNetworkHealthOptimizationConnectedDevicesPage:117 - You will be provided with a recommendation when your connected device is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:40.621 HomeNetworkHealthOptimizationConnectedDevicesPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:41.663 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Connected_Device_Signal_Strength_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:42.123 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Signal_Strength_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:42.913 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:45.307 HomeNetworkHealthOptimizationSettingsPage:194 - Clicked on Satellite Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:50.354 TC01_Simple_Test:885 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:50.856 HomeNetworkHealthOptimizationSatelliteSignalPage:133 - On Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:50.863 HomeNetworkHealthOptimizationSatelliteSignalPage:75 -                                                                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:50.864 HomeNetworkHealthOptimizationSatelliteSignalPage:76 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:50.864 HomeNetworkHealthOptimizationSatelliteSignalPage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:50.864 HomeNetworkHealthOptimizationSatelliteSignalPage:78 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:51.972 HomeNetworkHealthOptimizationSatelliteSignalPage:83 - Satellite Signal Strength title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:52.672 HomeNetworkHealthOptimizationSatelliteSignalPage:90 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:53.499 HomeNetworkHealthOptimizationSatelliteSignalPage:97 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:54.392 HomeNetworkHealthOptimizationSatelliteSignalPage:104 - Recommendation : Signal < -75 dbm label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:55.377 HomeNetworkHealthOptimizationSatelliteSignalPage:111 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:56.152 HomeNetworkHealthOptimizationSatelliteSignalPage:118 - You will be provided with a recommendation when your connected satellite is connected at less than -75 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:57.795 HomeNetworkHealthOptimizationSatelliteSignalPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:59.024 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Satellite_Signal_Strength_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:54:59.496 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Link_Rate_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:01.635 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:03.907 HomeNetworkHealthOptimizationSettingsPage:205 - Clicked on Satellite Link Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:09.312 TC01_Simple_Test:904 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:09.861 HomeNetworkHealthOptimizationSatelliteLinkRatePage:132 - On Network Health Optimization Settings - Satellite Link Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:09.875 HomeNetworkHealthOptimizationSatelliteLinkRatePage:75 -                                                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:09.876 HomeNetworkHealthOptimizationSatelliteLinkRatePage:76 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:09.877 HomeNetworkHealthOptimizationSatelliteLinkRatePage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Link Rate Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:09.877 HomeNetworkHealthOptimizationSatelliteLinkRatePage:78 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:10.836 HomeNetworkHealthOptimizationSatelliteLinkRatePage:82 - Satellite Link Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:11.323 HomeNetworkHealthOptimizationSatelliteLinkRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:12.365 HomeNetworkHealthOptimizationSatelliteLinkRatePage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:13.090 HomeNetworkHealthOptimizationSatelliteLinkRatePage:103 - Recommendation : Link rate < 1 Gbps is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:14.143 HomeNetworkHealthOptimizationSatelliteLinkRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:15.129 HomeNetworkHealthOptimizationSatelliteLinkRatePage:117 - You will be provided with a recommendation when your connected satellite is connected at less than 1 Gbps message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:16.668 HomeNetworkHealthOptimizationSatelliteLinkRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:17.927 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Satellite_Link_Rate_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:18.375 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_Medium ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:20.602 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:24.617 HomeNetworkHealthOptimizationSettingsPage:217 - Clicked on ISP Speed Rate button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:29.809 TC01_Simple_Test:923 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:30.324 HomeNetworkHealthOptimizationISPSpeedRatePage:132 - On Network Health Optimization Settings - ISP Speed Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:30.332 HomeNetworkHealthOptimizationISPSpeedRatePage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:30.334 HomeNetworkHealthOptimizationISPSpeedRatePage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:30.335 HomeNetworkHealthOptimizationISPSpeedRatePage:77 - Details of UI Elements on Network Health Optimization Settings - ISP Speed Rate Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:30.337 HomeNetworkHealthOptimizationISPSpeedRatePage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:31.304 HomeNetworkHealthOptimizationISPSpeedRatePage:82 - ISP Speed Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:31.805 HomeNetworkHealthOptimizationISPSpeedRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:32.809 HomeNetworkHealthOptimizationISPSpeedRatePage:96 - Sensitivity : Medium is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:33.582 HomeNetworkHealthOptimizationISPSpeedRatePage:103 - Recommendation : ISP rate % drop < 25% is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:34.511 HomeNetworkHealthOptimizationISPSpeedRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:35.953 HomeNetworkHealthOptimizationISPSpeedRatePage:117 - You will be provided with a recommendation when ISP speed drops by 25% message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:37.506 HomeNetworkHealthOptimizationISPSpeedRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:38.907 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_Medium.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:39.679 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Connected_Device_Signal_Strength_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:42.472 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:45.698 HomeNetworkHealthOptimizationSettingsPage:183 - Clicked on Connected Device Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:50.912 TC01_Simple_Test:944 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:51.395 HomeNetworkHealthOptimizationConnectedDevicesPage:132 - On Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:51.398 HomeNetworkHealthOptimizationConnectedDevicesPage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:51.398 HomeNetworkHealthOptimizationConnectedDevicesPage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:51.399 HomeNetworkHealthOptimizationConnectedDevicesPage:77 - Details of UI Elements on Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:51.399 HomeNetworkHealthOptimizationConnectedDevicesPage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:52.515 HomeNetworkHealthOptimizationConnectedDevicesPage:82 - Connected Devices title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:52.917 HomeNetworkHealthOptimizationConnectedDevicesPage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:53.690 HomeNetworkHealthOptimizationConnectedDevicesPage:96 - Sensitivity : High is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:54.473 HomeNetworkHealthOptimizationConnectedDevicesPage:103 - Recommendation : Wi-Fi signal < -70 dbm text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:55.432 HomeNetworkHealthOptimizationConnectedDevicesPage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:56.493 HomeNetworkHealthOptimizationConnectedDevicesPage:117 - You will be provided with a recommendation when your connected device is connected at less than -70 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:58.096 HomeNetworkHealthOptimizationConnectedDevicesPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:59.440 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Connected_Device_Signal_Strength_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:55:59.937 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Signal_Strength_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:00.690 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:03.093 HomeNetworkHealthOptimizationSettingsPage:194 - Clicked on Satellite Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:09.316 TC01_Simple_Test:963 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:09.880 HomeNetworkHealthOptimizationSatelliteSignalPage:133 - On Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:09.884 HomeNetworkHealthOptimizationSatelliteSignalPage:75 -                                                                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:09.885 HomeNetworkHealthOptimizationSatelliteSignalPage:76 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:09.885 HomeNetworkHealthOptimizationSatelliteSignalPage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:09.886 HomeNetworkHealthOptimizationSatelliteSignalPage:78 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:10.861 HomeNetworkHealthOptimizationSatelliteSignalPage:83 - Satellite Signal Strength title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:11.362 HomeNetworkHealthOptimizationSatelliteSignalPage:90 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:12.531 HomeNetworkHealthOptimizationSatelliteSignalPage:97 - Sensitivity : High is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:13.227 HomeNetworkHealthOptimizationSatelliteSignalPage:104 - Recommendation : Signal < -70 dbm label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:14.005 HomeNetworkHealthOptimizationSatelliteSignalPage:111 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:14.908 HomeNetworkHealthOptimizationSatelliteSignalPage:118 - You will be provided with a recommendation when your connected satellite is connected at less than -70 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:16.877 HomeNetworkHealthOptimizationSatelliteSignalPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:18.108 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Satellite_Signal_Strength_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:18.940 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Link_Rate_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:21.368 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:25.272 HomeNetworkHealthOptimizationSettingsPage:205 - Clicked on Satellite Link Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:31.100 TC01_Simple_Test:982 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:32.133 HomeNetworkHealthOptimizationSatelliteLinkRatePage:132 - On Network Health Optimization Settings - Satellite Link Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:32.137 HomeNetworkHealthOptimizationSatelliteLinkRatePage:75 -                                                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:32.137 HomeNetworkHealthOptimizationSatelliteLinkRatePage:76 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:32.138 HomeNetworkHealthOptimizationSatelliteLinkRatePage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Link Rate Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:32.138 HomeNetworkHealthOptimizationSatelliteLinkRatePage:78 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:34.652 HomeNetworkHealthOptimizationSatelliteLinkRatePage:82 - Satellite Link Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:35.872 HomeNetworkHealthOptimizationSatelliteLinkRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:38.351 HomeNetworkHealthOptimizationSatelliteLinkRatePage:96 - Sensitivity : High is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:41.498 HomeNetworkHealthOptimizationSatelliteLinkRatePage:103 - Recommendation : Link rate < 1.5 Gbps is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:43.735 HomeNetworkHealthOptimizationSatelliteLinkRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:46.064 HomeNetworkHealthOptimizationSatelliteLinkRatePage:117 - You will be provided with a recommendation when your connected satellite is connected at less than 1.5 Gbps message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:49.834 HomeNetworkHealthOptimizationSatelliteLinkRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:51.097 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Satellite_Link_Rate_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:51.577 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_High ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:56:55.031 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:02.160 HomeNetworkHealthOptimizationSettingsPage:217 - Clicked on ISP Speed Rate button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:08.006 TC01_Simple_Test:1001 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:08.911 HomeNetworkHealthOptimizationISPSpeedRatePage:132 - On Network Health Optimization Settings - ISP Speed Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:08.916 HomeNetworkHealthOptimizationISPSpeedRatePage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:08.916 HomeNetworkHealthOptimizationISPSpeedRatePage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:08.917 HomeNetworkHealthOptimizationISPSpeedRatePage:77 - Details of UI Elements on Network Health Optimization Settings - ISP Speed Rate Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:08.917 HomeNetworkHealthOptimizationISPSpeedRatePage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:10.485 HomeNetworkHealthOptimizationISPSpeedRatePage:82 - ISP Speed Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:11.265 HomeNetworkHealthOptimizationISPSpeedRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:13.855 HomeNetworkHealthOptimizationISPSpeedRatePage:96 - Sensitivity : High is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:15.583 HomeNetworkHealthOptimizationISPSpeedRatePage:103 - Recommendation : ISP rate % drop < 10% is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:17.448 HomeNetworkHealthOptimizationISPSpeedRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:18.951 HomeNetworkHealthOptimizationISPSpeedRatePage:117 - You will be provided with a recommendation when ISP speed drops by 10% message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:21.774 HomeNetworkHealthOptimizationISPSpeedRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:23.045 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_High.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:23.526 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Connected_Device_Signal_Strength_Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:26.454 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:30.905 HomeNetworkHealthOptimizationSettingsPage:183 - Clicked on Connected Device Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:36.120 TC01_Simple_Test:1021 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:36.725 HomeNetworkHealthOptimizationConnectedDevicesPage:132 - On Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:36.732 HomeNetworkHealthOptimizationConnectedDevicesPage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:36.733 HomeNetworkHealthOptimizationConnectedDevicesPage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:36.733 HomeNetworkHealthOptimizationConnectedDevicesPage:77 - Details of UI Elements on Network Health Optimization Settings - Connected Devices Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:36.734 HomeNetworkHealthOptimizationConnectedDevicesPage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:38.087 HomeNetworkHealthOptimizationConnectedDevicesPage:82 - Connected Devices title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:39.626 HomeNetworkHealthOptimizationConnectedDevicesPage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:41.176 HomeNetworkHealthOptimizationConnectedDevicesPage:96 - Sensitivity : Low is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:42.402 HomeNetworkHealthOptimizationConnectedDevicesPage:103 - Recommendation : Wi-Fi signal < -80 dbm text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:43.609 HomeNetworkHealthOptimizationConnectedDevicesPage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:44.826 HomeNetworkHealthOptimizationConnectedDevicesPage:117 - You will be provided with a recommendation when your connected device is connected at less than -80 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:47.023 HomeNetworkHealthOptimizationConnectedDevicesPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:48.300 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Connected_Device_Signal_Strength_Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:48.794 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Signal_Strength_Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:49.677 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:52.823 HomeNetworkHealthOptimizationSettingsPage:194 - Clicked on Satellite Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:58.453 TC01_Simple_Test:1040 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:58.999 HomeNetworkHealthOptimizationSatelliteSignalPage:133 - On Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:59.002 HomeNetworkHealthOptimizationSatelliteSignalPage:75 -                                                                                                
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:59.002 HomeNetworkHealthOptimizationSatelliteSignalPage:76 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:59.003 HomeNetworkHealthOptimizationSatelliteSignalPage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Signal Strength Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:57:59.004 HomeNetworkHealthOptimizationSatelliteSignalPage:78 - ***********************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:00.143 HomeNetworkHealthOptimizationSatelliteSignalPage:83 - Satellite Signal Strength title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:00.712 HomeNetworkHealthOptimizationSatelliteSignalPage:90 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:01.929 HomeNetworkHealthOptimizationSatelliteSignalPage:97 - Sensitivity : Low is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:03.118 HomeNetworkHealthOptimizationSatelliteSignalPage:104 - Recommendation : Signal < -80 dbm label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:04.207 HomeNetworkHealthOptimizationSatelliteSignalPage:111 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:05.379 HomeNetworkHealthOptimizationSatelliteSignalPage:118 - You will be provided with a recommendation when your connected satellite is connected at less than -80 dbm message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:07.577 HomeNetworkHealthOptimizationSatelliteSignalPage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:08.835 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Satellite_Signal_Strength_Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:09.347 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Satellite_Link_Rate__Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:11.672 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:14.257 HomeNetworkHealthOptimizationSettingsPage:205 - Clicked on Satellite Link Signal button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:19.468 TC01_Simple_Test:1059 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:19.986 HomeNetworkHealthOptimizationSatelliteLinkRatePage:132 - On Network Health Optimization Settings - Satellite Link Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:19.996 HomeNetworkHealthOptimizationSatelliteLinkRatePage:75 -                                                                                           
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:19.998 HomeNetworkHealthOptimizationSatelliteLinkRatePage:76 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:20.001 HomeNetworkHealthOptimizationSatelliteLinkRatePage:77 - Details of UI Elements on Network Health Optimization Settings - Satellite Link Rate Page 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:20.002 HomeNetworkHealthOptimizationSatelliteLinkRatePage:78 - ******************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:21.016 HomeNetworkHealthOptimizationSatelliteLinkRatePage:82 - Satellite Link Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:21.508 HomeNetworkHealthOptimizationSatelliteLinkRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:22.578 HomeNetworkHealthOptimizationSatelliteLinkRatePage:96 - Sensitivity : Low is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:23.589 HomeNetworkHealthOptimizationSatelliteLinkRatePage:103 - Recommendation : Link rate < 0.5 Gbps is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:24.590 HomeNetworkHealthOptimizationSatelliteLinkRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:25.654 HomeNetworkHealthOptimizationSatelliteLinkRatePage:117 - You will be provided with a recommendation when your connected satellite is connected at less than 0.5 Gbps message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:27.535 HomeNetworkHealthOptimizationSatelliteLinkRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:28.827 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Satellite_Link_Rate__Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:29.316 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_ISP_Speed_Link_Rate_Sensitivity_Low ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:31.563 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:35.315 HomeNetworkHealthOptimizationSettingsPage:217 - Clicked on ISP Speed Rate button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:40.934 TC01_Simple_Test:1078 - App Rating Dialog did not appear
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:41.450 HomeNetworkHealthOptimizationISPSpeedRatePage:132 - On Network Health Optimization Settings - ISP Speed Rate Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:41.452 HomeNetworkHealthOptimizationISPSpeedRatePage:75 -                                                                                        
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:41.453 HomeNetworkHealthOptimizationISPSpeedRatePage:76 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:41.453 HomeNetworkHealthOptimizationISPSpeedRatePage:77 - Details of UI Elements on Network Health Optimization Settings - ISP Speed Rate Page   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:41.454 HomeNetworkHealthOptimizationISPSpeedRatePage:78 - ***************************************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:42.426 HomeNetworkHealthOptimizationISPSpeedRatePage:82 - ISP Speed Rate title text is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:42.942 HomeNetworkHealthOptimizationISPSpeedRatePage:89 - Back button is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:43.923 HomeNetworkHealthOptimizationISPSpeedRatePage:96 - Sensitivity : Low is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:44.916 HomeNetworkHealthOptimizationISPSpeedRatePage:103 - Recommendation : ISP rate % drop < 50% is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:45.889 HomeNetworkHealthOptimizationISPSpeedRatePage:110 - When do you get this recommendation ? label is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:46.868 HomeNetworkHealthOptimizationISPSpeedRatePage:117 - You will be provided with a recommendation when ISP speed drops by 50% message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:48.759 HomeNetworkHealthOptimizationISPSpeedRatePage:64 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:49.600 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:53.156 HomeNetworkHealthOptimizationSettingsPage:172 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:54.643 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_ISP_Speed_Link_Rate_Sensitivity_Low.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:55.128 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Network_Optimization_Recommendations ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:56.792 HomeNetworkHealthOptimizationPage:265 - On Network Health Optimization Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:56.794 HomeNetworkHealthOptimizationPage:214 -                                                                   
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:56.795 HomeNetworkHealthOptimizationPage:215 - ******************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:56.797 HomeNetworkHealthOptimizationPage:216 - Details of UI Elements with Network Optimization Recommendations 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:56.797 HomeNetworkHealthOptimizationPage:217 - ******************************************************************
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:58:59.859 HomeNetworkHealthOptimizationPage:221 - Satellite : Not connected
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:03.039 HomeNetworkHealthOptimizationPage:228 - Devices : Good signal
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:07.148 HomeNetworkHealthOptimizationPage:235 - ISP : Stable speed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:08.874 HomeNetworkHealthOptimizationPage:242 - No recommendations message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:10.952 HomeNetworkHealthOptimizationPage:249 - We don’t have any recommendation as your network health is optimum. message is displayed
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:15.279 HomeNetworkHealthOptimizationPage:123 - Clicked on Satellite Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:19.404 HomeNetworkHealthOptimizationPage:134 - Clicked on Devices Image
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:20.801 HomeNetowrkDevicesWifiClientConnectionHealthPage:50 - On WiFi Clients Connection Health Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:24.188 HomeNetowrkDevicesWifiClientConnectionHealthPage:39 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:25.149 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Network_Optimization_Recommendations.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:25.652 TC01_Simple_Test:132 - 
+
+****** starting test : Verify_Disabled_Network_Optimization_Settings ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:28.529 HomeNetworkHealthOptimizationPage:156 - Clicked on Optimization Icon
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:29.388 HomeNetworkHealthOptimizationSettingsPage:468 - On Network Health Optimization Settings Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:34.898 HomeNetworkHealthOptimizationSettingsPage:256 - Network Optimization is disabled
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:37.087 HomeNetworkHealthOptimizationSettingsPage:172 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:40.976 HomeNetworkHealthOptimizationPage:112 - Clicked on Back Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:41.535 ParentClass:433 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16-23-53-05/TC01_Simple_Test/Verify_Disabled_Network_Optimization_Settings.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:48.488 ParentClass:190 - Closing App
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-16 INFO ] 2022-01-16 23:59:48.535 ParentClass:192 - Quitting Driver

@@ -67,6 +67,7 @@ import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.screenrecording.CanRecordScreen;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import io.appium.java_client.touch.WaitOptions;
@@ -143,26 +144,11 @@ public class ParentClass
 //			utils.log().info("Appium server already running");
 //		}	
 //	}
-	
+//	
 	public ParentClass() 
 	{ 
 		
 	}
-	
-//	public boolean checkIfAppiumServerIsRunnning(int port) throws Exception {
-//	    boolean isAppiumServerRunning = false;
-//	    ServerSocket socket;
-//	    try {
-//	        socket = new ServerSocket(port);
-//	        socket.close();
-//	    } catch (IOException e) {
-//	    	System.out.println("1");
-//	        isAppiumServerRunning = true;
-//	    } finally {
-//	        socket = null;
-//	    }
-//	    return isAppiumServerRunning;
-//	}
 	
 	@AfterSuite
 	public void afterSuite() 
@@ -192,32 +178,46 @@ public class ParentClass
 		utils.log().info("Quitting Driver");
 		getDriver().quit();
 		
-//		server.stop();
-//		utils.log().info("Appium server stopped");
+		server.stop();
+		utils.log().info("Appium server stopped");
 		
 	}
 	
-//	public AppiumDriverLocalService getAppiumServerDefault() {
-//		return AppiumDriverLocalService.buildDefaultService();
-//	}
-//	
-//	public AppiumDriverLocalService getAppiumService() {
-//		HashMap<String, String> environment = new HashMap<String, String>();
-//		environment.put("PATH",  "/Users/prabhu/.fastlane/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/opt/homebrew/Cellar/openjdk@11/11.0.10/libexec/openjdk.jdk/Contents/Home/bin:/Users/prabhu/Library/Android/sdk:/Applications/sonar-scanner/bin:/Applications/sonarqube/bin:/usr/bin/ruby:/usr/local/bin/pod");
-//		environment.put("ANDROID_HOME", "/Users/prabhu/Library/Android/sdk");
-//		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-//				.usingDriverExecutable(new File("/usr/local/bin/node"))
-//				.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
-//				.usingPort(4723)
-//				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-//				.withEnvironment(environment)
-//				.withLogFile(new File("ServerLogs/server.log")));
-//	}
+	public AppiumDriverLocalService getAppiumServerDefault() {
+		return AppiumDriverLocalService.buildDefaultService();
+	}
+	
+	public AppiumDriverLocalService getAppiumService() {
+		HashMap<String, String> environment = new HashMap<String, String>();
+		environment.put("PATH",  "/Users/prabhu/.fastlane/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/opt/homebrew/Cellar/openjdk@11/11.0.10/libexec/openjdk.jdk/Contents/Home/bin:/Users/prabhu/Library/Android/sdk:/Applications/sonar-scanner/bin:/Applications/sonarqube/bin:/usr/bin/ruby:/usr/local/bin/pod");
+		environment.put("ANDROID_HOME", "/Users/prabhu/Library/Android/sdk");
+		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+				.usingDriverExecutable(new File("/usr/local/bin/node"))
+				.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
+				.usingPort(4723)
+				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+				.withEnvironment(environment)
+				.withLogFile(new File("ServerLogs/server.log")));
+	}
 	
 	@Parameters({"platform", "device"})
 	@BeforeSuite
-	public void beforeSuite(String platform, String device)
+	public void beforeSuite(String platform, String device) throws Exception
 	{
+		setConfigProperties();
+		ThreadContext.put("ROUTINGKEY", "ServerLogs");
+		server = getAppiumService();
+		if(!checkIfAppiumServerIsRunnning(4723)) {
+			server.start();
+			server.clearOutPutStreams();
+			System.out.println("***************   Appium server started   **************");
+			utils.log().info("Appium server started");
+		} else {
+			utils.log().info("Appium server already running");
+		}	
+		
+		
+		
 		this.pltName = platform;
 		this.dvcName = device;
 		
@@ -280,6 +280,21 @@ public class ParentClass
 		{
 		  utils.log().fatal("Unable to initialize " + getPlatformName() + " driver...... ABORTING !!!\n" + e.toString());
 		} 
+	}
+	
+	public boolean checkIfAppiumServerIsRunnning(int port) throws Exception {
+	    boolean isAppiumServerRunning = false;
+	    ServerSocket socket;
+	    try {
+	        socket = new ServerSocket(port);
+	        socket.close();
+	    } catch (IOException e) {
+	    	System.out.println("1");
+	        isAppiumServerRunning = true;
+	    } finally {
+	        socket = null;
+	    }
+	    return isAppiumServerRunning;
 	}
 	
 		@BeforeTest

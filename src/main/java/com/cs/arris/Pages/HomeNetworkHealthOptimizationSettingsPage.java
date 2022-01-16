@@ -251,6 +251,7 @@ public class HomeNetworkHealthOptimizationSettingsPage extends ParentClass imple
 					try {
 						if(turnOffNetworkOptimizationTitle.isDisplayed() && turnOffButton.isDisplayed())
 							click(turnOffButton);
+						utils.log().info("Clicked on Yes Turn Off button");
 					}catch(Exception e) {utils.log().info("Confirmation dialog to turn off network optimization is not displayed");}
 
 					utils.log().info("Network Optimization is disabled");
