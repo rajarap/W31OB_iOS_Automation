@@ -57,10 +57,10 @@ public class HomePage extends ParentClass implements Page {
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_SSID\"]")
 	public MobileElement ssidName;
 
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_MainAP\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_MainAP\"]")
 	public MobileElement mainDeviceName; // MAIN
 
-	@iOSXCUITFindBy (xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_Mesh\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Mesh_Home_Screen_Button_Mesh\"]")
 	public MobileElement mainDeviceImage; // MAIN
 
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeStaticText[@name=\"Mesh_Home_Screen_Label_MainAPWithDevices\"]")

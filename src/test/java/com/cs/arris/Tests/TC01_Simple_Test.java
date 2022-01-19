@@ -39,6 +39,7 @@ import com.cs.arris.Pages.AddSatelliteCongratulationsPage;
 import com.cs.arris.Pages.AddSatelliteDeviceFullyNotConfigured;
 import com.cs.arris.Pages.AddSatelliteFailureToAddSatellitePage;
 import com.cs.arris.Pages.AddSatelliteHelpPlaceYourSatellitePage;
+import com.cs.arris.Pages.AddSatelliteHomePage;
 import com.cs.arris.Pages.AddSatelliteInstallAdditionalSatelliteDialog;
 import com.cs.arris.Pages.AddSatellitePlugInYourSatellitePage;
 import com.cs.arris.Pages.AddSatelliteRegisteringDeviceFailedPage;
@@ -773,44 +774,66 @@ public class TC01_Simple_Test extends ParentClass
 //			softhome10.assertAll();
 //		}
 //		
-//		//TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature
-//		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard" })
-//		public void Verify_Install_Additional_Satellite_Page() {
-//		utils.log().info("                                                    ");
-//		utils.log().info("****************************************************");
-//		utils.log().info("Test: Hamburger Menu - Install Additional Satellite ");
-//		utils.log().info("****************************************************");
-//			SoftAssert softsatellite1 = new SoftAssert();
-//			new HomePage().getFooterIconsPageObject().clickHomeButton();
-//			softsatellite1.assertTrue(new HomePage().clickNavigationButton());
-//			softsatellite1.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAddSatelliteButton());
-//			softsatellite1.assertTrue(new AddSatelliteInstallAdditionalSatelliteDialog().clickInstallSatelliteButton());
-//			//1
-//			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage1().clickNextButton());
-//			
-//			//2
-//			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage2().clickNextButton());
-//			super.pause(20);
-//			
-//			//3
-//			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage3().clickNextButton());
-//
-//			//4
-//			softsatellite1.assertTrue(new AddSatelliteUnPackYourSatellitePage().clickNextButton());
-//			
-//			//5
-//			softsatellite1.assertTrue(new AddSatelliteHelpPlaceYourSatellitePage().clickSkipButton());
-//			softsatellite1.assertTrue(new AddSatellitePlugInYourSatellitePage().clickNextButton());
-//			super.pause(20);
-//			softsatellite1.assertTrue(new AddSatelliteSuccessfullyConnectedPage().clickNextButton());
-//			super.pause(90);
-//			softsatellite1.assertTrue(new AddSatelliteSuccessfullyConnectedToInternetPage().clickNextButton());
-//			super.pause(15);
-//			softsatellite1.assertTrue(new AddSatelliteSystemUpToDatePage().clickNextButton());
-//			super.pause(40);
-//			softsatellite1.assertTrue(new AddSatelliteCongratulationsPage().clickContinueButton());
-//
-//		}
+		//TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature
+		@Test(priority = 41, dependsOnMethods = { "Login_And_Onboard" })
+		public void Verify_Install_Additional_Satellite_Page() {
+		utils.log().info("                                                    ");
+		utils.log().info("****************************************************");
+		utils.log().info("Test: Hamburger Menu - Install Additional Satellite ");
+		utils.log().info("****************************************************");
+			SoftAssert softsatellite1 = new SoftAssert();
+			new HomePage().getFooterIconsPageObject().clickHomeButton();
+			softsatellite1.assertTrue(new HomePage().clickNavigationButton());
+			softsatellite1.assertTrue(new HomePage().getHamburgerMenuPageObject().clickAddSatelliteButton());
+			softsatellite1.assertTrue(new AddSatelliteInstallAdditionalSatelliteDialog().clickInstallSatelliteButton());
+			//1
+			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage1().clickNextButton());
+			
+			//2
+			softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage2().clickNextButton());
+			super.pause(20);
+			
+			//3
+			try {
+				if(new AddSatelliteAddNewSatellitePage3().isAt()) {
+					new HomePage().connectToSSID();
+					softsatellite1.assertTrue(new AddSatelliteAddNewSatellitePage3().clickNextButton());
+				}
+			}catch(Exception e) {}
+			super.pause(25);
+
+			softsatellite1.assertTrue(new AddSatelliteUnPackYourSatellitePage().clickNextButton());
+			softsatellite1.assertTrue(new AddSatelliteHelpPlaceYourSatellitePage().clickSkipButton());
+			softsatellite1.assertTrue(new AddSatellitePlugInYourSatellitePage().clickNextButton());
+			super.pause(20);
+			softsatellite1.assertTrue(new AddSatelliteSuccessfullyConnectedPage().clickNextButton());
+			super.pause(90);
+			softsatellite1.assertTrue(new AddSatelliteSuccessfullyConnectedToInternetPage().clickNextButton());
+			super.pause(15);
+			softsatellite1.assertTrue(new AddSatelliteSystemUpToDatePage().clickNextButton());
+			super.pause(40);
+			
+			try {
+				 if(new AddSatelliteRegisteringDeviceFailedPage().isAt())
+				 	new AddSatelliteRegisteringDeviceFailedPage().checkError();
+				 	try {
+				 		if(new MailErrorLogsPage().isAt()) {
+				 			new MailErrorLogsPage().enterEmailAddress();
+				 			new MailErrorLogsPage().clickSendButton();
+				 			super.pause(5);
+				 		}
+				 	}catch(Exception e) {}
+				 	
+				 	softsatellite1.assertTrue(new AddSatelliteRegisteringDeviceFailedPage().clickContinueButton());
+				 	super.pause(120);
+				 }catch(Exception e) {}
+			
+			softsatellite1.assertTrue(new AddSatelliteCongratulationsPage().clickContinueButton());
+//			softsatellite1.assertTrue(new AddSatelliteHomePage().clickContinueButton());
+			
+			softsatellite1.assertAll();
+
+		}
 		
 		
 		//TC009_Login_And_Test_Hamburger_Menu_Amazon_Feature
@@ -823,11 +846,12 @@ public class TC01_Simple_Test extends ParentClass
 			SoftAssert softnetwork1 = new SoftAssert();
 			new HomePage().getFooterIconsPageObject().clickHomeButton();
 			super.pause(10);
+			super.swipeDown();
 			softnetwork1.assertTrue(new HomePage().clickTapHereToTurnON());
 			
 			try
 			{
-	//			if(new HomePage().getSkipTutorialPageObject().isAt())
+				if(new HomePage().getSkipTutorialPageObject().isAt())
 					softnetwork1.assertTrue(new HomePage().getSkipTutorialPageObject().tapSkip());
 			}catch(Exception e) { utils.log().info("Skip Tutorial Page did not appear");}
 			
@@ -860,15 +884,17 @@ public class TC01_Simple_Test extends ParentClass
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork3.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickConnectedDeviceSignalButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().isAt()) 
 					softnetwork3.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().verifyConnectedDevicesPageUI());
 				softnetwork3.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().clickBackButton());
 				
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
+			
 			softnetwork3.assertAll();
 		}
 		
@@ -879,14 +905,15 @@ public class TC01_Simple_Test extends ParentClass
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork4.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteSignalButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().isAt()) 
 					softnetwork4.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().verifySatelliteSignalStrengthsPageUI());
 				softnetwork4.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 				softnetwork4.assertAll();
 		}
@@ -898,14 +925,15 @@ public class TC01_Simple_Test extends ParentClass
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork5.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteLinkRateButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().isAt()) 
 					softnetwork5.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().verifySatelliteLinkRatePageUI());
 				softnetwork5.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 				softnetwork5.assertAll();
 		}
@@ -917,15 +945,16 @@ public class TC01_Simple_Test extends ParentClass
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork6.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickISPSpeedRateButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {		
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().isAt()) 
 					softnetwork6.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().verifyISPSpeedRatePageUI());
 				softnetwork6.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().clickBackButton());
 				
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				softnetwork6.assertAll();
 		}
 		
@@ -939,13 +968,14 @@ public class TC01_Simple_Test extends ParentClass
 			softnetwork7.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickConnectedDeviceSignalButton());
 			
 			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
-			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().isAt()) 
-				softnetwork7.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().verifyConnectedDevicesPageUI());
-			softnetwork7.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().clickBackButton());
+				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().isAt()) 
+					softnetwork7.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().verifyConnectedDevicesPageUI());
+				softnetwork7.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 			softnetwork7.assertAll();
 		}
@@ -958,14 +988,15 @@ public class TC01_Simple_Test extends ParentClass
 				softnetwork8.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteSignalButton());
 			
 			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
-			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().isAt()) 
-				softnetwork8.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().verifySatelliteSignalStrengthsPageUI());
-			softnetwork8.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().clickBackButton());
-				
+				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().isAt()) 
+					softnetwork8.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().verifySatelliteSignalStrengthsPageUI());
+				softnetwork8.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
+			
 			softnetwork8.assertAll();
 		}
 		
@@ -976,14 +1007,15 @@ public class TC01_Simple_Test extends ParentClass
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork9.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteLinkRateButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {		
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().isAt()) 
 					softnetwork9.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().verifySatelliteLinkRatePageUI());
 				softnetwork9.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 				softnetwork9.assertAll();
 		}
@@ -996,14 +1028,16 @@ public class TC01_Simple_Test extends ParentClass
 				softnetwork10.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickISPSpeedRateButton());
 			
 			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+		
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().isAt()) 
 					softnetwork10.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().verifyISPSpeedRatePageUI());
 				softnetwork10.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().clickBackButton());
-				
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
+			
 				softnetwork10.assertAll();
 		}
 		
@@ -1015,14 +1049,15 @@ public class TC01_Simple_Test extends ParentClass
 				new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().tapLow();
 			softnetwork11.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickConnectedDeviceSignalButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().isAt()) 
 					softnetwork11.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().verifyConnectedDevicesPageUI());
 				softnetwork11.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getConnectedDevicesPageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 				softnetwork11.assertAll();
 		}
@@ -1035,13 +1070,14 @@ public class TC01_Simple_Test extends ParentClass
 				softnetwork12.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteSignalButton());
 			
 			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().isAt()) 
 					softnetwork12.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().verifySatelliteSignalStrengthsPageUI());
 				softnetwork12.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteSignalPageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 				softnetwork12.assertAll();
 		}
@@ -1053,14 +1089,15 @@ public class TC01_Simple_Test extends ParentClass
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork13.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickSatelliteLinkRateButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().isAt()) 
 					softnetwork13.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().verifySatelliteLinkRatePageUI());
 				softnetwork13.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getSatelliteLinkRatePageObject().clickBackButton());
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 				softnetwork13.assertAll();
 		}
@@ -1072,14 +1109,16 @@ public class TC01_Simple_Test extends ParentClass
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork14.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickISPSpeedRateButton());
 			
-			try {
-				if(new AppRatingDialog().isAt())
-					new AppRatingDialog().clickRemindMeLaterLink();
-			}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
-				
+			try {				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().isAt()) 
 					softnetwork14.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().verifyISPSpeedRatePageUI());
 				softnetwork14.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().getISPSpeedRatePageObject().clickBackButton());
+				
+				try {
+					if(new AppRatingDialog().isAt())
+						new AppRatingDialog().clickRemindMeLaterLink();
+				}catch(Exception e){utils.log().info("App Rating Dialog did not appear");}
+			}catch(Exception e){}
 				
 				if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 					new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().tapMedium();
@@ -1116,6 +1155,7 @@ public class TC01_Simple_Test extends ParentClass
 				
 			if(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().isAt()) 
 				softnetwork16.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().disableHealthOptimization());
+			super.pause(3);
 			softnetwork16.assertTrue(new HomePage().getNetworkOtptimizationPageObject().getOptimizationSettinsPageObject().clickBackButton());
 			softnetwork16.assertTrue(new HomePage().getNetworkOtptimizationPageObject().clickBackButton());
 

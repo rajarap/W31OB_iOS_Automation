@@ -1,10 +1,25 @@
-[ServerLogs INFO ] 2022-01-17 00:07:41.889 ParentClass:214 - Appium server started
-[ServerLogs INFO ] 2022-01-17 00:07:41.901 ParentClass:328 - loading... config.properties
-[ServerLogs INFO ] 2022-01-17 00:07:41.904 ParentClass:336 - Config.properties object is set to Thread Local
-[ServerLogs INFO ] 2022-01-17 00:07:41.907 ParentClass:359 - loading... strings/strings.xml
-[ServerLogs INFO ] 2022-01-17 00:07:41.918 ParentClass:373 - loading... error_codes/error_codes.xml
-[ServerLogs INFO ] 2022-01-17 00:13:09.023 ParentClass:214 - Appium server started
-[ServerLogs INFO ] 2022-01-17 00:13:09.036 ParentClass:328 - loading... config.properties
-[ServerLogs INFO ] 2022-01-17 00:13:09.039 ParentClass:336 - Config.properties object is set to Thread Local
-[ServerLogs INFO ] 2022-01-17 00:13:09.042 ParentClass:359 - loading... strings/strings.xml
-[ServerLogs INFO ] 2022-01-17 00:13:09.052 ParentClass:373 - loading... error_codes/error_codes.xml
+[ServerLogs INFO ] 2022-01-19 00:18:44.544 ParentClass:214 - Appium server started
+[ServerLogs INFO ] 2022-01-19 00:18:44.566 ParentClass:328 - loading... config.properties
+[ServerLogs INFO ] 2022-01-19 00:18:44.569 ParentClass:336 - Config.properties object is set to Thread Local
+[ServerLogs INFO ] 2022-01-19 00:18:44.573 ParentClass:359 - loading... strings/strings.xml
+[ServerLogs INFO ] 2022-01-19 00:18:44.585 ParentClass:373 - loading... error_codes/error_codes.xml
+[ServerLogs INFO ] 2022-01-19 10:51:12.326 ParentClass:214 - Appium server started
+[ServerLogs INFO ] 2022-01-19 10:51:12.350 ParentClass:328 - loading... config.properties
+[ServerLogs INFO ] 2022-01-19 10:51:12.352 ParentClass:336 - Config.properties object is set to Thread Local
+[ServerLogs INFO ] 2022-01-19 10:51:12.367 ParentClass:359 - loading... strings/strings.xml
+[ServerLogs INFO ] 2022-01-19 10:51:12.380 ParentClass:373 - loading... error_codes/error_codes.xml
+[ServerLogs INFO ] 2022-01-19 11:18:22.865 ParentClass:214 - Appium server started
+[ServerLogs INFO ] 2022-01-19 11:18:22.877 ParentClass:328 - loading... config.properties
+[ServerLogs INFO ] 2022-01-19 11:18:22.880 ParentClass:336 - Config.properties object is set to Thread Local
+[ServerLogs INFO ] 2022-01-19 11:18:22.883 ParentClass:359 - loading... strings/strings.xml
+[ServerLogs INFO ] 2022-01-19 11:18:22.893 ParentClass:373 - loading... error_codes/error_codes.xml
+[ServerLogs INFO ] 2022-01-19 11:20:53.970 ParentClass:214 - Appium server started
+[ServerLogs INFO ] 2022-01-19 11:20:53.985 ParentClass:328 - loading... config.properties
+[ServerLogs INFO ] 2022-01-19 11:20:53.989 ParentClass:336 - Config.properties object is set to Thread Local
+[ServerLogs INFO ] 2022-01-19 11:20:53.993 ParentClass:359 - loading... strings/strings.xml
+[ServerLogs INFO ] 2022-01-19 11:20:54.007 ParentClass:373 - loading... error_codes/error_codes.xml
+[ServerLogs INFO ] 2022-01-19 11:37:35.834 ParentClass:214 - Appium server started
+[ServerLogs INFO ] 2022-01-19 11:37:35.862 ParentClass:328 - loading... config.properties
+[ServerLogs INFO ] 2022-01-19 11:37:35.866 ParentClass:336 - Config.properties object is set to Thread Local
+[ServerLogs INFO ] 2022-01-19 11:37:35.870 ParentClass:359 - loading... strings/strings.xml
+[ServerLogs INFO ] 2022-01-19 11:37:35.882 ParentClass:373 - loading... error_codes/error_codes.xml

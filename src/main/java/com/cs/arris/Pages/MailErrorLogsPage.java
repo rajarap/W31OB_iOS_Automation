@@ -8,14 +8,18 @@ import com.cs.arris.Interface.Page;
 import com.cs.arris.Utilities.TestUtils;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindAll;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class MailErrorLogsPage extends ParentClass implements Page {
 	public TestUtils utils = new TestUtils();
+	public TouchAction action = new TouchAction(getDriver());
+	
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Mail.sendButton\"]")
 	public MobileElement sendButton;
@@ -59,13 +63,26 @@ public class MailErrorLogsPage extends ParentClass implements Page {
 	public boolean enterEmailAddress() {
 		if (toFieldTextBox.isDisplayed()) {
 			clear(toFieldTextBox);
-			sendKeys(toFieldTextBox, "prabhu.rajarathinam@mobileprogramming.com, prabhu.rajarathinam@commscope.com");
+			sendKeys(toFieldTextBox, super.getProps().getProperty("emailid"));
 			utils.log().info("Entered email address in To field");
 			return true;
 		} else {
 			return false;
 		}
 	}
+	
+	public void checkError() {
+		int x = 187;
+		int y = 458;
+		PointOption p = new PointOption();
+		p.withCoordinates(x, y);
+		
+		for(int i=0; i <= 7; i++) {
+			action.tap(p);
+			action.release().perform();
+		}
+	}
+
 	
 
 	@Override

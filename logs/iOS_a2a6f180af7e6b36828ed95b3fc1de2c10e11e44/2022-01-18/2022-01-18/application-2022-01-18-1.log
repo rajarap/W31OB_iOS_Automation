@@ -1,0 +1,250 @@
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:28:57.520 ParentClass:321 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:28:57.534 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:09.224 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:09.230 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.269 ParentClass:345 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.272 TC002_Test_Signin_And_Onboard:42 - First Name : newuser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.273 TC002_Test_Signin_And_Onboard:45 - Last Name : newuser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.275 TC002_Test_Signin_And_Onboard:48 - Email address : newuser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.276 ParentClass:709 - Name generated : arrisW31-445
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.277 TC002_Test_Signin_And_Onboard:51 - SSID Name : arrisW31-445
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.277 TC002_Test_Signin_And_Onboard:54 - SSID Password : 1234567890
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.278 TC002_Test_Signin_And_Onboard:57 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:12.671 TC002_Test_Signin_And_Onboard:67 - 
+
+****** starting test : Verify_Signin_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:17.010 GetStartedPage:45 - Clicked on Get Started Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:18.915 GrantPermissionsPage:185 - Grant Permissions - Clicked on Continue Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:53.837 SelectYourDevicePage:54 - Select your Device 1 - Selected SURFboard mAX option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:29:55.498 SelectYourDevicePage:62 - Select your Device 1 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:01.260 SelectYourDevicePage2:59 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:03.108 SelectYourDevicePage2:76 - Select your Device 2 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:10.787 SiginPage:54 - Sigin Page - Entered user email address
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:13.689 SiginPage:69 - Sigin Page - Clicked on Signin Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:25.725 ValidOTP:128 - loading...emailDetails
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:27.638 EnterValidOTPPage:62 - Entering Valid OTP...null
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:32.374 ParentClass:448 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18-23-28-57/TC002_Test_Signin_And_Onboard/Verify_Signin_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:32.849 TC002_Test_Signin_And_Onboard:67 - 
+
+****** starting test : Verify_Signin_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 ERROR] 2022-01-18 23:30:38.662 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Lets_Get_Started_Screen_TitleLabel_GetStarted"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.GetStartedPage.getGetStartedTitle(GetStartedPage.java:62)
+	at com.cs.arris.Pages.GetStartedPage.clickGetStartedButton(GetStartedPage.java:40)
+	at com.cs.arris.Tests.TC002_Test_Signin_And_Onboard.lambda$Verify_Signin_And_Onboard$0(TC002_Test_Signin_And_Onboard.java:74)
+	at com.cs.arris.Workflows.TC51_Signin_And_Onboard_Workflow.getStartedPage(TC51_Signin_And_Onboard_Workflow.java:55)
+	at com.cs.arris.Tests.TC002_Test_Signin_And_Onboard.Verify_Signin_And_Onboard(TC002_Test_Signin_And_Onboard.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7316523a (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 39 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Lets_Get_Started_Screen_TitleLabel_GetStarted"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 41 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:30:39.065 ParentClass:448 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18-23-28-57/TC002_Test_Signin_And_Onboard/Verify_Signin_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:44.889 ParentClass:321 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:44.916 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:49.379 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:49.381 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.355 ParentClass:345 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.358 TC002_Test_Signin_And_Onboard:42 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.358 TC002_Test_Signin_And_Onboard:45 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.361 TC002_Test_Signin_And_Onboard:48 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.362 ParentClass:709 - Name generated : arrisW31-141
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.362 TC002_Test_Signin_And_Onboard:51 - SSID Name : arrisW31-141
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.362 TC002_Test_Signin_And_Onboard:54 - SSID Password : 1234567890
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.363 TC002_Test_Signin_And_Onboard:57 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:52.794 TC002_Test_Signin_And_Onboard:67 - 
+
+****** starting test : Verify_Signin_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:57.030 GetStartedPage:45 - Clicked on Get Started Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:33:58.917 GrantPermissionsPage:185 - Grant Permissions - Clicked on Continue Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:34:33.559 SelectYourDevicePage:54 - Select your Device 1 - Selected SURFboard mAX option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:34:35.219 SelectYourDevicePage:62 - Select your Device 1 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:34:40.926 SelectYourDevicePage2:59 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:34:42.634 SelectYourDevicePage2:76 - Select your Device 2 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:34:50.277 SiginPage:54 - Sigin Page - Entered user email address
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:34:53.356 SiginPage:69 - Sigin Page - Clicked on Signin Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:35:05.381 ValidOTP:128 - loading...emailDetails
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:35:09.575 EnterValidOTPPage:62 - Entering Valid OTP...021711
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:35:26.922 CodeVerifiedPage:65 - OTP Code Verified Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:36:06.989 MailErrorLogsPage:74 - On Error Log File Email Compose Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:36:17.267 MailErrorLogsPage:63 - Entered email address in To field
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:36:22.273 MailErrorLogsPage:52 - Clicked Send Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:36:30.165 SetupHomeNetworkPage:42 - Setup Home Network Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:36:31.964 UnPackYourBoxPage:43 - UnPack your Box Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:36:33.766 PlugInMaxRouterPage:45 - Plugin Max Router Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:36:40.530 ConnectToBlueToothDialog:40 - Connect to Bluetooth Page - Clicked on OK Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:37:00.425 ConnectMaxRouterToMobileDevicePage:52 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:37:20.442 ConnectMaxRouterToInternetPage:42 - Successfully Connected to Internet Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:37:46.890 SystemFirmwareUpdatePage:44 - System Firmware Update Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:38:19.222 SystemFirmwareUpdatePage:51 - Warranty and Support Page - Clicked on Continue Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:38:23.226 NameYourNetwokSSIDPage:53 - Name Your Network Page - Entered SSID Name
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:38:26.529 NameYourNetwokSSIDPage:59 - Name Your Network Page - Entered SSID Password
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:38:59.217 ParentClass:448 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18-23-33-44/TC002_Test_Signin_And_Onboard/Verify_Signin_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:38:59.819 TC002_Test_Signin_And_Onboard:67 - 
+
+****** starting test : Verify_Signin_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 ERROR] 2022-01-18 23:39:05.584 TestListener:38 - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Lets_Get_Started_Screen_TitleLabel_GetStarted"]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at com.cs.arris.Pages.GetStartedPage.getGetStartedTitle(GetStartedPage.java:62)
+	at com.cs.arris.Pages.GetStartedPage.clickGetStartedButton(GetStartedPage.java:40)
+	at com.cs.arris.Tests.TC002_Test_Signin_And_Onboard.lambda$Verify_Signin_And_Onboard$0(TC002_Test_Signin_And_Onboard.java:74)
+	at com.cs.arris.Workflows.TC51_Signin_And_Onboard_Workflow.getStartedPage(TC51_Signin_And_Onboard_Workflow.java:55)
+	at com.cs.arris.Tests.TC002_Test_Signin_And_Onboard.Verify_Signin_And_Onboard(TC002_Test_Signin_And_Onboard.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@319642db (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 39 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name="Lets_Get_Started_Screen_TitleLabel_GetStarted"]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'techleads-Mac-mini.local', ip: '192.168.0.131', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 41 more
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:39:06.057 ParentClass:448 - video path: videos/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18-23-33-44/TC002_Test_Signin_And_Onboard/Verify_Signin_And_Onboard.mp4
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:55:59.912 ParentClass:321 - log path: logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:55:59.933 ParentClass:261 - Setting iOS driver capabilities
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:04.569 ParentClass:276 - iOS Driver is set to the Thread Local context ios
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:04.572 ParentClass:277 - iOS driver initialized: 
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.571 ParentClass:345 - loading...testdata/signup
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.576 TC002_Test_Signin_And_Onboard:42 - First Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.579 TC002_Test_Signin_And_Onboard:45 - Last Name : demouser
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.581 TC002_Test_Signin_And_Onboard:48 - Email address : demouser2652@gmail.com
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.583 ParentClass:709 - Name generated : arrisW31-197
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.584 TC002_Test_Signin_And_Onboard:51 - SSID Name : arrisW31-197
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.586 TC002_Test_Signin_And_Onboard:54 - SSID Password : 1234567890
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.587 TC002_Test_Signin_And_Onboard:57 - UDID : a2a6f180af7e6b36828ed95b3fc1de2c10e11e44
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:07.993 TC002_Test_Signin_And_Onboard:67 - 
+
+****** starting test : Verify_Signin_And_Onboard ******
+
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:12.361 GetStartedPage:45 - Clicked on Get Started Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:14.230 GrantPermissionsPage:185 - Grant Permissions - Clicked on Continue Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:48.712 SelectYourDevicePage:54 - Select your Device 1 - Selected SURFboard mAX option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:50.427 SelectYourDevicePage:62 - Select your Device 1 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:56.070 SelectYourDevicePage2:59 - Select your Device 2 - Selected mAX Pro AX11000 option
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:56:57.820 SelectYourDevicePage2:76 - Select your Device 2 - Clicked Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:57:05.513 SiginPage:54 - Sigin Page - Entered user email address
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:57:08.414 SiginPage:69 - Sigin Page - Clicked on Signin Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:57:20.438 ValidOTP:128 - loading...emailDetails
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:57:24.627 EnterValidOTPPage:62 - Entering Valid OTP...337075
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:57:41.892 CodeVerifiedPage:65 - OTP Code Verified Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:58:21.936 MailErrorLogsPage:91 - On Error Log File Email Compose Page
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:58:31.940 MailErrorLogsPage:67 - Entered email address in To field
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:58:36.724 MailErrorLogsPage:56 - Clicked Send Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:58:44.740 SetupHomeNetworkPage:42 - Setup Home Network Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:58:46.526 UnPackYourBoxPage:43 - UnPack your Box Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:58:48.285 PlugInMaxRouterPage:45 - Plugin Max Router Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:58:55.104 ConnectToBlueToothDialog:40 - Connect to Bluetooth Page - Clicked on OK Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:59:15.142 ConnectMaxRouterToMobileDevicePage:52 - Connecting mAX Router to Mobile Device Page - Clicked on Next Button
+[logs/iOS_a2a6f180af7e6b36828ed95b3fc1de2c10e11e44/2022-01-18 INFO ] 2022-01-18 23:59:35.151 ConnectMaxRouterToInternetPage:42 - Successfully Connected to Internet Page - Clicked on Next Button

@@ -20,13 +20,16 @@ public class AddSatelliteCongratulationsPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"BOBAHelp\"]")
 	public MobileElement helpIcon;
 	
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Connecting_BOBA_Satellite_Screen_TitleLabel\"])[1]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Satellite_Congratulations_Screen_TitleLabel\"]")
 	public MobileElement congratulationsTitle;
 	
-	@iOSXCUITFindBy(xpath = "(//XCUIElementTypeStaticText[@name=\"Connecting_BOBA_Satellite_Screen_SubTitleLabel\"])[1]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Satellite_Congratulations_Screen_SubTitleLabel\"]")
 	public MobileElement congratulationsSubTitle;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Satellite_Congratulations_Screen_Image\"]")
+	public MobileElement image;
 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Connecting_BOBA_Satellite_Screen_Button\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Satellite_Congratulations_Screen_Button\"]")
 	public MobileElement continueButton;
 	
 

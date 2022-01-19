@@ -678,7 +678,7 @@ public class MainDeviceAllTabPage extends ParentClass implements Page {
 			try {
 				if (channelLabel.isDisplayed() && fiveGhzDeviceCount.isDisplayed()) 
 					this.fiveGhzDevice = fiveGhzDeviceCount.getText();
-				utils.log().info("Channel 2 : " + this.fiveGhzDevice);
+				utils.log().info("Channel 1 : " + this.fiveGhzDevice);
 			} catch (Exception e) {
 				utils.log().info("Channel 5GHz count details is not displayed ");
 			}

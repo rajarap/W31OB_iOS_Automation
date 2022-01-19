@@ -104,7 +104,7 @@ public class TC002_Test_Signin_And_Onboard extends ParentClass
 				  super.pause(35);
 				  try{
 					  if(codeVerified.continueOnBoardingButton.isDisplayed()){
-						  codeVerified.checkError();
+						  new MailErrorLogsPage().checkError();
 						  try {
 						  	if(new MailErrorLogsPage().isAt()) {
 						  		new MailErrorLogsPage().enterEmailAddress();

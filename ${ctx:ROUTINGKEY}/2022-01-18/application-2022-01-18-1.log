@@ -1,0 +1,6 @@
+[${ctx:ROUTINGKEY} INFO ] 2022-01-18 23:28:55.645 ParentClass:328 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2022-01-18 23:28:55.680 ParentClass:336 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2022-01-18 23:33:42.350 ParentClass:328 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2022-01-18 23:33:42.372 ParentClass:336 - Config.properties object is set to Thread Local
+[${ctx:ROUTINGKEY} INFO ] 2022-01-18 23:55:58.328 ParentClass:328 - loading... config.properties
+[${ctx:ROUTINGKEY} INFO ] 2022-01-18 23:55:58.360 ParentClass:336 - Config.properties object is set to Thread Local

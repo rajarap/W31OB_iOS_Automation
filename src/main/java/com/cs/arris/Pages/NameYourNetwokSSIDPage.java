@@ -38,7 +38,7 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeSecureTextField[@name=\"Network_Connect_Screen_TextField_Password\"]")
 	public MobileElement ssidPassword;
 	
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeButton[`label == \"Done\"`]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[@name=\"Done\"]")
 	public MobileElement doneLink;
 	
 	
@@ -65,12 +65,25 @@ public class NameYourNetwokSSIDPage extends ParentClass implements Page
 	
 	public void clickDoneLink()
 	{
-		String selector = "**/XCUIElementTypeButton[`label == \"Done\"`]";
-		super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
-// 		String pred = "label == \"Done\"";
-// 		super.getDriver().findElement(MobileBy.iOSNsPredicateString(pred)).click();
-//		click(doneLink);
+		try {
+			String acc = "Done";
+			super.getDriver().findElement(MobileBy.AccessibilityId(acc)).click();
+		}catch(Exception e) {utils.log().info("Clicked on Done Button 1");}
+		
+		try {
+			String pred = "label == \"Done\"";
+			super.getDriver().findElement(MobileBy.iOSNsPredicateString(pred)).click();
+		}catch(Exception e) {utils.log().info("Clicked on Done Button 2");}
+		
+		try {
+			String selector = "**/XCUIElementTypeButton[`label == \"Done\"`]";
+			super.getDriver().findElement(MobileBy.iOSClassChain(selector)).click();
+		}catch(Exception e) {utils.log().info("Clicked on Done Button 3");}
+		
+		try {
+		click(doneLink);
 		utils.log().info("Name Your Network Page  - Clicked on Done Button");
+		}catch(Exception e) {utils.log().info("Clicked on Done Button 4");}
 	}
 
 	public void clickNextButton()
